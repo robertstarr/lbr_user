@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -71,6 +71,26 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Mechanical" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Gehäuse" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="ID" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="bMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="EXTD_ERC" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;E-Switch Swtiches&lt;/b&gt; - v1.01&lt;p&gt;
@@ -1094,6 +1114,60 @@ PBH Series</description>
 <text x="-6.35" y="-10.16" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 <hole x="-11.3" y="9.75" drill="3.175"/>
 <hole x="-11.3" y="-9.75" drill="3.175"/>
+</package>
+<package name="5501">
+<description>&lt;b&gt;PUSHBUTTON SERIES 5500 SWITCHES&lt;/b&gt;&lt;p&gt;
+Source: www.e-switch.com .. 5500.pdf</description>
+<wire x1="-8.6549" y1="-6.1001" x2="-2.9649" y2="-6.1001" width="0.254" layer="21"/>
+<wire x1="-2.9649" y1="-6.1001" x2="8.6549" y2="-6.1001" width="0.254" layer="21"/>
+<wire x1="8.6549" y1="-6.1001" x2="8.6549" y2="6.1001" width="0.254" layer="21"/>
+<wire x1="8.6549" y1="6.1001" x2="-2.9649" y2="6.1001" width="0.254" layer="21"/>
+<wire x1="-2.9649" y1="6.1001" x2="-8.6549" y2="6.1001" width="0.254" layer="21"/>
+<wire x1="-8.6549" y1="6.1001" x2="-8.6549" y2="-6.1001" width="0.254" layer="21"/>
+<wire x1="-2.9649" y1="-6.1001" x2="-2.9649" y2="6.1001" width="0.2032" layer="51"/>
+<wire x1="-2.9649" y1="-6.1001" x2="-1.27" y2="-4.699" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="-4.699" x2="-1.27" y2="4.699" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="4.699" x2="-2.9649" y2="6.1001" width="0.2032" layer="51"/>
+<wire x1="8.6549" y1="-6.1001" x2="7.239" y2="-4.699" width="0.2032" layer="51"/>
+<wire x1="7.239" y1="-4.699" x2="7.239" y2="4.699" width="0.2032" layer="51"/>
+<wire x1="7.239" y1="4.699" x2="8.6549" y2="6.1001" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="4.699" x2="7.239" y2="4.699" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="-4.699" x2="7.239" y2="-4.699" width="0.2032" layer="51"/>
+<pad name="1A" x="0" y="3.81" drill="0.9" diameter="1.5" shape="octagon" rot="R90"/>
+<pad name="1B" x="0" y="-3.81" drill="0.9" diameter="1.5" shape="octagon" rot="R90"/>
+<pad name="NC" x="5.08" y="3.81" drill="0.9" diameter="1.5" shape="octagon" rot="R90"/>
+<pad name="NO" x="5.08" y="-3.81" drill="0.9" diameter="1.5" shape="octagon" rot="R90"/>
+<hole x="-7.62" y="3.81" drill="1.1"/>
+<hole x="7.62" y="-3.81" drill="1.1"/>
+<text x="-9.2075" y="-6.0325" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="0.635" y="-0.3175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="5511">
+<description>&lt;b&gt;PUSHBUTTON SERIES 5511 SWITCHES&lt;/b&gt;&lt;p&gt;
+Source: www.e-switch.com .. 5500.pdf</description>
+<wire x1="-8.6549" y1="-8.5501" x2="-2.9649" y2="-8.5501" width="0.2032" layer="21"/>
+<wire x1="-2.9649" y1="-8.5501" x2="8.6549" y2="-8.5501" width="0.2032" layer="21"/>
+<wire x1="8.6549" y1="-8.5501" x2="8.6549" y2="8.5501" width="0.2032" layer="21"/>
+<wire x1="8.6549" y1="8.5501" x2="-2.9649" y2="8.5501" width="0.2032" layer="21"/>
+<wire x1="-2.9649" y1="8.5501" x2="-8.6549" y2="8.5501" width="0.2032" layer="21"/>
+<wire x1="-8.6549" y1="8.5501" x2="-8.6549" y2="-8.5501" width="0.2032" layer="21"/>
+<wire x1="-2.9649" y1="-8.5501" x2="-2.9649" y2="8.5501" width="0.2032" layer="51"/>
+<wire x1="-2.9649" y1="-8.5501" x2="-1.27" y2="-7.149" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="-7.149" x2="-1.27" y2="7.149" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="7.149" x2="-2.9649" y2="8.5501" width="0.2032" layer="51"/>
+<wire x1="8.6549" y1="-8.5501" x2="7.239" y2="-7.149" width="0.2032" layer="51"/>
+<wire x1="7.239" y1="-7.149" x2="7.239" y2="7.149" width="0.2032" layer="51"/>
+<wire x1="7.239" y1="7.149" x2="8.6549" y2="8.5501" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="7.149" x2="7.239" y2="7.149" width="0.2032" layer="51"/>
+<wire x1="-1.27" y1="-7.149" x2="7.239" y2="-7.149" width="0.2032" layer="51"/>
+<pad name="1A" x="0" y="3.81" drill="0.9" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="1B" x="0" y="-3.81" drill="0.9" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="NC" x="5.08" y="3.81" drill="0.9" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="NO" x="5.08" y="-3.81" drill="0.9" diameter="1.778" shape="octagon" rot="R90"/>
+<hole x="-7.62" y="3.81" drill="1.1"/>
+<hole x="7.62" y="-3.81" drill="1.1"/>
+<text x="-9.2075" y="-8.255" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="0" y="-0.3175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>

@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -71,7 +71,26 @@
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Mechanical" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Gehäuse" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="ID" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="bMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="EXTD_ERC" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;Texas Instruments Devices&lt;/b&gt;&lt;p&gt;
@@ -5809,6 +5828,30 @@ PowerPAD 64, body 10.2 mm, pitch 0.5 mm</description>
 <pin name="A" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
 <pin name="Y" x="10.16" y="0" visible="pad" length="middle" direction="oc" function="dot" rot="R180"/>
 </symbol>
+<symbol name="SN65LBC173AN">
+<wire x1="-7.62" y1="22.86" x2="7.62" y2="22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="22.86" x2="7.62" y2="-25.4" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-25.4" x2="-7.62" y2="-25.4" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-25.4" x2="-7.62" y2="22.86" width="0.4064" layer="94"/>
+<pin name="/G" x="-12.7" y="17.78" length="middle" direction="in" function="dot"/>
+<pin name="1A" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="1B" x="-12.7" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="1Y" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="2A" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="2B" x="-12.7" y="-2.54" length="middle" direction="in" function="dot"/>
+<pin name="2Y" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="3A" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="3B" x="-12.7" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="3Y" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="4A" x="-12.7" y="-17.78" length="middle" direction="in"/>
+<pin name="4B" x="-12.7" y="-22.86" length="middle" direction="in" function="dot"/>
+<pin name="4Y" x="12.7" y="-20.32" length="middle" direction="out" rot="R180"/>
+<pin name="G" x="-12.7" y="20.32" length="middle" direction="in"/>
+<pin name="GND" x="12.7" y="17.78" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC" x="12.7" y="20.32" length="middle" direction="pwr" rot="R180"/>
+<text x="-7.62" y="23.495" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BQ2054PN" prefix="U" uservalue="yes">
@@ -9030,6 +9073,60 @@ High Performance 24-Bit, 216kHz Sampling</description>
 <connect gate="D" pin="Y" pad="11"/>
 <connect gate="P" pin="GND" pad="7"/>
 <connect gate="P" pin="VCC" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN65LBC173A" prefix="U">
+<description>Quadruple RS-485 Differential Line Receiver</description>
+<gates>
+<gate name="G$1" symbol="SN65LBC173AN" x="5.08" y="2.54"/>
+</gates>
+<devices>
+<device name="N" package="DIL16">
+<connects>
+<connect gate="G$1" pin="/G" pad="12"/>
+<connect gate="G$1" pin="1A" pad="2"/>
+<connect gate="G$1" pin="1B" pad="1"/>
+<connect gate="G$1" pin="1Y" pad="3"/>
+<connect gate="G$1" pin="2A" pad="6"/>
+<connect gate="G$1" pin="2B" pad="7"/>
+<connect gate="G$1" pin="2Y" pad="5"/>
+<connect gate="G$1" pin="3A" pad="10"/>
+<connect gate="G$1" pin="3B" pad="9"/>
+<connect gate="G$1" pin="3Y" pad="11"/>
+<connect gate="G$1" pin="4A" pad="14"/>
+<connect gate="G$1" pin="4B" pad="15"/>
+<connect gate="G$1" pin="4Y" pad="13"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="D" package="SO16">
+<connects>
+<connect gate="G$1" pin="/G" pad="12"/>
+<connect gate="G$1" pin="1A" pad="2"/>
+<connect gate="G$1" pin="1B" pad="1"/>
+<connect gate="G$1" pin="1Y" pad="3"/>
+<connect gate="G$1" pin="2A" pad="6"/>
+<connect gate="G$1" pin="2B" pad="7"/>
+<connect gate="G$1" pin="2Y" pad="5"/>
+<connect gate="G$1" pin="3A" pad="10"/>
+<connect gate="G$1" pin="3B" pad="9"/>
+<connect gate="G$1" pin="3Y" pad="11"/>
+<connect gate="G$1" pin="4A" pad="14"/>
+<connect gate="G$1" pin="4B" pad="15"/>
+<connect gate="G$1" pin="4Y" pad="13"/>
+<connect gate="G$1" pin="G" pad="4"/>
+<connect gate="G$1" pin="GND" pad="8"/>
+<connect gate="G$1" pin="VCC" pad="16"/>
 </connects>
 <technologies>
 <technology name=""/>
