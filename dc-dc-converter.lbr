@@ -1,0 +1,1126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;DC-DC Converters&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIW2">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<wire x1="-25.4" y1="-25.4" x2="25.4" y2="-25.4" width="0.2032" layer="21"/>
+<wire x1="25.4" y1="25.4" x2="25.4" y2="-25.4" width="0.2032" layer="21"/>
+<wire x1="25.4" y1="25.4" x2="-25.4" y2="25.4" width="0.2032" layer="21"/>
+<wire x1="-25.4" y1="-25.4" x2="-25.4" y2="25.4" width="0.2032" layer="21"/>
+<pad name="1" x="10.16" y="2.54" drill="1.1938" shape="octagon"/>
+<pad name="2" x="10.16" y="-2.54" drill="1.1938" shape="octagon"/>
+<pad name="5" x="-10.16" y="0" drill="1.1938" shape="octagon"/>
+<pad name="6" x="-10.16" y="10.16" drill="1.1938" shape="octagon"/>
+<pad name="4" x="-10.16" y="-10.16" drill="1.1938" shape="octagon"/>
+<text x="10.16" y="-22.86" size="1.016" layer="21" ratio="18">DC-DC</text>
+<text x="-25.4" y="26.67" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-22.86" y="17.78" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="12.7" y="2.54" size="1.016" layer="21" ratio="18">+IN</text>
+<text x="12.7" y="-2.54" size="1.016" layer="21" ratio="18">-IN</text>
+<text x="-17.78" y="0" size="1.016" layer="21" ratio="18">COM</text>
+<text x="-17.78" y="-10.16" size="1.016" layer="21" ratio="18">-OUT</text>
+<text x="-17.78" y="10.16" size="1.016" layer="21" ratio="18">+OUT</text>
+</package>
+<package name="CMK">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<wire x1="-9.525" y1="-15.875" x2="9.525" y2="-15.875" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="15.24" x2="10.16" y2="-15.24" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-15.24" x2="-10.16" y2="13.97" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="13.97" x2="-8.255" y2="15.875" width="0.2032" layer="21"/>
+<wire x1="-8.255" y1="15.875" x2="9.525" y2="15.875" width="0.2032" layer="21"/>
+<wire x1="-8.255" y1="15.875" x2="-9.525" y2="15.875" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="13.97" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-15.24" x2="-9.525" y2="-15.875" width="0.2032" layer="21" curve="90"/>
+<wire x1="9.525" y1="-15.875" x2="10.16" y2="-15.24" width="0.2032" layer="21" curve="90"/>
+<wire x1="9.525" y1="15.875" x2="10.16" y2="15.24" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-10.16" y1="15.24" x2="-9.525" y2="15.875" width="0.2032" layer="21" curve="-90"/>
+<pad name="1" x="-7.62" y="13.97" drill="0.8128" shape="long"/>
+<pad name="2" x="-7.62" y="11.43" drill="0.8128" shape="long"/>
+<pad name="3" x="-7.62" y="8.89" drill="0.8128" shape="long"/>
+<pad name="10" x="-7.62" y="-8.89" drill="0.8128" shape="long"/>
+<pad name="11" x="-7.62" y="-11.43" drill="0.8128" shape="long"/>
+<pad name="12" x="-7.62" y="-13.97" drill="0.8128" shape="long"/>
+<pad name="13" x="7.62" y="-13.97" drill="0.8128" shape="long"/>
+<pad name="14" x="7.62" y="-11.43" drill="0.8128" shape="long"/>
+<pad name="15" x="7.62" y="-8.89" drill="0.8128" shape="long"/>
+<pad name="22" x="7.62" y="8.89" drill="0.8128" shape="long"/>
+<pad name="23" x="7.62" y="11.43" drill="0.8128" shape="long"/>
+<pad name="24" x="7.62" y="13.97" drill="0.8128" shape="long"/>
+<text x="-8.89" y="16.51" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="0" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-5.08" size="1.016" layer="21" ratio="18">DC-DC</text>
+<text x="-5.08" y="13.335" size="1.016" layer="21" ratio="18">1</text>
+<text x="3.175" y="13.335" size="1.016" layer="21" ratio="18">24</text>
+<text x="-5.08" y="-14.605" size="1.016" layer="21" ratio="18">12</text>
+<text x="3.175" y="-14.605" size="1.016" layer="21" ratio="18">13</text>
+</package>
+<package name="PWR1726">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<wire x1="-14.351" y1="20.955" x2="14.351" y2="20.955" width="0.2032" layer="21"/>
+<wire x1="14.351" y1="20.955" x2="14.351" y2="-20.955" width="0.2032" layer="21"/>
+<wire x1="14.351" y1="-20.955" x2="-14.351" y2="-20.955" width="0.2032" layer="21"/>
+<wire x1="-14.351" y1="-20.955" x2="-14.351" y2="20.955" width="0.2032" layer="21"/>
+<pad name="1" x="-11.43" y="19.05" drill="1.016" shape="octagon"/>
+<pad name="16" x="-11.43" y="-19.05" drill="1.016" shape="long"/>
+<pad name="18" x="11.43" y="-16.51" drill="1.016" shape="octagon"/>
+<pad name="15" x="-11.43" y="-16.51" drill="1.016" shape="long"/>
+<pad name="14" x="-11.43" y="-13.97" drill="1.016" shape="long"/>
+<pad name="32" x="11.43" y="19.05" drill="1.016" shape="octagon"/>
+<pad name="30" x="11.43" y="13.97" drill="1.016" shape="octagon"/>
+<text x="-13.97" y="21.59" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.715" y="12.7" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="0" size="1.016" layer="21" ratio="18">DC/DC</text>
+<text x="-9.652" y="18.415" size="1.016" layer="21" ratio="18">1</text>
+<text x="-9.398" y="-14.605" size="1.016" layer="21" ratio="18">14</text>
+<text x="-9.398" y="-19.685" size="1.016" layer="21" ratio="18">16</text>
+<text x="7.62" y="-17.145" size="1.016" layer="21" ratio="18">18</text>
+<text x="7.62" y="13.335" size="1.016" layer="21" ratio="18">30</text>
+<text x="7.62" y="18.415" size="1.016" layer="21" ratio="18">32</text>
+<text x="-9.398" y="-17.145" size="1.016" layer="21" ratio="18">15</text>
+<text x="-6.985" y="-5.08" size="1.016" layer="21" ratio="18">CONVERTER</text>
+</package>
+<package name="NME">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<wire x1="-1.143" y1="5.842" x2="4.953" y2="5.842" width="0.2032" layer="21"/>
+<wire x1="4.953" y1="5.842" x2="4.953" y2="-5.842" width="0.2032" layer="21"/>
+<wire x1="4.953" y1="-5.842" x2="-1.143" y2="-5.842" width="0.2032" layer="21"/>
+<wire x1="-1.143" y1="-5.842" x2="-1.143" y2="-4.572" width="0.2032" layer="21"/>
+<wire x1="-1.143" y1="-4.572" x2="-1.143" y2="-3.048" width="0.2032" layer="51"/>
+<wire x1="-1.143" y1="4.572" x2="-1.143" y2="5.842" width="0.2032" layer="21"/>
+<wire x1="-1.143" y1="-2.032" x2="-1.143" y2="-0.508" width="0.2032" layer="51"/>
+<wire x1="-1.143" y1="-3.048" x2="-1.143" y2="-2.032" width="0.2032" layer="21"/>
+<wire x1="-1.143" y1="-0.508" x2="-1.143" y2="0.508" width="0.2032" layer="21"/>
+<wire x1="-1.143" y1="0.508" x2="-1.143" y2="2.032" width="0.2032" layer="51"/>
+<wire x1="-1.143" y1="2.032" x2="-1.143" y2="3.048" width="0.2032" layer="21"/>
+<wire x1="-1.143" y1="3.048" x2="-1.143" y2="4.572" width="0.2032" layer="51"/>
+<circle x="0" y="5.08" radius="0.3549" width="0" layer="21"/>
+<pad name="1" x="0" y="3.81" drill="0.8128" shape="long"/>
+<pad name="2" x="0" y="1.27" drill="0.8128" shape="long"/>
+<pad name="3" x="0" y="-1.27" drill="0.8128" shape="long"/>
+<pad name="4" x="0" y="-3.81" drill="0.8128" shape="long"/>
+<text x="-1.143" y="6.223" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="3.048" y="-5.08" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="4.572" y="-5.08" size="1.016" layer="21" ratio="18" rot="R90">DC-DC</text>
+</package>
+<package name="NMA">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<wire x1="1.143" y1="8.763" x2="-4.953" y2="8.763" width="0.2032" layer="21"/>
+<wire x1="-4.953" y1="8.763" x2="-4.953" y2="-10.795" width="0.2032" layer="21"/>
+<wire x1="-4.953" y1="-10.795" x2="1.143" y2="-10.795" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="-10.795" x2="1.143" y2="-7.112" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="-4.572" x2="1.143" y2="-3.048" width="0.2032" layer="51"/>
+<wire x1="1.143" y1="7.112" x2="1.143" y2="8.763" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="-2.032" x2="1.143" y2="-0.508" width="0.2032" layer="51"/>
+<wire x1="1.143" y1="-3.048" x2="1.143" y2="-2.032" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="-0.508" x2="1.143" y2="3.048" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="3.048" x2="1.143" y2="4.572" width="0.2032" layer="51"/>
+<wire x1="1.143" y1="4.572" x2="1.143" y2="5.588" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="5.588" x2="1.143" y2="7.112" width="0.2032" layer="51"/>
+<wire x1="1.143" y1="-5.588" x2="1.143" y2="-4.572" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="-7.112" x2="1.143" y2="-5.588" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="6.35" drill="0.8128" shape="long"/>
+<pad name="2" x="0" y="3.81" drill="0.8128" shape="long"/>
+<pad name="4" x="0" y="-1.27" drill="0.8128" shape="long"/>
+<pad name="5" x="0" y="-3.81" drill="0.8128" shape="long"/>
+<pad name="6" x="0" y="-6.35" drill="0.8128" shape="long"/>
+<text x="-4.953" y="9.144" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-3.937" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-4.191" y="-10.16" size="1.016" layer="21" ratio="18">DC-DC</text>
+<text x="-2.54" y="5.842" size="1.016" layer="21" ratio="18">1</text>
+<text x="-2.54" y="-6.985" size="1.016" layer="21" ratio="18">6</text>
+</package>
+<package name="DCW">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<wire x1="-9.525" y1="-16.002" x2="9.525" y2="-16.002" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="15.367" x2="10.16" y2="-15.367" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-15.367" x2="-10.16" y2="14.859" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="14.859" x2="-9.017" y2="16.002" width="0.2032" layer="21"/>
+<wire x1="-9.017" y1="16.002" x2="9.525" y2="16.002" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-15.367" x2="-9.525" y2="-16.002" width="0.2032" layer="21" curve="90"/>
+<wire x1="9.525" y1="-16.002" x2="10.16" y2="-15.367" width="0.2032" layer="21" curve="90"/>
+<wire x1="9.525" y1="16.002" x2="10.16" y2="15.367" width="0.2032" layer="21" curve="-90"/>
+<pad name="1" x="-7.62" y="13.97" drill="0.8128" shape="long"/>
+<pad name="2" x="-7.62" y="11.43" drill="0.8128" shape="long"/>
+<pad name="3" x="-7.62" y="8.89" drill="0.8128" shape="long"/>
+<pad name="10" x="-7.62" y="-8.89" drill="0.8128" shape="long"/>
+<pad name="11" x="-7.62" y="-11.43" drill="0.8128" shape="long"/>
+<pad name="12" x="-7.62" y="-13.97" drill="0.8128" shape="long"/>
+<pad name="13" x="7.62" y="-13.97" drill="0.8128" shape="long"/>
+<pad name="14" x="7.62" y="-11.43" drill="0.8128" shape="long"/>
+<pad name="15" x="7.62" y="-8.89" drill="0.8128" shape="long"/>
+<pad name="22" x="7.62" y="8.89" drill="0.8128" shape="long"/>
+<pad name="23" x="7.62" y="11.43" drill="0.8128" shape="long"/>
+<pad name="24" x="7.62" y="13.97" drill="0.8128" shape="long"/>
+<text x="-8.89" y="16.51" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="0" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-5.08" size="1.016" layer="21" ratio="18">DC-DC</text>
+<text x="-5.08" y="13.335" size="1.016" layer="21" ratio="18">1</text>
+<text x="3.175" y="13.335" size="1.016" layer="21" ratio="18">24</text>
+<text x="-5.08" y="-14.605" size="1.016" layer="21" ratio="18">12</text>
+<text x="3.175" y="-14.605" size="1.016" layer="21" ratio="18">13</text>
+</package>
+<package name="UEP">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<wire x1="-22.86" y1="12.7" x2="22.86" y2="12.7" width="0.254" layer="21"/>
+<wire x1="22.86" y1="12.7" x2="22.86" y2="-12.7" width="0.254" layer="21"/>
+<wire x1="22.86" y1="-12.7" x2="-22.86" y2="-12.7" width="0.254" layer="21"/>
+<wire x1="-22.86" y1="-12.7" x2="-22.86" y2="12.7" width="0.254" layer="21"/>
+<pad name="1" x="-20.32" y="-7.62" drill="1.4224" diameter="3.175" shape="square" rot="R180"/>
+<pad name="3" x="-20.32" y="7.62" drill="1.4224" diameter="3.175" shape="octagon" rot="R180"/>
+<pad name="2" x="-20.32" y="-2.54" drill="1.4224" diameter="3.175" shape="octagon" rot="R180"/>
+<pad name="4" x="20.32" y="-10.16" drill="1.4224" diameter="3.175" shape="octagon"/>
+<pad name="5" x="20.32" y="0" drill="1.4224" diameter="3.175" shape="octagon"/>
+<pad name="6" x="20.32" y="10.16" drill="1.4224" diameter="3.175" shape="octagon"/>
+<text x="-22.86" y="13.97" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<polygon width="0.254" layer="21">
+<vertex x="-20.32" y="-10.16"/>
+<vertex x="-21.2725" y="-11.43"/>
+<vertex x="-19.3675" y="-11.43"/>
+</polygon>
+</package>
+<package name="R-78XX">
+<description>R-78xx-0.5 Series&lt;p&gt;RECOM Intl.</description>
+<wire x1="-6" y1="5.25" x2="6" y2="5.25" width="0.2032" layer="21"/>
+<wire x1="6" y1="5.25" x2="6" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="6" y1="-2.75" x2="-6" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-2.75" x2="-6" y2="5.25" width="0.2032" layer="21"/>
+<circle x="-4.766" y="-1.492" radius="0.449" width="0" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" diameter="1.9304" shape="square"/>
+<pad name="2" x="0" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<pad name="3" x="2.54" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<text x="-6.985" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-2.54" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="EC6A">
+<description>EC6A Series - CINCON</description>
+<wire x1="16.002" y1="-10.16" x2="-15.748" y2="-10.16" width="0.2032" layer="21"/>
+<wire x1="-15.748" y1="-10.16" x2="-15.748" y2="10.16" width="0.2032" layer="21"/>
+<wire x1="-15.748" y1="10.16" x2="16.002" y2="10.16" width="0.2032" layer="21"/>
+<wire x1="16.002" y1="10.16" x2="16.002" y2="-10.16" width="0.2032" layer="21"/>
+<pad name="2" x="-11.43" y="-7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<pad name="3" x="-8.89" y="-7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<pad name="9" x="6.35" y="-7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<pad name="10" x="8.89" y="-7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<pad name="11" x="11.43" y="-7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<pad name="14" x="11.43" y="7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<pad name="15" x="8.89" y="7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<pad name="16" x="6.35" y="7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<pad name="22" x="-8.89" y="7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<pad name="23" x="-11.43" y="7.62" drill="0.7112" diameter="1.6764" shape="octagon" rot="R270"/>
+<text x="-15.621" y="11.049" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="4SIL">
+<description>&lt;b&gt;4 Pin DIL Package&lt;/b&gt;&lt;p&gt;
+Motien Technology Co.,Ltd.&lt;br&gt;
+Source: va-serie.pdf.pdf</description>
+<wire x1="5.75" y1="-1.15" x2="-5.75" y2="-1.15" width="0.2032" layer="21"/>
+<wire x1="-5.75" y1="-1.15" x2="-5.75" y2="3.65" width="0.2032" layer="21"/>
+<wire x1="-5.75" y1="3.65" x2="5.75" y2="3.65" width="0.2032" layer="21"/>
+<wire x1="5.75" y1="3.65" x2="5.75" y2="-1.15" width="0.2032" layer="21"/>
+<pad name="1" x="-3.81" y="0" drill="0.8"/>
+<pad name="2" x="-1.27" y="0" drill="0.8"/>
+<pad name="3" x="1.27" y="0" drill="0.8"/>
+<pad name="4" x="3.81" y="0" drill="0.8"/>
+<text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="8DIL-4">
+<description>&lt;b&gt;8 DIL Package&lt;/b&gt; 4 Pads&lt;p&gt;
+Motien Technology Co.,Ltd.&lt;br&gt;
+Source: va-serie.pdf.pdf</description>
+<wire x1="-6.2484" y1="-4.9784" x2="-6.2484" y2="4.9784" width="0.2032" layer="21"/>
+<wire x1="-6.2484" y1="4.9784" x2="6.2484" y2="4.9784" width="0.2032" layer="21"/>
+<wire x1="6.2484" y1="4.9784" x2="6.2484" y2="-4.9784" width="0.2032" layer="21"/>
+<wire x1="6.2484" y1="-4.9784" x2="-6.2484" y2="-4.9784" width="0.2032" layer="21"/>
+<circle x="-5.2197" y="-2.8067" radius="0.6477" width="0" layer="21"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.7" diameter="1.27"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.7" diameter="1.27"/>
+<pad name="5" x="3.81" y="3.81" drill="0.7" diameter="1.27"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.7" diameter="1.27"/>
+<text x="-6.35" y="-6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="0" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="8DIL-6">
+<description>&lt;b&gt;8 DIL Package&lt;/b&gt; 6 Pads&lt;p&gt;
+Motien Technology Co.,Ltd.&lt;br&gt;
+Source: VA-D01.pdf</description>
+<wire x1="-6.2484" y1="-4.9784" x2="-6.2484" y2="4.9784" width="0.2032" layer="21"/>
+<wire x1="-6.2484" y1="4.9784" x2="6.2484" y2="4.9784" width="0.2032" layer="21"/>
+<wire x1="6.2484" y1="4.9784" x2="6.2484" y2="-4.9784" width="0.2032" layer="21"/>
+<wire x1="6.2484" y1="-4.9784" x2="-6.2484" y2="-4.9784" width="0.2032" layer="21"/>
+<circle x="-5.2197" y="-2.8067" radius="0.6477" width="0" layer="21"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.7" diameter="1.27"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.7" diameter="1.27"/>
+<pad name="5" x="3.81" y="3.81" drill="0.7" diameter="1.27"/>
+<pad name="6" x="1.27" y="3.81" drill="0.7" diameter="1.27"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.7" diameter="1.27"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.7" diameter="1.27"/>
+<text x="-6.35" y="-6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="0" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="VBT1">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;&lt;p&gt;
+V-INFINITY, CUI Inc.</description>
+<wire x1="-6.35" y1="3.81" x2="-4.7625" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="-4.7625" y1="3.81" x2="4.7625" y2="3.81" width="0.2032" layer="51"/>
+<wire x1="4.7625" y1="3.81" x2="6.35" y2="3.81" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="3.81" x2="6.35" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="-3.81" x2="4.7625" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="4.7625" y1="-3.81" x2="-4.7625" y2="-3.81" width="0.2032" layer="51"/>
+<wire x1="-4.7625" y1="-3.81" x2="-6.35" y2="-3.81" width="0.2032" layer="21"/>
+<wire x1="-6.35" y1="-3.81" x2="-6.35" y2="3.81" width="0.2032" layer="21"/>
+<circle x="-5.08" y="-2.54" radius="0.635" width="0" layer="51"/>
+<smd name="1" x="-3.81" y="-4.826" dx="1.016" dy="2.159" layer="1" roundness="50" rot="R180"/>
+<smd name="2" x="-1.27" y="-4.826" dx="1.016" dy="2.159" layer="1" roundness="50" rot="R180"/>
+<smd name="3" x="1.27" y="-4.826" dx="1.016" dy="2.159" layer="1" roundness="50" rot="R180"/>
+<smd name="4" x="3.81" y="-4.826" dx="1.016" dy="2.159" layer="1" roundness="50" rot="R180"/>
+<smd name="5" x="3.81" y="4.826" dx="1.016" dy="2.159" layer="1" roundness="50" rot="R180"/>
+<smd name="6" x="1.27" y="4.826" dx="1.016" dy="2.159" layer="1" roundness="50" rot="R180"/>
+<smd name="7" x="-1.27" y="4.826" dx="1.016" dy="2.159" layer="1" roundness="50" rot="R180"/>
+<smd name="8" x="-3.81" y="4.826" dx="1.016" dy="2.159" layer="1" roundness="50" rot="R180"/>
+<text x="-6.6675" y="-3.81" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="7.62" y="-3.81" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
+<package name="NMKXXXXSAC">
+<description>&lt;b&gt;DC-DC Convertor&lt;/b&gt;&lt;p&gt;
+MuRata NMK Series</description>
+<wire x1="-10.16" y1="1.27" x2="10.16" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="1.27" x2="10.16" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="-6.985" x2="-10.16" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-6.985" x2="-10.16" y2="1.27" width="0.2032" layer="21"/>
+<circle x="-7.62" y="-1.905" radius="0.449" width="0" layer="21"/>
+<pad name="1" x="-7.62" y="0" drill="1.016" diameter="1.9304" shape="square"/>
+<pad name="2" x="-5.08" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<pad name="5" x="2.54" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<pad name="7" x="7.62" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<text x="-10.16" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-10.16" y="-8.255" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="DC+-">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.4064" layer="94"/>
+<text x="-10.16" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.763" y="-6.604" size="1.27" layer="95">DC/DC CONVERTER</text>
+<pin name="+VIN" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="-VIN" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="+VOUT" x="12.7" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="COM" x="12.7" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT" x="12.7" y="-2.54" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DC+2">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.4064" layer="94"/>
+<text x="-10.16" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.636" y="-6.985" size="1.27" layer="95">DC/DC CONVERTER</text>
+<pin name="+VIN" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="-VIN" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="+VOUT" x="12.7" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT" x="12.7" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="+VOUT1" x="17.78" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="-VOUT1" x="17.78" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="-VIN1" x="-17.78" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="+VIN1" x="-17.78" y="2.54" visible="pad" length="middle" direction="pas"/>
+</symbol>
+<symbol name="DC+-R">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="7.62" width="0.4064" layer="94"/>
+<text x="-10.16" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.763" y="-9.144" size="1.27" layer="95">DC/DC CONVERTER</text>
+<pin name="+VIN" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="-VIN" x="-12.7" y="-5.08" length="short" direction="pas"/>
+<pin name="+VOUT" x="12.7" y="5.08" length="short" direction="pas" rot="R180"/>
+<pin name="COM" x="12.7" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT" x="12.7" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="REM" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="SYNC" x="-12.7" y="5.08" length="short" direction="pas"/>
+</symbol>
+<symbol name="DC+">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.4064" layer="94"/>
+<text x="-10.16" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.636" y="-6.731" size="1.27" layer="95">DC/DC CONVERTER</text>
+<pin name="+VIN" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="-VIN" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="+VOUT" x="12.7" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT" x="12.7" y="-2.54" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DC+-2">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="5.08" width="0.4064" layer="94"/>
+<text x="-10.16" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.636" y="-6.985" size="1.27" layer="95">DC/DC CONVERTER</text>
+<pin name="+VIN" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="-VIN" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="+VOUT" x="12.7" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT" x="12.7" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="+VOUT1" x="17.78" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="-VOUT1" x="17.78" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="-VIN1" x="-17.78" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="+VIN1" x="-17.78" y="2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="COM" x="12.7" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="COM1" x="17.78" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DC+-2C4">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="5.08" width="0.4064" layer="94"/>
+<text x="-10.16" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.636" y="-9.525" size="1.27" layer="95">DC/DC CONVERTER</text>
+<pin name="+VIN" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="-VIN" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="+VOUT" x="12.7" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT" x="12.7" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="+VOUT1" x="17.78" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="-VOUT1" x="17.78" y="-5.08" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="-VIN1" x="-17.78" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="+VIN1" x="-17.78" y="2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="COM" x="12.7" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="COM1" x="17.78" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="COM@1" x="12.7" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="COM2" x="17.78" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="DC+2-2">
+<wire x1="-10.16" y1="5.08" x2="10.16" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="5.08" width="0.4064" layer="94"/>
+<text x="-10.16" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.636" y="-9.525" size="1.27" layer="95">DC/DC CONVERTER</text>
+<pin name="+VIN" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="-VIN" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="+VOUT1" x="12.7" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT2" x="12.7" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="+VOUT@1" x="17.78" y="2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="-VOUT@2" x="17.78" y="-5.08" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="-VIN1" x="-17.78" y="-2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="+VIN1" x="-17.78" y="2.54" visible="pad" length="middle" direction="pas"/>
+<pin name="-VOUT1" x="12.7" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT@1" x="17.78" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="+VOUT2" x="12.7" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="+VOUT@2" x="17.78" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="UEP">
+<wire x1="-12.7" y1="10.16" x2="12.7" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="10.16" x2="12.7" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="-12.7" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="-12.7" y2="10.16" width="0.4064" layer="94"/>
+<text x="-12.7" y="11.43" size="1.778" layer="95" ratio="10">&gt;NAME</text>
+<text x="-12.7" y="-13.335" size="1.778" layer="96" ratio="10">&gt;VALUE</text>
+<pin name="IN+" x="-17.78" y="7.62" length="middle" direction="pas"/>
+<pin name="IN-" x="-17.78" y="0" length="middle" direction="pas"/>
+<pin name="ON/!OFF!" x="-17.78" y="-7.62" length="middle" direction="in"/>
+<pin name="TRIM" x="17.78" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="OUT-" x="17.78" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="OUT+" x="17.78" y="7.62" length="middle" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="R-78XX">
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-5.08" x2="5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="5.08" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<text x="-5.08" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.08" y="6.35" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.032" y="-4.318" size="1.524" layer="95">GND</text>
+<text x="-4.445" y="-0.635" size="1.524" layer="95">IN</text>
+<text x="0.635" y="-0.635" size="1.524" layer="95">OUT</text>
+<text x="-2.7623" y="2.8575" size="1.27" layer="95">DC/DC</text>
+<pin name="IN" x="-7.62" y="0" visible="off" length="short" direction="in"/>
+<pin name="GND" x="0" y="-7.62" visible="off" length="short" direction="in" rot="R90"/>
+<pin name="OUT" x="7.62" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="EC6A-S">
+<wire x1="-12.7" y1="7.62" x2="15.24" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="7.62" x2="15.24" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="-12.7" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.4064" layer="94"/>
+<text x="-12.7" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-1.651" y="-0.381" size="1.27" layer="95">DC/DC</text>
+<pin name="+VIN@22" x="-17.78" y="5.08" length="middle" direction="pas"/>
+<pin name="-VIN@3" x="-17.78" y="-5.08" length="middle" direction="pas"/>
+<pin name="+VOUT" x="20.32" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="-VOUT" x="20.32" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="+VIN@23" x="-17.78" y="2.54" length="middle" direction="pas"/>
+<pin name="-VIN@2" x="-17.78" y="-2.54" length="middle" direction="pas"/>
+</symbol>
+<symbol name="EC6A-D">
+<wire x1="-12.7" y1="10.16" x2="15.24" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="10.16" x2="15.24" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="-7.62" x2="-12.7" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="10.16" width="0.4064" layer="94"/>
+<text x="-12.7" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-2.286" y="0.889" size="1.27" layer="95">DC/DC</text>
+<pin name="+VIN@22" x="-17.78" y="7.62" length="middle" direction="pas"/>
+<pin name="-VIN@3" x="-17.78" y="-5.08" length="middle" direction="pas"/>
+<pin name="+VOUT" x="20.32" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="-VOUT" x="20.32" y="-5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="COM@9" x="20.32" y="2.54" length="middle" direction="pas" rot="R180"/>
+<pin name="COM@16" x="20.32" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="+VIN@23" x="-17.78" y="5.08" length="middle" direction="pas"/>
+<pin name="-VIN@2" x="-17.78" y="-2.54" length="middle" direction="pas"/>
+</symbol>
+<symbol name="DC2ISOLATE-OUT">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-10.16" x2="-10.16" y2="-10.16" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-10.16" x2="-10.16" y2="7.62" width="0.4064" layer="94"/>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-8.636" y="-9.525" size="1.27" layer="95">DC/DC CONVERTER</text>
+<pin name="+VIN" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="-VIN" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="+VOUT1" x="12.7" y="5.08" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT1" x="12.7" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="+VOUT2" x="12.7" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="-VOUT2" x="12.7" y="-5.08" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="VBT1-SMT">
+<wire x1="-12.7" y1="7.62" x2="-2.54" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="7.62" x2="-2.54" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="-7.62" x2="-12.7" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-7.62" x2="-12.7" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="7.62" x2="12.7" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="12.7" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="2.54" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="7.62" width="0.4064" layer="94"/>
+<text x="-9.525" y="-1.143" size="2.54" layer="94" ratio="18">DC</text>
+<text x="5.715" y="-1.143" size="2.54" layer="94" ratio="18">DC</text>
+<text x="-12.7" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-10.795" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-1.27" y1="-6.985" x2="1.27" y2="6.985" layer="94"/>
+<pin name="VIN+" x="-17.78" y="5.08" length="middle" direction="pas"/>
+<pin name="VIN-" x="-17.78" y="-5.08" length="middle" direction="pas"/>
+<pin name="+VOUT" x="17.78" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="-VOUT" x="17.78" y="-5.08" length="middle" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="DC213R" prefix="DC" uservalue="yes">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC+2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CMK">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VIN1" pad="24"/>
+<connect gate="G$1" pin="+VOUT" pad="11"/>
+<connect gate="G$1" pin="+VOUT1" pad="14"/>
+<connect gate="G$1" pin="-VIN" pad="12"/>
+<connect gate="G$1" pin="-VIN1" pad="13"/>
+<connect gate="G$1" pin="-VOUT" pad="10"/>
+<connect gate="G$1" pin="-VOUT1" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PWR1726" prefix="DC" uservalue="yes">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="DC+-R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PWR1726">
+<connects>
+<connect gate="1" pin="+VIN" pad="16"/>
+<connect gate="1" pin="+VOUT" pad="32"/>
+<connect gate="1" pin="-VIN" pad="14"/>
+<connect gate="1" pin="-VOUT" pad="1"/>
+<connect gate="1" pin="COM" pad="30"/>
+<connect gate="1" pin="REM" pad="18"/>
+<connect gate="1" pin="SYNC" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NME" prefix="DC" uservalue="yes">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NME">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="2"/>
+<connect gate="G$1" pin="+VOUT" pad="4"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NMA" prefix="DC" uservalue="yes">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC+-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NMA">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VOUT" pad="6"/>
+<connect gate="G$1" pin="-VIN" pad="2"/>
+<connect gate="G$1" pin="-VOUT" pad="4"/>
+<connect gate="G$1" pin="COM" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCW1U" prefix="DC" uservalue="yes">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC+2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DCW">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VIN1" pad="24"/>
+<connect gate="G$1" pin="+VOUT" pad="11"/>
+<connect gate="G$1" pin="+VOUT1" pad="14"/>
+<connect gate="G$1" pin="-VIN" pad="12"/>
+<connect gate="G$1" pin="-VIN1" pad="13"/>
+<connect gate="G$1" pin="-VOUT" pad="10"/>
+<connect gate="G$1" pin="-VOUT1" pad="15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCW2C" prefix="DC" uservalue="yes">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC+-2C4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DCW">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VIN1" pad="24"/>
+<connect gate="G$1" pin="+VOUT" pad="11"/>
+<connect gate="G$1" pin="+VOUT1" pad="14"/>
+<connect gate="G$1" pin="-VIN" pad="12"/>
+<connect gate="G$1" pin="-VIN1" pad="13"/>
+<connect gate="G$1" pin="-VOUT" pad="2"/>
+<connect gate="G$1" pin="-VOUT1" pad="23"/>
+<connect gate="G$1" pin="COM" pad="10"/>
+<connect gate="G$1" pin="COM1" pad="15"/>
+<connect gate="G$1" pin="COM2" pad="22"/>
+<connect gate="G$1" pin="COM@1" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DCW2U" prefix="DC" uservalue="yes">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC+2-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DCW">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VIN1" pad="24"/>
+<connect gate="G$1" pin="+VOUT1" pad="11"/>
+<connect gate="G$1" pin="+VOUT2" pad="3"/>
+<connect gate="G$1" pin="+VOUT@1" pad="14"/>
+<connect gate="G$1" pin="+VOUT@2" pad="22"/>
+<connect gate="G$1" pin="-VIN" pad="12"/>
+<connect gate="G$1" pin="-VIN1" pad="13"/>
+<connect gate="G$1" pin="-VOUT1" pad="10"/>
+<connect gate="G$1" pin="-VOUT2" pad="2"/>
+<connect gate="G$1" pin="-VOUT@1" pad="15"/>
+<connect gate="G$1" pin="-VOUT@2" pad="23"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DIW2" prefix="U" uservalue="yes">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC+-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIW2">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VOUT" pad="6"/>
+<connect gate="G$1" pin="-VIN" pad="2"/>
+<connect gate="G$1" pin="-VOUT" pad="4"/>
+<connect gate="G$1" pin="COM" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UEP" prefix="U">
+<description>&lt;b&gt;Datel UEP Series&lt;/b&gt;&lt;p&gt; 
+DC-DC, Single Output</description>
+<gates>
+<gate name="G$1" symbol="UEP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="UEP">
+<connects>
+<connect gate="G$1" pin="IN+" pad="1"/>
+<connect gate="G$1" pin="IN-" pad="2"/>
+<connect gate="G$1" pin="ON/!OFF!" pad="3"/>
+<connect gate="G$1" pin="OUT+" pad="4"/>
+<connect gate="G$1" pin="OUT-" pad="5"/>
+<connect gate="G$1" pin="TRIM" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="R-78XX" prefix="U">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;&lt;p&gt; 
+R-78xx-0.5 Series&lt;p&gt;RECOM International</description>
+<gates>
+<gate name="G$1" symbol="R-78XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="R-78XX">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EC6A-S" prefix="U">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;&lt;p&gt;
+CINCON EC6A - Single Output</description>
+<gates>
+<gate name="G$1" symbol="EC6A-S" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EC6A">
+<connects>
+<connect gate="G$1" pin="+VIN@22" pad="22"/>
+<connect gate="G$1" pin="+VIN@23" pad="23"/>
+<connect gate="G$1" pin="+VOUT" pad="14"/>
+<connect gate="G$1" pin="-VIN@2" pad="2"/>
+<connect gate="G$1" pin="-VIN@3" pad="3"/>
+<connect gate="G$1" pin="-VOUT" pad="16"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EC6A-D" prefix="U">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;&lt;p&gt;
+CINCON EC6A - Dual Output</description>
+<gates>
+<gate name="G$1" symbol="EC6A-D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EC6A">
+<connects>
+<connect gate="G$1" pin="+VIN@22" pad="22"/>
+<connect gate="G$1" pin="+VIN@23" pad="23"/>
+<connect gate="G$1" pin="+VOUT" pad="14"/>
+<connect gate="G$1" pin="-VIN@2" pad="2"/>
+<connect gate="G$1" pin="-VIN@3" pad="3"/>
+<connect gate="G$1" pin="-VOUT" pad="11"/>
+<connect gate="G$1" pin="COM@16" pad="16"/>
+<connect gate="G$1" pin="COM@9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VA-*?" prefix="DC">
+<description>&lt;b&gt;DC DC Converter&lt;/b&gt; Single Output, 1 Watt&lt;p&gt;
+Motien Technology Co.,Ltd.&lt;br&gt;
+Source: va-serie.pdf</description>
+<gates>
+<gate name="G$1" symbol="DC+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="S1" package="4SIL">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="2"/>
+<connect gate="G$1" pin="+VOUT" pad="4"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="0505"/>
+<technology name="0509"/>
+<technology name="0512"/>
+<technology name="0515"/>
+<technology name="0524"/>
+<technology name="1205"/>
+<technology name="1209"/>
+<technology name="1212"/>
+<technology name="1215"/>
+<technology name="1224"/>
+<technology name="2405"/>
+<technology name="2409"/>
+<technology name="2412"/>
+<technology name="2415"/>
+<technology name="2424"/>
+</technologies>
+</device>
+<device name="D1" package="8DIL-4">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="4"/>
+<connect gate="G$1" pin="+VOUT" pad="5"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name="0505"/>
+<technology name="0509"/>
+<technology name="0512"/>
+<technology name="0515"/>
+<technology name="0524"/>
+<technology name="1205"/>
+<technology name="1209"/>
+<technology name="1212"/>
+<technology name="1215"/>
+<technology name="1224"/>
+<technology name="2405"/>
+<technology name="2409"/>
+<technology name="2412"/>
+<technology name="2415"/>
+<technology name="2424"/>
+</technologies>
+</device>
+<device name="S" package="4SIL">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="2"/>
+<connect gate="G$1" pin="+VOUT" pad="4"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="0505"/>
+<technology name="0509"/>
+<technology name="0512"/>
+<technology name="0515"/>
+<technology name="0524"/>
+<technology name="1205"/>
+<technology name="1209"/>
+<technology name="1212"/>
+<technology name="1215"/>
+<technology name="1224"/>
+<technology name="2405"/>
+<technology name="2409"/>
+<technology name="2412"/>
+<technology name="2415"/>
+<technology name="2424"/>
+</technologies>
+</device>
+<device name="D" package="8DIL-4">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="4"/>
+<connect gate="G$1" pin="+VOUT" pad="5"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name="0505"/>
+<technology name="0509"/>
+<technology name="0512"/>
+<technology name="0515"/>
+<technology name="0524"/>
+<technology name="1205"/>
+<technology name="1209"/>
+<technology name="1212"/>
+<technology name="1215"/>
+<technology name="1224"/>
+<technology name="2405"/>
+<technology name="2409"/>
+<technology name="2412"/>
+<technology name="2415"/>
+<technology name="2424"/>
+</technologies>
+</device>
+<device name="DD1" package="8DIL-6">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="4"/>
+<connect gate="G$1" pin="+VOUT" pad="5"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="8"/>
+</connects>
+<technologies>
+<technology name="0505"/>
+<technology name="0509"/>
+<technology name="0512"/>
+<technology name="0515"/>
+<technology name="0524"/>
+<technology name="1205"/>
+<technology name="1209"/>
+<technology name="1212"/>
+<technology name="1215"/>
+<technology name="1224"/>
+<technology name="2405"/>
+<technology name="2409"/>
+<technology name="2412"/>
+<technology name="2415"/>
+<technology name="2424"/>
+</technologies>
+</device>
+<device name="S1.5" package="4SIL">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="2"/>
+<connect gate="G$1" pin="+VOUT" pad="4"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name="0505"/>
+<technology name="0509"/>
+<technology name="0512"/>
+<technology name="0515"/>
+<technology name="0524"/>
+<technology name="1205"/>
+<technology name="1209"/>
+<technology name="1212"/>
+<technology name="1215"/>
+<technology name="1224"/>
+<technology name="2405"/>
+<technology name="2409"/>
+<technology name="2412"/>
+<technology name="2415"/>
+<technology name="2424"/>
+</technologies>
+</device>
+<device name="D1.5" package="8DIL-6">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="4"/>
+<connect gate="G$1" pin="+VOUT" pad="5"/>
+<connect gate="G$1" pin="-VIN" pad="1"/>
+<connect gate="G$1" pin="-VOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name="0505"/>
+<technology name="0509"/>
+<technology name="0512"/>
+<technology name="0515"/>
+<technology name="0524"/>
+<technology name="1205"/>
+<technology name="1209"/>
+<technology name="1212"/>
+<technology name="1215"/>
+<technology name="1224"/>
+<technology name="2405"/>
+<technology name="2409"/>
+<technology name="2412"/>
+<technology name="2415"/>
+<technology name="2424"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VA-*D01" prefix="DC">
+<description>&lt;b&gt;DC DC Converter&lt;/b&gt; Dual Separate Output, 1 Watt&lt;p&gt;
+Motien Technology Co.,Ltd.&lt;br&gt;
+Source: VA-D01.pdf</description>
+<gates>
+<gate name="G$1" symbol="DC2ISOLATE-OUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="8DIL-6">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VOUT1" pad="5"/>
+<connect gate="G$1" pin="+VOUT2" pad="7"/>
+<connect gate="G$1" pin="-VIN" pad="4"/>
+<connect gate="G$1" pin="-VOUT1" pad="6"/>
+<connect gate="G$1" pin="-VOUT2" pad="8"/>
+</connects>
+<technologies>
+<technology name="0505"/>
+<technology name="0509"/>
+<technology name="0512"/>
+<technology name="0515"/>
+<technology name="0524"/>
+<technology name="1205"/>
+<technology name="1209"/>
+<technology name="1212"/>
+<technology name="1215"/>
+<technology name="1224"/>
+<technology name="2405"/>
+<technology name="2409"/>
+<technology name="2412"/>
+<technology name="2415"/>
+<technology name="2424"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBT1-SMT" prefix="U">
+<description>&lt;b&gt;DC-DC Convertor&lt;/b&gt;&lt;p&gt;
+V-INFINITY (CUI Inc)</description>
+<gates>
+<gate name="G$1" symbol="VBT1-SMT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VBT1">
+<connects>
+<connect gate="G$1" pin="+VOUT" pad="5"/>
+<connect gate="G$1" pin="-VOUT" pad="4"/>
+<connect gate="G$1" pin="VIN+" pad="2"/>
+<connect gate="G$1" pin="VIN-" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NMKXXXXSAC" prefix="DC">
+<description>&lt;b&gt;DC-DC CONVERTER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DC+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NMKXXXXSAC">
+<connects>
+<connect gate="G$1" pin="+VIN" pad="1"/>
+<connect gate="G$1" pin="+VOUT" pad="7"/>
+<connect gate="G$1" pin="-VIN" pad="2"/>
+<connect gate="G$1" pin="-VOUT" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

@@ -1,0 +1,3248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;ECL Logic Devices&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="DIL16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<wire x1="10.16" y1="1.905" x2="-10.16" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="1.905" x2="-10.16" y2="0.6985" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-1.905" x2="-10.16" y2="-0.6985" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="0.6985" x2="-10.16" y2="-0.6985" width="0.2032" layer="21" curve="-180"/>
+<pad name="1" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90" first="yes"/>
+<pad name="2" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-10.795" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-7.62" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="DIL24-6">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.6 inch</description>
+<wire x1="-15.24" y1="-0.9525" x2="-15.24" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="-15.24" y1="0.9525" x2="-15.24" y2="-0.9525" width="0.2032" layer="21" curve="-180"/>
+<wire x1="15.24" y1="-5.715" x2="15.24" y2="5.715" width="0.2032" layer="21"/>
+<wire x1="-15.24" y1="5.715" x2="-15.24" y2="0.9525" width="0.2032" layer="21"/>
+<wire x1="-15.24" y1="5.715" x2="15.24" y2="5.715" width="0.2032" layer="21"/>
+<wire x1="-15.24" y1="-5.715" x2="15.24" y2="-5.715" width="0.2032" layer="21"/>
+<pad name="1" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90" first="yes"/>
+<pad name="2" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="-1.27" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="-3.81" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="-6.35" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-8.89" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
+<text x="-15.875" y="-6.35" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-12.065" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="DIL24-3">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.3 inch</description>
+<wire x1="15.24" y1="-1.905" x2="15.24" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="-1.905" x2="15.24" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="1.905" x2="15.24" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="1.905" x2="-14.9225" y2="0.6985" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="-1.905" x2="-14.9225" y2="-0.6985" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="0.6985" x2="-14.9225" y2="-0.6985" width="0.2032" layer="21" curve="-180"/>
+<pad name="1" x="-13.97" y="-3.81" drill="0.8128" shape="long" rot="R90" first="yes"/>
+<pad name="2" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-15.875" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-13.335" y="-0.9525" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="MC10119">
+<wire x1="-7.62" y1="-17.78" x2="5.08" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-17.78" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-17.78" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="O" x="10.16" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="A0" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="B0" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="B1" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="B/C" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="C1" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="C2" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="D0" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="-15.24" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC10121">
+<wire x1="-7.62" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="-15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="O" x="10.16" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="!O" x="10.16" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="A0" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="B1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="B2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="B/C" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="C1" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="C2" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="D3" x="-12.7" y="-12.7" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC10124">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="O1" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="O0" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="!O1" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="!O0" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="I0" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="INCOMMON" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="I1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="I2" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="I3" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="!O2" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="!O3" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="O3" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="O2" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10128">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="STROBE" x="-12.7" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="RESET" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="CLK" x="-12.7" y="-7.62" length="middle" direction="in" function="clk"/>
+<pin name="D0" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="DIS0" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="CNTL0" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="Q0" x="12.7" y="12.7" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="D1" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="Q1" x="12.7" y="2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="CNTL1" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="DIS1" x="-12.7" y="-2.54" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC10129">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q3" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="D3" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="CONTROL" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="RESET" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="CLK" x="-12.7" y="-2.54" length="middle" direction="in" function="clk"/>
+<pin name="STROBE" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="Q0" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="D0" x="-12.7" y="10.16" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC10133">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q0" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="D0" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="CE@1" x="-12.7" y="-5.08" length="middle" direction="in" function="dot"/>
+<pin name="G0" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="Q1" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="D1" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="G1" x="-12.7" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="Q2" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="CE@2" x="-12.7" y="-7.62" length="middle" direction="in" function="dot"/>
+<pin name="CLK" x="-12.7" y="0" length="middle" direction="in" function="clk"/>
+<pin name="D3" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="Q3" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10136">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q2" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q3" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="COUT" x="12.7" y="-5.08" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="D3" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="S2" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="S1" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="CIN" x="-12.7" y="-5.08" length="middle" direction="in" function="dot"/>
+<pin name="D1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="D0" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="CLK" x="-12.7" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="Q0" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10138">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q3" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="!Q3" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="S3" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="S2" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="CLK2" x="-12.7" y="7.62" length="middle" direction="in" function="clk"/>
+<pin name="RESET" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="S1" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="S0" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="CLK1" x="-12.7" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="Q1" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="!Q0" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Q0" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10141">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q2" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q3" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="CLK" x="-12.7" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="DR" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D3" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="S2" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="S1" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="D0" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="DL" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="Q0" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10154">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q3" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="!Q3" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="S3" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="S2" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="S1" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="RESET" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="CLK2" x="-12.7" y="7.62" length="middle" direction="in" function="clk"/>
+<pin name="S0" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="CLK1" x="-12.7" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="Q1" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="!Q0" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Q0" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10158">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q0" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="D11" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="D10" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="D01" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="D00" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="SEL" x="-12.7" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="D31" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="D30" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D21" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="D20" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="Q3" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10159">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q0" x="12.7" y="12.7" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q1" x="12.7" y="7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="D11" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="D10" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="D01" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="D00" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="ENABLE" x="-12.7" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="SEL" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="D31" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D30" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="D21" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="D20" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="Q3" x="12.7" y="-2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q2" x="12.7" y="2.54" length="middle" direction="out" function="dot" rot="R180"/>
+</symbol>
+<symbol name="MC10160">
+<wire x1="-7.62" y1="-17.78" x2="7.62" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-17.78" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OUT" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="I1" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="I2" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="I3" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="I4" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="I5" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="I6" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="I7" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="I8" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="I9" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="I10" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="I11" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="I12" x="-12.7" y="-15.24" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC10162">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="E0" x="-12.7" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="Q3" x="12.7" y="0" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q2" x="12.7" y="2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q1" x="12.7" y="5.08" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q0" x="12.7" y="7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="A" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="B" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="Q7" x="12.7" y="-10.16" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q6" x="12.7" y="-7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q5" x="12.7" y="-5.08" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q4" x="12.7" y="-2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="C" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="E1" x="-12.7" y="5.08" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="MC10161">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="E0" x="-12.7" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="Q3" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q0" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="A" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="B" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="Q7" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Q6" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Q5" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q4" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="C" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="E1" x="-12.7" y="5.08" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="MC10163">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P0B" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="P3" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="B5" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="B6" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="B2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="B1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="B0" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="B3" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="B7" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="B4" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="P2" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="P1" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="P0A" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10164">
+<wire x1="-7.62" y1="-17.78" x2="7.62" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="7.62" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="-7.62" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="17.78" x2="-7.62" y2="-17.78" width="0.4064" layer="94"/>
+<text x="-7.62" y="18.415" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="ENABLE" x="-12.7" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="X3" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="X2" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="X1" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="X0" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="B" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="C" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="X4" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="X5" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="X6" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="X7" x="-12.7" y="-15.24" length="middle" direction="in"/>
+<pin name="Z" x="12.7" y="12.7" length="middle" direction="out" function="dot" rot="R180"/>
+</symbol>
+<symbol name="MC10165">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q1" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q0" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="CLK" x="-12.7" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="D0" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="D7" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="D6" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="D3" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="D4" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D5" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="Q3" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10166">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A&gt;B" x="12.7" y="7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="A&lt;B" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="B0" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A0" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="B1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A4" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="B4" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="B3" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="B2" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="!EN" x="-12.7" y="-12.7" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC10168">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q0" x="12.7" y="2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="D0" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="G1" x="-12.7" y="-2.54" length="middle" direction="in" function="dot"/>
+<pin name="G0" x="-12.7" y="2.54" length="middle" direction="in" function="dot"/>
+<pin name="Q1" x="12.7" y="-2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="D1" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="G3" x="-12.7" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="Q2" x="12.7" y="-7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="G2" x="-12.7" y="-7.62" length="middle" direction="in" function="dot"/>
+<pin name="CLK" x="-12.7" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="D3" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="Q3" x="12.7" y="-12.7" length="middle" direction="out" function="dot" rot="R180"/>
+</symbol>
+<symbol name="MC10170">
+<wire x1="-7.62" y1="-17.78" x2="7.62" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-17.78" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-17.78" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="ODD" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="D0" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="D3" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="D4" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="D5" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="D6" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="D7" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D8" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="HI" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="LO" x="-12.7" y="-15.24" length="middle" direction="in"/>
+<pin name="EVEN" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10171">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="E1" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="Q13" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Q12" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Q11" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q10" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="B" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="A" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="Q03" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Q02" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q01" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q00" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="E0" x="-12.7" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="E" x="-12.7" y="-5.08" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="MC10172">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="E1" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="Q13" x="12.7" y="-10.16" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q12" x="12.7" y="-7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q11" x="12.7" y="-5.08" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q10" x="12.7" y="-2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="B" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="A" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="Q03" x="12.7" y="0" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q02" x="12.7" y="2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q01" x="12.7" y="5.08" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q00" x="12.7" y="7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="E0" x="-12.7" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="E" x="-12.7" y="-5.08" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="MC10173">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q0" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="D11" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="D10" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="D01" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="D00" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="CLK" x="-12.7" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="SELECT" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="D31" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="D30" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="D21" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="D20" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="Q3" x="12.7" y="-12.7" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10174">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="15.24" x2="-7.62" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="15.24" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q0" x="12.7" y="7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="D00" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="D02" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="D01" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="D03" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="B" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="D13" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="D11" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D12" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="D10" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="ENABLE" x="-12.7" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="Q1" x="12.7" y="-7.62" length="middle" direction="out" function="dot" rot="R180"/>
+</symbol>
+<symbol name="MC10175">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q2" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q3" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q4" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="D4" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="CLK0" x="-12.7" y="-5.08" length="middle" direction="in" function="clk"/>
+<pin name="CLK1" x="-12.7" y="-7.62" length="middle" direction="in" function="clk"/>
+<pin name="D3" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="D0" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="RESET" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="Q0" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10176">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q0" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="D0" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="CLK" x="-12.7" y="-10.16" length="middle" direction="in" function="clk"/>
+<pin name="D3" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="D4" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="D5" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="Q3" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Q4" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q5" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10179">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="GG" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="CN+4" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="G0" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="G3" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="CN+2" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="G1" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="G2" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="P1" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="CN" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="P2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="P3" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="P0" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="PG" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10181">
+<wire x1="-7.62" y1="-22.86" x2="7.62" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-22.86" x2="7.62" y2="22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="22.86" x2="-7.62" y2="22.86" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="22.86" x2="-7.62" y2="-22.86" width="0.4064" layer="94"/>
+<text x="-7.62" y="23.495" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="F0" x="12.7" y="20.32" length="middle" direction="out" rot="R180"/>
+<pin name="F1" x="12.7" y="15.24" length="middle" direction="out" rot="R180"/>
+<pin name="GG" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="CN+4" x="12.7" y="-17.78" length="middle" direction="out" rot="R180"/>
+<pin name="F3" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="F2" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="PG" x="12.7" y="-12.7" length="middle" direction="out" rot="R180"/>
+<pin name="B3" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="B2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="S3" x="-12.7" y="-17.78" length="middle" direction="in"/>
+<pin name="S0" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="S2" x="-12.7" y="-15.24" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="S1" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="17.78" length="middle" direction="in"/>
+<pin name="B1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="B0" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A0" x="-12.7" y="20.32" length="middle" direction="in"/>
+<pin name="CN" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="M" x="-12.7" y="-20.32" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC10182">
+<wire x1="-7.62" y1="-15.24" x2="7.62" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-15.24" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="CN+2" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+<pin name="GG" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="F0" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="A0" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="B0" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="M" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="S1" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="S0" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="B1" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="CN" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="F1" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="PG" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10186">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="12.7" x2="-7.62" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="12.7" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="RESET" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="Q0" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="D0" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="CLK" x="-12.7" y="10.16" length="middle" direction="in" function="clk"/>
+<pin name="D3" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D4" x="-12.7" y="-7.62" length="middle" direction="in"/>
+<pin name="D5" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="Q3" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Q4" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Q5" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10188">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="AO" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="BO" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="CO" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="AI" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="BI" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="CI" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="ENABLE" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="DI" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="EI" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="FI" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="DO" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="EO" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="FO" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MC10189">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="AO" x="12.7" y="7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="BO" x="12.7" y="5.08" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="CO" x="12.7" y="2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="AI" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="BI" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="CI" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="ENABLE" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="DI" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="EI" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="FI" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="DO" x="12.7" y="0" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="EO" x="12.7" y="-2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="FO" x="12.7" y="-5.08" length="middle" direction="out" function="dot" rot="R180"/>
+</symbol>
+<symbol name="MC10195">
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-12.7" x2="7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="10.16" x2="-7.62" y2="-12.7" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q1" x="12.7" y="7.62" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q2" x="12.7" y="5.08" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q3" x="12.7" y="2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="B3" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="B2" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="B1" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="B4" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="B5" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="B6" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="Q6" x="12.7" y="-5.08" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q5" x="12.7" y="-2.54" length="middle" direction="out" function="dot" rot="R180"/>
+<pin name="Q4" x="12.7" y="0" length="middle" direction="out" function="dot" rot="R180"/>
+</symbol>
+<symbol name="2VCC1VEE">
+<text x="-1.27" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="4.445" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
+<text x="1.905" y="-5.842" size="1.27" layer="95" rot="R90">VEE</text>
+<pin name="VEE" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC@1" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@2" x="2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="VCCVEEGN">
+<text x="-2.286" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
+<text x="-0.635" y="-5.842" size="1.27" layer="95" rot="R90">VEE</text>
+<text x="4.445" y="-5.842" size="1.27" layer="95" rot="R90">GND</text>
+<pin name="VEE" x="-2.54" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND" x="2.54" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="2PWR3GND">
+<text x="-2.667" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.635" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
+<text x="4.445" y="5.08" size="1.27" layer="95" rot="R90">VEE</text>
+<text x="4.445" y="-5.842" size="1.27" layer="95" rot="R90">GND</text>
+<pin name="VCC" x="-2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="VEE" x="2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND@1" x="-2.54" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@2" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@3" x="2.54" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="2PWR2GND">
+<text x="-3.175" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.635" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
+<text x="4.445" y="2.54" size="1.27" layer="95" rot="R90">VEE</text>
+<text x="1.905" y="-5.842" size="1.27" layer="95" rot="R90">GND</text>
+<pin name="VCC" x="-2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="VEE" x="2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="GND@1" x="-2.54" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@2" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="1VCC1VEE">
+<text x="-1.27" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="1.905" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
+<text x="1.905" y="-5.842" size="1.27" layer="95" rot="R90">VEE</text>
+<pin name="VEE" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="MCM10139">
+<wire x1="-7.62" y1="-12.7" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-12.7" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="7.62" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="10.16" x2="-7.62" y2="10.16" width="0.4064" layer="94"/>
+<text x="-7.62" y="10.795" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A0" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="A4" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="CS" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="D0" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="D1" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="D2" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="D3" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="D4" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="D5" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="D6" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="D7" x="12.7" y="-10.16" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MCM10143">
+<wire x1="-7.62" y1="-30.48" x2="7.62" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="27.94" x2="7.62" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="27.94" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-30.48" x2="-7.62" y2="27.94" width="0.4064" layer="94"/>
+<text x="-7.62" y="28.575" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="CLK" x="-12.7" y="25.4" length="middle" direction="in" function="clk"/>
+<pin name="A0" x="-12.7" y="20.32" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="17.78" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="B0" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="B1" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="B2" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="C0" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="C1" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="C2" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="D0" x="-12.7" y="-10.16" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="-12.7" length="middle" direction="in"/>
+<pin name="WE0" x="-12.7" y="-17.78" length="middle" direction="in" function="dot"/>
+<pin name="QB0" x="12.7" y="15.24" length="middle" direction="out" rot="R180"/>
+<pin name="QB1" x="12.7" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="QC0" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="QC1" x="12.7" y="-7.62" length="middle" direction="out" rot="R180"/>
+<pin name="WE1" x="-12.7" y="-20.32" length="middle" direction="in" function="dot"/>
+<pin name="RE-B" x="-12.7" y="-25.4" length="middle" direction="in" function="dot"/>
+<pin name="RE-C" x="-12.7" y="-27.94" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="3VCC1VEE">
+<text x="-2.413" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="4.445" y="2.54" size="1.27" layer="95" rot="R90">VCC</text>
+<text x="1.905" y="-5.842" size="1.27" layer="95" rot="R90">VEE</text>
+<pin name="VCC@1" x="-2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@2" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@3" x="2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="VEE" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="MCM10144">
+<wire x1="-7.62" y1="-22.86" x2="7.62" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="7.62" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="-7.62" y2="20.32" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-22.86" x2="-7.62" y2="20.32" width="0.4064" layer="94"/>
+<text x="-7.62" y="20.955" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A0" x="-12.7" y="17.78" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A4" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A5" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A6" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A7" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="CS1" x="-12.7" y="-5.08" length="middle" direction="in" function="dot"/>
+<pin name="CS2" x="-12.7" y="-7.62" length="middle" direction="in" function="dot"/>
+<pin name="CS3" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="WE" x="-12.7" y="-15.24" length="middle" direction="in" function="dot"/>
+<pin name="DIN" x="-12.7" y="-20.32" length="middle" direction="in"/>
+<pin name="DOUT" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MCM10145">
+<wire x1="-7.62" y1="-17.78" x2="7.62" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="-7.62" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="17.78" width="0.4064" layer="94"/>
+<text x="-7.62" y="18.415" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A0" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="D0" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="D1" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="D3" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="Q0" x="12.7" y="15.24" length="middle" direction="out" rot="R180"/>
+<pin name="Q1" x="12.7" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Q2" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="WE" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="CS" x="-12.7" y="-15.24" length="middle" direction="in" function="dot"/>
+<pin name="Q3" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MCM10146">
+<wire x1="-7.62" y1="-22.86" x2="7.62" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="7.62" y2="-22.86" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="20.32" x2="-7.62" y2="20.32" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-22.86" x2="-7.62" y2="20.32" width="0.4064" layer="94"/>
+<text x="-7.62" y="20.955" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-25.4" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A0" x="-12.7" y="17.78" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A4" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A5" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A6" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A7" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="A8" x="-12.7" y="-2.54" length="middle" direction="in"/>
+<pin name="A9" x="-12.7" y="-5.08" length="middle" direction="in"/>
+<pin name="CS" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="WE" x="-12.7" y="-15.24" length="middle" direction="in" function="dot"/>
+<pin name="DIN" x="-12.7" y="-20.32" length="middle" direction="in"/>
+<pin name="DOUT" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="MCM10147">
+<wire x1="-7.62" y1="-20.32" x2="7.62" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="-7.62" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-20.32" x2="-7.62" y2="17.78" width="0.4064" layer="94"/>
+<text x="-7.62" y="18.415" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A0" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A4" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A5" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A6" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="CS1" x="-12.7" y="-5.08" length="middle" direction="in" function="dot"/>
+<pin name="CS2" x="-12.7" y="-7.62" length="middle" direction="in" function="dot"/>
+<pin name="WE" x="-12.7" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="DIN" x="-12.7" y="-17.78" length="middle" direction="in"/>
+<pin name="DOUT" x="12.7" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="NC" x="12.7" y="-15.24" length="middle" direction="nc" rot="R180"/>
+</symbol>
+<symbol name="MCM10148">
+<wire x1="-7.62" y1="-17.78" x2="7.62" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="7.62" y2="-17.78" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="17.78" x2="-7.62" y2="17.78" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="-17.78" x2="-7.62" y2="17.78" width="0.4064" layer="94"/>
+<text x="-7.62" y="18.415" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-20.32" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="A0" x="-12.7" y="15.24" length="middle" direction="in"/>
+<pin name="A1" x="-12.7" y="12.7" length="middle" direction="in"/>
+<pin name="A2" x="-12.7" y="10.16" length="middle" direction="in"/>
+<pin name="A3" x="-12.7" y="7.62" length="middle" direction="in"/>
+<pin name="A4" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="A5" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="NC@1" x="12.7" y="-10.16" length="middle" direction="nc" rot="R180"/>
+<pin name="CS1" x="-12.7" y="-2.54" length="middle" direction="in" function="dot"/>
+<pin name="CS2" x="-12.7" y="-5.08" length="middle" direction="in" function="dot"/>
+<pin name="WE" x="-12.7" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="DIN" x="-12.7" y="-15.24" length="middle" direction="in"/>
+<pin name="DOUT" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="NC@2" x="12.7" y="-12.7" length="middle" direction="nc" rot="R180"/>
+</symbol>
+<symbol name="5538">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-10.16" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OE1(ECL)" x="-15.24" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="OE2(TTL)" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="A1" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="A3" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="A4" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="A5" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="A6" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="A7" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="A8" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="Y1" x="10.16" y="12.7" length="middle" direction="oc" function="dot" rot="R180"/>
+<pin name="Y2" x="10.16" y="10.16" length="middle" direction="oc" function="dot" rot="R180"/>
+<pin name="Y3" x="10.16" y="7.62" length="middle" direction="oc" function="dot" rot="R180"/>
+<pin name="Y4" x="10.16" y="5.08" length="middle" direction="oc" function="dot" rot="R180"/>
+<pin name="Y5" x="10.16" y="2.54" length="middle" direction="oc" function="dot" rot="R180"/>
+<pin name="Y6" x="10.16" y="0" length="middle" direction="oc" function="dot" rot="R180"/>
+<pin name="Y7" x="10.16" y="-2.54" length="middle" direction="oc" function="dot" rot="R180"/>
+<pin name="Y8" x="10.16" y="-5.08" length="middle" direction="oc" function="dot" rot="R180"/>
+</symbol>
+<symbol name="5573">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-10.16" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="LE(ECL)" x="-15.24" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="OE(TTL)" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="1D" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="2D" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="3D" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="4D" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="5D" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="6D" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="7D" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="8D" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="1Q" x="10.16" y="12.7" length="middle" direction="hiz" rot="R180"/>
+<pin name="2Q" x="10.16" y="10.16" length="middle" direction="hiz" rot="R180"/>
+<pin name="3Q" x="10.16" y="7.62" length="middle" direction="hiz" rot="R180"/>
+<pin name="4Q" x="10.16" y="5.08" length="middle" direction="hiz" rot="R180"/>
+<pin name="5Q" x="10.16" y="2.54" length="middle" direction="hiz" rot="R180"/>
+<pin name="6Q" x="10.16" y="0" length="middle" direction="hiz" rot="R180"/>
+<pin name="7Q" x="10.16" y="-2.54" length="middle" direction="hiz" rot="R180"/>
+<pin name="8Q" x="10.16" y="-5.08" length="middle" direction="hiz" rot="R180"/>
+</symbol>
+<symbol name="5574">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-10.16" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="CLK(ECL)" x="-15.24" y="-10.16" length="middle" direction="in" function="clk"/>
+<pin name="OE(TTL)" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="1D" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="2D" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="3D" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="4D" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="5D" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="6D" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="7D" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="8D" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="1Q" x="10.16" y="12.7" length="middle" direction="hiz" rot="R180"/>
+<pin name="2Q" x="10.16" y="10.16" length="middle" direction="hiz" rot="R180"/>
+<pin name="3Q" x="10.16" y="7.62" length="middle" direction="hiz" rot="R180"/>
+<pin name="4Q" x="10.16" y="5.08" length="middle" direction="hiz" rot="R180"/>
+<pin name="5Q" x="10.16" y="2.54" length="middle" direction="hiz" rot="R180"/>
+<pin name="6Q" x="10.16" y="0" length="middle" direction="hiz" rot="R180"/>
+<pin name="7Q" x="10.16" y="-2.54" length="middle" direction="hiz" rot="R180"/>
+<pin name="8Q" x="10.16" y="-5.08" length="middle" direction="hiz" rot="R180"/>
+</symbol>
+<symbol name="5575">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-10.16" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="LE(ECL)" x="-15.24" y="-10.16" length="middle" direction="in"/>
+<pin name="OE(TTL)" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="1D" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="2D" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="3D" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="4D" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="5D" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="6D" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="7D" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="8D" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="1Q" x="10.16" y="12.7" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="2Q" x="10.16" y="10.16" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="3Q" x="10.16" y="7.62" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="4Q" x="10.16" y="5.08" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="5Q" x="10.16" y="2.54" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="6Q" x="10.16" y="0" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="7Q" x="10.16" y="-2.54" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="8Q" x="10.16" y="-5.08" length="middle" direction="hiz" function="dot" rot="R180"/>
+</symbol>
+<symbol name="5539">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-10.16" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OE1(ECL)" x="-15.24" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="OE2(TTL)" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="A1" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="A3" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="A4" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="A5" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="A6" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="A7" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="A8" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="Y1" x="10.16" y="12.7" length="middle" direction="oc" rot="R180"/>
+<pin name="Y2" x="10.16" y="10.16" length="middle" direction="oc" rot="R180"/>
+<pin name="Y3" x="10.16" y="7.62" length="middle" direction="oc" rot="R180"/>
+<pin name="Y4" x="10.16" y="5.08" length="middle" direction="oc" rot="R180"/>
+<pin name="Y5" x="10.16" y="2.54" length="middle" direction="oc" rot="R180"/>
+<pin name="Y6" x="10.16" y="0" length="middle" direction="oc" rot="R180"/>
+<pin name="Y7" x="10.16" y="-2.54" length="middle" direction="oc" rot="R180"/>
+<pin name="Y8" x="10.16" y="-5.08" length="middle" direction="oc" rot="R180"/>
+</symbol>
+<symbol name="5540">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-10.16" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OE1(ECL)" x="-15.24" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="OE2(TTL)" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="A1" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="A3" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="A4" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="A5" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="A6" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="A7" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="A8" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="Y1" x="10.16" y="12.7" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="Y2" x="10.16" y="10.16" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="Y3" x="10.16" y="7.62" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="Y4" x="10.16" y="5.08" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="Y5" x="10.16" y="2.54" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="Y6" x="10.16" y="0" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="Y7" x="10.16" y="-2.54" length="middle" direction="hiz" function="dot" rot="R180"/>
+<pin name="Y8" x="10.16" y="-5.08" length="middle" direction="hiz" function="dot" rot="R180"/>
+</symbol>
+<symbol name="5542">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-10.16" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OE1(ECL)" x="-15.24" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="OE2(TTL)" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="A1" x="-15.24" y="12.7" length="middle" direction="in" function="dot"/>
+<pin name="A2" x="-15.24" y="10.16" length="middle" direction="in" function="dot"/>
+<pin name="A3" x="-15.24" y="7.62" length="middle" direction="in" function="dot"/>
+<pin name="A4" x="-15.24" y="5.08" length="middle" direction="in" function="dot"/>
+<pin name="A5" x="-15.24" y="2.54" length="middle" direction="in" function="dot"/>
+<pin name="A6" x="-15.24" y="0" length="middle" direction="in" function="dot"/>
+<pin name="A7" x="-15.24" y="-2.54" length="middle" direction="in" function="dot"/>
+<pin name="A8" x="-15.24" y="-5.08" length="middle" direction="in" function="dot"/>
+<pin name="Y1" x="10.16" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="Y2" x="10.16" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Y3" x="10.16" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Y4" x="10.16" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Y5" x="10.16" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Y6" x="10.16" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Y7" x="10.16" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Y8" x="10.16" y="-5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="5543">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-10.16" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OE1(ECL)" x="-15.24" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="OE2(TTL)" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="A1" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="A3" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="A4" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="A5" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="A6" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="A7" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="A8" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="Y1" x="10.16" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="Y2" x="10.16" y="10.16" length="middle" direction="out" rot="R180"/>
+<pin name="Y3" x="10.16" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="Y4" x="10.16" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="Y5" x="10.16" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Y6" x="10.16" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="Y7" x="10.16" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="Y8" x="10.16" y="-5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+<symbol name="5541">
+<wire x1="-10.16" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="5.08" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="15.24" x2="-10.16" y2="-15.24" width="0.4064" layer="94"/>
+<text x="-10.16" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="OE1(ECL)" x="-15.24" y="-10.16" length="middle" direction="in" function="dot"/>
+<pin name="OE2(TTL)" x="-15.24" y="-12.7" length="middle" direction="in" function="dot"/>
+<pin name="A1" x="-15.24" y="12.7" length="middle" direction="in"/>
+<pin name="A2" x="-15.24" y="10.16" length="middle" direction="in"/>
+<pin name="A3" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="A4" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="A5" x="-15.24" y="2.54" length="middle" direction="in"/>
+<pin name="A6" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="A7" x="-15.24" y="-2.54" length="middle" direction="in"/>
+<pin name="A8" x="-15.24" y="-5.08" length="middle" direction="in"/>
+<pin name="Y1" x="10.16" y="12.7" length="middle" direction="hiz" rot="R180"/>
+<pin name="Y2" x="10.16" y="10.16" length="middle" direction="hiz" rot="R180"/>
+<pin name="Y3" x="10.16" y="7.62" length="middle" direction="hiz" rot="R180"/>
+<pin name="Y4" x="10.16" y="5.08" length="middle" direction="hiz" rot="R180"/>
+<pin name="Y5" x="10.16" y="2.54" length="middle" direction="hiz" rot="R180"/>
+<pin name="Y6" x="10.16" y="0" length="middle" direction="hiz" rot="R180"/>
+<pin name="Y7" x="10.16" y="-2.54" length="middle" direction="hiz" rot="R180"/>
+<pin name="Y8" x="10.16" y="-5.08" length="middle" direction="hiz" rot="R180"/>
+</symbol>
+<symbol name="2PWR4GND">
+<text x="-3.175" y="-0.635" size="1.778" layer="95">&gt;NAME</text>
+<text x="-0.635" y="5.08" size="1.27" layer="95" rot="R90">VCC</text>
+<text x="6.985" y="-5.842" size="1.27" layer="95" rot="R90">GND</text>
+<text x="4.445" y="5.08" size="1.27" layer="95" rot="R90">VEE</text>
+<pin name="GND@1" x="-2.54" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@2" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@3" x="2.54" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND@4" x="5.08" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC" x="-2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="VEE" x="2.54" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+</symbol>
+<symbol name="MC10130">
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-5.08" width="0.4064" layer="94"/>
+<text x="2.54" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q" x="15.24" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="!Q" x="15.24" y="-2.54" length="middle" direction="out" rot="R180"/>
+<pin name="R" x="0" y="-10.16" length="middle" direction="in" rot="R90"/>
+<pin name="S" x="0" y="12.7" length="middle" direction="in" rot="R270"/>
+<pin name="CE" x="-15.24" y="-2.54" length="middle" direction="in" function="dot"/>
+<pin name="D" x="-15.24" y="5.08" length="middle" direction="in"/>
+</symbol>
+<symbol name="CLK">
+<pin name="CLK" x="-5.08" y="0" length="middle" direction="in" function="clk"/>
+</symbol>
+<symbol name="RESET">
+<pin name="RESET" x="-5.08" y="0" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC10134">
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-7.62" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="!Q" x="12.7" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="D1" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="D2" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="A-SEL" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="CE" x="-12.7" y="-5.08" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="MC10135">
+<wire x1="-7.62" y1="-7.62" x2="10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<text x="2.54" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="Q" x="15.24" y="5.08" length="middle" direction="out" rot="R180"/>
+<pin name="!Q" x="15.24" y="-5.08" length="middle" direction="out" rot="R180"/>
+<pin name="R" x="0" y="-12.7" length="middle" direction="in" rot="R90"/>
+<pin name="S" x="0" y="12.7" length="middle" direction="in" rot="R270"/>
+<pin name="K" x="-12.7" y="-5.08" length="middle" direction="in" function="dot"/>
+<pin name="J" x="-12.7" y="5.08" length="middle" direction="in" function="dot"/>
+</symbol>
+<symbol name="SELAB">
+<pin name="SELA" x="-5.08" y="0" length="middle" direction="in"/>
+<pin name="SELB" x="-5.08" y="-2.54" length="middle" direction="in"/>
+</symbol>
+<symbol name="MC10180">
+<wire x1="-7.62" y1="-7.62" x2="7.62" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="-7.62" x2="7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="7.62" y1="7.62" x2="-7.62" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="-7.62" y1="7.62" x2="-7.62" y2="-7.62" width="0.4064" layer="94"/>
+<text x="-7.62" y="8.255" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="!S" x="12.7" y="2.54" length="middle" direction="out" rot="R180"/>
+<pin name="CO" x="12.7" y="0" length="middle" direction="out" rot="R180"/>
+<pin name="CI" x="-12.7" y="0" length="middle" direction="in"/>
+<pin name="A" x="-12.7" y="5.08" length="middle" direction="in"/>
+<pin name="B" x="-12.7" y="2.54" length="middle" direction="in"/>
+<pin name="S" x="12.7" y="5.08" length="middle" direction="out" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="MC10119" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10119" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-27.94" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="A0" pad="3"/>
+<connect gate="A" pin="A1" pad="4"/>
+<connect gate="A" pin="A2" pad="5"/>
+<connect gate="A" pin="A3" pad="6"/>
+<connect gate="A" pin="B/C" pad="10"/>
+<connect gate="A" pin="B0" pad="7"/>
+<connect gate="A" pin="B1" pad="9"/>
+<connect gate="A" pin="C1" pad="11"/>
+<connect gate="A" pin="C2" pad="12"/>
+<connect gate="A" pin="D0" pad="13"/>
+<connect gate="A" pin="D1" pad="14"/>
+<connect gate="A" pin="D2" pad="15"/>
+<connect gate="A" pin="O" pad="2"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10121" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10121" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="!O" pad="3"/>
+<connect gate="A" pin="A0" pad="4"/>
+<connect gate="A" pin="A1" pad="5"/>
+<connect gate="A" pin="A2" pad="6"/>
+<connect gate="A" pin="B/C" pad="10"/>
+<connect gate="A" pin="B1" pad="7"/>
+<connect gate="A" pin="B2" pad="9"/>
+<connect gate="A" pin="C1" pad="11"/>
+<connect gate="A" pin="C2" pad="12"/>
+<connect gate="A" pin="D1" pad="13"/>
+<connect gate="A" pin="D2" pad="14"/>
+<connect gate="A" pin="D3" pad="15"/>
+<connect gate="A" pin="O" pad="2"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10124" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A1" symbol="MC10124" x="0" y="0"/>
+<gate name="P" symbol="VCCVEEGN" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A1" pin="!O0" pad="4"/>
+<connect gate="A1" pin="!O1" pad="3"/>
+<connect gate="A1" pin="!O2" pad="12"/>
+<connect gate="A1" pin="!O3" pad="13"/>
+<connect gate="A1" pin="I0" pad="5"/>
+<connect gate="A1" pin="I1" pad="7"/>
+<connect gate="A1" pin="I2" pad="10"/>
+<connect gate="A1" pin="I3" pad="11"/>
+<connect gate="A1" pin="INCOMMON" pad="6"/>
+<connect gate="A1" pin="O0" pad="2"/>
+<connect gate="A1" pin="O1" pad="1"/>
+<connect gate="A1" pin="O2" pad="15"/>
+<connect gate="A1" pin="O3" pad="14"/>
+<connect gate="P" pin="GND" pad="16"/>
+<connect gate="P" pin="VCC" pad="9"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10128" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="P" symbol="2PWR3GND" x="-25.4" y="0" addlevel="request"/>
+<gate name="A" symbol="MC10128" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CLK" pad="10"/>
+<connect gate="A" pin="CNTL0" pad="13"/>
+<connect gate="A" pin="CNTL1" pad="4"/>
+<connect gate="A" pin="D0" pad="11"/>
+<connect gate="A" pin="D1" pad="6"/>
+<connect gate="A" pin="DIS0" pad="12"/>
+<connect gate="A" pin="DIS1" pad="5"/>
+<connect gate="A" pin="Q0" pad="15"/>
+<connect gate="A" pin="Q1" pad="2"/>
+<connect gate="A" pin="RESET" pad="7"/>
+<connect gate="A" pin="STROBE" pad="3"/>
+<connect gate="P" pin="GND@1" pad="16"/>
+<connect gate="P" pin="GND@2" pad="1"/>
+<connect gate="P" pin="GND@3" pad="9"/>
+<connect gate="P" pin="VCC" pad="14"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10129" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A1" symbol="MC10129" x="2.54" y="0"/>
+<gate name="P" symbol="2PWR2GND" x="-27.94" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A1" pin="CLK" pad="11"/>
+<connect gate="A1" pin="CONTROL" pad="5"/>
+<connect gate="A1" pin="D0" pad="7"/>
+<connect gate="A1" pin="D1" pad="13"/>
+<connect gate="A1" pin="D2" pad="6"/>
+<connect gate="A1" pin="D3" pad="4"/>
+<connect gate="A1" pin="Q0" pad="14"/>
+<connect gate="A1" pin="Q1" pad="15"/>
+<connect gate="A1" pin="Q2" pad="3"/>
+<connect gate="A1" pin="Q3" pad="2"/>
+<connect gate="A1" pin="RESET" pad="10"/>
+<connect gate="A1" pin="STROBE" pad="12"/>
+<connect gate="P" pin="GND@1" pad="1"/>
+<connect gate="P" pin="GND@2" pad="16"/>
+<connect gate="P" pin="VCC" pad="9"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10130" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="P" symbol="2VCC1VEE" x="-30.48" y="2.54" addlevel="request"/>
+<gate name="A" symbol="MC10130" x="0" y="-12.7" swaplevel="1"/>
+<gate name="B" symbol="MC10130" x="0" y="20.32" swaplevel="1"/>
+<gate name="C" symbol="CLK" x="-10.16" y="-10.16" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="!Q" pad="14"/>
+<connect gate="A" pin="CE" pad="11"/>
+<connect gate="A" pin="D" pad="10"/>
+<connect gate="A" pin="Q" pad="15"/>
+<connect gate="A" pin="R" pad="13"/>
+<connect gate="A" pin="S" pad="12"/>
+<connect gate="B" pin="!Q" pad="3"/>
+<connect gate="B" pin="CE" pad="6"/>
+<connect gate="B" pin="D" pad="7"/>
+<connect gate="B" pin="Q" pad="2"/>
+<connect gate="B" pin="R" pad="4"/>
+<connect gate="B" pin="S" pad="5"/>
+<connect gate="C" pin="CLK" pad="9"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10133" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10133" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CE@1" pad="4"/>
+<connect gate="A" pin="CE@2" pad="12"/>
+<connect gate="A" pin="CLK" pad="13"/>
+<connect gate="A" pin="D0" pad="3"/>
+<connect gate="A" pin="D1" pad="7"/>
+<connect gate="A" pin="D2" pad="9"/>
+<connect gate="A" pin="D3" pad="14"/>
+<connect gate="A" pin="G0" pad="5"/>
+<connect gate="A" pin="G1" pad="10"/>
+<connect gate="A" pin="Q0" pad="2"/>
+<connect gate="A" pin="Q1" pad="6"/>
+<connect gate="A" pin="Q2" pad="11"/>
+<connect gate="A" pin="Q3" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10134" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="P" symbol="2VCC1VEE" x="-27.94" y="2.54" addlevel="request"/>
+<gate name="A" symbol="MC10134" x="0" y="15.24" swaplevel="1"/>
+<gate name="B" symbol="MC10134" x="0" y="-7.62" swaplevel="1"/>
+<gate name="A1" symbol="CLK" x="-7.62" y="12.7" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="!Q" pad="3"/>
+<connect gate="A" pin="A-SEL" pad="6"/>
+<connect gate="A" pin="CE" pad="10"/>
+<connect gate="A" pin="D1" pad="4"/>
+<connect gate="A" pin="D2" pad="5"/>
+<connect gate="A" pin="Q" pad="2"/>
+<connect gate="A1" pin="CLK" pad="7"/>
+<connect gate="B" pin="!Q" pad="14"/>
+<connect gate="B" pin="A-SEL" pad="11"/>
+<connect gate="B" pin="CE" pad="9"/>
+<connect gate="B" pin="D1" pad="13"/>
+<connect gate="B" pin="D2" pad="12"/>
+<connect gate="B" pin="Q" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10135" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="P" symbol="2VCC1VEE" x="-33.02" y="5.08" addlevel="request"/>
+<gate name="A" symbol="MC10135" x="-2.54" y="17.78" swaplevel="1"/>
+<gate name="A1" symbol="CLK" x="-10.16" y="17.78" addlevel="must"/>
+<gate name="B" symbol="MC10135" x="-2.54" y="-15.24" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="!Q" pad="3"/>
+<connect gate="A" pin="J" pad="7"/>
+<connect gate="A" pin="K" pad="6"/>
+<connect gate="A" pin="Q" pad="2"/>
+<connect gate="A" pin="R" pad="4"/>
+<connect gate="A" pin="S" pad="5"/>
+<connect gate="A1" pin="CLK" pad="9"/>
+<connect gate="B" pin="!Q" pad="14"/>
+<connect gate="B" pin="J" pad="10"/>
+<connect gate="B" pin="K" pad="11"/>
+<connect gate="B" pin="Q" pad="15"/>
+<connect gate="B" pin="R" pad="13"/>
+<connect gate="B" pin="S" pad="12"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10136" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10136" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-27.94" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CIN" pad="10"/>
+<connect gate="A" pin="CLK" pad="13"/>
+<connect gate="A" pin="COUT" pad="4"/>
+<connect gate="A" pin="D0" pad="12"/>
+<connect gate="A" pin="D1" pad="11"/>
+<connect gate="A" pin="D2" pad="6"/>
+<connect gate="A" pin="D3" pad="5"/>
+<connect gate="A" pin="Q0" pad="14"/>
+<connect gate="A" pin="Q1" pad="15"/>
+<connect gate="A" pin="Q2" pad="2"/>
+<connect gate="A" pin="Q3" pad="3"/>
+<connect gate="A" pin="S1" pad="9"/>
+<connect gate="A" pin="S2" pad="7"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10138" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10138" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="!Q0" pad="14"/>
+<connect gate="A" pin="!Q3" pad="3"/>
+<connect gate="A" pin="CLK1" pad="12"/>
+<connect gate="A" pin="CLK2" pad="7"/>
+<connect gate="A" pin="Q0" pad="15"/>
+<connect gate="A" pin="Q1" pad="13"/>
+<connect gate="A" pin="Q2" pad="4"/>
+<connect gate="A" pin="Q3" pad="2"/>
+<connect gate="A" pin="RESET" pad="9"/>
+<connect gate="A" pin="S0" pad="11"/>
+<connect gate="A" pin="S1" pad="10"/>
+<connect gate="A" pin="S2" pad="6"/>
+<connect gate="A" pin="S3" pad="5"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10141" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10141" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CLK" pad="4"/>
+<connect gate="A" pin="D0" pad="12"/>
+<connect gate="A" pin="D1" pad="11"/>
+<connect gate="A" pin="D2" pad="9"/>
+<connect gate="A" pin="D3" pad="6"/>
+<connect gate="A" pin="DL" pad="13"/>
+<connect gate="A" pin="DR" pad="5"/>
+<connect gate="A" pin="Q0" pad="14"/>
+<connect gate="A" pin="Q1" pad="15"/>
+<connect gate="A" pin="Q2" pad="2"/>
+<connect gate="A" pin="Q3" pad="3"/>
+<connect gate="A" pin="S1" pad="10"/>
+<connect gate="A" pin="S2" pad="7"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10154" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10154" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="!Q0" pad="14"/>
+<connect gate="A" pin="!Q3" pad="3"/>
+<connect gate="A" pin="CLK1" pad="12"/>
+<connect gate="A" pin="CLK2" pad="10"/>
+<connect gate="A" pin="Q0" pad="15"/>
+<connect gate="A" pin="Q1" pad="13"/>
+<connect gate="A" pin="Q2" pad="4"/>
+<connect gate="A" pin="Q3" pad="2"/>
+<connect gate="A" pin="RESET" pad="9"/>
+<connect gate="A" pin="S0" pad="11"/>
+<connect gate="A" pin="S1" pad="7"/>
+<connect gate="A" pin="S2" pad="6"/>
+<connect gate="A" pin="S3" pad="5"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10158" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10158" x="0" y="0"/>
+<gate name="P" symbol="1VCC1VEE" x="-22.86" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="D00" pad="6"/>
+<connect gate="A" pin="D01" pad="5"/>
+<connect gate="A" pin="D10" pad="4"/>
+<connect gate="A" pin="D11" pad="3"/>
+<connect gate="A" pin="D20" pad="13"/>
+<connect gate="A" pin="D21" pad="12"/>
+<connect gate="A" pin="D30" pad="11"/>
+<connect gate="A" pin="D31" pad="10"/>
+<connect gate="A" pin="Q0" pad="1"/>
+<connect gate="A" pin="Q1" pad="2"/>
+<connect gate="A" pin="Q2" pad="15"/>
+<connect gate="A" pin="Q3" pad="14"/>
+<connect gate="A" pin="SEL" pad="9"/>
+<connect gate="P" pin="VCC" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10159" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10159" x="0" y="0"/>
+<gate name="P" symbol="1VCC1VEE" x="-22.86" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="D00" pad="6"/>
+<connect gate="A" pin="D01" pad="5"/>
+<connect gate="A" pin="D10" pad="4"/>
+<connect gate="A" pin="D11" pad="3"/>
+<connect gate="A" pin="D20" pad="13"/>
+<connect gate="A" pin="D21" pad="12"/>
+<connect gate="A" pin="D30" pad="11"/>
+<connect gate="A" pin="D31" pad="10"/>
+<connect gate="A" pin="ENABLE" pad="7"/>
+<connect gate="A" pin="Q0" pad="1"/>
+<connect gate="A" pin="Q1" pad="2"/>
+<connect gate="A" pin="Q2" pad="15"/>
+<connect gate="A" pin="Q3" pad="14"/>
+<connect gate="A" pin="SEL" pad="9"/>
+<connect gate="P" pin="VCC" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10160" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10160" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="I1" pad="3"/>
+<connect gate="A" pin="I10" pad="13"/>
+<connect gate="A" pin="I11" pad="14"/>
+<connect gate="A" pin="I12" pad="15"/>
+<connect gate="A" pin="I2" pad="4"/>
+<connect gate="A" pin="I3" pad="5"/>
+<connect gate="A" pin="I4" pad="6"/>
+<connect gate="A" pin="I5" pad="7"/>
+<connect gate="A" pin="I6" pad="9"/>
+<connect gate="A" pin="I7" pad="10"/>
+<connect gate="A" pin="I8" pad="11"/>
+<connect gate="A" pin="I9" pad="12"/>
+<connect gate="A" pin="OUT" pad="2"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10162" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10162" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-22.86" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="A" pad="7"/>
+<connect gate="A" pin="B" pad="9"/>
+<connect gate="A" pin="C" pad="14"/>
+<connect gate="A" pin="E0" pad="2"/>
+<connect gate="A" pin="E1" pad="15"/>
+<connect gate="A" pin="Q0" pad="6"/>
+<connect gate="A" pin="Q1" pad="5"/>
+<connect gate="A" pin="Q2" pad="4"/>
+<connect gate="A" pin="Q3" pad="3"/>
+<connect gate="A" pin="Q4" pad="13"/>
+<connect gate="A" pin="Q5" pad="12"/>
+<connect gate="A" pin="Q6" pad="11"/>
+<connect gate="A" pin="Q7" pad="10"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10161" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10161" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-22.86" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="A" pad="7"/>
+<connect gate="A" pin="B" pad="9"/>
+<connect gate="A" pin="C" pad="14"/>
+<connect gate="A" pin="E0" pad="2"/>
+<connect gate="A" pin="E1" pad="15"/>
+<connect gate="A" pin="Q0" pad="6"/>
+<connect gate="A" pin="Q1" pad="5"/>
+<connect gate="A" pin="Q2" pad="4"/>
+<connect gate="A" pin="Q3" pad="3"/>
+<connect gate="A" pin="Q4" pad="13"/>
+<connect gate="A" pin="Q5" pad="12"/>
+<connect gate="A" pin="Q6" pad="11"/>
+<connect gate="A" pin="Q7" pad="10"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10163" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10163" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="B0" pad="9"/>
+<connect gate="A" pin="B1" pad="7"/>
+<connect gate="A" pin="B2" pad="6"/>
+<connect gate="A" pin="B3" pad="10"/>
+<connect gate="A" pin="B4" pad="12"/>
+<connect gate="A" pin="B5" pad="4"/>
+<connect gate="A" pin="B6" pad="5"/>
+<connect gate="A" pin="B7" pad="11"/>
+<connect gate="A" pin="P0A" pad="15"/>
+<connect gate="A" pin="P0B" pad="2"/>
+<connect gate="A" pin="P1" pad="14"/>
+<connect gate="A" pin="P2" pad="13"/>
+<connect gate="A" pin="P3" pad="3"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10164" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10164" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="A" pad="7"/>
+<connect gate="A" pin="B" pad="9"/>
+<connect gate="A" pin="C" pad="10"/>
+<connect gate="A" pin="ENABLE" pad="2"/>
+<connect gate="A" pin="X0" pad="6"/>
+<connect gate="A" pin="X1" pad="5"/>
+<connect gate="A" pin="X2" pad="4"/>
+<connect gate="A" pin="X3" pad="3"/>
+<connect gate="A" pin="X4" pad="11"/>
+<connect gate="A" pin="X5" pad="12"/>
+<connect gate="A" pin="X6" pad="13"/>
+<connect gate="A" pin="X7" pad="14"/>
+<connect gate="A" pin="Z" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10165" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10165" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CLK" pad="4"/>
+<connect gate="A" pin="D0" pad="5"/>
+<connect gate="A" pin="D1" pad="7"/>
+<connect gate="A" pin="D2" pad="13"/>
+<connect gate="A" pin="D3" pad="10"/>
+<connect gate="A" pin="D4" pad="11"/>
+<connect gate="A" pin="D5" pad="12"/>
+<connect gate="A" pin="D6" pad="9"/>
+<connect gate="A" pin="D7" pad="6"/>
+<connect gate="A" pin="Q0" pad="3"/>
+<connect gate="A" pin="Q1" pad="2"/>
+<connect gate="A" pin="Q2" pad="15"/>
+<connect gate="A" pin="Q3" pad="14"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10166" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10166" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="!EN" pad="15"/>
+<connect gate="A" pin="A0" pad="5"/>
+<connect gate="A" pin="A1" pad="6"/>
+<connect gate="A" pin="A2" pad="13"/>
+<connect gate="A" pin="A3" pad="12"/>
+<connect gate="A" pin="A4" pad="9"/>
+<connect gate="A" pin="A&lt;B" pad="3"/>
+<connect gate="A" pin="A&gt;B" pad="2"/>
+<connect gate="A" pin="B0" pad="4"/>
+<connect gate="A" pin="B1" pad="7"/>
+<connect gate="A" pin="B2" pad="14"/>
+<connect gate="A" pin="B3" pad="11"/>
+<connect gate="A" pin="B4" pad="10"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10168" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10168" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CLK" pad="13"/>
+<connect gate="A" pin="D0" pad="3"/>
+<connect gate="A" pin="D1" pad="7"/>
+<connect gate="A" pin="D2" pad="9"/>
+<connect gate="A" pin="D3" pad="14"/>
+<connect gate="A" pin="G0" pad="5"/>
+<connect gate="A" pin="G1" pad="4"/>
+<connect gate="A" pin="G2" pad="12"/>
+<connect gate="A" pin="G3" pad="10"/>
+<connect gate="A" pin="Q0" pad="2"/>
+<connect gate="A" pin="Q1" pad="6"/>
+<connect gate="A" pin="Q2" pad="11"/>
+<connect gate="A" pin="Q3" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10170" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10170" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-27.94" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="D0" pad="3"/>
+<connect gate="A" pin="D1" pad="4"/>
+<connect gate="A" pin="D2" pad="5"/>
+<connect gate="A" pin="D3" pad="6"/>
+<connect gate="A" pin="D4" pad="7"/>
+<connect gate="A" pin="D5" pad="9"/>
+<connect gate="A" pin="D6" pad="10"/>
+<connect gate="A" pin="D7" pad="11"/>
+<connect gate="A" pin="D8" pad="12"/>
+<connect gate="A" pin="EVEN" pad="15"/>
+<connect gate="A" pin="HI" pad="13"/>
+<connect gate="A" pin="LO" pad="14"/>
+<connect gate="A" pin="ODD" pad="2"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10171" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10171" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="A" pad="9"/>
+<connect gate="A" pin="B" pad="7"/>
+<connect gate="A" pin="E" pad="15"/>
+<connect gate="A" pin="E0" pad="14"/>
+<connect gate="A" pin="E1" pad="2"/>
+<connect gate="A" pin="Q00" pad="13"/>
+<connect gate="A" pin="Q01" pad="12"/>
+<connect gate="A" pin="Q02" pad="11"/>
+<connect gate="A" pin="Q03" pad="10"/>
+<connect gate="A" pin="Q10" pad="6"/>
+<connect gate="A" pin="Q11" pad="5"/>
+<connect gate="A" pin="Q12" pad="4"/>
+<connect gate="A" pin="Q13" pad="3"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10172" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10172" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="A" pad="9"/>
+<connect gate="A" pin="B" pad="7"/>
+<connect gate="A" pin="E" pad="15"/>
+<connect gate="A" pin="E0" pad="14"/>
+<connect gate="A" pin="E1" pad="2"/>
+<connect gate="A" pin="Q00" pad="13"/>
+<connect gate="A" pin="Q01" pad="12"/>
+<connect gate="A" pin="Q02" pad="11"/>
+<connect gate="A" pin="Q03" pad="10"/>
+<connect gate="A" pin="Q10" pad="6"/>
+<connect gate="A" pin="Q11" pad="5"/>
+<connect gate="A" pin="Q12" pad="4"/>
+<connect gate="A" pin="Q13" pad="3"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10173" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10173" x="0" y="0"/>
+<gate name="P" symbol="1VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CLK" pad="7"/>
+<connect gate="A" pin="D00" pad="6"/>
+<connect gate="A" pin="D01" pad="5"/>
+<connect gate="A" pin="D10" pad="4"/>
+<connect gate="A" pin="D11" pad="3"/>
+<connect gate="A" pin="D20" pad="13"/>
+<connect gate="A" pin="D21" pad="12"/>
+<connect gate="A" pin="D30" pad="11"/>
+<connect gate="A" pin="D31" pad="10"/>
+<connect gate="A" pin="Q0" pad="1"/>
+<connect gate="A" pin="Q1" pad="2"/>
+<connect gate="A" pin="Q2" pad="15"/>
+<connect gate="A" pin="Q3" pad="14"/>
+<connect gate="A" pin="SELECT" pad="9"/>
+<connect gate="P" pin="VCC" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10174" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10174" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="A" pad="7"/>
+<connect gate="A" pin="B" pad="9"/>
+<connect gate="A" pin="D00" pad="3"/>
+<connect gate="A" pin="D01" pad="5"/>
+<connect gate="A" pin="D02" pad="4"/>
+<connect gate="A" pin="D03" pad="6"/>
+<connect gate="A" pin="D10" pad="13"/>
+<connect gate="A" pin="D11" pad="11"/>
+<connect gate="A" pin="D12" pad="12"/>
+<connect gate="A" pin="D13" pad="10"/>
+<connect gate="A" pin="ENABLE" pad="14"/>
+<connect gate="A" pin="Q0" pad="2"/>
+<connect gate="A" pin="Q1" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10175" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10175" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CLK0" pad="6"/>
+<connect gate="A" pin="CLK1" pad="7"/>
+<connect gate="A" pin="D0" pad="10"/>
+<connect gate="A" pin="D1" pad="12"/>
+<connect gate="A" pin="D2" pad="13"/>
+<connect gate="A" pin="D3" pad="9"/>
+<connect gate="A" pin="D4" pad="5"/>
+<connect gate="A" pin="Q0" pad="14"/>
+<connect gate="A" pin="Q1" pad="15"/>
+<connect gate="A" pin="Q2" pad="2"/>
+<connect gate="A" pin="Q3" pad="3"/>
+<connect gate="A" pin="Q4" pad="4"/>
+<connect gate="A" pin="RESET" pad="11"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10176" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10176" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CLK" pad="9"/>
+<connect gate="A" pin="D0" pad="5"/>
+<connect gate="A" pin="D1" pad="6"/>
+<connect gate="A" pin="D2" pad="7"/>
+<connect gate="A" pin="D3" pad="10"/>
+<connect gate="A" pin="D4" pad="11"/>
+<connect gate="A" pin="D5" pad="12"/>
+<connect gate="A" pin="Q0" pad="2"/>
+<connect gate="A" pin="Q1" pad="3"/>
+<connect gate="A" pin="Q2" pad="4"/>
+<connect gate="A" pin="Q3" pad="13"/>
+<connect gate="A" pin="Q4" pad="14"/>
+<connect gate="A" pin="Q5" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10179" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10179" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-27.94" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CN" pad="11"/>
+<connect gate="A" pin="CN+2" pad="6"/>
+<connect gate="A" pin="CN+4" pad="3"/>
+<connect gate="A" pin="G0" pad="4"/>
+<connect gate="A" pin="G1" pad="7"/>
+<connect gate="A" pin="G2" pad="9"/>
+<connect gate="A" pin="G3" pad="5"/>
+<connect gate="A" pin="GG" pad="2"/>
+<connect gate="A" pin="P0" pad="14"/>
+<connect gate="A" pin="P1" pad="10"/>
+<connect gate="A" pin="P2" pad="12"/>
+<connect gate="A" pin="P3" pad="13"/>
+<connect gate="A" pin="PG" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10180" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="P" symbol="1VCC1VEE" x="-25.4" y="5.08" addlevel="request"/>
+<gate name="A" symbol="MC10180" x="2.54" y="12.7" swaplevel="1"/>
+<gate name="B" symbol="MC10180" x="2.54" y="-10.16" swaplevel="1"/>
+<gate name="A1" symbol="SELAB" x="-5.08" y="10.16" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="!S" pad="2"/>
+<connect gate="A" pin="A" pad="5"/>
+<connect gate="A" pin="B" pad="6"/>
+<connect gate="A" pin="CI" pad="4"/>
+<connect gate="A" pin="CO" pad="3"/>
+<connect gate="A" pin="S" pad="15"/>
+<connect gate="A1" pin="SELA" pad="7"/>
+<connect gate="A1" pin="SELB" pad="9"/>
+<connect gate="B" pin="!S" pad="1"/>
+<connect gate="B" pin="A" pad="11"/>
+<connect gate="B" pin="B" pad="10"/>
+<connect gate="B" pin="CI" pad="12"/>
+<connect gate="B" pin="CO" pad="13"/>
+<connect gate="B" pin="S" pad="14"/>
+<connect gate="P" pin="VCC" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10181" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10181" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-33.02" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-6">
+<connects>
+<connect gate="A" pin="A0" pad="21"/>
+<connect gate="A" pin="A1" pad="18"/>
+<connect gate="A" pin="A2" pad="16"/>
+<connect gate="A" pin="A3" pad="10"/>
+<connect gate="A" pin="B0" pad="20"/>
+<connect gate="A" pin="B1" pad="19"/>
+<connect gate="A" pin="B2" pad="11"/>
+<connect gate="A" pin="B3" pad="9"/>
+<connect gate="A" pin="CN" pad="22"/>
+<connect gate="A" pin="CN+4" pad="5"/>
+<connect gate="A" pin="F0" pad="2"/>
+<connect gate="A" pin="F1" pad="3"/>
+<connect gate="A" pin="F2" pad="7"/>
+<connect gate="A" pin="F3" pad="6"/>
+<connect gate="A" pin="GG" pad="4"/>
+<connect gate="A" pin="M" pad="23"/>
+<connect gate="A" pin="PG" pad="8"/>
+<connect gate="A" pin="S0" pad="14"/>
+<connect gate="A" pin="S1" pad="17"/>
+<connect gate="A" pin="S2" pad="15"/>
+<connect gate="A" pin="S3" pad="13"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="24"/>
+<connect gate="P" pin="VEE" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10182" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10182" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-30.48" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="A0" pad="5"/>
+<connect gate="A" pin="A1" pad="12"/>
+<connect gate="A" pin="B0" pad="6"/>
+<connect gate="A" pin="B1" pad="11"/>
+<connect gate="A" pin="CN" pad="13"/>
+<connect gate="A" pin="CN+2" pad="2"/>
+<connect gate="A" pin="F0" pad="4"/>
+<connect gate="A" pin="F1" pad="14"/>
+<connect gate="A" pin="GG" pad="3"/>
+<connect gate="A" pin="M" pad="7"/>
+<connect gate="A" pin="PG" pad="15"/>
+<connect gate="A" pin="S0" pad="10"/>
+<connect gate="A" pin="S1" pad="9"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10186" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10186" x="0" y="0"/>
+<gate name="P" symbol="1VCC1VEE" x="-25.4" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="CLK" pad="9"/>
+<connect gate="A" pin="D0" pad="5"/>
+<connect gate="A" pin="D1" pad="6"/>
+<connect gate="A" pin="D2" pad="7"/>
+<connect gate="A" pin="D3" pad="10"/>
+<connect gate="A" pin="D4" pad="11"/>
+<connect gate="A" pin="D5" pad="12"/>
+<connect gate="A" pin="Q0" pad="2"/>
+<connect gate="A" pin="Q1" pad="3"/>
+<connect gate="A" pin="Q2" pad="4"/>
+<connect gate="A" pin="Q3" pad="13"/>
+<connect gate="A" pin="Q4" pad="14"/>
+<connect gate="A" pin="Q5" pad="15"/>
+<connect gate="A" pin="RESET" pad="1"/>
+<connect gate="P" pin="VCC" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10188" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10188" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="AI" pad="5"/>
+<connect gate="A" pin="AO" pad="2"/>
+<connect gate="A" pin="BI" pad="6"/>
+<connect gate="A" pin="BO" pad="3"/>
+<connect gate="A" pin="CI" pad="7"/>
+<connect gate="A" pin="CO" pad="4"/>
+<connect gate="A" pin="DI" pad="10"/>
+<connect gate="A" pin="DO" pad="13"/>
+<connect gate="A" pin="EI" pad="11"/>
+<connect gate="A" pin="ENABLE" pad="9"/>
+<connect gate="A" pin="EO" pad="14"/>
+<connect gate="A" pin="FI" pad="12"/>
+<connect gate="A" pin="FO" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10189" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10189" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="AI" pad="5"/>
+<connect gate="A" pin="AO" pad="2"/>
+<connect gate="A" pin="BI" pad="6"/>
+<connect gate="A" pin="BO" pad="3"/>
+<connect gate="A" pin="CI" pad="7"/>
+<connect gate="A" pin="CO" pad="4"/>
+<connect gate="A" pin="DI" pad="10"/>
+<connect gate="A" pin="DO" pad="13"/>
+<connect gate="A" pin="EI" pad="11"/>
+<connect gate="A" pin="ENABLE" pad="9"/>
+<connect gate="A" pin="EO" pad="14"/>
+<connect gate="A" pin="FI" pad="12"/>
+<connect gate="A" pin="FO" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC10195" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="MC10195" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-25.4" y="-5.08" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="A" pin="A" pad="9"/>
+<connect gate="A" pin="B1" pad="5"/>
+<connect gate="A" pin="B2" pad="6"/>
+<connect gate="A" pin="B3" pad="7"/>
+<connect gate="A" pin="B4" pad="10"/>
+<connect gate="A" pin="B5" pad="11"/>
+<connect gate="A" pin="B6" pad="12"/>
+<connect gate="A" pin="Q1" pad="2"/>
+<connect gate="A" pin="Q2" pad="3"/>
+<connect gate="A" pin="Q3" pad="4"/>
+<connect gate="A" pin="Q4" pad="13"/>
+<connect gate="A" pin="Q5" pad="14"/>
+<connect gate="A" pin="Q6" pad="15"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCM10139" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCM10139" x="0" y="0"/>
+<gate name="P" symbol="1VCC1VEE" x="-25.4" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="G$1" pin="A0" pad="10"/>
+<connect gate="G$1" pin="A1" pad="11"/>
+<connect gate="G$1" pin="A2" pad="12"/>
+<connect gate="G$1" pin="A3" pad="13"/>
+<connect gate="G$1" pin="A4" pad="14"/>
+<connect gate="G$1" pin="CS" pad="15"/>
+<connect gate="G$1" pin="D0" pad="1"/>
+<connect gate="G$1" pin="D1" pad="2"/>
+<connect gate="G$1" pin="D2" pad="3"/>
+<connect gate="G$1" pin="D3" pad="4"/>
+<connect gate="G$1" pin="D4" pad="5"/>
+<connect gate="G$1" pin="D5" pad="6"/>
+<connect gate="G$1" pin="D6" pad="7"/>
+<connect gate="G$1" pin="D7" pad="9"/>
+<connect gate="P" pin="VCC" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCM10143" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCM10143" x="0" y="0"/>
+<gate name="P" symbol="3VCC1VEE" x="-33.02" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-6">
+<connects>
+<connect gate="G$1" pin="A0" pad="14"/>
+<connect gate="G$1" pin="A1" pad="15"/>
+<connect gate="G$1" pin="A2" pad="13"/>
+<connect gate="G$1" pin="B0" pad="6"/>
+<connect gate="G$1" pin="B1" pad="7"/>
+<connect gate="G$1" pin="B2" pad="5"/>
+<connect gate="G$1" pin="C0" pad="17"/>
+<connect gate="G$1" pin="C1" pad="16"/>
+<connect gate="G$1" pin="C2" pad="18"/>
+<connect gate="G$1" pin="CLK" pad="19"/>
+<connect gate="G$1" pin="D0" pad="10"/>
+<connect gate="G$1" pin="D1" pad="11"/>
+<connect gate="G$1" pin="QB0" pad="3"/>
+<connect gate="G$1" pin="QB1" pad="2"/>
+<connect gate="G$1" pin="QC0" pad="21"/>
+<connect gate="G$1" pin="QC1" pad="22"/>
+<connect gate="G$1" pin="RE-B" pad="4"/>
+<connect gate="G$1" pin="RE-C" pad="20"/>
+<connect gate="G$1" pin="WE0" pad="9"/>
+<connect gate="G$1" pin="WE1" pad="8"/>
+<connect gate="P" pin="VCC@1" pad="24"/>
+<connect gate="P" pin="VCC@2" pad="1"/>
+<connect gate="P" pin="VCC@3" pad="23"/>
+<connect gate="P" pin="VEE" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCM10144" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCM10144" x="0" y="0"/>
+<gate name="P" symbol="1VCC1VEE" x="-27.94" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="G$1" pin="A0" pad="1"/>
+<connect gate="G$1" pin="A1" pad="2"/>
+<connect gate="G$1" pin="A2" pad="3"/>
+<connect gate="G$1" pin="A3" pad="4"/>
+<connect gate="G$1" pin="A4" pad="9"/>
+<connect gate="G$1" pin="A5" pad="10"/>
+<connect gate="G$1" pin="A6" pad="11"/>
+<connect gate="G$1" pin="A7" pad="12"/>
+<connect gate="G$1" pin="CS1" pad="5"/>
+<connect gate="G$1" pin="CS2" pad="6"/>
+<connect gate="G$1" pin="CS3" pad="7"/>
+<connect gate="G$1" pin="DIN" pad="13"/>
+<connect gate="G$1" pin="DOUT" pad="15"/>
+<connect gate="G$1" pin="WE" pad="14"/>
+<connect gate="P" pin="VCC" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCM10145" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCM10145" x="0" y="0"/>
+<gate name="P" symbol="1VCC1VEE" x="-27.94" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="G$1" pin="A0" pad="10"/>
+<connect gate="G$1" pin="A1" pad="9"/>
+<connect gate="G$1" pin="A2" pad="7"/>
+<connect gate="G$1" pin="A3" pad="6"/>
+<connect gate="G$1" pin="CS" pad="3"/>
+<connect gate="G$1" pin="D0" pad="5"/>
+<connect gate="G$1" pin="D1" pad="4"/>
+<connect gate="G$1" pin="D2" pad="11"/>
+<connect gate="G$1" pin="D3" pad="12"/>
+<connect gate="G$1" pin="Q0" pad="2"/>
+<connect gate="G$1" pin="Q1" pad="1"/>
+<connect gate="G$1" pin="Q2" pad="15"/>
+<connect gate="G$1" pin="Q3" pad="14"/>
+<connect gate="G$1" pin="WE" pad="13"/>
+<connect gate="P" pin="VCC" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCM10146" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCM10146" x="0" y="0"/>
+<gate name="P" symbol="1VCC1VEE" x="-27.94" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="G$1" pin="A0" pad="2"/>
+<connect gate="G$1" pin="A1" pad="3"/>
+<connect gate="G$1" pin="A2" pad="4"/>
+<connect gate="G$1" pin="A3" pad="5"/>
+<connect gate="G$1" pin="A4" pad="6"/>
+<connect gate="G$1" pin="A5" pad="7"/>
+<connect gate="G$1" pin="A6" pad="9"/>
+<connect gate="G$1" pin="A7" pad="10"/>
+<connect gate="G$1" pin="A8" pad="11"/>
+<connect gate="G$1" pin="A9" pad="12"/>
+<connect gate="G$1" pin="CS" pad="14"/>
+<connect gate="G$1" pin="DIN" pad="15"/>
+<connect gate="G$1" pin="DOUT" pad="1"/>
+<connect gate="G$1" pin="WE" pad="13"/>
+<connect gate="P" pin="VCC" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCM10147" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCM10147" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-27.94" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="G$1" pin="A0" pad="2"/>
+<connect gate="G$1" pin="A1" pad="3"/>
+<connect gate="G$1" pin="A2" pad="4"/>
+<connect gate="G$1" pin="A3" pad="5"/>
+<connect gate="G$1" pin="A4" pad="6"/>
+<connect gate="G$1" pin="A5" pad="7"/>
+<connect gate="G$1" pin="A6" pad="10"/>
+<connect gate="G$1" pin="CS1" pad="14"/>
+<connect gate="G$1" pin="CS2" pad="13"/>
+<connect gate="G$1" pin="DIN" pad="11"/>
+<connect gate="G$1" pin="DOUT" pad="15"/>
+<connect gate="G$1" pin="NC" pad="9"/>
+<connect gate="G$1" pin="WE" pad="12"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MCM10148" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="MCM10148" x="0" y="0"/>
+<gate name="P" symbol="2VCC1VEE" x="-27.94" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL16">
+<connects>
+<connect gate="G$1" pin="A0" pad="2"/>
+<connect gate="G$1" pin="A1" pad="3"/>
+<connect gate="G$1" pin="A2" pad="6"/>
+<connect gate="G$1" pin="A3" pad="7"/>
+<connect gate="G$1" pin="A4" pad="9"/>
+<connect gate="G$1" pin="A5" pad="10"/>
+<connect gate="G$1" pin="CS1" pad="4"/>
+<connect gate="G$1" pin="CS2" pad="5"/>
+<connect gate="G$1" pin="DIN" pad="13"/>
+<connect gate="G$1" pin="DOUT" pad="15"/>
+<connect gate="G$1" pin="NC@1" pad="11"/>
+<connect gate="G$1" pin="NC@2" pad="14"/>
+<connect gate="G$1" pin="WE" pad="12"/>
+<connect gate="P" pin="VCC@1" pad="1"/>
+<connect gate="P" pin="VCC@2" pad="16"/>
+<connect gate="P" pin="VEE" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KHT5538" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5538" x="0" y="0"/>
+<gate name="P" symbol="2PWR4GND" x="-33.02" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-3">
+<connects>
+<connect gate="G$1" pin="A1" pad="24"/>
+<connect gate="G$1" pin="A2" pad="23"/>
+<connect gate="G$1" pin="A3" pad="22"/>
+<connect gate="G$1" pin="A4" pad="21"/>
+<connect gate="G$1" pin="A5" pad="16"/>
+<connect gate="G$1" pin="A6" pad="15"/>
+<connect gate="G$1" pin="A7" pad="14"/>
+<connect gate="G$1" pin="A8" pad="13"/>
+<connect gate="G$1" pin="OE1(ECL)" pad="17"/>
+<connect gate="G$1" pin="OE2(TTL)" pad="20"/>
+<connect gate="G$1" pin="Y1" pad="1"/>
+<connect gate="G$1" pin="Y2" pad="2"/>
+<connect gate="G$1" pin="Y3" pad="3"/>
+<connect gate="G$1" pin="Y4" pad="4"/>
+<connect gate="G$1" pin="Y5" pad="9"/>
+<connect gate="G$1" pin="Y6" pad="10"/>
+<connect gate="G$1" pin="Y7" pad="11"/>
+<connect gate="G$1" pin="Y8" pad="12"/>
+<connect gate="P" pin="GND@1" pad="6"/>
+<connect gate="P" pin="GND@2" pad="7"/>
+<connect gate="P" pin="GND@3" pad="8"/>
+<connect gate="P" pin="GND@4" pad="18"/>
+<connect gate="P" pin="VCC" pad="5"/>
+<connect gate="P" pin="VEE" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KHT5539" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5539" x="0" y="0"/>
+<gate name="P" symbol="2PWR4GND" x="-33.02" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-3">
+<connects>
+<connect gate="G$1" pin="A1" pad="24"/>
+<connect gate="G$1" pin="A2" pad="23"/>
+<connect gate="G$1" pin="A3" pad="22"/>
+<connect gate="G$1" pin="A4" pad="21"/>
+<connect gate="G$1" pin="A5" pad="16"/>
+<connect gate="G$1" pin="A6" pad="15"/>
+<connect gate="G$1" pin="A7" pad="14"/>
+<connect gate="G$1" pin="A8" pad="13"/>
+<connect gate="G$1" pin="OE1(ECL)" pad="17"/>
+<connect gate="G$1" pin="OE2(TTL)" pad="20"/>
+<connect gate="G$1" pin="Y1" pad="1"/>
+<connect gate="G$1" pin="Y2" pad="2"/>
+<connect gate="G$1" pin="Y3" pad="3"/>
+<connect gate="G$1" pin="Y4" pad="4"/>
+<connect gate="G$1" pin="Y5" pad="9"/>
+<connect gate="G$1" pin="Y6" pad="10"/>
+<connect gate="G$1" pin="Y7" pad="11"/>
+<connect gate="G$1" pin="Y8" pad="12"/>
+<connect gate="P" pin="GND@1" pad="6"/>
+<connect gate="P" pin="GND@2" pad="7"/>
+<connect gate="P" pin="GND@3" pad="8"/>
+<connect gate="P" pin="GND@4" pad="18"/>
+<connect gate="P" pin="VCC" pad="5"/>
+<connect gate="P" pin="VEE" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KHT5540" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5540" x="0" y="-2.54"/>
+<gate name="P" symbol="2PWR4GND" x="-33.02" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-3">
+<connects>
+<connect gate="G$1" pin="A1" pad="24"/>
+<connect gate="G$1" pin="A2" pad="23"/>
+<connect gate="G$1" pin="A3" pad="22"/>
+<connect gate="G$1" pin="A4" pad="21"/>
+<connect gate="G$1" pin="A5" pad="16"/>
+<connect gate="G$1" pin="A6" pad="15"/>
+<connect gate="G$1" pin="A7" pad="14"/>
+<connect gate="G$1" pin="A8" pad="13"/>
+<connect gate="G$1" pin="OE1(ECL)" pad="17"/>
+<connect gate="G$1" pin="OE2(TTL)" pad="20"/>
+<connect gate="G$1" pin="Y1" pad="1"/>
+<connect gate="G$1" pin="Y2" pad="2"/>
+<connect gate="G$1" pin="Y3" pad="3"/>
+<connect gate="G$1" pin="Y4" pad="4"/>
+<connect gate="G$1" pin="Y5" pad="9"/>
+<connect gate="G$1" pin="Y6" pad="10"/>
+<connect gate="G$1" pin="Y7" pad="11"/>
+<connect gate="G$1" pin="Y8" pad="12"/>
+<connect gate="P" pin="GND@1" pad="6"/>
+<connect gate="P" pin="GND@2" pad="7"/>
+<connect gate="P" pin="GND@3" pad="8"/>
+<connect gate="P" pin="GND@4" pad="18"/>
+<connect gate="P" pin="VCC" pad="5"/>
+<connect gate="P" pin="VEE" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KHT5541" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5541" x="0" y="0"/>
+<gate name="P" symbol="2PWR4GND" x="-33.02" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-3">
+<connects>
+<connect gate="G$1" pin="A1" pad="24"/>
+<connect gate="G$1" pin="A2" pad="23"/>
+<connect gate="G$1" pin="A3" pad="22"/>
+<connect gate="G$1" pin="A4" pad="21"/>
+<connect gate="G$1" pin="A5" pad="16"/>
+<connect gate="G$1" pin="A6" pad="15"/>
+<connect gate="G$1" pin="A7" pad="14"/>
+<connect gate="G$1" pin="A8" pad="13"/>
+<connect gate="G$1" pin="OE1(ECL)" pad="17"/>
+<connect gate="G$1" pin="OE2(TTL)" pad="20"/>
+<connect gate="G$1" pin="Y1" pad="1"/>
+<connect gate="G$1" pin="Y2" pad="2"/>
+<connect gate="G$1" pin="Y3" pad="3"/>
+<connect gate="G$1" pin="Y4" pad="4"/>
+<connect gate="G$1" pin="Y5" pad="9"/>
+<connect gate="G$1" pin="Y6" pad="10"/>
+<connect gate="G$1" pin="Y7" pad="11"/>
+<connect gate="G$1" pin="Y8" pad="12"/>
+<connect gate="P" pin="GND@1" pad="6"/>
+<connect gate="P" pin="GND@2" pad="7"/>
+<connect gate="P" pin="GND@3" pad="8"/>
+<connect gate="P" pin="GND@4" pad="18"/>
+<connect gate="P" pin="VCC" pad="5"/>
+<connect gate="P" pin="VEE" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KHT5542" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5542" x="0" y="0"/>
+<gate name="P" symbol="2PWR4GND" x="-33.02" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-3">
+<connects>
+<connect gate="G$1" pin="A1" pad="24"/>
+<connect gate="G$1" pin="A2" pad="23"/>
+<connect gate="G$1" pin="A3" pad="22"/>
+<connect gate="G$1" pin="A4" pad="21"/>
+<connect gate="G$1" pin="A5" pad="16"/>
+<connect gate="G$1" pin="A6" pad="15"/>
+<connect gate="G$1" pin="A7" pad="14"/>
+<connect gate="G$1" pin="A8" pad="13"/>
+<connect gate="G$1" pin="OE1(ECL)" pad="17"/>
+<connect gate="G$1" pin="OE2(TTL)" pad="20"/>
+<connect gate="G$1" pin="Y1" pad="1"/>
+<connect gate="G$1" pin="Y2" pad="2"/>
+<connect gate="G$1" pin="Y3" pad="3"/>
+<connect gate="G$1" pin="Y4" pad="4"/>
+<connect gate="G$1" pin="Y5" pad="9"/>
+<connect gate="G$1" pin="Y6" pad="10"/>
+<connect gate="G$1" pin="Y7" pad="11"/>
+<connect gate="G$1" pin="Y8" pad="12"/>
+<connect gate="P" pin="GND@1" pad="6"/>
+<connect gate="P" pin="GND@2" pad="7"/>
+<connect gate="P" pin="GND@3" pad="8"/>
+<connect gate="P" pin="GND@4" pad="18"/>
+<connect gate="P" pin="VCC" pad="5"/>
+<connect gate="P" pin="VEE" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KHT5573" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5573" x="0" y="0"/>
+<gate name="P" symbol="2PWR4GND" x="-33.02" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-3">
+<connects>
+<connect gate="G$1" pin="1D" pad="24"/>
+<connect gate="G$1" pin="1Q" pad="1"/>
+<connect gate="G$1" pin="2D" pad="23"/>
+<connect gate="G$1" pin="2Q" pad="2"/>
+<connect gate="G$1" pin="3D" pad="22"/>
+<connect gate="G$1" pin="3Q" pad="3"/>
+<connect gate="G$1" pin="4D" pad="21"/>
+<connect gate="G$1" pin="4Q" pad="4"/>
+<connect gate="G$1" pin="5D" pad="16"/>
+<connect gate="G$1" pin="5Q" pad="9"/>
+<connect gate="G$1" pin="6D" pad="15"/>
+<connect gate="G$1" pin="6Q" pad="10"/>
+<connect gate="G$1" pin="7D" pad="14"/>
+<connect gate="G$1" pin="7Q" pad="11"/>
+<connect gate="G$1" pin="8D" pad="13"/>
+<connect gate="G$1" pin="8Q" pad="12"/>
+<connect gate="G$1" pin="LE(ECL)" pad="17"/>
+<connect gate="G$1" pin="OE(TTL)" pad="20"/>
+<connect gate="P" pin="GND@1" pad="6"/>
+<connect gate="P" pin="GND@2" pad="7"/>
+<connect gate="P" pin="GND@3" pad="8"/>
+<connect gate="P" pin="GND@4" pad="18"/>
+<connect gate="P" pin="VCC" pad="5"/>
+<connect gate="P" pin="VEE" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KHT5574" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5574" x="0" y="0"/>
+<gate name="P" symbol="2PWR4GND" x="-33.02" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-3">
+<connects>
+<connect gate="G$1" pin="1D" pad="24"/>
+<connect gate="G$1" pin="1Q" pad="1"/>
+<connect gate="G$1" pin="2D" pad="23"/>
+<connect gate="G$1" pin="2Q" pad="2"/>
+<connect gate="G$1" pin="3D" pad="22"/>
+<connect gate="G$1" pin="3Q" pad="3"/>
+<connect gate="G$1" pin="4D" pad="21"/>
+<connect gate="G$1" pin="4Q" pad="4"/>
+<connect gate="G$1" pin="5D" pad="16"/>
+<connect gate="G$1" pin="5Q" pad="9"/>
+<connect gate="G$1" pin="6D" pad="15"/>
+<connect gate="G$1" pin="6Q" pad="10"/>
+<connect gate="G$1" pin="7D" pad="14"/>
+<connect gate="G$1" pin="7Q" pad="11"/>
+<connect gate="G$1" pin="8D" pad="13"/>
+<connect gate="G$1" pin="8Q" pad="12"/>
+<connect gate="G$1" pin="CLK(ECL)" pad="17"/>
+<connect gate="G$1" pin="OE(TTL)" pad="20"/>
+<connect gate="P" pin="GND@1" pad="6"/>
+<connect gate="P" pin="GND@2" pad="7"/>
+<connect gate="P" pin="GND@3" pad="8"/>
+<connect gate="P" pin="GND@4" pad="18"/>
+<connect gate="P" pin="VCC" pad="5"/>
+<connect gate="P" pin="VEE" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KHT5575" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5575" x="0" y="0"/>
+<gate name="P" symbol="2PWR4GND" x="-33.02" y="2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-3">
+<connects>
+<connect gate="G$1" pin="1D" pad="24"/>
+<connect gate="G$1" pin="1Q" pad="1"/>
+<connect gate="G$1" pin="2D" pad="23"/>
+<connect gate="G$1" pin="2Q" pad="2"/>
+<connect gate="G$1" pin="3D" pad="22"/>
+<connect gate="G$1" pin="3Q" pad="3"/>
+<connect gate="G$1" pin="4D" pad="21"/>
+<connect gate="G$1" pin="4Q" pad="4"/>
+<connect gate="G$1" pin="5D" pad="16"/>
+<connect gate="G$1" pin="5Q" pad="9"/>
+<connect gate="G$1" pin="6D" pad="15"/>
+<connect gate="G$1" pin="6Q" pad="10"/>
+<connect gate="G$1" pin="7D" pad="14"/>
+<connect gate="G$1" pin="7Q" pad="11"/>
+<connect gate="G$1" pin="8D" pad="13"/>
+<connect gate="G$1" pin="8Q" pad="12"/>
+<connect gate="G$1" pin="LE(ECL)" pad="17"/>
+<connect gate="G$1" pin="OE(TTL)" pad="20"/>
+<connect gate="P" pin="GND@1" pad="6"/>
+<connect gate="P" pin="GND@2" pad="7"/>
+<connect gate="P" pin="GND@3" pad="8"/>
+<connect gate="P" pin="GND@4" pad="18"/>
+<connect gate="P" pin="VCC" pad="5"/>
+<connect gate="P" pin="VEE" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="10KHT5543" prefix="U" uservalue="yes">
+<description>&lt;b&gt;ECL DEVICE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5543" x="0" y="0"/>
+<gate name="P" symbol="2PWR4GND" x="-33.02" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="DIL24-3">
+<connects>
+<connect gate="G$1" pin="A1" pad="24"/>
+<connect gate="G$1" pin="A2" pad="23"/>
+<connect gate="G$1" pin="A3" pad="22"/>
+<connect gate="G$1" pin="A4" pad="21"/>
+<connect gate="G$1" pin="A5" pad="16"/>
+<connect gate="G$1" pin="A6" pad="15"/>
+<connect gate="G$1" pin="A7" pad="14"/>
+<connect gate="G$1" pin="A8" pad="13"/>
+<connect gate="G$1" pin="OE1(ECL)" pad="17"/>
+<connect gate="G$1" pin="OE2(TTL)" pad="20"/>
+<connect gate="G$1" pin="Y1" pad="1"/>
+<connect gate="G$1" pin="Y2" pad="2"/>
+<connect gate="G$1" pin="Y3" pad="3"/>
+<connect gate="G$1" pin="Y4" pad="4"/>
+<connect gate="G$1" pin="Y5" pad="9"/>
+<connect gate="G$1" pin="Y6" pad="10"/>
+<connect gate="G$1" pin="Y7" pad="11"/>
+<connect gate="G$1" pin="Y8" pad="12"/>
+<connect gate="P" pin="GND@1" pad="6"/>
+<connect gate="P" pin="GND@2" pad="7"/>
+<connect gate="P" pin="GND@3" pad="8"/>
+<connect gate="P" pin="GND@4" pad="18"/>
+<connect gate="P" pin="VCC" pad="5"/>
+<connect gate="P" pin="VEE" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

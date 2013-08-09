@@ -1,0 +1,1026 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;Triad Magnetics&lt;/b&gt; - v1.00 (10/03/2006)&lt;p&gt;
+Audio transformers including Red Spec MIL-Spec series.&lt;p&gt;
+
+&lt;table BORDER="1" CELLPADDING="3" CELLSPACING="0" bordercolor="#000000"&gt;
+  &lt;tr&gt; 
+    &lt;td ROWSPAN="2" ALIGN="CENTER" VALIGN="BOTTOM"&gt;&lt;b&gt;&lt;font
+    FACE="Arial"&gt;Type&lt;br&gt;
+      No.&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td ROWSPAN="2" ALIGN="CENTER" VALIGN="BOTTOM"&gt;&lt;b&gt;&lt;font
+    FACE="Arial"&gt;Mil Type&lt;br&gt;
+      No.&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td ROWSPAN="2" ALIGN="CENTER" VALIGN="BOTTOM"&gt;&lt;b&gt;&lt;font
+    FACE="Arial"&gt;Power&lt;br&gt;
+      Level&lt;br&gt;
+      in mW&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td COLSPAN="2" ALIGN="CENTER" VALIGN="BOTTOM"&gt;&lt;b&gt;&lt;font
+    FACE="Arial"&gt;Matching Impedance&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td ROWSPAN="2" ALIGN="CENTER" VALIGN="BOTTOM"&gt;&lt;b&gt;&lt;font
+    FACE="Arial"&gt;Max. Ma DC&lt;br&gt;
+      Unbalanced&lt;br&gt;
+      in Primary&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td COLSPAN="2" ALIGN="CENTER" VALIGN="BOTTOM"&gt;&lt;b&gt;&lt;font
+    FACE="Arial"&gt;DC Resistance&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td ROWSPAN="2" ALIGN="CENTER" VALIGN="BOTTOM"&gt;&lt;b&gt;&lt;font
+    FACE="Arial"&gt;Overall&lt;br&gt;
+      Turns&lt;br&gt;
+      Ration&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td ROWSPAN="2" ALIGN="CENTER" VALIGN="BOTTOM"&gt;&lt;b&gt;&lt;font
+    FACE="Arial"&gt;Figure&lt;br&gt;
+      No.&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td ALIGN="CENTER" VALIGN="BOTTOM" &gt;&lt;b&gt;&lt;font FACE="Arial"&gt;Primary&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER" VALIGN="BOTTOM" &gt;&lt;b&gt;&lt;font FACE="Arial"&gt;Secondary&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER" VALIGN="BOTTOM" &gt;&lt;b&gt;&lt;font FACE="Arial"&gt;Primary&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER" VALIGN="BOTTOM" &gt;&lt;b&gt;&lt;font FACE="Arial"&gt;Secondary&lt;/font&gt;&lt;/b&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-4&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;200,000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1,000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;0.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;5,300.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;100.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;14.1:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-5&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;25&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;0.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3,800.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;75.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;7.1:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-13&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;40&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;25000 CT/20000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1000/800 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;0.5&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1,700.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;115.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;5.0:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-20&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1200 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1,050.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;200.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2.88:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-21&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1,050.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;330.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2.24:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-22&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10000&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2000 CT/500å&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1,050.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;146.0/168.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;4.48:1.0:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;4&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-29&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;500 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1,050.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;80.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;4.47:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-33&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1000&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;145.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;8.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;4.4:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-42&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;150 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;12&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;18.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2.7&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3.54:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-48&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;7500 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;12&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;796.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2.9&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;25.0:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-49&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;300&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;7.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;41.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;98.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0:1.42&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;500 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;67.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;98.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0:1.1&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-51&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;900 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;4.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;104.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;96.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.22:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-52&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1500 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;168.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;92.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.58:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-66&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10,000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10,000 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1,000.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1,300.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-67&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600 CT&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;72.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;92.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-68&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10,000&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;10,000 CT/2,500*&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1,000.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;565.0/650.0*&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2.1:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;4&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-69&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600 CT/150*&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;72.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;40.0/45.0*&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;2.0:1.0:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;4&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-70&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S21ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;50&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;600&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;3.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;72.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;92.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1.0:1.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;1&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-128&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;TF5S20ZZ&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;-&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;0.1H&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;-&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;5.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;15.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;-&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;-&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;5&lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&lt;nobr&gt;SP-310&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;Shield Only&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;-&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;0.1H&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;-&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;5.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;15.0&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;-&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;-&lt;/nobr&gt;&lt;/td&gt;
+    &lt;td ALIGN="CENTER"&gt;&lt;nobr&gt;- 
+      &lt;/nobr&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;br&gt;
+&lt;p&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;
+USE AT YOUR OWN RISK!&lt;p&gt;
+&lt;author&gt;Copyright (C) 2008, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
+<packages>
+<package name="REDSPEC-3">
+<description>AUDIO TRANSFORMER - MIL-T-27E</description>
+<wire x1="5.3975" y1="4.1275" x2="5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="5.3975" y1="-4.1275" x2="-5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="-4.1275" x2="-5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="4.1275" x2="5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<pad name="1" x="-3.81" y="2.54" drill="0.6096" shape="square"/>
+<pad name="2" x="-3.81" y="0" drill="0.6096"/>
+<pad name="3" x="-3.81" y="-2.54" drill="0.6096"/>
+<pad name="4" x="3.81" y="2.54" drill="0.6096"/>
+<pad name="5" x="3.81" y="0" drill="0.6096"/>
+<pad name="6" x="3.81" y="-2.54" drill="0.6096"/>
+<text x="-5.08" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="REDSPEC-1">
+<description>AUDIO TRANSFORMER - MIL-T-27E</description>
+<wire x1="5.3975" y1="4.1275" x2="5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="5.3975" y1="-4.1275" x2="-5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="-4.1275" x2="-5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="4.1275" x2="5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<pad name="1" x="-3.81" y="2.54" drill="0.6096" shape="square"/>
+<pad name="2" x="-3.81" y="-2.54" drill="0.6096"/>
+<pad name="3" x="3.81" y="2.54" drill="0.6096"/>
+<pad name="4" x="3.81" y="-2.54" drill="0.6096"/>
+<text x="-5.08" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="REDSPEC-2">
+<description>AUDIO TRANSFORMER - MIL-T-27E</description>
+<wire x1="5.3975" y1="4.1275" x2="5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="5.3975" y1="-4.1275" x2="-5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="-4.1275" x2="-5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="4.1275" x2="5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<pad name="1" x="-3.81" y="2.54" drill="0.6096" shape="square"/>
+<pad name="2" x="-3.81" y="0" drill="0.6096"/>
+<pad name="3" x="-3.81" y="-2.54" drill="0.6096"/>
+<pad name="4" x="3.81" y="2.54" drill="0.6096"/>
+<pad name="5" x="3.81" y="-2.54" drill="0.6096"/>
+<text x="-5.08" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="REDSPEC-4">
+<description>AUDIO TRANSFORMER - MIL-T-27E</description>
+<wire x1="5.3975" y1="4.1275" x2="5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="5.3975" y1="-4.1275" x2="-5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="-4.1275" x2="-5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="4.1275" x2="5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<pad name="1" x="-3.81" y="2.54" drill="0.6096" shape="square"/>
+<pad name="2" x="-3.81" y="0" drill="0.6096"/>
+<pad name="3" x="-3.81" y="-2.54" drill="0.6096"/>
+<pad name="4" x="3.81" y="2.54" drill="0.6096"/>
+<pad name="5" x="3.81" y="0" drill="0.6096"/>
+<pad name="6" x="3.81" y="-2.54" drill="0.6096"/>
+<text x="-5.08" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="REDSPEC-5">
+<description>AUDIO TRANSFORMER - MIL-T-27E</description>
+<wire x1="5.3975" y1="4.1275" x2="5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="5.3975" y1="-4.1275" x2="-5.3975" y2="-4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="-4.1275" x2="-5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="4.1275" x2="5.3975" y2="4.1275" width="0.2032" layer="21"/>
+<pad name="1" x="-3.81" y="2.54" drill="0.6096" shape="square"/>
+<pad name="2" x="-3.81" y="-2.54" drill="0.6096"/>
+<text x="-5.08" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="REDSPEC-1">
+<wire x1="2.54" y1="3.81" x2="2.54" y2="5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.27" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="5.08" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="94" curve="180"/>
+<wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<circle x="3.302" y="4.445" radius="0.127" width="0.3048" layer="94"/>
+<circle x="-3.302" y="4.445" radius="0.127" width="0.3048" layer="94"/>
+<text x="-3.175" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-8.255" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.9525" y1="-5.08" x2="-0.635" y2="5.08" layer="94"/>
+<rectangle x1="0.635" y1="-5.08" x2="0.9525" y2="5.0801" layer="94"/>
+<rectangle x1="-0.1588" y1="-5.08" x2="0.1588" y2="5.08" layer="94"/>
+<pin name="4" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
+</symbol>
+<symbol name="REDSPEC-2">
+<wire x1="2.54" y1="3.81" x2="2.54" y2="5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.27" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="5.08" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="94" curve="180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<circle x="3.302" y="4.445" radius="0.127" width="0.3048" layer="94"/>
+<circle x="-3.302" y="4.445" radius="0.127" width="0.3048" layer="94"/>
+<text x="-3.175" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-8.255" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.9525" y1="-5.08" x2="-0.635" y2="5.08" layer="94"/>
+<rectangle x1="0.635" y1="-5.08" x2="0.9525" y2="5.0801" layer="94"/>
+<rectangle x1="-0.1588" y1="-5.08" x2="0.1588" y2="5.08" layer="94"/>
+<pin name="5" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="1" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
+</symbol>
+<symbol name="REDSPEC-4">
+<wire x1="2.54" y1="3.81" x2="2.54" y2="5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.27" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="5.08" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="94" curve="180"/>
+<wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="1.27" x2="5.08" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="5.08" y2="-1.27" width="0.1524" layer="94"/>
+<circle x="3.302" y="4.445" radius="0.127" width="0.3048" layer="94"/>
+<circle x="-3.302" y="4.445" radius="0.127" width="0.3048" layer="94"/>
+<circle x="3.302" y="-1.905" radius="0.127" width="0.3048" layer="94"/>
+<text x="-3.175" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-8.255" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.9525" y1="-5.08" x2="-0.635" y2="5.08" layer="94"/>
+<rectangle x1="0.635" y1="-5.08" x2="0.9525" y2="5.0801" layer="94"/>
+<rectangle x1="-0.1588" y1="-5.08" x2="0.1588" y2="5.08" layer="94"/>
+<pin name="6" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="3" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="7.62" y="1.27" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="7.62" y="-1.27" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="REDSPEC-5">
+<wire x1="-2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="5.08" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="94" curve="180"/>
+<circle x="-3.302" y="4.445" radius="0.127" width="0.3048" layer="94"/>
+<text x="-3.175" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-8.255" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.9525" y1="-5.08" x2="-0.635" y2="5.08" layer="94"/>
+<rectangle x1="0.635" y1="-5.08" x2="0.9525" y2="5.0801" layer="94"/>
+<rectangle x1="-0.1588" y1="-5.08" x2="0.1588" y2="5.08" layer="94"/>
+<pin name="1" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="2" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
+</symbol>
+<symbol name="REDSPEC-3">
+<wire x1="2.54" y1="3.81" x2="2.54" y2="5.08" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="0" x2="2.54" y2="1.27" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-3.81" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-3.81" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="0" width="0.254" layer="94" curve="-180"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.27" width="0.254" layer="94" curve="-180"/>
+<wire x1="-2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="-5.08" y1="5.08" x2="-2.54" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="3.81" x2="-2.54" y2="5.08" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="2.54" x2="-2.54" y2="3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-3.81" x2="-2.54" y2="-2.54" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-5.08" x2="-2.54" y2="-3.81" width="0.254" layer="94" curve="180"/>
+<wire x1="-2.54" y1="-1.27" x2="-2.54" y2="0" width="0.254" layer="94" curve="180"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="5.08" x2="5.08" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="5.08" y2="-5.08" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<circle x="3.302" y="4.445" radius="0.127" width="0.3048" layer="94"/>
+<circle x="-3.302" y="4.445" radius="0.127" width="0.3048" layer="94"/>
+<text x="-3.175" y="6.35" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-8.255" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.9525" y1="-5.08" x2="-0.635" y2="5.08" layer="94"/>
+<rectangle x1="0.635" y1="-5.08" x2="0.9525" y2="5.0801" layer="94"/>
+<rectangle x1="-0.1588" y1="-5.08" x2="0.1588" y2="5.08" layer="94"/>
+<pin name="6" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="1" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="4" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
+<pin name="5" x="7.62" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="SP-4" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-5" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-13" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-20" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-21" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-22" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-29" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-33" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-42" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-48" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-49" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-50" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-51" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-52" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-66" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-67" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-3">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-68" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-69" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-4">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-70" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="REDSPEC-1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SP-128" prefix="T">
+<description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
+Red Spec Series</description>
+<gates>
+<gate name="G$1" symbol="REDSPEC-5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

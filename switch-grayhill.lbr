@@ -1,0 +1,1162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;Grayhill Rotary Switches&lt;/b&gt;&lt;p&gt;
+&lt;p&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;
+USE AT YOUR OWN RISK!&lt;p&gt;
+&lt;author&gt;Copyright (C) 2011, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
+<packages>
+<package name="71-12-1D-2C">
+<description>&lt;b&gt;Grayhill 71 Series&lt;/b&gt;</description>
+<wire x1="1.1112" y1="12.2238" x2="1.1112" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="9.8425" x2="-10.16" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-9.8425" x2="1.1112" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="-9.8425" x2="1.1112" y2="-12.2238" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="-12.2238" x2="4.445" y2="-12.2238" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-12.2238" x2="4.445" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-6.985" x2="6.6675" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="6.6675" y1="-6.985" x2="6.6675" y2="-2.2225" width="0.2032" layer="21"/>
+<wire x1="6.6675" y1="-2.2225" x2="9.8425" y2="-2.2225" width="0.2032" layer="51"/>
+<wire x1="9.8425" y1="-2.2225" x2="9.8425" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="9.8425" y1="2.2225" x2="6.6675" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="6.6675" y1="2.2225" x2="6.6675" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="6.6675" y1="6.985" x2="4.445" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="6.985" x2="4.445" y2="12.2238" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="12.2238" x2="1.1112" y2="12.2238" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="9.8425" x2="-10.16" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="4.7625" x2="-17.4625" y2="4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="4.7625" x2="-18.0975" y2="4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="4.1275" x2="-18.0975" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-3.175" x2="-18.0975" y2="-4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-4.1275" x2="-17.4625" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="-4.7625" x2="-10.16" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-26.3525" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="3.175" x2="-26.67" y2="2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="2.8575" x2="-26.67" y2="-2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="-2.8575" x2="-26.3525" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="-3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<pad name="A12" x="2.8575" y="10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="A11" x="2.8575" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A10" x="2.8575" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A9" x="2.8575" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A8" x="2.8575" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A7" x="2.8575" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A6" x="2.8575" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A5" x="2.8575" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A4" x="2.8575" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A3" x="2.8575" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A2" x="2.8575" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A1" x="2.8575" y="-10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="B-COM" x="0" y="7.62" drill="0.8128" diameter="1.4224"/>
+<pad name="A-COM" x="0" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<text x="-6.0325" y="3.175" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
+<text x="-9.2075" y="10.795" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-9.2075" y="12.065" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<wire x1="6.6675" y1="-2.2225" x2="6.6675" y2="2.2225" width="0.2032" layer="21"/>
+</package>
+<package name="71-10-1D-1C">
+<description>&lt;b&gt;Grayhill 71 Series&lt;/b&gt;</description>
+<wire x1="1.1112" y1="10.9538" x2="1.1112" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="9.8425" x2="-10.16" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-9.8425" x2="1.1112" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="-9.8425" x2="1.1112" y2="-10.9538" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="-10.9538" x2="4.7625" y2="-10.9538" width="0.2032" layer="21"/>
+<wire x1="4.7625" y1="-10.9538" x2="4.7625" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="4.7625" y1="-6.985" x2="6.985" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="-6.985" x2="6.985" y2="-2.2225" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="-2.2225" x2="10.16" y2="-2.2225" width="0.2032" layer="51"/>
+<wire x1="10.16" y1="-2.2225" x2="10.16" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="10.16" y1="2.2225" x2="6.985" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="6.985" y1="2.2225" x2="6.985" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="6.985" y1="6.985" x2="4.7625" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="4.7625" y1="6.985" x2="4.7625" y2="10.9538" width="0.2032" layer="21"/>
+<wire x1="4.7625" y1="10.9538" x2="1.1112" y2="10.9538" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="9.8425" x2="-10.16" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="4.7625" x2="-17.4625" y2="4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="4.7625" x2="-18.0975" y2="4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="4.1275" x2="-18.0975" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-3.175" x2="-18.0975" y2="-4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-4.1275" x2="-17.4625" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="-4.7625" x2="-10.16" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-26.3525" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="3.175" x2="-26.67" y2="2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="2.8575" x2="-26.67" y2="-2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="-2.8575" x2="-26.3525" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="-3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<pad name="A10" x="2.8575" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A9" x="2.8575" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A8" x="2.8575" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A7" x="2.8575" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A6" x="2.8575" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A5" x="2.8575" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A4" x="2.8575" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A3" x="2.8575" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A2" x="2.8575" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A1" x="2.8575" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A-COM" x="0" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<text x="-9.2075" y="10.795" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="3.81" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
+<text x="-9.2075" y="12.065" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<wire x1="6.985" y1="-2.2225" x2="6.985" y2="2.2225" width="0.2032" layer="21"/>
+</package>
+<package name="71-10-2D-2C">
+<description>&lt;b&gt;Grayhill 71 Series&lt;/b&gt;</description>
+<wire x1="1.1112" y1="10.9538" x2="1.1112" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="9.8425" x2="-10.16" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-9.8425" x2="1.1112" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="-9.8425" x2="1.1112" y2="-10.9538" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="-10.9538" x2="10.16" y2="-10.9538" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="-10.9538" x2="10.16" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="-6.985" x2="12.3825" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="12.3825" y1="-6.985" x2="12.3825" y2="-2.2225" width="0.2032" layer="21"/>
+<wire x1="12.3825" y1="-2.2225" x2="15.5575" y2="-2.2225" width="0.2032" layer="51"/>
+<wire x1="15.5575" y1="-2.2225" x2="15.5575" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="15.5575" y1="2.2225" x2="12.3825" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="12.3825" y1="2.2225" x2="12.3825" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="12.3825" y1="6.985" x2="10.16" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="6.985" x2="10.16" y2="10.9538" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="10.9538" x2="1.1112" y2="10.9538" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="9.8425" x2="-10.16" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="4.7625" x2="-17.4625" y2="4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="4.7625" x2="-18.0975" y2="4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="4.1275" x2="-18.0975" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-3.175" x2="-18.0975" y2="-4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-4.1275" x2="-17.4625" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="-4.7625" x2="-10.16" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-26.3525" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="3.175" x2="-26.67" y2="2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="2.8575" x2="-26.67" y2="-2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="-2.8575" x2="-26.3525" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="-3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<pad name="A10" x="2.8575" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A9" x="2.8575" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A8" x="2.8575" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A7" x="2.8575" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A6" x="2.8575" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A5" x="2.8575" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A4" x="2.8575" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A3" x="2.8575" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A2" x="2.8575" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A1" x="2.8575" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A-COM" x="0" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<pad name="B10" x="8.5726" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="B9" x="8.5726" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="B8" x="8.5726" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="B7" x="8.5726" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="B6" x="8.5726" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="B5" x="8.5726" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="B4" x="8.5726" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="B3" x="8.5726" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="B2" x="8.5726" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="B1" x="8.5726" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="B-COM" x="5.7151" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<text x="-9.2075" y="10.795" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="3.175" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
+<text x="-9.2075" y="12.065" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<wire x1="12.3825" y1="-2.2225" x2="12.3825" y2="2.2225" width="0.2032" layer="21"/>
+</package>
+<package name="71-12-1D-1C">
+<description>&lt;b&gt;Grayhill 71 Series&lt;/b&gt;</description>
+<wire x1="1.1112" y1="12.2238" x2="1.1112" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="9.8425" x2="-10.16" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-9.8425" x2="1.1112" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="-9.8425" x2="1.1112" y2="-12.2238" width="0.2032" layer="21"/>
+<wire x1="1.1112" y1="-12.2238" x2="4.445" y2="-12.2238" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-12.2238" x2="4.445" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-6.985" x2="6.6675" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="6.6675" y1="-6.985" x2="6.6675" y2="-2.2225" width="0.2032" layer="21"/>
+<wire x1="6.6675" y1="-2.2225" x2="9.8425" y2="-2.2225" width="0.2032" layer="51"/>
+<wire x1="9.8425" y1="-2.2225" x2="9.8425" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="9.8425" y1="2.2225" x2="6.6675" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="6.6675" y1="2.2225" x2="6.6675" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="6.6675" y1="6.985" x2="4.445" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="6.985" x2="4.445" y2="12.2238" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="12.2238" x2="1.1112" y2="12.2238" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="9.8425" x2="-10.16" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="4.7625" x2="-17.4625" y2="4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="4.7625" x2="-18.0975" y2="4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="4.1275" x2="-18.0975" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-3.175" x2="-18.0975" y2="-4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-4.1275" x2="-17.4625" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="-4.7625" x2="-10.16" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-26.3525" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="3.175" x2="-26.67" y2="2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="2.8575" x2="-26.67" y2="-2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="-2.8575" x2="-26.3525" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="-3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<pad name="A12" x="2.8575" y="10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="A11" x="2.8575" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A10" x="2.8575" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A9" x="2.8575" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A8" x="2.8575" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A7" x="2.8575" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A6" x="2.8575" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A5" x="2.8575" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A4" x="2.8575" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A3" x="2.8575" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A2" x="2.8575" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A1" x="2.8575" y="-10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="A-COM" x="0" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<text x="-6.0325" y="3.175" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
+<text x="-9.2075" y="10.795" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-9.2075" y="12.065" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<wire x1="6.6675" y1="-2.2225" x2="6.6675" y2="2.2225" width="0.2032" layer="21"/>
+</package>
+<package name="71-12-2D-2C">
+<description>&lt;b&gt;Grayhill 71 Series&lt;/b&gt;</description>
+<wire x1="1.1112" y1="12.2238" x2="1.1112" y2="9.8425" width="0.2032" layer="51"/>
+<wire x1="1.1112" y1="9.8425" x2="-10.16" y2="9.8425" width="0.2032" layer="51"/>
+<wire x1="-10.16" y1="-9.8425" x2="1.1112" y2="-9.8425" width="0.2032" layer="51"/>
+<wire x1="1.1112" y1="-9.8425" x2="1.1112" y2="-12.2238" width="0.2032" layer="51"/>
+<wire x1="1.1112" y1="-12.2238" x2="10.16" y2="-12.2238" width="0.2032" layer="51"/>
+<wire x1="10.16" y1="-12.2238" x2="10.16" y2="-6.985" width="0.2032" layer="51"/>
+<wire x1="10.16" y1="-6.985" x2="12.3825" y2="-6.985" width="0.2032" layer="51"/>
+<wire x1="12.3825" y1="-6.985" x2="12.3825" y2="-2.2225" width="0.2032" layer="51"/>
+<wire x1="12.3825" y1="-2.2225" x2="15.5575" y2="-2.2225" width="0.2032" layer="51"/>
+<wire x1="15.5575" y1="-2.2225" x2="15.5575" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="15.5575" y1="2.2225" x2="12.3825" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="12.3825" y1="2.2225" x2="12.3825" y2="6.985" width="0.2032" layer="51"/>
+<wire x1="12.3825" y1="6.985" x2="10.16" y2="6.985" width="0.2032" layer="51"/>
+<wire x1="10.16" y1="6.985" x2="10.16" y2="12.2238" width="0.2032" layer="51"/>
+<wire x1="10.16" y1="12.2238" x2="1.1112" y2="12.2238" width="0.2032" layer="51"/>
+<wire x1="-10.16" y1="9.8425" x2="-10.16" y2="-9.8425" width="0.2032" layer="51"/>
+<wire x1="-10.16" y1="4.7625" x2="-17.4625" y2="4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="4.7625" x2="-18.0975" y2="4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="4.1275" x2="-18.0975" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-3.175" x2="-18.0975" y2="-4.1275" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="-4.1275" x2="-17.4625" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-17.4625" y1="-4.7625" x2="-10.16" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-18.0975" y1="3.175" x2="-26.3525" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="3.175" x2="-26.67" y2="2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="2.8575" x2="-26.67" y2="-2.8575" width="0.2032" layer="51"/>
+<wire x1="-26.67" y1="-2.8575" x2="-26.3525" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-26.3525" y1="-3.175" x2="-18.0975" y2="-3.175" width="0.2032" layer="51"/>
+<pad name="A12" x="2.8575" y="10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="A11" x="2.8575" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A10" x="2.8575" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A9" x="2.8575" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A8" x="2.8575" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A7" x="2.8575" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A6" x="2.8575" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A5" x="2.8575" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A4" x="2.8575" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A3" x="2.8575" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A2" x="2.8575" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A1" x="2.8575" y="-10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="A-COM" x="0" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<pad name="B12" x="8.5726" y="10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="B11" x="8.5726" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="B10" x="8.5726" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="B9" x="8.5726" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="B8" x="8.5726" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="B7" x="8.5726" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="B6" x="8.5726" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="B5" x="8.5726" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="B4" x="8.5726" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="B3" x="8.5726" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="B2" x="8.5726" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="B1" x="8.5726" y="-10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="B-COM" x="5.7151" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<text x="-6.0325" y="3.175" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
+<text x="-9.2075" y="10.795" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-9.2075" y="12.065" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<wire x1="12.3825" y1="-2.2225" x2="12.3825" y2="2.2225" width="0.2032" layer="51"/>
+</package>
+<package name="71-12-3D-3C">
+<description>&lt;b&gt;Grayhill 71 Series&lt;/b&gt;</description>
+<wire x1="3.9687" y1="12.2238" x2="3.9687" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="3.9687" y1="9.8425" x2="-7.1438" y2="9.8425" width="0.2032" layer="21"/>
+<wire x1="-7.1438" y1="9.8425" x2="-7.1438" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="-7.1438" y1="-9.8425" x2="3.9687" y2="-9.8425" width="0.2032" layer="21"/>
+<wire x1="3.9687" y1="-9.8425" x2="3.9687" y2="-12.2238" width="0.2032" layer="21"/>
+<wire x1="3.9687" y1="-12.2238" x2="18.7325" y2="-12.2238" width="0.2032" layer="21"/>
+<wire x1="18.7325" y1="-12.2238" x2="18.7325" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="18.7325" y1="-6.985" x2="20.955" y2="-6.985" width="0.2032" layer="21"/>
+<wire x1="20.955" y1="-6.985" x2="20.955" y2="-2.2225" width="0.2032" layer="21"/>
+<wire x1="20.955" y1="-2.2225" x2="24.13" y2="-2.2225" width="0.2032" layer="51"/>
+<wire x1="24.13" y1="-2.2225" x2="24.13" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="24.13" y1="2.2225" x2="20.955" y2="2.2225" width="0.2032" layer="51"/>
+<wire x1="20.955" y1="2.2225" x2="20.955" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="20.955" y1="6.985" x2="18.7325" y2="6.985" width="0.2032" layer="21"/>
+<wire x1="18.7325" y1="6.985" x2="18.7325" y2="12.2238" width="0.2032" layer="21"/>
+<wire x1="18.7325" y1="12.2238" x2="3.9687" y2="12.2238" width="0.2032" layer="21"/>
+<wire x1="-7.1438" y1="4.7625" x2="-14.4463" y2="4.7625" width="0.2032" layer="51"/>
+<wire x1="-14.4463" y1="4.7625" x2="-15.0813" y2="4.1275" width="0.2032" layer="51"/>
+<wire x1="-15.0813" y1="4.1275" x2="-15.0813" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-15.0813" y1="3.175" x2="-15.0813" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-15.0813" y1="-3.175" x2="-15.0813" y2="-4.1275" width="0.2032" layer="51"/>
+<wire x1="-15.0813" y1="-4.1275" x2="-14.4463" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-14.4463" y1="-4.7625" x2="-7.1438" y2="-4.7625" width="0.2032" layer="51"/>
+<wire x1="-15.0813" y1="3.175" x2="-23.3363" y2="3.175" width="0.2032" layer="51"/>
+<wire x1="-23.3363" y1="3.175" x2="-23.6538" y2="2.8575" width="0.2032" layer="51"/>
+<wire x1="-23.6538" y1="2.8575" x2="-23.6538" y2="-2.8575" width="0.2032" layer="51"/>
+<wire x1="-23.6538" y1="-2.8575" x2="-23.3363" y2="-3.175" width="0.2032" layer="51"/>
+<wire x1="-23.3363" y1="-3.175" x2="-15.0813" y2="-3.175" width="0.2032" layer="51"/>
+<pad name="A12" x="5.715" y="10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="A11" x="5.715" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A10" x="5.715" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A9" x="5.715" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A8" x="5.715" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A7" x="5.715" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A6" x="5.715" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="A5" x="5.715" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="A4" x="5.715" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="A3" x="5.715" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="A2" x="5.715" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="A1" x="5.715" y="-10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="A-COM" x="2.8575" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<pad name="B12" x="11.4301" y="10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="B11" x="11.4301" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="B10" x="11.4301" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="B9" x="11.4301" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="B8" x="11.4301" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="B7" x="11.4301" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="B6" x="11.4301" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="B5" x="11.4301" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="B4" x="11.4301" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="B3" x="11.4301" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="B2" x="11.4301" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="B1" x="11.4301" y="-10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="B-COM" x="8.5726" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<pad name="C12" x="17.1451" y="10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="C11" x="17.1451" y="8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="C10" x="17.1451" y="6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="C9" x="17.1451" y="4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="C8" x="17.1451" y="2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="C7" x="17.1451" y="0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="C6" x="17.1451" y="-0.9525" drill="0.8128" diameter="1.4224"/>
+<pad name="C5" x="17.1451" y="-2.8575" drill="0.8128" diameter="1.4224"/>
+<pad name="C4" x="17.1451" y="-4.7625" drill="0.8128" diameter="1.4224"/>
+<pad name="C3" x="17.1451" y="-6.6675" drill="0.8128" diameter="1.4224"/>
+<pad name="C2" x="17.1451" y="-8.5725" drill="0.8128" diameter="1.4224"/>
+<pad name="C1" x="17.1451" y="-10.4775" drill="0.8128" diameter="1.4224"/>
+<pad name="C-COM" x="14.2876" y="-7.62" drill="0.8128" diameter="1.4224"/>
+<text x="-6.0325" y="10.795" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="3.175" size="0.8128" layer="27" ratio="10" rot="R270">&gt;VALUE</text>
+<text x="-6.0325" y="12.065" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<wire x1="20.955" y1="-2.2225" x2="20.955" y2="2.2225" width="0.2032" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="71-6-PR">
+<wire x1="12.7" y1="12.7" x2="6.35" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="6.35" x2="4.1275" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="8.89" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="3.81" x2="5.3975" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="2.54" x2="11.43" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="11.43" y1="2.54" x2="10.16" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="1.27" x2="6.0325" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-2.54" x2="11.43" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="11.43" y1="-2.54" x2="10.16" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-1.27" x2="6.0325" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-7.62" x2="8.89" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="-3.81" x2="5.3975" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="12.7" y1="-12.7" x2="6.35" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-6.35" x2="4.1275" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-5.715" x2="-7.62" y2="0" width="0.1524" layer="94"/>
+<circle x="3.4925" y="6.35" radius="0.635" width="0.254" layer="94"/>
+<circle x="4.7625" y="3.81" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.3975" y="1.27" radius="0.635" width="0.254" layer="94"/>
+<circle x="5.3975" y="-1.27" radius="0.635" width="0.254" layer="94"/>
+<circle x="4.7625" y="-3.81" radius="0.635" width="0.254" layer="94"/>
+<circle x="3.4925" y="-6.35" radius="0.635" width="0.254" layer="94"/>
+<text x="-15.24" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-15.24" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="COM" x="-10.16" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="6" x="15.24" y="12.7" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="15.24" y="7.62" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="15.24" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="15.24" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="15.24" y="-7.62" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="15.24" y="-12.7" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="2.54" y="-5.715"/>
+<vertex x="1.5875" y="-4.445"/>
+<vertex x="0.9525" y="-5.3975"/>
+</polygon>
+</symbol>
+<symbol name="71-6-PS">
+<wire x1="2.54" y1="10.16" x2="0.635" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="0.635" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-20.32" x2="0.635" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-30.48" x2="0.635" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="20.32" x2="2.54" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-30.48" x2="-5.08" y2="-30.48" width="0.1524" layer="94"/>
+<circle x="0" y="20.32" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="10.16" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-20.32" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-30.48" radius="0.635" width="0.254" layer="94"/>
+<text x="0.635" y="24.13" size="1.778" layer="95">&gt;NAME</text>
+<pin name="6" x="5.08" y="20.32" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="COM" x="-7.62" y="-30.48" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="5" x="5.08" y="10.16" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="5.08" y="-20.32" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="5.08" y="-30.48" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="-30.48"/>
+<vertex x="-3.175" y="-29.845"/>
+<vertex x="-3.175" y="-31.115"/>
+</polygon>
+</symbol>
+<symbol name="71-10-PR">
+<wire x1="10.16" y1="22.86" x2="-1.27" y2="11.43" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="11.43" x2="-2.54" y2="11.43" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="1.27" y2="8.89" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="8.89" x2="0" y2="8.89" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="3.81" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="6.35" x2="1.5875" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="6.35" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="3.81" x2="2.8575" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="8.89" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="2.54" x2="7.62" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="1.27" x2="3.4925" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="-2.54" x2="7.62" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-1.27" x2="3.4925" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="6.35" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-3.81" x2="2.8575" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="3.81" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-6.35" x2="1.5875" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="1.27" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-8.89" x2="0" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="-1.27" y2="-11.43" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-11.43" x2="-2.54" y2="-11.43" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-10.16" x2="-10.16" y2="0" width="0.1524" layer="94"/>
+<circle x="-3.175" y="11.43" radius="0.635" width="0.254" layer="94"/>
+<circle x="-0.635" y="8.89" radius="0.635" width="0.254" layer="94"/>
+<circle x="0.9525" y="6.35" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.2225" y="3.81" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.8575" y="1.27" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.8575" y="-1.27" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.2225" y="-3.81" radius="0.635" width="0.254" layer="94"/>
+<circle x="0.9525" y="-6.35" radius="0.635" width="0.254" layer="94"/>
+<circle x="-0.635" y="-8.89" radius="0.635" width="0.254" layer="94"/>
+<circle x="-3.175" y="-11.43" radius="0.635" width="0.254" layer="94"/>
+<text x="-17.78" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-17.78" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="COM" x="-12.7" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="10" x="12.7" y="22.86" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="9" x="12.7" y="17.78" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="8" x="12.7" y="12.7" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="7" x="12.7" y="7.62" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="6" x="12.7" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="12.7" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="12.7" y="-7.62" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="12.7" y="-12.7" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="12.7" y="-17.78" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="12.7" y="-22.86" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-3.81" y="-10.16"/>
+<vertex x="-4.1275" y="-8.5725"/>
+<vertex x="-5.08" y="-9.2075"/>
+</polygon>
+</symbol>
+<symbol name="71-10-PS">
+<wire x1="2.54" y1="40.64" x2="0.635" y2="40.64" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="30.48" x2="0.635" y2="30.48" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="20.32" x2="0.635" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="0.635" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="0.635" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-20.32" x2="0.635" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-30.48" x2="0.635" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-40.64" x2="0.635" y2="-40.64" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-50.8" x2="0.635" y2="-50.8" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-50.8" x2="-5.08" y2="-50.8" width="0.1524" layer="94"/>
+<circle x="0" y="40.64" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="30.48" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="20.32" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="10.16" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-20.32" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-30.48" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-40.64" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-50.8" radius="0.635" width="0.254" layer="94"/>
+<text x="0.635" y="46.99" size="1.778" layer="95">&gt;NAME</text>
+<pin name="COM" x="-7.62" y="-50.8" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="10" x="5.08" y="40.64" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="9" x="5.08" y="30.48" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="8" x="5.08" y="20.32" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="7" x="5.08" y="10.16" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="6" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="5.08" y="-20.32" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="5.08" y="-30.48" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="5.08" y="-40.64" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="5.08" y="-50.8" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="-50.8"/>
+<vertex x="-3.175" y="-50.165"/>
+<vertex x="-3.175" y="-51.435"/>
+</polygon>
+</symbol>
+<symbol name="71-12-PR">
+<wire x1="10.16" y1="22.86" x2="-1.27" y2="11.43" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="11.43" x2="-2.54" y2="11.43" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="17.78" x2="1.27" y2="8.89" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="8.89" x2="0" y2="8.89" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="12.7" x2="3.81" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="6.35" x2="1.5875" y2="6.35" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="6.35" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="3.81" x2="2.8575" y2="3.81" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="2.54" x2="8.89" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="2.54" x2="7.62" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="1.27" x2="3.4925" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-2.54" x2="8.89" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="8.89" y1="-2.54" x2="7.62" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="7.62" y1="-1.27" x2="3.4925" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="6.35" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="6.35" y1="-3.81" x2="2.8575" y2="-3.81" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="3.81" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="-6.35" x2="1.5875" y2="-6.35" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-17.78" x2="1.27" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-8.89" x2="0" y2="-8.89" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-22.86" x2="-1.27" y2="-11.43" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-11.43" x2="-2.54" y2="-11.43" width="0.1524" layer="94"/>
+<wire x1="-6.0325" y1="-12.7" x2="-10.16" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="13.97" x2="-5.08" y2="13.97" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-13.97" x2="-5.08" y2="-13.97" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="-27.94" x2="-3.81" y2="-13.97" width="0.1524" layer="94"/>
+<wire x1="10.16" y1="27.94" x2="-3.81" y2="13.97" width="0.1524" layer="94"/>
+<circle x="-3.175" y="11.43" radius="0.635" width="0.254" layer="94"/>
+<circle x="-0.635" y="8.89" radius="0.635" width="0.254" layer="94"/>
+<circle x="0.9525" y="6.35" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.2225" y="3.81" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.8575" y="1.27" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.8575" y="-1.27" radius="0.635" width="0.254" layer="94"/>
+<circle x="2.2225" y="-3.81" radius="0.635" width="0.254" layer="94"/>
+<circle x="0.9525" y="-6.35" radius="0.635" width="0.254" layer="94"/>
+<circle x="-0.635" y="-8.89" radius="0.635" width="0.254" layer="94"/>
+<circle x="-3.175" y="-11.43" radius="0.635" width="0.254" layer="94"/>
+<circle x="-5.715" y="13.97" radius="0.635" width="0.254" layer="94"/>
+<circle x="-5.715" y="-13.97" radius="0.635" width="0.254" layer="94"/>
+<text x="-17.78" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="-17.78" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<pin name="COM1" x="-12.7" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="11" x="12.7" y="22.86" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="10" x="12.7" y="17.78" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="9" x="12.7" y="12.7" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="8" x="12.7" y="7.62" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="7" x="12.7" y="2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="6" x="12.7" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="12.7" y="-7.62" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="12.7" y="-12.7" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="12.7" y="-17.78" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="12.7" y="-22.86" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="12" x="12.7" y="27.94" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="12.7" y="-27.94" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-6.0325" y="-12.7"/>
+<vertex x="-6.0325" y="-10.795"/>
+<vertex x="-7.3025" y="-11.1125"/>
+</polygon>
+</symbol>
+<symbol name="71-12-PS">
+<wire x1="2.54" y1="30.48" x2="0.635" y2="30.48" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="20.32" x2="0.635" y2="20.32" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="10.16" x2="0.635" y2="10.16" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="0" x2="0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-10.16" x2="0.635" y2="-10.16" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="40.64" x2="2.54" y2="40.64" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-20.32" x2="0.635" y2="-20.32" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-30.48" x2="0.635" y2="-30.48" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-40.64" x2="0.635" y2="-40.64" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-50.8" x2="0.635" y2="-50.8" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-60.96" x2="0.635" y2="-60.96" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-71.12" x2="0.635" y2="-71.12" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="-71.12" x2="-5.08" y2="-71.12" width="0.1524" layer="94"/>
+<circle x="0" y="40.64" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="30.48" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="20.32" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="10.16" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-10.16" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-20.32" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-30.48" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-40.64" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-50.8" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-60.96" radius="0.635" width="0.254" layer="94"/>
+<circle x="0" y="-71.12" radius="0.635" width="0.254" layer="94"/>
+<text x="0.635" y="44.45" size="1.778" layer="95">&gt;NAME</text>
+<pin name="12" x="5.08" y="40.64" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="COM" x="-7.62" y="-71.12" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="11" x="5.08" y="30.48" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="10" x="5.08" y="20.32" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="9" x="5.08" y="10.16" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="8" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="7" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="6" x="5.08" y="-20.32" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="5" x="5.08" y="-30.48" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="5.08" y="-40.64" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="5.08" y="-50.8" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="2" x="5.08" y="-60.96" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="1" x="5.08" y="-71.12" visible="pad" length="short" direction="pas" rot="R180"/>
+<polygon width="0.254" layer="94">
+<vertex x="-1.27" y="-71.12"/>
+<vertex x="-3.175" y="-70.485"/>
+<vertex x="-3.175" y="-71.755"/>
+</polygon>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="71-6DP-1D" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 6 Pos, 2 Pole,  1 Deck</description>
+<gates>
+<gate name="A" symbol="71-6-PR" x="0" y="0"/>
+<gate name="B" symbol="71-6-PR" x="40.64" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-12-1D-2C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="COM" pad="A-COM"/>
+<connect gate="B" pin="1" pad="A7"/>
+<connect gate="B" pin="2" pad="A8"/>
+<connect gate="B" pin="3" pad="A9"/>
+<connect gate="B" pin="4" pad="A10"/>
+<connect gate="B" pin="5" pad="A11"/>
+<connect gate="B" pin="6" pad="A12"/>
+<connect gate="B" pin="COM" pad="B-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-6DP-1DS" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 6 Pos, 2 Pole,  1 Deck</description>
+<gates>
+<gate name="A" symbol="71-6-PS" x="-2.54" y="0"/>
+<gate name="B" symbol="71-6-PS" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-12-1D-2C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="COM" pad="A-COM"/>
+<connect gate="B" pin="1" pad="A7"/>
+<connect gate="B" pin="2" pad="A8"/>
+<connect gate="B" pin="3" pad="A9"/>
+<connect gate="B" pin="4" pad="A10"/>
+<connect gate="B" pin="5" pad="A11"/>
+<connect gate="B" pin="6" pad="A12"/>
+<connect gate="B" pin="COM" pad="B-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-10SP-1D" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 10 Pos, 1 Pole,  1 Deck</description>
+<gates>
+<gate name="A" symbol="71-10-PR" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-10-1D-1C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM" pad="A-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-10SP-1DS" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 10 Pos, 1 Pole,  1 Deck</description>
+<gates>
+<gate name="A" symbol="71-10-PS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-10-1D-1C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM" pad="A-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-10SP-2D" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 10 Pos, 1 Pole,  2 Deck</description>
+<gates>
+<gate name="A" symbol="71-10-PR" x="-20.32" y="0"/>
+<gate name="B" symbol="71-10-PR" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-10-2D-2C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM" pad="A-COM"/>
+<connect gate="B" pin="1" pad="B1"/>
+<connect gate="B" pin="10" pad="B10"/>
+<connect gate="B" pin="2" pad="B2"/>
+<connect gate="B" pin="3" pad="B3"/>
+<connect gate="B" pin="4" pad="B4"/>
+<connect gate="B" pin="5" pad="B5"/>
+<connect gate="B" pin="6" pad="B6"/>
+<connect gate="B" pin="7" pad="B7"/>
+<connect gate="B" pin="8" pad="B8"/>
+<connect gate="B" pin="9" pad="B9"/>
+<connect gate="B" pin="COM" pad="B-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-10SP-2DS" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 10 Pos, 1 Pole,  2 Deck</description>
+<gates>
+<gate name="A" symbol="71-10-PS" x="0" y="0"/>
+<gate name="B" symbol="71-10-PS" x="25.4" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-10-2D-2C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM" pad="A-COM"/>
+<connect gate="B" pin="1" pad="B1"/>
+<connect gate="B" pin="10" pad="B10"/>
+<connect gate="B" pin="2" pad="B2"/>
+<connect gate="B" pin="3" pad="B3"/>
+<connect gate="B" pin="4" pad="B4"/>
+<connect gate="B" pin="5" pad="B5"/>
+<connect gate="B" pin="6" pad="B6"/>
+<connect gate="B" pin="7" pad="B7"/>
+<connect gate="B" pin="8" pad="B8"/>
+<connect gate="B" pin="9" pad="B9"/>
+<connect gate="B" pin="COM" pad="B-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-12SP-1D" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 12 Pos, 1 Pole,  1 Deck</description>
+<gates>
+<gate name="A" symbol="71-12-PR" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-12-1D-1C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="11" pad="A11"/>
+<connect gate="A" pin="12" pad="A12"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM1" pad="A-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-12SP-1DS" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 12 Pos, 1 Pole,  1 Deck</description>
+<gates>
+<gate name="A" symbol="71-12-PS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-12-1D-1C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="11" pad="A11"/>
+<connect gate="A" pin="12" pad="A12"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM" pad="A-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-12SP-2D" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 12 Pos, 1 Pole,  2 Deck</description>
+<gates>
+<gate name="A" symbol="71-12-PR" x="-17.78" y="0"/>
+<gate name="B" symbol="71-12-PR" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-12-2D-2C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="11" pad="A11"/>
+<connect gate="A" pin="12" pad="A12"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM1" pad="A-COM"/>
+<connect gate="B" pin="1" pad="B1"/>
+<connect gate="B" pin="10" pad="B10"/>
+<connect gate="B" pin="11" pad="B11"/>
+<connect gate="B" pin="12" pad="B12"/>
+<connect gate="B" pin="2" pad="B2"/>
+<connect gate="B" pin="3" pad="B3"/>
+<connect gate="B" pin="4" pad="B4"/>
+<connect gate="B" pin="5" pad="B5"/>
+<connect gate="B" pin="6" pad="B6"/>
+<connect gate="B" pin="7" pad="B7"/>
+<connect gate="B" pin="8" pad="B8"/>
+<connect gate="B" pin="9" pad="B9"/>
+<connect gate="B" pin="COM1" pad="B-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-12SP-2DS" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 12 Pos, 1 Pole,  2 Deck</description>
+<gates>
+<gate name="A" symbol="71-12-PS" x="-7.62" y="0"/>
+<gate name="B" symbol="71-12-PS" x="15.24" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-12-2D-2C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="11" pad="A11"/>
+<connect gate="A" pin="12" pad="A12"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM" pad="A-COM"/>
+<connect gate="B" pin="1" pad="B1"/>
+<connect gate="B" pin="10" pad="B10"/>
+<connect gate="B" pin="11" pad="B11"/>
+<connect gate="B" pin="12" pad="B12"/>
+<connect gate="B" pin="2" pad="B2"/>
+<connect gate="B" pin="3" pad="B3"/>
+<connect gate="B" pin="4" pad="B4"/>
+<connect gate="B" pin="5" pad="B5"/>
+<connect gate="B" pin="6" pad="B6"/>
+<connect gate="B" pin="7" pad="B7"/>
+<connect gate="B" pin="8" pad="B8"/>
+<connect gate="B" pin="9" pad="B9"/>
+<connect gate="B" pin="COM" pad="B-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-12SP-3D" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 12 Pos, 1 Pole,  3 Deck</description>
+<gates>
+<gate name="A" symbol="71-12-PR" x="-40.64" y="0"/>
+<gate name="B" symbol="71-12-PR" x="-2.54" y="0"/>
+<gate name="C" symbol="71-12-PR" x="35.56" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-12-3D-3C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="11" pad="A11"/>
+<connect gate="A" pin="12" pad="A12"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM1" pad="A-COM"/>
+<connect gate="B" pin="1" pad="B1"/>
+<connect gate="B" pin="10" pad="B10"/>
+<connect gate="B" pin="11" pad="B11"/>
+<connect gate="B" pin="12" pad="B12"/>
+<connect gate="B" pin="2" pad="B2"/>
+<connect gate="B" pin="3" pad="B3"/>
+<connect gate="B" pin="4" pad="B4"/>
+<connect gate="B" pin="5" pad="B5"/>
+<connect gate="B" pin="6" pad="B6"/>
+<connect gate="B" pin="7" pad="B7"/>
+<connect gate="B" pin="8" pad="B8"/>
+<connect gate="B" pin="9" pad="B9"/>
+<connect gate="B" pin="COM1" pad="B-COM"/>
+<connect gate="C" pin="1" pad="C1"/>
+<connect gate="C" pin="10" pad="C10"/>
+<connect gate="C" pin="11" pad="C11"/>
+<connect gate="C" pin="12" pad="C12"/>
+<connect gate="C" pin="2" pad="C2"/>
+<connect gate="C" pin="3" pad="C3"/>
+<connect gate="C" pin="4" pad="C4"/>
+<connect gate="C" pin="5" pad="C5"/>
+<connect gate="C" pin="6" pad="C6"/>
+<connect gate="C" pin="7" pad="C7"/>
+<connect gate="C" pin="8" pad="C8"/>
+<connect gate="C" pin="9" pad="C9"/>
+<connect gate="C" pin="COM1" pad="C-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="71-12SP-3DS" prefix="S">
+<description>&lt;b&gt;Rotary Switch&lt;/b&gt;&lt;p&gt;
+Grayhill 71 Series, 12 Pos, 1 Pole,  3 Deck</description>
+<gates>
+<gate name="A" symbol="71-12-PS" x="0" y="0"/>
+<gate name="B" symbol="71-12-PS" x="22.86" y="0"/>
+<gate name="C" symbol="71-12-PS" x="43.18" y="0"/>
+</gates>
+<devices>
+<device name="" package="71-12-3D-3C">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="10" pad="A10"/>
+<connect gate="A" pin="11" pad="A11"/>
+<connect gate="A" pin="12" pad="A12"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="A" pin="4" pad="A4"/>
+<connect gate="A" pin="5" pad="A5"/>
+<connect gate="A" pin="6" pad="A6"/>
+<connect gate="A" pin="7" pad="A7"/>
+<connect gate="A" pin="8" pad="A8"/>
+<connect gate="A" pin="9" pad="A9"/>
+<connect gate="A" pin="COM" pad="A-COM"/>
+<connect gate="B" pin="1" pad="B1"/>
+<connect gate="B" pin="10" pad="B10"/>
+<connect gate="B" pin="11" pad="B11"/>
+<connect gate="B" pin="12" pad="B12"/>
+<connect gate="B" pin="2" pad="B2"/>
+<connect gate="B" pin="3" pad="B3"/>
+<connect gate="B" pin="4" pad="B4"/>
+<connect gate="B" pin="5" pad="B5"/>
+<connect gate="B" pin="6" pad="B6"/>
+<connect gate="B" pin="7" pad="B7"/>
+<connect gate="B" pin="8" pad="B8"/>
+<connect gate="B" pin="9" pad="B9"/>
+<connect gate="B" pin="COM" pad="B-COM"/>
+<connect gate="C" pin="1" pad="C1"/>
+<connect gate="C" pin="10" pad="C10"/>
+<connect gate="C" pin="11" pad="C11"/>
+<connect gate="C" pin="12" pad="C12"/>
+<connect gate="C" pin="2" pad="C2"/>
+<connect gate="C" pin="3" pad="C3"/>
+<connect gate="C" pin="4" pad="C4"/>
+<connect gate="C" pin="5" pad="C5"/>
+<connect gate="C" pin="6" pad="C6"/>
+<connect gate="C" pin="7" pad="C7"/>
+<connect gate="C" pin="8" pad="C8"/>
+<connect gate="C" pin="9" pad="C9"/>
+<connect gate="C" pin="COM" pad="C-COM"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

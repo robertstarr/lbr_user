@@ -1,0 +1,643 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="3" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="5" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="6" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="14" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;Schematic Sheet Drawing Frames&lt;/b&gt;&lt;p&gt;
+These drawing frames use the following global attributes:&lt;p&gt;
+&lt;table width="380" border="1" cellpadding="1" cellspacing="1" bordercolor="#000000"&gt;
+  &lt;tr&gt; 
+    &lt;td width="81" bgcolor="#33CCFF"&gt;&lt;strong&gt;Attribute&lt;/strong&gt;&lt;/td&gt;
+    &lt;td width="289" bgcolor="#33CCFF"&gt;&lt;strong&gt;Description&lt;/strong&gt;&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&gt;COMPANY&lt;/td&gt;
+    &lt;td&gt;Compay name title&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&gt;REV&lt;/td&gt;
+    &lt;td&gt;Drawn by user name&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&gt;CHECKED&lt;/td&gt;
+    &lt;td&gt;Checked by user name&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&gt;DATE&lt;/td&gt;
+    &lt;td&gt;Drawing origination/release date&lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt; 
+    &lt;td&gt;&gt;DRGNO&lt;/td&gt;
+    &lt;td&gt;Drawing number text string&lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;
+&lt;p&gt;
+&lt;author&gt;Robert E. Starr, Jr. (http://www.bobstarr.net)&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="LETTER_P">
+<wire x1="185.42" y1="248.92" x2="185.42" y2="0" width="0.6096" layer="94"/>
+<wire x1="185.42" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="185.42" y1="248.92" x2="0" y2="248.92" width="0.6096" layer="94"/>
+<wire x1="0" y1="248.92" x2="0" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="185.42" y2="248.92" columns="8" rows="10" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="LETTER_L">
+<wire x1="0" y1="185.42" x2="248.92" y2="185.42" width="0.6096" layer="94"/>
+<wire x1="248.92" y1="185.42" x2="248.92" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="185.42" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="248.92" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="248.92" y2="185.42" columns="10" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="TABL_P">
+<wire x1="0" y1="0" x2="266.7" y2="0" width="0.6096" layer="94"/>
+<wire x1="266.7" y1="0" x2="266.7" y2="401.32" width="0.6096" layer="94"/>
+<wire x1="266.7" y1="401.32" x2="0" y2="401.32" width="0.6096" layer="94"/>
+<wire x1="0" y1="401.32" x2="0" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="266.7" y2="401.32" columns="8" rows="10" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="TABL_L">
+<wire x1="0" y1="0" x2="401.32" y2="0" width="0.6096" layer="94"/>
+<wire x1="401.32" y1="0" x2="401.32" y2="266.7" width="0.6096" layer="94"/>
+<wire x1="401.32" y1="266.7" x2="0" y2="266.7" width="0.6096" layer="94"/>
+<wire x1="0" y1="266.7" x2="0" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="401.32" y2="266.7" columns="10" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="US_8,5X11">
+<wire x1="0" y1="213.36" x2="276.86" y2="213.36" width="0.6096" layer="94"/>
+<wire x1="276.86" y1="213.36" x2="276.86" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="213.36" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="276.86" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="276.86" y2="213.36" columns="10" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="US_11X17">
+<wire x1="0" y1="279.4" x2="431.8" y2="279.4" width="0.6096" layer="94"/>
+<wire x1="431.8" y1="279.4" x2="431.8" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="279.4" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="431.8" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="431.8" y2="279.4" columns="10" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="US_8,5X14">
+<wire x1="0" y1="213.36" x2="353.06" y2="213.36" width="0.6096" layer="94"/>
+<wire x1="353.06" y1="213.36" x2="353.06" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="213.36" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="353.06" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="353.06" y2="213.36" columns="10" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="ANSI-A">
+<wire x1="0" y1="213.36" x2="276.86" y2="213.36" width="0.6096" layer="94"/>
+<wire x1="276.86" y1="213.36" x2="276.86" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="213.36" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="276.86" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="276.86" y2="213.36" columns="8" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="DOCFIELD">
+<wire x1="20.32" y1="0" x2="95.885" y2="0" width="0.6096" layer="94"/>
+<wire x1="20.32" y1="0" x2="20.32" y2="5.08" width="0.3048" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="88.9" y2="5.08" width="0.3048" layer="94"/>
+<wire x1="20.32" y1="5.08" x2="20.32" y2="8.89" width="0.3048" layer="94"/>
+<wire x1="20.32" y1="8.89" x2="20.32" y2="17.78" width="0.3048" layer="94"/>
+<wire x1="121.92" y1="15.24" x2="121.92" y2="5.08" width="0.6096" layer="94"/>
+<wire x1="95.885" y1="5.08" x2="95.885" y2="0" width="0.3048" layer="94"/>
+<wire x1="95.885" y1="0" x2="121.92" y2="0" width="0.6096" layer="94"/>
+<wire x1="88.9" y1="15.24" x2="88.9" y2="5.08" width="0.3048" layer="94"/>
+<wire x1="88.9" y1="5.08" x2="95.885" y2="5.08" width="0.3048" layer="94"/>
+<wire x1="121.92" y1="15.24" x2="110.49" y2="15.24" width="0.3048" layer="94"/>
+<wire x1="110.49" y1="15.24" x2="88.9" y2="15.24" width="0.3048" layer="94"/>
+<wire x1="88.9" y1="15.24" x2="20.32" y2="15.24" width="0.3048" layer="94"/>
+<wire x1="95.885" y1="5.08" x2="121.92" y2="5.08" width="0.3048" layer="94"/>
+<wire x1="121.92" y1="5.08" x2="121.92" y2="0" width="0.6096" layer="94"/>
+<wire x1="20.32" y1="15.24" x2="20.32" y2="17.78" width="0.3048" layer="94"/>
+<wire x1="20.32" y1="17.78" x2="20.32" y2="26.67" width="0.3048" layer="94"/>
+<wire x1="121.92" y1="33.02" x2="113.03" y2="33.02" width="0.6096" layer="94"/>
+<wire x1="113.03" y1="33.02" x2="106.045" y2="33.02" width="0.6096" layer="94"/>
+<wire x1="106.045" y1="33.02" x2="65.0875" y2="33.02" width="0.6096" layer="94"/>
+<wire x1="65.0875" y1="33.02" x2="20.32" y2="33.02" width="0.6096" layer="94"/>
+<wire x1="121.92" y1="33.02" x2="121.92" y2="26.67" width="0.6096" layer="94"/>
+<wire x1="20.32" y1="26.67" x2="65.0875" y2="26.67" width="0.3048" layer="94"/>
+<wire x1="65.0875" y1="26.67" x2="106.045" y2="26.67" width="0.3048" layer="94"/>
+<wire x1="106.045" y1="26.67" x2="110.49" y2="26.67" width="0.3048" layer="94"/>
+<wire x1="110.49" y1="26.67" x2="113.03" y2="26.67" width="0.3048" layer="94"/>
+<wire x1="113.03" y1="26.67" x2="121.92" y2="26.67" width="0.3048" layer="94"/>
+<wire x1="20.32" y1="26.67" x2="20.32" y2="33.02" width="0.3048" layer="94"/>
+<wire x1="121.92" y1="26.67" x2="121.92" y2="15.24" width="0.6096" layer="94"/>
+<wire x1="101.6" y1="11.7475" x2="102.5525" y2="11.7475" width="0.254" layer="94"/>
+<wire x1="110.49" y1="26.67" x2="110.49" y2="15.24" width="0.3048" layer="94"/>
+<wire x1="106.045" y1="26.67" x2="106.045" y2="33.02" width="0.3048" layer="94"/>
+<wire x1="20.32" y1="33.02" x2="0" y2="33.02" width="0.6096" layer="94"/>
+<wire x1="0" y1="33.02" x2="0" y2="26.67" width="0.6096" layer="94"/>
+<wire x1="0" y1="26.67" x2="0" y2="17.78" width="0.6096" layer="94"/>
+<wire x1="0" y1="17.78" x2="0" y2="8.89" width="0.6096" layer="94"/>
+<wire x1="0" y1="8.89" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="20.32" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="26.67" x2="20.32" y2="26.67" width="0.3048" layer="94"/>
+<wire x1="0" y1="17.78" x2="20.32" y2="17.78" width="0.3048" layer="94"/>
+<wire x1="0" y1="8.89" x2="20.32" y2="8.89" width="0.3048" layer="94"/>
+<circle x="109.5375" y="29.845" radius="1.4199" width="0.254" layer="94"/>
+<text x="109.22" y="1.27" size="2.54" layer="94" font="vector" ratio="10">&gt;SHEET</text>
+<text x="112.7125" y="22.86" size="2.54" layer="94" font="vector" ratio="12">REV</text>
+<text x="21.59" y="22.86" size="2.54" layer="94" font="vector" ratio="12">TITLE</text>
+<text x="90.17" y="11.43" size="2.54" layer="94" font="vector" ratio="12">DRG</text>
+<text x="101.2825" y="12.3825" size="2.1844" layer="94" ratio="12">o</text>
+<text x="33.3375" y="1.27" size="2.54" layer="94" ratio="10">&gt;DRAWING_NAME</text>
+<text x="98.7425" y="11.43" size="2.54" layer="94" font="vector" ratio="12">N</text>
+<text x="21.59" y="11.43" size="2.54" layer="94" font="vector" ratio="12">DATE</text>
+<text x="33.02" y="7.62" size="2.54" layer="94" ratio="10">&gt;LAST_DATE_TIME</text>
+<text x="112.7125" y="28.8925" size="1.778" layer="94" ratio="12">2013</text>
+<text x="109.0612" y="29.21" size="1.27" layer="94" ratio="12">C</text>
+<text x="5.3975" y="28.8925" size="1.9304" layer="94" ratio="12">ISSUE</text>
+<text x="1.27" y="23.495" size="1.778" layer="94" ratio="12">DRAWN</text>
+<text x="1.27" y="14.605" size="1.778" layer="94" ratio="12">CHECKED</text>
+<text x="1.27" y="5.715" size="1.778" layer="94" ratio="12">DATE</text>
+<text x="23.6538" y="28.0987" size="3.175" layer="94" ratio="18">&gt;COMPANY</text>
+<text x="21.59" y="1.27" size="2.54" layer="94" font="vector" ratio="12">FILE:</text>
+<text x="97.155" y="1.27" size="2.54" layer="94" font="vector" ratio="12">PAGE:</text>
+<text x="2.54" y="19.05" size="1.778" layer="94">&gt;DRAWN</text>
+<text x="2.54" y="10.16" size="1.778" layer="94">&gt;CHECKED</text>
+<text x="2.54" y="1.27" size="1.778" layer="94">&gt;DATE</text>
+<text x="91.44" y="7.62" size="2.1844" layer="94">&gt;DRGNO</text>
+<text x="114.3" y="17.145" size="3.81" layer="94" ratio="12">&gt;REV</text>
+</symbol>
+<symbol name="CHGFIELD">
+<wire x1="0" y1="0" x2="22.86" y2="0" width="0.6096" layer="94"/>
+<wire x1="22.86" y1="0" x2="66.04" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="4.445" x2="66.04" y2="4.445" width="0.3048" layer="94"/>
+<wire x1="0" y1="8.89" x2="66.04" y2="8.89" width="0.3048" layer="94"/>
+<wire x1="0" y1="13.335" x2="66.04" y2="13.335" width="0.3048" layer="94"/>
+<wire x1="0" y1="17.78" x2="66.04" y2="17.78" width="0.3048" layer="94"/>
+<wire x1="0" y1="26.67" x2="7.62" y2="26.67" width="0.6096" layer="94"/>
+<wire x1="7.62" y1="26.67" x2="22.86" y2="26.67" width="0.6096" layer="94"/>
+<wire x1="22.86" y1="26.67" x2="66.04" y2="26.67" width="0.6096" layer="94"/>
+<wire x1="0" y1="26.67" x2="0" y2="22.225" width="0.6096" layer="94"/>
+<wire x1="0" y1="22.225" x2="0" y2="17.78" width="0.6096" layer="94"/>
+<wire x1="0" y1="17.78" x2="0" y2="13.335" width="0.6096" layer="94"/>
+<wire x1="0" y1="13.335" x2="0" y2="8.89" width="0.6096" layer="94"/>
+<wire x1="0" y1="8.89" x2="0" y2="4.445" width="0.6096" layer="94"/>
+<wire x1="0" y1="4.445" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="66.04" y1="26.67" x2="66.04" y2="22.225" width="0.6096" layer="94"/>
+<wire x1="66.04" y1="22.225" x2="66.04" y2="17.78" width="0.6096" layer="94"/>
+<wire x1="66.04" y1="17.78" x2="66.04" y2="13.335" width="0.6096" layer="94"/>
+<wire x1="66.04" y1="13.335" x2="66.04" y2="8.89" width="0.6096" layer="94"/>
+<wire x1="66.04" y1="8.89" x2="66.04" y2="4.445" width="0.6096" layer="94"/>
+<wire x1="66.04" y1="4.445" x2="66.04" y2="0" width="0.6096" layer="94"/>
+<wire x1="22.86" y1="26.67" x2="22.86" y2="0" width="0.3048" layer="94"/>
+<wire x1="0" y1="22.225" x2="66.04" y2="22.225" width="0.3048" layer="94"/>
+<wire x1="7.62" y1="26.67" x2="7.62" y2="0" width="0.3048" layer="94"/>
+<text x="1.5875" y="23.495" size="1.778" layer="94" ratio="14">REV</text>
+<text x="12.065" y="23.495" size="1.778" layer="94" ratio="14">DATE</text>
+<text x="33.655" y="23.495" size="1.778" layer="94" ratio="14">APPROVED</text>
+</symbol>
+<symbol name="PROPRIETARY">
+<wire x1="1.27" y1="-1.27" x2="82.55" y2="-1.27" width="0.1016" layer="94"/>
+<wire x1="82.55" y1="-1.27" x2="82.55" y2="-7.62" width="0.1016" layer="94"/>
+<wire x1="82.55" y1="-7.62" x2="1.27" y2="-7.62" width="0.1016" layer="94"/>
+<wire x1="1.27" y1="-7.62" x2="1.27" y2="-1.27" width="0.1016" layer="94"/>
+<text x="3.81" y="-11.43" size="2.54" layer="94" ratio="14">PROPRIETARY</text>
+<text x="3.81" y="-4.064" size="1.27" layer="94" ratio="12">THIS DRAWING CONTAINS CONFIDENTIAL INFORMATION. ANY REPRODUCTION IN</text>
+<text x="3.81" y="-6.35" size="1.27" layer="94" ratio="12">PART OR WHOLE IS STRICTLY PROHIBITED WITHOUT WRITTEN PERMISSION!</text>
+</symbol>
+<symbol name="ANSI-B">
+<wire x1="0" y1="276.86" x2="429.26" y2="276.86" width="0.6096" layer="94"/>
+<wire x1="429.26" y1="276.86" x2="429.26" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="276.86" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="429.26" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="429.26" y2="276.86" columns="8" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="ANSI-C">
+<wire x1="0" y1="429.26" x2="556.26" y2="429.26" width="0.6096" layer="94"/>
+<wire x1="556.26" y1="429.26" x2="556.26" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="429.26" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="556.26" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="556.26" y2="429.26" columns="8" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="ANSI-D">
+<wire x1="0" y1="546.1" x2="825.5" y2="546.1" width="0.6096" layer="94"/>
+<wire x1="825.5" y1="546.1" x2="825.5" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="546.1" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="825.5" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="825.5" y2="546.1" columns="16" rows="10" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="ARCH-A">
+<wire x1="0" y1="226.06" x2="302.26" y2="226.06" width="0.6096" layer="94"/>
+<wire x1="302.26" y1="226.06" x2="302.26" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="226.06" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="302.26" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="302.26" y2="226.06" columns="8" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="ARCH-B">
+<wire x1="0" y1="302.26" x2="454.66" y2="302.26" width="0.6096" layer="94"/>
+<wire x1="454.66" y1="302.26" x2="454.66" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="302.26" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="454.66" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="454.66" y2="302.26" columns="8" rows="5" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="ARCH-C">
+<wire x1="0" y1="429.26" x2="556.26" y2="429.26" width="0.6096" layer="94"/>
+<wire x1="556.26" y1="429.26" x2="556.26" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="429.26" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="556.26" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="556.26" y2="429.26" columns="16" rows="10" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="ARCH-D">
+<wire x1="0" y1="581.66" x2="835.66" y2="581.66" width="0.6096" layer="94"/>
+<wire x1="835.66" y1="581.66" x2="835.66" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="581.66" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="835.66" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="835.66" y2="581.66" columns="16" rows="10" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="LEGAL-SCALE-60">
+<wire x1="0" y1="304.8" x2="515.62" y2="304.8" width="0.6096" layer="94"/>
+<wire x1="515.62" y1="304.8" x2="515.62" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="304.8" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="515.62" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="515.62" y2="304.8" columns="10" rows="8" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="LEGAL-SCALE-50">
+<wire x1="0" y1="368.3" x2="609.6" y2="368.3" width="0.6096" layer="94"/>
+<wire x1="609.6" y1="368.3" x2="609.6" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="368.3" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="609.6" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="609.6" y2="368.3" columns="10" rows="8" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="LETTER-SCALE-50">
+<wire x1="0" y1="393.7" x2="520.7" y2="393.7" width="0.6096" layer="94"/>
+<wire x1="520.7" y1="393.7" x2="520.7" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="393.7" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="520.7" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="520.7" y2="393.7" columns="10" rows="8" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+<symbol name="LETTER-SCALE-60">
+<wire x1="0" y1="355.6" x2="464.82" y2="355.6" width="0.6096" layer="94"/>
+<wire x1="464.82" y1="355.6" x2="464.82" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="355.6" x2="0" y2="0" width="0.6096" layer="94"/>
+<wire x1="0" y1="0" x2="464.82" y2="0" width="0.6096" layer="94"/>
+<frame x1="0" y1="0" x2="464.82" y2="355.6" columns="10" rows="8" layer="94" border-right="no" border-bottom="no"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="LETTER_L" prefix="FRAME">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+LETTER landscape</description>
+<gates>
+<gate name="G$1" symbol="LETTER_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="127" y="0" addlevel="always"/>
+<gate name="G$3" symbol="PROPRIETARY" x="2.54" y="182.88" addlevel="always"/>
+<gate name="G$4" symbol="CHGFIELD" x="60.96" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TABL_L" prefix="FRAME">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+401 x 266 mm, landscape</description>
+<gates>
+<gate name="G$1" symbol="TABL_L" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="279.4" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="213.36" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="264.16" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="US_8,5X11" prefix="FRAME">
+<description>&lt;b&gt;FRAME Letter&lt;/b&gt;&lt;p&gt;
+US Letter Size, 8.5x11"&lt;p&gt;Landscape</description>
+<gates>
+<gate name="G$1" symbol="US_8,5X11" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="154.94" y="0" addlevel="always"/>
+<gate name="G$3" symbol="PROPRIETARY" x="2.54" y="210.82" addlevel="always"/>
+<gate name="G$4" symbol="CHGFIELD" x="88.9" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="US_11X17" prefix="FRAME">
+<description>&lt;b&gt;FRAME Ledger&lt;/b&gt;&lt;p&gt;
+US Ledger Size, 11x17"&lt;p&gt;Landscape</description>
+<gates>
+<gate name="G$1" symbol="US_11X17" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="309.88" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="243.84" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="276.86" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="US_8,5X14">
+<description>&lt;b&gt;FRAME Legal&lt;/b&gt;&lt;p&gt;
+US Legal Size, 8.5x14"&lt;p&gt;Landscape</description>
+<gates>
+<gate name="G$1" symbol="US_8,5X14" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="231.14" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="165.1" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="210.82" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANSI-A">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+US ANSI-A, 8.5x11"</description>
+<gates>
+<gate name="G$1" symbol="ANSI-A" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="154.94" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="88.9" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="210.82" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANSI-B">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+US ANSI-B,11x17"</description>
+<gates>
+<gate name="G$1" symbol="ANSI-B" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="307.34" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="241.3" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="274.32" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANSI-C">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+US ANSI-C,17x22"</description>
+<gates>
+<gate name="G$1" symbol="ANSI-C" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="434.34" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="368.3" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="426.72" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ANSI-D">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+US ANSI-D,22x34"</description>
+<gates>
+<gate name="G$1" symbol="ANSI-D" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="703.58" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="637.54" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="543.56" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARCH-A">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+US Architect-A, 9x12"</description>
+<gates>
+<gate name="G$1" symbol="ARCH-A" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="180.34" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="114.3" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="223.52" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARCH-B">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+US Architect-B, 11x17"</description>
+<gates>
+<gate name="G$1" symbol="ARCH-B" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="332.74" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="266.7" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="299.72" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARCH-C">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+US Architect-C, 18x24"</description>
+<gates>
+<gate name="G$1" symbol="ARCH-C" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="434.34" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="368.3" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="426.72" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARCH-D">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+US Architect-D, 24x36"</description>
+<gates>
+<gate name="G$1" symbol="ARCH-D" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="713.74" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="647.7" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="579.12" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LEGAL-SCALE-50" prefix="FRAME">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+LEGAL SCALED 50% - Print at scale 0.50 on legal 8.5 x 14&lt;p&gt;
+Actual size 24 x 14.5</description>
+<gates>
+<gate name="G$1" symbol="LEGAL-SCALE-50" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="487.68" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="421.64" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="365.76" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LEGAL-SCALE-60" prefix="FRAME">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+LEGAL SCALED 60% - Print at scale 0.60 on legal 8.5 x 14&lt;p&gt;
+Actual size 12 x 20.25</description>
+<gates>
+<gate name="G$1" symbol="LEGAL-SCALE-60" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="393.7" y="0" addlevel="always"/>
+<gate name="G$3" symbol="CHGFIELD" x="327.66" y="0" addlevel="request"/>
+<gate name="G$4" symbol="PROPRIETARY" x="2.54" y="302.26" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LETTER-SCALE-50" prefix="FRAME">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+LETTER SCALED 50% - Print at scale 0.50 on letter 8.5 x 11&lt;p&gt;
+Actual size 20.5 x 15.5</description>
+<gates>
+<gate name="G$1" symbol="LETTER-SCALE-50" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="398.78" y="0" addlevel="always"/>
+<gate name="G$3" symbol="PROPRIETARY" x="2.54" y="391.16" addlevel="always"/>
+<gate name="G$4" symbol="CHGFIELD" x="332.74" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LETTER-SCALE-60" prefix="FRAME">
+<description>&lt;b&gt;FRAME&lt;/b&gt;&lt;p&gt;
+LETTER SCALED 60% - Print at scale 0.60 on letter 8.5 x 11&lt;p&gt;
+Actual size 18.3 x 14</description>
+<gates>
+<gate name="G$1" symbol="LETTER-SCALE-60" x="0" y="0" addlevel="always"/>
+<gate name="G$2" symbol="DOCFIELD" x="342.9" y="0" addlevel="always"/>
+<gate name="G$3" symbol="PROPRIETARY" x="2.54" y="353.06" addlevel="always"/>
+<gate name="G$4" symbol="CHGFIELD" x="276.86" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

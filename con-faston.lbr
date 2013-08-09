@@ -1,0 +1,536 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+</layers>
+<library>
+<description>&lt;b&gt;FASTON Connector&lt;/b&gt; Printed Circuit Board Tabs&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="F061.220">
+<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46244&lt;p&gt;
+Flachstecker Typ 00.32 (F061.220)&lt;br&gt;
+Distributor: Bürklin 05 F 282</description>
+<wire x1="-3.6" y1="0" x2="17.1" y2="0" width="0.8" layer="51"/>
+<wire x1="5.35" y1="0" x2="17.1" y2="0" width="0.8" layer="51"/>
+<pad name="1A" x="-2.5" y="0" drill="1.27" diameter="3.175" shape="octagon"/>
+<pad name="1B" x="2.5" y="0" drill="1.27" diameter="3.175" shape="octagon"/>
+<text x="-3.81" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="5.08" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-3.175" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="F061.250">
+<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46244&lt;p&gt;
+Flachstecker Typ A 901010.. (F061.250)&lt;br&gt;
+Distributor: Bürklin 07 F 255</description>
+<wire x1="-3.75" y1="-3.1" x2="3.75" y2="-3.1" width="0.8" layer="51"/>
+<pad name="1A" x="-2.5" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="1B" x="2.5" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="1C" x="-2.5" y="5" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="1D" x="2.5" y="5" drill="1.1176" diameter="2.54" shape="octagon"/>
+<text x="-4.445" y="-0.635" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="6.35" y="-0.635" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-3.1" y1="-0.5" x2="-2.1" y2="0.5" layer="51"/>
+<rectangle x1="2.1" y1="-0.5" x2="3.1" y2="0.5" layer="51"/>
+<rectangle x1="-3.1" y1="4.5" x2="-2.1" y2="5.5" layer="51"/>
+<rectangle x1="2.1" y1="4.5" x2="3.1" y2="5.5" layer="51"/>
+<rectangle x1="-2.1" y1="-1.2" x2="2.1" y2="5.5" layer="51"/>
+<polygon width="0.8" layer="51">
+<vertex x="3.75" y="-3.1"/>
+<vertex x="1.5" y="-1.2"/>
+<vertex x="-1.45" y="-1.2"/>
+<vertex x="-3.75" y="-3.1"/>
+</polygon>
+<text x="5.08" y="-0.635" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+</package>
+<package name="F061.200">
+<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46244&lt;p&gt;
+Flachstecker Typ 17128.. (F061.200)&lt;br&gt;
+Distributor: Bürklin 05 F 280</description>
+<wire x1="-3.6" y1="0" x2="4.55" y2="0" width="0.8" layer="51"/>
+<wire x1="4.55" y1="0" x2="11.6" y2="0" width="0.8" layer="51"/>
+<pad name="1A" x="-2.5" y="0" drill="1.27" diameter="3.175" shape="octagon"/>
+<pad name="1B" x="2.5" y="0" drill="1.27" diameter="3.175" shape="octagon"/>
+<text x="-3.81" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="5.08" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-3.175" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="F061.120">
+<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt;&lt;p&gt;
+Flachstecker Typ tyco/Electronics/AMP 216.. (F061.120)&lt;br&gt;
+Distributor: Bürklin 05 F 275</description>
+<wire x1="-3.6" y1="0" x2="3.6" y2="0" width="0.8" layer="51"/>
+<pad name="1A" x="-2.5" y="0" drill="1.27" diameter="3.175" shape="octagon"/>
+<pad name="1B" x="0" y="0" drill="1.27" diameter="3.175" shape="octagon"/>
+<pad name="1C" x="2.5" y="0" drill="1.27" diameter="3.175" shape="octagon"/>
+<text x="-3.81" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-4.064" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-2.921" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="F061.100">
+<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46342 Teil 1&lt;p&gt;
+Flachstecker Typ Vogt 3866B.68 (F061.100)&lt;br&gt;
+Distributor: Bürklin 05 F 270</description>
+<wire x1="-3.6" y1="0" x2="3.6" y2="0" width="0.8" layer="51"/>
+<pad name="A1" x="-2.5" y="0" drill="1.4224" diameter="3.175" shape="octagon"/>
+<pad name="A2" x="2.5" y="0" drill="1.4224" diameter="3.175" shape="octagon"/>
+<text x="-3.81" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-4.064" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-2.921" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="F061.080">
+<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46342 Teil 1&lt;p&gt;
+Flachstecker Typ Vogt 3866G.68 (F061.080)&lt;br&gt;
+Distributor: Bürklin 05 F 268</description>
+<wire x1="-3.6" y1="0" x2="3.6" y2="0" width="0.8" layer="51"/>
+<pad name="1A" x="-2.5" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="1B" x="2.5" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
+<text x="-3.81" y="1.524" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-2.54" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="F061.060">
+<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt; DIN 46342 Teil 1&lt;p&gt;
+Flachstecker Typ 00.45.1 (F061.060)&lt;br&gt;
+Distributor: Bürklin 05 F 266</description>
+<wire x1="-3.75" y1="0" x2="3.75" y2="0" width="0.8" layer="51"/>
+<pad name="A1" x="-2.65" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="A2" x="2.65" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
+<text x="-3.81" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-3.683" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-2.54" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="F061.040">
+<description>&lt;b&gt;FASTON 6.3 mm x 0.8 mm&lt;/b&gt;&lt;p&gt;
+Flachstecker Typ 00.15 (F061.040)&lt;br&gt;
+Distributor: Bürklin</description>
+<wire x1="-3.75" y1="0" x2="3.75" y2="0" width="0.8" layer="51"/>
+<pad name="A1" x="-2.65" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
+<pad name="A2" x="2.65" y="0" drill="1.1176" diameter="2.54" shape="octagon"/>
+<text x="-3.81" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-3.683" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.81" y="-2.54" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="62409-1">
+<description>&lt;b&gt;TAB, FASTON, PC Board, 6,35 (.250) Series&lt;/b&gt;&lt;p&gt;
+Distributor: Digikey - Nb.  A24742-ND&lt;br&gt;
+Source: http://catalog.tycoelectronics.com .. ENG_CD_62409_R.pdf</description>
+<pad name="A1" x="-2.65" y="0" drill="1.524" diameter="3.175" shape="octagon"/>
+<pad name="A2" x="2.65" y="0" drill="1.524" diameter="3.175" shape="octagon"/>
+<text x="-3.81" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-4.064" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.75" y1="-0.4" x2="3.75" y2="0.4" layer="51"/>
+<text x="-3.81" y="-2.921" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="QFIT-12XX">
+<description>&lt;b&gt;Keystone Quickfit&lt;/b&gt; - Male 0.20" pitch&lt;p&gt;
+1285, 1286, 1287, 1289, 1212, 1213</description>
+<wire x1="-3.81" y1="0.3175" x2="-3.175" y2="0.3175" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="0.3175" x2="3.175" y2="0.3175" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="0.3175" x2="3.81" y2="0.3175" width="0.2032" layer="51"/>
+<wire x1="3.81" y1="0.3175" x2="3.81" y2="-0.3175" width="0.2032" layer="51"/>
+<wire x1="3.81" y1="-0.3175" x2="3.175" y2="-0.3175" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="-0.3175" x2="-3.175" y2="-0.3175" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="-0.3175" x2="-3.81" y2="-0.3175" width="0.2032" layer="51"/>
+<wire x1="-3.81" y1="-0.3175" x2="-3.81" y2="0.3175" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="0.3175" x2="-3.175" y2="-0.3175" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="0.3175" x2="3.175" y2="-0.3175" width="0.2032" layer="51"/>
+<pad name="1" x="-2.54" y="0" drill="1.6764" diameter="2.54" shape="long" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="1.6764" diameter="2.54" shape="long" rot="R90"/>
+<text x="-4.445" y="-1.27" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="6.35" y="-1.27" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="5.08" y="-1.27" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+</package>
+<package name="QFIT-352X">
+<description>&lt;b&gt;Keystone Quickfit&lt;/b&gt; - Female 0.2" pitch&lt;p&gt;
+3522, 3525, 3528</description>
+<wire x1="4.1275" y1="-0.635" x2="1.27" y2="-0.635" width="0.254" layer="51" curve="-167.315655"/>
+<wire x1="1.27" y1="-0.635" x2="1.27" y2="0" width="0.254" layer="51"/>
+<wire x1="4.1275" y1="-0.635" x2="4.1275" y2="0.3175" width="0.254" layer="51"/>
+<wire x1="4.1275" y1="0.3175" x2="3.4925" y2="0.9525" width="0.254" layer="51" curve="90"/>
+<wire x1="3.4925" y1="0.9525" x2="-3.4925" y2="0.9525" width="0.254" layer="51"/>
+<wire x1="-3.4925" y1="0.9525" x2="-4.1275" y2="0.3175" width="0.254" layer="51" curve="90"/>
+<wire x1="-4.1275" y1="0.3175" x2="-4.1275" y2="-0.635" width="0.254" layer="51"/>
+<wire x1="-4.1275" y1="-0.635" x2="-1.27" y2="-0.635" width="0.254" layer="51" curve="167.315655"/>
+<wire x1="-1.27" y1="-0.635" x2="-1.27" y2="0" width="0.254" layer="51"/>
+<pad name="1" x="-2.54" y="0" drill="3.175" shape="long" rot="R90"/>
+<pad name="2" x="2.54" y="0" drill="3.175" shape="long" rot="R90"/>
+<text x="-5.3975" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="7.3025" y="-1.905" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="6.0325" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+</package>
+<package name="QFIT-4900">
+<description>&lt;b&gt;Keystone Quickfit&lt;/b&gt; - Male 0.177" pitch&lt;p&gt;
+4900</description>
+<wire x1="-3.175" y1="1.5875" x2="3.175" y2="1.5875" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="1.5875" x2="3.175" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="0.9525" x2="2.54" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="0.9525" x2="2.54" y2="-0.9525" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="-0.9525" x2="1.905" y2="-0.9525" width="0.2032" layer="51"/>
+<wire x1="1.905" y1="-0.9525" x2="1.905" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="1.905" y1="0.9525" x2="-1.905" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="-1.905" y1="0.9525" x2="-1.905" y2="-0.9525" width="0.2032" layer="51"/>
+<wire x1="-1.905" y1="-0.9525" x2="-2.54" y2="-0.9525" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-0.9525" x2="-2.54" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="0.9525" x2="-3.175" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="0.9525" x2="-3.175" y2="1.5875" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="0.9525" x2="-1.905" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="1.905" y1="0.9525" x2="2.54" y2="0.9525" width="0.2032" layer="51"/>
+<pad name="1" x="-2.2479" y="0" drill="1.27" shape="long" rot="R90"/>
+<pad name="2" x="2.2479" y="0" drill="1.27" shape="long" rot="R90"/>
+<text x="-3.81" y="-1.27" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="5.715" y="-1.27" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="4.445" y="-1.27" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+</package>
+<package name="QFIT-490X">
+<description>&lt;b&gt;Keystone Quickfit&lt;/b&gt; - Male 0.187" pitch&lt;p&gt;
+4901, 4902</description>
+<wire x1="-3.7782" y1="1.5875" x2="3.7783" y2="1.5875" width="0.2032" layer="51"/>
+<wire x1="3.7783" y1="1.5875" x2="3.7783" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="3.7783" y1="0.9525" x2="2.667" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="2.667" y1="0.9525" x2="2.667" y2="-0.9525" width="0.2032" layer="51"/>
+<wire x1="2.667" y1="-0.9525" x2="2.032" y2="-0.9525" width="0.2032" layer="51"/>
+<wire x1="2.032" y1="-0.9525" x2="2.032" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="2.032" y1="0.9525" x2="-2.032" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="-2.032" y1="0.9525" x2="-2.032" y2="-0.9525" width="0.2032" layer="51"/>
+<wire x1="-2.032" y1="-0.9525" x2="-2.667" y2="-0.9525" width="0.2032" layer="51"/>
+<wire x1="-2.667" y1="-0.9525" x2="-2.667" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="-2.667" y1="0.9525" x2="-3.7782" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="-3.7782" y1="0.9525" x2="-3.7782" y2="1.5875" width="0.2032" layer="51"/>
+<wire x1="-2.667" y1="0.9525" x2="-2.032" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="2.032" y1="0.9525" x2="2.667" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="-3.0163" y1="1.5875" x2="-3.0163" y2="0.9525" width="0.2032" layer="51"/>
+<wire x1="3.0163" y1="1.5875" x2="3.0163" y2="0.9525" width="0.2032" layer="51"/>
+<pad name="1" x="-2.3749" y="0" drill="1.6764" shape="long" rot="R90"/>
+<pad name="2" x="2.3749" y="0" drill="1.6764" shape="long" rot="R90"/>
+<text x="-4.445" y="-1.27" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="6.985" y="-1.27" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="5.715" y="-1.27" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PIN2">
+<text x="-2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="0" y1="-0.508" x2="2.54" y2="0.508" layer="94"/>
+<pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1.1" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="PIN3">
+<text x="-2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="0" y1="-0.508" x2="2.54" y2="0.508" layer="94"/>
+<pin name="1" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1.1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1.2" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="PIN4">
+<text x="-2.54" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="0" y1="-0.508" x2="2.54" y2="0.508" layer="94"/>
+<pin name="1" x="-10.16" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1.1" x="-7.62" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1.2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="1.3" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="PIN">
+<text x="0" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<rectangle x1="0" y1="-0.635" x2="3.81" y2="0.635" layer="94"/>
+<pin name="1" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PIN2" prefix="E">
+<description>&lt;b&gt;Flachstecker Typ Tyco/Electronics/AMP&lt;/b&gt; TAB, FASTON&lt;p&gt;
+Printed Circuit Board Tabs&lt;br&gt;
+Source: http://www.buerklin.com, http://catalog.tycoelectronics.com</description>
+<gates>
+<gate name="-1" symbol="PIN2" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="F061.040" package="F061.040">
+<connects>
+<connect gate="-1" pin="1" pad="A1"/>
+<connect gate="-1" pin="1.1" pad="A2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="F061.060" package="F061.060">
+<connects>
+<connect gate="-1" pin="1" pad="A1"/>
+<connect gate="-1" pin="1.1" pad="A2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="F061.080" package="F061.080">
+<connects>
+<connect gate="-1" pin="1" pad="1A"/>
+<connect gate="-1" pin="1.1" pad="1B"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="F061.100" package="F061.100">
+<connects>
+<connect gate="-1" pin="1" pad="A1"/>
+<connect gate="-1" pin="1.1" pad="A2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="F061.200" package="F061.200">
+<connects>
+<connect gate="-1" pin="1" pad="1A"/>
+<connect gate="-1" pin="1.1" pad="1B"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="F061.220" package="F061.220">
+<connects>
+<connect gate="-1" pin="1" pad="1A"/>
+<connect gate="-1" pin="1.1" pad="1B"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="62409-1" package="62409-1">
+<connects>
+<connect gate="-1" pin="1" pad="A1"/>
+<connect gate="-1" pin="1.1" pad="A2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="QFIT-12XX" package="QFIT-12XX">
+<connects>
+<connect gate="-1" pin="1" pad="2"/>
+<connect gate="-1" pin="1.1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="QFIT-352X" package="QFIT-352X">
+<connects>
+<connect gate="-1" pin="1" pad="2"/>
+<connect gate="-1" pin="1.1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="QFIT-4900" package="QFIT-4900">
+<connects>
+<connect gate="-1" pin="1" pad="2"/>
+<connect gate="-1" pin="1.1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="QFIT-490X" package="QFIT-490X">
+<connects>
+<connect gate="-1" pin="1" pad="2"/>
+<connect gate="-1" pin="1.1" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIN3" prefix="E">
+<description>&lt;b&gt;Flachstecker Typ tyco/Electronics/AMP&lt;/b&gt;&lt;p&gt;
+Printed Circuit Board Tabs&lt;br&gt;
+Source: http://www.buerklin.com</description>
+<gates>
+<gate name="-1" symbol="PIN3" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="F061.120" package="F061.120">
+<connects>
+<connect gate="-1" pin="1" pad="1A"/>
+<connect gate="-1" pin="1.1" pad="1B"/>
+<connect gate="-1" pin="1.2" pad="1C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIN4" prefix="E">
+<description>&lt;b&gt;Flachstecker Typ tyco/Electronics/AMP&lt;/b&gt;&lt;p&gt;
+Printed Circuit Board Tabs&lt;br&gt;
+Source: http://www.buerklin.com</description>
+<gates>
+<gate name="-1" symbol="PIN4" x="0" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="F061.250" package="F061.250">
+<connects>
+<connect gate="-1" pin="1" pad="1A"/>
+<connect gate="-1" pin="1.1" pad="1B"/>
+<connect gate="-1" pin="1.2" pad="1C"/>
+<connect gate="-1" pin="1.3" pad="1D"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="QUICKFIT-" prefix="E">
+<gates>
+<gate name="G$1" symbol="PIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="12XX" package="QFIT-12XX">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="352X" package="QFIT-352X">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="4900" package="QFIT-4900">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="490X" package="QFIT-490X">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

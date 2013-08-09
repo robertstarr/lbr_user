@@ -1,0 +1,2335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;Supply Symbols&lt;/b&gt;&lt;p&gt;
+ GND, VCC, 0V, +5V, -5V, etc.&lt;p&gt;
+ Please keep in mind, that these devices are necessary for the
+ automatic wiring of the supply signals.&lt;p&gt;
+ The pin name defined in the symbol is identical to the net which is to be wired automatically.&lt;p&gt;
+ In this library the device names are the same as the pin names of the symbols, therefore the correct signal names appear next to the supply symbols in the schematic.&lt;p&gt;
+ &lt;author&gt;Copyright (C) 2007, Bob Starr&lt;br&gt;http://www.bobstarr.net&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="VCC">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.2225" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+5V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+5V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+12V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+12V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+18V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+18V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+15V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+15V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+24V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+24V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="GND">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-2.2225" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="GND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="0V">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-1.27" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="0V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-12V">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="-12V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-15V">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="-15V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-18V">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="-18V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-24V">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="-24V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-5V">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="-5V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="V+">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-1.27" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="V+" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="V-">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-1.27" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="V-" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="VCC/2">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VCC/2" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDD">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VDD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VSS">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VSS" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="VCCIO">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VCCIO" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VCCINT">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VCCINT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="AGND">
+<wire x1="-0.9525" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.9525" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.9525" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="-0.9525" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="AGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+3V3">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+3V3" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+48V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+48V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VREF">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VREF" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+6V2">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+6V2" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VBAT">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VBAT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+9V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+9V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="AREF">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="AREF" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+39V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+39V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="DGND">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="DGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+2V5">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+2V5" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="GND1">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="GND1" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="GND2">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="GND2" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="GND3">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="GND3" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="GND4">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="GND4" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="GND5">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="GND5" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+28V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+28V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VEE">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VEE" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VPP">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VPP" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+1V5">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+1V5" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="UGND">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="UGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="VUSB">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VUSB" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="SGND">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="SGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="LGND">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="LGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="5VSW">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="5VSW" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="6VSW">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="6VSW" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="5VCH">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="5VCH" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="PGND">
+<wire x1="1.5875" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="-1.5875" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0.635" y1="0.635" x2="-0.635" y2="0.635" width="0.254" layer="94"/>
+<wire x1="0.3175" y1="0" x2="-0.3175" y2="0" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="PGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="CGND">
+<wire x1="1.27" y1="1.5875" x2="0.9524" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0.9524" y1="1.5875" x2="0.1587" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="1.5875" x2="-0.6352" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="-0.6352" y1="1.5875" x2="-1.27" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="-0.6352" y1="1.5875" x2="-1.2701" y2="0" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="1.5875" x2="-0.4763" y2="0" width="0.254" layer="94"/>
+<wire x1="0.9524" y1="1.5875" x2="0.3174" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.7463" width="0.1524" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="CGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="AVCC">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="AVCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="AVDD">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="AVDD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+1V8">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+1V8" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+1V2">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+1V2" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="PWRSYM">
+<wire x1="0" y1="-2.54" x2="0" y2="0" width="0.1524" layer="95"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="95" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="95" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+</symbol>
+<symbol name="EGND">
+<wire x1="1.905" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<text x="-2.54" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="EGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="VCORE">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VCORE" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VIN">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VIN" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VOUT">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VOUT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="GND_">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="AGND_">
+<wire x1="-0.9525" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="0.9525" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0.9525" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="-0.9525" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<pin name="AGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="CGND_">
+<wire x1="1.27" y1="1.5875" x2="0.9524" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0.9524" y1="1.5875" x2="0.1587" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="1.5875" x2="-0.6352" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="-0.6352" y1="1.5875" x2="-1.27" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="-0.6352" y1="1.5875" x2="-1.2701" y2="0" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="1.5875" x2="-0.4763" y2="0" width="0.254" layer="94"/>
+<wire x1="0.9524" y1="1.5875" x2="0.3174" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.7463" width="0.1524" layer="94"/>
+<pin name="CGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+27V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+27V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="B+">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-1.27" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="B+" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="B-">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-1.27" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="B-" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VBIAS">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VBIAS" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="DVCC">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="DVCC" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VPLL">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VPLL" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="5V0D">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="5V0D" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="5V0A">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="5V0A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="RGND">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="RGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="AVCC+">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="AVCC+" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="AVCC-">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="AVCC-" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="DVDD">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="DVDD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3V3A">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+3V3A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3V3D">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+3V3D" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+5VA">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+5VA" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+5VD">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+5VD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3V3C">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+3V3C" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3V3T">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+3V3T" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+5VT">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+5VT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VREF1">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VREF1" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VREF2">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VREF2" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VBUS">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VBUS" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+24P">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+24P" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="EGND_">
+<wire x1="1.905" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<pin name="EGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+8V5">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+8V5" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+8V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+8V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VCCSW">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VCCSW" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VCCSTBY">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-4.445" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VCCSTBY" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+7V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+7V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VVCO">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.2225" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VVCO" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDDBU">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VDDBU" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VPA">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VPA" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDDA">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VDDA" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+2V8">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+2V8" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="PVDD">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="PVDD" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VREG">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VREG" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+1V0">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+1V0" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="-16A">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="-16A" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="-16V">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="-16V" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+16A">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+16A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+16V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+16V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="OGND">
+<wire x1="1.1113" y1="1.5875" x2="0" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="1.5875" x2="-1.1113" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.5875" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="0.7938" x2="-0.635" y2="0.7938" width="0.254" layer="94"/>
+<wire x1="0.1587" y1="0" x2="-0.1588" y2="0" width="0.254" layer="94"/>
+<text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="OGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+4V1A">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+4V1A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+4V1">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+4V1" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+7V4">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+7V4" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+6V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-1.905" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+6V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDDL">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VDDL" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VDDU">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VDDU" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VAA">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VAA" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+3V0">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+3V0" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="VGPS">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="VGPS" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+30V">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.81" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+30V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="+4V5">
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="+4V5" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+</symbol>
+<symbol name="-4V5">
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.084343"/>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.089323"/>
+<text x="-3.175" y="-3.175" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="-4V5" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
+</symbol>
+<symbol name="+1V5A">
+<pin name="+1V5A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.0844"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.0893"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GND" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="GND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="0V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VCC" symbol="VCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-5V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="-5V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+12V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-12V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="-12V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+18V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+18V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-18V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="-18V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+24V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+24V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-24V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="-24V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+15V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+15V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-15V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="-15V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="V+" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="V+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="V-" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="V-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCC/2" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCC/2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDD" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VDD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VSS" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VSS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AGND" prefix="AGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="VR1" symbol="AGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+48V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+48V" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VREF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+6V2" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+6V2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBAT" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBAT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+9V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+9V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AREF" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="AREF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+39V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="+39V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DGND" prefix="DGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+2V5" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+2V5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND1" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="GND1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND2" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="GND2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND3" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="GND3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND4" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="GND4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND5" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="GND5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+28V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+28V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VEE" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VEE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VPP" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VPP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+1V5" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+1V5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="UGND" prefix="UGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="UGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VUSB" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="VUSB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SGND" prefix="SGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="SGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LGND" prefix="LGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="1" symbol="LGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5VSW" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5VSW" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="6VSW" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="6VSW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5VCH" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5VCH" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PGND" prefix="PGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CGND" prefix="CGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="CGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVCC" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVDD" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVDD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+1V8" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+1V8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PWRSYM" prefix="V">
+<description>&lt;b&gt;DUMMY SUPPLY SYMBOL&lt;/b&gt;&lt;p&gt;
+NOTE - This is a dummy symbol for drawing purposes only and is NOT a true supply symbol!&lt;p&gt;
+In effect this is really a port that looks like a symbol for use with aribitray net names.</description>
+<gates>
+<gate name="G$1" symbol="PWRSYM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EGND" prefix="EGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="EGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCORE" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCORE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VIN" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VIN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VOUT" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VOUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GND_" prefix="GND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;&lt;p&gt;
+Net GND, no value text label</description>
+<gates>
+<gate name="1" symbol="GND_" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AGND_" prefix="AGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;&lt;p&gt;
+Net AGND, no value text label</description>
+<gates>
+<gate name="G$1" symbol="AGND_" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CGND_" prefix="CGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;&lt;p&gt;
+Net CGND, no value text label</description>
+<gates>
+<gate name="G$1" symbol="CGND_" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+27V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+27V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="B+" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="B+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="B-" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="B-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBIAS" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBIAS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DVCC" prefix="DVCC">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DVCC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VPLL" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VPLL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5V0D" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5V0D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="5V0A" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="5V0A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RGND" prefix="RGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="RGND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVCC+" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVCC+" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AVCC-" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="AVCC-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DVDD" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DVDD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3A" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3D" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5VD" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+5VD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5VA" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+5VA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3C" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3C" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3T" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3T" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5VT" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+5VT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF1" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VREF1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREF2" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VREF2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VBUS" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VBUS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+24P" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+24P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+1V2" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+1V2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EGND_" prefix="EGND">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="EGND_" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+8V5" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+8V5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+8V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+8V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCCSW" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCCSW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCCSTBY" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCCSTBY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+7V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+7V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VVCO" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VVCO" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDDBU" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VDDBU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VPA">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VPA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDDA" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VDDA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+2V8" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+2V8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PVDD" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PVDD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VREG" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VREG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+1V0" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+1V0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-16A" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="-16A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-16V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="-16V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+16A" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+16A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+16V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+16V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OGND" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="OGND" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+4V1A" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+4V1A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+4V1" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+4V1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+7V4" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+7V4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+6V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+6V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDDL" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VDDL" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDDU" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VDDU" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VAA" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VAA" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V0" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VGPS" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VGPS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+30V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+30V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+4V5" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+4V5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="-4V5" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="-4V5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+1V5A" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+1V5A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

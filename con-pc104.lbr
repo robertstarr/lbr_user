@@ -1,0 +1,1881 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;PC/104 Standard/Plus connector&lt;/b&gt;&lt;p&gt;
+Sources :
+&lt;ul&gt;
+&lt;li&gt;&lt;b&gt;pc104standard.pdf&lt;/b&gt;&lt;p&gt;
+PC/104 Specification, Version 2.3, June 1996&lt;p&gt;
+Copyright 1992-96, PC/104 Consortium
+&lt;li&gt;&lt;b&gt;PC104plus.pdf&lt;/b&gt;&lt;p&gt;
+PC/104-Plus Specification, Version 1.1, June 1997&lt;p&gt;
+Copyright 1992-98, PC/104 Consortium
+&lt;/ul&gt;
+include &lt;b&gt;Commcon Connector PC/104&lt;/b&gt;, con-commcon.lbr&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="PC104-STANDARD">
+<description>&lt;b&gt;PC/104 Standard 16 bit&lt;/b&gt;</description>
+<wire x1="0" y1="0" x2="90.2" y2="0" width="0.254" layer="20"/>
+<wire x1="90.2" y1="0" x2="90.2" y2="95.9" width="0.254" layer="20"/>
+<wire x1="90.2" y1="95.9" x2="0" y2="95.9" width="0.254" layer="20"/>
+<wire x1="0" y1="95.9" x2="0" y2="0" width="0.254" layer="20"/>
+<wire x1="0" y1="87.63" x2="-12.7" y2="87.63" width="0.0508" layer="51"/>
+<wire x1="-12.7" y1="87.63" x2="-12.7" y2="8.255" width="0.0508" layer="51"/>
+<wire x1="-12.7" y1="8.255" x2="0" y2="8.255" width="0.0508" layer="51"/>
+<wire x1="102.87" y1="8.255" x2="102.87" y2="87.63" width="0.0508" layer="51"/>
+<wire x1="102.87" y1="87.63" x2="90.17" y2="87.63" width="0.0508" layer="51"/>
+<wire x1="8.3" y1="0" x2="8.3" y2="-12.7" width="0.0508" layer="51"/>
+<wire x1="8.3" y1="-12.7" x2="24.1" y2="-12.7" width="0.0508" layer="51"/>
+<wire x1="24.1" y1="-12.7" x2="24.1" y2="0" width="0.0508" layer="51"/>
+<wire x1="5.3" y1="13.8" x2="86.27" y2="13.8" width="0.2032" layer="21"/>
+<wire x1="86.27" y1="13.8" x2="86.27" y2="9.1" width="0.2032" layer="21"/>
+<wire x1="86.27" y1="9.1" x2="5.3" y2="9.1" width="0.2032" layer="21"/>
+<wire x1="5.3" y1="9.1" x2="5.3" y2="13.8" width="0.2032" layer="21"/>
+<wire x1="27.8" y1="8.7" x2="76.27" y2="8.7" width="0.2032" layer="21"/>
+<wire x1="76.27" y1="8.7" x2="76.27" y2="4" width="0.2032" layer="21"/>
+<wire x1="76.27" y1="4" x2="27.8" y2="4" width="0.2032" layer="21"/>
+<wire x1="27.8" y1="4" x2="27.8" y2="8.7" width="0.2032" layer="21"/>
+<wire x1="90.2208" y1="8.255" x2="102.87" y2="8.255" width="0.0508" layer="51"/>
+<pad name="B1" x="6.35" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A1" x="6.35" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C1" x="29.21" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D1" x="29.21" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B2" x="8.89" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A2" x="8.89" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C2" x="31.75" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D2" x="31.75" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B3" x="11.43" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A3" x="11.43" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C3" x="34.29" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D3" x="34.29" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B4" x="13.97" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A4" x="13.97" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C4" x="36.83" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D4" x="36.83" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B5" x="16.51" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A5" x="16.51" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C5" x="39.37" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D5" x="39.37" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B6" x="19.05" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A6" x="19.05" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C6" x="41.91" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D6" x="41.91" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B7" x="21.59" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A7" x="21.59" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C7" x="44.45" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D7" x="44.45" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B8" x="24.13" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A8" x="24.13" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C8" x="46.99" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D8" x="46.99" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B9" x="26.67" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A9" x="26.67" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C9" x="49.53" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D9" x="49.53" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B10" x="29.21" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A10" x="29.21" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C10" x="52.07" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D10" x="52.07" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B11" x="31.75" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A11" x="31.75" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C11" x="54.61" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D11" x="54.61" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B12" x="34.29" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A12" x="34.29" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C12" x="57.15" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D12" x="57.15" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B13" x="36.83" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A13" x="36.83" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C13" x="59.69" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D13" x="59.69" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B14" x="39.37" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A14" x="39.37" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C14" x="62.23" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D14" x="62.23" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B15" x="41.91" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A15" x="41.91" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C15" x="64.77" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D15" x="64.77" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B16" x="44.45" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A16" x="44.45" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C16" x="67.31" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D16" x="67.31" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B17" x="46.99" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A17" x="46.99" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C17" x="69.85" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D17" x="69.85" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B18" x="49.53" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A18" x="49.53" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C18" x="72.39" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D18" x="72.39" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B19" x="52.07" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A19" x="52.07" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C19" x="74.93" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D19" x="74.93" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B20" x="54.61" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A20" x="54.61" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B21" x="57.15" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A21" x="57.15" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B22" x="59.69" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A22" x="59.69" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B23" x="62.23" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A23" x="62.23" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B24" x="64.77" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A24" x="64.77" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B25" x="67.31" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A25" x="67.31" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B26" x="69.85" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A26" x="69.85" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B27" x="72.39" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A27" x="72.39" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B28" x="74.93" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A28" x="74.93" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B29" x="77.47" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A29" x="77.47" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B30" x="80.01" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A30" x="80.01" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B31" x="82.55" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A31" x="82.55" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="B32" x="85.09" y="12.7" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="A32" x="85.09" y="10.16" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="C0" x="26.67" y="7.62" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="D0" x="26.67" y="5.08" drill="0.8998" diameter="1.397" shape="octagon"/>
+<pad name="M4" x="5.1" y="5.1" drill="3.175" diameter="6.4516"/>
+<pad name="M1" x="8.9" y="90.8" drill="3.175" diameter="6.4516"/>
+<pad name="M2" x="82.5" y="90.8" drill="3.175" diameter="6.4516"/>
+<pad name="M3" x="85.1" y="5.1" drill="3.175" diameter="6.4516"/>
+<text x="5.715" y="14.605" size="1.016" layer="25" ratio="18">J1</text>
+<text x="29.21" y="1.905" size="1.016" layer="25" ratio="18">J2</text>
+</package>
+<package name="ESQT130">
+<description>&lt;b&gt;PC/104-Connector J3&lt;/b&gt;</description>
+<wire x1="-30.1" y1="3.9" x2="30.1" y2="3.9" width="0.2032" layer="21"/>
+<wire x1="30.1" y1="3.9" x2="30.1" y2="-3.9" width="0.2032" layer="21"/>
+<wire x1="30.1" y1="-3.9" x2="-30.1" y2="-3.9" width="0.2032" layer="21"/>
+<wire x1="-30.1" y1="-3.9" x2="-30.1" y2="3.9" width="0.2032" layer="21"/>
+<pad name="A1" x="-29" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B1" x="-29" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C1" x="-29" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D1" x="-29" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A2" x="-27" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B2" x="-27" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C2" x="-27" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D2" x="-27" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A3" x="-25" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B3" x="-25" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C3" x="-25" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D3" x="-25" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A4" x="-23" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B4" x="-23" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C4" x="-23" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D4" x="-23" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A5" x="-21" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B5" x="-21" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C5" x="-21" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D5" x="-21" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A6" x="-19" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B6" x="-19" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C6" x="-19" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D6" x="-19" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A7" x="-17" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B7" x="-17" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C7" x="-17" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D7" x="-17" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A8" x="-15" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B8" x="-15" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C8" x="-15" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D8" x="-15" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A9" x="-13" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B9" x="-13" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C9" x="-13" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D9" x="-13" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A10" x="-11" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B10" x="-11" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C10" x="-11" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D10" x="-11" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A11" x="-9" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B11" x="-9" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C11" x="-9" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D11" x="-9" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A12" x="-7" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B12" x="-7" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C12" x="-7" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D12" x="-7" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A13" x="-5" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B13" x="-5" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C13" x="-5" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D13" x="-5" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A14" x="-3" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B14" x="-3" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C14" x="-3" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D14" x="-3" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A15" x="-1" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B15" x="-1" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C15" x="-1" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D15" x="-1" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A16" x="1" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B16" x="1" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C16" x="1" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D16" x="1" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A17" x="3" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B17" x="3" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C17" x="3" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D17" x="3" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A18" x="5" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B18" x="5" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C18" x="5" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D18" x="5" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A19" x="7" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B19" x="7" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C19" x="7" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D19" x="7" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A20" x="9" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B20" x="9" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C20" x="9" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D20" x="9" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A21" x="11" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B21" x="11" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C21" x="11" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D21" x="11" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A22" x="13" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B22" x="13" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C22" x="13" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D22" x="13" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A23" x="15" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B23" x="15" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C23" x="15" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D23" x="15" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A24" x="17" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B24" x="17" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C24" x="17" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D24" x="17" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A25" x="19" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B25" x="19" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C25" x="19" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D25" x="19" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A26" x="21" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B26" x="21" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C26" x="21" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D26" x="21" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A27" x="23" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B27" x="23" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C27" x="23" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D27" x="23" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A28" x="25" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B28" x="25" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C28" x="25" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D28" x="25" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A29" x="27" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B29" x="27" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C29" x="27" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D29" x="27" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A30" x="29" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B30" x="29" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C30" x="29" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D30" x="29" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<text x="-10.795" y="-7.62" size="1.016" layer="51">Samtec ESQT-130-02-G-Q-368</text>
+<text x="-10.795" y="-6.35" size="1.016" layer="51">Samtec ESQT-130-03-M-Q-368</text>
+<text x="-10.795" y="-5.08" size="1.016" layer="51">PC/104-Plus PCI Connector</text>
+<text x="-29.21" y="-5.715" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-29.21" y="4.445" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="ATS30Q">
+<description>&lt;b&gt;PC/104-Connector J3&lt;/b&gt;</description>
+<wire x1="-30.1" y1="3.9" x2="30.1" y2="3.9" width="0.2032" layer="51"/>
+<wire x1="30.1" y1="3.9" x2="30.1" y2="-3.9" width="0.2032" layer="51"/>
+<wire x1="30.1" y1="-3.9" x2="-30.1" y2="-3.9" width="0.2032" layer="51"/>
+<wire x1="-30.1" y1="-3.9" x2="-30.1" y2="3.9" width="0.2032" layer="51"/>
+<wire x1="-32.227" y1="5.6" x2="32.227" y2="5.6" width="0.2032" layer="21"/>
+<wire x1="32.227" y1="5.6" x2="32.227" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="32.227" y1="2.54" x2="32.639" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="32.639" y1="2.54" x2="32.639" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="32.639" y1="-2.54" x2="32.227" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="32.227" y1="-2.54" x2="32.227" y2="-5.6" width="0.2032" layer="21"/>
+<wire x1="32.227" y1="-5.6" x2="-32.227" y2="-5.6" width="0.2032" layer="21"/>
+<wire x1="-32.227" y1="-5.6" x2="-32.227" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-32.227" y1="-2.54" x2="-32.512" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-32.512" y1="-2.54" x2="-32.512" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-32.512" y1="2.54" x2="-32.227" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-32.227" y1="2.54" x2="-32.227" y2="5.6" width="0.2032" layer="21"/>
+<wire x1="-32.258" y1="5.207" x2="-32.258" y2="3.175" width="0.2032" layer="21" curve="172.847331" cap="flat"/>
+<wire x1="-32.258" y1="-3.175" x2="-32.258" y2="-5.207" width="0.2032" layer="21" curve="172.847331" cap="flat"/>
+<wire x1="32.258" y1="3.175" x2="32.258" y2="5.207" width="0.2032" layer="21" curve="172.847331" cap="flat"/>
+<wire x1="32.258" y1="-5.207" x2="32.258" y2="-3.175" width="0.2032" layer="21" curve="172.847331" cap="flat"/>
+<circle x="32.1818" y="4.191" radius="0.762" width="0.2032" layer="21"/>
+<circle x="32.1818" y="-4.191" radius="0.762" width="0.2032" layer="21"/>
+<circle x="-32.1818" y="-4.191" radius="0.762" width="0.2032" layer="21"/>
+<circle x="-32.1818" y="4.191" radius="0.762" width="0.2032" layer="21"/>
+<pad name="A1" x="-29" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B1" x="-29" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C1" x="-29" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D1" x="-29" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A2" x="-27" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B2" x="-27" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C2" x="-27" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D2" x="-27" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A3" x="-25" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B3" x="-25" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C3" x="-25" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D3" x="-25" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A4" x="-23" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B4" x="-23" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C4" x="-23" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D4" x="-23" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A5" x="-21" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B5" x="-21" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C5" x="-21" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D5" x="-21" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A6" x="-19" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B6" x="-19" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C6" x="-19" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D6" x="-19" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A7" x="-17" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B7" x="-17" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C7" x="-17" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D7" x="-17" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A8" x="-15" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B8" x="-15" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C8" x="-15" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D8" x="-15" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A9" x="-13" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B9" x="-13" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C9" x="-13" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D9" x="-13" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A10" x="-11" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B10" x="-11" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C10" x="-11" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D10" x="-11" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A11" x="-9" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B11" x="-9" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C11" x="-9" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D11" x="-9" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A12" x="-7" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B12" x="-7" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C12" x="-7" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D12" x="-7" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A13" x="-5" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B13" x="-5" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C13" x="-5" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D13" x="-5" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A14" x="-3" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B14" x="-3" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C14" x="-3" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D14" x="-3" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A15" x="-1" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B15" x="-1" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C15" x="-1" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D15" x="-1" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A16" x="1" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B16" x="1" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C16" x="1" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D16" x="1" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A17" x="3" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B17" x="3" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C17" x="3" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D17" x="3" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A18" x="5" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B18" x="5" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C18" x="5" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D18" x="5" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A19" x="7" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B19" x="7" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C19" x="7" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D19" x="7" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A20" x="9" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B20" x="9" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C20" x="9" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D20" x="9" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A21" x="11" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B21" x="11" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C21" x="11" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D21" x="11" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A22" x="13" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B22" x="13" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C22" x="13" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D22" x="13" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A23" x="15" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B23" x="15" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C23" x="15" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D23" x="15" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A24" x="17" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B24" x="17" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C24" x="17" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D24" x="17" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A25" x="19" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B25" x="19" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C25" x="19" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D25" x="19" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A26" x="21" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B26" x="21" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C26" x="21" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D26" x="21" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A27" x="23" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B27" x="23" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C27" x="23" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D27" x="23" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A28" x="25" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B28" x="25" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C28" x="25" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D28" x="25" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A29" x="27" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B29" x="27" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C29" x="27" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D29" x="27" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="A30" x="29" y="-3" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="B30" x="29" y="-1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="C30" x="29" y="1" drill="0.9" diameter="1.397" shape="octagon"/>
+<pad name="D30" x="29" y="3" drill="0.9" diameter="1.397" shape="octagon"/>
+<text x="-5.08" y="4.445" size="0.8128" layer="51">Samtec ATS-30-Q</text>
+<text x="-31.75" y="-6.985" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-31.75" y="6.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-6.985" y="-5.08" size="0.8128" layer="51">PC/104-Plus PCI Shroud</text>
+</package>
+<package name="PC104-PLUS">
+<description>&lt;b&gt;PC/104-Plus 16 bit&lt;/b&gt;</description>
+<wire x1="0" y1="0" x2="90.2" y2="0" width="0.254" layer="20"/>
+<wire x1="90.2" y1="0" x2="90.2" y2="95.9" width="0.254" layer="20"/>
+<wire x1="90.2" y1="95.9" x2="0" y2="95.9" width="0.254" layer="20"/>
+<wire x1="0" y1="95.9" x2="0" y2="0" width="0.254" layer="20"/>
+<wire x1="0" y1="87.63" x2="-12.7" y2="87.63" width="0.0508" layer="51"/>
+<wire x1="-12.7" y1="87.63" x2="-12.7" y2="8.255" width="0.0508" layer="51"/>
+<wire x1="-12.7" y1="8.255" x2="0" y2="8.255" width="0.0508" layer="51"/>
+<wire x1="102.87" y1="8.255" x2="102.87" y2="87.63" width="0.0508" layer="51"/>
+<wire x1="102.87" y1="87.63" x2="90.17" y2="87.63" width="0.0508" layer="51"/>
+<wire x1="8.3" y1="0" x2="8.3" y2="-12.7" width="0.0508" layer="51"/>
+<wire x1="8.3" y1="-12.7" x2="24.1" y2="-12.7" width="0.0508" layer="51"/>
+<wire x1="24.1" y1="-12.7" x2="24.1" y2="0" width="0.0508" layer="51"/>
+<wire x1="5.3" y1="13.8" x2="86.27" y2="13.8" width="0.2032" layer="21"/>
+<wire x1="86.27" y1="13.8" x2="86.27" y2="9.1" width="0.2032" layer="21"/>
+<wire x1="86.27" y1="9.1" x2="5.3" y2="9.1" width="0.2032" layer="21"/>
+<wire x1="5.3" y1="9.1" x2="5.3" y2="13.8" width="0.2032" layer="21"/>
+<wire x1="27.8" y1="8.7" x2="76.27" y2="8.7" width="0.2032" layer="21"/>
+<wire x1="76.27" y1="8.7" x2="76.27" y2="4" width="0.2032" layer="21"/>
+<wire x1="76.27" y1="4" x2="27.8" y2="4" width="0.2032" layer="21"/>
+<wire x1="27.8" y1="4" x2="27.8" y2="8.7" width="0.2032" layer="21"/>
+<wire x1="90.2208" y1="8.255" x2="102.87" y2="8.255" width="0.0508" layer="51"/>
+<wire x1="15.41" y1="91.705" x2="75.61" y2="91.705" width="0.2032" layer="21"/>
+<wire x1="75.61" y1="91.705" x2="75.61" y2="83.905" width="0.2032" layer="21"/>
+<wire x1="75.61" y1="83.905" x2="15.41" y2="83.905" width="0.2032" layer="21"/>
+<wire x1="15.41" y1="83.905" x2="15.41" y2="91.705" width="0.2032" layer="21"/>
+<wire x1="13.283" y1="93.405" x2="77.737" y2="93.405" width="0.2032" layer="21"/>
+<wire x1="77.737" y1="93.405" x2="77.737" y2="90.345" width="0.2032" layer="21"/>
+<wire x1="77.737" y1="90.345" x2="78.149" y2="90.345" width="0.2032" layer="21"/>
+<wire x1="78.149" y1="90.345" x2="78.149" y2="85.265" width="0.2032" layer="21"/>
+<wire x1="78.149" y1="85.265" x2="77.737" y2="85.265" width="0.2032" layer="21"/>
+<wire x1="77.737" y1="85.265" x2="77.737" y2="82.205" width="0.2032" layer="21"/>
+<wire x1="77.737" y1="82.205" x2="13.283" y2="82.205" width="0.2032" layer="21"/>
+<wire x1="13.283" y1="82.205" x2="13.283" y2="85.265" width="0.2032" layer="21"/>
+<wire x1="13.283" y1="85.265" x2="12.998" y2="85.265" width="0.2032" layer="21"/>
+<wire x1="12.998" y1="85.265" x2="12.998" y2="90.345" width="0.2032" layer="21"/>
+<wire x1="12.998" y1="90.345" x2="13.283" y2="90.345" width="0.2032" layer="21"/>
+<wire x1="13.283" y1="90.345" x2="13.283" y2="93.405" width="0.2032" layer="21"/>
+<wire x1="13.252" y1="93.012" x2="13.252" y2="90.98" width="0.2032" layer="21" curve="172.847331" cap="flat"/>
+<wire x1="13.252" y1="84.63" x2="13.252" y2="82.598" width="0.2032" layer="21" curve="172.847331" cap="flat"/>
+<wire x1="77.768" y1="90.98" x2="77.768" y2="93.012" width="0.2032" layer="21" curve="172.847331" cap="flat"/>
+<wire x1="77.768" y1="82.598" x2="77.768" y2="84.63" width="0.2032" layer="21" curve="172.847331" cap="flat"/>
+<circle x="77.6918" y="91.996" radius="0.762" width="0.2032" layer="21"/>
+<circle x="77.6918" y="83.614" radius="0.762" width="0.2032" layer="21"/>
+<circle x="13.3282" y="83.614" radius="0.762" width="0.2032" layer="21"/>
+<circle x="13.3282" y="91.996" radius="0.762" width="0.2032" layer="21"/>
+<pad name="B1" x="6.35" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A1" x="6.35" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C1" x="29.21" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D1" x="29.21" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B2" x="8.89" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A2" x="8.89" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C2" x="31.75" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D2" x="31.75" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B3" x="11.43" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A3" x="11.43" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C3" x="34.29" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D3" x="34.29" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B4" x="13.97" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A4" x="13.97" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C4" x="36.83" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D4" x="36.83" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B5" x="16.51" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A5" x="16.51" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C5" x="39.37" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D5" x="39.37" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B6" x="19.05" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A6" x="19.05" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C6" x="41.91" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D6" x="41.91" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B7" x="21.59" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A7" x="21.59" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C7" x="44.45" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D7" x="44.45" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B8" x="24.13" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A8" x="24.13" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C8" x="46.99" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D8" x="46.99" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B9" x="26.67" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A9" x="26.67" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C9" x="49.53" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D9" x="49.53" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B10" x="29.21" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A10" x="29.21" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C10" x="52.07" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D10" x="52.07" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B11" x="31.75" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A11" x="31.75" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C11" x="54.61" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D11" x="54.61" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B12" x="34.29" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A12" x="34.29" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C12" x="57.15" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D12" x="57.15" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B13" x="36.83" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A13" x="36.83" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C13" x="59.69" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D13" x="59.69" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B14" x="39.37" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A14" x="39.37" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C14" x="62.23" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D14" x="62.23" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B15" x="41.91" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A15" x="41.91" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C15" x="64.77" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D15" x="64.77" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B16" x="44.45" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A16" x="44.45" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C16" x="67.31" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D16" x="67.31" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B17" x="46.99" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A17" x="46.99" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C17" x="69.85" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D17" x="69.85" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B18" x="49.53" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A18" x="49.53" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C18" x="72.39" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D18" x="72.39" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B19" x="52.07" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A19" x="52.07" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C19" x="74.93" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D19" x="74.93" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="B20" x="54.61" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A20" x="54.61" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B21" x="57.15" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A21" x="57.15" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B22" x="59.69" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A22" x="59.69" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B23" x="62.23" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A23" x="62.23" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B24" x="64.77" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A24" x="64.77" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B25" x="67.31" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A25" x="67.31" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B26" x="69.85" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A26" x="69.85" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B27" x="72.39" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A27" x="72.39" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B28" x="74.93" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A28" x="74.93" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B29" x="77.47" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A29" x="77.47" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B30" x="80.01" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A30" x="80.01" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B31" x="82.55" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A31" x="82.55" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="B32" x="85.09" y="12.7" drill="0.8998" shape="octagon"/>
+<pad name="A32" x="85.09" y="10.16" drill="0.8998" shape="octagon"/>
+<pad name="C0" x="26.67" y="7.62" drill="0.8998" shape="octagon"/>
+<pad name="D0" x="26.67" y="5.08" drill="0.8998" shape="octagon"/>
+<pad name="J3-A1" x="16.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B1" x="16.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C1" x="16.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D1" x="16.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A2" x="18.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B2" x="18.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C2" x="18.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D2" x="18.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A3" x="20.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B3" x="20.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C3" x="20.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D3" x="20.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A4" x="22.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B4" x="22.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C4" x="22.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D4" x="22.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A5" x="24.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B5" x="24.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C5" x="24.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D5" x="24.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A6" x="26.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B6" x="26.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C6" x="26.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D6" x="26.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A7" x="28.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B7" x="28.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C7" x="28.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D7" x="28.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A8" x="30.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B8" x="30.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C8" x="30.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D8" x="30.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A9" x="32.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B9" x="32.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C9" x="32.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D9" x="32.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A10" x="34.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B10" x="34.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C10" x="34.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D10" x="34.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A11" x="36.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B11" x="36.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C11" x="36.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D11" x="36.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A12" x="38.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B12" x="38.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C12" x="38.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D12" x="38.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A13" x="40.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B13" x="40.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C13" x="40.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D13" x="40.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A14" x="42.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B14" x="42.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C14" x="42.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D14" x="42.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A15" x="44.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B15" x="44.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C15" x="44.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D15" x="44.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A16" x="46.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B16" x="46.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C16" x="46.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D16" x="46.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A17" x="48.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B17" x="48.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C17" x="48.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D17" x="48.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A18" x="50.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B18" x="50.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C18" x="50.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D18" x="50.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A19" x="52.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B19" x="52.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C19" x="52.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D19" x="52.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A20" x="54.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B20" x="54.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C20" x="54.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D20" x="54.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A21" x="56.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B21" x="56.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C21" x="56.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D21" x="56.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A22" x="58.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B22" x="58.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C22" x="58.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D22" x="58.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A23" x="60.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B23" x="60.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C23" x="60.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D23" x="60.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A24" x="62.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B24" x="62.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C24" x="62.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D24" x="62.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A25" x="64.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B25" x="64.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C25" x="64.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D25" x="64.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A26" x="66.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B26" x="66.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C26" x="66.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D26" x="66.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A27" x="68.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B27" x="68.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C27" x="68.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D27" x="68.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A28" x="70.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B28" x="70.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C28" x="70.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D28" x="70.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A29" x="72.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B29" x="72.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C29" x="72.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D29" x="72.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="J3-A30" x="74.51" y="84.805" drill="0.9" shape="octagon"/>
+<pad name="J3-B30" x="74.51" y="86.805" drill="0.9" shape="octagon"/>
+<pad name="J3-C30" x="74.51" y="88.805" drill="0.9" shape="octagon"/>
+<pad name="J3-D30" x="74.51" y="90.805" drill="0.9" shape="octagon"/>
+<pad name="M1" x="8.9" y="90.8" drill="3.175" diameter="6.4516"/>
+<pad name="M2" x="82.5" y="90.8" drill="3.175" diameter="6.4516"/>
+<pad name="M3" x="85.1" y="5.1" drill="3.175" diameter="6.4516"/>
+<pad name="M4" x="5.1" y="5.1" drill="3.175" diameter="6.4516"/>
+<text x="34.715" y="92.25" size="1.016" layer="21" ratio="18">Samtec ATS-30-Q</text>
+<text x="34.715" y="82.725" size="1.016" layer="21" ratio="18">PC/104-Plus PCI Shroud</text>
+<text x="17.34" y="97.5" size="1.016" layer="21" ratio="18">PC/104-Plus 16-Bit Module</text>
+<text x="15.875" y="80.01" size="1.016" layer="25" ratio="18">J3</text>
+<text x="5.715" y="14.605" size="1.016" layer="25" ratio="18">J1</text>
+<text x="27.94" y="2.54" size="1.016" layer="25" ratio="18">J2</text>
+</package>
+<package name="1184C">
+<description>&lt;b&gt;COMMCON CONNECTOR PC/104&lt;/b&gt;</description>
+<wire x1="-40.64" y1="0" x2="-30.48" y2="0" width="0.254" layer="21"/>
+<wire x1="-30.48" y1="0" x2="-30.48" y2="5.08" width="0.254" layer="21"/>
+<wire x1="-30.48" y1="5.08" x2="20.32" y2="5.08" width="0.254" layer="21"/>
+<wire x1="20.32" y1="5.08" x2="20.32" y2="0" width="0.254" layer="21"/>
+<wire x1="20.32" y1="0" x2="40.64" y2="0" width="0.254" layer="21"/>
+<wire x1="40.64" y1="0" x2="40.64" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="40.64" y1="-5.08" x2="-40.64" y2="-5.08" width="0.254" layer="21"/>
+<wire x1="-40.64" y1="-5.08" x2="-40.64" y2="0" width="0.254" layer="21"/>
+<pad name="A1" x="-39.37" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B1" x="-39.37" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A2" x="-36.83" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B2" x="-36.83" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A3" x="-34.29" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B3" x="-34.29" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A4" x="-31.75" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B4" x="-31.75" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A5" x="-29.21" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B5" x="-29.21" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A6" x="-26.67" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B6" x="-26.67" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A7" x="-24.13" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B7" x="-24.13" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A8" x="-21.59" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B8" x="-21.59" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A9" x="-19.05" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B9" x="-19.05" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A10" x="-16.51" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B10" x="-16.51" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A11" x="-13.97" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B11" x="-13.97" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A12" x="-11.43" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B12" x="-11.43" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A13" x="-8.89" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B13" x="-8.89" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A14" x="-6.35" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B14" x="-6.35" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A15" x="-3.81" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B15" x="-3.81" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A16" x="-1.27" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B16" x="-1.27" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A17" x="1.27" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B17" x="1.27" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A18" x="3.81" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B18" x="3.81" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A19" x="6.35" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B19" x="6.35" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A20" x="8.89" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B20" x="8.89" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A21" x="11.43" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B21" x="11.43" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A22" x="13.97" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B22" x="13.97" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A23" x="16.51" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B23" x="16.51" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A24" x="19.05" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B24" x="19.05" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A25" x="21.59" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B25" x="21.59" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A26" x="24.13" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B26" x="24.13" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A27" x="26.67" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B27" x="26.67" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A28" x="29.21" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B28" x="29.21" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A29" x="31.75" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B29" x="31.75" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A30" x="34.29" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B30" x="34.29" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A31" x="36.83" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B31" x="36.83" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A32" x="39.37" y="-1.27" drill="1.1176" shape="octagon"/>
+<pad name="B32" x="39.37" y="-3.81" drill="1.1176" shape="octagon"/>
+<pad name="A33" x="-29.21" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B33" x="-29.21" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A34" x="-26.67" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B34" x="-26.67" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A35" x="-24.13" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B35" x="-24.13" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A36" x="-21.59" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B36" x="-21.59" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A37" x="-19.05" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B37" x="-19.05" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A38" x="-16.51" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B38" x="-16.51" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A39" x="-13.97" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B39" x="-13.97" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A40" x="-11.43" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B40" x="-11.43" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A41" x="-8.89" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B41" x="-8.89" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A42" x="-6.35" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B42" x="-6.35" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A43" x="-3.81" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B43" x="-3.81" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A44" x="-1.27" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B44" x="-1.27" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A45" x="1.27" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B45" x="1.27" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A46" x="3.81" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B46" x="3.81" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A47" x="6.35" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B47" x="6.35" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A48" x="8.89" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B48" x="8.89" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A49" x="11.43" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B49" x="11.43" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A50" x="13.97" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B50" x="13.97" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A51" x="16.51" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B51" x="16.51" y="1.27" drill="1.1176" shape="octagon"/>
+<pad name="A52" x="19.05" y="3.81" drill="1.1176" shape="octagon"/>
+<pad name="B52" x="19.05" y="1.27" drill="1.1176" shape="octagon"/>
+<text x="21.59" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="21.59" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="PIN-B">
+<wire x1="1.016" y1="0.508" x2="0" y2="0.508" width="0.3048" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.3048" layer="94"/>
+<wire x1="0" y1="-0.508" x2="1.016" y2="-0.508" width="0.3048" layer="94"/>
+<text x="1.524" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="P$1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="PIN-V">
+<wire x1="1.016" y1="0.508" x2="0" y2="0.508" width="0.3048" layer="94"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.3048" layer="94"/>
+<wire x1="0" y1="-0.508" x2="1.016" y2="-0.508" width="0.3048" layer="94"/>
+<text x="1.524" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="P$1" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="PC104-J1">
+<wire x1="-12.7" y1="40.64" x2="12.7" y2="40.64" width="0.254" layer="94"/>
+<wire x1="12.7" y1="40.64" x2="12.7" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-43.18" x2="-12.7" y2="-43.18" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-43.18" x2="-12.7" y2="40.64" width="0.254" layer="94"/>
+<text x="-12.7" y="41.656" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-45.72" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IOCHCHK" x="-15.24" y="38.1" length="short" direction="pas"/>
+<pin name="SD0" x="-15.24" y="17.78" length="short" direction="pas"/>
+<pin name="SD1" x="-15.24" y="20.32" length="short" direction="pas"/>
+<pin name="SD2" x="-15.24" y="22.86" length="short" direction="pas"/>
+<pin name="SD3" x="-15.24" y="25.4" length="short" direction="pas"/>
+<pin name="SD4" x="-15.24" y="27.94" length="short" direction="pas"/>
+<pin name="SD5" x="-15.24" y="30.48" length="short" direction="pas"/>
+<pin name="SD6" x="-15.24" y="33.02" length="short" direction="pas"/>
+<pin name="SD7" x="-15.24" y="35.56" length="short" direction="pas"/>
+<pin name="IOCHRDY" x="-15.24" y="15.24" length="short" direction="pas"/>
+<pin name="AEN" x="-15.24" y="12.7" length="short" direction="pas"/>
+<pin name="SA0" x="-15.24" y="-38.1" length="short" direction="pas"/>
+<pin name="SA1" x="-15.24" y="-35.56" length="short" direction="pas"/>
+<pin name="SA2" x="-15.24" y="-33.02" length="short" direction="pas"/>
+<pin name="SA3" x="-15.24" y="-30.48" length="short" direction="pas"/>
+<pin name="SA4" x="-15.24" y="-27.94" length="short" direction="pas"/>
+<pin name="SA5" x="-15.24" y="-25.4" length="short" direction="pas"/>
+<pin name="SA6" x="-15.24" y="-22.86" length="short" direction="pas"/>
+<pin name="SA7" x="-15.24" y="-20.32" length="short" direction="pas"/>
+<pin name="SA8" x="-15.24" y="-17.78" length="short" direction="pas"/>
+<pin name="SA9" x="-15.24" y="-15.24" length="short" direction="pas"/>
+<pin name="SA10" x="-15.24" y="-12.7" length="short" direction="pas"/>
+<pin name="SA11" x="-15.24" y="-10.16" length="short" direction="pas"/>
+<pin name="SA12" x="-15.24" y="-7.62" length="short" direction="pas"/>
+<pin name="SA13" x="-15.24" y="-5.08" length="short" direction="pas"/>
+<pin name="SA14" x="-15.24" y="-2.54" length="short" direction="pas"/>
+<pin name="SA15" x="-15.24" y="0" length="short" direction="pas"/>
+<pin name="SA16" x="-15.24" y="2.54" length="short" direction="pas"/>
+<pin name="SA17" x="-15.24" y="5.08" length="short" direction="pas"/>
+<pin name="SA18" x="-15.24" y="7.62" length="short" direction="pas"/>
+<pin name="SA19" x="-15.24" y="10.16" length="short" direction="pas"/>
+<pin name="0V@1" x="-15.24" y="-40.64" length="short" direction="pas"/>
+<pin name="0V@2" x="15.24" y="38.1" length="short" direction="pas" rot="R180"/>
+<pin name="RESETDRV" x="15.24" y="35.56" length="short" direction="pas" rot="R180"/>
+<pin name="+5V@1" x="15.24" y="33.02" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ9" x="15.24" y="30.48" length="short" direction="pas" rot="R180"/>
+<pin name="-5V" x="15.24" y="27.94" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ2" x="15.24" y="25.4" length="short" direction="pas" rot="R180"/>
+<pin name="-12V" x="15.24" y="22.86" length="short" direction="pas" rot="R180"/>
+<pin name="ENDXFR" x="15.24" y="20.32" length="short" direction="pas" rot="R180"/>
+<pin name="+12V" x="15.24" y="17.78" length="short" direction="pas" rot="R180"/>
+<pin name="KEY" x="15.24" y="15.24" length="short" direction="pas" rot="R180"/>
+<pin name="SMEMW" x="15.24" y="12.7" length="short" direction="pas" rot="R180"/>
+<pin name="SMEMR" x="15.24" y="10.16" length="short" direction="pas" rot="R180"/>
+<pin name="IOW" x="15.24" y="7.62" length="short" direction="pas" rot="R180"/>
+<pin name="IOR" x="15.24" y="5.08" length="short" direction="pas" rot="R180"/>
+<pin name="DACK3" x="15.24" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ3" x="15.24" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="DACK1" x="15.24" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ1" x="15.24" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="REFRESH" x="15.24" y="-7.62" length="short" direction="pas" rot="R180"/>
+<pin name="SYSCLK" x="15.24" y="-10.16" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ3" x="15.24" y="-22.86" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ4" x="15.24" y="-20.32" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ5" x="15.24" y="-17.78" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ6" x="15.24" y="-15.24" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ7" x="15.24" y="-12.7" length="short" direction="pas" rot="R180"/>
+<pin name="DACK2" x="15.24" y="-25.4" length="short" direction="pas" rot="R180"/>
+<pin name="TC" x="15.24" y="-27.94" length="short" direction="pas" rot="R180"/>
+<pin name="BALE" x="15.24" y="-30.48" length="short" direction="pas" rot="R180"/>
+<pin name="+5V@2" x="15.24" y="-33.02" length="short" direction="pas" rot="R180"/>
+<pin name="OSC" x="15.24" y="-35.56" length="short" direction="pas" rot="R180"/>
+<pin name="0V@3" x="15.24" y="-38.1" length="short" direction="pas" rot="R180"/>
+<pin name="0V@4" x="15.24" y="-40.64" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="PC104-J2">
+<wire x1="-12.7" y1="25.4" x2="12.7" y2="25.4" width="0.254" layer="94"/>
+<wire x1="12.7" y1="25.4" x2="12.7" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-27.94" x2="-12.7" y2="-27.94" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-27.94" x2="-12.7" y2="25.4" width="0.254" layer="94"/>
+<text x="-12.7" y="26.416" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-30.48" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="0V@1" x="-15.24" y="22.86" length="short" direction="pas"/>
+<pin name="SBHE" x="-15.24" y="20.32" length="short" direction="pas"/>
+<pin name="LA17" x="-15.24" y="2.54" length="short" direction="pas"/>
+<pin name="LA18" x="-15.24" y="5.08" length="short" direction="pas"/>
+<pin name="LA19" x="-15.24" y="7.62" length="short" direction="pas"/>
+<pin name="LA20" x="-15.24" y="10.16" length="short" direction="pas"/>
+<pin name="LA21" x="-15.24" y="12.7" length="short" direction="pas"/>
+<pin name="LA22" x="-15.24" y="15.24" length="short" direction="pas"/>
+<pin name="LA23" x="-15.24" y="17.78" length="short" direction="pas"/>
+<pin name="SD8" x="-15.24" y="-5.08" length="short" direction="pas"/>
+<pin name="SD9" x="-15.24" y="-7.62" length="short" direction="pas"/>
+<pin name="SD10" x="-15.24" y="-10.16" length="short" direction="pas"/>
+<pin name="SD11" x="-15.24" y="-12.7" length="short" direction="pas"/>
+<pin name="SD12" x="-15.24" y="-15.24" length="short" direction="pas"/>
+<pin name="SD13" x="-15.24" y="-17.78" length="short" direction="pas"/>
+<pin name="SD14" x="-15.24" y="-20.32" length="short" direction="pas"/>
+<pin name="SD15" x="-15.24" y="-22.86" length="short" direction="pas"/>
+<pin name="MEMR" x="-15.24" y="0" length="short" direction="pas"/>
+<pin name="MEMW" x="-15.24" y="-2.54" length="short" direction="pas"/>
+<pin name="KEY" x="-15.24" y="-25.4" length="short" direction="pas"/>
+<pin name="0V@2" x="15.24" y="22.86" length="short" direction="pas" rot="R180"/>
+<pin name="0V@3" x="15.24" y="-22.86" length="short" direction="pas" rot="R180"/>
+<pin name="0V@4" x="15.24" y="-25.4" length="short" direction="pas" rot="R180"/>
+<pin name="IOCS16" x="15.24" y="17.78" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ10" x="15.24" y="15.24" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ11" x="15.24" y="12.7" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ12" x="15.24" y="10.16" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ14" x="15.24" y="5.08" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ15" x="15.24" y="7.62" length="short" direction="pas" rot="R180"/>
+<pin name="DACK0" x="15.24" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ0" x="15.24" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="DACK5" x="15.24" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ5" x="15.24" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="DACK6" x="15.24" y="-7.62" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ6" x="15.24" y="-10.16" length="short" direction="pas" rot="R180"/>
+<pin name="DACK7" x="15.24" y="-12.7" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ7" x="15.24" y="-15.24" length="short" direction="pas" rot="R180"/>
+<pin name="+5V" x="15.24" y="-17.78" length="short" direction="pas" rot="R180"/>
+<pin name="MASTER" x="15.24" y="-20.32" length="short" direction="pas" rot="R180"/>
+<pin name="MEMCS16" x="15.24" y="20.32" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="PC104J3A">
+<wire x1="-7.62" y1="38.1" x2="5.08" y2="38.1" width="0.254" layer="94"/>
+<wire x1="5.08" y1="38.1" x2="5.08" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="5.08" y1="-40.64" x2="-7.62" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-40.64" x2="-7.62" y2="38.1" width="0.254" layer="94"/>
+<text x="-7.62" y="39.116" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="5.0V/KEY" x="-10.16" y="35.56" length="short" direction="pas"/>
+<pin name="VI/O" x="-10.16" y="33.02" length="short" direction="pas"/>
+<pin name="AD05" x="-10.16" y="30.48" length="short" direction="pas"/>
+<pin name="C/BEO" x="-10.16" y="27.94" length="short" direction="pas"/>
+<pin name="GND@1" x="-10.16" y="25.4" length="short" direction="pas"/>
+<pin name="AD11" x="-10.16" y="22.86" length="short" direction="pas"/>
+<pin name="AD14" x="-10.16" y="20.32" length="short" direction="pas"/>
+<pin name="+3.3V@1" x="-10.16" y="17.78" length="short" direction="pas"/>
+<pin name="SERR" x="-10.16" y="15.24" length="short" direction="pas"/>
+<pin name="GND@2" x="-10.16" y="12.7" length="short" direction="pas"/>
+<pin name="STOP" x="-10.16" y="10.16" length="short" direction="pas"/>
+<pin name="+3.3V@2" x="-10.16" y="7.62" length="short" direction="pas"/>
+<pin name="FRAME" x="-10.16" y="5.08" length="short" direction="pas"/>
+<pin name="GND@3" x="-10.16" y="2.54" length="short" direction="pas"/>
+<pin name="AD18" x="-10.16" y="0" length="short" direction="pas"/>
+<pin name="AD21" x="-10.16" y="-2.54" length="short" direction="pas"/>
+<pin name="+3.3V@3" x="-10.16" y="-5.08" length="short" direction="pas"/>
+<pin name="IDSEL0" x="-10.16" y="-7.62" length="short" direction="pas"/>
+<pin name="AD24" x="-10.16" y="-10.16" length="short" direction="pas"/>
+<pin name="GND@4" x="-10.16" y="-12.7" length="short" direction="pas"/>
+<pin name="AD29" x="-10.16" y="-15.24" length="short" direction="pas"/>
+<pin name="+5V@1" x="-10.16" y="-17.78" length="short" direction="pas"/>
+<pin name="REQ0" x="-10.16" y="-20.32" length="short" direction="pas"/>
+<pin name="GND@5" x="-10.16" y="-22.86" length="short" direction="pas"/>
+<pin name="GNT1" x="-10.16" y="-25.4" length="short" direction="pas"/>
+<pin name="+5V@2" x="-10.16" y="-27.94" length="short" direction="pas"/>
+<pin name="CLK2" x="-10.16" y="-30.48" length="short" direction="pas"/>
+<pin name="GND@6" x="-10.16" y="-33.02" length="short" direction="pas"/>
+<pin name="+12V" x="-10.16" y="-35.56" length="short" direction="pas"/>
+<pin name="-12V" x="-10.16" y="-38.1" length="short" direction="pas"/>
+</symbol>
+<symbol name="PC104J3B">
+<wire x1="-10.16" y1="40.64" x2="7.62" y2="40.64" width="0.254" layer="94"/>
+<wire x1="7.62" y1="40.64" x2="7.62" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-38.1" x2="-10.16" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-38.1" x2="-10.16" y2="40.64" width="0.254" layer="94"/>
+<text x="-10.16" y="41.656" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-40.64" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="RESERVED@1" x="-12.7" y="38.1" length="short" direction="pas"/>
+<pin name="AD02" x="-12.7" y="35.56" length="short" direction="pas"/>
+<pin name="GND@1" x="-12.7" y="33.02" length="short" direction="pas"/>
+<pin name="AD07" x="-12.7" y="30.48" length="short" direction="pas"/>
+<pin name="AD09" x="-12.7" y="27.94" length="short" direction="pas"/>
+<pin name="VI/O@1" x="-12.7" y="25.4" length="short" direction="pas"/>
+<pin name="AD13" x="-12.7" y="22.86" length="short" direction="pas"/>
+<pin name="C/BE1" x="-12.7" y="20.32" length="short" direction="pas"/>
+<pin name="GND@2" x="-12.7" y="17.78" length="short" direction="pas"/>
+<pin name="PERR" x="-12.7" y="15.24" length="short" direction="pas"/>
+<pin name="+3.3V@1" x="-12.7" y="12.7" length="short" direction="pas"/>
+<pin name="TRDY" x="-12.7" y="10.16" length="short" direction="pas"/>
+<pin name="GND@3" x="-12.7" y="7.62" length="short" direction="pas"/>
+<pin name="AD16" x="-12.7" y="5.08" length="short" direction="pas"/>
+<pin name="+3.3V@2" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="AD20" x="-12.7" y="0" length="short" direction="pas"/>
+<pin name="AD23" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="GND@4" x="-12.7" y="-5.08" length="short" direction="pas"/>
+<pin name="C/BE3" x="-12.7" y="-7.62" length="short" direction="pas"/>
+<pin name="AD26" x="-12.7" y="-10.16" length="short" direction="pas"/>
+<pin name="+5V@1" x="-12.7" y="-12.7" length="short" direction="pas"/>
+<pin name="AD30" x="-12.7" y="-15.24" length="short" direction="pas"/>
+<pin name="GND@5" x="-12.7" y="-17.78" length="short" direction="pas"/>
+<pin name="REQ2" x="-12.7" y="-20.32" length="short" direction="pas"/>
+<pin name="VI/O@2" x="-12.7" y="-22.86" length="short" direction="pas"/>
+<pin name="CLK0" x="-12.7" y="-25.4" length="short" direction="pas"/>
+<pin name="+5V@2" x="-12.7" y="-27.94" length="short" direction="pas"/>
+<pin name="INTD" x="-12.7" y="-30.48" length="short" direction="pas"/>
+<pin name="INTA" x="-12.7" y="-33.02" length="short" direction="pas"/>
+<pin name="RESERVED@2" x="-12.7" y="-35.56" length="short" direction="pas"/>
+</symbol>
+<symbol name="PC104J3C">
+<wire x1="-10.16" y1="40.64" x2="7.62" y2="40.64" width="0.254" layer="94"/>
+<wire x1="7.62" y1="40.64" x2="7.62" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-38.1" x2="-10.16" y2="-38.1" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-38.1" x2="-10.16" y2="40.64" width="0.254" layer="94"/>
+<text x="-10.16" y="41.656" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-40.64" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="+5V@1" x="-12.7" y="38.1" length="short" direction="pas"/>
+<pin name="AD01" x="-12.7" y="35.56" length="short" direction="pas"/>
+<pin name="AD04" x="-12.7" y="33.02" length="short" direction="pas"/>
+<pin name="GND@1" x="-12.7" y="30.48" length="short" direction="pas"/>
+<pin name="AD08" x="-12.7" y="27.94" length="short" direction="pas"/>
+<pin name="AD10" x="-12.7" y="25.4" length="short" direction="pas"/>
+<pin name="GND@2" x="-12.7" y="22.86" length="short" direction="pas"/>
+<pin name="AD15" x="-12.7" y="20.32" length="short" direction="pas"/>
+<pin name="SB0" x="-12.7" y="17.78" length="short" direction="pas"/>
+<pin name="+3.3V@1" x="-12.7" y="15.24" length="short" direction="pas"/>
+<pin name="LOCK" x="-12.7" y="12.7" length="short" direction="pas"/>
+<pin name="GND@3" x="-12.7" y="10.16" length="short" direction="pas"/>
+<pin name="IRDY" x="-12.7" y="7.62" length="short" direction="pas"/>
+<pin name="+3.3V@2" x="-12.7" y="5.08" length="short" direction="pas"/>
+<pin name="AD17" x="-12.7" y="2.54" length="short" direction="pas"/>
+<pin name="GND@4" x="-12.7" y="0" length="short" direction="pas"/>
+<pin name="AD22" x="-12.7" y="-2.54" length="short" direction="pas"/>
+<pin name="IDSEL1" x="-12.7" y="-5.08" length="short" direction="pas"/>
+<pin name="VI/O" x="-12.7" y="-7.62" length="short" direction="pas"/>
+<pin name="AD25" x="-12.7" y="-10.16" length="short" direction="pas"/>
+<pin name="AD28" x="-12.7" y="-12.7" length="short" direction="pas"/>
+<pin name="GND@5" x="-12.7" y="-15.24" length="short" direction="pas"/>
+<pin name="REQ1" x="-12.7" y="-17.78" length="short" direction="pas"/>
+<pin name="+5V@2" x="-12.7" y="-20.32" length="short" direction="pas"/>
+<pin name="GNT2" x="-12.7" y="-22.86" length="short" direction="pas"/>
+<pin name="GND@6" x="-12.7" y="-25.4" length="short" direction="pas"/>
+<pin name="CLK3" x="-12.7" y="-27.94" length="short" direction="pas"/>
+<pin name="+5V@3" x="-12.7" y="-30.48" length="short" direction="pas"/>
+<pin name="INTB" x="-12.7" y="-33.02" length="short" direction="pas"/>
+<pin name="RESERVED@3" x="-12.7" y="-35.56" length="short" direction="pas"/>
+</symbol>
+<symbol name="PC104J3D">
+<wire x1="-7.62" y1="38.1" x2="7.62" y2="38.1" width="0.254" layer="94"/>
+<wire x1="7.62" y1="38.1" x2="7.62" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="7.62" y1="-40.64" x2="-7.62" y2="-40.64" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="-40.64" x2="-7.62" y2="38.1" width="0.254" layer="94"/>
+<text x="-7.62" y="39.116" size="1.778" layer="95">&gt;NAME</text>
+<text x="-7.62" y="-43.18" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="AD00" x="-10.16" y="35.56" length="short" direction="pas"/>
+<pin name="+5V@1" x="-10.16" y="33.02" length="short" direction="pas"/>
+<pin name="AD03" x="-10.16" y="30.48" length="short" direction="pas"/>
+<pin name="AD06" x="-10.16" y="27.94" length="short" direction="pas"/>
+<pin name="GND@1" x="-10.16" y="25.4" length="short" direction="pas"/>
+<pin name="M66EN" x="-10.16" y="22.86" length="short" direction="pas"/>
+<pin name="AD12" x="-10.16" y="20.32" length="short" direction="pas"/>
+<pin name="+3.3V@1" x="-10.16" y="17.78" length="short" direction="pas"/>
+<pin name="PAR" x="-10.16" y="15.24" length="short" direction="pas"/>
+<pin name="SDONE" x="-10.16" y="12.7" length="short" direction="pas"/>
+<pin name="GND@2" x="-10.16" y="10.16" length="short" direction="pas"/>
+<pin name="DEVSEL" x="-10.16" y="7.62" length="short" direction="pas"/>
+<pin name="+3.3V@2" x="-10.16" y="5.08" length="short" direction="pas"/>
+<pin name="C/BE2" x="-10.16" y="2.54" length="short" direction="pas"/>
+<pin name="GND@3" x="-10.16" y="0" length="short" direction="pas"/>
+<pin name="AD19" x="-10.16" y="-2.54" length="short" direction="pas"/>
+<pin name="+3.3V@3" x="-10.16" y="-5.08" length="short" direction="pas"/>
+<pin name="IDSEL2" x="-10.16" y="-7.62" length="short" direction="pas"/>
+<pin name="IDSEL3" x="-10.16" y="-10.16" length="short" direction="pas"/>
+<pin name="GND@4" x="-10.16" y="-12.7" length="short" direction="pas"/>
+<pin name="AD27" x="-10.16" y="-15.24" length="short" direction="pas"/>
+<pin name="AD31" x="-10.16" y="-17.78" length="short" direction="pas"/>
+<pin name="VI/O" x="-10.16" y="-20.32" length="short" direction="pas"/>
+<pin name="GNT0" x="-10.16" y="-22.86" length="short" direction="pas"/>
+<pin name="GND@5" x="-10.16" y="-25.4" length="short" direction="pas"/>
+<pin name="CLK1" x="-10.16" y="-27.94" length="short" direction="pas"/>
+<pin name="GND@6" x="-10.16" y="-30.48" length="short" direction="pas"/>
+<pin name="RST" x="-10.16" y="-33.02" length="short" direction="pas"/>
+<pin name="INTC" x="-10.16" y="-35.56" length="short" direction="pas"/>
+<pin name="3.3/KEY" x="-10.16" y="-38.1" length="short" direction="pas"/>
+</symbol>
+<symbol name="PC104-J1-1">
+<wire x1="-12.7" y1="40.64" x2="12.7" y2="40.64" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="40.64" x2="12.7" y2="-43.18" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-43.18" x2="-12.7" y2="-43.18" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-43.18" x2="-12.7" y2="40.64" width="0.4064" layer="94"/>
+<text x="-12.7" y="41.656" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-45.72" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IOCHCHK" x="-15.24" y="38.1" length="short" direction="pas"/>
+<pin name="SD0" x="-15.24" y="17.78" length="short" direction="pas"/>
+<pin name="SD1" x="-15.24" y="20.32" length="short" direction="pas"/>
+<pin name="SD2" x="-15.24" y="22.86" length="short" direction="pas"/>
+<pin name="SD3" x="-15.24" y="25.4" length="short" direction="pas"/>
+<pin name="SD4" x="-15.24" y="27.94" length="short" direction="pas"/>
+<pin name="SD5" x="-15.24" y="30.48" length="short" direction="pas"/>
+<pin name="SD6" x="-15.24" y="33.02" length="short" direction="pas"/>
+<pin name="SD7" x="-15.24" y="35.56" length="short" direction="pas"/>
+<pin name="IOCHRDY" x="-15.24" y="15.24" length="short" direction="pas"/>
+<pin name="AEN" x="-15.24" y="12.7" length="short" direction="pas"/>
+<pin name="SA0" x="-15.24" y="-38.1" length="short" direction="pas"/>
+<pin name="SA1" x="-15.24" y="-35.56" length="short" direction="pas"/>
+<pin name="SA2" x="-15.24" y="-33.02" length="short" direction="pas"/>
+<pin name="SA3" x="-15.24" y="-30.48" length="short" direction="pas"/>
+<pin name="SA4" x="-15.24" y="-27.94" length="short" direction="pas"/>
+<pin name="SA5" x="-15.24" y="-25.4" length="short" direction="pas"/>
+<pin name="SA6" x="-15.24" y="-22.86" length="short" direction="pas"/>
+<pin name="SA7" x="-15.24" y="-20.32" length="short" direction="pas"/>
+<pin name="SA8" x="-15.24" y="-17.78" length="short" direction="pas"/>
+<pin name="SA9" x="-15.24" y="-15.24" length="short" direction="pas"/>
+<pin name="SA10" x="-15.24" y="-12.7" length="short" direction="pas"/>
+<pin name="SA11" x="-15.24" y="-10.16" length="short" direction="pas"/>
+<pin name="SA12" x="-15.24" y="-7.62" length="short" direction="pas"/>
+<pin name="SA13" x="-15.24" y="-5.08" length="short" direction="pas"/>
+<pin name="SA14" x="-15.24" y="-2.54" length="short" direction="pas"/>
+<pin name="SA15" x="-15.24" y="0" length="short" direction="pas"/>
+<pin name="SA16" x="-15.24" y="2.54" length="short" direction="pas"/>
+<pin name="SA17" x="-15.24" y="5.08" length="short" direction="pas"/>
+<pin name="SA18" x="-15.24" y="7.62" length="short" direction="pas"/>
+<pin name="SA19" x="-15.24" y="10.16" length="short" direction="pas"/>
+<pin name="0V@1" x="-15.24" y="-40.64" length="short" direction="pas"/>
+<pin name="0V@2" x="15.24" y="38.1" length="short" direction="pas" rot="R180"/>
+<pin name="RESETDRV" x="15.24" y="35.56" length="short" direction="pas" rot="R180"/>
+<pin name="+5V@1" x="15.24" y="33.02" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ9" x="15.24" y="30.48" length="short" direction="pas" rot="R180"/>
+<pin name="-5V" x="15.24" y="27.94" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ2" x="15.24" y="25.4" length="short" direction="pas" rot="R180"/>
+<pin name="-12V" x="15.24" y="22.86" length="short" direction="pas" rot="R180"/>
+<pin name="ENDXFR" x="15.24" y="20.32" length="short" direction="pas" rot="R180"/>
+<pin name="+12V" x="15.24" y="17.78" length="short" direction="pas" rot="R180"/>
+<pin name="KEY" x="15.24" y="15.24" length="short" direction="pas" rot="R180"/>
+<pin name="SMEMW" x="15.24" y="12.7" length="short" direction="pas" rot="R180"/>
+<pin name="SMEMR" x="15.24" y="10.16" length="short" direction="pas" rot="R180"/>
+<pin name="IOW" x="15.24" y="7.62" length="short" direction="pas" rot="R180"/>
+<pin name="IOR" x="15.24" y="5.08" length="short" direction="pas" rot="R180"/>
+<pin name="DACK3" x="15.24" y="2.54" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ3" x="15.24" y="0" length="short" direction="pas" rot="R180"/>
+<pin name="DACK1" x="15.24" y="-2.54" length="short" direction="pas" rot="R180"/>
+<pin name="DRQ1" x="15.24" y="-5.08" length="short" direction="pas" rot="R180"/>
+<pin name="REFRESH" x="15.24" y="-7.62" length="short" direction="pas" rot="R180"/>
+<pin name="SYSCLK" x="15.24" y="-10.16" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ3" x="15.24" y="-22.86" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ4" x="15.24" y="-20.32" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ5" x="15.24" y="-17.78" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ6" x="15.24" y="-15.24" length="short" direction="pas" rot="R180"/>
+<pin name="IRQ7" x="15.24" y="-12.7" length="short" direction="pas" rot="R180"/>
+<pin name="DACK2" x="15.24" y="-25.4" length="short" direction="pas" rot="R180"/>
+<pin name="TC" x="15.24" y="-27.94" length="short" direction="pas" rot="R180"/>
+<pin name="BALE" x="15.24" y="-30.48" length="short" direction="pas" rot="R180"/>
+<pin name="+5V@2" x="15.24" y="-33.02" length="short" direction="pas" rot="R180"/>
+<pin name="OSC" x="15.24" y="-35.56" length="short" direction="pas" rot="R180"/>
+<pin name="0V@3" x="15.24" y="-38.1" length="short" direction="pas" rot="R180"/>
+<pin name="0V@4" x="15.24" y="-40.64" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="MPAD">
+<wire x1="0.254" y1="2.032" x2="2.032" y2="0.254" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="-2.032" y1="0.254" x2="-0.254" y2="2.032" width="1.016" layer="94" curve="-75.749967" cap="flat"/>
+<wire x1="-2.032" y1="-0.254" x2="-0.254" y2="-2.032" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<wire x1="0.254" y1="-2.032" x2="2.032" y2="-0.254" width="1.016" layer="94" curve="75.749967" cap="flat"/>
+<circle x="0" y="0" radius="1.524" width="0.0508" layer="94"/>
+<text x="3.175" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="3.175" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="MPAD" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PC104_STANDARD" prefix="J">
+<description>&lt;b&gt;PC/104 Standard 16 bit&lt;/b&gt;</description>
+<gates>
+<gate name="-J1" symbol="PC104-J1" x="0" y="0"/>
+<gate name="-J2" symbol="PC104-J2" x="43.18" y="0" addlevel="always"/>
+<gate name="M1" symbol="MPAD" x="73.66" y="22.86"/>
+<gate name="M2" symbol="MPAD" x="73.66" y="15.24"/>
+<gate name="M3" symbol="MPAD" x="73.66" y="7.62"/>
+<gate name="M4" symbol="MPAD" x="73.66" y="0"/>
+</gates>
+<devices>
+<device name="" package="PC104-STANDARD">
+<connects>
+<connect gate="-J1" pin="+12V" pad="B9"/>
+<connect gate="-J1" pin="+5V@1" pad="B3"/>
+<connect gate="-J1" pin="+5V@2" pad="B29"/>
+<connect gate="-J1" pin="-12V" pad="B7"/>
+<connect gate="-J1" pin="-5V" pad="B5"/>
+<connect gate="-J1" pin="0V@1" pad="A32"/>
+<connect gate="-J1" pin="0V@2" pad="B1"/>
+<connect gate="-J1" pin="0V@3" pad="B31"/>
+<connect gate="-J1" pin="0V@4" pad="B32"/>
+<connect gate="-J1" pin="AEN" pad="A11"/>
+<connect gate="-J1" pin="BALE" pad="B28"/>
+<connect gate="-J1" pin="DACK1" pad="B17"/>
+<connect gate="-J1" pin="DACK2" pad="B26"/>
+<connect gate="-J1" pin="DACK3" pad="B15"/>
+<connect gate="-J1" pin="DRQ1" pad="B18"/>
+<connect gate="-J1" pin="DRQ2" pad="B6"/>
+<connect gate="-J1" pin="DRQ3" pad="B16"/>
+<connect gate="-J1" pin="ENDXFR" pad="B8"/>
+<connect gate="-J1" pin="IOCHCHK" pad="A1"/>
+<connect gate="-J1" pin="IOCHRDY" pad="A10"/>
+<connect gate="-J1" pin="IOR" pad="B14"/>
+<connect gate="-J1" pin="IOW" pad="B13"/>
+<connect gate="-J1" pin="IRQ3" pad="B25"/>
+<connect gate="-J1" pin="IRQ4" pad="B24"/>
+<connect gate="-J1" pin="IRQ5" pad="B23"/>
+<connect gate="-J1" pin="IRQ6" pad="B22"/>
+<connect gate="-J1" pin="IRQ7" pad="B21"/>
+<connect gate="-J1" pin="IRQ9" pad="B4"/>
+<connect gate="-J1" pin="KEY" pad="B10"/>
+<connect gate="-J1" pin="OSC" pad="B30"/>
+<connect gate="-J1" pin="REFRESH" pad="B19"/>
+<connect gate="-J1" pin="RESETDRV" pad="B2"/>
+<connect gate="-J1" pin="SA0" pad="A31"/>
+<connect gate="-J1" pin="SA1" pad="A30"/>
+<connect gate="-J1" pin="SA10" pad="A21"/>
+<connect gate="-J1" pin="SA11" pad="A20"/>
+<connect gate="-J1" pin="SA12" pad="A19"/>
+<connect gate="-J1" pin="SA13" pad="A18"/>
+<connect gate="-J1" pin="SA14" pad="A17"/>
+<connect gate="-J1" pin="SA15" pad="A16"/>
+<connect gate="-J1" pin="SA16" pad="A15"/>
+<connect gate="-J1" pin="SA17" pad="A14"/>
+<connect gate="-J1" pin="SA18" pad="A13"/>
+<connect gate="-J1" pin="SA19" pad="A12"/>
+<connect gate="-J1" pin="SA2" pad="A29"/>
+<connect gate="-J1" pin="SA3" pad="A28"/>
+<connect gate="-J1" pin="SA4" pad="A27"/>
+<connect gate="-J1" pin="SA5" pad="A26"/>
+<connect gate="-J1" pin="SA6" pad="A25"/>
+<connect gate="-J1" pin="SA7" pad="A24"/>
+<connect gate="-J1" pin="SA8" pad="A23"/>
+<connect gate="-J1" pin="SA9" pad="A22"/>
+<connect gate="-J1" pin="SD0" pad="A9"/>
+<connect gate="-J1" pin="SD1" pad="A8"/>
+<connect gate="-J1" pin="SD2" pad="A7"/>
+<connect gate="-J1" pin="SD3" pad="A6"/>
+<connect gate="-J1" pin="SD4" pad="A5"/>
+<connect gate="-J1" pin="SD5" pad="A4"/>
+<connect gate="-J1" pin="SD6" pad="A3"/>
+<connect gate="-J1" pin="SD7" pad="A2"/>
+<connect gate="-J1" pin="SMEMR" pad="B12"/>
+<connect gate="-J1" pin="SMEMW" pad="B11"/>
+<connect gate="-J1" pin="SYSCLK" pad="B20"/>
+<connect gate="-J1" pin="TC" pad="B27"/>
+<connect gate="-J2" pin="+5V" pad="D16"/>
+<connect gate="-J2" pin="0V@1" pad="C0"/>
+<connect gate="-J2" pin="0V@2" pad="D0"/>
+<connect gate="-J2" pin="0V@3" pad="D18"/>
+<connect gate="-J2" pin="0V@4" pad="D19"/>
+<connect gate="-J2" pin="DACK0" pad="D8"/>
+<connect gate="-J2" pin="DACK5" pad="D10"/>
+<connect gate="-J2" pin="DACK6" pad="D12"/>
+<connect gate="-J2" pin="DACK7" pad="D14"/>
+<connect gate="-J2" pin="DRQ0" pad="D9"/>
+<connect gate="-J2" pin="DRQ5" pad="D11"/>
+<connect gate="-J2" pin="DRQ6" pad="D13"/>
+<connect gate="-J2" pin="DRQ7" pad="D15"/>
+<connect gate="-J2" pin="IOCS16" pad="D2"/>
+<connect gate="-J2" pin="IRQ10" pad="D3"/>
+<connect gate="-J2" pin="IRQ11" pad="D4"/>
+<connect gate="-J2" pin="IRQ12" pad="D5"/>
+<connect gate="-J2" pin="IRQ14" pad="D7"/>
+<connect gate="-J2" pin="IRQ15" pad="D6"/>
+<connect gate="-J2" pin="KEY" pad="C19"/>
+<connect gate="-J2" pin="LA17" pad="C8"/>
+<connect gate="-J2" pin="LA18" pad="C7"/>
+<connect gate="-J2" pin="LA19" pad="C6"/>
+<connect gate="-J2" pin="LA20" pad="C5"/>
+<connect gate="-J2" pin="LA21" pad="C4"/>
+<connect gate="-J2" pin="LA22" pad="C3"/>
+<connect gate="-J2" pin="LA23" pad="C2"/>
+<connect gate="-J2" pin="MASTER" pad="D17"/>
+<connect gate="-J2" pin="MEMCS16" pad="D1"/>
+<connect gate="-J2" pin="MEMR" pad="C9"/>
+<connect gate="-J2" pin="MEMW" pad="C10"/>
+<connect gate="-J2" pin="SBHE" pad="C1"/>
+<connect gate="-J2" pin="SD10" pad="C13"/>
+<connect gate="-J2" pin="SD11" pad="C14"/>
+<connect gate="-J2" pin="SD12" pad="C15"/>
+<connect gate="-J2" pin="SD13" pad="C16"/>
+<connect gate="-J2" pin="SD14" pad="C17"/>
+<connect gate="-J2" pin="SD15" pad="C18"/>
+<connect gate="-J2" pin="SD8" pad="C11"/>
+<connect gate="-J2" pin="SD9" pad="C12"/>
+<connect gate="M1" pin="MPAD" pad="M1"/>
+<connect gate="M2" pin="MPAD" pad="M2"/>
+<connect gate="M3" pin="MPAD" pad="M3"/>
+<connect gate="M4" pin="MPAD" pad="M4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PC104_PLUS" prefix="J">
+<description>&lt;b&gt;PC/104-Plus 16 bit&lt;/b&gt;</description>
+<gates>
+<gate name="-J1" symbol="PC104-J1" x="0" y="0"/>
+<gate name="-J2" symbol="PC104-J2" x="38.1" y="0"/>
+<gate name="-J3A-" symbol="PC104J3A" x="76.2" y="2.54"/>
+<gate name="-J3B-" symbol="PC104J3B" x="99.06" y="0"/>
+<gate name="-J3C-" symbol="PC104J3C" x="124.46" y="0"/>
+<gate name="-J3D-" symbol="PC104J3D" x="147.32" y="2.54"/>
+<gate name="M1" symbol="MPAD" x="168" y="38"/>
+<gate name="M2" symbol="MPAD" x="168" y="31"/>
+<gate name="M3" symbol="MPAD" x="168" y="24"/>
+<gate name="M4" symbol="MPAD" x="168" y="17"/>
+</gates>
+<devices>
+<device name="" package="PC104-PLUS">
+<connects>
+<connect gate="-J1" pin="+12V" pad="B9"/>
+<connect gate="-J1" pin="+5V@1" pad="B3"/>
+<connect gate="-J1" pin="+5V@2" pad="B29"/>
+<connect gate="-J1" pin="-12V" pad="B7"/>
+<connect gate="-J1" pin="-5V" pad="B5"/>
+<connect gate="-J1" pin="0V@1" pad="A32"/>
+<connect gate="-J1" pin="0V@2" pad="B1"/>
+<connect gate="-J1" pin="0V@3" pad="B31"/>
+<connect gate="-J1" pin="0V@4" pad="B32"/>
+<connect gate="-J1" pin="AEN" pad="A11"/>
+<connect gate="-J1" pin="BALE" pad="B28"/>
+<connect gate="-J1" pin="DACK1" pad="B17"/>
+<connect gate="-J1" pin="DACK2" pad="B26"/>
+<connect gate="-J1" pin="DACK3" pad="B15"/>
+<connect gate="-J1" pin="DRQ1" pad="B18"/>
+<connect gate="-J1" pin="DRQ2" pad="B6"/>
+<connect gate="-J1" pin="DRQ3" pad="B16"/>
+<connect gate="-J1" pin="ENDXFR" pad="B8"/>
+<connect gate="-J1" pin="IOCHCHK" pad="A1"/>
+<connect gate="-J1" pin="IOCHRDY" pad="A10"/>
+<connect gate="-J1" pin="IOR" pad="B14"/>
+<connect gate="-J1" pin="IOW" pad="B13"/>
+<connect gate="-J1" pin="IRQ3" pad="B25"/>
+<connect gate="-J1" pin="IRQ4" pad="B24"/>
+<connect gate="-J1" pin="IRQ5" pad="B23"/>
+<connect gate="-J1" pin="IRQ6" pad="B22"/>
+<connect gate="-J1" pin="IRQ7" pad="B21"/>
+<connect gate="-J1" pin="IRQ9" pad="B4"/>
+<connect gate="-J1" pin="KEY" pad="B10"/>
+<connect gate="-J1" pin="OSC" pad="B30"/>
+<connect gate="-J1" pin="REFRESH" pad="B19"/>
+<connect gate="-J1" pin="RESETDRV" pad="B2"/>
+<connect gate="-J1" pin="SA0" pad="A31"/>
+<connect gate="-J1" pin="SA1" pad="A30"/>
+<connect gate="-J1" pin="SA10" pad="A21"/>
+<connect gate="-J1" pin="SA11" pad="A20"/>
+<connect gate="-J1" pin="SA12" pad="A19"/>
+<connect gate="-J1" pin="SA13" pad="A18"/>
+<connect gate="-J1" pin="SA14" pad="A17"/>
+<connect gate="-J1" pin="SA15" pad="A16"/>
+<connect gate="-J1" pin="SA16" pad="A15"/>
+<connect gate="-J1" pin="SA17" pad="A14"/>
+<connect gate="-J1" pin="SA18" pad="A13"/>
+<connect gate="-J1" pin="SA19" pad="A12"/>
+<connect gate="-J1" pin="SA2" pad="A29"/>
+<connect gate="-J1" pin="SA3" pad="A28"/>
+<connect gate="-J1" pin="SA4" pad="A27"/>
+<connect gate="-J1" pin="SA5" pad="A26"/>
+<connect gate="-J1" pin="SA6" pad="A25"/>
+<connect gate="-J1" pin="SA7" pad="A24"/>
+<connect gate="-J1" pin="SA8" pad="A23"/>
+<connect gate="-J1" pin="SA9" pad="A22"/>
+<connect gate="-J1" pin="SD0" pad="A9"/>
+<connect gate="-J1" pin="SD1" pad="A8"/>
+<connect gate="-J1" pin="SD2" pad="A7"/>
+<connect gate="-J1" pin="SD3" pad="A6"/>
+<connect gate="-J1" pin="SD4" pad="A5"/>
+<connect gate="-J1" pin="SD5" pad="A4"/>
+<connect gate="-J1" pin="SD6" pad="A3"/>
+<connect gate="-J1" pin="SD7" pad="A2"/>
+<connect gate="-J1" pin="SMEMR" pad="B12"/>
+<connect gate="-J1" pin="SMEMW" pad="B11"/>
+<connect gate="-J1" pin="SYSCLK" pad="B20"/>
+<connect gate="-J1" pin="TC" pad="B27"/>
+<connect gate="-J2" pin="+5V" pad="D16"/>
+<connect gate="-J2" pin="0V@1" pad="C0"/>
+<connect gate="-J2" pin="0V@2" pad="D0"/>
+<connect gate="-J2" pin="0V@3" pad="D18"/>
+<connect gate="-J2" pin="0V@4" pad="D19"/>
+<connect gate="-J2" pin="DACK0" pad="D8"/>
+<connect gate="-J2" pin="DACK5" pad="D10"/>
+<connect gate="-J2" pin="DACK6" pad="D12"/>
+<connect gate="-J2" pin="DACK7" pad="D14"/>
+<connect gate="-J2" pin="DRQ0" pad="D9"/>
+<connect gate="-J2" pin="DRQ5" pad="D11"/>
+<connect gate="-J2" pin="DRQ6" pad="D13"/>
+<connect gate="-J2" pin="DRQ7" pad="D15"/>
+<connect gate="-J2" pin="IOCS16" pad="D2"/>
+<connect gate="-J2" pin="IRQ10" pad="D3"/>
+<connect gate="-J2" pin="IRQ11" pad="D4"/>
+<connect gate="-J2" pin="IRQ12" pad="D5"/>
+<connect gate="-J2" pin="IRQ14" pad="D7"/>
+<connect gate="-J2" pin="IRQ15" pad="D6"/>
+<connect gate="-J2" pin="KEY" pad="C19"/>
+<connect gate="-J2" pin="LA17" pad="C8"/>
+<connect gate="-J2" pin="LA18" pad="C7"/>
+<connect gate="-J2" pin="LA19" pad="C6"/>
+<connect gate="-J2" pin="LA20" pad="C5"/>
+<connect gate="-J2" pin="LA21" pad="C4"/>
+<connect gate="-J2" pin="LA22" pad="C3"/>
+<connect gate="-J2" pin="LA23" pad="C2"/>
+<connect gate="-J2" pin="MASTER" pad="D17"/>
+<connect gate="-J2" pin="MEMCS16" pad="D1"/>
+<connect gate="-J2" pin="MEMR" pad="C9"/>
+<connect gate="-J2" pin="MEMW" pad="C10"/>
+<connect gate="-J2" pin="SBHE" pad="C1"/>
+<connect gate="-J2" pin="SD10" pad="C13"/>
+<connect gate="-J2" pin="SD11" pad="C14"/>
+<connect gate="-J2" pin="SD12" pad="C15"/>
+<connect gate="-J2" pin="SD13" pad="C16"/>
+<connect gate="-J2" pin="SD14" pad="C17"/>
+<connect gate="-J2" pin="SD15" pad="C18"/>
+<connect gate="-J2" pin="SD8" pad="C11"/>
+<connect gate="-J2" pin="SD9" pad="C12"/>
+<connect gate="-J3A-" pin="+12V" pad="J3-A29"/>
+<connect gate="-J3A-" pin="+3.3V@1" pad="J3-A8"/>
+<connect gate="-J3A-" pin="+3.3V@2" pad="J3-A12"/>
+<connect gate="-J3A-" pin="+3.3V@3" pad="J3-A17"/>
+<connect gate="-J3A-" pin="+5V@1" pad="J3-A22"/>
+<connect gate="-J3A-" pin="+5V@2" pad="J3-A26"/>
+<connect gate="-J3A-" pin="-12V" pad="J3-A30"/>
+<connect gate="-J3A-" pin="5.0V/KEY" pad="J3-A1"/>
+<connect gate="-J3A-" pin="AD05" pad="J3-A3"/>
+<connect gate="-J3A-" pin="AD11" pad="J3-A6"/>
+<connect gate="-J3A-" pin="AD14" pad="J3-A7"/>
+<connect gate="-J3A-" pin="AD18" pad="J3-A15"/>
+<connect gate="-J3A-" pin="AD21" pad="J3-A16"/>
+<connect gate="-J3A-" pin="AD24" pad="J3-A19"/>
+<connect gate="-J3A-" pin="AD29" pad="J3-A21"/>
+<connect gate="-J3A-" pin="C/BEO" pad="J3-A4"/>
+<connect gate="-J3A-" pin="CLK2" pad="J3-A27"/>
+<connect gate="-J3A-" pin="FRAME" pad="J3-A13"/>
+<connect gate="-J3A-" pin="GND@1" pad="J3-A5"/>
+<connect gate="-J3A-" pin="GND@2" pad="J3-A10"/>
+<connect gate="-J3A-" pin="GND@3" pad="J3-A14"/>
+<connect gate="-J3A-" pin="GND@4" pad="J3-A20"/>
+<connect gate="-J3A-" pin="GND@5" pad="J3-A24"/>
+<connect gate="-J3A-" pin="GND@6" pad="J3-A28"/>
+<connect gate="-J3A-" pin="GNT1" pad="J3-A25"/>
+<connect gate="-J3A-" pin="IDSEL0" pad="J3-A18"/>
+<connect gate="-J3A-" pin="REQ0" pad="J3-A23"/>
+<connect gate="-J3A-" pin="SERR" pad="J3-A9"/>
+<connect gate="-J3A-" pin="STOP" pad="J3-A11"/>
+<connect gate="-J3A-" pin="VI/O" pad="J3-A2"/>
+<connect gate="-J3B-" pin="+3.3V@1" pad="J3-B11"/>
+<connect gate="-J3B-" pin="+3.3V@2" pad="J3-B15"/>
+<connect gate="-J3B-" pin="+5V@1" pad="J3-B21"/>
+<connect gate="-J3B-" pin="+5V@2" pad="J3-B27"/>
+<connect gate="-J3B-" pin="AD02" pad="J3-B2"/>
+<connect gate="-J3B-" pin="AD07" pad="J3-B4"/>
+<connect gate="-J3B-" pin="AD09" pad="J3-B5"/>
+<connect gate="-J3B-" pin="AD13" pad="J3-B7"/>
+<connect gate="-J3B-" pin="AD16" pad="J3-B14"/>
+<connect gate="-J3B-" pin="AD20" pad="J3-B16"/>
+<connect gate="-J3B-" pin="AD23" pad="J3-B17"/>
+<connect gate="-J3B-" pin="AD26" pad="J3-B20"/>
+<connect gate="-J3B-" pin="AD30" pad="J3-B22"/>
+<connect gate="-J3B-" pin="C/BE1" pad="J3-B8"/>
+<connect gate="-J3B-" pin="C/BE3" pad="J3-B19"/>
+<connect gate="-J3B-" pin="CLK0" pad="J3-B26"/>
+<connect gate="-J3B-" pin="GND@1" pad="J3-B3"/>
+<connect gate="-J3B-" pin="GND@2" pad="J3-B9"/>
+<connect gate="-J3B-" pin="GND@3" pad="J3-B13"/>
+<connect gate="-J3B-" pin="GND@4" pad="J3-B18"/>
+<connect gate="-J3B-" pin="GND@5" pad="J3-B23"/>
+<connect gate="-J3B-" pin="INTA" pad="J3-B29"/>
+<connect gate="-J3B-" pin="INTD" pad="J3-B28"/>
+<connect gate="-J3B-" pin="PERR" pad="J3-B10"/>
+<connect gate="-J3B-" pin="REQ2" pad="J3-B24"/>
+<connect gate="-J3B-" pin="RESERVED@1" pad="J3-B1"/>
+<connect gate="-J3B-" pin="RESERVED@2" pad="J3-B30"/>
+<connect gate="-J3B-" pin="TRDY" pad="J3-B12"/>
+<connect gate="-J3B-" pin="VI/O@1" pad="J3-B6"/>
+<connect gate="-J3B-" pin="VI/O@2" pad="J3-B25"/>
+<connect gate="-J3C-" pin="+3.3V@1" pad="J3-C10"/>
+<connect gate="-J3C-" pin="+3.3V@2" pad="J3-C14"/>
+<connect gate="-J3C-" pin="+5V@1" pad="J3-C1"/>
+<connect gate="-J3C-" pin="+5V@2" pad="J3-C24"/>
+<connect gate="-J3C-" pin="+5V@3" pad="J3-C28"/>
+<connect gate="-J3C-" pin="AD01" pad="J3-C2"/>
+<connect gate="-J3C-" pin="AD04" pad="J3-C3"/>
+<connect gate="-J3C-" pin="AD08" pad="J3-C5"/>
+<connect gate="-J3C-" pin="AD10" pad="J3-C6"/>
+<connect gate="-J3C-" pin="AD15" pad="J3-C8"/>
+<connect gate="-J3C-" pin="AD17" pad="J3-C15"/>
+<connect gate="-J3C-" pin="AD22" pad="J3-C17"/>
+<connect gate="-J3C-" pin="AD25" pad="J3-C20"/>
+<connect gate="-J3C-" pin="AD28" pad="J3-C21"/>
+<connect gate="-J3C-" pin="CLK3" pad="J3-C27"/>
+<connect gate="-J3C-" pin="GND@1" pad="J3-C4"/>
+<connect gate="-J3C-" pin="GND@2" pad="J3-C7"/>
+<connect gate="-J3C-" pin="GND@3" pad="J3-C12"/>
+<connect gate="-J3C-" pin="GND@4" pad="J3-C16"/>
+<connect gate="-J3C-" pin="GND@5" pad="J3-C22"/>
+<connect gate="-J3C-" pin="GND@6" pad="J3-C26"/>
+<connect gate="-J3C-" pin="GNT2" pad="J3-C25"/>
+<connect gate="-J3C-" pin="IDSEL1" pad="J3-C18"/>
+<connect gate="-J3C-" pin="INTB" pad="J3-C29"/>
+<connect gate="-J3C-" pin="IRDY" pad="J3-C13"/>
+<connect gate="-J3C-" pin="LOCK" pad="J3-C11"/>
+<connect gate="-J3C-" pin="REQ1" pad="J3-C23"/>
+<connect gate="-J3C-" pin="RESERVED@3" pad="J3-C30"/>
+<connect gate="-J3C-" pin="SB0" pad="J3-C9"/>
+<connect gate="-J3C-" pin="VI/O" pad="J3-C19"/>
+<connect gate="-J3D-" pin="+3.3V@1" pad="J3-D8"/>
+<connect gate="-J3D-" pin="+3.3V@2" pad="J3-D13"/>
+<connect gate="-J3D-" pin="+3.3V@3" pad="J3-D17"/>
+<connect gate="-J3D-" pin="+5V@1" pad="J3-D2"/>
+<connect gate="-J3D-" pin="3.3/KEY" pad="J3-D30"/>
+<connect gate="-J3D-" pin="AD00" pad="J3-D1"/>
+<connect gate="-J3D-" pin="AD03" pad="J3-D3"/>
+<connect gate="-J3D-" pin="AD06" pad="J3-D4"/>
+<connect gate="-J3D-" pin="AD12" pad="J3-D7"/>
+<connect gate="-J3D-" pin="AD19" pad="J3-D16"/>
+<connect gate="-J3D-" pin="AD27" pad="J3-D21"/>
+<connect gate="-J3D-" pin="AD31" pad="J3-D22"/>
+<connect gate="-J3D-" pin="C/BE2" pad="J3-D14"/>
+<connect gate="-J3D-" pin="CLK1" pad="J3-D26"/>
+<connect gate="-J3D-" pin="DEVSEL" pad="J3-D12"/>
+<connect gate="-J3D-" pin="GND@1" pad="J3-D5"/>
+<connect gate="-J3D-" pin="GND@2" pad="J3-D11"/>
+<connect gate="-J3D-" pin="GND@3" pad="J3-D15"/>
+<connect gate="-J3D-" pin="GND@4" pad="J3-D20"/>
+<connect gate="-J3D-" pin="GND@5" pad="J3-D25"/>
+<connect gate="-J3D-" pin="GND@6" pad="J3-D27"/>
+<connect gate="-J3D-" pin="GNT0" pad="J3-D24"/>
+<connect gate="-J3D-" pin="IDSEL2" pad="J3-D18"/>
+<connect gate="-J3D-" pin="IDSEL3" pad="J3-D19"/>
+<connect gate="-J3D-" pin="INTC" pad="J3-D29"/>
+<connect gate="-J3D-" pin="M66EN" pad="J3-D6"/>
+<connect gate="-J3D-" pin="PAR" pad="J3-D9"/>
+<connect gate="-J3D-" pin="RST" pad="J3-D28"/>
+<connect gate="-J3D-" pin="SDONE" pad="J3-D10"/>
+<connect gate="-J3D-" pin="VI/O" pad="J3-D23"/>
+<connect gate="M1" pin="MPAD" pad="M1"/>
+<connect gate="M2" pin="MPAD" pad="M2"/>
+<connect gate="M3" pin="MPAD" pad="M3"/>
+<connect gate="M4" pin="MPAD" pad="M4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1184C" prefix="J" uservalue="yes">
+<description>&lt;b&gt;COMMCON CONNECTOR PC/104&lt;/b&gt;</description>
+<gates>
+<gate name="-A1" symbol="PIN-V" x="-5.08" y="38.1" swaplevel="1"/>
+<gate name="-A2" symbol="PIN-B" x="-5.08" y="35.56" addlevel="always" swaplevel="1"/>
+<gate name="-A3" symbol="PIN-B" x="-5.08" y="33.02" addlevel="always" swaplevel="1"/>
+<gate name="-A4" symbol="PIN-B" x="-5.08" y="30.48" addlevel="always" swaplevel="1"/>
+<gate name="-A5" symbol="PIN-B" x="-5.08" y="27.94" addlevel="always" swaplevel="1"/>
+<gate name="-A6" symbol="PIN-B" x="-5.08" y="25.4" addlevel="always" swaplevel="1"/>
+<gate name="-A7" symbol="PIN-B" x="-5.08" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="-A8" symbol="PIN-B" x="-5.08" y="20.32" addlevel="always" swaplevel="1"/>
+<gate name="-A9" symbol="PIN-B" x="-5.08" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="-A10" symbol="PIN-B" x="-5.08" y="15.24" addlevel="always" swaplevel="1"/>
+<gate name="-A11" symbol="PIN-B" x="-5.08" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="-A12" symbol="PIN-B" x="-5.08" y="10.16" addlevel="always" swaplevel="1"/>
+<gate name="-A13" symbol="PIN-B" x="-5.08" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-A14" symbol="PIN-B" x="-5.08" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-A15" symbol="PIN-B" x="-5.08" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-A16" symbol="PIN-B" x="-5.08" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-A17" symbol="PIN-B" x="-5.08" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-A18" symbol="PIN-B" x="-5.08" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-A19" symbol="PIN-B" x="-5.08" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-A20" symbol="PIN-B" x="-5.08" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-A21" symbol="PIN-B" x="-5.08" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="-A22" symbol="PIN-B" x="-5.08" y="-15.24" addlevel="always" swaplevel="1"/>
+<gate name="-A23" symbol="PIN-B" x="-5.08" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="-A24" symbol="PIN-B" x="-5.08" y="-20.32" addlevel="always" swaplevel="1"/>
+<gate name="-A25" symbol="PIN-B" x="-5.08" y="-22.86" addlevel="always" swaplevel="1"/>
+<gate name="-A26" symbol="PIN-B" x="-5.08" y="-25.4" addlevel="always" swaplevel="1"/>
+<gate name="-A27" symbol="PIN-B" x="-5.08" y="-27.94" addlevel="always" swaplevel="1"/>
+<gate name="-A28" symbol="PIN-B" x="-5.08" y="-30.48" addlevel="always" swaplevel="1"/>
+<gate name="-A29" symbol="PIN-B" x="-5.08" y="-33.02" addlevel="always" swaplevel="1"/>
+<gate name="-A30" symbol="PIN-B" x="-5.08" y="-35.56" addlevel="always" swaplevel="1"/>
+<gate name="-A31" symbol="PIN-B" x="-5.08" y="-38.1" addlevel="always" swaplevel="1"/>
+<gate name="-A32" symbol="PIN-B" x="-5.08" y="-40.64" addlevel="always" swaplevel="1"/>
+<gate name="-B1" symbol="PIN-V" x="17.78" y="38.1" addlevel="always" swaplevel="1"/>
+<gate name="-B2" symbol="PIN-B" x="17.78" y="35.56" addlevel="always" swaplevel="1"/>
+<gate name="-B3" symbol="PIN-B" x="17.78" y="33.02" addlevel="always" swaplevel="1"/>
+<gate name="-B4" symbol="PIN-B" x="17.78" y="30.48" addlevel="always" swaplevel="1"/>
+<gate name="-B5" symbol="PIN-B" x="17.78" y="27.94" addlevel="always" swaplevel="1"/>
+<gate name="-B6" symbol="PIN-B" x="17.78" y="25.4" addlevel="always" swaplevel="1"/>
+<gate name="-B7" symbol="PIN-B" x="17.78" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="-B8" symbol="PIN-B" x="17.78" y="20.32" addlevel="always" swaplevel="1"/>
+<gate name="-B9" symbol="PIN-B" x="17.78" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="-B10" symbol="PIN-B" x="17.78" y="15.24" addlevel="always" swaplevel="1"/>
+<gate name="-B11" symbol="PIN-B" x="17.78" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="-B12" symbol="PIN-B" x="17.78" y="10.16" addlevel="always" swaplevel="1"/>
+<gate name="-B13" symbol="PIN-B" x="17.78" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-B14" symbol="PIN-B" x="17.78" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-B15" symbol="PIN-B" x="17.78" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-B16" symbol="PIN-B" x="17.78" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-B17" symbol="PIN-B" x="17.78" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-B18" symbol="PIN-B" x="17.78" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-B19" symbol="PIN-B" x="17.78" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-B20" symbol="PIN-B" x="17.78" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-B21" symbol="PIN-B" x="17.78" y="-12.7" addlevel="always" swaplevel="1"/>
+<gate name="-B22" symbol="PIN-B" x="17.78" y="-15.24" addlevel="always" swaplevel="1"/>
+<gate name="-B23" symbol="PIN-B" x="17.78" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="-B24" symbol="PIN-B" x="17.78" y="-20.32" addlevel="always" swaplevel="1"/>
+<gate name="-B25" symbol="PIN-B" x="17.78" y="-22.86" addlevel="always" swaplevel="1"/>
+<gate name="-B26" symbol="PIN-B" x="17.78" y="-25.4" addlevel="always" swaplevel="1"/>
+<gate name="-B27" symbol="PIN-B" x="17.78" y="-27.94" addlevel="always" swaplevel="1"/>
+<gate name="-B28" symbol="PIN-B" x="17.78" y="-30.48" addlevel="always" swaplevel="1"/>
+<gate name="-B29" symbol="PIN-B" x="17.78" y="-33.02" addlevel="always" swaplevel="1"/>
+<gate name="-B30" symbol="PIN-B" x="17.78" y="-35.56" addlevel="always" swaplevel="1"/>
+<gate name="-B31" symbol="PIN-B" x="17.78" y="-38.1" addlevel="always" swaplevel="1"/>
+<gate name="-B32" symbol="PIN-B" x="17.78" y="-40.64" addlevel="always" swaplevel="1"/>
+<gate name="-A33" symbol="PIN-B" x="43.18" y="38.1" addlevel="always" swaplevel="1"/>
+<gate name="-A34" symbol="PIN-B" x="43.18" y="35.56" addlevel="always" swaplevel="1"/>
+<gate name="-A35" symbol="PIN-B" x="43.18" y="33.02" addlevel="always" swaplevel="1"/>
+<gate name="-A36" symbol="PIN-B" x="43.18" y="30.48" addlevel="always" swaplevel="1"/>
+<gate name="-A37" symbol="PIN-B" x="43.18" y="27.94" addlevel="always" swaplevel="1"/>
+<gate name="-A38" symbol="PIN-B" x="43.18" y="25.4" addlevel="always" swaplevel="1"/>
+<gate name="-A39" symbol="PIN-B" x="43.18" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="-A40" symbol="PIN-B" x="43.18" y="20.32" addlevel="always" swaplevel="1"/>
+<gate name="-A41" symbol="PIN-B" x="43.18" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="-A42" symbol="PIN-B" x="43.18" y="15.24" addlevel="always" swaplevel="1"/>
+<gate name="-A43" symbol="PIN-B" x="43.18" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="-A44" symbol="PIN-B" x="43.18" y="10.16" addlevel="always" swaplevel="1"/>
+<gate name="-A45" symbol="PIN-B" x="43.18" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-A46" symbol="PIN-B" x="43.18" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-A47" symbol="PIN-B" x="43.18" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-A48" symbol="PIN-B" x="43.18" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-A49" symbol="PIN-B" x="43.18" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-A50" symbol="PIN-B" x="43.18" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-A51" symbol="PIN-B" x="43.18" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-A52" symbol="PIN-B" x="43.18" y="-10.16" addlevel="always" swaplevel="1"/>
+<gate name="-B33" symbol="PIN-B" x="63.5" y="38.1" addlevel="always" swaplevel="1"/>
+<gate name="-B34" symbol="PIN-B" x="63.5" y="35.56" addlevel="always" swaplevel="1"/>
+<gate name="-B35" symbol="PIN-B" x="63.5" y="33.02" addlevel="always" swaplevel="1"/>
+<gate name="-B36" symbol="PIN-B" x="63.5" y="30.48" addlevel="always" swaplevel="1"/>
+<gate name="-B37" symbol="PIN-B" x="63.5" y="27.94" addlevel="always" swaplevel="1"/>
+<gate name="-B38" symbol="PIN-B" x="63.5" y="25.4" addlevel="always" swaplevel="1"/>
+<gate name="-B39" symbol="PIN-B" x="63.5" y="22.86" addlevel="always" swaplevel="1"/>
+<gate name="-B40" symbol="PIN-B" x="63.5" y="20.32" addlevel="always" swaplevel="1"/>
+<gate name="-B41" symbol="PIN-B" x="63.5" y="17.78" addlevel="always" swaplevel="1"/>
+<gate name="-B42" symbol="PIN-B" x="63.5" y="15.24" addlevel="always" swaplevel="1"/>
+<gate name="-B43" symbol="PIN-B" x="63.5" y="12.7" addlevel="always" swaplevel="1"/>
+<gate name="-B44" symbol="PIN-B" x="63.5" y="10.16" addlevel="always" swaplevel="1"/>
+<gate name="-B45" symbol="PIN-B" x="63.5" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-B46" symbol="PIN-B" x="63.5" y="5.08" addlevel="always" swaplevel="1"/>
+<gate name="-B47" symbol="PIN-B" x="63.5" y="2.54" addlevel="always" swaplevel="1"/>
+<gate name="-B48" symbol="PIN-B" x="63.5" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-B49" symbol="PIN-B" x="63.5" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="-B50" symbol="PIN-B" x="63.5" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="-B51" symbol="PIN-B" x="63.5" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-B52" symbol="PIN-B" x="63.5" y="-10.16" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="1184C">
+<connects>
+<connect gate="-A1" pin="P$1" pad="A1"/>
+<connect gate="-A10" pin="P$1" pad="A10"/>
+<connect gate="-A11" pin="P$1" pad="A11"/>
+<connect gate="-A12" pin="P$1" pad="A12"/>
+<connect gate="-A13" pin="P$1" pad="A13"/>
+<connect gate="-A14" pin="P$1" pad="A14"/>
+<connect gate="-A15" pin="P$1" pad="A15"/>
+<connect gate="-A16" pin="P$1" pad="A16"/>
+<connect gate="-A17" pin="P$1" pad="A17"/>
+<connect gate="-A18" pin="P$1" pad="A18"/>
+<connect gate="-A19" pin="P$1" pad="A19"/>
+<connect gate="-A2" pin="P$1" pad="A2"/>
+<connect gate="-A20" pin="P$1" pad="A20"/>
+<connect gate="-A21" pin="P$1" pad="A21"/>
+<connect gate="-A22" pin="P$1" pad="A22"/>
+<connect gate="-A23" pin="P$1" pad="A23"/>
+<connect gate="-A24" pin="P$1" pad="A24"/>
+<connect gate="-A25" pin="P$1" pad="A25"/>
+<connect gate="-A26" pin="P$1" pad="A26"/>
+<connect gate="-A27" pin="P$1" pad="A27"/>
+<connect gate="-A28" pin="P$1" pad="A28"/>
+<connect gate="-A29" pin="P$1" pad="A29"/>
+<connect gate="-A3" pin="P$1" pad="A3"/>
+<connect gate="-A30" pin="P$1" pad="A30"/>
+<connect gate="-A31" pin="P$1" pad="A31"/>
+<connect gate="-A32" pin="P$1" pad="A32"/>
+<connect gate="-A33" pin="P$1" pad="A33"/>
+<connect gate="-A34" pin="P$1" pad="A34"/>
+<connect gate="-A35" pin="P$1" pad="A35"/>
+<connect gate="-A36" pin="P$1" pad="A36"/>
+<connect gate="-A37" pin="P$1" pad="A37"/>
+<connect gate="-A38" pin="P$1" pad="A38"/>
+<connect gate="-A39" pin="P$1" pad="A39"/>
+<connect gate="-A4" pin="P$1" pad="A4"/>
+<connect gate="-A40" pin="P$1" pad="A40"/>
+<connect gate="-A41" pin="P$1" pad="A41"/>
+<connect gate="-A42" pin="P$1" pad="A42"/>
+<connect gate="-A43" pin="P$1" pad="A43"/>
+<connect gate="-A44" pin="P$1" pad="A44"/>
+<connect gate="-A45" pin="P$1" pad="A45"/>
+<connect gate="-A46" pin="P$1" pad="A46"/>
+<connect gate="-A47" pin="P$1" pad="A47"/>
+<connect gate="-A48" pin="P$1" pad="A48"/>
+<connect gate="-A49" pin="P$1" pad="A49"/>
+<connect gate="-A5" pin="P$1" pad="A5"/>
+<connect gate="-A50" pin="P$1" pad="A50"/>
+<connect gate="-A51" pin="P$1" pad="A51"/>
+<connect gate="-A52" pin="P$1" pad="A52"/>
+<connect gate="-A6" pin="P$1" pad="A6"/>
+<connect gate="-A7" pin="P$1" pad="A7"/>
+<connect gate="-A8" pin="P$1" pad="A8"/>
+<connect gate="-A9" pin="P$1" pad="A9"/>
+<connect gate="-B1" pin="P$1" pad="B1"/>
+<connect gate="-B10" pin="P$1" pad="B10"/>
+<connect gate="-B11" pin="P$1" pad="B11"/>
+<connect gate="-B12" pin="P$1" pad="B12"/>
+<connect gate="-B13" pin="P$1" pad="B13"/>
+<connect gate="-B14" pin="P$1" pad="B14"/>
+<connect gate="-B15" pin="P$1" pad="B15"/>
+<connect gate="-B16" pin="P$1" pad="B16"/>
+<connect gate="-B17" pin="P$1" pad="B17"/>
+<connect gate="-B18" pin="P$1" pad="B18"/>
+<connect gate="-B19" pin="P$1" pad="B19"/>
+<connect gate="-B2" pin="P$1" pad="B2"/>
+<connect gate="-B20" pin="P$1" pad="B20"/>
+<connect gate="-B21" pin="P$1" pad="B21"/>
+<connect gate="-B22" pin="P$1" pad="B22"/>
+<connect gate="-B23" pin="P$1" pad="B23"/>
+<connect gate="-B24" pin="P$1" pad="B24"/>
+<connect gate="-B25" pin="P$1" pad="B25"/>
+<connect gate="-B26" pin="P$1" pad="B26"/>
+<connect gate="-B27" pin="P$1" pad="B27"/>
+<connect gate="-B28" pin="P$1" pad="B28"/>
+<connect gate="-B29" pin="P$1" pad="B29"/>
+<connect gate="-B3" pin="P$1" pad="B3"/>
+<connect gate="-B30" pin="P$1" pad="B30"/>
+<connect gate="-B31" pin="P$1" pad="B31"/>
+<connect gate="-B32" pin="P$1" pad="B32"/>
+<connect gate="-B33" pin="P$1" pad="B33"/>
+<connect gate="-B34" pin="P$1" pad="B34"/>
+<connect gate="-B35" pin="P$1" pad="B35"/>
+<connect gate="-B36" pin="P$1" pad="B36"/>
+<connect gate="-B37" pin="P$1" pad="B37"/>
+<connect gate="-B38" pin="P$1" pad="B38"/>
+<connect gate="-B39" pin="P$1" pad="B39"/>
+<connect gate="-B4" pin="P$1" pad="B4"/>
+<connect gate="-B40" pin="P$1" pad="B40"/>
+<connect gate="-B41" pin="P$1" pad="B41"/>
+<connect gate="-B42" pin="P$1" pad="B42"/>
+<connect gate="-B43" pin="P$1" pad="B43"/>
+<connect gate="-B44" pin="P$1" pad="B44"/>
+<connect gate="-B45" pin="P$1" pad="B45"/>
+<connect gate="-B46" pin="P$1" pad="B46"/>
+<connect gate="-B47" pin="P$1" pad="B47"/>
+<connect gate="-B48" pin="P$1" pad="B48"/>
+<connect gate="-B49" pin="P$1" pad="B49"/>
+<connect gate="-B5" pin="P$1" pad="B5"/>
+<connect gate="-B50" pin="P$1" pad="B50"/>
+<connect gate="-B51" pin="P$1" pad="B51"/>
+<connect gate="-B52" pin="P$1" pad="B52"/>
+<connect gate="-B6" pin="P$1" pad="B6"/>
+<connect gate="-B7" pin="P$1" pad="B7"/>
+<connect gate="-B8" pin="P$1" pad="B8"/>
+<connect gate="-B9" pin="P$1" pad="B9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

@@ -1,0 +1,1789 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="3" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="5" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="6" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="14" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="10" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;Drawing Ports for Schematic and Layout - v1.00&lt;/b&gt;&lt;p&gt;
+
+&lt;p&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;
+USE AT YOUR OWN RISK!&lt;p&gt;
+&lt;author&gt;Copyright (C) 2008, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
+<packages>
+</packages>
+<symbols>
+<symbol name="PORT2">
+<wire x1="-4.064" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-4.064" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-4.064" y1="2.032" x2="-4.064" y2="0" width="0.2032" layer="95"/>
+<wire x1="-4.064" y1="0" x2="-4.064" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-4.064" y1="0" x2="-5.08" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT3">
+<wire x1="-6.604" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-6.604" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-6.604" y1="2.032" x2="-6.604" y2="0" width="0.2032" layer="95"/>
+<wire x1="-6.604" y1="0" x2="-6.604" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-6.604" y1="0" x2="-7.62" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT5">
+<wire x1="-9.144" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-9.144" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-9.144" y1="2.032" x2="-9.144" y2="0" width="0.2032" layer="95"/>
+<wire x1="-9.144" y1="0" x2="-9.144" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-9.144" y1="0" x2="-10.16" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT6">
+<wire x1="-11.684" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-11.684" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-11.684" y1="2.032" x2="-11.684" y2="0" width="0.2032" layer="95"/>
+<wire x1="-11.684" y1="0" x2="-11.684" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-11.684" y1="0" x2="-12.7" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT7">
+<wire x1="-14.224" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-14.224" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-14.224" y1="2.032" x2="-14.224" y2="0" width="0.2032" layer="95"/>
+<wire x1="-14.224" y1="0" x2="-14.224" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-14.224" y1="0" x2="-15.24" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT9">
+<wire x1="-16.764" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-16.764" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-16.764" y1="2.032" x2="-16.764" y2="0" width="0.2032" layer="95"/>
+<wire x1="-16.764" y1="0" x2="-16.764" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-16.764" y1="0" x2="-17.78" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT11">
+<wire x1="-19.304" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-19.304" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-19.304" y1="2.032" x2="-19.304" y2="0" width="0.2032" layer="95"/>
+<wire x1="-19.304" y1="0" x2="-19.304" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-19.304" y1="0" x2="-20.32" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT15">
+<wire x1="-26.924" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-26.924" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-26.924" y1="2.032" x2="-26.924" y2="0" width="0.2032" layer="95"/>
+<wire x1="-26.924" y1="0" x2="-26.924" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-26.924" y1="0" x2="-27.94" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT20">
+<wire x1="-34.544" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-34.544" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-34.544" y1="2.032" x2="-34.544" y2="0" width="0.2032" layer="95"/>
+<wire x1="-34.544" y1="0" x2="-34.544" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-34.544" y1="0" x2="-35.56" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT-L">
+<wire x1="-1.524" y1="-0.254" x2="5.08" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="5.08" y1="2.032" x2="-1.524" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-1.524" y1="2.032" x2="-1.524" y2="0" width="0.2032" layer="95"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-1.524" y1="0" x2="-2.54" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT-R">
+<wire x1="-5.08" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-5.08" y2="2.032" width="0.2032" layer="95"/>
+</symbol>
+<symbol name="PORT-L10">
+<wire x1="-1.524" y1="-0.254" x2="10.16" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="10.16" y1="2.032" x2="-1.524" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="-1.524" y1="2.032" x2="-1.524" y2="0" width="0.2032" layer="95"/>
+<wire x1="-1.524" y1="0" x2="-1.524" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="-1.524" y1="0" x2="-2.54" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PORT-R10">
+<wire x1="-10.16" y1="-0.254" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="-0.254" width="0.2032" layer="95"/>
+<wire x1="1.651" y1="0.889" x2="0" y2="2.032" width="0.2032" layer="95"/>
+<wire x1="0" y1="2.032" x2="-10.16" y2="2.032" width="0.2032" layer="95"/>
+</symbol>
+<symbol name="NPORT2">
+<wire x1="-2.54" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="95"/>
+<text x="-2.0637" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="CPORT">
+<wire x1="-1.27" y1="-1.27" x2="1.905" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="1.905" y1="-1.27" x2="1.905" y2="1.27" width="0.254" layer="95"/>
+<wire x1="1.905" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-2.54" y1="0" x2="-1.27" y2="0" width="0.1524" layer="95"/>
+<text x="-0.7937" y="-0.6351" size="1.27" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT10">
+<wire x1="-7.62" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="1.27" x2="-7.62" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="1.27" x2="-7.62" y2="-1.27" width="0.254" layer="95"/>
+<text x="-7.1437" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT5">
+<wire x1="-5.08" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.254" layer="95"/>
+<text x="-4.6037" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT15">
+<wire x1="-10.16" y1="-1.27" x2="10.16" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="12.7" y1="0" x2="10.16" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="12.7" y1="0" x2="10.16" y2="1.27" width="0.254" layer="95"/>
+<wire x1="10.16" y1="1.27" x2="-10.16" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-10.16" y1="1.27" x2="-10.16" y2="-1.27" width="0.254" layer="95"/>
+<text x="-9.6837" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT3">
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="95"/>
+<text x="-2.0637" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT7">
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.254" layer="95"/>
+<text x="-4.6037" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT12">
+<wire x1="-7.62" y1="-1.27" x2="7.62" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="10.16" y1="0" x2="7.62" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="10.16" y1="0" x2="7.62" y2="1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="1.27" x2="-7.62" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="1.27" x2="-7.62" y2="-1.27" width="0.254" layer="95"/>
+<text x="-7.1437" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="RPORT2">
+<wire x1="-1.27" y1="-1.27" x2="1.27" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="1.27" y1="-1.27" x2="1.27" y2="1.27" width="0.254" layer="95" curve="180"/>
+<wire x1="1.27" y1="1.27" x2="-1.27" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-1.27" y1="1.27" x2="-1.27" y2="-1.27" width="0.254" layer="95" curve="180"/>
+</symbol>
+<symbol name="RPORT3">
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="-1.27" x2="2.54" y2="1.27" width="0.254" layer="95" curve="180"/>
+<wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="95" curve="180"/>
+</symbol>
+<symbol name="RPORT5">
+<wire x1="-3.81" y1="-1.27" x2="3.81" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="1.27" width="0.254" layer="95" curve="180"/>
+<wire x1="3.81" y1="1.27" x2="-3.81" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-3.81" y1="1.27" x2="-3.81" y2="-1.27" width="0.254" layer="95" curve="180"/>
+</symbol>
+<symbol name="RPORT7">
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="-1.27" x2="5.08" y2="1.27" width="0.254" layer="95" curve="180"/>
+<wire x1="5.08" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.254" layer="95" curve="180"/>
+</symbol>
+<symbol name="RPORT10">
+<wire x1="-6.35" y1="-1.27" x2="6.35" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="6.35" y1="-1.27" x2="6.35" y2="1.27" width="0.254" layer="95" curve="180"/>
+<wire x1="6.35" y1="1.27" x2="-6.35" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-6.35" y1="1.27" x2="-6.35" y2="-1.27" width="0.254" layer="95" curve="180"/>
+</symbol>
+<symbol name="RPORT12">
+<wire x1="-7.62" y1="-1.27" x2="7.62" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="1.27" x2="7.62" y2="-1.27" width="0.254" layer="95" curve="-180"/>
+<wire x1="7.62" y1="1.27" x2="-7.62" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="1.27" x2="-7.62" y2="-1.27" width="0.254" layer="95" curve="180"/>
+</symbol>
+<symbol name="RPORT15">
+<wire x1="-9.525" y1="-1.27" x2="10.795" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="10.795" y1="-1.27" x2="10.795" y2="1.27" width="0.254" layer="95" curve="180"/>
+<wire x1="10.795" y1="1.27" x2="-9.525" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-9.525" y1="1.27" x2="-9.525" y2="-1.27" width="0.254" layer="95" curve="180"/>
+</symbol>
+<symbol name="ARROW1">
+<polygon width="0.1524" layer="91">
+<vertex x="-0.635" y="0"/>
+<vertex x="0.635" y="0.635"/>
+<vertex x="0.635" y="-0.635"/>
+</polygon>
+</symbol>
+<symbol name="ARROW2">
+<polygon width="0.1524" layer="91">
+<vertex x="0" y="0"/>
+<vertex x="2.54" y="1.27"/>
+<vertex x="2.54" y="-1.27"/>
+</polygon>
+</symbol>
+<symbol name="ARROW3">
+<polygon width="0.1524" layer="91">
+<vertex x="0" y="0"/>
+<vertex x="4.445" y="2.54"/>
+<vertex x="4.445" y="-2.54"/>
+</polygon>
+</symbol>
+<symbol name="APORT_OUT">
+<wire x1="-0.9525" y1="0.9525" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="-0.9525" y2="-0.9525" width="0.4064" layer="94"/>
+<wire x1="0.3175" y1="0.9525" x2="1.27" y2="0" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0" x2="0.3175" y2="-0.9525" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-0.9525" y2="0" width="0.1524" layer="91"/>
+</symbol>
+<symbol name="APORT_IN">
+<wire x1="1.27" y1="-0.9525" x2="0.3175" y2="0" width="0.4064" layer="94"/>
+<wire x1="0.3175" y1="0" x2="1.27" y2="0.9525" width="0.4064" layer="94"/>
+<wire x1="0" y1="-0.9525" x2="-0.9525" y2="0" width="0.4064" layer="94"/>
+<wire x1="-0.9525" y1="0" x2="0" y2="0.9525" width="0.4064" layer="94"/>
+<wire x1="-1.5875" y1="0" x2="-2.54" y2="0" width="0.1524" layer="91"/>
+</symbol>
+<symbol name="ARROW">
+<polygon width="0.1524" layer="91">
+<vertex x="0" y="0"/>
+<vertex x="1.27" y="0.635"/>
+<vertex x="1.27" y="-0.635"/>
+</polygon>
+</symbol>
+<symbol name="PIN_PORT1">
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="95"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="95"/>
+</symbol>
+<symbol name="NPORT10-B">
+<wire x1="-5.08" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="1.27" x2="-7.62" y2="0" width="0.254" layer="95"/>
+<text x="-4.6037" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT5-B">
+<wire x1="-5.08" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="0" x2="2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="1.27" x2="-7.62" y2="0" width="0.254" layer="95"/>
+<text x="-4.6037" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT7-B">
+<wire x1="-2.54" y1="-1.27" x2="5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="0" x2="5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="5.08" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-2.54" y1="-1.27" x2="-5.08" y2="0" width="0.254" layer="95"/>
+<wire x1="-2.54" y1="1.27" x2="-5.08" y2="0" width="0.254" layer="95"/>
+<text x="-2.0637" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT12-B">
+<wire x1="-5.08" y1="-1.27" x2="7.62" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="10.16" y1="0" x2="7.62" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="10.16" y1="0" x2="7.62" y2="1.27" width="0.254" layer="95"/>
+<wire x1="7.62" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="1.27" x2="-7.62" y2="0" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="-1.27" x2="-7.62" y2="0" width="0.254" layer="95"/>
+<text x="-4.6037" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NPORT15-B">
+<wire x1="-7.62" y1="-1.27" x2="10.16" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="12.7" y1="0" x2="10.16" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="12.7" y1="0" x2="10.16" y2="1.27" width="0.254" layer="95"/>
+<wire x1="10.16" y1="1.27" x2="-7.62" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="1.27" x2="-10.16" y2="0" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="-1.27" x2="-10.16" y2="0" width="0.254" layer="95"/>
+<text x="-7.1437" y="-0.7938" size="1.4224" layer="95" ratio="10">&gt;VALUE</text>
+</symbol>
+<symbol name="NC_SYM1">
+<wire x1="-0.9525" y1="0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="0.9525" y2="-0.9525" width="0.1524" layer="95"/>
+<wire x1="-0.9525" y1="-0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="0.9525" y2="0.9525" width="0.1524" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="NC_SYM2">
+<wire x1="-0.9525" y1="0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="0.9525" y2="-0.9525" width="0.1524" layer="95"/>
+<wire x1="-0.9525" y1="-0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="0.9525" y2="0.9525" width="0.1524" layer="95"/>
+<wire x1="5.08" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="NC_SYM3">
+<wire x1="-0.9525" y1="0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="0.9525" y2="-0.9525" width="0.1524" layer="95"/>
+<wire x1="-0.9525" y1="-0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="0.9525" y2="0.9525" width="0.1524" layer="95"/>
+<wire x1="7.62" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="DPORT2">
+<wire x1="-2.54" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-2.54" y1="1.27" x2="-2.54" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT3">
+<wire x1="-5.08" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="1.27" x2="-5.08" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT5">
+<wire x1="-10.16" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-10.16" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-10.16" y1="1.27" x2="-10.16" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT5-B">
+<wire x1="-10.16" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-10.16" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-12.7" y1="0" x2="-10.16" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-10.16" y1="1.27" x2="-12.7" y2="0" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT7">
+<wire x1="-15.24" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-15.24" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-15.24" y1="1.27" x2="-15.24" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT7-B">
+<wire x1="-12.7" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-12.7" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-12.7" y1="-1.27" x2="-15.24" y2="0" width="0.254" layer="95"/>
+<wire x1="-12.7" y1="1.27" x2="-15.24" y2="0" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT10">
+<wire x1="-22.86" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-22.86" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-22.86" y1="1.27" x2="-22.86" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT10-B">
+<wire x1="-20.32" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-20.32" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-22.86" y1="0" x2="-20.32" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-20.32" y1="1.27" x2="-22.86" y2="0" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT12">
+<wire x1="-27.94" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-27.94" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-27.94" y1="1.27" x2="-27.94" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT12-B">
+<wire x1="-25.4" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-25.4" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-27.94" y1="0" x2="-25.4" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-25.4" y1="1.27" x2="-27.94" y2="0" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT15">
+<wire x1="-35.56" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-35.56" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-35.56" y1="1.27" x2="-35.56" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT15-B">
+<wire x1="-33.02" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-33.02" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-33.02" y1="1.27" x2="-35.56" y2="0" width="0.254" layer="95"/>
+<wire x1="-33.02" y1="-1.27" x2="-35.56" y2="0" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT3-B">
+<wire x1="-2.54" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="RPORT17">
+<wire x1="-12.065" y1="-1.27" x2="13.335" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="13.335" y1="-1.27" x2="13.335" y2="1.27" width="0.254" layer="95" curve="180"/>
+<wire x1="13.335" y1="1.27" x2="-12.065" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-12.065" y1="1.27" x2="-12.065" y2="-1.27" width="0.254" layer="95" curve="180"/>
+</symbol>
+<symbol name="RPORT20">
+<wire x1="-14.605" y1="-1.27" x2="15.875" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="15.875" y1="-1.27" x2="15.875" y2="1.27" width="0.254" layer="95" curve="180"/>
+<wire x1="15.875" y1="1.27" x2="-14.605" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-14.605" y1="1.27" x2="-14.605" y2="-1.27" width="0.254" layer="95" curve="180"/>
+</symbol>
+<symbol name="DPORT4">
+<wire x1="-7.62" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-7.62" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="1.27" x2="-7.62" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT6">
+<wire x1="-12.7" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-12.7" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-12.7" y1="1.27" x2="-12.7" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT8">
+<wire x1="-17.78" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-17.78" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-17.78" y1="1.27" x2="-17.78" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT9">
+<wire x1="-20.32" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-20.32" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-20.32" y1="1.27" x2="-20.32" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT4-B">
+<wire x1="-5.08" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-5.08" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-7.62" y1="0" x2="-5.08" y2="1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT6-B">
+<wire x1="-10.16" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-10.16" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-12.7" y1="0" x2="-10.16" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-12.7" y1="0" x2="-10.16" y2="1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT8-B">
+<wire x1="-15.24" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-15.24" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-17.78" y1="0" x2="-15.24" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-17.78" y1="0" x2="-15.24" y2="1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT9-B">
+<wire x1="-17.78" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-17.78" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-20.32" y1="0" x2="-17.78" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-20.32" y1="0" x2="-17.78" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT11">
+<wire x1="-25.4" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-25.4" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-25.4" y1="1.27" x2="-25.4" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT11-B">
+<wire x1="-22.86" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-22.86" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-25.4" y1="0" x2="-22.86" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="-25.4" y1="0" x2="-22.86" y2="1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT13">
+<wire x1="-30.48" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-30.48" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-30.48" y1="1.27" x2="-30.48" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT13-B">
+<wire x1="-27.94" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-27.94" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-30.48" y1="0" x2="-27.94" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-30.48" y1="0" x2="-27.94" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT14-B">
+<wire x1="-30.48" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-30.48" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-30.48" y1="1.27" x2="-33.02" y2="0" width="0.254" layer="95"/>
+<wire x1="-30.48" y1="-1.27" x2="-33.02" y2="0" width="0.254" layer="95"/>
+</symbol>
+<symbol name="DPORT14">
+<wire x1="-33.02" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="-1.27" width="0.254" layer="95"/>
+<wire x1="2.54" y1="0" x2="0" y2="1.27" width="0.254" layer="95"/>
+<wire x1="0" y1="1.27" x2="-33.02" y2="1.27" width="0.254" layer="95"/>
+<wire x1="-33.02" y1="1.27" x2="-33.02" y2="-1.27" width="0.254" layer="95"/>
+</symbol>
+<symbol name="ARROW1-B">
+<polygon width="0.1524" layer="91">
+<vertex x="-0.635" y="0"/>
+<vertex x="0.635" y="0.635"/>
+<vertex x="0.635" y="-0.635"/>
+</polygon>
+<polygon width="0.1524" layer="91">
+<vertex x="1.905" y="0.635"/>
+<vertex x="3.175" y="0"/>
+<vertex x="1.905" y="-0.635"/>
+</polygon>
+</symbol>
+<symbol name="ARROW2-B">
+<polygon width="0.1524" layer="91">
+<vertex x="0" y="0"/>
+<vertex x="2.54" y="1.27"/>
+<vertex x="2.54" y="-1.27"/>
+</polygon>
+<polygon width="0.1524" layer="91">
+<vertex x="4.445" y="1.27"/>
+<vertex x="4.445" y="-1.27"/>
+<vertex x="6.985" y="0"/>
+</polygon>
+</symbol>
+<symbol name="ARROW3-B">
+<polygon width="0.1524" layer="91">
+<vertex x="0" y="0"/>
+<vertex x="4.445" y="2.54"/>
+<vertex x="4.445" y="-2.54"/>
+</polygon>
+<polygon width="0.1524" layer="91">
+<vertex x="8.255" y="2.54"/>
+<vertex x="12.7" y="0"/>
+<vertex x="8.255" y="-2.54"/>
+</polygon>
+</symbol>
+<symbol name="ARROW-B">
+<polygon width="0.1524" layer="91">
+<vertex x="0" y="0"/>
+<vertex x="1.27" y="0.635"/>
+<vertex x="1.27" y="-0.635"/>
+</polygon>
+<polygon width="0.1524" layer="91">
+<vertex x="2.54" y="0.635"/>
+<vertex x="3.81" y="0"/>
+<vertex x="2.54" y="-0.635"/>
+</polygon>
+</symbol>
+<symbol name="NC_SYM">
+<wire x1="-0.9525" y1="0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="0.9525" y2="-0.9525" width="0.1524" layer="95"/>
+<wire x1="-0.9525" y1="-0.9525" x2="0" y2="0" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="0.9525" y2="0.9525" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="PIN_PORT2">
+<wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="95"/>
+<wire x1="-0.4763" y1="0.4763" x2="0.4763" y2="-0.4763" width="0.1524" layer="95"/>
+<wire x1="-0.4763" y1="-0.4763" x2="0.4763" y2="0.4763" width="0.1524" layer="95"/>
+<circle x="0" y="0" radius="0.635" width="0.254" layer="95"/>
+</symbol>
+<symbol name="APORT_OUT1">
+<wire x1="-2.54" y1="0.9525" x2="-1.5875" y2="0" width="0.4064" layer="94"/>
+<wire x1="-1.5875" y1="0" x2="-2.54" y2="-0.9525" width="0.4064" layer="94"/>
+<wire x1="-0.9525" y1="0.9525" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="-0.9525" y2="-0.9525" width="0.4064" layer="94"/>
+<wire x1="-1.8415" y1="0" x2="-2.54" y2="0" width="0.1524" layer="91"/>
+</symbol>
+<symbol name="APORT_IN1">
+<wire x1="2.54" y1="-0.9525" x2="1.5875" y2="0" width="0.4064" layer="94"/>
+<wire x1="1.5875" y1="0" x2="2.54" y2="0.9525" width="0.4064" layer="94"/>
+<wire x1="0.9525" y1="-0.9525" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="0.9525" y2="0.9525" width="0.4064" layer="94"/>
+</symbol>
+<symbol name="APORT_IO">
+<wire x1="-1.27" y1="-0.9525" x2="-2.2225" y2="0" width="0.4064" layer="94"/>
+<wire x1="-2.2225" y1="0" x2="-1.27" y2="0.9525" width="0.4064" layer="94"/>
+<wire x1="-2.54" y1="-0.9525" x2="-3.4925" y2="0" width="0.4064" layer="94"/>
+<wire x1="-3.4925" y1="0" x2="-2.54" y2="0.9525" width="0.4064" layer="94"/>
+<wire x1="-4.1275" y1="0" x2="-5.08" y2="0" width="0.1524" layer="91"/>
+<wire x1="0" y1="0.9525" x2="0.9525" y2="0" width="0.4064" layer="94"/>
+<wire x1="0.9525" y1="0" x2="0" y2="-0.9525" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0.9525" x2="2.2225" y2="0" width="0.4064" layer="94"/>
+<wire x1="2.2225" y1="0" x2="1.27" y2="-0.9525" width="0.4064" layer="94"/>
+</symbol>
+<symbol name="APORT_IO1">
+<wire x1="2.2225" y1="-0.9525" x2="1.27" y2="0" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="0" x2="2.2225" y2="0.9525" width="0.4064" layer="94"/>
+<wire x1="0.9525" y1="-0.9525" x2="0" y2="0" width="0.4064" layer="94"/>
+<wire x1="0" y1="0" x2="0.9525" y2="0.9525" width="0.4064" layer="94"/>
+<wire x1="3.4925" y1="0.9525" x2="4.445" y2="0" width="0.4064" layer="94"/>
+<wire x1="4.445" y1="0" x2="3.4925" y2="-0.9525" width="0.4064" layer="94"/>
+<wire x1="4.7625" y1="0.9525" x2="5.715" y2="0" width="0.4064" layer="94"/>
+<wire x1="5.715" y1="0" x2="4.7625" y2="-0.9525" width="0.4064" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PORT2" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt;
+basic port symbol</description>
+<gates>
+<gate name="G$1" symbol="PORT2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PORT3" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt;
+basic port symbol</description>
+<gates>
+<gate name="G$1" symbol="PORT3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PORT5" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt;
+basic port symbol</description>
+<gates>
+<gate name="G$1" symbol="PORT5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PORT7" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt;
+basic port symbol</description>
+<gates>
+<gate name="G$1" symbol="PORT7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PORT9" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt;
+basic port symbol</description>
+<gates>
+<gate name="G$1" symbol="PORT9" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PORT11" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt;
+basic port symbol</description>
+<gates>
+<gate name="G$1" symbol="PORT11" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PORT15" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt;
+basic port symbol</description>
+<gates>
+<gate name="G$1" symbol="PORT15" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PORT20" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt;
+basic port symbol</description>
+<gates>
+<gate name="G$1" symbol="PORT20" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PORT-VAR4" prefix="PORT">
+<description>&lt;b&gt;VARIABLE PORT&lt;/b&gt;&lt;p&gt; 
+Variable length sections</description>
+<gates>
+<gate name="G$1" symbol="PORT-L" x="0" y="0" addlevel="must"/>
+<gate name="G$2" symbol="PORT-R" x="10.16" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PORT-VAR10" prefix="PORT">
+<description>&lt;b&gt;VARIABLE PORT&lt;/b&gt;&lt;p&gt; 
+Variable length sections</description>
+<gates>
+<gate name="G$1" symbol="PORT-L10" x="0" y="0" addlevel="must"/>
+<gate name="G$2" symbol="PORT-R10" x="20.32" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT2" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CPORT" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;CHAR PORT SYMBOL&lt;/b&gt;&lt;p&gt;
+for 1 character, with optional value field</description>
+<gates>
+<gate name="G$1" symbol="CPORT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT10" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT10" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT5" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT15" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT15" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT3" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT7" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT12" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT12" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPORT2" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+rounded</description>
+<gates>
+<gate name="G$1" symbol="RPORT2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPORT3" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+rounded</description>
+<gates>
+<gate name="G$1" symbol="RPORT3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPORT5" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+rounded</description>
+<gates>
+<gate name="G$1" symbol="RPORT5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPORT7" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+rounded</description>
+<gates>
+<gate name="G$1" symbol="RPORT7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPORT10" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+rounded</description>
+<gates>
+<gate name="G$1" symbol="RPORT10" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPORT12" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+rounded</description>
+<gates>
+<gate name="G$1" symbol="RPORT12" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPORT15" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+rounded</description>
+<gates>
+<gate name="G$1" symbol="RPORT15" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARROW1" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;&lt;p&gt; 
+For use with nets/lines to show direction/flow.</description>
+<gates>
+<gate name="G$1" symbol="ARROW1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARROW2" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;&lt;p&gt;
+For use with nets/lines to show direction/flow.</description>
+<gates>
+<gate name="G$1" symbol="ARROW2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARROW3" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;&lt;p&gt; 
+For use with nets/lines to show direction/flow.</description>
+<gates>
+<gate name="G$1" symbol="ARROW3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APORT_OUT" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="APORT_OUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APORT_IN" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="APORT_IN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARROW" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;&lt;p&gt; 
+Use for net/line end points.</description>
+<gates>
+<gate name="G$1" symbol="ARROW" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIN_PORT1" prefix="PORT">
+<description>&lt;b&gt;PIN PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+this is a symbol only for drawing purposes, no physical pin is associated with this symbol</description>
+<gates>
+<gate name="G$1" symbol="PIN_PORT1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT5-B" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT5-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT7-B" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT7-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT10-B" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT10-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT12-B" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT12-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NPORT15-B" prefix="PORT" uservalue="yes">
+<description>&lt;b&gt;NAMED PORT&lt;/b&gt;&lt;p&gt; 
+With optional value text field</description>
+<gates>
+<gate name="G$1" symbol="NPORT15-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC1" prefix="PORT">
+<description>&lt;b&gt;N/C Symbol&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NC_SYM1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC2" prefix="PORT">
+<description>&lt;b&gt;N/C Symbol&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NC_SYM2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC3" prefix="PORT">
+<description>&lt;b&gt;N/C Symbol&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NC_SYM3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPORT17" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+rounded</description>
+<gates>
+<gate name="G$1" symbol="RPORT17" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RPORT20" prefix="PORT">
+<description>&lt;b&gt;PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+rounded</description>
+<gates>
+<gate name="G$1" symbol="RPORT20" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT2" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT3" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT3" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT3-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT3-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT5" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT5-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT5-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT4" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT4" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT4-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT4-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT6" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT6" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT6-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT6-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT7" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT7" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT7-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT7-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT8" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT8" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT8-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT8-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT9" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT9" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT9-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT9-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT10" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT10" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT10-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT10-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT11" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT11" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT11-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT11-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT12" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT12" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT12-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT12-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT13" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT13" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT13-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT13-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT14" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT14" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT14-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT14-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT15" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT15" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DPORT15-B" prefix="PORT">
+<description>&lt;b&gt;ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="DPORT15-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARROW1-B" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;&lt;p&gt; 
+For use with nets/lines to show direction/flow.</description>
+<gates>
+<gate name="G$1" symbol="ARROW1-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARROW2-B" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;&lt;p&gt; 
+For use with nets/lines to show direction/flow.</description>
+<gates>
+<gate name="G$1" symbol="ARROW2-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARROW3-B" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;&lt;p&gt; 
+For use with nets/lines to show direction/flow.</description>
+<gates>
+<gate name="G$1" symbol="ARROW3-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ARROW-B" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;&lt;p&gt; 
+For use with nets/lines to show direction/flow.</description>
+<gates>
+<gate name="G$1" symbol="ARROW-B" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC" prefix="PORT">
+<description>&lt;b&gt;N/C Symbol&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NC_SYM" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PIN_PORT2" prefix="PORT">
+<description>&lt;b&gt;PIN PORT SYMBOL&lt;/b&gt;&lt;p&gt; 
+this is a symbol only for drawing purposes, no physical pin is associated with this symbol</description>
+<gates>
+<gate name="G$1" symbol="PIN_PORT2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APORT_IN1">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="APORT_IN1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APORT_OUT1">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="APORT_OUT1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APORT_IO" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="APORT_IO" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="APORT_IO1" prefix="PORT">
+<description>&lt;b&gt;SIMPLE ARROW PORT&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="APORT_IO1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;Positronics Connectors&lt;/b&gt;&lt;p&gt;
+&lt;p&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;
+USE AT YOUR OWN RISK!&lt;p&gt;
+&lt;author&gt;Copyright (C) 2008, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
+<packages>
+<package name="GFSH89X4B">
+<description>GFSH89X4B Goldfish Series&lt;p&gt;
+ Right Angle PCB Mount</description>
+<wire x1="-17.8562" y1="2.9718" x2="-13.6398" y2="2.9718" width="0.2032" layer="21"/>
+<wire x1="-13.6398" y1="2.9718" x2="-13.6398" y2="2.0066" width="0.2032" layer="21"/>
+<wire x1="-13.6398" y1="2.0066" x2="13.6398" y2="2.0066" width="0.2032" layer="21"/>
+<wire x1="13.6398" y1="2.0066" x2="13.6398" y2="2.9718" width="0.2032" layer="21"/>
+<wire x1="13.6398" y1="2.9718" x2="17.8562" y2="2.9718" width="0.2032" layer="21"/>
+<wire x1="17.8562" y1="2.9718" x2="17.8562" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="17.8562" y1="-3.048" x2="-17.8562" y2="-3.048" width="0.2032" layer="21"/>
+<wire x1="-17.8562" y1="-3.048" x2="-17.8562" y2="2.9718" width="0.2032" layer="21"/>
+<wire x1="-14" y1="-3.079" x2="-14" y2="-12.079" width="0.2032" layer="51"/>
+<wire x1="-14" y1="-12.079" x2="-12" y2="-14.079" width="0.2032" layer="51"/>
+<wire x1="-12" y1="-14.079" x2="-12" y2="-12.079" width="0.2032" layer="51"/>
+<wire x1="-12" y1="-12.079" x2="12" y2="-12.079" width="0.2032" layer="51"/>
+<wire x1="12" y1="-12.079" x2="12" y2="-14.079" width="0.2032" layer="51"/>
+<wire x1="12" y1="-14.079" x2="14" y2="-12.079" width="0.2032" layer="51"/>
+<wire x1="14" y1="-12.079" x2="14" y2="-3.079" width="0.2032" layer="51"/>
+<wire x1="-12" y1="-12.079" x2="-13.55" y2="-12.079" width="0.2032" layer="51"/>
+<wire x1="-13.55" y1="-12.079" x2="-14" y2="-12.079" width="0.2032" layer="51"/>
+<wire x1="12" y1="-12.079" x2="14" y2="-12.079" width="0.2032" layer="51"/>
+<wire x1="-12" y1="-12.079" x2="-12" y2="-3.079" width="0.2032" layer="51"/>
+<wire x1="12" y1="-12.079" x2="12" y2="-3.079" width="0.2032" layer="51"/>
+<wire x1="12.5" y1="4.25" x2="11.5" y2="3.25" width="0.2032" layer="51" curve="-90"/>
+<wire x1="11.5" y1="3.25" x2="-11.5" y2="3.25" width="0.2032" layer="51"/>
+<wire x1="-11.5" y1="3.25" x2="-12.5" y2="4.25" width="0.2032" layer="51" curve="-90"/>
+<wire x1="-12.5" y1="4.25" x2="-12.5" y2="11.5" width="0.2032" layer="51"/>
+<wire x1="-12.5" y1="11.5" x2="-11.5" y2="12.5" width="0.2032" layer="51" curve="-90"/>
+<wire x1="-11.5" y1="12.5" x2="11.5" y2="12.5" width="0.2032" layer="51"/>
+<wire x1="11.5" y1="12.5" x2="12.5" y2="11.5" width="0.2032" layer="51" curve="-90"/>
+<wire x1="12.5" y1="11.5" x2="12.5" y2="4.25" width="0.2032" layer="51"/>
+<wire x1="-17.8562" y1="3.2512" x2="-13.6398" y2="3.2512" width="0.2032" layer="51"/>
+<wire x1="-13.6398" y1="3.2512" x2="-13.6398" y2="10.1092" width="0.2032" layer="51"/>
+<wire x1="-13.6398" y1="10.1092" x2="-17.8562" y2="10.1092" width="0.2032" layer="51"/>
+<wire x1="-17.8562" y1="10.1092" x2="-17.8562" y2="3.2512" width="0.2032" layer="51"/>
+<wire x1="17.8562" y1="3.2512" x2="17.8562" y2="10.1092" width="0.2032" layer="51"/>
+<wire x1="17.8562" y1="10.1092" x2="13.6398" y2="10.1092" width="0.2032" layer="51"/>
+<wire x1="13.6398" y1="10.1092" x2="13.6398" y2="3.2512" width="0.2032" layer="51"/>
+<wire x1="13.6398" y1="3.2512" x2="17.8562" y2="3.2512" width="0.2032" layer="51"/>
+<wire x1="-13.55" y1="-3.079" x2="-13.55" y2="-12.079" width="0.0508" layer="51" style="shortdash"/>
+<circle x="-15.748" y="7.6454" radius="2.286" width="0" layer="42"/>
+<circle x="15.748" y="7.6454" radius="2.286" width="0" layer="42"/>
+<pad name="1" x="10" y="10" drill="2.1082"/>
+<pad name="2" x="10" y="5.8" drill="2.1082"/>
+<pad name="3" x="5.8" y="10" drill="2.1082"/>
+<pad name="4" x="5.8" y="5.8" drill="2.1082"/>
+<pad name="5" x="2.7" y="10.6" drill="1.1176"/>
+<pad name="6" x="2.7" y="7.9" drill="1.1176"/>
+<pad name="7" x="2.7" y="5.2" drill="1.1176"/>
+<pad name="8" x="0" y="10.6" drill="1.1176"/>
+<pad name="9" x="0" y="7.9" drill="1.1176"/>
+<pad name="10" x="0" y="5.2" drill="1.1176"/>
+<pad name="11" x="-2.7" y="10.6" drill="1.1176"/>
+<pad name="12" x="-2.7" y="7.9" drill="1.1176"/>
+<pad name="13" x="-2.7" y="5.2" drill="1.1176"/>
+<pad name="14" x="-5.8" y="10" drill="2.1082"/>
+<pad name="15" x="-5.8" y="5.8" drill="2.1082"/>
+<pad name="16" x="-10" y="10" drill="2.1082"/>
+<pad name="17" x="-10" y="5.8" drill="2.1082"/>
+<pad name="M2" x="-15.748" y="7.6454" drill="2.54" diameter="0.254"/>
+<pad name="M1" x="15.748" y="7.6454" drill="2.54" diameter="0.254"/>
+<text x="-18.415" y="12.065" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-19.05" y="-5.08" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-18.288" y1="2.794" x2="-12.954" y2="10.668" layer="41"/>
+<rectangle x1="12.954" y1="2.794" x2="18.288" y2="10.668" layer="41"/>
+<hole x="15.748" y="0" drill="2.54"/>
+<hole x="-15.748" y="0" drill="2.54"/>
+</package>
+<package name="GFSH89F4B">
+<description>GFSH89X3H Goldfish Series&lt;p&gt;
+Vertical PCB Mount</description>
+<wire x1="18" y1="-4.7" x2="17" y2="-5.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="17" y1="-5.7" x2="-17" y2="-5.7" width="0.2032" layer="21"/>
+<wire x1="-17" y1="-5.7" x2="-18" y2="-4.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-18" y1="-4.7" x2="-18" y2="4.7" width="0.2032" layer="21"/>
+<wire x1="-18" y1="4.7" x2="-17" y2="5.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-17" y1="5.7" x2="17" y2="5.7" width="0.2032" layer="21"/>
+<wire x1="17" y1="5.7" x2="18" y2="4.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="18" y1="4.7" x2="18" y2="-4.7" width="0.2032" layer="21"/>
+<wire x1="-13" y1="5.5" x2="-13" y2="-5.5" width="0.2032" layer="51" curve="114.441348"/>
+<wire x1="-13" y1="-5.5" x2="13" y2="-5.5" width="0.2032" layer="51"/>
+<wire x1="13" y1="-5.5" x2="13" y2="5.5" width="0.2032" layer="51" curve="114.441348"/>
+<wire x1="13" y1="5.5" x2="-13" y2="5.5" width="0.2032" layer="51"/>
+<wire x1="-12.75" y1="5" x2="-12.75" y2="-5" width="0.2032" layer="51" curve="115.242432"/>
+<wire x1="12.75" y1="5" x2="12.75" y2="-5" width="0.2032" layer="51" curve="-115.242432"/>
+<wire x1="12.75" y1="5" x2="-12.75" y2="5" width="0.2032" layer="51"/>
+<wire x1="12.75" y1="-5" x2="-12.75" y2="-5" width="0.2032" layer="51"/>
+<wire x1="-12.75" y1="5" x2="-12.75" y2="-5" width="0.0508" layer="51"/>
+<wire x1="12.75" y1="5" x2="12.75" y2="-5" width="0.0508" layer="51"/>
+<wire x1="-15.45" y1="0.5" x2="-15.45" y2="-0.5" width="0.2032" layer="51" curve="-180"/>
+<wire x1="-15.45" y1="0.4" x2="-15.45" y2="-0.4" width="0.2032" layer="51" curve="-180"/>
+<wire x1="-15.4" y1="0.3" x2="-15.4" y2="-0.3" width="0.2032" layer="51" curve="-128.036965"/>
+<wire x1="-15.4" y1="0.2" x2="-15.4" y2="-0.2" width="0.2032" layer="51"/>
+<pad name="2" x="10" y="2.1" drill="2.1082"/>
+<pad name="1" x="10" y="-2.1" drill="2.1082"/>
+<pad name="4" x="5.8" y="2.1" drill="2.1082"/>
+<pad name="3" x="5.8" y="-2.1" drill="2.1082"/>
+<pad name="7" x="2.7" y="2.7" drill="1.143"/>
+<pad name="6" x="2.7" y="0" drill="1.143"/>
+<pad name="5" x="2.7" y="-2.7" drill="1.143"/>
+<pad name="10" x="0" y="2.7" drill="1.143"/>
+<pad name="9" x="0" y="0" drill="1.143"/>
+<pad name="8" x="0" y="-2.7" drill="1.143"/>
+<pad name="13" x="-2.7" y="2.7" drill="1.143"/>
+<pad name="12" x="-2.7" y="0" drill="1.143"/>
+<pad name="11" x="-2.7" y="-2.7" drill="1.143"/>
+<pad name="15" x="-5.8" y="2.1" drill="2.1082"/>
+<pad name="14" x="-5.8" y="-2.1" drill="2.1082"/>
+<pad name="17" x="-10" y="2.1" drill="2.1082"/>
+<pad name="16" x="-10" y="-2.1" drill="2.1082"/>
+<text x="-17.145" y="6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-17.145" y="-6.985" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<hole x="-15.748" y="0" drill="2.54"/>
+<hole x="15.748" y="0" drill="2.54"/>
+</package>
+</packages>
+<symbols>
+<symbol name="P-NV">
+<wire x1="0" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="0.9525" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0" x2="0.9525" y2="-0.635" width="0.254" layer="94"/>
+<text x="0.635" y="0.635" size="1.016" layer="95" ratio="12" rot="MR0">&gt;NAME</text>
+<text x="0.635" y="5.08" size="1.778" layer="95" ratio="12" rot="MR0">&gt;PART</text>
+<text x="0.635" y="2.54" size="1.778" layer="96" ratio="12" rot="MR0">&gt;VALUE</text>
+<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="P-N">
+<wire x1="0" y1="0" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="0.9525" y2="0.635" width="0.254" layer="94"/>
+<wire x1="1.905" y1="0" x2="0.9525" y2="-0.635" width="0.254" layer="94"/>
+<text x="0.635" y="0.635" size="1.016" layer="95" ratio="12" rot="MR0">&gt;NAME</text>
+<pin name="P" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
+</symbol>
+<symbol name="J-NV">
+<wire x1="0" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-2.8575" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-2.8575" y2="-0.635" width="0.254" layer="94"/>
+<text x="-1.905" y="0.635" size="1.016" layer="95" ratio="12">&gt;NAME</text>
+<text x="-1.905" y="5.08" size="1.778" layer="95" ratio="12">&gt;PART</text>
+<text x="-1.905" y="2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+<symbol name="J-N">
+<wire x1="0" y1="0" x2="-1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-2.8575" y2="0.635" width="0.254" layer="94"/>
+<wire x1="-1.905" y1="0" x2="-2.8575" y2="-0.635" width="0.254" layer="94"/>
+<text x="-1.905" y="0.635" size="1.016" layer="95" ratio="12">&gt;NAME</text>
+<pin name="P$1" x="2.54" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="GFSH89F4B" prefix="J">
+<description>&lt;b&gt;FEMALE CONNECTOR&lt;/b&gt;&lt;p&gt;
+Goldfish Series</description>
+<gates>
+<gate name="-1" symbol="J-NV" x="-2.54" y="0" addlevel="always"/>
+<gate name="-2" symbol="J-N" x="-2.54" y="-2.54" addlevel="always"/>
+<gate name="-3" symbol="J-N" x="-2.54" y="-5.08" addlevel="always"/>
+<gate name="-4" symbol="J-N" x="-2.54" y="-7.62" addlevel="always"/>
+<gate name="-5" symbol="J-N" x="-2.54" y="-10.16" addlevel="always"/>
+<gate name="-6" symbol="J-N" x="-2.54" y="-12.7" addlevel="always"/>
+<gate name="-7" symbol="J-N" x="-2.54" y="-15.24" addlevel="always"/>
+<gate name="-8" symbol="J-N" x="-2.54" y="-17.78" addlevel="always"/>
+<gate name="-9" symbol="J-N" x="-2.54" y="-20.32" addlevel="always"/>
+<gate name="-10" symbol="J-N" x="-2.54" y="-22.86" addlevel="always"/>
+<gate name="-11" symbol="J-N" x="-2.54" y="-25.4" addlevel="always"/>
+<gate name="-12" symbol="J-N" x="-2.54" y="-27.94" addlevel="always"/>
+<gate name="-13" symbol="J-N" x="-2.54" y="-30.48" addlevel="always"/>
+<gate name="-14" symbol="J-N" x="-2.54" y="-33.02" addlevel="always"/>
+<gate name="-15" symbol="J-N" x="-2.54" y="-35.56" addlevel="always"/>
+<gate name="-16" symbol="J-N" x="-2.54" y="-38.1" addlevel="always"/>
+<gate name="-17" symbol="J-N" x="-2.54" y="-40.64" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="GFSH89X4B">
+<connects>
+<connect gate="-1" pin="P$1" pad="1"/>
+<connect gate="-10" pin="P$1" pad="10"/>
+<connect gate="-11" pin="P$1" pad="11"/>
+<connect gate="-12" pin="P$1" pad="12"/>
+<connect gate="-13" pin="P$1" pad="13"/>
+<connect gate="-14" pin="P$1" pad="14"/>
+<connect gate="-15" pin="P$1" pad="15"/>
+<connect gate="-16" pin="P$1" pad="16"/>
+<connect gate="-17" pin="P$1" pad="17"/>
+<connect gate="-2" pin="P$1" pad="2"/>
+<connect gate="-3" pin="P$1" pad="3"/>
+<connect gate="-4" pin="P$1" pad="4"/>
+<connect gate="-5" pin="P$1" pad="5"/>
+<connect gate="-6" pin="P$1" pad="6"/>
+<connect gate="-7" pin="P$1" pad="7"/>
+<connect gate="-8" pin="P$1" pad="8"/>
+<connect gate="-9" pin="P$1" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GFSH89M3H" prefix="P">
+<description>&lt;b&gt;MALE CONNECTOR&lt;/b&gt;&lt;p&gt;
+Goldfish Series</description>
+<gates>
+<gate name="-1" symbol="P-NV" x="0" y="0" addlevel="always"/>
+<gate name="-2" symbol="P-N" x="0" y="-2.54" addlevel="always"/>
+<gate name="-3" symbol="P-N" x="0" y="-5.08" addlevel="always"/>
+<gate name="-4" symbol="P-N" x="0" y="-7.62" addlevel="always"/>
+<gate name="-5" symbol="P-N" x="0" y="-10.16" addlevel="always"/>
+<gate name="-6" symbol="P-N" x="0" y="-12.7" addlevel="always"/>
+<gate name="-7" symbol="P-N" x="0" y="-15.24" addlevel="always"/>
+<gate name="-8" symbol="P-N" x="0" y="-17.78" addlevel="always"/>
+<gate name="-9" symbol="P-N" x="0" y="-20.32" addlevel="always"/>
+<gate name="-10" symbol="P-N" x="0" y="-22.86" addlevel="always"/>
+<gate name="-11" symbol="P-N" x="0" y="-25.4" addlevel="always"/>
+<gate name="-12" symbol="P-N" x="0" y="-27.94" addlevel="always"/>
+<gate name="-13" symbol="P-N" x="0" y="-30.48" addlevel="always"/>
+<gate name="-14" symbol="P-N" x="0" y="-33.02" addlevel="always"/>
+<gate name="-15" symbol="P-N" x="0" y="-35.56" addlevel="always"/>
+<gate name="-16" symbol="P-N" x="0" y="-38.1" addlevel="always"/>
+<gate name="-17" symbol="P-N" x="0" y="-40.64" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="GFSH89F4B">
+<connects>
+<connect gate="-1" pin="P" pad="1"/>
+<connect gate="-10" pin="P" pad="10"/>
+<connect gate="-11" pin="P" pad="11"/>
+<connect gate="-12" pin="P" pad="12"/>
+<connect gate="-13" pin="P" pad="13"/>
+<connect gate="-14" pin="P" pad="14"/>
+<connect gate="-15" pin="P" pad="15"/>
+<connect gate="-16" pin="P" pad="16"/>
+<connect gate="-17" pin="P" pad="17"/>
+<connect gate="-2" pin="P" pad="2"/>
+<connect gate="-3" pin="P" pad="3"/>
+<connect gate="-4" pin="P" pad="4"/>
+<connect gate="-5" pin="P" pad="5"/>
+<connect gate="-6" pin="P" pad="6"/>
+<connect gate="-7" pin="P" pad="7"/>
+<connect gate="-8" pin="P" pad="8"/>
+<connect gate="-9" pin="P" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>

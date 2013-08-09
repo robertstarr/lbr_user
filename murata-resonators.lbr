@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="6.4">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+</layers>
+<library>
+<description>&lt;b&gt;Murata CERALOCK&lt;/b&gt; ceramic resonators&lt;br&gt;
+Datasheet P16E13.PDF 02.3.7
+&lt;p&gt;
+Reichelt
+&lt;p&gt;
+&lt;i&gt;created by J. Bartels&lt;/i&gt;</description>
+<packages>
+<package name="CSTLS_G9">
+<description>CSTGL_S 9x4 mm, grid 2,5 mm</description>
+<wire x1="-1.25" y1="1.9" x2="-1.25" y2="-1.9" width="0.2032" layer="21"/>
+<wire x1="3.7" y1="1.3" x2="4.5" y2="0" width="0.2032" layer="21" curve="-61.158454" cap="flat"/>
+<wire x1="0" y1="2" x2="3.7" y2="1.3" width="0.2032" layer="21" curve="-19.708909" cap="flat"/>
+<wire x1="0" y1="-2" x2="3.7" y2="-1.3" width="0.2032" layer="21" curve="19.708909" cap="flat"/>
+<wire x1="-3.7" y1="1.3" x2="0" y2="2" width="0.2032" layer="21" curve="-19.708909" cap="flat"/>
+<wire x1="-3.7" y1="-1.3" x2="0" y2="-2" width="0.2032" layer="21" curve="19.708909" cap="flat"/>
+<wire x1="-4.5" y1="0" x2="-3.7" y2="-1.3" width="0.2032" layer="21" curve="61.158454" cap="flat"/>
+<wire x1="-4.5" y1="0" x2="-3.7" y2="1.3" width="0.2032" layer="21" curve="-61.158454" cap="flat"/>
+<wire x1="3.7" y1="-1.3" x2="4.5" y2="0" width="0.2032" layer="21" curve="61.158454" cap="flat"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-4.5" y="2" size="1.016" layer="21" ratio="18">&gt;NAME</text>
+<text x="-4.5" y="-3.5" size="1.016" layer="21" ratio="18">&gt;VALUE</text>
+</package>
+<package name="CSTLS_G8">
+<description>CSTGL_S 8x3 mm, grid 2.5 mm</description>
+<wire x1="-1.25" y1="1.4" x2="-1.25" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="0" y1="1.5" x2="3.3" y2="1" width="0.2032" layer="21" curve="-18.289543" cap="flat"/>
+<wire x1="3.3" y1="1" x2="4" y2="0" width="0.2032" layer="21" curve="-71.075356" cap="flat"/>
+<wire x1="-3.3" y1="1" x2="0" y2="1.5" width="0.2032" layer="21" curve="-18.289543" cap="flat"/>
+<wire x1="0" y1="-1.5" x2="3.3" y2="-1" width="0.2032" layer="21" curve="18.289543" cap="flat"/>
+<wire x1="-3.3" y1="-1" x2="0" y2="-1.5" width="0.2032" layer="21" curve="18.289543" cap="flat"/>
+<wire x1="3.3" y1="-1" x2="4" y2="0" width="0.2032" layer="21" curve="71.075356" cap="flat"/>
+<wire x1="-4" y1="0" x2="-3.3" y2="1" width="0.2032" layer="21" curve="-71.075356" cap="flat"/>
+<wire x1="-4" y1="0" x2="-3.3" y2="-1" width="0.2032" layer="21" curve="71.075356" cap="flat"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-4" y="2" size="1.016" layer="21" ratio="18">&gt;NAME</text>
+<text x="-4" y="-3" size="1.016" layer="21" ratio="18">&gt;VALUE</text>
+</package>
+<package name="CSTLA_T">
+<description>CSTLA_T 10x5 mm, grid 2.5 mm</description>
+<wire x1="-1.25" y1="2.4" x2="-1.25" y2="-2.4" width="0.2032" layer="21"/>
+<wire x1="0" y1="2.5" x2="4.4" y2="1.2" width="0.2032" layer="21" curve="-39.966213" cap="flat"/>
+<wire x1="-4.4" y1="1.2" x2="0" y2="2.5" width="0.2032" layer="21" curve="-39.966213" cap="flat"/>
+<wire x1="0" y1="-2.5" x2="4.4" y2="-1.2" width="0.2032" layer="21" curve="39.966213" cap="flat"/>
+<wire x1="-4.4" y1="-1.2" x2="0" y2="-2.5" width="0.2032" layer="21" curve="39.966213" cap="flat"/>
+<wire x1="-5" y1="0" x2="-4.4" y2="1.2" width="0.2032" layer="21" curve="-53.130102" cap="flat"/>
+<wire x1="-5" y1="0" x2="-4.4" y2="-1.2" width="0.2032" layer="21" curve="53.130102" cap="flat"/>
+<wire x1="4.4" y1="-1.2" x2="5" y2="0" width="0.2032" layer="21" curve="53.130102" cap="flat"/>
+<wire x1="4.4" y1="1.2" x2="5" y2="0" width="0.2032" layer="21" curve="-53.130102" cap="flat"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.08" y="2.54" size="1.016" layer="21" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.016" layer="21" ratio="18">&gt;VALUE</text>
+</package>
+<package name="CSTLS_X">
+<description>CSTGL_X 5.5x3.5 mm, grid 2.5 mm</description>
+<wire x1="-1.25" y1="1.6" x2="-1.25" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="2" y1="1.3" x2="2.8" y2="0" width="0.2032" layer="21" curve="-61.158454" cap="flat"/>
+<wire x1="0" y1="1.8" x2="2" y2="1.3" width="0.2032" layer="21" curve="-28.762789" cap="flat"/>
+<wire x1="-2" y1="1.3" x2="0" y2="1.8" width="0.2032" layer="21" curve="-28.762789" cap="flat"/>
+<wire x1="0" y1="-1.8" x2="2" y2="-1.3" width="0.2032" layer="21" curve="28.762789" cap="flat"/>
+<wire x1="-2" y1="-1.3" x2="0" y2="-1.8" width="0.2032" layer="21" curve="28.762789" cap="flat"/>
+<wire x1="2" y1="-1.3" x2="2.8" y2="0" width="0.2032" layer="21" curve="61.158454" cap="flat"/>
+<wire x1="-2.8" y1="0" x2="-2" y2="1.3" width="0.2032" layer="21" curve="-61.158454" cap="flat"/>
+<wire x1="-2.8" y1="0" x2="-2" y2="-1.3" width="0.2032" layer="21" curve="61.158454" cap="flat"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-4" y="2" size="1.016" layer="21" ratio="18">&gt;NAME</text>
+<text x="-4" y="-3" size="1.016" layer="21" ratio="18">&gt;VALUE</text>
+</package>
+<package name="CSTLA_X">
+<description>CSTLA_X 10x5 mm, grid 2.5 mm</description>
+<wire x1="-1.25" y1="2.4" x2="-1.25" y2="-2.4" width="0.2032" layer="21"/>
+<wire x1="0" y1="2.5" x2="4.4" y2="1.2" width="0.2032" layer="21" curve="-39.966213" cap="flat"/>
+<wire x1="-4.4" y1="1.2" x2="0" y2="2.5" width="0.2032" layer="21" curve="-39.966213" cap="flat"/>
+<wire x1="0" y1="-2.5" x2="4.4" y2="-1.2" width="0.2032" layer="21" curve="39.966213" cap="flat"/>
+<wire x1="-4.4" y1="-1.2" x2="0" y2="-2.5" width="0.2032" layer="21" curve="39.966213" cap="flat"/>
+<wire x1="-5" y1="0" x2="-4.4" y2="1.2" width="0.2032" layer="21" curve="-53.130102" cap="flat"/>
+<wire x1="-5" y1="0" x2="-4.4" y2="-1.2" width="0.2032" layer="21" curve="53.130102" cap="flat"/>
+<wire x1="4.4" y1="-1.2" x2="5" y2="0" width="0.2032" layer="21" curve="53.130102" cap="flat"/>
+<wire x1="4.4" y1="1.2" x2="5" y2="0" width="0.2032" layer="21" curve="-53.130102" cap="flat"/>
+<pad name="2" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-2.5" y="0" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.08" y="2.54" size="1.016" layer="21" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-3.81" size="1.016" layer="21" ratio="18">&gt;VALUE</text>
+</package>
+</packages>
+<symbols>
+<symbol name="CSTLS">
+<wire x1="-0.762" y1="1.524" x2="0.762" y2="1.524" width="0.127" layer="94"/>
+<wire x1="0.762" y1="1.524" x2="0.762" y2="-1.524" width="0.127" layer="94"/>
+<wire x1="0.762" y1="-1.524" x2="-0.762" y2="-1.524" width="0.127" layer="94"/>
+<wire x1="-0.762" y1="-1.524" x2="-0.762" y2="1.524" width="0.127" layer="94"/>
+<wire x1="1.778" y1="1.524" x2="1.778" y2="0" width="0.127" layer="94"/>
+<wire x1="1.778" y1="0" x2="1.778" y2="-1.524" width="0.127" layer="94"/>
+<wire x1="-1.778" y1="1.524" x2="-1.778" y2="0" width="0.127" layer="94"/>
+<wire x1="-1.778" y1="0" x2="-1.778" y2="-1.524" width="0.127" layer="94"/>
+<wire x1="-1.778" y1="0" x2="-3.048" y2="0" width="0.127" layer="94"/>
+<wire x1="-3.048" y1="0" x2="-4.572" y2="0" width="0.127" layer="94"/>
+<wire x1="-4.572" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="0" width="0.127" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="0" width="0.127" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="0" width="0.127" layer="94"/>
+<wire x1="1.778" y1="0" x2="3.048" y2="0" width="0.127" layer="94"/>
+<wire x1="3.048" y1="0" x2="4.572" y2="0" width="0.127" layer="94"/>
+<wire x1="4.572" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.048" y1="0" x2="-3.048" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="-3.048" y1="-3.81" x2="-1.778" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="-1.778" y1="-2.54" x2="-1.778" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="-1.778" y1="-3.81" x2="-1.778" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="-0.762" y1="-2.54" x2="-0.762" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="-0.762" y1="-3.81" x2="-0.762" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="-0.762" y1="-3.81" x2="0" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0.762" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="0.762" y1="-2.54" x2="0.762" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="0.762" y1="-3.81" x2="0.762" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="1.778" y1="-2.54" x2="1.778" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="1.778" y1="-3.81" x2="1.778" y2="-5.08" width="0.127" layer="94"/>
+<wire x1="1.778" y1="-3.81" x2="3.048" y2="-3.81" width="0.127" layer="94"/>
+<wire x1="3.048" y1="-3.81" x2="3.048" y2="0" width="0.127" layer="94"/>
+<wire x1="0" y1="-3.81" x2="0" y2="-6.096" width="0.127" layer="94"/>
+<wire x1="0" y1="-6.096" x2="0" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-4.572" y1="2.794" x2="4.572" y2="2.794" width="0.254" layer="94" style="shortdash"/>
+<wire x1="4.572" y1="2.794" x2="4.572" y2="-6.096" width="0.254" layer="94" style="shortdash"/>
+<wire x1="4.572" y1="-6.096" x2="-4.572" y2="-6.096" width="0.254" layer="94" style="shortdash"/>
+<wire x1="-4.572" y1="-6.096" x2="-4.572" y2="2.794" width="0.254" layer="94" style="shortdash"/>
+<text x="-4.572" y="3.302" size="1.27" layer="94">&gt;NAME</text>
+<text x="1.778" y="3.302" size="1.27" layer="94">&gt;VALUE</text>
+<pin name="3" x="5.08" y="0" visible="pad" length="point" direction="in" rot="R180"/>
+<pin name="1" x="-5.08" y="0" visible="pad" length="point" direction="out"/>
+<pin name="VSS" x="0" y="-7.62" visible="pad" length="point" direction="pwr" rot="R90"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="CSTLS_G" prefix="Q" uservalue="yes">
+<description>Ceramic resonator 2.00 to 10.00 MHz</description>
+<gates>
+<gate name="G$1" symbol="CSTLS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="*" package="CSTLS_G9">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="" package="CSTLS_G8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CSTLA_T" prefix="Q" uservalue="yes">
+<description>Ceramic resonator 10.01 to 13.00 MHz</description>
+<gates>
+<gate name="G$1" symbol="CSTLS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CSTLA_T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CSTLA_X" prefix="Q" uservalue="yes">
+<description>Ceramic resonator 13.01 to 15.99 MHz</description>
+<gates>
+<gate name="G$1" symbol="CSTLS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CSTLA_T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CSTLS_X" prefix="Q" uservalue="yes">
+<description>Ceramic resonator 16.00 to 70.00 MHz</description>
+<gates>
+<gate name="G$1" symbol="CSTLS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CSTLS_X">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="VSS" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
+</drawing>
+</eagle>
