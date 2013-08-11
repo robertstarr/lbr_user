@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="yes"/>
@@ -2822,6 +2822,27 @@ KingBright</description>
 <text x="-1.905" y="-2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.905" y="-3.81" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
+<package name="LTST-S270K">
+<description>&lt;b&gt;0603&lt;/b&gt; - LTST-S270K&lt;p&gt;
+Lite-On Technology Corp</description>
+<smd name="A" x="0" y="-1" dx="1.1" dy="1.1" layer="1" rot="R90"/>
+<smd name="C" x="0" y="1" dx="1.1" dy="1.1" layer="1" rot="R90"/>
+<text x="-0.9" y="-1.5" size="0.8128" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-2" y="-1.5" size="0.8128" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+<rectangle x1="-0.3" y1="0.15" x2="0.3" y2="0.2992" layer="21"/>
+<wire x1="-0.34" y1="0.825" x2="0.34" y2="0.825" width="0.0508" layer="51"/>
+<wire x1="0.34" y1="0.825" x2="0.34" y2="0.5" width="0.0508" layer="51"/>
+<wire x1="0.34" y1="0.5" x2="0.34" y2="-0.5" width="0.0508" layer="51"/>
+<wire x1="0.34" y1="-0.5" x2="0.34" y2="-0.825" width="0.0508" layer="51"/>
+<wire x1="0.34" y1="-0.825" x2="-0.34" y2="-0.825" width="0.0508" layer="51"/>
+<wire x1="-0.34" y1="-0.825" x2="-0.34" y2="0.825" width="0.0508" layer="51"/>
+<wire x1="0.34" y1="0.5" x2="0.71" y2="0.5" width="0.0508" layer="51"/>
+<wire x1="0.71" y1="0.5" x2="0.81" y2="0.4" width="0.0508" layer="51" curve="-90"/>
+<wire x1="0.81" y1="0.4" x2="0.81" y2="-0.4" width="0.0508" layer="51"/>
+<wire x1="0.81" y1="-0.4" x2="0.71" y2="-0.5" width="0.0508" layer="51" curve="-90"/>
+<wire x1="0.71" y1="-0.5" x2="0.34" y2="-0.5" width="0.0508" layer="51"/>
+<rectangle x1="-0.075" y1="-0.075" x2="0.075" y2="0.225" layer="21" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -4850,6 +4871,25 @@ Dialight</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTST-S270K" prefix="D">
+<description>Side Looking Chip LED</description>
+<gates>
+<gate name="G$2" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LTST-S270K">
+<connects>
+<connect gate="G$2" pin="A" pad="A"/>
+<connect gate="G$2" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name="">
