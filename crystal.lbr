@@ -2851,6 +2851,50 @@ body 2.5 x 2.0 mm</description>
 <text x="-3.7" y="3.1" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.2" y="-0.4" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="CB3">
+<description>CTS CBS Crystal&lt;p&gt;
+body 7 x 5 mm</description>
+<wire x1="-3.5" y1="1.6" x2="-3.25" y2="1.85" width="0.2032" layer="51"/>
+<wire x1="-3.25" y1="1.85" x2="-1.4" y2="1.85" width="0.2032" layer="51"/>
+<wire x1="-1.35" y1="1.85" x2="1.35" y2="1.85" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="1.85" x2="3.25" y2="1.85" width="0.2032" layer="51"/>
+<wire x1="3.25" y1="1.85" x2="3.5" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="1.6" x2="3.5" y2="1.05" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="1" x2="3.5" y2="-1" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="-1.05" x2="3.5" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-1.6" x2="3.25" y2="-1.85" width="0.2032" layer="51"/>
+<wire x1="3.25" y1="-1.85" x2="1.4" y2="-1.85" width="0.2032" layer="51"/>
+<wire x1="1.35" y1="-1.85" x2="-1.35" y2="-1.85" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-1.85" x2="-3.25" y2="-1.85" width="0.2032" layer="51"/>
+<wire x1="-3.25" y1="-1.85" x2="-3.5" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-1.6" x2="-3.5" y2="-1.05" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-1" x2="-3.5" y2="1" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="1.05" x2="-3.5" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="3.1275" y1="-1.585" x2="3.2525" y2="-1.46" width="0.0508" layer="51"/>
+<wire x1="3.2525" y1="-1.46" x2="3.2525" y2="1.46" width="0.0508" layer="51"/>
+<wire x1="3.2525" y1="1.46" x2="3.1275" y2="1.585" width="0.0508" layer="51"/>
+<wire x1="3.1275" y1="1.585" x2="-3.1275" y2="1.585" width="0.0508" layer="51"/>
+<wire x1="-3.1275" y1="1.585" x2="-3.2525" y2="1.46" width="0.0508" layer="51"/>
+<wire x1="-3.2525" y1="1.46" x2="-3.2525" y2="-1.46" width="0.0508" layer="51"/>
+<wire x1="-3.2525" y1="-1.46" x2="-3.1275" y2="-1.585" width="0.0508" layer="51"/>
+<wire x1="-3.1275" y1="-1.585" x2="3.1275" y2="-1.585" width="0.0508" layer="51"/>
+<wire x1="-0.254" y1="0.885" x2="-0.254" y2="-0.885" width="0.2032" layer="21"/>
+<wire x1="-0.254" y1="-0.885" x2="0.254" y2="-0.885" width="0.2032" layer="21"/>
+<wire x1="0.254" y1="-0.885" x2="0.254" y2="0.885" width="0.2032" layer="21"/>
+<wire x1="0.254" y1="0.885" x2="-0.254" y2="0.885" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0.885" x2="-0.635" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.885" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-1.143" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="0.885" x2="0.635" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-0.885" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="0" x2="1.143" y2="0" width="0.2032" layer="21"/>
+<smd name="4" x="-2.54" y="1.905" dx="1.2" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<smd name="3" x="2.54" y="1.905" dx="1.2" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<smd name="2" x="2.54" y="-1.905" dx="1.2" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<smd name="1" x="-2.54" y="-1.905" dx="1.2" dy="1.8" layer="1" roundness="20" rot="R90"/>
+<text x="-3.429" y="2.794" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.429" y="-3.429" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="Q">
@@ -4793,6 +4837,25 @@ Conner-Winfield</description>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="OUT" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CB3" prefix="Y">
+<description>&lt;b&gt;Crystal&lt;/b&gt; - CTS CB3</description>
+<gates>
+<gate name="G$1" symbol="QG1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CB3">
+<connects>
+<connect gate="G$1" pin="FO" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OE" pad="1"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
