@@ -118,6 +118,19 @@ Types: ELL6RH, ELL6SH, ELL6UH</description>
 <rectangle x1="-6.477" y1="-0.254" x2="-4.572" y2="0.254" layer="21"/>
 <rectangle x1="4.572" y1="-0.254" x2="6.477" y2="0.254" layer="21"/>
 </package>
+<package name="ELLCTV">
+<smd name="1" x="-4.34870625" y="-4.34870625" dx="4" dy="2.4" layer="1" rot="R135"/>
+<smd name="2" x="4.34870625" y="4.34870625" dx="4" dy="2.4" layer="1" rot="R135"/>
+<wire x1="-6" y1="6" x2="2.8" y2="6" width="0.2032" layer="21"/>
+<wire x1="6" y1="2.8" x2="6" y2="-5" width="0.2032" layer="21"/>
+<wire x1="6" y1="-5" x2="5" y2="-6" width="0.2032" layer="21"/>
+<wire x1="5" y1="-6" x2="-2.8" y2="-6" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-2.8" x2="-6" y2="6" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="5.0774" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="4.729690625" width="0.0508" layer="51"/>
+<text x="-5.715" y="6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-6.985" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -174,6 +187,23 @@ ELL6RH, ELL6SH, ELL6UH</description>
 </gates>
 <devices>
 <device name="" package="EXC-ELSA39">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ELLCTV" prefix="L">
+<description>Power Inductor&lt;p&gt;</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ELLCTV">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

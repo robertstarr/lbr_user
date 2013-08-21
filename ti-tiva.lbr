@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -888,10 +888,10 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pin name="PB1" x="30.48" y="48.26" length="short" rot="R180"/>
 <pin name="I2C0SCL/PB2" x="30.48" y="45.72" length="short" rot="R180"/>
 <pin name="I2C0SDA/PB3" x="30.48" y="43.18" length="short" rot="R180"/>
-<pin name="PC3/TDO" x="-30.48" y="20.32" length="short" direction="out"/>
+<pin name="PC3/TDO/SWO" x="-30.48" y="20.32" length="short" direction="out"/>
 <pin name="PC2/TDI" x="-30.48" y="22.86" length="short" direction="in"/>
-<pin name="PC1/TMS" x="-30.48" y="25.4" length="short" direction="in"/>
-<pin name="PC0/TCK" x="-30.48" y="27.94" length="short" direction="in"/>
+<pin name="PC1/TMS/SWDIO" x="-30.48" y="25.4" length="short" direction="in"/>
+<pin name="PC0/TCK/SWCLK" x="-30.48" y="27.94" length="short" direction="in"/>
 <pin name="PD6" x="30.48" y="12.7" length="short" rot="R180"/>
 <pin name="PB5" x="30.48" y="38.1" length="short" rot="R180"/>
 <pin name="PB4" x="30.48" y="40.64" length="short" rot="R180"/>
@@ -1068,10 +1068,10 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="PB5" pad="57"/>
 <connect gate="G$1" pin="PB6" pad="1"/>
 <connect gate="G$1" pin="PB7" pad="4"/>
-<connect gate="G$1" pin="PC0/TCK" pad="52"/>
-<connect gate="G$1" pin="PC1/TMS" pad="51"/>
+<connect gate="G$1" pin="PC0/TCK/SWCLK" pad="52"/>
+<connect gate="G$1" pin="PC1/TMS/SWDIO" pad="51"/>
 <connect gate="G$1" pin="PC2/TDI" pad="50"/>
-<connect gate="G$1" pin="PC3/TDO" pad="49"/>
+<connect gate="G$1" pin="PC3/TDO/SWO" pad="49"/>
 <connect gate="G$1" pin="PC4" pad="16"/>
 <connect gate="G$1" pin="PC5" pad="15"/>
 <connect gate="G$1" pin="PC6" pad="14"/>
