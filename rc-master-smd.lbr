@@ -2929,6 +2929,36 @@ Professional MELF Resistor, Vishay Beyschlag&lt;p&gt;
 <rectangle x1="0.6" y1="-0.7" x2="1.1" y2="0.7" layer="51"/>
 <rectangle x1="-1.1" y1="-0.7" x2="-0.6" y2="0.7" layer="51"/>
 </package>
+<package name="L2220">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt; - 2220&lt;p&gt;</description>
+<wire x1="-2.725" y1="2.425" x2="2.725" y2="2.425" width="0.1016" layer="51"/>
+<wire x1="2.725" y1="-2.425" x2="-2.725" y2="-2.425" width="0.1016" layer="51"/>
+<wire x1="-4.953" y1="3.3655" x2="4.953" y2="3.3655" width="0.2032" layer="21"/>
+<wire x1="4.953" y1="3.3655" x2="4.953" y2="-3.3655" width="0.2032" layer="21"/>
+<wire x1="4.953" y1="-3.3655" x2="-4.953" y2="-3.3655" width="0.2032" layer="21"/>
+<wire x1="-4.953" y1="-3.3655" x2="-4.953" y2="3.3655" width="0.2032" layer="21"/>
+<smd name="1" x="-3.0607" y="0" dx="3.0734" dy="6.096" layer="1"/>
+<smd name="2" x="3.0607" y="0" dx="3.0734" dy="6.096" layer="1"/>
+<text x="-4.7625" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.7625" y="-4.445" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.8" y1="-2.5" x2="-2.2" y2="2.5" layer="51"/>
+<rectangle x1="2.2" y1="-2.5" x2="2.8" y2="2.5" layer="51"/>
+<rectangle x1="-0.7" y1="-0.7" x2="0.7" y2="0.7" layer="35"/>
+</package>
+<package name="L2220MP">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt; - 2220 MicroPitch&lt;p&gt;</description>
+<wire x1="-2.725" y1="2.425" x2="2.725" y2="2.425" width="0.1016" layer="51"/>
+<wire x1="2.725" y1="-2.425" x2="-2.725" y2="-2.425" width="0.1016" layer="51"/>
+<wire x1="-1.143" y1="2.667" x2="1.143" y2="2.667" width="0.2032" layer="21"/>
+<wire x1="1.143" y1="-2.667" x2="-1.143" y2="-2.667" width="0.2032" layer="21"/>
+<smd name="1" x="-3.0607" y="0" dx="3.0734" dy="6.096" layer="1"/>
+<smd name="2" x="3.0607" y="0" dx="3.0734" dy="6.096" layer="1"/>
+<text x="-4.445" y="3.4925" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.445" y="-4.1275" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.8" y1="-2.5" x2="-2.2" y2="2.5" layer="51"/>
+<rectangle x1="2.2" y1="-2.5" x2="2.8" y2="2.5" layer="51"/>
+<rectangle x1="-0.7" y1="-0.7" x2="0.7" y2="0.7" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -4780,6 +4810,24 @@ Professional MELF Resistor, Vishay Beyschlag&lt;p&gt;
 </technologies>
 </device>
 <device name="0805HT" package="L0805HT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2220" package="L2220">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2220MP" package="L2220MP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
