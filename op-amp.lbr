@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5365,6 +5365,53 @@ Wideband, Ultra-Low Noise, Voltage-Feedback with Shutdown</description>
 <connect gate="A" pin="OUT" pad="6"/>
 <connect gate="P" pin="V+" pad="7"/>
 <connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA188" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+Precision, Low-Noise, Rail-to-Rail Output,
+36-V, Zero-Drift Operational Amplifiers</description>
+<gates>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
+<gate name="P" symbol="PWR+-" x="-17.78" y="0"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="P" pin="V+" pad="7"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DGK" package="MSOP08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="P" pin="V+" pad="7"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DBV" package="SOT23-5">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="4"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="P" pin="V+" pad="5"/>
+<connect gate="P" pin="V-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
