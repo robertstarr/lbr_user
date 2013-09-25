@@ -3938,10 +3938,10 @@ Audio Grade, Fully-Differential</description>
 <description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
 Audio Grade, Fully-Differential</description>
 <gates>
-<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
-<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24"/>
-<gate name="C" symbol="OPAMP_NV" x="0" y="-30.48"/>
-<gate name="D" symbol="OPAMP_NV" x="0" y="-45.72"/>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" swaplevel="1"/>
+<gate name="C" symbol="OPAMP_NV" x="0" y="-30.48" swaplevel="1"/>
+<gate name="D" symbol="OPAMP_NV" x="0" y="-45.72" swaplevel="1"/>
 <gate name="P" symbol="PWR+-" x="-17.78" y="0" addlevel="request"/>
 </gates>
 <devices>
@@ -4175,10 +4175,10 @@ JFET, wide bandwidth</description>
 <deviceset name="OPA4132" prefix="U">
 <description>&lt;b&gt;FET OP-AMP&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="OPAMP" x="0" y="0"/>
-<gate name="B" symbol="OPAMP" x="0" y="-15.24"/>
-<gate name="C" symbol="OPAMP" x="0" y="-30.48"/>
-<gate name="D" symbol="OPAMP" x="0" y="-45.72"/>
+<gate name="A" symbol="OPAMP" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="0" y="-15.24" swaplevel="1"/>
+<gate name="C" symbol="OPAMP" x="0" y="-30.48" swaplevel="1"/>
+<gate name="D" symbol="OPAMP" x="0" y="-45.72" swaplevel="1"/>
 <gate name="P" symbol="PWR+-" x="-15.24" y="0" addlevel="request"/>
 </gates>
 <devices>
@@ -4332,10 +4332,10 @@ Output Current Drive and Shutdown Option</description>
 <deviceset name="OPA4348" prefix="U">
 <description>&lt;b&gt;OP-AMP&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
-<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24"/>
-<gate name="C" symbol="OPAMP_NV" x="0" y="-30.48"/>
-<gate name="D" symbol="OPAMP_NV" x="0" y="-45.72"/>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" swaplevel="1"/>
+<gate name="C" symbol="OPAMP_NV" x="0" y="-30.48" swaplevel="1"/>
+<gate name="D" symbol="OPAMP_NV" x="0" y="-45.72" swaplevel="1"/>
 <gate name="P" symbol="PWR_V+-" x="-17.78" y="0" addlevel="request"/>
 </gates>
 <devices>
@@ -4431,8 +4431,8 @@ Output Current Drive and Shutdown Option</description>
 <deviceset name="OPA2348" prefix="U">
 <description>&lt;b&gt;OP-AMP&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
-<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24"/>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" swaplevel="1"/>
 <gate name="P" symbol="PWR+-" x="-17.78" y="0" addlevel="request"/>
 </gates>
 <devices>
@@ -4547,10 +4547,10 @@ Single-Supply, 10MHz, Rail-to-Rail Output, Low-Noise, JFET Amplifier</descriptio
 <description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
 Single-Supply, 10MHz, Rail-to-Rail Output, Low-Noise, JFET Amplifier</description>
 <gates>
-<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
-<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24"/>
-<gate name="C" symbol="OPAMP_NV" x="0" y="-30.48"/>
-<gate name="D" symbol="OPAMP_NV" x="0" y="-45.72"/>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" swaplevel="1"/>
+<gate name="C" symbol="OPAMP_NV" x="0" y="-30.48" swaplevel="1"/>
+<gate name="D" symbol="OPAMP_NV" x="0" y="-45.72" swaplevel="1"/>
 <gate name="P" symbol="PWRI_V+-" x="-20.32" y="0" addlevel="request"/>
 </gates>
 <devices>
@@ -4988,8 +4988,8 @@ Single-Supply, Low-Noise, Low-Distortion, Rail-to-Rail Op Amps</description>
 <deviceset name="THS4032" prefix="U">
 <description>&lt;b&gt;OP-AMP&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="OPAMP_NV" x="0" y="0" addlevel="always"/>
-<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" addlevel="always"/>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" addlevel="always" swaplevel="1"/>
 <gate name="P" symbol="PWRN_VCC+-" x="-17.78" y="0" addlevel="request"/>
 </gates>
 <devices>
@@ -5290,8 +5290,8 @@ Wideband, Ultra-Low Noise, Voltage-Feedback with Shutdown</description>
 <deviceset name="OPA2333" prefix="U">
 <description>&lt;b&gt;OP-AMP&lt;/b&gt;</description>
 <gates>
-<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
-<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24"/>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" swaplevel="1"/>
 <gate name="P" symbol="PWR+-" x="-17.78" y="0" addlevel="request"/>
 </gates>
 <devices>
