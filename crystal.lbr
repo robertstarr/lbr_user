@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -49,6 +49,8 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -2895,6 +2897,30 @@ body 7 x 5 mm</description>
 <text x="-3.429" y="2.794" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3.429" y="-3.429" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="ABM8G">
+<description>&lt;b&gt;ABRACON&lt;/b&gt;&lt;p&gt; ABM8G Series</description>
+<smd name="1" x="-1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="2" x="1.1" y="-0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="3" x="1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<smd name="4" x="-1.1" y="0.85" dx="1.4" dy="1.2" layer="1"/>
+<rectangle x1="-2.413" y1="-1.143" x2="-2.032" y2="-0.762" layer="51"/>
+<wire x1="-0.127" y1="1.397" x2="0.127" y2="1.397" width="0.2032" layer="51"/>
+<wire x1="-0.127" y1="-1.397" x2="0.127" y2="-1.397" width="0.2032" layer="51"/>
+<text x="-1.778" y="1.778" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.651" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-1.55" y1="1.2" x2="1.55" y2="1.2" width="0.1" layer="51"/>
+<wire x1="1.55" y1="1.2" x2="1.55" y2="-1.2" width="0.1" layer="51"/>
+<wire x1="1.55" y1="-1.2" x2="-1.55" y2="-1.2" width="0.1" layer="51"/>
+<wire x1="-1.55" y1="-1.2" x2="-1.55" y2="1.2" width="0.1" layer="51"/>
+<wire x1="-1.6" y1="-1.25" x2="1.6" y2="-1.25" width="0.0024" layer="57"/>
+<wire x1="1.6" y1="-1.25" x2="1.6" y2="1.25" width="0.0024" layer="57"/>
+<wire x1="1.6" y1="1.25" x2="-1.6" y2="1.25" width="0.0024" layer="57"/>
+<wire x1="-1.6" y1="1.25" x2="-1.6" y2="-1.25" width="0.0024" layer="57"/>
+<rectangle x1="-1.6" y1="0.45" x2="-0.6" y2="1.25" layer="51"/>
+<rectangle x1="0.6" y1="0.45" x2="1.6" y2="1.25" layer="51"/>
+<rectangle x1="0.6" y1="-1.25" x2="1.6" y2="-0.45" layer="51"/>
+<rectangle x1="-1.6" y1="-1.25" x2="-0.6" y2="-0.45" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="Q">
@@ -3112,9 +3138,9 @@ body 7 x 5 mm</description>
 <text x="2.54" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <rectangle x1="-1.524" y1="-1.651" x2="-1.016" y2="1.524" layer="94"/>
 <rectangle x1="1.016" y1="-1.651" x2="1.524" y2="1.524" layer="94"/>
-<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R90"/>
+<pin name="2" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 <pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="3" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<pin name="3" x="2.54" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="Q2-2G">
 <wire x1="1.143" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
@@ -4856,6 +4882,25 @@ Conner-Winfield</description>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="OE" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ABM8G" prefix="Y">
+<description>&lt;b&gt;CRYSTAL&lt;/b&gt; -  ABRACON&lt;p&gt;
+ABM8G Series, 3.2 x 2.5  mm</description>
+<gates>
+<gate name="G$1" symbol="CR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="ABM8G">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2 4"/>
+<connect gate="G$1" pin="3" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
