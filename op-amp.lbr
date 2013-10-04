@@ -5419,6 +5419,39 @@ Precision, Low-Noise, Rail-to-Rail Output,
 </device>
 </devices>
 </deviceset>
+<deviceset name="LMV651" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt; - Single</description>
+<gates>
+<gate name="P" symbol="PWR+-" x="-17.78" y="0" addlevel="request"/>
+<gate name="A" symbol="OPAMP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DBV" package="SOT23-5">
+<connects>
+<connect gate="A" pin="+IN" pad="1"/>
+<connect gate="A" pin="-IN" pad="3"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="V+" pad="5"/>
+<connect gate="P" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DCK" package="SC70-5">
+<connects>
+<connect gate="A" pin="+IN" pad="1"/>
+<connect gate="A" pin="-IN" pad="3"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="V+" pad="5"/>
+<connect gate="P" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

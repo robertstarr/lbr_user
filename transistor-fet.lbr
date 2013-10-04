@@ -71,6 +71,26 @@
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Mechanical" color="7" fill="1" visible="no" active="yes"/>
+<layer number="101" name="Gehäuse" color="7" fill="1" visible="no" active="yes"/>
+<layer number="102" name="ID" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="bMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="tGTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="bGTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="EXTD_ERC" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="no" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;Field Effect Transistors&lt;/b&gt;&lt;p&gt;
@@ -1740,6 +1760,29 @@ pitch 0.95 mm</description>
 <pad name="3" x="-1.27" y="0" drill="0.8128" diameter="1.524" shape="octagon" rot="R90"/>
 <text x="3.175" y="0" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SOT563">
+<description>SOT-563&lt;p&gt;
+DRL (R-PDSO-N6)</description>
+<wire x1="-0.85" y1="0.65" x2="0.85" y2="0.65" width="0.0508" layer="51"/>
+<wire x1="0.85" y1="0.65" x2="0.85" y2="-0.65" width="0.0508" layer="51"/>
+<wire x1="0.85" y1="-0.65" x2="-0.85" y2="-0.65" width="0.0508" layer="51"/>
+<wire x1="-0.85" y1="-0.65" x2="-0.85" y2="0.65" width="0.0508" layer="51"/>
+<wire x1="-0.9" y1="0.8" x2="-1" y2="0.8" width="0.2032" layer="21"/>
+<wire x1="-1" y1="0.8" x2="-1" y2="-0.8" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-0.8" x2="-0.9" y2="-0.8" width="0.2032" layer="21"/>
+<wire x1="0.9" y1="0.8" x2="1" y2="0.8" width="0.2032" layer="21"/>
+<wire x1="1" y1="0.8" x2="1" y2="-0.8" width="0.2032" layer="21"/>
+<wire x1="1" y1="-0.8" x2="0.9" y2="-0.8" width="0.2032" layer="21"/>
+<smd name="1" x="-0.5" y="-0.7" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="0" y="-0.7" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.5" y="-0.7" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.5" y="0.7" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="0" y="0.7" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="-0.5" y="0.7" dx="0.5" dy="0.3" layer="1" rot="R90"/>
+<text x="-1.5" y="-1" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="2" y="-1" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.3" y1="-0.9" x2="-1" y2="-0.6" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -7431,6 +7474,46 @@ PowerTrench, 30V, 4.9A, 42mOhm</description>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DMC2400UV" prefix="Q">
+<description>DUAL N/P CHANNEL FET</description>
+<gates>
+<gate name="A" symbol="EMOS-ND" x="-10.16" y="0"/>
+<gate name="B" symbol="EMOS-PD" x="10.16" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT563">
+<connects>
+<connect gate="A" pin="D" pad="6"/>
+<connect gate="A" pin="G" pad="2"/>
+<connect gate="A" pin="S" pad="1"/>
+<connect gate="B" pin="D" pad="3"/>
+<connect gate="B" pin="G" pad="5"/>
+<connect gate="B" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FQD10N20L" prefix="Q">
+<description>&lt;b&gt;N-CHANNEL QFET MOSFET&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="EMOS-ND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DPAK">
+<connects>
+<connect gate="G$1" pin="D" pad="4"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
