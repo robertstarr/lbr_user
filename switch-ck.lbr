@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -413,6 +413,22 @@ http://www.bobstarr.net</description>
 <vertex x="-5.08" y="5.08"/>
 </polygon>
 </package>
+<package name="PTS645-SMD">
+<description>Tactile Switch&lt;p&gt;6MM</description>
+<wire x1="3" y1="-3.25" x2="-3" y2="-3.25" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-3.25" x2="-3" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="-3" y1="3.25" x2="3" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="3" y1="3.25" x2="3" y2="-3.25" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.796" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="1.6007" width="0.0508" layer="51"/>
+<smd name="3" x="-4.15" y="-2.25" dx="1.75" dy="1.4" layer="1"/>
+<smd name="2" x="4.15" y="2.25" dx="1.75" dy="1.4" layer="1"/>
+<smd name="1" x="-4.15" y="2.25" dx="1.75" dy="1.4" layer="1" rot="R180"/>
+<smd name="4" x="4.15" y="-2.25" dx="1.75" dy="1.4" layer="1" rot="R180"/>
+<text x="-2.8575" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.8575" y="-4.445" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.8575" y="5.08" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SPDT">
@@ -747,6 +763,17 @@ http://www.bobstarr.net</description>
 <pin name="1" x="7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="C" x="-7.62" y="0" visible="pad" length="short" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="TS">
+<wire x1="-1.27" y1="-2.54" x2="-1.27" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-1.27" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.27" y1="0" x2="-3.175" y2="0" width="0.254" layer="94"/>
+<circle x="0" y="2.0637" radius="0.449" width="0.254" layer="94"/>
+<circle x="0" y="-2.0638" radius="0.449" width="0.254" layer="94"/>
+<text x="-6.35" y="-1.905" size="1.778" layer="95" rot="R90">&gt;NAME</text>
+<text x="-3.81" y="3.175" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
+<pin name="P" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="S" x="0" y="5.08" visible="off" length="short" direction="pas" rot="R270"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="2M1-SP1-T2-B4-M6" prefix="S">
@@ -867,6 +894,25 @@ http://www.bobstarr.net</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PTS645S???SMTR" prefix="S">
+<description>TACT SWITCH</description>
+<gates>
+<gate name="G$1" symbol="TS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PTS645-SMD">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
