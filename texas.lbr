@@ -6282,10 +6282,10 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <pin name="TIMER" x="-7.62" y="-17.78" visible="pad" length="middle" rot="R90"/>
 <pin name="OV" x="-35.56" y="0" length="middle"/>
 <pin name="IMON" x="38.1" y="-5.08" length="middle" direction="out" rot="R180"/>
-<pin name="GND" x="22.86" y="-17.78" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="GND" x="25.4" y="-17.78" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="!PG!" x="38.1" y="5.08" length="middle" direction="out" rot="R180"/>
 <pin name="!FLT!" x="38.1" y="0" length="middle" direction="out" rot="R180"/>
-<pin name="OUT" x="22.86" y="17.78" visible="pad" length="middle" direction="in" rot="R270"/>
+<pin name="OUT" x="25.4" y="17.78" visible="pad" length="middle" direction="in" rot="R270"/>
 <pin name="GATE" x="7.62" y="17.78" visible="pad" length="middle" direction="out" rot="R270"/>
 <pin name="SENSE" x="-7.62" y="17.78" visible="pad" length="middle" direction="in" rot="R270"/>
 <pin name="VCC" x="-22.86" y="17.78" visible="pad" length="middle" direction="in" rot="R270"/>
@@ -6298,10 +6298,24 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <text x="-24.765" y="8.89" size="1.524" layer="95">VCC</text>
 <text x="-10.795" y="8.89" size="1.524" layer="95">SENSE</text>
 <text x="5.08" y="8.89" size="1.524" layer="95">GATE</text>
-<text x="20.955" y="8.89" size="1.524" layer="95">OUT</text>
+<text x="23.495" y="8.89" size="1.524" layer="95">OUT</text>
 <text x="-25.4" y="-10.795" size="1.524" layer="95">PROG</text>
 <text x="-10.795" y="-10.795" size="1.524" layer="95">TIMER</text>
-<text x="20.955" y="-10.795" size="1.524" layer="95">GND</text>
+<text x="23.495" y="-10.795" size="1.524" layer="95">GND</text>
+</symbol>
+<symbol name="TPS7A45XX">
+<wire x1="-10.16" y1="7.62" x2="10.16" y2="7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.4064" layer="94"/>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-10.16" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="IN" x="-15.24" y="5.08" length="middle" direction="in"/>
+<pin name="!SHDN!" x="-15.24" y="0" length="middle" direction="in"/>
+<pin name="OUT" x="15.24" y="5.08" length="middle" direction="pas" rot="R180"/>
+<pin name="SENSE" x="15.24" y="0" length="middle" direction="pas" rot="R180"/>
+<pin name="GND@3" x="-15.24" y="-5.08" length="middle" direction="pwr"/>
+<pin name="GND@6" x="15.24" y="-5.08" length="middle" direction="pas" rot="R180"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -9927,6 +9941,28 @@ SWIFT, 1.5-A, 60-V, Step-Down</description>
 <connect gate="G$1" pin="UVEN" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="14"/>
 <connect gate="G$1" pin="VREF" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS7A45XX" prefix="U">
+<description>&lt;b&gt;LOW-DROPOUT REGULATOR&lt;/b&gt;&lt;p&gt;
+1.5-A LOW-NOISE FAST-TRANSIENT-RESPONSE&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="TPS7A45XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DCQ" package="SOT223-6">
+<connects>
+<connect gate="G$1" pin="!SHDN!" pad="1"/>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@6" pad="6"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="SENSE" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
