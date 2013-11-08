@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -381,19 +381,17 @@ CC-E Series, TDK-Lambda</description>
 <pad name="5" x="17.78" y="-2.54" drill="0.6096"/>
 <pad name="6" x="17.78" y="2.54" drill="0.6096"/>
 <pad name="7" x="17.78" y="7.62" drill="0.6096"/>
-<hole x="-12.7" y="11.3" drill="1.5"/>
-<hole x="12.7" y="-11.3" drill="1.5"/>
 <wire x1="-17.78" y1="-11.3" x2="17.78" y2="-11.3" width="0.0508" layer="52"/>
 <wire x1="17.78" y1="-11.3" x2="17.78" y2="11.3" width="0.0508" layer="52"/>
 <wire x1="17.78" y1="11.3" x2="-17.78" y2="11.3" width="0.0508" layer="52"/>
 <wire x1="-17.78" y1="11.3" x2="-17.78" y2="-11.3" width="0.0508" layer="52"/>
-<wire x1="-13.716" y1="11.557" x2="-18.034" y2="11.557" width="0.254" layer="21"/>
+<wire x1="-14.224" y1="11.557" x2="-18.034" y2="11.557" width="0.254" layer="21"/>
 <wire x1="-18.034" y1="11.557" x2="-18.034" y2="8.636" width="0.254" layer="21"/>
-<wire x1="-11.684" y1="11.557" x2="18.034" y2="11.557" width="0.254" layer="21"/>
+<wire x1="-11.176" y1="11.557" x2="18.034" y2="11.557" width="0.254" layer="21"/>
 <wire x1="18.034" y1="11.557" x2="18.034" y2="8.636" width="0.254" layer="21"/>
 <wire x1="-18.034" y1="-8.636" x2="-18.034" y2="-11.557" width="0.254" layer="21"/>
-<wire x1="-18.034" y1="-11.557" x2="11.557" y2="-11.557" width="0.254" layer="21"/>
-<wire x1="13.843" y1="-11.557" x2="18.034" y2="-11.557" width="0.254" layer="21"/>
+<wire x1="-18.034" y1="-11.557" x2="11.14425" y2="-11.557" width="0.254" layer="21"/>
+<wire x1="14.25575" y1="-11.557" x2="18.034" y2="-11.557" width="0.254" layer="21"/>
 <wire x1="18.034" y1="-11.557" x2="18.034" y2="-8.509" width="0.254" layer="21"/>
 <wire x1="18.034" y1="-6.604" x2="18.034" y2="-3.556" width="0.254" layer="21"/>
 <wire x1="18.034" y1="-1.524" x2="18.034" y2="1.524" width="0.254" layer="21"/>
@@ -409,6 +407,8 @@ CC-E Series, TDK-Lambda</description>
 <text x="16.51" y="2.921" size="0.8128" layer="21" ratio="10" rot="R180">TRM</text>
 <text x="16.51" y="-2.159" size="0.8128" layer="21" ratio="10" rot="R180">COM</text>
 <text x="16.51" y="-7.239" size="0.8128" layer="21" ratio="10" rot="R180">+VOUT</text>
+<pad name="S1" x="-12.7" y="11.3" drill="1.5"/>
+<pad name="S2" x="12.7" y="-11.3" drill="1.5"/>
 </package>
 </packages>
 <symbols>
@@ -644,6 +644,8 @@ CONVERTER</text>
 <pin name="-VOUT" x="20.32" y="-2.54" length="middle" direction="pas" rot="R180"/>
 <pin name="RC" x="-20.32" y="-7.62" length="middle" direction="pas"/>
 <pin name="TRM" x="20.32" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="SHLD" x="0" y="-15.24" visible="off" length="middle" direction="pas" rot="R90"/>
+<text x="-2.54" y="-8.89" size="1.524" layer="95">SHLD</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1192,6 +1194,7 @@ TDK-Lambda CC-E Series</description>
 <connect gate="G$1" pin="-VOUT" pad="4"/>
 <connect gate="G$1" pin="COM" pad="5"/>
 <connect gate="G$1" pin="RC" pad="2"/>
+<connect gate="G$1" pin="SHLD" pad="S1 S2"/>
 <connect gate="G$1" pin="TRM" pad="6"/>
 </connects>
 <technologies>
