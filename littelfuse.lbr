@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -85,8 +85,8 @@
 USE AT YOUR OWN RISK!&lt;p&gt;
 &lt;author&gt;Copyright (C) 2012, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
 <packages>
-<package name="TMOV14R275">
-<description>MOV</description>
+<package name="TMOV14R275E">
+<description>&lt;b&gt;TMOV&lt;/b&gt; - 14mm</description>
 <wire x1="-7.747" y1="-1.905" x2="-6.604" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="5.461" y1="-1.905" x2="7.493" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="7.493" y1="1.905" x2="3.302" y2="1.905" width="0.2032" layer="21"/>
@@ -104,7 +104,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="3.81" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-5.08" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TMOV20R275">
+<package name="TMOV20R275E">
 <description>MOV</description>
 <wire x1="-8.5" y1="-4" x2="8.5" y2="-4" width="0.2032" layer="21"/>
 <wire x1="-8.5" y1="-4" x2="-8.5" y2="1.5" width="0.2032" layer="21" curve="-196.257871"/>
@@ -121,8 +121,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="-7.62" y1="-3.81" x2="7.62" y2="5.08" layer="39"/>
 <rectangle x1="-11.43" y1="-3.81" x2="11.43" y2="1.27" layer="39"/>
 </package>
-<package name="ITMOV14R275">
-<description>ITMOV</description>
+<package name="TMOV14R275M">
+<description>&lt;b&gt;ITMOV&lt;/b&gt; - 14mm</description>
 <wire x1="-5.5" y1="-4" x2="5.5" y2="-4" width="0.2032" layer="21"/>
 <wire x1="-5.5" y1="-4" x2="-5.5" y2="1.5" width="0.2032" layer="21" curve="-196.257871"/>
 <wire x1="-4.5" y1="5.5" x2="5.5" y2="5.5" width="0.2032" layer="21"/>
@@ -135,8 +135,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-4.445" y="6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.27" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="ITMOV20R275">
-<description>ITMOV</description>
+<package name="TMOV20R275M">
+<description>&lt;b&gt;ITMOV&lt;/b&gt; - 20mm</description>
 <wire x1="-7.5" y1="-4" x2="7.5" y2="-4" width="0.2032" layer="21"/>
 <wire x1="-7.5" y1="-4" x2="-7.5" y2="1.5" width="0.2032" layer="21" curve="-196.257871"/>
 <wire x1="-6" y1="5.5" x2="7.5" y2="5.5" width="0.2032" layer="21"/>
@@ -165,7 +165,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="-1.27" y1="-1.143" x2="1.27" y2="-1.143" width="0.2032" layer="21"/>
 </package>
 <package name="TMOV20R320M">
-<description>&lt;b&gt;ITMOV&lt;/b&gt;</description>
+<description>&lt;b&gt;ITMOV&lt;/b&gt; - 20mm</description>
 <wire x1="-8.9662" y1="-1.4859" x2="-7.1755" y2="-1.4859" width="0.2032" layer="21"/>
 <wire x1="-7.1755" y1="-1.4859" x2="-5.9055" y2="-2.7559" width="0.2032" layer="21" curve="-90"/>
 <wire x1="-5.9055" y1="-2.7559" x2="-5.9055" y2="-3.3909" width="0.2032" layer="21"/>
@@ -179,6 +179,20 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="3" x="6.7945" y="-0.7493" drill="1.016" shape="octagon"/>
 <text x="-5.08" y="-6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.27" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TMOV14RP250M">
+<description>&lt;b&gt;ITMOV&lt;/b&gt; - 14mm</description>
+<wire x1="-4" y1="-4.5" x2="4.5" y2="-4.5" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-4.5" x2="-4" y2="1.5" width="0.2032" layer="21" curve="-180"/>
+<wire x1="-3" y1="6" x2="5" y2="6" width="0.2032" layer="21"/>
+<wire x1="4.5" y1="-4.5" x2="5" y2="6" width="0.2032" layer="21" curve="180"/>
+<wire x1="-4" y1="1.5" x2="-4" y2="5" width="0.2032" layer="21"/>
+<wire x1="-4" y1="5" x2="-3" y2="6" width="0.2032" layer="21" curve="-90"/>
+<pad name="1" x="-4.5" y="-2" drill="1.016" shape="square"/>
+<pad name="2" x="3" y="1.5" drill="1.016" shape="square"/>
+<pad name="3" x="8" y="2.5" drill="1.016" shape="square"/>
+<text x="-3.445" y="6.85" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.27" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -268,13 +282,13 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="ITMOV20R275" prefix="MOV">
+<deviceset name="TMOV20R275M" prefix="MOV">
 <description>&lt;b&gt;ITMOV&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="ITMOV" x="-5" y="-2"/>
 </gates>
 <devices>
-<device name="" package="ITMOV20R275">
+<device name="" package="TMOV20R275M">
 <connects>
 <connect gate="G$1" pin="FUSE" pad="2"/>
 <connect gate="G$1" pin="MONITOR" pad="3"/>
@@ -286,13 +300,13 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="ITMOV14R275" prefix="MOV">
+<deviceset name="TMOV14R275M" prefix="MOV">
 <description>&lt;b&gt;ITMOV&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="ITMOV" x="-4.5" y="-2"/>
 </gates>
 <devices>
-<device name="" package="ITMOV14R275">
+<device name="" package="TMOV14R275M">
 <connects>
 <connect gate="G$1" pin="FUSE" pad="2"/>
 <connect gate="G$1" pin="MONITOR" pad="3"/>
@@ -304,13 +318,13 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="TMOV14R275" prefix="MOV">
+<deviceset name="TMOV14R275E" prefix="MOV">
 <description>&lt;b&gt;TMOV&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="TMOV" x="-4.5" y="-2"/>
 </gates>
 <devices>
-<device name="" package="TMOV14R275">
+<device name="" package="TMOV14R275E">
 <connects>
 <connect gate="G$1" pin="FUSE" pad="1"/>
 <connect gate="G$1" pin="MOV" pad="2"/>
@@ -321,13 +335,13 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </device>
 </devices>
 </deviceset>
-<deviceset name="TMOV20R275" prefix="MOV">
+<deviceset name="TMOV20R275E" prefix="MOV">
 <description>&lt;b&gt;TMOV&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="TMOV" x="-4.5" y="-2"/>
 </gates>
 <devices>
-<device name="" package="TMOV20R275">
+<device name="" package="TMOV20R275E">
 <connects>
 <connect gate="G$1" pin="FUSE" pad="2"/>
 <connect gate="G$1" pin="MOV" pad="1"/>
@@ -362,6 +376,24 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </gates>
 <devices>
 <device name="" package="TMOV20R320M">
+<connects>
+<connect gate="G$1" pin="FUSE" pad="2"/>
+<connect gate="G$1" pin="MONITOR" pad="3"/>
+<connect gate="G$1" pin="MOV" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMOV14RP250M" prefix="MOV">
+<description>&lt;b&gt;TMOV&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="ITMOV" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="" package="TMOV14RP250M">
 <connects>
 <connect gate="G$1" pin="FUSE" pad="2"/>
 <connect gate="G$1" pin="MONITOR" pad="3"/>
