@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -69,6 +69,8 @@
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <library>
 <description>&lt;b&gt;NPN Transistors&lt;/b&gt;&lt;p&gt;
@@ -833,31 +835,42 @@ grid 2.54 mm</description>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
 <package name="SOT89-ECB">
-<description>&lt;b&gt;SOT89&lt;/b&gt; Emitter, Collector, Base</description>
-<wire x1="-0.7112" y1="-0.4064" x2="-0.7112" y2="0.9144" width="0.6096" layer="1"/>
-<wire x1="-0.7112" y1="0.9144" x2="0.7112" y2="0.9144" width="0.6096" layer="1"/>
-<wire x1="0.7112" y1="0.9144" x2="0.7112" y2="-0.4064" width="0.6096" layer="1"/>
-<wire x1="0.7112" y1="-0.4064" x2="-0.7112" y2="-0.4064" width="0.6096" layer="1"/>
-<wire x1="-0.2032" y1="-0.4064" x2="-0.2032" y2="0.508" width="0.6096" layer="1"/>
-<wire x1="0.2032" y1="0.508" x2="0.2032" y2="-0.4064" width="0.6096" layer="1"/>
-<wire x1="0" y1="-1.4224" x2="0" y2="-0.7112" width="0.6096" layer="1"/>
-<wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.2032" layer="51"/>
-<wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.2032" layer="21"/>
-<wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.2032" layer="21"/>
-<wire x1="-2.235" y1="1.219" x2="-1.27" y2="1.219" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="1.2" x2="1.27" y2="1.2" width="0.2032" layer="51"/>
-<wire x1="1.27" y1="1.219" x2="2.235" y2="1.219" width="0.2032" layer="21"/>
-<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.2032" layer="51"/>
+<description>SOT98 Emitter Collector Basis</description>
+<wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="1.219" x2="2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-0.7874" y1="1.5748" x2="-0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.1998" layer="51"/>
 <smd name="E" x="-1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
 <smd name="B" x="1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
-<smd name="C" x="0" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
-<smd name="C@1" x="0" y="1.575" dx="2.032" dy="1.27" layer="1"/>
-<text x="1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<smd name="C" x="0" y="-1.727" dx="0.8" dy="1.9" layer="1" stop="no" cream="no"/>
+<smd name="C@1" x="0" y="0.6858" dx="2.032" dy="3.302" layer="1" roundness="75"/>
+<text x="-2.54" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.4051" y="-4.3449" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
 <rectangle x1="1.27" y1="-2.1082" x2="1.7272" y2="-1.27" layer="51"/>
 <rectangle x1="-0.2794" y1="-2.1082" x2="0.2794" y2="-1.27" layer="51"/>
-<rectangle x1="-0.89" y1="1.19" x2="0.89" y2="2.11" layer="51"/>
+<rectangle x1="-0.4" y1="-2.68" x2="0.4" y2="-1.28" layer="31"/>
+<rectangle x1="-0.5" y1="-2.78" x2="0.5" y2="-0.889" layer="29"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-0.7874" y="1.3208"/>
+<vertex x="-0.7874" y="1.5748"/>
+<vertex x="-0.3556" y="2.0066"/>
+<vertex x="0.3048" y="2.0066"/>
+<vertex x="0.3556" y="2.0066"/>
+<vertex x="0.7874" y="1.5748"/>
+<vertex x="0.7874" y="1.2954"/>
+<vertex x="-0.7874" y="1.2954"/>
+</polygon>
+<wire x1="-1.27" y1="1.27" x2="-2.286" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-2.286" y1="1.27" x2="-2.286" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.286" y1="1.27" x2="2.286" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.286" y1="1.27" x2="1.27" y2="1.27" width="0.2032" layer="21"/>
 </package>
 <package name="TO92-BCE">
 <description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
@@ -931,31 +944,42 @@ grid 5.08 mm</description>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
 <package name="SOT89-BCE">
-<description>&lt;b&gt;SOT89&lt;/b&gt; Base, Collector, Emitter</description>
-<wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.2032" layer="51"/>
-<wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.2032" layer="21"/>
-<wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.2032" layer="21"/>
-<wire x1="-2.235" y1="1.219" x2="-1.27" y2="1.219" width="0.2032" layer="21"/>
-<wire x1="-1.27" y1="1.2" x2="1.27" y2="1.2" width="0.2032" layer="51"/>
-<wire x1="1.27" y1="1.219" x2="2.235" y2="1.219" width="0.2032" layer="21"/>
-<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.2032" layer="51"/>
-<wire x1="-0.7112" y1="-0.4064" x2="-0.7112" y2="0.9144" width="0.6096" layer="1"/>
-<wire x1="-0.7112" y1="0.9144" x2="0.7112" y2="0.9144" width="0.6096" layer="1"/>
-<wire x1="0.7112" y1="0.9144" x2="0.7112" y2="-0.4064" width="0.6096" layer="1"/>
-<wire x1="0.7112" y1="-0.4064" x2="-0.7112" y2="-0.4064" width="0.6096" layer="1"/>
-<wire x1="-0.2032" y1="-0.4064" x2="-0.2032" y2="0.508" width="0.6096" layer="1"/>
-<wire x1="0.2032" y1="0.508" x2="0.2032" y2="-0.4064" width="0.6096" layer="1"/>
-<wire x1="0" y1="-1.4224" x2="0" y2="-0.7112" width="0.6096" layer="1"/>
+<description>SOT98 Basis Collector Emitter</description>
+<wire x1="2.235" y1="-1.245" x2="-2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="2.235" y1="1.219" x2="2.235" y2="-1.245" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="-1.245" x2="-2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-2.235" y1="1.219" x2="2.235" y2="1.219" width="0.127" layer="51"/>
+<wire x1="-0.7874" y1="1.5748" x2="-0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="-0.3556" y1="2.0066" x2="0.3556" y2="2.0066" width="0.1998" layer="51"/>
+<wire x1="0.3556" y1="2.0066" x2="0.7874" y2="1.5748" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.1998" layer="51"/>
+<wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.1998" layer="51"/>
 <smd name="B" x="-1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
 <smd name="E" x="1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
-<smd name="C" x="0" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
-<smd name="C@1" x="0" y="1.575" dx="2.032" dy="1.27" layer="1"/>
-<text x="1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<smd name="C" x="0" y="-1.727" dx="0.8" dy="1.9" layer="1" stop="no" cream="no"/>
+<smd name="C@1" x="0" y="0.6858" dx="2.032" dy="3.302" layer="1" roundness="75"/>
+<text x="-2.54" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.4051" y="-4.3449" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
 <rectangle x1="1.27" y1="-2.1082" x2="1.7272" y2="-1.27" layer="51"/>
 <rectangle x1="-0.2794" y1="-2.1082" x2="0.2794" y2="-1.27" layer="51"/>
-<rectangle x1="-0.89" y1="1.19" x2="0.89" y2="2.11" layer="51"/>
+<rectangle x1="-0.4" y1="-2.68" x2="0.4" y2="-1.28" layer="31"/>
+<rectangle x1="-0.5" y1="-2.78" x2="0.5" y2="-0.889" layer="29"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-0.7874" y="1.3208"/>
+<vertex x="-0.7874" y="1.5748"/>
+<vertex x="-0.3556" y="2.0066"/>
+<vertex x="0.3048" y="2.0066"/>
+<vertex x="0.3556" y="2.0066"/>
+<vertex x="0.7874" y="1.5748"/>
+<vertex x="0.7874" y="1.2954"/>
+<vertex x="-0.7874" y="1.2954"/>
+</polygon>
+<wire x1="2.286" y1="1.27" x2="1.27" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-1.27" y1="1.27" x2="-2.286" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="2.286" y1="1.27" x2="2.286" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-2.286" y1="1.27" x2="-2.286" y2="-1.27" width="0.2032" layer="21"/>
 </package>
 <package name="SC59-BEC">
 <description>&lt;b&gt;SC59&lt;/b&gt; (SOT23) Motorola</description>
