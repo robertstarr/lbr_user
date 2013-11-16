@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -3925,7 +3925,7 @@ ROHM : UMT3 ; EIAJ : SC-70</description>
 </devices>
 </deviceset>
 <deviceset name="ZXTP2012G" prefix="Q">
-<description>PNP Transistor&lt;p&gt;
+<description>&lt;b&gt;PNP Transistor&lt;/b&gt;&lt;p&gt;
 60V MEDIUM POWER LOW SATURATION</description>
 <gates>
 <gate name="G$1" symbol="PNP-2C" x="0" y="0"/>
@@ -4191,6 +4191,25 @@ complimentary to CMPTA06</description>
 <deviceset name="FCX593" prefix="Q">
 <description>&lt;b&gt;PNP TRANSISTOR&lt;/b&gt;&lt;p&gt;
 Silicon planar high voltage transistor, Zetex</description>
+<gates>
+<gate name="G$1" symbol="PNP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT89-BCE">
+<connects>
+<connect gate="G$1" pin="B" pad="B"/>
+<connect gate="G$1" pin="C" pad="C C@1"/>
+<connect gate="G$1" pin="E" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ZXTP4003ZTA" prefix="Q">
+<description>&lt;b&gt;PNP Transistor&lt;/b&gt;&lt;p&gt;
+100V LED DRIVING TRANSISTOR</description>
 <gates>
 <gate name="G$1" symbol="PNP" x="0" y="0"/>
 </gates>

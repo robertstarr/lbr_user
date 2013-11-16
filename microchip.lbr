@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -24546,10 +24546,10 @@ Push-Pull Output Sub-Microamp</description>
 7/8-Bit Volatile with I2C Interface</description>
 <gates>
 <gate name="-CTL" symbol="MCP443X" x="0" y="0" addlevel="always"/>
-<gate name="-0" symbol="DIGIPOT" x="30.48" y="7.62" addlevel="always"/>
-<gate name="-1" symbol="DIGIPOT" x="48.26" y="7.62" addlevel="always"/>
-<gate name="-2" symbol="DIGIPOT" x="30.48" y="-17.78" addlevel="always"/>
-<gate name="-3" symbol="DIGIPOT" x="48.26" y="-17.78" addlevel="always"/>
+<gate name="-0" symbol="DIGIPOT" x="30.48" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-1" symbol="DIGIPOT" x="48.26" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="DIGIPOT" x="30.48" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="DIGIPOT" x="48.26" y="-17.78" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="TSSOP20">
