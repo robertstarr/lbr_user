@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -412,6 +412,7 @@ http://www.bobstarr.net</description>
 <vertex x="-5.08" y="3.81"/>
 <vertex x="-5.08" y="5.08"/>
 </polygon>
+<pad name="C1" x="3.81" y="0" drill="0.8128" shape="octagon" rot="R180"/>
 </package>
 <package name="PTS645-SMD">
 <description>Tactile Switch&lt;p&gt;6MM</description>
@@ -890,7 +891,7 @@ http://www.bobstarr.net</description>
 <connect gate="1" pin="2" pad="2"/>
 <connect gate="1" pin="4" pad="4"/>
 <connect gate="1" pin="8" pad="8"/>
-<connect gate="1" pin="C" pad="C"/>
+<connect gate="1" pin="C" pad="C C1"/>
 </connects>
 <technologies>
 <technology name=""/>
