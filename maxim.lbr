@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -51,7 +51,7 @@
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="94" name="Symbols" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="95" name="Names" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
@@ -14058,6 +14058,25 @@ body 3.5 x 9mm, exposed pad</description>
 <pin name="VDD@20" x="17.78" y="-22.86" length="middle" direction="pwr" rot="R180"/>
 <pin name="VDD@30" x="17.78" y="-25.4" length="middle" direction="pwr" rot="R180"/>
 <pin name="VCC@34" x="17.78" y="-33.02" length="middle" direction="pwr" rot="R180"/>
+</symbol>
+<symbol name="MAX889">
+<wire x1="10.16" y1="-12.7" x2="-10.16" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="-10.16" y2="-12.7" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="12.7" x2="10.16" y2="12.7" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-12.7" x2="10.16" y2="12.7" width="0.4064" layer="94"/>
+<text x="-10.16" y="13.335" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
+<text x="0" y="10.16" size="1.524" layer="95" align="center">IN</text>
+<pin name="!SHDN!" x="-15.24" y="7.62" length="middle" direction="in"/>
+<pin name="GND@3" x="0" y="-17.78" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<pin name="IN" x="0" y="17.78" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="CAP+" x="-15.24" y="2.54" length="middle" direction="pas"/>
+<pin name="CAP-" x="-15.24" y="-7.62" length="middle" direction="pas"/>
+<pin name="FB" x="15.24" y="7.62" length="middle" direction="in" rot="R180"/>
+<pin name="OUT" x="15.24" y="-2.54" length="middle" rot="R180"/>
+<text x="0" y="-10.16" size="1.524" layer="95" align="center">GND</text>
+<pin name="GND@8" x="5.08" y="-17.78" visible="pad" length="middle" direction="pwr" rot="R90"/>
+<text x="5.08" y="-10.16" size="1.524" layer="95" align="center">GND</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -29722,6 +29741,29 @@ Precision, Low-Power, High-Voltage</description>
 <connect gate="G$1" pin="VDD@18" pad="18"/>
 <connect gate="G$1" pin="VDD@20" pad="20"/>
 <connect gate="G$1" pin="VDD@30" pad="30"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX889" prefix="U">
+<description>High Frequency Inverting Charge Pump</description>
+<gates>
+<gate name="G$1" symbol="MAX889" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="G$1" pin="!SHDN!" pad="6"/>
+<connect gate="G$1" pin="CAP+" pad="2"/>
+<connect gate="G$1" pin="CAP-" pad="4"/>
+<connect gate="G$1" pin="FB" pad="7"/>
+<connect gate="G$1" pin="GND@3" pad="3"/>
+<connect gate="G$1" pin="GND@8" pad="8"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
