@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -770,6 +770,25 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <circle x="4.445" y="0" radius="0.635" width="0.254" layer="95"/>
 <circle x="4.445" y="-2.54" radius="0.635" width="0.254" layer="95"/>
 </symbol>
+<symbol name="SYM_JUNCTION">
+<circle x="0" y="0" radius="0.70995" width="0" layer="95"/>
+</symbol>
+<symbol name="SYM_LAMP">
+<wire x1="3.81" y1="1.905" x2="3.81" y2="-2.54" width="0.4064" layer="95"/>
+<wire x1="3.81" y1="-2.54" x2="2.54" y2="-2.54" width="0.4064" layer="95"/>
+<wire x1="-3.81" y1="-2.54" x2="-3.81" y2="1.905" width="0.4064" layer="95"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-2.54" width="0.1524" layer="95"/>
+<wire x1="-2.54" y1="-2.54" x2="-3.81" y2="-2.54" width="0.4064" layer="95"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-2.54" width="0.1524" layer="95"/>
+<wire x1="2.54" y1="-2.54" x2="-2.54" y2="-2.54" width="0.4064" layer="95"/>
+<wire x1="-2.54" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="95" curve="-233.115665"/>
+<wire x1="-1.27" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="95" curve="-233.115665"/>
+<wire x1="0" y1="0.635" x2="1.27" y2="0.635" width="0.1524" layer="95" curve="-233.115665"/>
+<wire x1="1.27" y1="0.635" x2="2.54" y2="0.635" width="0.1524" layer="95" curve="-233.115665"/>
+<wire x1="-3.81" y1="1.905" x2="3.81" y2="1.905" width="0.4064" layer="95" curve="-166.69115"/>
+<wire x1="-2.54" y1="-7.62" x2="-2.54" y2="-2.54" width="0.1524" layer="95"/>
+<wire x1="2.54" y1="-7.62" x2="2.54" y2="-2.54" width="0.1524" layer="95"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SYM_OP-AMP">
@@ -1312,6 +1331,7 @@ Triangular - 2 Digits/Character</description>
 </devices>
 </deviceset>
 <deviceset name="SYM_OP-AMP1">
+<description>&lt;b&gt;SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="SYM_OP-AMP1" x="0" y="0"/>
 </gates>
@@ -1350,6 +1370,7 @@ Triangular - 2 Digits/Character</description>
 </devices>
 </deviceset>
 <deviceset name="SYM_GND">
+<description>&lt;b&gt;SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="SYM_GND" x="0" y="0"/>
 </gates>
@@ -1558,6 +1579,32 @@ Triangular - 2 Digits/Character</description>
 <description>&lt;b&gt;SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="SYM_PJ_DC" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SYM_JUNTION">
+<description>&lt;b&gt;SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SYM_JUNCTION" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SYM_LAMP">
+<description>&lt;b&gt;SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SYM_LAMP" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
