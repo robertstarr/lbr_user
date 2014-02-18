@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -60,7 +60,11 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -69,12 +73,23 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Mechanical" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Gehäuse" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="ID" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="bMap" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="105" name="Beschreib" color="9" fill="1" visible="no" active="no"/>
 <layer number="106" name="BGA-Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="107" name="BD-Top" color="5" fill="1" visible="no" active="no"/>
+<layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="14" fill="1" visible="no" active="no"/>
+<layer number="199" name="EXTD_ERC" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="OrgLBR" color="13" fill="1" visible="no" active="no"/>
@@ -154,6 +169,22 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </package>
 <package name="TMOV14RP250M">
 <description>&lt;b&gt;ITMOV&lt;/b&gt; - 14 mm</description>
+<wire x1="-5.4662" y1="-1.4859" x2="-3.6755" y2="-1.4859" width="0.2032" layer="21"/>
+<wire x1="-3.6755" y1="-1.4859" x2="-2.4055" y2="-2.7559" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-2.4055" y1="-2.7559" x2="-2.4055" y2="-3.3909" width="0.2032" layer="21"/>
+<wire x1="-2.4055" y1="-3.3909" x2="-1.1355" y2="-4.6609" width="0.2032" layer="21" curve="90"/>
+<wire x1="-1.1355" y1="-4.6609" x2="5.0612" y2="-4.6609" width="0.2032" layer="21"/>
+<wire x1="5.0612" y1="-4.6609" x2="5.0612" y2="4.8641" width="0.2032" layer="21" curve="187.834136"/>
+<wire x1="5.0612" y1="4.8641" x2="-5.4662" y2="4.8641" width="0.2032" layer="21"/>
+<wire x1="-5.4662" y1="4.8641" x2="-5.4662" y2="-1.4859" width="0.2032" layer="21" curve="177.217867"/>
+<pad name="1" x="-3.75" y="1.625" drill="1.27" shape="octagon"/>
+<pad name="2" x="3.75" y="-1.625" drill="1.27" shape="octagon"/>
+<pad name="3" x="8.75" y="-0.625" drill="1.27" shape="octagon"/>
+<text x="-5.08" y="-6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.27" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="TMOV20RP250M">
+<description>&lt;b&gt;ITMOV&lt;/b&gt; - 20 mm</description>
 <wire x1="-8.9662" y1="-1.4859" x2="-7.1755" y2="-1.4859" width="0.2032" layer="21"/>
 <wire x1="-7.1755" y1="-1.4859" x2="-5.9055" y2="-2.7559" width="0.2032" layer="21" curve="-90"/>
 <wire x1="-5.9055" y1="-2.7559" x2="-5.9055" y2="-3.3909" width="0.2032" layer="21"/>
@@ -162,9 +193,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="7.0612" y1="-4.6609" x2="7.0612" y2="4.8641" width="0.2032" layer="21" curve="187.834136"/>
 <wire x1="7.0612" y1="4.8641" x2="-8.9662" y2="4.8641" width="0.2032" layer="21"/>
 <wire x1="-8.9662" y1="4.8641" x2="-8.9662" y2="-1.4859" width="0.2032" layer="21" curve="177.217867"/>
-<pad name="1" x="-4.25" y="2.25" drill="1.27" shape="octagon"/>
-<pad name="2" x="4.25" y="-2.25" drill="1.27" shape="octagon"/>
-<pad name="3" x="6.7945" y="-1.75" drill="1.016" shape="octagon"/>
+<pad name="1" x="-3.75" y="1.625" drill="1.27" shape="octagon"/>
+<pad name="2" x="3.75" y="-1.625" drill="1.27" shape="octagon"/>
+<pad name="3" x="8.75" y="-0.625" drill="1.27" shape="octagon"/>
 <text x="-5.08" y="-6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.27" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -254,6 +285,35 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pin name="1" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="2" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
 </symbol>
+<symbol name="ITMOV-1">
+<circle x="0" y="-2.54" radius="0.449" width="0" layer="94"/>
+<wire x1="0" y1="-4.445" x2="0" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="0" y1="-0.635" x2="-1.016" y2="0.381" width="0.254" layer="94" curve="-90"/>
+<wire x1="-1.016" y1="0.381" x2="0" y2="1.905" width="0.254" layer="94" curve="-90"/>
+<wire x1="0" y1="1.905" x2="1.016" y2="3.429" width="0.254" layer="94" curve="89.992481"/>
+<wire x1="1.016" y1="3.429" x2="0" y2="4.191" width="0.254" layer="94" curve="90"/>
+<wire x1="-1.016" y1="2.667" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="1.016" y2="1.143" width="0.254" layer="94"/>
+<wire x1="0" y1="-10.16" x2="0" y2="-9.525" width="0.1524" layer="94"/>
+<wire x1="0" y1="4.191" x2="0" y2="5.08" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-5.08" x2="1.905" y2="-8.89" width="0.2032" layer="94"/>
+<wire x1="1.905" y1="-8.89" x2="1.905" y2="-10.16" width="0.2032" layer="94"/>
+<wire x1="0" y1="-9.525" x2="-0.9525" y2="-9.2075" width="0.2032" layer="94"/>
+<wire x1="-0.9525" y1="-9.2075" x2="0.9525" y2="-8.5725" width="0.2032" layer="94"/>
+<wire x1="0.9525" y1="-8.5725" x2="-0.9525" y2="-7.9375" width="0.2032" layer="94"/>
+<wire x1="-0.9525" y1="-7.9375" x2="0.9525" y2="-7.3025" width="0.2032" layer="94"/>
+<wire x1="0.9525" y1="-7.3025" x2="-0.9525" y2="-6.6675" width="0.2032" layer="94"/>
+<wire x1="-0.9525" y1="-6.6675" x2="0.9525" y2="-6.0325" width="0.2032" layer="94"/>
+<wire x1="0.9525" y1="-6.0325" x2="-0.9525" y2="-5.3975" width="0.2032" layer="94"/>
+<wire x1="-0.9525" y1="-5.3975" x2="0.9525" y2="-4.7625" width="0.2032" layer="94"/>
+<wire x1="0.9525" y1="-4.7625" x2="0" y2="-4.445" width="0.2032" layer="94"/>
+<wire x1="-1.905" y1="-3.81" x2="-1.905" y2="-5.08" width="0.2032" layer="94"/>
+<pin name="FUSE" x="0" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="MONITOR" x="2.54" y="-2.54" visible="pad" length="short" direction="out" rot="R180"/>
+<pin name="MOV" x="0" y="-12.7" visible="pad" length="short" direction="pas" rot="R90"/>
+<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="0" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="TMOV14R275E" prefix="MOV">
@@ -332,6 +392,34 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </gates>
 <devices>
 <device name="" package="TMOV14RP250M">
+<connects>
+<connect gate="G$1" pin="FUSE" pad="2"/>
+<connect gate="G$1" pin="MONITOR" pad="3"/>
+<connect gate="G$1" pin="MOV" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TMOV?M" prefix="MOV">
+<description>&lt;b&gt;TMOV&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="ITMOV-1" x="0" y="2.54"/>
+</gates>
+<devices>
+<device name="14RP250" package="TMOV14RP250M">
+<connects>
+<connect gate="G$1" pin="FUSE" pad="2"/>
+<connect gate="G$1" pin="MONITOR" pad="3"/>
+<connect gate="G$1" pin="MOV" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="20RP250" package="TMOV20RP250M">
 <connects>
 <connect gate="G$1" pin="FUSE" pad="2"/>
 <connect gate="G$1" pin="MONITOR" pad="3"/>
