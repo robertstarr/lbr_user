@@ -46,6 +46,8 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -1471,6 +1473,43 @@ ROHM : UMT3 ; EIAJ : SC-70</description>
 <rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.5" layer="51"/>
 <rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.5" layer="51"/>
 <rectangle x1="-0.15" y1="0.5" x2="0.15" y2="1.1" layer="51"/>
+</package>
+<package name="TO247-V">
+<description>&lt;b&gt;TO−247&lt;/b&gt; - Vertical&lt;p&gt;
+CASE 340L, STYLE 3</description>
+<pad name="1" x="-5.461" y="0" drill="1.6764" diameter="3.81" shape="octagon" rot="R90"/>
+<pad name="2" x="0" y="0" drill="1.6764" diameter="3.81" shape="octagon" rot="R90"/>
+<pad name="3" x="5.461" y="0" drill="1.6764" diameter="3.81" shape="octagon" rot="R90"/>
+<text x="-8.89" y="-5.08" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="9.525" y="-5.08" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-8.128" y1="2.4892" x2="8.128" y2="2.4892" width="0.0508" layer="51"/>
+<wire x1="8.128" y1="2.4892" x2="8.128" y2="-4.9149" width="0.0508" layer="51"/>
+<wire x1="8.128" y1="-4.9149" x2="-8.128" y2="-4.9149" width="0.0508" layer="51"/>
+<wire x1="-8.128" y1="-4.9149" x2="-8.128" y2="2.4892" width="0.0508" layer="51"/>
+<wire x1="8.382" y1="2.794" x2="8.382" y2="-5.207" width="0.2032" layer="21"/>
+<wire x1="8.382" y1="-5.207" x2="-8.382" y2="-5.207" width="0.2032" layer="21"/>
+<wire x1="-8.382" y1="-5.207" x2="-8.382" y2="2.794" width="0.2032" layer="21"/>
+<wire x1="-8.382" y1="2.794" x2="8.382" y2="2.794" width="0.2032" layer="21"/>
+<rectangle x1="-8.509" y1="2.667" x2="8.509" y2="3.429" layer="21"/>
+</package>
+<package name="TO247">
+<description>&lt;b&gt;TO−247&lt;/b&gt;&lt;p&gt;
+CASE 340L, STYLE 3</description>
+<wire x1="-8.128" y1="0" x2="8.128" y2="0" width="0.254" layer="21"/>
+<wire x1="8.128" y1="21.082" x2="8.128" y2="0" width="0.254" layer="21"/>
+<wire x1="8.128" y1="21.082" x2="-8.128" y2="21.082" width="0.254" layer="21"/>
+<wire x1="-8.128" y1="0" x2="-8.128" y2="21.082" width="0.254" layer="21"/>
+<circle x="0" y="14.9352" radius="5.08" width="0" layer="42"/>
+<circle x="0" y="14.9352" radius="5.08" width="0" layer="43"/>
+<pad name="1" x="-5.5245" y="-8.1661" drill="1.6764" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-8.1661" drill="1.6764" shape="long" rot="R90"/>
+<pad name="3" x="5.5245" y="-8.1661" drill="1.6764" shape="long" rot="R90"/>
+<text x="-8.636" y="0" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="9.398" y="0" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<hole x="0" y="14.9352" drill="4.1148"/>
+<rectangle x1="-6.214946875" y1="-5.207" x2="-4.83385" y2="0" layer="21"/>
+<rectangle x1="-0.69054375" y1="-5.207" x2="0.69055" y2="0" layer="21"/>
+<rectangle x1="4.833853125" y1="-5.207" x2="6.214946875" y2="0" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -5944,6 +5983,34 @@ complimentary to CMPTA56</description>
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="C" pad="4"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TIP35" prefix="Q">
+<description>&lt;b&gt;NPN Power Transistor&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO247">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="-V" package="TO247-V">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="3"/>
 </connects>
 <technologies>
