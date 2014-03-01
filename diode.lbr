@@ -10306,6 +10306,38 @@ CASE 457−04</description>
 <vertex x="-0.9525" y="-0.9525"/>
 </polygon>
 </symbol>
+<symbol name="TVS-BDZ">
+<wire x1="-5.08" y1="0" x2="1.143" y2="0" width="0.1524" layer="94"/>
+<text x="-4.445" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-4.445" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="1.143" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.762" y1="-0.9525" x2="1.143" y2="0" width="0.254" layer="94"/>
+<wire x1="1.143" y1="0" x2="-0.762" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="-0.762" y1="0.9525" x2="-0.762" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="1.143" y1="0.9525" x2="1.143" y2="0" width="0.254" layer="94"/>
+<wire x1="1.143" y1="0" x2="1.143" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="1.143" y1="-0.9525" x2="0.508" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="1.778" y1="1.27" x2="1.143" y2="0.9525" width="0.254" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.762" y="0.9525"/>
+<vertex x="1.143" y="0"/>
+<vertex x="-0.762" y="-0.9525"/>
+</polygon>
+<wire x1="-1.778" y1="-0.9525" x2="-3.683" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.683" y1="0" x2="-1.778" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="-1.778" y1="0.9525" x2="-1.778" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="-3.683" y1="0.9525" x2="-3.683" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.683" y1="0" x2="-3.683" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="-3.683" y1="-0.9525" x2="-4.318" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.048" y1="1.27" x2="-3.683" y2="0.9525" width="0.254" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.778" y="0.9525"/>
+<vertex x="-3.683" y="0"/>
+<vertex x="-1.778" y="-0.9525"/>
+</polygon>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="1N4148" prefix="D">
@@ -17780,6 +17812,24 @@ SWITCHMODE Power Rectifier&lt;p&gt;
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TVS-BDZ-" prefix="D">
+<description>&lt;b&gt;TVS SUPPRESSOR&lt;/b&gt;&lt;p&gt;
+Bi-Directional ESD Protection</description>
+<gates>
+<gate name="G$1" symbol="TVS-BDZ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="SOD323" package="SOD323">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
