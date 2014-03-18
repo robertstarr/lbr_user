@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -895,18 +895,18 @@ body 3 x 3 mm, pitch 0.45 mm</description>
 </symbol>
 <symbol name="FT234XD">
 <pin name="USBDM" x="-17.78" y="12.7" length="middle"/>
-<pin name="!RESET!" x="-17.78" y="-2.54" length="middle"/>
-<pin name="3V3OUT" x="-17.78" y="-17.78" length="middle"/>
-<pin name="VCC" x="-17.78" y="17.78" length="middle"/>
-<pin name="GND@5" x="17.78" y="-15.24" length="middle" rot="R180"/>
+<pin name="!RESET!" x="-17.78" y="-2.54" length="middle" direction="in"/>
+<pin name="3V3OUT" x="-17.78" y="-17.78" length="middle" direction="out"/>
+<pin name="VCC" x="-17.78" y="17.78" length="middle" direction="pwr"/>
+<pin name="GND@5" x="17.78" y="-15.24" length="middle" direction="pwr" rot="R180"/>
 <pin name="CBUS0" x="17.78" y="-10.16" length="middle" rot="R180"/>
-<pin name="TXD" x="17.78" y="12.7" length="middle" rot="R180"/>
-<pin name="!RTS!" x="17.78" y="2.54" length="middle" rot="R180"/>
-<pin name="VCCIO" x="-17.78" y="-10.16" length="middle"/>
-<pin name="RXD" x="17.78" y="17.78" length="middle" rot="R180"/>
-<pin name="!CTS!" x="17.78" y="7.62" length="middle" rot="R180"/>
+<pin name="TXD" x="17.78" y="12.7" length="middle" direction="out" rot="R180"/>
+<pin name="!RTS!" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="VCCIO" x="-17.78" y="-10.16" length="middle" direction="in"/>
+<pin name="RXD" x="17.78" y="17.78" length="middle" direction="in" rot="R180"/>
+<pin name="!CTS!" x="17.78" y="2.54" length="middle" direction="in" rot="R180"/>
 <pin name="USBDP" x="-17.78" y="7.62" length="middle"/>
-<pin name="GND@13" x="17.78" y="-17.78" length="middle" rot="R180"/>
+<pin name="GND@13" x="17.78" y="-17.78" length="middle" direction="pwr" rot="R180"/>
 <wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.4064" layer="94"/>
 <wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.4064" layer="94"/>
 <wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.4064" layer="94"/>
