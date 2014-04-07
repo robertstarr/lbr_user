@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -471,6 +471,26 @@ Dialight Corporation&lt;p&gt;</description>
 <hole x="0" y="-2.54" drill="1.524"/>
 <hole x="0" y="0" drill="1.524"/>
 </package>
+<package name="515-1011">
+<description>LIGHT PIPE 5MM SINGLE&lt;p&gt;
+Dialight Corporation&lt;p&gt;</description>
+<wire x1="0" y1="-7.62" x2="0" y2="-9.525" width="0.0508" layer="51"/>
+<wire x1="0" y1="-9.525" x2="-0.3175" y2="-8.89" width="0.0508" layer="51"/>
+<wire x1="0" y1="-9.525" x2="0.3175" y2="-8.89" width="0.0508" layer="51"/>
+<text x="0.3175" y="-7.3025" size="0.6096" layer="51" ratio="12" rot="R90">LIGHT</text>
+<hole x="-3.8862" y="0" drill="3.3782"/>
+<hole x="3.8862" y="0" drill="3.3782"/>
+<wire x1="-2.413" y1="3.302" x2="-2.413" y2="-11.049" width="0.127" layer="21"/>
+<wire x1="-2.413" y1="-11.049" x2="-2.159" y2="-11.303" width="0.127" layer="21" curve="90"/>
+<wire x1="-2.159" y1="-11.303" x2="2.159" y2="-11.303" width="0.127" layer="21"/>
+<wire x1="2.159" y1="-11.303" x2="2.413" y2="-11.049" width="0.127" layer="21" curve="90"/>
+<wire x1="2.413" y1="-11.049" x2="2.413" y2="3.302" width="0.127" layer="21"/>
+<wire x1="2.413" y1="3.302" x2="-2.413" y2="3.302" width="0.127" layer="21"/>
+<wire x1="-5.3594" y1="3.302" x2="5.3594" y2="3.302" width="0.127" layer="21"/>
+<wire x1="5.3594" y1="3.302" x2="5.3594" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="5.3594" y1="-2.54" x2="-5.3594" y2="-2.54" width="0.127" layer="21"/>
+<wire x1="-5.3594" y1="-2.54" x2="-5.3594" y2="3.302" width="0.127" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LIGHT-PIPE">
@@ -569,6 +589,19 @@ Dialight Corporation&lt;p&gt;</description>
 </gates>
 <devices>
 <device name="" package="515-1094">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="515-1011" prefix="LP">
+<description>&lt;b&gt;LIGHT PIPE&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="LIGHT-PIPE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="515-1011">
 <technologies>
 <technology name=""/>
 </technologies>
