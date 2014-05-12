@@ -6213,6 +6213,25 @@ Fixed 150mA Low-Noise</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LD1084V" prefix="U">
+<description>&lt;b&gt;LDO REGULATOR&lt;/b&gt;&lt;p&gt;
+ADJUSTABLE 5A</description>
+<gates>
+<gate name="G$1" symbol="LDXXXX-ADJ" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO220-V">
+<connects>
+<connect gate="G$1" pin="ADJ" pad="1"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

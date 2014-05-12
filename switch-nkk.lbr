@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -79,9 +79,13 @@ http://www.bobstarr.net</description>
 <packages>
 <package name="JB">
 <description>&lt;b&gt;JB Series&lt;/b&gt; - LED backlight</description>
-<wire x1="-6.0325" y1="6.0325" x2="6.0325" y2="6.0325" width="0.254" layer="21"/>
+<wire x1="-6.0325" y1="6.0325" x2="-3.4925" y2="6.0325" width="0.254" layer="21"/>
+<wire x1="-3.4925" y1="6.0325" x2="3.4925" y2="6.0325" width="0.254" layer="51"/>
+<wire x1="3.4925" y1="6.0325" x2="6.0325" y2="6.0325" width="0.254" layer="21"/>
 <wire x1="6.0325" y1="6.0325" x2="6.0325" y2="-6.0325" width="0.254" layer="21"/>
-<wire x1="6.0325" y1="-6.0325" x2="-6.0325" y2="-6.0325" width="0.254" layer="21"/>
+<wire x1="6.0325" y1="-6.0325" x2="3.4925" y2="-6.0325" width="0.254" layer="21"/>
+<wire x1="3.4925" y1="-6.0325" x2="-3.4925" y2="-6.0325" width="0.254" layer="51"/>
+<wire x1="-3.4925" y1="-6.0325" x2="-6.0325" y2="-6.0325" width="0.254" layer="21"/>
 <wire x1="-6.0325" y1="-6.0325" x2="-6.0325" y2="6.0325" width="0.254" layer="21"/>
 <wire x1="-5.3975" y1="5.3975" x2="5.3975" y2="5.3975" width="0.0508" layer="51"/>
 <wire x1="5.3975" y1="5.3975" x2="5.3975" y2="-5.3975" width="0.0508" layer="51"/>
