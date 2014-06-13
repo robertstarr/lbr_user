@@ -153,10 +153,10 @@ grid 2.54 mm</description>
 <wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
 <wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
 <wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.2032" layer="51"/>
+<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="51"/>
+<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="51"/>
+<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="51"/>
 <circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
 <circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
 <circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
@@ -3074,6 +3074,16 @@ body 3.9 mm/JEDEC MS-012AA</description>
 </gates>
 <devices>
 <device name="" package="TO220AV">
+<connects>
+<connect gate="1" pin="B" pad="B"/>
+<connect gate="1" pin="C" pad="C"/>
+<connect gate="1" pin="E" pad="E"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="_H" package="TO220AH">
 <connects>
 <connect gate="1" pin="B" pad="B"/>
 <connect gate="1" pin="C" pad="C"/>
