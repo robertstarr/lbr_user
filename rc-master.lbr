@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -63,7 +63,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
-<layer number="57" name="tCAD" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="11" fill="1" visible="no" active="yes"/>
 <layer number="58" name="bCAD" color="11" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -7933,6 +7933,38 @@ Xicon MO-RC Series</description>
 <rectangle x1="8" y1="-0.3048" x2="9.2075" y2="0.3048" layer="21"/>
 <rectangle x1="-9.2075" y1="-0.3048" x2="-8" y2="0.3048" layer="21"/>
 </package>
+<package name="0410/12">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+body 4 x 10 mm, LS 12 mm</description>
+<wire x1="-5" y1="2" x2="-5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-2" x2="5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="5" y1="-2" x2="5" y2="2" width="0.2032" layer="21"/>
+<wire x1="5" y1="2" x2="-5" y2="2" width="0.2032" layer="21"/>
+<text x="-5.08" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-0.3175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="6.35" y1="0" x2="5.3" y2="0" width="0.762" layer="51"/>
+<wire x1="-6.35" y1="0" x2="-5.3" y2="0" width="0.762" layer="51"/>
+<pad name="1" x="-6.35" y="0" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<pad name="2" x="6.35" y="0" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<rectangle x1="-5.3" y1="-0.381" x2="-4.9" y2="0.381" layer="51"/>
+<rectangle x1="4.9" y1="-0.381" x2="5.3" y2="0.381" layer="51"/>
+</package>
+<package name="0410/15">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt;&lt;p&gt;
+body 4 x 10 mm, LS 15 mm</description>
+<wire x1="-5" y1="2" x2="-5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-2" x2="5" y2="-2" width="0.2032" layer="21"/>
+<wire x1="5" y1="-2" x2="5" y2="2" width="0.2032" layer="21"/>
+<wire x1="5" y1="2" x2="-5" y2="2" width="0.2032" layer="21"/>
+<text x="-5.08" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-0.3175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-7.62" y1="0" x2="-6.05" y2="0" width="0.762" layer="51"/>
+<wire x1="6.05" y1="0" x2="7.62" y2="0" width="0.762" layer="51"/>
+<pad name="1" x="-7.62" y="0" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<pad name="2" x="7.62" y="0" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<rectangle x1="-6.2" y1="-0.381" x2="-5" y2="0.381" layer="21"/>
+<rectangle x1="5" y1="-0.381" x2="6.2" y2="0.381" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -11355,6 +11387,24 @@ Xicon MO-RC Series</description>
 </technologies>
 </device>
 <device name="MO-RC-286" package="MO-RC-286">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="X0410/12" package="0410/12">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="X0410/15" package="0410/15">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

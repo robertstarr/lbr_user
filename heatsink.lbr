@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -44,8 +44,8 @@
 <layer number="48" name="Document" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
@@ -1939,6 +1939,51 @@ no silk outline, manufacturer Fischer/distributor Buerklin</description>
 <hole x="55.5625" y="31.75" drill="3.302"/>
 <hole x="55.5625" y="-31.75" drill="3.302"/>
 </package>
+<package name="7-340-2PP-BA">
+<wire x1="-19.05" y1="14.605" x2="19.05" y2="14.605" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="14.605" x2="19.05" y2="13.3731" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="13.3731" x2="19.05" y2="11.1506" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="11.1506" x2="19.05" y2="9.8806" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="9.8806" x2="19.05" y2="7.3406" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="7.3406" x2="19.05" y2="6.0706" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="6.0706" x2="19.05" y2="-6.0706" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="-6.0706" x2="19.05" y2="-7.3406" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="-7.3406" x2="19.05" y2="-9.8806" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="-9.8806" x2="19.05" y2="-11.1506" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="-11.1506" x2="19.05" y2="-13.3731" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="-13.3731" x2="19.05" y2="-14.605" width="0.0508" layer="51"/>
+<wire x1="19.05" y1="-14.605" x2="-19.05" y2="-14.605" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-14.605" x2="-19.05" y2="-13.3731" width="0.0508" layer="51"/>
+<hole x="-6.731" y="0" drill="3.048"/>
+<hole x="6.731" y="0" drill="3.048"/>
+<wire x1="-19.05" y1="-13.3731" x2="-19.05" y2="-11.1506" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-11.1506" x2="-19.05" y2="-9.8806" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-9.8806" x2="-19.05" y2="-7.3406" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-7.3406" x2="-19.05" y2="-6.0706" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-6.0706" x2="-19.05" y2="6.0706" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="6.0706" x2="-19.05" y2="7.3406" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="7.3406" x2="-19.05" y2="9.8806" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="9.8806" x2="-19.05" y2="11.1506" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="11.1506" x2="-19.05" y2="13.3731" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="13.3731" x2="-19.05" y2="14.605" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="6.0706" x2="19.05" y2="6.0706" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-6.0706" x2="19.05" y2="-6.0706" width="0.0508" layer="51"/>
+<wire x1="-19.685" y1="15.24" x2="19.685" y2="15.24" width="0.2032" layer="21"/>
+<wire x1="19.685" y1="15.24" x2="19.685" y2="-15.24" width="0.2032" layer="21"/>
+<wire x1="19.685" y1="-15.24" x2="-19.685" y2="-15.24" width="0.2032" layer="21"/>
+<wire x1="-19.685" y1="-15.24" x2="-19.685" y2="15.24" width="0.2032" layer="21"/>
+<text x="-19.685" y="15.875" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-19.685" y="-16.51" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-19.05" y1="7.3406" x2="19.05" y2="7.3406" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="9.8806" x2="19.05" y2="9.8806" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="11.1506" x2="19.05" y2="11.1506" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="13.3731" x2="19.05" y2="13.3731" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-7.3406" x2="19.05" y2="-7.3406" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-9.8806" x2="19.05" y2="-9.8806" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-11.1506" x2="19.05" y2="-11.1506" width="0.0508" layer="51"/>
+<wire x1="-19.05" y1="-13.3731" x2="19.05" y2="-13.3731" width="0.0508" layer="51"/>
+<rectangle x1="-19.05" y1="-14.605" x2="19.05" y2="14.605" layer="39"/>
+</package>
 </packages>
 <symbols>
 <symbol name="KK">
@@ -2477,6 +2522,20 @@ Wakefield</description>
 </gates>
 <devices>
 <device name="" package="403F">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="7-340-2PP-BA" prefix="KK">
+<description>HEATSINK&lt;p&gt;
+DUAL BLACK TO-220</description>
+<gates>
+<gate name="G$1" symbol="KK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="7-340-2PP-BA">
 <technologies>
 <technology name=""/>
 </technologies>
