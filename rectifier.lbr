@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.4" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -1259,6 +1259,28 @@ GBJ25005 - GBJ2510, Diodes Inc.</description>
 <rectangle x1="-10.93" y1="-1.678" x2="-9.914" y2="-1.424" layer="21"/>
 <rectangle x1="-10.93" y1="-1.678" x2="-9.914" y2="-1.424" layer="21" rot="R90"/>
 </package>
+<package name="SDB-1">
+<description>Bridge Rectifier&lt;p&gt;
+SDB101 - SDB107</description>
+<smd name="-" x="2.6035" y="-4.3688" dx="1.1938" dy="1.524" layer="1"/>
+<smd name="AC1" x="2.6035" y="4.3688" dx="1.1938" dy="1.524" layer="1"/>
+<smd name="+" x="-2.6035" y="-4.3688" dx="1.1938" dy="1.524" layer="1"/>
+<smd name="AC2" x="-2.6035" y="4.3688" dx="1.1938" dy="1.524" layer="1"/>
+<wire x1="4.25" y1="-3.25" x2="-4.25" y2="-3.25" width="0.2032" layer="21"/>
+<wire x1="-4.25" y1="-3.25" x2="-4.25" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="-4.25" y1="3.25" x2="4.25" y2="3.25" width="0.2032" layer="21"/>
+<wire x1="4.25" y1="3.25" x2="4.25" y2="-3.25" width="0.2032" layer="21"/>
+<text x="-4.572" y="-3.175" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="5.334" y="-3.175" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-4.191" y1="-3.302" x2="-3.429" y2="3.302" layer="21" rot="R180"/>
+<wire x1="-2.889" y1="-2.243" x2="-2.289" y2="-2.243" width="0.2032" layer="21"/>
+<wire x1="-2.589" y1="-1.943" x2="-2.589" y2="-2.543" width="0.2032" layer="21"/>
+<wire x1="2.289" y1="-2.243" x2="2.889" y2="-2.243" width="0.2032" layer="21"/>
+<wire x1="2.616" y1="2.243" x2="3.116" y2="2.243" width="0.2032" layer="21" curve="180" cap="flat"/>
+<wire x1="2.116" y1="2.243" x2="2.616" y2="2.243" width="0.2032" layer="21" curve="-180" cap="flat"/>
+<wire x1="-2.516" y1="2.243" x2="-2.016" y2="2.243" width="0.2032" layer="21" curve="180" cap="flat"/>
+<wire x1="-3.016" y1="2.243" x2="-2.516" y2="2.243" width="0.2032" layer="21" curve="-180" cap="flat"/>
+</package>
 </packages>
 <symbols>
 <symbol name="GB">
@@ -2214,6 +2236,26 @@ http://www.ts.com.tw/db/pictures/modules/PDT/PDT060207001/DBLS201G.pdf</descript
 </gates>
 <devices>
 <device name="" package="GBJ">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="A1" pad="AC1"/>
+<connect gate="G$1" pin="A2" pad="AC2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SDB-1">
+<description>Bridge Rectifier&lt;p&gt;
+1.0 Amp Single Phase, 50 to 1000 Volts</description>
+<gates>
+<gate name="G$1" symbol="DB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SDB-1">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
