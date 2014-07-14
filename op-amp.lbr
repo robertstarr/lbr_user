@@ -5553,6 +5553,28 @@ Dual-Supply</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TLV2631" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+Single Operational Amplifier</description>
+<gates>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
+<gate name="P" symbol="PWRN_VDDGND" x="-20.32" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="DBV" package="SOT23-5">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="4"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="P" pin="GND" pad="2"/>
+<connect gate="P" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
