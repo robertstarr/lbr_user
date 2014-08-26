@@ -127,6 +127,7 @@ Series 6048-6053, Holes 0.052, Spacing 0.2"</description>
 <pad name="1" x="-2.54" y="0" drill="1.3208" diameter="2.54" shape="octagon"/>
 <pad name="2" x="2.54" y="0" drill="1.3208" diameter="2.54" shape="octagon"/>
 <text x="-3.175" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="-3.4925" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
 <package name="TJ-6054-6071">
 <description>&lt;b&gt;TEST JACK&lt;/b&gt;&lt;p&gt; 
@@ -144,6 +145,7 @@ Series 6054-6071, Holes 0.052, Spacing 0.4"</description>
 <pad name="1" x="-5.08" y="0" drill="1.3208" diameter="2.54" shape="octagon"/>
 <pad name="2" x="5.08" y="0" drill="1.3208" diameter="2.54" shape="octagon"/>
 <text x="-5.715" y="2.8575" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.715" y="-3.81" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
 <package name="TP-056">
 <description>&lt;b&gt;TEST POINT&lt;/b&gt;&lt;p&gt; 
@@ -812,6 +814,7 @@ Holds Four (4) AA Cells in Series</description>
 <wire x1="0" y1="1.016" x2="-0.762" y2="1.778" width="0.254" layer="94"/>
 <text x="-1.524" y="3.048" size="1.778" layer="95">&gt;NAME</text>
 <pin name="1" x="0" y="0" visible="off" length="short" direction="pas" rot="R90"/>
+<text x="2.54" y="0" size="1.778" layer="95">&gt;LABEL</text>
 </symbol>
 <symbol name="QFIT-2">
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
@@ -985,7 +988,9 @@ PCB Horizontal Mount</description>
 <connect gate="G$1" pin="1" pad="1 2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="-6054-6071" package="TJ-6054-6071">
@@ -993,7 +998,9 @@ PCB Horizontal Mount</description>
 <connect gate="G$1" pin="1" pad="1 2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
