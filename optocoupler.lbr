@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -944,6 +944,29 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <wire x1="-3.81" y1="-2.8575" x2="-3.81" y2="-0.6985" width="0.2032" layer="21"/>
 <wire x1="-3.81" y1="0.6985" x2="-3.81" y2="-0.6985" width="0.2032" layer="21" curve="-180"/>
 <text x="-2.54" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="SO04">
+<description>&lt;b&gt;Small Outline 4 Pin&lt;/b&gt;&lt;p&gt;
+ 4.55mm width</description>
+<wire x1="1.397" y1="2.275" x2="1.397" y2="-2.275" width="0.2032" layer="51"/>
+<wire x1="1.397" y1="-2.275" x2="-1.397" y2="-2.275" width="0.2032" layer="51"/>
+<wire x1="-1.397" y1="-2.275" x2="-1.397" y2="2.275" width="0.2032" layer="51"/>
+<wire x1="-1.397" y1="2.275" x2="1.397" y2="2.275" width="0.2032" layer="51"/>
+<wire x1="-1.397" y1="1.5875" x2="1.397" y2="1.5875" width="0.2032" layer="21"/>
+<wire x1="1.397" y1="1.5875" x2="1.397" y2="-1.5875" width="0.2032" layer="21"/>
+<wire x1="1.397" y1="-1.5875" x2="-1.397" y2="-1.5875" width="0.2032" layer="21"/>
+<wire x1="-1.397" y1="-1.5875" x2="-1.397" y2="1.5875" width="0.2032" layer="21"/>
+<circle x="-0.635" y="-0.635" radius="0.3175" width="0" layer="21"/>
+<smd name="2" x="0.635" y="-2.9175" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="2.9175" dx="0.6" dy="2.2" layer="1"/>
+<smd name="1" x="-0.635" y="-2.9175" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="-0.635" y="2.9175" dx="0.6" dy="2.2" layer="1"/>
+<text x="-1.905" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-0.9525" y="-0.3175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.8801" y1="-3.5" x2="-0.3899" y2="-2.3" layer="51"/>
+<rectangle x1="0.3899" y1="-3.5" x2="0.8801" y2="-2.3" layer="51"/>
+<rectangle x1="0.3899" y1="2.3" x2="0.8801" y2="3.5" layer="51"/>
+<rectangle x1="-0.8801" y1="2.3" x2="-0.3899" y2="3.5" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -4553,7 +4576,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 </devices>
 </deviceset>
 <deviceset name="TIL199" prefix="OK">
-<description>&lt;b&gt;TEXAS INSTRUMENTS OPTO COUPLER&lt;/b&gt;</description>
+<description>&lt;b&gt;OPTO COUPLER&lt;/b&gt;</description>
 <gates>
 <gate name="A" symbol="OK-D" x="2.54" y="0" swaplevel="1"/>
 <gate name="B" symbol="OK-D" x="2.54" y="-17.78" swaplevel="1"/>
@@ -6097,6 +6120,25 @@ Source: http://www.fairchildsemi.com/ds/H1/H11L2-M.pdf</description>
 <technology name="1"/>
 <technology name="2"/>
 <technology name="3"/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLP291" prefix="OK">
+<description>&lt;b&gt;OPTO COUPLER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="OK" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="SO04">
+<connects>
+<connect gate="G$1" pin="A" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="COL" pad="4"/>
+<connect gate="G$1" pin="EMIT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

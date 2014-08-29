@@ -6825,6 +6825,23 @@ CASE 457−04</description>
 <wire x1="2.3" y1="-1.7" x2="-2.3" y2="-1.7" width="0.0508" layer="51"/>
 <wire x1="-2.3" y1="-1.7" x2="-2.3" y2="1.7" width="0.0508" layer="51"/>
 </package>
+<package name="TSLP-2-19">
+<description>&lt;b&gt;TSLP-2-19&lt;/b&gt;&lt;p&gt;
+SOD-882</description>
+<smd name="1" x="-0.33" y="0" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<smd name="2" x="0.33" y="0" dx="0.6" dy="0.35" layer="1" rot="R90"/>
+<wire x1="-0.5" y1="0.3" x2="0.5" y2="0.3" width="0.0508" layer="51"/>
+<wire x1="0.5" y1="0.3" x2="0.5" y2="-0.3" width="0.0508" layer="51"/>
+<wire x1="0.5" y1="-0.3" x2="-0.5" y2="-0.3" width="0.0508" layer="51"/>
+<wire x1="-0.5" y1="-0.3" x2="-0.5" y2="0.3" width="0.0508" layer="51"/>
+<wire x1="-0.75" y1="0.55" x2="0.75" y2="0.55" width="0.2032" layer="21"/>
+<wire x1="0.75" y1="0.55" x2="0.75" y2="-0.55" width="0.2032" layer="21"/>
+<wire x1="0.75" y1="-0.55" x2="-0.75" y2="-0.55" width="0.2032" layer="21"/>
+<wire x1="-0.75" y1="-0.55" x2="-0.75" y2="0.55" width="0.2032" layer="21"/>
+<text x="-0.762" y="0.762" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.762" y="-1.397" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1" y1="-0.4" x2="-0.7" y2="0.4" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="D">
@@ -17839,6 +17856,23 @@ Bi-Directional ESD Protection</description>
 <connects>
 <connect gate="G$1" pin="1" pad="A"/>
 <connect gate="G$1" pin="2" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESD208B102ELE6327XTMA1" prefix="D">
+<description>TVS DIODE 3.3VWM 8.1VC</description>
+<gates>
+<gate name="G$1" symbol="TVS" x="-2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="TSLP-2-19">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
