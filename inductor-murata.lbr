@@ -91,6 +91,16 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-1.6" y="1.2" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.6" y="-2" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="1800R">
+<description>&lt;b&gt;AXIAL INDUCTOR&lt;/b&gt;&lt;p&gt;
+diameter 13.7 mm, ls=13.7 mm</description>
+<pad name="1" x="-3.6" y="0" drill="1.27"/>
+<pad name="2" x="3.6" y="0" drill="1.27"/>
+<circle x="0" y="0" radius="6.85" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="7.08378125" width="0.2032" layer="21"/>
+<text x="5.715" y="-6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.445" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CMF">
@@ -117,6 +127,22 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pin name="S2" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="S1" x="5.08" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
+<symbol name="LI">
+<wire x1="-3.81" y1="0.635" x2="-1.905" y2="0.635" width="0.254" layer="94" curve="-180"/>
+<wire x1="-1.905" y1="0.635" x2="0" y2="0.635" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0.635" x2="1.905" y2="0.635" width="0.254" layer="94" curve="-180"/>
+<wire x1="1.905" y1="0.635" x2="3.81" y2="0.635" width="0.254" layer="94" curve="-180"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.4925" y1="2.2225" x2="3.4925" y2="2.2225" width="0.254" layer="94"/>
+<wire x1="-3.4925" y1="2.8575" x2="3.4925" y2="2.8575" width="0.254" layer="94"/>
+<text x="-3.81" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<pin name="2" x="5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="DLW31SN" prefix="L">
@@ -131,6 +157,23 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="P2" pad="4"/>
 <connect gate="G$1" pin="S1" pad="2"/>
 <connect gate="G$1" pin="S2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1800R" prefix="L">
+<description>&lt;b&gt;RADIAL LEAD INDUCTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="LI" x="2.54" y="0"/>
+</gates>
+<devices>
+<device name="" package="1800R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
