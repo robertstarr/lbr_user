@@ -844,6 +844,11 @@
 <text x="-3.175" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
 <wire x1="1.905" y1="0" x2="-1.905" y2="0" width="0.508" layer="94"/>
 </symbol>
+<symbol name="+5VS">
+<pin name="+5VS" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-3.81" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -2584,6 +2589,19 @@ Net CGND, no value text label</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="-1V0" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5VS" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+5VS" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">

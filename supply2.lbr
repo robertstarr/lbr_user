@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="6.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -836,6 +836,12 @@
 </symbol>
 <symbol name="+1V5A">
 <pin name="+1V5A" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.0844"/>
+<wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.0893"/>
+</symbol>
+<symbol name="+5VS">
+<pin name="+5VS" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="-2.54" y="1.27" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
 <wire x1="1.905" y1="0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.0844"/>
 <wire x1="-1.905" y1="-0.3175" x2="0" y2="0" width="0.508" layer="94" curve="-80.0893"/>
@@ -2320,6 +2326,19 @@ Net CGND, no value text label</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+1V5A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5VS" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+5VS" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
