@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="mil" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -846,6 +846,11 @@
 </symbol>
 <symbol name="+5VS">
 <pin name="+5VS" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-3.81" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
+</symbol>
+<symbol name="+3V3B">
+<pin name="+3V3B" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="-3.81" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
 </symbol>
@@ -2602,6 +2607,19 @@ Net CGND, no value text label</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+5VS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+3V3B" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+3V3B" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
