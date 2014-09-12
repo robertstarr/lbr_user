@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -960,8 +960,8 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <pin name="VEE" x="0" y="-12.7" visible="pad" length="middle" direction="pwr" rot="R90"/>
 <pin name="GND" x="5.08" y="-10.16" visible="pad" length="middle" direction="pas" rot="R90"/>
 <pin name="OUT" x="20.32" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
-<pin name="EC-" x="-5.08" y="-15.24" visible="pad" length="middle" direction="out" rot="R90"/>
-<pin name="EC+" x="-5.08" y="15.24" visible="pad" length="middle" direction="pas" rot="R270"/>
+<pin name="EC-" x="-5.08" y="-15.24" visible="pad" length="middle" direction="in" rot="R90"/>
+<pin name="EC+" x="-5.08" y="15.24" visible="pad" length="middle" direction="in" rot="R270"/>
 </symbol>
 <symbol name="THAT4305_RMS">
 <wire x1="-7.62" y1="5.08" x2="7.62" y2="5.08" width="0.4064" layer="94"/>
