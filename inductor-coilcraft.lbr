@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -918,7 +918,53 @@ CoilCraft</description>
 <rectangle x1="0.6" y1="-0.7" x2="1.1" y2="0.7" layer="51"/>
 <rectangle x1="-1.1" y1="-0.7" x2="-0.6" y2="0.7" layer="51"/>
 </package>
-<package name="MSD7342">
+<package name="MSS1038">
+<description>POWER INDUCTOR&lt;p&gt;
+10 x 10.2 mm</description>
+<wire x1="5" y1="4.1" x2="5" y2="-4.1" width="0.2032" layer="21"/>
+<wire x1="5" y1="-4.1" x2="4" y2="-5.1" width="0.2032" layer="21" curve="-90"/>
+<wire x1="4" y1="-5.1" x2="2.1" y2="-5.1" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="-5.1" x2="-4" y2="-5.1" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-5.1" x2="-5" y2="-4.1" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-4.1" x2="-5" y2="4.1" width="0.2032" layer="21"/>
+<wire x1="-5" y1="4.1" x2="-4" y2="5.1" width="0.2032" layer="21"/>
+<wire x1="-4" y1="5.1" x2="-2.1" y2="5.1" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="5.1" x2="4" y2="5.1" width="0.2032" layer="21"/>
+<wire x1="4" y1="5.1" x2="5" y2="4.1" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="4.123103125" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="3.60555" width="0.0508" layer="51"/>
+<wire x1="-1" y1="5" x2="-1" y2="4" width="0.0508" layer="51"/>
+<wire x1="1" y1="5" x2="1" y2="4" width="0.0508" layer="51"/>
+<wire x1="1" y1="-4" x2="1" y2="-5" width="0.0508" layer="51"/>
+<wire x1="-1" y1="-4" x2="-1" y2="-5" width="0.0508" layer="51"/>
+<smd name="1" x="0" y="4.7" dx="3.56" dy="1.78" layer="1"/>
+<smd name="2" x="0" y="-4.7" dx="3.56" dy="1.78" layer="1"/>
+<text x="-5.334" y="-4.064" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="6" y="-4" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
+<package name="MSS1048">
+<description>POWER INDUCTOR&lt;p&gt;
+10 x 10.2 mm</description>
+<wire x1="5" y1="4.1" x2="5" y2="-4.1" width="0.2032" layer="21"/>
+<wire x1="5" y1="-4.1" x2="4" y2="-5.1" width="0.2032" layer="21" curve="-90"/>
+<wire x1="4" y1="-5.1" x2="2.1" y2="-5.1" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="-5.1" x2="-4" y2="-5.1" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-5.1" x2="-5" y2="-4.1" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-4.1" x2="-5" y2="4.1" width="0.2032" layer="21"/>
+<wire x1="-5" y1="4.1" x2="-4" y2="5.1" width="0.2032" layer="21"/>
+<wire x1="-4" y1="5.1" x2="-2.1" y2="5.1" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="5.1" x2="4" y2="5.1" width="0.2032" layer="21"/>
+<wire x1="4" y1="5.1" x2="5" y2="4.1" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="4.123103125" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="3.60555" width="0.0508" layer="51"/>
+<wire x1="-1" y1="5" x2="-1" y2="4" width="0.0508" layer="51"/>
+<wire x1="1" y1="5" x2="1" y2="4" width="0.0508" layer="51"/>
+<wire x1="1" y1="-4" x2="1" y2="-5" width="0.0508" layer="51"/>
+<wire x1="-1" y1="-4" x2="-1" y2="-5" width="0.0508" layer="51"/>
+<smd name="1" x="0" y="4.7" dx="3.56" dy="1.78" layer="1"/>
+<smd name="2" x="0" y="-4.7" dx="3.56" dy="1.78" layer="1"/>
+<text x="-5.334" y="-4.064" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="6" y="-4" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1745,6 +1791,40 @@ Tunable Low Profile, CoilCraft</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MSS1038" prefix="L">
+<description>SMT Power Inductor</description>
+<gates>
+<gate name="G$1" symbol="LI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSS1038">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MSS1048" prefix="L">
+<description>SMT Power Inductor</description>
+<gates>
+<gate name="G$1" symbol="LI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MSS1048">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
