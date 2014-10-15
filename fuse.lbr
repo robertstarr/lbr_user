@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -1990,6 +1990,27 @@ Fuse Clips: Schurter part# 0751.0506</description>
 <text x="-22.355" y="6.985" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.905" y="0" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="3587TR">
+<description>SMD AUTO-FUSE HOLDER</description>
+<smd name="1A" x="-6.731" y="3.0353" dx="2.8194" dy="1.5748" layer="1" rot="R90"/>
+<smd name="1B" x="-6.731" y="-3.0353" dx="2.8194" dy="1.5748" layer="1" rot="R90"/>
+<smd name="2A" x="6.731" y="3.0353" dx="2.8194" dy="1.5748" layer="1" rot="R90"/>
+<smd name="2B" x="6.731" y="-3.0353" dx="2.8194" dy="1.5748" layer="1" rot="R90"/>
+<wire x1="-9.906" y1="3.3655" x2="9.906" y2="3.3655" width="0.2032" layer="51"/>
+<wire x1="9.906" y1="3.3655" x2="9.906" y2="-3.3655" width="0.2032" layer="51"/>
+<wire x1="9.906" y1="-3.3655" x2="-9.906" y2="-3.3655" width="0.2032" layer="51"/>
+<wire x1="-9.906" y1="-3.3655" x2="-9.906" y2="3.3655" width="0.2032" layer="51"/>
+<wire x1="-7.874" y1="3.683" x2="-10.2235" y2="3.683" width="0.254" layer="21"/>
+<wire x1="-10.2235" y1="3.683" x2="-10.2235" y2="-3.683" width="0.254" layer="21"/>
+<wire x1="-10.2235" y1="-3.683" x2="-7.874" y2="-3.683" width="0.254" layer="21"/>
+<wire x1="7.874" y1="-3.683" x2="10.2235" y2="-3.683" width="0.254" layer="21"/>
+<wire x1="10.2235" y1="-3.683" x2="10.2235" y2="3.683" width="0.254" layer="21"/>
+<wire x1="10.2235" y1="3.683" x2="7.874" y2="3.683" width="0.254" layer="21"/>
+<wire x1="5.588" y1="3.683" x2="-5.588" y2="3.683" width="0.254" layer="21"/>
+<wire x1="5.588" y1="-3.683" x2="-5.588" y2="-3.683" width="0.254" layer="21"/>
+<text x="-10.287" y="-4.953" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.286" y="-1.397" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSE">
@@ -2908,6 +2929,23 @@ For Schurter clips 0751.0506</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="2A" pad="2A"/>
 <connect gate="G$1" pin="2B" pad="2B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3587TR" prefix="F">
+<description>SMD AUTO-FUSE HOLDER</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3587TR">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B"/>
+<connect gate="G$1" pin="2" pad="2A 2B"/>
 </connects>
 <technologies>
 <technology name=""/>

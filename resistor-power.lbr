@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -71,6 +71,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;Vitrohm Power Resistors&lt;/b&gt;&lt;p&gt;
@@ -2049,6 +2050,42 @@ two lead horizontal mount</description>
 <rectangle x1="-2.921" y1="-6.35" x2="-2.159" y2="-4.445" layer="51"/>
 <hole x="0" y="11.176" drill="3.302"/>
 </package>
+<package name="D2PAK">
+<description>&lt;b&gt;SMD D2PAK&lt;/b&gt;</description>
+<wire x1="-5.3975" y1="4.445" x2="5.3975" y2="4.445" width="0.2032" layer="51"/>
+<wire x1="5.3975" y1="4.445" x2="5.3975" y2="-4.7625" width="0.2032" layer="21"/>
+<wire x1="5.3975" y1="-4.7625" x2="-5.3975" y2="-4.7625" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="-4.7625" x2="-5.3975" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="4.1274" x2="5.0799" y2="4.1275" width="0.0508" layer="51"/>
+<wire x1="5.0799" y1="4.1275" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
+<wire x1="-5.08" y1="-4.445" x2="-5.08" y2="4.1274" width="0.0508" layer="51"/>
+<wire x1="-5.08" y1="-4.445" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
+<wire x1="-5.08" y1="-4.445" x2="-5.3975" y2="-4.7625" width="0.0508" layer="51"/>
+<wire x1="-5.08" y1="4.1274" x2="-5.3975" y2="4.445" width="0.0508" layer="51"/>
+<wire x1="5.0799" y1="4.1275" x2="5.3975" y2="4.445" width="0.0508" layer="51"/>
+<wire x1="5.08" y1="-4.445" x2="5.3975" y2="-4.7625" width="0.0508" layer="51"/>
+<smd name="2" x="0" y="2.54" dx="10.16" dy="9.652" layer="1" rot="R270"/>
+<smd name="1" x="-2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
+<smd name="3" x="2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
+<text x="-6.0325" y="-4.7625" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-2.2225" y="-1.5875" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.8575" y="-3.81" size="1.016" layer="51" ratio="10">1</text>
+<text x="2.2225" y="-3.81" size="1.016" layer="51" ratio="10">3</text>
+<text x="-0.3175" y="2.2225" size="1.016" layer="51" ratio="10">2</text>
+<rectangle x1="-3.175" y1="-5.715" x2="-1.905" y2="-4.7625" layer="21"/>
+<rectangle x1="1.905" y1="-5.715" x2="3.175" y2="-4.7625" layer="21"/>
+<rectangle x1="-0.635" y1="-5.715" x2="0.635" y2="-4.7624" layer="21"/>
+<rectangle x1="-3.175" y1="-7.62" x2="-1.905" y2="-5.715" layer="51"/>
+<rectangle x1="1.905" y1="-7.62" x2="3.175" y2="-5.715" layer="51"/>
+<polygon width="0.2032" layer="51">
+<vertex x="-5.3975" y="4.445"/>
+<vertex x="-5.3975" y="5.08"/>
+<vertex x="-4.445" y="5.715"/>
+<vertex x="4.445" y="5.715"/>
+<vertex x="5.3975" y="5.08"/>
+<vertex x="5.3975" y="4.445"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="R">
@@ -2957,6 +2994,23 @@ Source: www.token.com.tw .. power-resistor-rmg100pdf</description>
 </technologies>
 </device>
 <device name="_V" package="TO220-2V">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PWR263S-35" prefix="R">
+<description>POWER RESISTOR</description>
+<gates>
+<gate name="G$1" symbol="R" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="D2PAK">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
