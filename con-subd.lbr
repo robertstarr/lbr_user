@@ -26636,8 +26636,8 @@ FEMALE SMD</description>
 <deviceset name="NC189-009-51_VS" prefix="J">
 <description>&lt;b&gt;SUB-D FEMALE DUAL&lt;/b&gt; - NorComp</description>
 <gates>
-<gate name="-A" symbol="F09G-VS" x="-12.7" y="-15.24"/>
-<gate name="-B" symbol="F09G-VS" x="7.62" y="-15.24"/>
+<gate name="-A" symbol="F09G-VS" x="-12.7" y="-15.24" swaplevel="1"/>
+<gate name="-B" symbol="F09G-VS" x="7.62" y="-15.24" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="NC189-009">
@@ -27030,8 +27030,47 @@ TE CONNECTIVITY</description>
 <description>&lt;b&gt;DB9 FEMALE OVER FEMALE DUAL&lt;/b&gt;&lt;p&gt;
 NorComp</description>
 <gates>
-<gate name="-A" symbol="F09G" x="0" y="0"/>
-<gate name="-B" symbol="F09G" x="30.48" y="0"/>
+<gate name="-A" symbol="F09G" x="0" y="0" swaplevel="1"/>
+<gate name="-B" symbol="F09G" x="30.48" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="NC189-009">
+<connects>
+<connect gate="-A" pin="1" pad="A-1"/>
+<connect gate="-A" pin="2" pad="A-2"/>
+<connect gate="-A" pin="3" pad="A-3"/>
+<connect gate="-A" pin="4" pad="A-4"/>
+<connect gate="-A" pin="5" pad="A-5"/>
+<connect gate="-A" pin="6" pad="A-6"/>
+<connect gate="-A" pin="7" pad="A-7"/>
+<connect gate="-A" pin="8" pad="A-8"/>
+<connect gate="-A" pin="9" pad="A-9"/>
+<connect gate="-A" pin="G1" pad="A-G1"/>
+<connect gate="-A" pin="G2" pad="A-G2"/>
+<connect gate="-B" pin="1" pad="B-1"/>
+<connect gate="-B" pin="2" pad="B-2"/>
+<connect gate="-B" pin="3" pad="B-3"/>
+<connect gate="-B" pin="4" pad="B-4"/>
+<connect gate="-B" pin="5" pad="B-5"/>
+<connect gate="-B" pin="6" pad="B-6"/>
+<connect gate="-B" pin="7" pad="B-7"/>
+<connect gate="-B" pin="8" pad="B-8"/>
+<connect gate="-B" pin="9" pad="B-9"/>
+<connect gate="-B" pin="G1" pad="B-G1"/>
+<connect gate="-B" pin="G2" pad="B-G2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC189-009-41" prefix="J">
+<description>&lt;b&gt;DB9 MALE OVER FEMALE DUAL&lt;/b&gt;&lt;p&gt;
+NorComp</description>
+<gates>
+<gate name="-A" symbol="F09G" x="0" y="0" swaplevel="1"/>
+<gate name="-B" symbol="M09G" x="30.48" y="0" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="NC189-009">
@@ -27069,8 +27108,8 @@ NorComp</description>
 <description>&lt;b&gt;DB9 FEMALE OVER MALE DUAL&lt;/b&gt;&lt;p&gt;
 NorComp</description>
 <gates>
-<gate name="-A" symbol="F09G" x="0" y="0"/>
-<gate name="-B" symbol="M09G" x="30.48" y="0"/>
+<gate name="-B" symbol="F09G" x="30.48" y="0" swaplevel="1"/>
+<gate name="-A" symbol="M09G" x="0" y="0" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="NC189-009">
