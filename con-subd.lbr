@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -15496,6 +15496,50 @@ FEMALE SMD</description>
 <wire x1="-12.3317" y1="15.2912" x2="-12.3317" y2="9.5" width="0.0254" layer="51"/>
 <wire x1="-11.498071875" y1="15.2912" x2="-11.498071875" y2="9.5" width="0.0254" layer="51"/>
 </package>
+<package name="180-M15-213R">
+<description>HIGH DENSITY FEMALE VERTICAL 15 PIN</description>
+<pad name="P$1" x="-12.4968" y="0" drill="3.2004"/>
+<pad name="P$2" x="12.4968" y="0" drill="3.2004"/>
+<wire x1="-7.409" y1="-3.146" x2="-8.197" y2="2.537" width="0.254" layer="21"/>
+<wire x1="6.876" y1="4.137" x2="8.1915" y2="2.5038" width="0.254" layer="21" curve="-102.298925" cap="flat"/>
+<wire x1="8.197" y1="2.511" x2="7.409" y2="-3.121" width="0.254" layer="21"/>
+<wire x1="-6.876" y1="4.137" x2="6.876" y2="4.137" width="0.254" layer="21"/>
+<wire x1="-8.1961" y1="2.5268" x2="-6.876" y2="4.137" width="0.254" layer="21" curve="-101.30773" cap="flat"/>
+<wire x1="-7.4169" y1="-3.1295" x2="-6.114" y2="-4.137" width="0.254" layer="21" curve="75.428151" cap="flat"/>
+<wire x1="-6.114" y1="-4.137" x2="6.114" y2="-4.137" width="0.254" layer="21"/>
+<wire x1="-15.556" y1="-6.288" x2="-14.921" y2="-6.923" width="0.254" layer="21" curve="90" cap="flat"/>
+<wire x1="14.921" y1="-6.923" x2="15.556" y2="-6.288" width="0.254" layer="21" curve="90"/>
+<wire x1="15.556" y1="6.288" x2="15.556" y2="-6.288" width="0.254" layer="21"/>
+<wire x1="14.921" y1="6.923" x2="15.556" y2="6.288" width="0.254" layer="21" curve="-90" cap="flat"/>
+<wire x1="-15.556" y1="6.288" x2="-15.556" y2="-6.288" width="0.254" layer="21"/>
+<wire x1="-15.556" y1="6.288" x2="-14.921" y2="6.923" width="0.254" layer="21" curve="-90"/>
+<wire x1="-14.913" y1="-6.923" x2="14.921" y2="-6.923" width="0.254" layer="21"/>
+<wire x1="14.913" y1="6.923" x2="-14.921" y2="6.923" width="0.254" layer="21"/>
+<wire x1="6.114" y1="-4.137" x2="7.4169" y2="-3.1295" width="0.254" layer="21" curve="75.428151" cap="flat"/>
+<pad name="10" x="-3.683" y="0" drill="1.0922"/>
+<pad name="9" x="-1.397" y="0" drill="1.0922"/>
+<pad name="8" x="0.889" y="0" drill="1.0922"/>
+<pad name="7" x="3.175" y="0" drill="1.0922"/>
+<pad name="6" x="5.461" y="0" drill="1.0922"/>
+<pad name="5" x="-4.826" y="1.9812" drill="1.0922"/>
+<pad name="4" x="-2.54" y="1.9812" drill="1.0922"/>
+<pad name="3" x="-0.254" y="1.9812" drill="1.0922"/>
+<pad name="2" x="2.032" y="1.9812" drill="1.0922"/>
+<pad name="1" x="4.318" y="1.9812" drill="1.0922" shape="octagon"/>
+<pad name="15" x="-4.826" y="-1.9812" drill="1.0922"/>
+<pad name="14" x="-2.54" y="-1.9812" drill="1.0922"/>
+<pad name="13" x="-0.254" y="-1.9812" drill="1.0922"/>
+<pad name="12" x="2.032" y="-1.9812" drill="1.0922"/>
+<pad name="11" x="4.318" y="-1.9812" drill="1.0922"/>
+<text x="-14.605" y="7.62" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-14.605" y="-6.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="5.48" y="1.535" size="1.016" layer="51" ratio="18">1</text>
+<text x="-6.915" y="1.435" size="1.016" layer="51" ratio="18">5</text>
+<text x="6.58" y="-0.565" size="1.016" layer="51" ratio="18">6</text>
+<text x="-7.115" y="-0.665" size="1.016" layer="51" ratio="18">10</text>
+<text x="-7.22" y="-3.165" size="1.016" layer="51" ratio="18">15</text>
+<text x="5.38" y="-2.705" size="1.016" layer="51" ratio="18">11</text>
+</package>
 </packages>
 <symbols>
 <symbol name="F37">
@@ -18339,8 +18383,8 @@ FEMALE SMD</description>
 <pin name="13" x="7.62" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="14" x="7.62" y="-7.62" visible="pad" length="middle" direction="pas" rot="R180"/>
 <pin name="15" x="7.62" y="-12.7" visible="pad" length="middle" direction="pas" rot="R180"/>
-<pin name="G1" x="7.62" y="10.16" visible="pad" length="middle" direction="pas" rot="R180"/>
-<pin name="G2" x="7.62" y="-17.78" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="G1" x="7.62" y="10.16" visible="off" length="middle" direction="pas" rot="R180"/>
+<pin name="G2" x="7.62" y="-17.78" visible="off" length="middle" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="HDF15G">
 <wire x1="-4.064" y1="14.5512" x2="-2.5226" y2="15.792" width="0.4064" layer="94" curve="-102.324066" cap="flat"/>
@@ -27136,6 +27180,38 @@ NorComp</description>
 <connect gate="-B" pin="9" pad="B-9"/>
 <connect gate="-B" pin="G1" pad="B-G1"/>
 <connect gate="-B" pin="G2" pad="B-G2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="180-M15-213R" prefix="J">
+<description>DB15 FEMALE HIGH DENSITY</description>
+<gates>
+<gate name="G$1" symbol="HF15G" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="180-M15-213R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="11" pad="11"/>
+<connect gate="G$1" pin="12" pad="12"/>
+<connect gate="G$1" pin="13" pad="13"/>
+<connect gate="G$1" pin="14" pad="14"/>
+<connect gate="G$1" pin="15" pad="15"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+<connect gate="G$1" pin="G1" pad="P$1"/>
+<connect gate="G$1" pin="G2" pad="P$2"/>
 </connects>
 <technologies>
 <technology name=""/>
