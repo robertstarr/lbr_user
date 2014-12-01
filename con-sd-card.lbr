@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -875,6 +875,11 @@ Molex</description>
 <smd name="3" x="0.26" y="10.7" dx="1.5" dy="0.8" layer="1" rot="R270"/>
 <smd name="2" x="-0.84" y="10.3" dx="1.5" dy="0.8" layer="1" rot="R270"/>
 <smd name="1" x="-1.94" y="10.7" dx="1.5" dy="0.8" layer="1" rot="R270"/>
+<wire x1="-6.8" y1="15.3" x2="-6.8" y2="19.465" width="0.0254" layer="51" style="shortdash"/>
+<wire x1="-6.8" y1="19.465" x2="-6.165" y2="20.1" width="0.0254" layer="51" style="shortdash" curve="-90"/>
+<wire x1="-6.165" y1="20.1" x2="6.165" y2="20.1" width="0.0254" layer="51" style="shortdash"/>
+<wire x1="6.165" y1="20.1" x2="6.8" y2="19.465" width="0.0254" layer="51" style="shortdash" curve="-90"/>
+<wire x1="6.8" y1="19.465" x2="6.8" y2="14.3" width="0.0254" layer="51" style="shortdash"/>
 </package>
 </packages>
 <symbols>
