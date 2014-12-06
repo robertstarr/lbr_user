@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3028,6 +3028,61 @@ ABMM Series, 7 x 5 mm</description>
 <text x="-3.6" y="2.8" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3.6" y="-3.6" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="SM77H">
+<description>SM77H Series&lt;p&gt;
+Pletronics</description>
+<wire x1="3" y1="-2.5" x2="2.5" y2="-2.5" width="0.0508" layer="51" curve="180"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="-3" y2="-2.5" width="0.0508" layer="51" curve="180"/>
+<wire x1="-3" y1="-2.5" x2="-3.373" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="-3.373" y1="-2.5" x2="-3.5" y2="-2.373" width="0.0508" layer="51"/>
+<wire x1="-3.5" y1="-2.373" x2="-3.5" y2="2.373" width="0.0508" layer="51"/>
+<wire x1="-3.5" y1="2.373" x2="-3.373" y2="2.5" width="0.0508" layer="51"/>
+<wire x1="-3.373" y1="2.5" x2="-3" y2="2.5" width="0.0508" layer="51"/>
+<wire x1="-3" y1="2.5" x2="-2.5" y2="2.5" width="0.0508" layer="51" curve="180"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="3" y2="2.5" width="0.0508" layer="51" curve="180"/>
+<wire x1="3" y1="2.5" x2="3.373" y2="2.5" width="0.0508" layer="51"/>
+<wire x1="3.373" y1="2.5" x2="3.5" y2="2.373" width="0.0508" layer="51"/>
+<wire x1="3.5" y1="2.373" x2="3.5" y2="-2.373" width="0.0508" layer="51"/>
+<wire x1="3.5" y1="-2.373" x2="3.373" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="3.373" y1="-2.5" x2="3" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="2.75" x2="1.25" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-1.25" y1="-2.75" x2="1.25" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="-0.5" x2="-3.5" y2="0.5" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="-0.5" x2="3.5" y2="0.5" width="0.2032" layer="21"/>
+<circle x="-2" y="-1.25" radius="0.3535" width="0" layer="51"/>
+<smd name="4" x="-2.54" y="1.8" dx="2" dy="1.8" layer="1" roundness="25"/>
+<smd name="1" x="-2.54" y="-1.8" dx="2" dy="1.8" layer="1" roundness="25"/>
+<smd name="3" x="2.54" y="1.8" dx="2" dy="1.8" layer="1" roundness="25"/>
+<smd name="2" x="2.54" y="-1.8" dx="2" dy="1.8" layer="1" roundness="25"/>
+<text x="-3.81" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="HC49/S_S">
+<wire x1="-3.048" y1="-2.159" x2="3.048" y2="-2.159" width="0.0508" layer="51"/>
+<wire x1="-3.048" y1="2.159" x2="3.048" y2="2.159" width="0.0508" layer="51"/>
+<wire x1="-3.048" y1="-1.651" x2="3.048" y2="-1.651" width="0.0508" layer="51"/>
+<wire x1="3.048" y1="1.651" x2="-3.048" y2="1.651" width="0.0508" layer="51"/>
+<wire x1="-0.254" y1="0.508" x2="0.254" y2="0.508" width="0.254" layer="21"/>
+<wire x1="0.254" y1="0.508" x2="0.254" y2="-0.508" width="0.254" layer="21"/>
+<wire x1="0.254" y1="-0.508" x2="-0.254" y2="-0.508" width="0.254" layer="21"/>
+<wire x1="-0.254" y1="-0.508" x2="-0.254" y2="0.508" width="0.254" layer="21"/>
+<wire x1="0.635" y1="0.508" x2="0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-0.508" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0.508" x2="-0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-0.508" width="0.254" layer="21"/>
+<wire x1="0.635" y1="0" x2="1.27" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-1.27" y2="0" width="0.254" layer="21"/>
+<wire x1="-3.048" y1="2.159" x2="-3.048" y2="-2.159" width="0.0508" layer="51" curve="180"/>
+<wire x1="3.048" y1="-2.159" x2="3.048" y2="2.159" width="0.0508" layer="51" curve="180"/>
+<wire x1="-3.048" y1="1.651" x2="-3.048" y2="-1.651" width="0.0508" layer="51" curve="180"/>
+<wire x1="3.048" y1="-1.651" x2="3.048" y2="1.651" width="0.0508" layer="51" curve="180"/>
+<pad name="1" x="-2.413" y="0" drill="0.8128"/>
+<pad name="2" x="2.413" y="0" drill="0.8128"/>
+<text x="-5.08" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="Q">
@@ -3389,7 +3444,7 @@ ABMM Series, 7 x 5 mm</description>
 <text x="2.54" y="-5.842" size="1.524" layer="95">OUT</text>
 <text x="-6.985" y="-5.842" size="1.524" layer="95">GND</text>
 <text x="-6.985" y="4.318" size="1.524" layer="95">VCC</text>
-<text x="2.54" y="5.588" size="1.524" layer="95">E/D</text>
+<text x="2.54" y="5.588" size="1.524" layer="95">E/!D!</text>
 <pin name="GND" x="-12.7" y="-5.08" visible="pad" length="middle" direction="pwr"/>
 <pin name="VCC" x="-12.7" y="5.08" visible="pad" length="middle" direction="pwr"/>
 <pin name="OUT" x="12.7" y="0" visible="pad" length="middle" direction="out" rot="R180"/>
@@ -4075,6 +4130,15 @@ ABMM Series, 7 x 5 mm</description>
 </technologies>
 </device>
 <device name="SCP8" package="SCP8">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="HC49/S_S" package="HC49/S_S">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -5077,6 +5141,25 @@ ABMM Series, 7 x 5 mm</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SM77H" prefix="Y">
+<description>&lt;b&gt;CMOS Clock Oscillator&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="QG5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SM77H">
+<connects>
+<connect gate="G$1" pin="E/D" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
