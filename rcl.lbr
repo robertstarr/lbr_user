@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -18,9 +18,9 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -12045,6 +12045,33 @@ Vishay WSR Series, Power Metal Strip</description>
 <text x="-5.715" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-5.715" y="-4.445" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="CTRIMTZC3">
+<description>TZC3 Series&lt;p&gt;
+Murata</description>
+<smd name="+" x="-2.25" y="0" dx="1.5" dy="1" layer="1"/>
+<smd name="-" x="2.25" y="0" dx="1.5" dy="1" layer="1"/>
+<wire x1="2.25" y1="-1.6" x2="-1.615" y2="-1.6" width="0.0508" layer="51"/>
+<wire x1="-1.615" y1="-1.6" x2="-2.25" y2="-0.965" width="0.0508" layer="51"/>
+<wire x1="-2.25" y1="-0.965" x2="-2.25" y2="0.965" width="0.0508" layer="51"/>
+<wire x1="-2.25" y1="0.965" x2="-1.615" y2="1.6" width="0.0508" layer="51"/>
+<wire x1="-1.615" y1="1.6" x2="2.25" y2="1.6" width="0.0508" layer="51"/>
+<wire x1="2.25" y1="1.6" x2="2.25" y2="-1.6" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="1.25" width="0.0508" layer="51"/>
+<wire x1="-0.25" y1="1.25" x2="-0.25" y2="-1.25" width="0.0508" layer="51"/>
+<wire x1="0.25" y1="1.25" x2="0.25" y2="-1.25" width="0.0508" layer="51"/>
+<wire x1="1.25" y1="0.75" x2="1.25" y2="-0.75" width="0.0508" layer="51" curve="298.072487"/>
+<wire x1="1.25" y1="-0.75" x2="1.25" y2="0.75" width="0.0508" layer="51"/>
+<wire x1="-2.45" y1="0.8" x2="-2.45" y2="1.05" width="0.2032" layer="21"/>
+<wire x1="-2.45" y1="1.05" x2="-1.7" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="1.8" x2="2.45" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="2.45" y1="1.8" x2="2.45" y2="0.75" width="0.2032" layer="21"/>
+<wire x1="-2.45" y1="-1.05" x2="-2.45" y2="-0.8" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="-1.8" x2="-2.45" y2="-1.05" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="-1.8" x2="2.45" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="2.45" y1="-0.75" x2="2.45" y2="-1.8" width="0.2032" layer="21"/>
+<text x="-1.75" y="2.15" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.75" y="-2.9" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="C-EU">
@@ -20084,6 +20111,15 @@ for power line</description>
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="TZC3" package="CTRIMTZC3">
+<connects>
+<connect gate="G$1" pin="A" pad="+"/>
+<connect gate="G$1" pin="E" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
