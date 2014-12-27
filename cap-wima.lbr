@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1492,6 +1492,28 @@ W=3, L=10</description>
 <text x="-4.7625" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-4.7625" y="-2.8575" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="C100-050X103">
+<description>&lt;b&gt;CAPACITOR&lt;/b&gt; - 10mm&lt;p&gt;
+W=5, L=10.3</description>
+<wire x1="-6.146" y1="-2.45" x2="-6.4" y2="-2.196" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-6.4" y1="-2.196" x2="-6.4" y2="2.446" width="0.2032" layer="21"/>
+<wire x1="-6.4" y1="2.446" x2="-6.146" y2="2.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-6.146" y1="2.7" x2="6.146" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="6.146" y1="2.7" x2="6.4" y2="2.446" width="0.2032" layer="21" curve="-90"/>
+<wire x1="6.4" y1="2.446" x2="6.4" y2="-2.196" width="0.2032" layer="21"/>
+<wire x1="6.4" y1="-2.196" x2="6.146" y2="-2.45" width="0.2032" layer="21" curve="-90"/>
+<wire x1="6.146" y1="-2.45" x2="-6.146" y2="-2.45" width="0.2032" layer="21"/>
+<wire x1="-0.3175" y1="0.9525" x2="-0.3175" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.3175" y1="0" x2="-0.3175" y2="-0.9525" width="0.254" layer="21"/>
+<wire x1="0.3175" y1="0.9525" x2="0.3175" y2="0" width="0.254" layer="21"/>
+<wire x1="0.3175" y1="0" x2="0.3175" y2="-0.9525" width="0.254" layer="21"/>
+<wire x1="-0.3175" y1="0" x2="-1.905" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.3175" y1="0" x2="1.905" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-5" y="0" drill="1.016" diameter="2.1844" shape="octagon"/>
+<pad name="2" x="5" y="0" drill="1.016" diameter="2.1844" shape="octagon"/>
+<text x="-5.7325" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.7325" y="-3.4925" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CNP-">
@@ -2098,6 +2120,15 @@ W=3, L=10</description>
 </technologies>
 </device>
 <device name="C070-030X100" package="C070-030X100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C100-050X103" package="C100-050X103">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
