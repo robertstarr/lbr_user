@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -1046,10 +1046,10 @@ with LED 3mm</description>
 <circle x="-2.159" y="2.159" radius="0.508" width="0.2032" layer="51"/>
 <circle x="0" y="0" radius="0.635" width="0.0508" layer="51"/>
 <circle x="0" y="0" radius="0.254" width="0.2032" layer="51"/>
-<pad name="1" x="-3.2512" y="2.2606" drill="1.016" shape="long"/>
-<pad name="3" x="-3.2512" y="-2.2606" drill="1.016" shape="long"/>
-<pad name="2" x="3.2512" y="2.2606" drill="1.016" shape="long"/>
-<pad name="4" x="3.2512" y="-2.2606" drill="1.016" shape="long"/>
+<pad name="1" x="-3.25" y="2.25" drill="1.016" rot="R90"/>
+<pad name="3" x="-3.25" y="-2.25" drill="1.016" rot="R90"/>
+<pad name="2" x="3.25" y="2.25" drill="1.016" rot="R90"/>
+<pad name="4" x="3.25" y="-2.25" drill="1.016" rot="R90"/>
 <text x="-3.175" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3.175" y="-4.445" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-3.175" y="5.08" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
@@ -1097,7 +1097,7 @@ with LED 3mm</description>
 <text x="-3.683" y="-5.969" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-2.54" y="3.81" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
-<package name="B3F-10XX-B">
+<package name="B3F-10XX_B">
 <description>&lt;b&gt;OMRON SWITCH&lt;/b&gt;</description>
 <wire x1="3.302" y1="-0.762" x2="3.048" y2="-0.762" width="0.2032" layer="21"/>
 <wire x1="3.302" y1="-0.762" x2="3.302" y2="0.762" width="0.2032" layer="21"/>
@@ -1628,7 +1628,7 @@ side actuated, w/boss</description>
 </technology>
 </technologies>
 </device>
-<device name="-B" package="B3F-10XX-B">
+<device name="-B" package="B3F-10XX_B">
 <connects>
 <connect gate="1" pin="P" pad="3"/>
 <connect gate="1" pin="P1" pad="4"/>
@@ -1846,6 +1846,36 @@ side actuated, w/boss</description>
 <connect gate="G$1" pin="G" pad="S"/>
 <connect gate="G$1" pin="P" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="B3F-10XX" prefix="S">
+<description>&lt;b&gt;Tactile Switch&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="TS" x="0" y="0"/>
+</gates>
+<devices>
+<device name="_B" package="B3F-10XX_B">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="" package="B3F-10XX">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+<connect gate="G$1" pin="S" pad="3 4"/>
 </connects>
 <technologies>
 <technology name="">
