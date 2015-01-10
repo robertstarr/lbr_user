@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -177,6 +177,30 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-5.08" y="5.588" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-5.08" y="-6.223" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-5.2" y1="4.5" x2="-4.5" y2="5.2" layer="21"/>
+</package>
+<package name="NLC453232">
+<smd name="1" x="-2.25" y="0" dx="2.8" dy="1.5" layer="1" rot="R90"/>
+<smd name="2" x="2.25" y="0" dx="2.8" dy="1.5" layer="1" rot="R90"/>
+<wire x1="-2.35" y1="1.8" x2="2.35" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="-1.8" x2="-2.35" y2="-1.8" width="0.2032" layer="21"/>
+<text x="-2.63" y="2.288" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.68" y="-2.923" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-2.15" y1="1.6" x2="2.15" y2="1.6" width="0.0508" layer="51"/>
+<wire x1="2.15" y1="1.6" x2="2.15" y2="1.1" width="0.0508" layer="51"/>
+<wire x1="2.15" y1="1.1" x2="2.15" y2="-1.1" width="0.0508" layer="51"/>
+<wire x1="2.15" y1="-1.1" x2="2.15" y2="-1.6" width="0.0508" layer="51"/>
+<wire x1="2.15" y1="-1.6" x2="-2.15" y2="-1.6" width="0.0508" layer="51"/>
+<wire x1="-2.15" y1="-1.6" x2="-2.15" y2="-1.1" width="0.0508" layer="51"/>
+<rectangle x1="-2.3" y1="-1.2" x2="-2.15" y2="1.2" layer="51"/>
+<rectangle x1="2.15" y1="-1.2" x2="2.35" y2="1.2" layer="51"/>
+<wire x1="-2.15" y1="-1.1" x2="-2.15" y2="1.1" width="0.0508" layer="51"/>
+<wire x1="-2.15" y1="1.1" x2="-2.15" y2="1.6" width="0.0508" layer="51"/>
+<wire x1="-2.35" y1="-1.8" x2="-2.35" y2="-1.65" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="-1.8" x2="2.35" y2="-1.65" width="0.2032" layer="21"/>
+<wire x1="-2.35" y1="1.8" x2="-2.35" y2="1.65" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="1.8" x2="2.35" y2="1.65" width="0.2032" layer="21"/>
+<wire x1="-2.15" y1="1.1" x2="2.15" y2="1.1" width="0.0508" layer="51"/>
+<wire x1="2.15" y1="-1.1" x2="-2.15" y2="-1.1" width="0.0508" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -366,6 +390,22 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </gates>
 <devices>
 <device name="" package="SLF10145T">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NLC453232" prefix="L">
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NLC453232">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

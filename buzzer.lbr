@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -22,7 +22,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -987,6 +987,19 @@ dia 14 mm</description>
 <text x="-3.175" y="-4.445" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="6.35" y="5.08" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
+<package name="WST-1205S">
+<description>BUZZER</description>
+<wire x1="3.294" y1="2.44" x2="4.31" y2="2.44" width="0.1524" layer="21"/>
+<wire x1="3.802" y1="2.948" x2="3.802" y2="1.932" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.27" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="6.3" width="0.2032" layer="21"/>
+<circle x="3.802" y="2.44" radius="0.762" width="0.2032" layer="21"/>
+<pad name="+" x="3.8" y="0" drill="0.9144" diameter="2.159" shape="octagon"/>
+<pad name="-" x="-3.8" y="0" drill="0.9144" diameter="2.159" shape="octagon"/>
+<text x="3.937" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.556" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="6" width="0.0508" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="B">
@@ -1790,6 +1803,23 @@ Source: Spoerle</description>
 <technology name="">
 <attribute name="LABEL" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WST-1205S">
+<description>BUZZER 2.3KHZ 4-6VDC</description>
+<gates>
+<gate name="G$1" symbol="BP" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="WST-1205S">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
