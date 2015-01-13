@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -23,11 +23,11 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -58,8 +58,10 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -172,6 +174,24 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="5.865" y="7.85" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.155" y="-3.87" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="DRQ74">
+<smd name="1" x="-3.085" y="0.7" dx="1.73" dy="1" layer="1"/>
+<smd name="2" x="-3.085" y="-0.7" dx="1.73" dy="1" layer="1"/>
+<smd name="4" x="3.085" y="0.7" dx="1.73" dy="1" layer="1"/>
+<smd name="3" x="3.085" y="-0.7" dx="1.73" dy="1" layer="1"/>
+<wire x1="-3.05" y1="3.8" x2="3.05" y2="3.8" width="0.0508" layer="51"/>
+<wire x1="3.05" y1="3.8" x2="3.05" y2="-3.8" width="0.0508" layer="51"/>
+<wire x1="3.05" y1="-3.8" x2="-3.05" y2="-3.8" width="0.0508" layer="51"/>
+<wire x1="-3.05" y1="-3.8" x2="-3.05" y2="3.8" width="0.0508" layer="51"/>
+<wire x1="-3.25" y1="1.45" x2="-3.25" y2="4" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="4" x2="3.25" y2="4" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="4" x2="3.25" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="-1.45" x2="3.25" y2="-4" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="-4" x2="-3.25" y2="-4" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="-4" x2="-3.25" y2="-1.45" width="0.2032" layer="21"/>
+<text x="-3.175" y="4.445" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="-5.08" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -185,6 +205,23 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-3.175" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+</symbol>
+<symbol name="LIP">
+<wire x1="-3.81" y1="0.635" x2="-1.905" y2="0.635" width="0.254" layer="94" curve="-180"/>
+<wire x1="-1.905" y1="0.635" x2="0" y2="0.635" width="0.254" layer="94" curve="-180"/>
+<wire x1="0" y1="0.635" x2="1.905" y2="0.635" width="0.254" layer="94" curve="-180"/>
+<wire x1="1.905" y1="0.635" x2="3.81" y2="0.635" width="0.254" layer="94" curve="-180"/>
+<wire x1="-3.81" y1="0.635" x2="-3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="3.81" y1="0.635" x2="3.81" y2="0" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="3.81" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.4925" y1="2.2225" x2="3.4925" y2="2.2225" width="0.254" layer="94"/>
+<wire x1="-3.4925" y1="2.8575" x2="3.4925" y2="2.8575" width="0.254" layer="94"/>
+<text x="-3.81" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="-3.81" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C" x="5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="H" x="-5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1"/>
+<circle x="-2.8575" y="0.635" radius="0.283978125" width="0" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -245,6 +282,26 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DRQ74" prefix="L">
+<description>DUAL POWER INDUCTOR</description>
+<gates>
+<gate name="-A" symbol="LIP" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-B" symbol="LIP" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="DRQ74">
+<connects>
+<connect gate="-A" pin="C" pad="3"/>
+<connect gate="-A" pin="H" pad="1"/>
+<connect gate="-B" pin="C" pad="4"/>
+<connect gate="-B" pin="H" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

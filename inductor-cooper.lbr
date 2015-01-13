@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
@@ -248,6 +248,50 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <vertex x="2.5" y="1.25"/>
 </polygon>
 </package>
+<package name="DR74">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt;</description>
+<wire x1="3.8" y1="2" x2="3.8" y2="-2" width="0.2032" layer="51"/>
+<wire x1="3.8" y1="-2" x2="3.8" y2="-3.546" width="0.2032" layer="21"/>
+<wire x1="3.8" y1="-3.546" x2="3.546" y2="-3.8" width="0.2032" layer="21" curve="-90"/>
+<wire x1="3.546" y1="-3.8" x2="-3.546" y2="-3.8" width="0.2032" layer="21"/>
+<wire x1="-3.546" y1="-3.8" x2="-3.8" y2="-3.546" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-3.8" y1="-3.546" x2="-3.8" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-3.8" y1="-2" x2="-3.8" y2="2" width="0.2032" layer="51"/>
+<wire x1="-3.8" y1="2" x2="-3.8" y2="3.546" width="0.2032" layer="21"/>
+<wire x1="-3.8" y1="3.546" x2="-3.546" y2="3.8" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-3.546" y1="3.8" x2="3.546" y2="3.8" width="0.2032" layer="21"/>
+<wire x1="3.546" y1="3.8" x2="3.8" y2="3.546" width="0.2032" layer="21" curve="-90"/>
+<wire x1="3.8" y1="3.546" x2="3.8" y2="2" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.795" width="0.2032" layer="51"/>
+<smd name="1" x="-3" y="0" dx="3.25" dy="3" layer="1" rot="R90"/>
+<smd name="2" x="3" y="0" dx="3.25" dy="3" layer="1" rot="R90"/>
+<text x="-3.81" y="4.445" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.81" y="-5.08" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<polygon width="0.2032" layer="51">
+<vertex x="-2" y="3.25"/>
+<vertex x="-3.25" y="2"/>
+<vertex x="-2.5" y="1.25" curve="-28.072487"/>
+<vertex x="-1.25" y="2.5"/>
+</polygon>
+<polygon width="0.2032" layer="51">
+<vertex x="-3.25" y="-2"/>
+<vertex x="-2" y="-3.25"/>
+<vertex x="-1.25" y="-2.5" curve="-28.072487"/>
+<vertex x="-2.5" y="-1.25"/>
+</polygon>
+<polygon width="0.2032" layer="51">
+<vertex x="2" y="-3.25"/>
+<vertex x="3.25" y="-2"/>
+<vertex x="2.5" y="-1.25" curve="-28.072487"/>
+<vertex x="1.25" y="-2.5"/>
+</polygon>
+<polygon width="0.2032" layer="51">
+<vertex x="3.25" y="2"/>
+<vertex x="2" y="3.25"/>
+<vertex x="1.25" y="2.5" curve="-28.072487"/>
+<vertex x="2.5" y="1.25"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -343,6 +387,23 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </gates>
 <devices>
 <device name="" package="DRA74">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DR74" prefix="L">
+<description>&lt;b&gt;POWER INDUCTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DR74">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

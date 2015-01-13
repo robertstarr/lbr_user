@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5115,6 +5115,35 @@ Top adjust</description>
 <wire x1="3.937" y1="1.778" x2="3.937" y2="0.635" width="0.2032" layer="51"/>
 <wire x1="3.937" y1="0.635" x2="3.175" y2="0.635" width="0.2032" layer="51"/>
 </package>
+<package name="RV16AF-41">
+<description>Alpha Taiwan</description>
+<circle x="0" y="0" radius="3.75" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="8.5" width="0.2032" layer="51"/>
+<pad name="2" x="0" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="1" x="-5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="3" x="5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<wire x1="-3" y1="-12" x2="-3" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-16" x2="-7" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-7" y1="-16" x2="-7" y2="-12" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-12" x2="-2" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-16" x2="2" y2="-16" width="0.2032" layer="51"/>
+<wire x1="2" y1="-16" x2="2" y2="-12" width="0.2032" layer="51"/>
+<wire x1="7" y1="-12" x2="7" y2="-16" width="0.2032" layer="51"/>
+<wire x1="7" y1="-16" x2="3" y2="-16" width="0.2032" layer="51"/>
+<wire x1="3" y1="-16" x2="3" y2="-12" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-3" x2="-8" y2="-12" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-12" x2="-7" y2="-12" width="0.2032" layer="51"/>
+<wire x1="-7" y1="-12" x2="-3" y2="-12" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-12" x2="-2" y2="-12" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-12" x2="2" y2="-12" width="0.2032" layer="51"/>
+<wire x1="2" y1="-12" x2="3" y2="-12" width="0.2032" layer="51"/>
+<wire x1="3" y1="-12" x2="7" y2="-12" width="0.2032" layer="51"/>
+<wire x1="7" y1="-12" x2="8" y2="-12" width="0.2032" layer="51"/>
+<wire x1="8" y1="-12" x2="8" y2="-3" width="0.2032" layer="51"/>
+<text x="-7" y="-19" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2" y="-11" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-7" y="-20.27" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POT_EU-">
@@ -8492,6 +8521,26 @@ Alpha 12 MM</description>
 </gates>
 <devices>
 <device name="" package="RV120F-20-15F">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV16" prefix="R">
+<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt; - Alpha 16mm</description>
+<gates>
+<gate name="G$1" symbol="POT_US-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="AF-41" package="RV16AF-41">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

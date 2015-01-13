@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -198,6 +198,65 @@ pitch 5 mm, dia 7.8 mm</description>
 <text x="4.953" y="-3.048" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <circle x="0" y="0" radius="3.362503125" width="0.0508" layer="51"/>
 </package>
+<package name="744029100">
+<description>INDUCTOR</description>
+<smd name="1" x="0" y="1.1" dx="3.2" dy="1" layer="1"/>
+<smd name="2" x="0" y="-1.1" dx="3.2" dy="1" layer="1"/>
+<wire x1="0.6" y1="-1.4" x2="-0.6" y2="-1.4" width="0.0508" layer="51"/>
+<wire x1="-0.6" y1="-1.4" x2="-1.4" y2="-0.6" width="0.0508" layer="51"/>
+<wire x1="-1.4" y1="-0.6" x2="-1.4" y2="0.6" width="0.0508" layer="51"/>
+<wire x1="-1.4" y1="0.6" x2="-0.6" y2="1.4" width="0.0508" layer="51"/>
+<wire x1="-0.6" y1="1.4" x2="0.6" y2="1.4" width="0.0508" layer="51"/>
+<wire x1="0.6" y1="1.4" x2="1.4" y2="0.6" width="0.0508" layer="51"/>
+<wire x1="1.4" y1="0.6" x2="1.4" y2="-0.6" width="0.0508" layer="51"/>
+<wire x1="1.4" y1="-0.6" x2="0.6" y2="-1.4" width="0.0508" layer="51"/>
+<wire x1="-1.6" y1="0.3" x2="-1.6" y2="-0.3" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="0.3" x2="1.6" y2="-0.3" width="0.2032" layer="21"/>
+<text x="-1.6" y="1.9" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.6" y="-2.7" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="744025150">
+<description>INDUCTOR</description>
+<smd name="1" x="-1.75" y="0" dx="3.2" dy="1" layer="1" rot="R90"/>
+<smd name="2" x="1.75" y="0" dx="3.2" dy="1" layer="1" rot="R90"/>
+<wire x1="0.7" y1="-1.4" x2="-0.7" y2="-1.4" width="0.0508" layer="51"/>
+<wire x1="-0.7" y1="-1.4" x2="-1.4" y2="-0.7" width="0.0508" layer="51"/>
+<wire x1="-1.4" y1="-0.7" x2="-1.4" y2="0.7" width="0.0508" layer="51"/>
+<wire x1="-1.4" y1="0.7" x2="-0.7" y2="1.4" width="0.0508" layer="51"/>
+<wire x1="-0.7" y1="1.4" x2="0.7" y2="1.4" width="0.0508" layer="51"/>
+<wire x1="0.7" y1="1.4" x2="1.4" y2="0.7" width="0.0508" layer="51"/>
+<wire x1="1.4" y1="0.7" x2="1.4" y2="-0.7" width="0.0508" layer="51"/>
+<wire x1="1.4" y1="-0.7" x2="0.7" y2="-1.4" width="0.0508" layer="51"/>
+<wire x1="-1" y1="1.6" x2="1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-1" y1="-1.6" x2="1" y2="-1.6" width="0.2032" layer="21"/>
+<text x="-2.3" y="1.9" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.3" y="-2.8" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="74437346068">
+<description>POWER INDUCTOR</description>
+<wire x1="2.3" y1="-3.3" x2="-2.3" y2="-3.3" width="0.0508" layer="51"/>
+<wire x1="-2.3" y1="-3.3" x2="-3.3" y2="-2.3" width="0.0508" layer="51" curve="-90"/>
+<wire x1="-3.3" y1="-2.3" x2="-3.3" y2="2.3" width="0.0508" layer="51"/>
+<wire x1="-3.3" y1="2.3" x2="-2.3" y2="3.3" width="0.0508" layer="51" curve="-90"/>
+<wire x1="-2.3" y1="3.3" x2="2.3" y2="3.3" width="0.0508" layer="51"/>
+<wire x1="2.3" y1="3.3" x2="3.3" y2="2.3" width="0.0508" layer="51" curve="-90"/>
+<wire x1="3.3" y1="2.3" x2="3.3" y2="-2.3" width="0.0508" layer="51"/>
+<wire x1="3.3" y1="-2.3" x2="2.3" y2="-3.3" width="0.0508" layer="51" curve="-90"/>
+<smd name="1" x="-2.75" y="0" dx="3" dy="1.8" layer="1" rot="R90"/>
+<smd name="2" x="2.75" y="0" dx="3" dy="1.8" layer="1" rot="R90"/>
+<wire x1="-3.5" y1="1.8" x2="-3.5" y2="2.3" width="0.2032" layer="21"/>
+<wire x1="-3.5" y1="2.3" x2="-2.3" y2="3.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-2.3" y1="3.5" x2="2.3" y2="3.5" width="0.2032" layer="21"/>
+<wire x1="2.3" y1="3.5" x2="3.5" y2="2.3" width="0.2032" layer="21" curve="-90"/>
+<wire x1="3.5" y1="2.3" x2="3.5" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="-1.8" x2="3.5" y2="-2.3" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="-2.3" x2="2.3" y2="-3.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.3" y1="-3.5" x2="-2.3" y2="-3.5" width="0.2032" layer="21"/>
+<wire x1="-2.3" y1="-3.5" x2="-3.5" y2="-2.3" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-3.5" y1="-2.3" x2="-3.5" y2="-1.8" width="0.2032" layer="21"/>
+<text x="-2.54" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-4.699" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CMF">
@@ -323,6 +382,57 @@ WE-PD2 SMD Series</description>
 </gates>
 <devices>
 <device name="" package="7447789004">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="744029100" prefix="L">
+<description>&lt;b&gt;INDUCTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="LI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="744029100">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="744025150" prefix="L">
+<description>POWER INDUCTOR</description>
+<gates>
+<gate name="G$1" symbol="LI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="744025150">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="74437346068" prefix="L">
+<description>POWER INDUCTOR</description>
+<gates>
+<gate name="G$1" symbol="LI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="74437346068">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -866,6 +866,16 @@ RL622 Series, 8.5 mm dia, 5 mm ls</description>
 <text x="-5.715" y="6.985" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-5.715" y="-7.62" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="SRN8040">
+<description>POWER INDUCTOR</description>
+<wire x1="-3.9" y1="-1.4" x2="-3.9" y2="1.4" width="0.2032" layer="21"/>
+<smd name="1" x="0" y="2.85" dx="8" dy="2.2" layer="1" roundness="25" thermals="no"/>
+<smd name="2" x="0" y="-2.85" dx="8" dy="2.2" layer="1" roundness="25" thermals="no"/>
+<text x="-4.064" y="4.445" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.937" y="-5.207" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="4" width="0.2032" layer="51"/>
+<wire x1="3.9" y1="-1.4" x2="3.9" y2="1.4" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -1434,6 +1444,23 @@ RL622 Series, 8.5 mm dia, 5 mm ls</description>
 </gates>
 <devices>
 <device name="" package="SRR1206">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRN8040" prefix="L">
+<description>&lt;b&gt;POWER INDUCTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRN8040">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
