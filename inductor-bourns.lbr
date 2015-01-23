@@ -876,6 +876,15 @@ RL622 Series, 8.5 mm dia, 5 mm ls</description>
 <circle x="0" y="0" radius="4" width="0.2032" layer="51"/>
 <wire x1="3.9" y1="-1.4" x2="3.9" y2="1.4" width="0.2032" layer="21"/>
 </package>
+<package name="SDR0805">
+<smd name="1" x="-2.65" y="0" dx="2.7" dy="8" layer="1"/>
+<smd name="2" x="2.65" y="0" dx="2.7" dy="8" layer="1"/>
+<circle x="0" y="0" radius="4" width="0.0508" layer="51"/>
+<text x="-4.064" y="4.318" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.064" y="-5.08" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-0.889" y1="3.937" x2="0.889" y2="3.937" width="0.2032" layer="21"/>
+<wire x1="-1.016" y1="-3.937" x2="0.762" y2="-3.937" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -1461,6 +1470,23 @@ RL622 Series, 8.5 mm dia, 5 mm ls</description>
 </gates>
 <devices>
 <device name="" package="SRN8040">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SDR0805" prefix="L">
+<description>&lt;b&gt;POWER INDUCTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SDR0805">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
