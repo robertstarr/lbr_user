@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1029,6 +1029,42 @@ Source: CNC Tech</description>
 <hole x="5.8674" y="0" drill="1.2"/>
 <hole x="-5.8674" y="0" drill="1.2"/>
 </package>
+<package name="20021521-00010T1">
+<description>SMD SHROUDED HEADER&lt;p&gt;
+FCI MiniTek 10-PIN, 0.05" PITCH</description>
+<wire x1="-6.325" y1="2.55" x2="6.325" y2="2.55" width="0.0508" layer="51"/>
+<wire x1="6.325" y1="2.55" x2="6.325" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="6.325" y1="-2.55" x2="1.25" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="-2.55" x2="-6.325" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="-6.325" y1="-2.55" x2="-6.325" y2="2.55" width="0.0508" layer="51"/>
+<wire x1="-5.625" y1="1.85" x2="5.625" y2="1.85" width="0.0508" layer="51"/>
+<wire x1="5.625" y1="1.85" x2="5.625" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="5.625" y1="-1.85" x2="1.25" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="1.25" y1="-1.85" x2="1.25" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="1.25" y1="-2.55" x2="-1.25" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="-2.55" x2="-1.25" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="-1.85" x2="-5.625" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="-5.625" y1="-1.85" x2="-5.625" y2="1.85" width="0.0508" layer="51"/>
+<wire x1="-6.6" y1="2.8" x2="-3.2" y2="2.8" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="2.8" x2="6.6" y2="2.8" width="0.2032" layer="21"/>
+<wire x1="6.6" y1="2.8" x2="6.6" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="6.6" y1="-2.8" x2="3.2" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-2.8" x2="-6.6" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-6.6" y1="-2.8" x2="-6.6" y2="2.8" width="0.2032" layer="21"/>
+<text x="-6.604" y="3.429" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="-0.381" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.9" y1="-3.2" x2="-3.1" y2="-2.4" layer="21"/>
+<smd name="1" x="-2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="4" x="-1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="6" x="0" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="7" x="1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="8" x="1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="9" x="2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="10" x="2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TM4C123BE6PZ">
@@ -1872,6 +1908,23 @@ Tiva C Series, ARM Cortex M4F</description>
 </technologies>
 </device>
 <device name="CON-2X5-50MIL" package="CON-2X5-50MIL">
+<connects>
+<connect gate="G$1" pin="!EXTDBG!" pad="3"/>
+<connect gate="G$1" pin="!RST!" pad="10"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="GND@9" pad="9"/>
+<connect gate="G$1" pin="NC@7" pad="7"/>
+<connect gate="G$1" pin="TCK" pad="4"/>
+<connect gate="G$1" pin="TDI" pad="8"/>
+<connect gate="G$1" pin="TDO" pad="6"/>
+<connect gate="G$1" pin="TMS" pad="2"/>
+<connect gate="G$1" pin="VTARG" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="20021521-00010T1" package="20021521-00010T1">
 <connects>
 <connect gate="G$1" pin="!EXTDBG!" pad="3"/>
 <connect gate="G$1" pin="!RST!" pad="10"/>

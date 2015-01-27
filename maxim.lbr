@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
@@ -680,11 +680,10 @@ square</description>
 </package>
 <package name="TSOC6">
 <description>&lt;b&gt;TSOC 6&lt;/b&gt;</description>
-<wire x1="-1.8542" y1="1.8034" x2="1.8542" y2="1.8034" width="0.2032" layer="21"/>
+<wire x1="-1.8542" y1="1.8034" x2="1.8542" y2="1.8034" width="0.2032" layer="51"/>
 <wire x1="1.8542" y1="1.8034" x2="1.8542" y2="-1.8034" width="0.2032" layer="21"/>
-<wire x1="1.8542" y1="-1.8034" x2="-1.8542" y2="-1.8034" width="0.2032" layer="21"/>
+<wire x1="1.8542" y1="-1.8034" x2="-1.8542" y2="-1.8034" width="0.2032" layer="51"/>
 <wire x1="-1.8542" y1="-1.8034" x2="-1.8542" y2="1.8034" width="0.2032" layer="21"/>
-<circle x="-1.143" y="-1.016" radius="0.254" width="0.1524" layer="27"/>
 <smd name="1" x="-1.27" y="-1.6002" dx="0.4064" dy="1.2192" layer="1"/>
 <smd name="2" x="0" y="-1.6002" dx="0.4064" dy="1.2192" layer="1"/>
 <smd name="3" x="1.27" y="-1.6002" dx="0.4064" dy="1.2192" layer="1"/>
@@ -699,6 +698,7 @@ square</description>
 <rectangle x1="1.1684" y1="1.0668" x2="1.3716" y2="2.0828" layer="51"/>
 <rectangle x1="-0.1016" y1="1.0668" x2="0.1016" y2="2.0828" layer="51"/>
 <rectangle x1="-1.3716" y1="1.0668" x2="-1.1684" y2="2.0828" layer="51"/>
+<rectangle x1="-2.2" y1="-1.9" x2="-1.7" y2="-1.4" layer="21"/>
 </package>
 <package name="TO92-">
 <description>&lt;b&gt;TO-92&lt;/b&gt;</description>
