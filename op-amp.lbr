@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1442,11 +1442,11 @@ JEDEC MO-193-AB</description>
 <pin name="-IN" x="-7.62" y="-5.08" visible="pad" length="short" direction="in"/>
 <pin name="+IN" x="-7.62" y="5.08" visible="pad" length="short" direction="in"/>
 <pin name="OUT" x="12.7" y="0" visible="pad" length="short" direction="out" rot="R180"/>
-<pin name="+VS" x="2.54" y="7.62" visible="pad" length="short" direction="pas" rot="R270"/>
+<pin name="+VS" x="2.54" y="7.62" visible="pad" length="short" direction="pwr" rot="R270"/>
 <pin name="RG@3" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
-<pin name="REF" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="VREF" x="7.62" y="-5.08" visible="pad" length="short" direction="pwr" rot="R90"/>
 <pin name="RG@2" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
-<pin name="-VS" x="2.54" y="-7.62" visible="pad" length="short" direction="pas" rot="R90"/>
+<pin name="-VS" x="2.54" y="-7.62" visible="pad" length="short" direction="pwr" rot="R90"/>
 </symbol>
 <symbol name="_NSHDN">
 <wire x1="0" y1="2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
@@ -5763,9 +5763,9 @@ Precision Micropower, Low Noise CMOS, Rail-to-Rail</description>
 <connect gate="G$1" pin="-IN" pad="1"/>
 <connect gate="G$1" pin="-VS" pad="5"/>
 <connect gate="G$1" pin="OUT" pad="7"/>
-<connect gate="G$1" pin="REF" pad="6"/>
 <connect gate="G$1" pin="RG@2" pad="2"/>
 <connect gate="G$1" pin="RG@3" pad="3"/>
+<connect gate="G$1" pin="VREF" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
