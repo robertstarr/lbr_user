@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -74,7 +74,7 @@
 <description>&lt;b&gt;Murata Inductors and Filters - v1.00, 04/01/2014&lt;/b&gt;&lt;p&gt;
 &lt;p&gt;THIS LIBRARY IS PROVIDED AS IS AND WITHOUT WARRANTY OF ANY KIND, EXPRESSED OR IMPLIED.&lt;br&gt;
 USE AT YOUR OWN RISK!&lt;p&gt;
-&lt;author&gt;Copyright (C) 2014, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
+&lt;author&gt;Copyright (C) 2014, Bob Starr</description>
 <packages>
 <package name="DLW31SN">
 <description>COMMON MODE FILTER</description>
@@ -100,6 +100,23 @@ diameter 13.7 mm, ls=7.2 mm</description>
 <circle x="0" y="0" radius="7.08378125" width="0.2032" layer="21"/>
 <text x="5.715" y="-6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-4.445" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="DLW5AT_TQ2">
+<description>COMMON MODE CHOKE</description>
+<smd name="1" x="-1.5" y="-1.1" dx="1.7" dy="1.3" layer="1" rot="R180"/>
+<smd name="2" x="-1.5" y="1.1" dx="1.7" dy="1.3" layer="1" rot="R180"/>
+<smd name="3" x="1.5" y="1.1" dx="1.7" dy="1.3" layer="1" rot="R180"/>
+<smd name="4" x="1.5" y="-1.1" dx="1.7" dy="1.3" layer="1" rot="R180"/>
+<wire x1="-2.5" y1="-1.8" x2="-2.5" y2="1.8" width="0.0508" layer="51"/>
+<wire x1="-2.5" y1="1.8" x2="-0.4" y2="1.8" width="0.0508" layer="51"/>
+<wire x1="0.4" y1="1.8" x2="2.5" y2="1.8" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="1.8" x2="2.5" y2="-1.8" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="-1.8" x2="0.4" y2="-1.8" width="0.0508" layer="51"/>
+<wire x1="-0.4" y1="-1.8" x2="-2.5" y2="-1.8" width="0.0508" layer="51"/>
+<wire x1="-0.4" y1="1.8" x2="0.4" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="-0.4" y1="-1.8" x2="0.4" y2="-1.8" width="0.2032" layer="21"/>
+<text x="-2.413" y="2.159" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.413" y="-2.921" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -174,6 +191,25 @@ diameter 13.7 mm, ls=7.2 mm</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DLW5AT_TQ2" prefix="L">
+<description>COMMON MODE CHOKE</description>
+<gates>
+<gate name="G$1" symbol="CMF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DLW5AT_TQ2">
+<connects>
+<connect gate="G$1" pin="P1" pad="1"/>
+<connect gate="G$1" pin="P2" pad="4"/>
+<connect gate="G$1" pin="S1" pad="2"/>
+<connect gate="G$1" pin="S2" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
