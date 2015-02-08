@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -222,6 +222,24 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <smd name="3" x="1.4" y="-0.65" dx="0.9" dy="0.4" layer="1"/>
 <text x="-1.778" y="1.651" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.778" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="VLF302510MT">
+<description>POWER INDUCTOR</description>
+<wire x1="-1.5" y1="1.25" x2="1.5" y2="1.25" width="0.0508" layer="51"/>
+<wire x1="1.5" y1="1.25" x2="1.5" y2="-1.25" width="0.0508" layer="51"/>
+<wire x1="1.5" y1="-1.25" x2="-1.5" y2="-1.25" width="0.0508" layer="51"/>
+<wire x1="-1.5" y1="-1.25" x2="-1.5" y2="1.25" width="0.0508" layer="51"/>
+<wire x1="-1.65" y1="1" x2="-1.65" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="-1.65" y1="1.4" x2="1.65" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="1.65" y1="1.4" x2="1.65" y2="1" width="0.2032" layer="21"/>
+<wire x1="-1.65" y1="-1" x2="-1.65" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="-1.65" y1="-1.4" x2="1.65" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="1.65" y1="-1.4" x2="1.65" y2="-1" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.188484375" width="0.0508" layer="51"/>
+<smd name="1" x="-1.4" y="0" dx="1.45" dy="0.9" layer="1" rot="R90"/>
+<smd name="2" x="1.4" y="0" dx="1.45" dy="0.9" layer="1" rot="R90"/>
+<text x="-1.651" y="1.651" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.651" y="-2.413" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -449,6 +467,23 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VLF302510MT" prefix="L">
+<description>POWER INDUCTOR</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="VLF302510MT">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
