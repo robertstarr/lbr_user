@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -145,7 +145,6 @@ body 6.00 x 5.00 mm</description>
 <wire x1="-2.8" y1="3" x2="2.8" y2="3" width="0.2032" layer="51"/>
 <wire x1="2.8" y1="3" x2="2.8" y2="-3" width="0.2032" layer="21"/>
 <wire x1="2.8" y1="-3" x2="-2.8" y2="-3" width="0.2032" layer="51"/>
-<circle x="-3.2" y="-2.7" radius="0.2" width="0" layer="21"/>
 <smd name="1" x="-1.905" y="-2.81" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <smd name="2" x="-0.635" y="-2.81" dx="1.27" dy="0.635" layer="1" rot="R90"/>
 <smd name="3" x="0.635" y="-2.81" dx="1.27" dy="0.635" layer="1" rot="R90"/>
@@ -162,7 +161,8 @@ body 6.00 x 5.00 mm</description>
 <rectangle x1="-1.5875" y1="-1.27" x2="-0.9525" y2="-0.635" layer="31"/>
 <rectangle x1="-0.3175" y1="-1.27" x2="0.3175" y2="-0.635" layer="31"/>
 <rectangle x1="0.9525" y1="-1.27" x2="1.5875" y2="-0.635" layer="31"/>
-<smd name="9" x="0" y="0" dx="5" dy="3.4" layer="1"/>
+<smd name="9" x="0" y="0" dx="4.3" dy="3.4" layer="1"/>
+<rectangle x1="-3.2" y1="-3.1" x2="-2.7" y2="-2.6" layer="21"/>
 </package>
 <package name="DIL08">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p&gt;
@@ -183,6 +183,28 @@ body 6.00 x 5.00 mm</description>
 <pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="USON8">
+<description>&lt;b&gt;8-USON&lt;/b&gt;&lt;p&gt;
+body 2.00 x 3.00 mm</description>
+<wire x1="-1.2" y1="-1.5" x2="-1.2" y2="1.5" width="0.127" layer="21"/>
+<wire x1="1.2" y1="1.5" x2="1.2" y2="-1.5" width="0.127" layer="21"/>
+<smd name="1" x="-0.75" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="2" x="-0.25" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="3" x="0.25" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="4" x="0.75" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="5" x="0.75" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="6" x="0.25" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="7" x="-0.25" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
+<smd name="8" x="-0.75" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
+<text x="-1.55" y="-1.55" size="0.6096" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="1.75" y="-1.55" size="0.4064" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<smd name="9" x="0" y="0" dx="1.7" dy="0.4" layer="1"/>
+<rectangle x1="-1.45" y1="-1.55" x2="-1.1" y2="-1.15" layer="21"/>
+<wire x1="-1.05" y1="1.55" x2="1.05" y2="1.55" width="0.0508" layer="51"/>
+<wire x1="1.05" y1="1.55" x2="1.05" y2="-1.55" width="0.0508" layer="51"/>
+<wire x1="1.05" y1="-1.55" x2="-1.05" y2="-1.55" width="0.0508" layer="51"/>
+<wire x1="-1.05" y1="-1.55" x2="-1.05" y2="1.55" width="0.0508" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -305,6 +327,45 @@ body 6.00 x 5.00 mm</description>
 <connect gate="G$1" pin="DI" pad="5"/>
 <connect gate="G$1" pin="DO" pad="2"/>
 <connect gate="G$1" pin="GND" pad="4 9"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="W25X20CL" prefix="U">
+<description>&lt;b&gt;EEPROM&lt;/b&gt;&lt;p&gt;
+SPI Serial Flash, 4KB Sectors</description>
+<gates>
+<gate name="G$1" symbol="25XX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="ZP" package="WSON8">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="1"/>
+<connect gate="G$1" pin="!HOLD!" pad="7"/>
+<connect gate="G$1" pin="!WP!" pad="3"/>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="DI" pad="5"/>
+<connect gate="G$1" pin="DO" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="UX" package="USON8">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="1"/>
+<connect gate="G$1" pin="!HOLD!" pad="7"/>
+<connect gate="G$1" pin="!WP!" pad="3"/>
+<connect gate="G$1" pin="CLK" pad="6"/>
+<connect gate="G$1" pin="DI" pad="5"/>
+<connect gate="G$1" pin="DO" pad="2"/>
+<connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>
