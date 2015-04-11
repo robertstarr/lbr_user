@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1241,6 +1241,34 @@ Bourns</description>
 <vertex x="-2.2225" y="0.635"/>
 </polygon>
 </symbol>
+<symbol name="TVS-BD1">
+<wire x1="1.5875" y1="0.9525" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="1.5875" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="-0.9525" x2="1.5875" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="0" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.5875" y1="-0.9525" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.5875" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="-1.5875" y1="0.9525" x2="-1.5875" y2="-0.9525" width="0.254" layer="94"/>
+<text x="-1.905" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.905" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
+<pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<polygon width="0.1524" layer="94">
+<vertex x="1.5875" y="-0.9525"/>
+<vertex x="0" y="0"/>
+<vertex x="1.5875" y="0.9525"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-1.5875" y="0.9525"/>
+<vertex x="0" y="0"/>
+<vertex x="-1.5875" y="-0.9525"/>
+</polygon>
+<wire x1="0" y1="0" x2="0" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="0" y1="-0.9525" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0.9525" x2="-0.4763" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="0.4762" y1="-0.9525" x2="0" y2="-0.9525" width="0.254" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="MOV-" prefix="MOV">
@@ -1885,6 +1913,41 @@ SMB, 100A 65V</description>
 </gates>
 <devices>
 <device name="" package="SMB">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TVS-BD1-" prefix="TVS">
+<description>&lt;b&gt;TVS BI-DIRECTIONAL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="TVS-BD1" x="0" y="7.62"/>
+</gates>
+<devices>
+<device name="SMCJ" package="SMCJ">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMBJ" package="SMBJ">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SMAJ" package="SMAJ">
 <connects>
 <connect gate="G$1" pin="1" pad="A"/>
 <connect gate="G$1" pin="2" pad="C"/>
