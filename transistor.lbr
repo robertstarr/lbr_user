@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -861,19 +861,9 @@ grid 2.54 mm, vertical</description>
 <wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.2032" layer="51"/>
 <wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.2032" layer="51"/>
 <wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.2032" layer="51"/>
-<wire x1="0" y1="-1.5" x2="0" y2="-0.7" width="0.8" layer="1"/>
-<wire x1="0" y1="-0.7" x2="-0.6254" y2="-0.0746" width="0.8" layer="1"/>
-<wire x1="-0.6254" y1="-0.0746" x2="-0.6254" y2="2.0508" width="0.8" layer="1"/>
-<wire x1="-0.6254" y1="2.0508" x2="-0.3" y2="2.3762" width="0.8" layer="1"/>
-<wire x1="-0.3" y1="2.3762" x2="0.3" y2="2.3762" width="0.8" layer="1"/>
-<wire x1="0.3" y1="2.3762" x2="0.6254" y2="2.0508" width="0.8" layer="1"/>
-<wire x1="0.6254" y1="2.0508" x2="0.6254" y2="-0.0746" width="0.8" layer="1"/>
-<wire x1="0.6254" y1="-0.0746" x2="0.2" y2="-0.5" width="0.8" layer="1"/>
-<wire x1="0" y1="-0.092" x2="0" y2="0.784" width="0.8" layer="1"/>
 <smd name="E" x="-1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
 <smd name="B" x="1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
 <smd name="C" x="0" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
-<smd name="C@1" x="0" y="1.575" dx="2.032" dy="1.27" layer="1" stop="no"/>
 <text x="-2.54" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.4051" y="-4.3449" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
@@ -905,6 +895,18 @@ grid 2.54 mm, vertical</description>
 <wire x1="-2.286" y1="1.27" x2="-2.286" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="2.286" y1="1.27" x2="1.397" y2="1.27" width="0.2032" layer="21"/>
 <wire x1="2.286" y1="1.27" x2="2.286" y2="-1.27" width="0.2032" layer="21"/>
+<polygon width="0.254" layer="1">
+<vertex x="-0.508" y="2.54"/>
+<vertex x="0.508" y="2.54"/>
+<vertex x="0.889" y="2.159"/>
+<vertex x="0.889" y="-0.254"/>
+<vertex x="0.254" y="-0.889"/>
+<vertex x="0.254" y="-2.54"/>
+<vertex x="-0.254" y="-2.54"/>
+<vertex x="-0.254" y="-0.889"/>
+<vertex x="-0.889" y="-0.254"/>
+<vertex x="-0.889" y="2.159"/>
+</polygon>
 </package>
 <package name="TO264">
 <wire x1="-9.9" y1="-19.9" x2="-4.45" y2="-19.9" width="0.2032" layer="21"/>
@@ -1068,19 +1070,9 @@ grid 2.54 mm, vertical</description>
 <wire x1="0.7874" y1="1.5748" x2="0.7874" y2="1.2954" width="0.2032" layer="51"/>
 <wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.2032" layer="51"/>
 <wire x1="-0.7874" y1="1.2954" x2="-0.7874" y2="1.5748" width="0.2032" layer="51"/>
-<wire x1="0" y1="-1.5" x2="0" y2="-0.7" width="0.8" layer="1"/>
-<wire x1="0" y1="-0.7" x2="-0.6254" y2="-0.0746" width="0.8" layer="1"/>
-<wire x1="-0.6254" y1="-0.0746" x2="-0.6254" y2="2.0508" width="0.8" layer="1"/>
-<wire x1="-0.6254" y1="2.0508" x2="-0.3" y2="2.3762" width="0.8" layer="1"/>
-<wire x1="-0.3" y1="2.3762" x2="0.3" y2="2.3762" width="0.8" layer="1"/>
-<wire x1="0.3" y1="2.3762" x2="0.6254" y2="2.0508" width="0.8" layer="1"/>
-<wire x1="0.6254" y1="2.0508" x2="0.6254" y2="-0.0746" width="0.8" layer="1"/>
-<wire x1="0.6254" y1="-0.0746" x2="0.2" y2="-0.5" width="0.8" layer="1"/>
-<wire x1="0" y1="-0.092" x2="0" y2="0.784" width="0.8" layer="1"/>
 <smd name="B" x="-1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
 <smd name="E" x="1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
 <smd name="C" x="0" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
-<smd name="C@1" x="0" y="1.575" dx="2.032" dy="1.27" layer="1" stop="no"/>
 <text x="-2.54" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.4051" y="-4.3449" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
@@ -1107,6 +1099,18 @@ grid 2.54 mm, vertical</description>
 <vertex x="1.1" y="-0.3"/>
 <vertex x="0.4" y="-1"/>
 <vertex x="0.4" y="-1.2"/>
+</polygon>
+<polygon width="0.254" layer="1">
+<vertex x="-0.508" y="2.54"/>
+<vertex x="0.508" y="2.54"/>
+<vertex x="0.889" y="2.159"/>
+<vertex x="0.889" y="-0.254"/>
+<vertex x="0.254" y="-0.889"/>
+<vertex x="0.254" y="-2.54"/>
+<vertex x="-0.254" y="-2.54"/>
+<vertex x="-0.254" y="-0.889"/>
+<vertex x="-0.889" y="-0.254"/>
+<vertex x="-0.889" y="2.159"/>
 </polygon>
 </package>
 <package name="SC59-BEC">
