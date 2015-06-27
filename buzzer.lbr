@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -1000,6 +1000,18 @@ dia 14 mm</description>
 <text x="-3.556" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <circle x="0" y="0" radius="6" width="0.0508" layer="51"/>
 </package>
+<package name="GT-0930RP2">
+<description>BUZZER</description>
+<circle x="0" y="0" radius="4.5" width="0.0508" layer="51"/>
+<wire x1="-2.5" y1="-7" x2="2.5" y2="-7" width="0.0508" layer="51"/>
+<wire x1="-2.5" y1="-7" x2="-2.5" y2="-3.75" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="-7" x2="2.5" y2="-3.75" width="0.0508" layer="51"/>
+<pad name="+" x="0" y="-2" drill="0.8128" shape="square"/>
+<pad name="-" x="0" y="2" drill="0.8128" shape="octagon"/>
+<circle x="0" y="0" radius="4.743415625" width="0.2032" layer="21"/>
+<text x="4" y="-5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1" y="-2.5" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="B">
@@ -1814,6 +1826,23 @@ Source: Spoerle</description>
 </gates>
 <devices>
 <device name="" package="WST-1205S">
+<connects>
+<connect gate="G$1" pin="1" pad="+"/>
+<connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="GT-0930RP2" prefix="BZ">
+<description>BUZZER</description>
+<gates>
+<gate name="G$1" symbol="BP" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="GT-0930RP2">
 <connects>
 <connect gate="G$1" pin="1" pad="+"/>
 <connect gate="G$1" pin="2" pad="-"/>

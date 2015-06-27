@@ -2365,6 +2365,27 @@ Memory Protection Devices Inc</description>
 <wire x1="-0.6" y1="1.4" x2="0.6" y2="1.4" width="0.2032" layer="21"/>
 <wire x1="-0.6" y1="1.4" x2="-3.3" y2="1.4" width="0.2032" layer="51"/>
 </package>
+<package name="MS621FE">
+<description>BATTERY LITHIUM 3V RECHARGE</description>
+<wire x1="-3.4" y1="1.4" x2="-1.7" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="1.4" x2="3.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="1.4" x2="3.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="3.4" y1="-0.1" x2="2.9" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="2.9" y1="-0.1" x2="2.35" y2="-0.65" width="0.2032" layer="21" curve="-90"/>
+<wire x1="2.35" y1="-0.65" x2="-2.35" y2="-0.65" width="0.2032" layer="21"/>
+<wire x1="-2.35" y1="-0.65" x2="-2.8" y2="-0.1" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-2.8" y1="-0.1" x2="-3.4" y2="-0.1" width="0.2032" layer="21"/>
+<wire x1="-3.4" y1="-0.1" x2="-3.4" y2="1.4" width="0.2032" layer="21"/>
+<wire x1="-2.8" y1="-0.1" x2="2.9" y2="-0.1" width="0.2032" layer="51"/>
+<wire x1="1.561" y1="0.85" x2="2.061" y2="0.85" width="0.2032" layer="21"/>
+<wire x1="1.811" y1="1.1" x2="1.811" y2="0.6" width="0.2032" layer="21"/>
+<wire x1="-2.046" y1="0.85" x2="-1.546" y2="0.85" width="0.2032" layer="21"/>
+<pad name="-" x="-0.75" y="1.4" drill="0.7112" rot="R90"/>
+<pad name="+" x="0.75" y="1.4" drill="0.7112" rot="R90"/>
+<text x="1.778" y="1.778" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.1" y="-1.9" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="1.7" y1="1.4" x2="-1.7" y2="1.4" width="0.2032" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2V4+2">
@@ -4185,6 +4206,23 @@ CR2032 Coin Cell</description>
 </gates>
 <devices>
 <device name="" package="BR1225/FA">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MS621FE" prefix="B">
+<description>BATTERY LITHIUM 3V RECHARGE</description>
+<gates>
+<gate name="G$1" symbol="3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="MS621FE">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
