@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -571,7 +571,7 @@
 <circle x="0" y="0" radius="2.0329" width="2.032" layer="42"/>
 <circle x="0" y="0" radius="2.008" width="2.032" layer="43"/>
 <circle x="0" y="0" radius="1.6344" width="0.0508" layer="51"/>
-<circle x="0" y="0" radius="2.9272" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="3.175" width="0.2032" layer="21"/>
 <hole x="0" y="0" drill="3.048"/>
 </package>
 <package name="120-PAD">
@@ -1161,6 +1161,65 @@ Use in a flooded plane area and add vias at positions shown!</description>
 <circle x="0" y="0" radius="1.3" width="0.0508" layer="51"/>
 <hole x="0" y="0" drill="2.4"/>
 </package>
+<package name="116-NS">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 0.120", stop mask, no screw head outline</description>
+<circle x="0" y="0" radius="1.782528125" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="1.79605" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="1.782528125" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="1.79605" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.778" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="1.6344" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="2.794" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="1.778" width="2.032" layer="29"/>
+<circle x="0" y="0" radius="1.782528125" width="2.032" layer="30"/>
+<hole x="0" y="0" drill="2.9464"/>
+</package>
+<package name="116-PAD">
+<description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 0.116", round</description>
+<circle x="0" y="0" radius="3.8232" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="2.5597" width="2.1844" layer="39"/>
+<circle x="0" y="0" radius="2.5597" width="2.1844" layer="40"/>
+<circle x="0" y="0" radius="2.5597" width="2.1844" layer="43"/>
+<pad name="B116" x="0" y="0" drill="2.9464" diameter="6.4516" thermals="no"/>
+</package>
+<package name="116">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 0.116"</description>
+<circle x="0" y="0" radius="2.0329" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="2.0329" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="2.008" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="2.0329" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="2.008" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="1.6344" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="3.1775375" width="0.2032" layer="21"/>
+<hole x="0" y="0" drill="2.9464"/>
+</package>
+<package name="116-PAD-GP">
+<description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 0.120", round&lt;p&gt;
+Use in a flooded plane area and add vias at positions shown!</description>
+<circle x="0" y="0" radius="4.016" width="0.2032" layer="21"/>
+<circle x="-0.0001" y="0" radius="2.8111" width="1.778" layer="30"/>
+<circle x="-2.0638" y="2.0638" radius="0.2244" width="0.0508" layer="51"/>
+<circle x="0" y="3.0163" radius="0.2244" width="0.0508" layer="51"/>
+<circle x="2.0637" y="2.0638" radius="0.2244" width="0.0508" layer="51"/>
+<circle x="3.0162" y="0" radius="0.2244" width="0.0508" layer="51"/>
+<circle x="-3.0163" y="0" radius="0.2244" width="0.0508" layer="51"/>
+<circle x="-2.0638" y="-2.0638" radius="0.2244" width="0.0508" layer="51"/>
+<circle x="0" y="-3.0163" radius="0.2244" width="0.0508" layer="51"/>
+<circle x="2.0637" y="-2.0638" radius="0.2244" width="0.0508" layer="51"/>
+<circle x="-0.0001" y="0" radius="2.8111" width="1.778" layer="29"/>
+<circle x="-0.0001" y="0" radius="2.8111" width="1.778" layer="39"/>
+<circle x="-0.0001" y="0" radius="2.8111" width="1.778" layer="40"/>
+<pad name="B116" x="0" y="0" drill="2.9464" thermals="no"/>
+</package>
+<package name="116-PAD-NS">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 0.116", stop mask, no screw head outline</description>
+<circle x="0" y="0" radius="3.429" width="0.0508" layer="51"/>
+<pad name="B116" x="0" y="0" drill="2.9464" diameter="6.4516" thermals="no"/>
+</package>
+<package name="116-PAD-SQUARE">
+<description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 0.116", square</description>
+<pad name="B116" x="0" y="0" drill="2.9464" diameter="5.842" shape="square" thermals="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNT-PAD">
@@ -1448,6 +1507,20 @@ Use in a flooded plane area and add vias at positions shown!</description>
 <device name="2.4" package="2,4">
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="0.116" package="116">
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0.116-NS" package="116-NS">
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1866,6 +1939,46 @@ Use in a flooded plane area and add vias at positions shown!</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+<device name="0.116" package="116-PAD">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="B116"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0.116GP" package="116-PAD-GP">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="B116"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0.116NS" package="116-PAD-NS">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="B116"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="0.116S" package="116-PAD-SQUARE">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="B116"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
