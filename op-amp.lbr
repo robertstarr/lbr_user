@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5790,6 +5790,31 @@ Very High Precision, 3V/5V Rail-to-Rail Op Amps</description>
 <connect gate="G$2" pin="SHDN" pad="5"/>
 <connect gate="P" pin="VCC" pad="6"/>
 <connect gate="P" pin="VEE" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LMV722" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="0" y="0"/>
+<gate name="P" symbol="PWRN_VCC+-" x="-17.78" y="0" addlevel="request"/>
+<gate name="B" symbol="OPAMP" x="0" y="-15.24"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="VCC+" pad="8"/>
+<connect gate="P" pin="VCC-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

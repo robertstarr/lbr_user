@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1012,6 +1012,26 @@ dia 14 mm</description>
 <text x="4" y="-5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1" y="-2.5" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
+<package name="PKM22">
+<circle x="0" y="0" radius="11" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="2" width="0.2032" layer="51"/>
+<pad name="1" x="-5" y="0" drill="1.016" diameter="2.54"/>
+<pad name="2" x="5" y="0" drill="1.016" diameter="2.54"/>
+<text x="10.35" y="6.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="-4.445" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="10.35" y="5.08" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="PS1440">
+<description>&lt;b&gt;PIEZO BUZZER&lt;/b&gt; - 14 mm</description>
+<circle x="0" y="0" radius="7.31095" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="1.1981125" width="0.0508" layer="51"/>
+<pad name="1" x="-2.5" y="0" drill="0.8128" diameter="1.9304" shape="octagon" rot="R90"/>
+<pad name="2" x="2.5" y="0" drill="0.8128" diameter="1.9304" shape="octagon" rot="R90"/>
+<text x="5.715" y="5.715" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="-1.905" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="7" width="0.0508" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="B">
@@ -1040,33 +1060,33 @@ dia 14 mm</description>
 <pin name="T" x="0" y="-2.54" visible="pad" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="B2P">
-<wire x1="-1.27" y1="3.175" x2="0" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="0" y1="3.175" x2="0" y2="3.81" width="0.1524" layer="94"/>
-<wire x1="0" y1="3.175" x2="0" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="4.445" x2="0.635" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="0.635" y1="1.905" x2="1.905" y2="1.905" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="1.905" x2="1.905" y2="4.445" width="0.1524" layer="94"/>
-<wire x1="1.905" y1="4.445" x2="0.635" y2="4.445" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="3.81" x2="2.54" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="3.175" x2="3.81" y2="3.175" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="3.175" x2="2.54" y2="2.54" width="0.1524" layer="94"/>
-<wire x1="2.54" y1="-2.54" x2="2.54" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="0" y1="-2.54" x2="0" y2="1.27" width="0.1524" layer="94"/>
-<wire x1="-2.54" y1="1.27" x2="0" y2="1.27" width="0.254" layer="94"/>
-<wire x1="5.08" y1="1.27" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.08" y1="5.08" x2="5.715" y2="5.08" width="0.254" layer="94"/>
-<wire x1="5.715" y1="5.08" x2="5.715" y2="5.715" width="0.254" layer="94"/>
-<wire x1="5.715" y1="5.715" x2="-3.175" y2="5.715" width="0.254" layer="94"/>
-<wire x1="-3.175" y1="5.715" x2="-3.175" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-3.175" y1="5.08" x2="-2.54" y2="5.08" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="-2.54" y2="1.27" width="0.254" layer="94"/>
-<wire x1="-2.54" y1="5.08" x2="5.08" y2="5.08" width="0.254" layer="94"/>
-<wire x1="2.54" y1="1.27" x2="5.08" y2="1.27" width="0.254" layer="94"/>
-<wire x1="0" y1="1.27" x2="2.54" y2="1.27" width="0.254" layer="94"/>
-<text x="-2.54" y="6.35" size="1.778" layer="95">&gt;NAME</text>
-<text x="6.35" y="0" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="2" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="1" x="-2.54" y="-2.54" visible="pad" length="short" direction="pas"/>
+<wire x1="-2.54" y1="0.635" x2="-1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.27" y1="0.635" x2="-1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="1.905" x2="-0.635" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="-0.635" x2="0.635" y2="-0.635" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="-0.635" x2="0.635" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="0.635" y1="1.905" x2="-0.635" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="1.27" x2="1.27" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="2.54" y2="0.635" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="0.635" x2="1.27" y2="0" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="-1.27" x2="-2.54" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="3.81" y1="-1.27" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="3.81" y1="2.54" x2="4.445" y2="2.54" width="0.254" layer="94"/>
+<wire x1="4.445" y1="2.54" x2="4.445" y2="3.175" width="0.254" layer="94"/>
+<wire x1="4.445" y1="3.175" x2="-4.445" y2="3.175" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="3.175" x2="-4.445" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-4.445" y1="2.54" x2="-3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="-3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="2.54" x2="3.81" y2="2.54" width="0.254" layer="94"/>
+<wire x1="2.54" y1="-1.27" x2="3.81" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="-1.27" x2="2.54" y2="-1.27" width="0.254" layer="94"/>
+<text x="-3.81" y="3.81" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="2" x="2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="1" x="-2.54" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="B3P">
 <wire x1="-1.905" y1="3.175" x2="-1.27" y2="3.175" width="0.1524" layer="94"/>
@@ -1819,7 +1839,7 @@ Source: Spoerle</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="WST-1205S">
+<deviceset name="WST-1205S" prefix="BZ">
 <description>BUZZER 2.3KHZ 4-6VDC</description>
 <gates>
 <gate name="G$1" symbol="BP" x="0" y="-2.54"/>
@@ -1846,6 +1866,40 @@ Source: Spoerle</description>
 <connects>
 <connect gate="G$1" pin="1" pad="+"/>
 <connect gate="G$1" pin="2" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PKM22" prefix="LS">
+<description>PIEZO BUZZER</description>
+<gates>
+<gate name="G$1" symbol="B2P" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="PKM22">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PS1440" prefix="LS">
+<description>PIEZO BUZZER</description>
+<gates>
+<gate name="G$1" symbol="B2P" x="0" y="-2.54"/>
+</gates>
+<devices>
+<device name="" package="PS1440">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
