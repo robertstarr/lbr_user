@@ -6643,40 +6643,35 @@ diameter 2 mm, horizontal, grid 7.62 mm</description>
 <vertex x="5.3975" y="4.445"/>
 </polygon>
 </package>
-<package name="DSN2">
+<package name="DSN2-152AC">
 <description>&lt;b&gt;DSN2 (0402)&lt;/b&gt;&lt;p&gt;
 1.0 x 0.6, 0.575P&lt;p&gt; 
 CASE 152AC-01</description>
-<wire x1="-0.85" y1="0.55" x2="-0.6" y2="0.55" width="0.2032" layer="21"/>
-<wire x1="-0.2" y1="0.55" x2="0.85" y2="0.55" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="0.55" x2="0.85" y2="-0.55" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="-0.55" x2="-0.15" y2="-0.55" width="0.2032" layer="21"/>
-<wire x1="-0.55" y1="-0.55" x2="-0.85" y2="-0.55" width="0.2032" layer="21"/>
-<wire x1="-0.85" y1="-0.55" x2="-0.85" y2="0.55" width="0.2032" layer="21"/>
 <wire x1="-0.5" y1="0.3" x2="0.5" y2="0.3" width="0.0508" layer="51"/>
 <wire x1="0.5" y1="0.3" x2="0.5" y2="-0.3" width="0.0508" layer="51"/>
 <wire x1="0.5" y1="-0.3" x2="-0.5" y2="-0.3" width="0.0508" layer="51"/>
 <wire x1="-0.5" y1="-0.3" x2="-0.5" y2="0.3" width="0.0508" layer="51"/>
 <smd name="C" x="-0.365" y="0" dx="0.47" dy="0.6" layer="1"/>
 <smd name="A" x="0.3" y="0" dx="0.6" dy="0.6" layer="1"/>
-<text x="-0.9" y="0.7" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-0.9" y="-1.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.7" y="0.5" size="0.6096" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.7" y="-0.9" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-0.3" x2="-0.2" y2="0.3" layer="51"/>
+<rectangle x1="-0.85" y1="-0.3" x2="-0.75" y2="0.3" layer="21"/>
 </package>
-<package name="DSN2MP">
-<description>&lt;b&gt;DSN2 (0402)&lt;/b&gt;&lt;p&gt;
-1.0 x 0.6, 0.575P&lt;p&gt; 
-CASE 152AC-01</description>
-<wire x1="-0.85" y1="-0.25" x2="-0.85" y2="0.25" width="0.2032" layer="21"/>
-<wire x1="-0.5" y1="0.3" x2="0.5" y2="0.3" width="0.0508" layer="51"/>
-<wire x1="0.5" y1="0.3" x2="0.5" y2="-0.3" width="0.0508" layer="51"/>
-<wire x1="0.5" y1="-0.3" x2="-0.5" y2="-0.3" width="0.0508" layer="51"/>
-<wire x1="-0.5" y1="-0.3" x2="-0.5" y2="0.3" width="0.0508" layer="51"/>
-<smd name="C" x="-0.365" y="0" dx="0.47" dy="0.6" layer="1"/>
-<smd name="A" x="0.3" y="0" dx="0.6" dy="0.6" layer="1"/>
-<text x="-0.7" y="0.5" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-0.7" y="-1.3" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.3" y1="-0.3" x2="-0.2" y2="0.3" layer="51"/>
+<package name="DSN2-152AB">
+<description>&lt;b&gt;DSN2 (0603)&lt;/b&gt;&lt;p&gt;
+DSN2, 1.6x0.8, 0.9P, (0603)&lt;p&gt; 
+CASE 152AB</description>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.0508" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.0508" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.0508" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.0508" layer="51"/>
+<smd name="C" x="-0.65" y="0" dx="0.52" dy="0.7" layer="1"/>
+<smd name="A" x="0.3" y="0" dx="1.05" dy="0.7" layer="1"/>
+<text x="-1" y="0.55" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1" y="-1.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.6" y1="-0.4" x2="-0.5" y2="0.4" layer="51"/>
+<rectangle x1="-1.25" y1="-0.35" x2="-1.05" y2="0.35" layer="21"/>
 </package>
 <package name="SOD123-R">
 <description>SOD123 - Reflow&lt;p&gt;
@@ -15318,7 +15313,7 @@ super fast rectifier, 2 A</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DSN2" package="DSN2">
+<device name="DSN2" package="DSN2-152AC">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -15327,7 +15322,7 @@ super fast rectifier, 2 A</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DSN2MP" package="DSN2MP">
+<device name="DSN2MP" package="DSN2-152AB">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -16784,7 +16779,7 @@ GPP SMD 400V 1A SMB&lt;p&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DSN2" package="DSN2">
+<device name="DSN2" package="DSN2-152AC">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -16793,7 +16788,7 @@ GPP SMD 400V 1A SMB&lt;p&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DSN2MP" package="DSN2MP">
+<device name="DSN2MP" package="DSN2-152AB">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
@@ -18171,7 +18166,7 @@ SWITCHMODE Power Rectifier&lt;p&gt;
 <gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DSN2MP">
+<device name="" package="DSN2-152AB">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
