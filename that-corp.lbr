@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1710,18 +1710,13 @@ THAT1250, THAT1253, THAT1256</description>
 <description>Balanced Line Driver</description>
 <gates>
 <gate name="G$1" symbol="THAT1606" x="0" y="0"/>
-<gate name="-GND" symbol="THAT1606-GND" x="-7.62" y="-33.02" addlevel="request"/>
 </gates>
 <devices>
 <device name="Q16-U" package="QSOP16">
 <connects>
-<connect gate="-GND" pin="GND@1" pad="1"/>
-<connect gate="-GND" pin="GND@16" pad="16"/>
-<connect gate="-GND" pin="GND@8" pad="8"/>
-<connect gate="-GND" pin="GND@9" pad="9"/>
 <connect gate="G$1" pin="CAP1" pad="4"/>
 <connect gate="G$1" pin="CAP2" pad="13"/>
-<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="GND" pad="1 5 8 9 16"/>
 <connect gate="G$1" pin="IN+" pad="7"/>
 <connect gate="G$1" pin="IN-" pad="6"/>
 <connect gate="G$1" pin="OUT+" pad="14"/>
