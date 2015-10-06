@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.2.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2011,6 +2011,23 @@ Fuse Clips: Schurter part# 0751.0506</description>
 <text x="-10.287" y="-4.953" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.286" y="-1.397" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="2920L075/60MR">
+<description>2920L Series</description>
+<smd name="1" x="-3.3" y="0" dx="2" dy="5.3" layer="1"/>
+<smd name="2" x="3.3" y="0" dx="2" dy="5.3" layer="1"/>
+<wire x1="-3.99" y1="2.72" x2="3.99" y2="2.72" width="0.0508" layer="51"/>
+<wire x1="3.99" y1="2.72" x2="3.99" y2="-2.72" width="0.0508" layer="51"/>
+<wire x1="3.99" y1="-2.72" x2="-3.99" y2="-2.72" width="0.0508" layer="51"/>
+<wire x1="-3.99" y1="-2.72" x2="-3.99" y2="2.72" width="0.0508" layer="51"/>
+<rectangle x1="-3.99" y1="-2.72" x2="-1.49" y2="2.72" layer="51"/>
+<rectangle x1="1.49" y1="-2.72" x2="3.99" y2="2.72" layer="51"/>
+<text x="-4.699" y="3.429" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.699" y="-4.191" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-4.699" y1="3.048" x2="4.699" y2="3.048" width="0.2032" layer="27"/>
+<wire x1="4.699" y1="3.048" x2="4.699" y2="-3.048" width="0.2032" layer="27"/>
+<wire x1="4.699" y1="-3.048" x2="-4.699" y2="-3.048" width="0.2032" layer="27"/>
+<wire x1="-4.699" y1="-3.048" x2="-4.699" y2="3.048" width="0.2032" layer="27"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSE">
@@ -2946,6 +2963,23 @@ For Schurter clips 0751.0506</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1A 1B"/>
 <connect gate="G$1" pin="2" pad="2A 2B"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2920L075/60MR" prefix="PF">
+<description>POLY-FUSE 2920L SERIES</description>
+<gates>
+<gate name="G$1" symbol="PFUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2920L075/60MR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
