@@ -337,6 +337,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="S2" x="2.5" y="-5.5" drill="1.4224" diameter="2.54"/>
 <text x="-2.54" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-10.795" y="-7.62" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="11.43" y="-7.62" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
 </package>
 <package name="MD-80S">
 <description>&lt;b&gt;Mini DIN&lt;/b&gt; - 8 Pin</description>
@@ -872,8 +873,8 @@ Source: http://cui.com/pdffiles/MD-40SV.pdf</description>
 <text x="-0.3175" y="-3.81" size="0.8128" layer="94" ratio="10">2</text>
 <text x="2.54" y="-2.54" size="0.8128" layer="94" ratio="10">4</text>
 <text x="-2.8575" y="-2.54" size="0.8128" layer="94" ratio="10">5</text>
-<text x="8.89" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="8.89" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<text x="10.16" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="10.16" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="3" x="-5.08" y="-12.7" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="5" x="-2.54" y="-12.7" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="2" x="0" y="-12.7" visible="pad" length="short" direction="pas" rot="R90"/>
@@ -881,6 +882,7 @@ Source: http://cui.com/pdffiles/MD-40SV.pdf</description>
 <pin name="1" x="5.08" y="-12.7" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="S1" x="-7.62" y="-12.7" visible="pad" length="short" direction="pas" rot="R90"/>
 <pin name="S2" x="7.62" y="-12.7" visible="pad" length="short" direction="pas" rot="R90"/>
+<text x="0" y="10.16" size="1.778" layer="96" align="center">&gt;LABEL</text>
 </symbol>
 <symbol name="MDIN-08-S1">
 <wire x1="0.508" y1="6.35" x2="-3.048" y2="6.35" width="0.4064" layer="94"/>
@@ -1423,7 +1425,9 @@ Source: http://cui.com/pdffiles/MD-40SV.pdf</description>
 <connect gate="G$1" pin="S2" pad="S2"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
