@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -7985,6 +7985,48 @@ body 4 x 10 mm, LS 15 mm</description>
 <vertex x="2.286" y="-1.27" curve="63.783382"/>
 </polygon>
 </package>
+<package name="PR01">
+<description>&lt;b&gt;PR01&lt;/b&gt; - Vishay/Dale&lt;p&gt;
+body 2.5 x 8.0 mm, 1W</description>
+<pad name="1" x="-6.25" y="0" drill="0.9144" diameter="1.778" shape="octagon"/>
+<pad name="2" x="6.25" y="0" drill="0.9144" diameter="1.778" shape="octagon"/>
+<wire x1="-4" y1="1.25" x2="4" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="4" y1="1.25" x2="4" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="4" y1="-1.25" x2="-4" y2="-1.25" width="0.2032" layer="21"/>
+<wire x1="-4" y1="-1.25" x2="-4" y2="1.25" width="0.2032" layer="21"/>
+<rectangle x1="-5.05" y1="-0.4" x2="-4" y2="0.4" layer="21"/>
+<rectangle x1="4" y1="-0.4" x2="5.05" y2="0.4" layer="21"/>
+<text x="-4" y="1.65" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4" y="-2.45" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="PR02">
+<description>&lt;b&gt;PR02&lt;/b&gt; - Vishay/Dale&lt;p&gt;
+body 3.9 x 12.0 mm, 2W</description>
+<pad name="1" x="-8.9" y="0" drill="1.016" diameter="2" shape="octagon"/>
+<pad name="2" x="8.9" y="0" drill="1.016" diameter="2" shape="octagon"/>
+<wire x1="-6" y1="1.95" x2="6" y2="1.95" width="0.2032" layer="21"/>
+<wire x1="6" y1="1.95" x2="6" y2="-1.95" width="0.2032" layer="21"/>
+<wire x1="6" y1="-1.95" x2="-6" y2="-1.95" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-1.95" x2="-6" y2="1.95" width="0.2032" layer="21"/>
+<rectangle x1="-7.7" y1="-0.4" x2="-6" y2="0.4" layer="21"/>
+<rectangle x1="6" y1="-0.4" x2="7.7" y2="0.4" layer="21"/>
+<text x="-6" y="2.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-6" y="-3.15" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="PR03">
+<description>&lt;b&gt;PR03&lt;/b&gt; - Vishay/Dale&lt;p&gt;
+body 5.2 x 19.5 mm, 3W</description>
+<pad name="1" x="-12.5" y="0" drill="1.016" diameter="2" shape="octagon"/>
+<pad name="2" x="12.5" y="0" drill="1.016" diameter="2" shape="octagon"/>
+<wire x1="-9.75" y1="2.6" x2="9.75" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="9.75" y1="2.6" x2="9.75" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="9.75" y1="-2.6" x2="-9.75" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-9.75" y1="-2.6" x2="-9.75" y2="2.6" width="0.2032" layer="21"/>
+<rectangle x1="-11.3" y1="-0.4" x2="-9.75" y2="0.4" layer="21"/>
+<rectangle x1="9.75" y1="-0.4" x2="11.3" y2="0.4" layer="21"/>
+<text x="-9.75" y="3" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-9.75" y="-3.8" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -11434,6 +11476,33 @@ body 4 x 10 mm, LS 15 mm</description>
 </technologies>
 </device>
 <device name="X0410/15" package="0410/15">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PR01" package="PR01">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PR02" package="PR02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PR03" package="PR03">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
