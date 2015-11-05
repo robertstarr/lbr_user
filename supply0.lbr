@@ -914,6 +914,21 @@
 <text x="-5.08" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
 </symbol>
+<symbol name="+47V">
+<pin name="+47V" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-3.81" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
+</symbol>
+<symbol name="VDDINT">
+<pin name="VDDINT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="0.635" size="1.778" layer="96" ratio="12" align="bottom-center">&gt;VALUE</text>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
+</symbol>
+<symbol name="VDDEXT">
+<pin name="VDDEXT" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="0" y="0.635" size="1.778" layer="96" ratio="12" align="bottom-center">&gt;VALUE</text>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="GND" prefix="GND">
@@ -2836,6 +2851,45 @@ Net CGND, no value text label</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+5V_OUT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+47V" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+47V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDDINT" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VDDINT" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VDDEXT" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VDDEXT" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
