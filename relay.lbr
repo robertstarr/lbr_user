@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
@@ -6240,6 +6240,26 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <wire x1="-4.699" y1="-2.615" x2="4.699" y2="-2.615" width="0.2032" layer="51"/>
 <circle x="-3.81" y="-1.905" radius="0.412309375" width="0" layer="21"/>
 </package>
+<package name="EC2-12SNU">
+<pad name="1" x="-6.35" y="2.54" drill="0.7112"/>
+<pad name="3" x="-1.27" y="2.54" drill="0.7112"/>
+<pad name="4" x="1.27" y="2.54" drill="0.7112"/>
+<pad name="5" x="3.81" y="2.54" drill="0.7112"/>
+<pad name="9" x="1.27" y="-2.54" drill="0.7112"/>
+<pad name="10" x="-1.27" y="-2.54" drill="0.7112"/>
+<pad name="12" x="-6.35" y="-2.54" drill="0.7112"/>
+<wire x1="-7.5" y1="3.75" x2="7.5" y2="3.75" width="0.0508" layer="51"/>
+<wire x1="7.5" y1="3.75" x2="7.5" y2="-3.75" width="0.0508" layer="51"/>
+<wire x1="7.5" y1="-3.75" x2="-7.5" y2="-3.75" width="0.0508" layer="51"/>
+<wire x1="-7.5" y1="-3.75" x2="-7.5" y2="3.75" width="0.0508" layer="51"/>
+<pad name="8" x="3.81" y="-2.54" drill="0.7112"/>
+<text x="-7.75" y="4.375" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-7.75" y="-5.125" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-7.75" y1="4" x2="7.75" y2="4" width="0.2032" layer="21"/>
+<wire x1="7.75" y1="4" x2="7.75" y2="-4" width="0.2032" layer="21"/>
+<wire x1="7.75" y1="-4" x2="-7.75" y2="-4" width="0.2032" layer="21"/>
+<wire x1="-7.75" y1="-4" x2="-7.75" y2="4" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="K">
@@ -12094,6 +12114,31 @@ Single-Pole, Normally Open</description>
 <connect gate="G$1" pin="D4" pad="8"/>
 <connect gate="G$1" pin="K1" pad="2"/>
 <connect gate="G$1" pin="K2" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EC2-12SNU" prefix="K">
+<description>RELAY GEN PURPOSE DPDT 2A 12V LATCHING</description>
+<gates>
+<gate name="-A" symbol="U" x="20.32" y="-5.08" addlevel="always"/>
+<gate name="-B" symbol="U" x="20.32" y="-25.4" addlevel="always"/>
+<gate name="C" symbol="K+-S-+R" x="0" y="0" addlevel="must"/>
+</gates>
+<devices>
+<device name="" package="EC2-12SNU">
+<connects>
+<connect gate="-A" pin="COM" pad="4"/>
+<connect gate="-A" pin="NC" pad="3"/>
+<connect gate="-A" pin="NO" pad="5"/>
+<connect gate="-B" pin="COM" pad="9"/>
+<connect gate="-B" pin="NC" pad="10"/>
+<connect gate="-B" pin="NO" pad="8"/>
+<connect gate="C" pin="+" pad="1"/>
+<connect gate="C" pin="-" pad="12"/>
 </connects>
 <technologies>
 <technology name=""/>
