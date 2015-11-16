@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -825,7 +825,7 @@ JEDEC MO-275-GGAB-1</description>
 <symbol name="ADSP-21479CZ-SHIFT">
 <pin name="CLK_CFG1" x="-22.86" y="-25.4" length="middle" direction="in"/>
 <pin name="BOOT_CFG0" x="-22.86" y="-12.7" length="middle" direction="in"/>
-<pin name="!TMS!~" x="25.4" y="-20.32" length="middle" direction="in" rot="R180"/>
+<pin name="!TMS!" x="25.4" y="-20.32" length="middle" direction="in" rot="R180"/>
 <pin name="!RESET!" x="-22.86" y="-30.48" length="middle" direction="in"/>
 <pin name="!TRST!" x="25.4" y="-15.24" length="middle" direction="in" rot="R180"/>
 <pin name="FLAG1" x="25.4" y="0" length="middle" rot="R180"/>
@@ -998,7 +998,7 @@ JEDEC MO-275-GGAB-1</description>
 <connect gate="B" pin="!RESETOUT!" pad="J4"/>
 <connect gate="B" pin="!TDI!" pad="C8"/>
 <connect gate="B" pin="!TDO!" pad="C11"/>
-<connect gate="B" pin="!TMS!~" pad="B4"/>
+<connect gate="B" pin="!TMS!" pad="B4"/>
 <connect gate="B" pin="!TRST!" pad="B12"/>
 <connect gate="B" pin="BOOT_CFG0" pad="B3"/>
 <connect gate="B" pin="BOOT_CFG1" pad="F3"/>
