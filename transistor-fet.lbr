@@ -1940,6 +1940,54 @@ body 3.3 x 3.3 mm</description>
 <rectangle x1="-1.35" y1="-2.1" x2="2.6" y2="-0.25" layer="29"/>
 <rectangle x1="-1.25" y1="-2" x2="2.5" y2="-0.35" layer="31"/>
 </package>
+<package name="POWERPAK-1212-8D">
+<description>PowerPAK 1212-8 Dual</description>
+<smd name="1" x="-1.435" y="0.99" dx="0.99" dy="0.405" layer="1"/>
+<smd name="2" x="-1.435" y="0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="3" x="-1.435" y="-0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="4" x="-1.435" y="-0.99" dx="0.99" dy="0.405" layer="1"/>
+<smd name="5" x="1.435" y="-0.99" dx="0.99" dy="0.405" layer="1"/>
+<smd name="6" x="1.435" y="-0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="7" x="1.435" y="0.33" dx="0.99" dy="0.405" layer="1"/>
+<smd name="8" x="1.435" y="0.99" dx="0.99" dy="0.405" layer="1"/>
+<wire x1="-1.65" y1="1.65" x2="1.65" y2="1.65" width="0.0508" layer="51"/>
+<wire x1="1.65" y1="1.65" x2="1.65" y2="-1.65" width="0.0508" layer="51"/>
+<wire x1="1.65" y1="-1.65" x2="-1.65" y2="-1.65" width="0.0508" layer="51"/>
+<wire x1="-1.65" y1="-1.65" x2="-1.65" y2="1.65" width="0.0508" layer="51"/>
+<wire x1="-1.8" y1="1.5" x2="-1.8" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="-1.8" y1="1.8" x2="1.8" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="1.8" y1="1.8" x2="1.8" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="1.8" y1="-1.5" x2="1.8" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="1.8" y1="-1.8" x2="-1.8" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="-1.8" y1="-1.8" x2="-1.8" y2="-1.4" width="0.2032" layer="21"/>
+<text x="-1.9" y="2.2" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.8" y="-2.6" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-2.1" y1="1.4" x2="-1.5" y2="2" layer="21"/>
+<polygon width="0.1" layer="1">
+<vertex x="-0.293" y="1.1"/>
+<vertex x="1.849" y="1.1"/>
+<vertex x="1.849" y="0.85"/>
+<vertex x="1.4" y="0.85"/>
+<vertex x="1.4" y="0.45"/>
+<vertex x="1.85" y="0.45"/>
+<vertex x="1.849" y="0.18"/>
+<vertex x="-0.293" y="0.18"/>
+</polygon>
+<rectangle x1="-0.45" y1="0.05" x2="1.55" y2="1.25" layer="29"/>
+<rectangle x1="-0.3" y1="0.17" x2="1.4" y2="1.11" layer="31"/>
+<polygon width="0.1" layer="1">
+<vertex x="-0.293" y="-1.1"/>
+<vertex x="1.849" y="-1.1"/>
+<vertex x="1.849" y="-0.85"/>
+<vertex x="1.4" y="-0.85"/>
+<vertex x="1.4" y="-0.45"/>
+<vertex x="1.85" y="-0.45"/>
+<vertex x="1.849" y="-0.18"/>
+<vertex x="-0.293" y="-0.18"/>
+</polygon>
+<rectangle x1="-0.45" y1="-1.25" x2="1.55" y2="-0.05" layer="29"/>
+<rectangle x1="-0.3" y1="-1.11" x2="1.4" y2="-0.17" layer="31"/>
+</package>
 </packages>
 <symbols>
 <symbol name="JFET-N">
@@ -8070,6 +8118,28 @@ MOSFET P-CH 55V 18A DPAK</description>
 <connect gate="G$1" pin="D" pad="5-8"/>
 <connect gate="G$1" pin="G" pad="4"/>
 <connect gate="G$1" pin="S" pad="1 2 3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SI7905DN" prefix="Q">
+<description>Dual P-Channel MOSFET</description>
+<gates>
+<gate name="A" symbol="EMOS-PD" x="0" y="0" addlevel="always"/>
+<gate name="B" symbol="EMOS-PD" x="22.86" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="POWERPAK-1212-8D">
+<connects>
+<connect gate="A" pin="D" pad="7 8"/>
+<connect gate="A" pin="G" pad="2"/>
+<connect gate="A" pin="S" pad="1"/>
+<connect gate="B" pin="D" pad="5 6"/>
+<connect gate="B" pin="G" pad="4"/>
+<connect gate="B" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
