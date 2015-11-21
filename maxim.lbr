@@ -11250,7 +11250,7 @@ body 3.5 x 9mm, exposed pad</description>
 <text x="-10.16" y="13.97" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="-15.24" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="RO" x="-12.7" y="7.62" length="short" direction="out"/>
-<pin name="RE/RE" x="-12.7" y="2.54" length="short" direction="in"/>
+<pin name="!RE!" x="-12.7" y="2.54" length="short" direction="in"/>
 <pin name="DE" x="-12.7" y="-2.54" length="short" direction="in"/>
 <pin name="DI" x="-12.7" y="-7.62" length="short" direction="in"/>
 <pin name="A" x="12.7" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
@@ -25883,11 +25883,11 @@ body 3.5 x 9mm, exposed pad</description>
 <devices>
 <device name="" package="SO08">
 <connects>
+<connect gate="G$1" pin="!RE!" pad="2"/>
 <connect gate="G$1" pin="A" pad="6"/>
 <connect gate="G$1" pin="B" pad="7"/>
 <connect gate="G$1" pin="DE" pad="3"/>
 <connect gate="G$1" pin="DI" pad="4"/>
-<connect gate="G$1" pin="RE/RE" pad="2"/>
 <connect gate="G$1" pin="RO" pad="1"/>
 <connect gate="P" pin="GND" pad="5"/>
 <connect gate="P" pin="VCC" pad="8"/>
@@ -25907,11 +25907,11 @@ body 3.5 x 9mm, exposed pad</description>
 <devices>
 <device name="" package="UMAX8">
 <connects>
+<connect gate="G$1" pin="!RE!" pad="4"/>
 <connect gate="G$1" pin="A" pad="8"/>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="DE" pad="5"/>
 <connect gate="G$1" pin="DI" pad="6"/>
-<connect gate="G$1" pin="RE/RE" pad="4"/>
 <connect gate="G$1" pin="RO" pad="3"/>
 <connect gate="P" pin="GND" pad="7"/>
 <connect gate="P" pin="VCC" pad="2"/>
@@ -26141,20 +26141,35 @@ body 3.5 x 9mm, exposed pad</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="MAX481CPA" prefix="U">
+<deviceset name="MAX481C" prefix="U">
 <description>&lt;b&gt;RS485 TRANSEIVER&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="MAX481" x="0" y="0"/>
 <gate name="P" symbol="VCC-GND" x="25.4" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="P" package="DIL08">
 <connects>
+<connect gate="G$1" pin="!RE!" pad="2"/>
 <connect gate="G$1" pin="A" pad="6"/>
 <connect gate="G$1" pin="B" pad="7"/>
 <connect gate="G$1" pin="DE" pad="3"/>
 <connect gate="G$1" pin="DI" pad="4"/>
-<connect gate="G$1" pin="RE/RE" pad="2"/>
+<connect gate="G$1" pin="RO" pad="1"/>
+<connect gate="P" pin="GND" pad="5"/>
+<connect gate="P" pin="VCC" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="S" package="SO08">
+<connects>
+<connect gate="G$1" pin="!RE!" pad="2"/>
+<connect gate="G$1" pin="A" pad="6"/>
+<connect gate="G$1" pin="B" pad="7"/>
+<connect gate="G$1" pin="DE" pad="3"/>
+<connect gate="G$1" pin="DI" pad="4"/>
 <connect gate="G$1" pin="RO" pad="1"/>
 <connect gate="P" pin="GND" pad="5"/>
 <connect gate="P" pin="VCC" pad="8"/>
