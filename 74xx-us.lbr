@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2077,6 +2077,11 @@ SOT340-1 / JEDEC MO-150AG</description>
 <text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="I" x="-10.16" y="0" visible="pad" length="middle" direction="in"/>
 <pin name="O" x="10.16" y="0" visible="pad" length="middle" direction="oc" rot="R180"/>
+<wire x1="-3.175" y1="0" x2="-1.905" y2="1.27" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="0" x2="-1.905" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-1.905" y1="-1.27" x2="-3.175" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.175" y1="-1.27" x2="-0.635" y2="-1.27" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="7442">
 <wire x1="-7.62" y1="-15.24" x2="5.08" y2="-15.24" width="0.4064" layer="94"/>
