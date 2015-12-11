@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2387,6 +2387,24 @@ Memory Protection Devices Inc</description>
 <wire x1="-3.4" y1="-1.5" x2="3.4" y2="-1.5" width="0.2032" layer="21"/>
 <wire x1="-0.1" y1="0.6" x2="0.1" y2="0.6" width="0.2032" layer="21"/>
 </package>
+<package name="BLP2032SM">
+<smd name="+" x="-12" y="0" dx="3.2" dy="3.75" layer="1"/>
+<smd name="-" x="10.87" y="0" dx="3.2" dy="3.75" layer="1"/>
+<wire x1="-10.25" y1="7.55" x2="10.25" y2="7.55" width="0.2032" layer="21"/>
+<wire x1="-10.25" y1="-7.55" x2="10.25" y2="-7.55" width="0.2032" layer="21"/>
+<wire x1="-12.5" y1="2.25" x2="-10.25" y2="7.5" width="0.2032" layer="21" curve="-25.887682"/>
+<wire x1="12.5" y1="-2.25" x2="10.25" y2="-7.5" width="0.2032" layer="21" curve="-25.887682"/>
+<wire x1="10.25" y1="7.5" x2="12.5" y2="2.225" width="0.2032" layer="21" curve="-27.10293"/>
+<wire x1="-10.25" y1="-7.5" x2="-12.5" y2="-2.225" width="0.2032" layer="21" curve="-27.10293"/>
+<wire x1="-8" y1="7.5" x2="-8" y2="-7.5" width="0.2032" layer="51" curve="93.948697"/>
+<wire x1="8" y1="-7.5" x2="8" y2="7.5" width="0.2032" layer="51" curve="93.948697"/>
+<wire x1="-12.5" y1="2.2" x2="-14" y2="2.2" width="0.2032" layer="21"/>
+<wire x1="-14" y1="2.2" x2="-14" y2="-2.2" width="0.2032" layer="21"/>
+<wire x1="-14" y1="-2.2" x2="-12.5" y2="-2.2" width="0.2032" layer="21"/>
+<text x="-10.16" y="8.255" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="-12.7" y="2.54" size="1.016" layer="27" ratio="21" rot="R90">+</text>
+</package>
 </packages>
 <symbols>
 <symbol name="2V4+2">
@@ -2739,8 +2757,8 @@ Memory Protection Devices Inc</description>
 <text x="-1.27" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <text x="1.27" y="0.635" size="1.524" layer="94">+</text>
 <text x="-1.905" y="0.635" size="1.524" layer="94">-</text>
-<pin name="+" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="-" x="-5.08" y="0" visible="pad" length="short" direction="pas"/>
+<pin name="+" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
+<pin name="-" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
 </symbol>
 <symbol name="2V4">
 <wire x1="-0.635" y1="0.635" x2="-0.635" y2="0" width="0.4064" layer="94"/>
@@ -4224,6 +4242,23 @@ CR2032 Coin Cell</description>
 </gates>
 <devices>
 <device name="" package="MS621FE">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BLP2032SM" prefix="B">
+<description>COIN CELL HOLDER</description>
+<gates>
+<gate name="G$1" symbol="1V2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BLP2032SM">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>

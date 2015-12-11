@@ -8147,6 +8147,46 @@ MOSFET P-CH 55V 18A DPAK</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="SI4925" prefix="Q">
+<description>&lt;b&gt;Dual P-Channel MOSFET&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="EMOS-PD" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="EMOS-PD" x="20.32" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="A" pin="D" pad="7 8"/>
+<connect gate="A" pin="G" pad="2"/>
+<connect gate="A" pin="S" pad="1"/>
+<connect gate="B" pin="D" pad="5 6"/>
+<connect gate="B" pin="G" pad="4"/>
+<connect gate="B" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="AOD4185" prefix="Q">
+<description>MOSFET P-CH 40V 40A TO252</description>
+<gates>
+<gate name="G$1" symbol="EMOS-PD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DPAK">
+<connects>
+<connect gate="G$1" pin="D" pad="4"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

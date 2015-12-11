@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -907,6 +907,17 @@ RL622 Series, 8.5 mm dia, 5 mm ls</description>
 <text x="-2.75" y="3.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.75" y="-4.25" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="2205">
+<description>2200 SERIES&lt;p&gt;
+Toroid 0.95 diameter</description>
+<pad name="1" x="-11.176" y="0" drill="1.6764" diameter="3.81" shape="octagon"/>
+<pad name="2" x="11.176" y="0" drill="1.6764" diameter="3.81" shape="octagon"/>
+<wire x1="-11.7475" y1="2.54" x2="11.7475" y2="2.54" width="0.254" layer="21" curve="-155.603191"/>
+<wire x1="11.7475" y1="-2.54" x2="-11.7475" y2="-2.54" width="0.254" layer="21" curve="-155.603191"/>
+<text x="12.3825" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<circle x="0" y="0" radius="7.72510625" width="0.254" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -1526,6 +1537,23 @@ RL622 Series, 8.5 mm dia, 5 mm ls</description>
 </gates>
 <devices>
 <device name="" package="SDR0403">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2205" prefix="L">
+<description>&lt;b&gt;TOROID INDUCTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2205">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
