@@ -5851,6 +5851,32 @@ Very High Precision, 3V/5V Rail-to-Rail Op Amps</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="OPA2379" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+Low Voltage Rail-to-Rail</description>
+<gates>
+<gate name="A" symbol="OPAMP_NV" x="0" y="-2.54"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-17.78"/>
+<gate name="P" symbol="PWRN_V+-" x="-17.78" y="-2.54" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
