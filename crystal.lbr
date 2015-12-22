@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="12.5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3352,6 +3352,22 @@ Seiko/Epson</description>
 <rectangle x1="-4.318" y1="-5.334" x2="-3.429" y2="-4.445" layer="21"/>
 <wire x1="-7.366" y1="0.889" x2="-7.366" y2="-1.016" width="0.2032" layer="21" curve="-180"/>
 </package>
+<package name="CM155">
+<description>Citizen CM155 Series</description>
+<smd name="4" x="-2.55" y="1.25" dx="1.2" dy="1.55" layer="1" rot="R90"/>
+<smd name="1" x="-2.55" y="-1.25" dx="1.2" dy="1.55" layer="1" rot="R90"/>
+<smd name="2" x="2.55" y="-1.25" dx="1.2" dy="1.55" layer="1" rot="R90"/>
+<smd name="3" x="2.55" y="1.25" dx="1.2" dy="1.55" layer="1" rot="R90"/>
+<wire x1="-3.4" y1="1.5" x2="3.4" y2="1.5" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="1.5" x2="3.4" y2="-1.5" width="0.2032" layer="51"/>
+<wire x1="3.4" y1="-1.5" x2="-3.4" y2="-1.5" width="0.2032" layer="51"/>
+<wire x1="-3.4" y1="-1.5" x2="-3.4" y2="1.5" width="0.2032" layer="51"/>
+<wire x1="-1.4" y1="1.8" x2="1.4" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="-1.4" y1="-1.8" x2="1.4" y2="-1.8" width="0.2032" layer="21"/>
+<rectangle x1="-4" y1="-1.6" x2="-3.5" y2="-1.1" layer="21"/>
+<text x="-3.302" y="2.159" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.302" y="-3.048" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="Q">
@@ -5713,6 +5729,23 @@ Ultra-Low Power 32.768 kHz Quartz XTAL Replacement</description>
 <connect gate="G$1" pin="OE/ST" pad="1"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CM155" prefix="Y">
+<description>CRYSTAL</description>
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CM155">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
