@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -72,7 +72,26 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Mechanical" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Gehäuse" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="ID" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="bMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="EXTD_ERC" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;OP-AMPS&lt;/b&gt;&lt;p&gt;
@@ -973,6 +992,70 @@ JEDEC MO-193-AB</description>
 <rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+</package>
+<package name="DSBGA-8">
+<description>&lt;b&gt; DIE-SIZE BALL GRID ARRAY&lt;/b&gt; - YFP (R-XBGA-N8)&lt;p&gt;
+ball pitch 0.4mm, body 1.6 x 0.8mm</description>
+<wire x1="-0.8" y1="0.4" x2="0.8" y2="0.4" width="0.0508" layer="51"/>
+<wire x1="0.8" y1="0.4" x2="0.8" y2="-0.4" width="0.0508" layer="51"/>
+<wire x1="0.8" y1="-0.4" x2="-0.8" y2="-0.4" width="0.0508" layer="51"/>
+<wire x1="-0.8" y1="-0.4" x2="-0.8" y2="0.4" width="0.0508" layer="51"/>
+<circle x="-0.6" y="0.2" radius="0.1581" width="0" layer="29"/>
+<circle x="-0.2" y="0.2" radius="0.1581" width="0" layer="29"/>
+<circle x="0.2" y="0.2" radius="0.1581" width="0" layer="29"/>
+<circle x="0.6" y="0.2" radius="0.1581" width="0" layer="29"/>
+<circle x="0.6" y="-0.2" radius="0.1581" width="0" layer="29"/>
+<circle x="0.2" y="-0.2" radius="0.1581" width="0" layer="29"/>
+<circle x="-0.2" y="-0.2" radius="0.1581" width="0" layer="29"/>
+<circle x="-0.6" y="-0.2" radius="0.1581" width="0" layer="29"/>
+<smd name="A1" x="-0.6" y="-0.2" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="B1" x="-0.2" y="-0.2" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="C1" x="0.2" y="-0.2" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="C2" x="0.2" y="0.2" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="A2" x="-0.6" y="0.2" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="D1" x="0.6" y="-0.2" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="D2" x="0.6" y="0.2" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" cream="no"/>
+<smd name="B2" x="-0.2" y="0.2" dx="0.25" dy="0.25" layer="1" roundness="100" stop="no" cream="no"/>
+<text x="-0.8" y="0.6" size="0.6096" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.8" y="-1.2" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-0.4" x2="-0.4" y2="-0.15" layer="51"/>
+<rectangle x1="-0.9" y1="-0.4" x2="-0.8" y2="-0.15" layer="21"/>
+<rectangle x1="-0.332" y1="-0.35" x2="-0.082" y2="-0.1" layer="31"/>
+<rectangle x1="-0.332" y1="0.1" x2="-0.082" y2="0.35" layer="31" rot="R180"/>
+<rectangle x1="0.082" y1="0.1" x2="0.332" y2="0.35" layer="31" rot="R180"/>
+<rectangle x1="0.082" y1="-0.35" x2="0.332" y2="-0.1" layer="31"/>
+<rectangle x1="-0.751" y1="0.1" x2="-0.501" y2="0.35" layer="31" rot="R180"/>
+<rectangle x1="-0.751" y1="-0.35" x2="-0.501" y2="-0.1" layer="31"/>
+<rectangle x1="0.501" y1="-0.35" x2="0.751" y2="-0.1" layer="31"/>
+<rectangle x1="0.501" y1="0.1" x2="0.751" y2="0.35" layer="31" rot="R180"/>
+</package>
+<package name="VFBGA-8">
+<description>&lt;b&gt; DIE-SIZE BALL GRID ARRAY&lt;/b&gt; - YZD (R-XBGA-N8)&lt;p&gt;
+ball pitch 0.5mm, body 2.3 x 1.3mm</description>
+<wire x1="-1.089" y1="0.57" x2="1.089" y2="0.57" width="0.0508" layer="51"/>
+<wire x1="1.089" y1="0.57" x2="1.089" y2="-0.57" width="0.0508" layer="51"/>
+<wire x1="1.089" y1="-0.57" x2="-1.089" y2="-0.57" width="0.0508" layer="51"/>
+<wire x1="-1.089" y1="-0.57" x2="-1.089" y2="0.57" width="0.0508" layer="51"/>
+<circle x="-0.75" y="0.25" radius="0.176775" width="0" layer="29"/>
+<smd name="A1" x="-0.75" y="-0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
+<smd name="B1" x="-0.25" y="-0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
+<smd name="C1" x="0.25" y="-0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
+<smd name="C2" x="0.25" y="0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
+<smd name="A2" x="-0.75" y="0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
+<smd name="D1" x="0.75" y="-0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
+<smd name="D2" x="0.75" y="0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
+<smd name="B2" x="-0.25" y="0.25" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no"/>
+<text x="-1.1" y="0.7" size="0.6096" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.1" y="-1.1" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.1" y1="-0.55" x2="-0.7" y2="-0.3" layer="51"/>
+<rectangle x1="-1.2" y1="-0.6" x2="-1.05" y2="-0.3" layer="21"/>
+<circle x="-0.25" y="0.25" radius="0.176775" width="0" layer="29"/>
+<circle x="0.25" y="0.25" radius="0.176775" width="0" layer="29"/>
+<circle x="0.75" y="0.25" radius="0.176775" width="0" layer="29"/>
+<circle x="0.75" y="-0.25" radius="0.176775" width="0" layer="29"/>
+<circle x="0.25" y="-0.25" radius="0.176775" width="0" layer="29"/>
+<circle x="-0.25" y="-0.25" radius="0.176775" width="0" layer="29"/>
+<circle x="-0.75" y="-0.25" radius="0.176775" width="0" layer="29"/>
 </package>
 </packages>
 <symbols>
@@ -5870,6 +5953,96 @@ Low Voltage Rail-to-Rail</description>
 <connect gate="B" pin="OUT" pad="7"/>
 <connect gate="P" pin="V+" pad="8"/>
 <connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA2376" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+Precision Low-Noise, Low Quiescent Current</description>
+<gates>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" swaplevel="1"/>
+<gate name="P" symbol="PWRI_V+-" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DGK" package="VSSOP8">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="YZD" package="VFBGA-8">
+<connects>
+<connect gate="A" pin="+IN" pad="C1"/>
+<connect gate="A" pin="-IN" pad="B1"/>
+<connect gate="A" pin="OUT" pad="A1"/>
+<connect gate="B" pin="+IN" pad="D2"/>
+<connect gate="B" pin="-IN" pad="C2"/>
+<connect gate="B" pin="OUT" pad="B2"/>
+<connect gate="P" pin="V+" pad="A2"/>
+<connect gate="P" pin="V-" pad="D1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA4376" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+Precision Low-Noise, Low Quiescent Current</description>
+<gates>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" swaplevel="1"/>
+<gate name="C" symbol="OPAMP_NV" x="0" y="-30.48" swaplevel="1"/>
+<gate name="D" symbol="OPAMP_NV" x="0" y="-43.18" swaplevel="1"/>
+<gate name="P" symbol="PWRI_V+-" x="-17.78" y="0"/>
+</gates>
+<devices>
+<device name="PW" package="TSSOP14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="P" pin="V+" pad="4"/>
+<connect gate="P" pin="V-" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
