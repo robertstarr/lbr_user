@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1220,6 +1220,14 @@ Use in a flooded plane area and add vias at positions shown!</description>
 <description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 0.116", square</description>
 <pad name="B116" x="0" y="0" drill="2.9464" diameter="5.842" shape="square" thermals="no"/>
 </package>
+<package name="6,35-PAD">
+<description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 6.35 mm, round</description>
+<circle x="0" y="0" radius="5.0899" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="5.588" width="2" layer="43"/>
+<circle x="0" y="0" radius="5.588" width="2" layer="39"/>
+<circle x="0" y="0" radius="5.588" width="2" layer="40"/>
+<pad name="B6,35" x="0" y="0" drill="6.35" diameter="9" thermals="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNT-PAD">
@@ -1974,6 +1982,16 @@ Use in a flooded plane area and add vias at positions shown!</description>
 <device name="0.116S" package="116-PAD-SQUARE">
 <connects>
 <connect gate="G$1" pin="MOUNT" pad="B116"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="BOM" value="EXCLUDE" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="6.35" package="6,35-PAD">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="B6,35"/>
 </connects>
 <technologies>
 <technology name="">
