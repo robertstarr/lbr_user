@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -8198,6 +8198,29 @@ MOSFET P-CH 55V 18A DPAK</description>
 <connect gate="G$1" pin="D" pad="4"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FDS6975" prefix="Q">
+<description>Dual P-Channel MOSFET&lt;p&gt;
+Logic Level, PowerTrench</description>
+<gates>
+<gate name="A" symbol="EMOS-PD" x="-2.54" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="EMOS-PD" x="17.78" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SO08">
+<connects>
+<connect gate="A" pin="D" pad="7 8"/>
+<connect gate="A" pin="G" pad="2"/>
+<connect gate="A" pin="S" pad="1"/>
+<connect gate="B" pin="D" pad="5 6"/>
+<connect gate="B" pin="G" pad="4"/>
+<connect gate="B" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
