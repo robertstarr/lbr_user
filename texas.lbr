@@ -49,6 +49,7 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -8270,6 +8271,28 @@ Body 3 x 3 mm, DGS (S-PDSO-G10)</description>
 <text x="-15.24" y="11.43" size="1.778" layer="95">&gt;NAME</text>
 <text x="-15.24" y="-12.7" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="SN65C3221E">
+<wire x1="-10.16" y1="22.86" x2="10.16" y2="22.86" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="10.16" y2="22.86" width="0.4064" layer="94"/>
+<wire x1="10.16" y1="-25.4" x2="-10.16" y2="-25.4" width="0.4064" layer="94"/>
+<wire x1="-10.16" y1="22.86" x2="-10.16" y2="-25.4" width="0.4064" layer="94"/>
+<text x="-10.16" y="23.495" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="C1+" x="-12.7" y="20.32" length="short" direction="pas"/>
+<pin name="C1-" x="-12.7" y="15.24" length="short" direction="pas"/>
+<pin name="C2+" x="-12.7" y="10.16" length="short" direction="pas"/>
+<pin name="C2-" x="-12.7" y="5.08" length="short" direction="pas"/>
+<pin name="DIN" x="-12.7" y="-2.54" length="short" direction="in"/>
+<pin name="ROUT" x="-12.7" y="-7.62" length="short" direction="out"/>
+<pin name="V+" x="12.7" y="17.78" length="short" direction="pas" rot="R180"/>
+<pin name="V-" x="12.7" y="12.7" length="short" direction="pas" rot="R180"/>
+<pin name="DOUT" x="12.7" y="-2.54" length="short" direction="out" rot="R180"/>
+<pin name="RIN" x="12.7" y="-7.62" length="short" direction="in" rot="R180"/>
+<pin name="!INVALID!" x="12.7" y="-22.86" length="short" direction="out" rot="R180"/>
+<pin name="!FORCEOFF!" x="-12.7" y="-17.78" length="short" direction="in"/>
+<pin name="FORCEON" x="-12.7" y="-15.24" length="short" direction="in"/>
+<pin name="!EN!" x="-12.7" y="-22.86" length="short" direction="in"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="BQ2054PN" prefix="U" uservalue="yes">
@@ -13567,6 +13590,39 @@ BUCK SYNC ADJ 1A</description>
 <connect gate="G$1" pin="SS" pad="5"/>
 <connect gate="G$1" pin="VIN" pad="1"/>
 <connect gate="G$1" pin="VOUT" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SN65C3221E" prefix="U">
+<description>SINGLE-CHANNEL RS-232 1-Mbit/s LINE DRIVER/RECEIVER&lt;p&gt;
+3-V TO 5.5-V WITH ±15-kV IEC ESD PROTECTION</description>
+<gates>
+<gate name="G$1" symbol="SN65C3221E" x="0" y="0"/>
+<gate name="P" symbol="VCCGND" x="27.94" y="10.16" addlevel="request"/>
+</gates>
+<devices>
+<device name="PW" package="TSSOP16">
+<connects>
+<connect gate="G$1" pin="!EN!" pad="1"/>
+<connect gate="G$1" pin="!FORCEOFF!" pad="16"/>
+<connect gate="G$1" pin="!INVALID!" pad="10"/>
+<connect gate="G$1" pin="C1+" pad="2"/>
+<connect gate="G$1" pin="C1-" pad="4"/>
+<connect gate="G$1" pin="C2+" pad="5"/>
+<connect gate="G$1" pin="C2-" pad="6"/>
+<connect gate="G$1" pin="DIN" pad="11"/>
+<connect gate="G$1" pin="DOUT" pad="13"/>
+<connect gate="G$1" pin="FORCEON" pad="12"/>
+<connect gate="G$1" pin="RIN" pad="8"/>
+<connect gate="G$1" pin="ROUT" pad="9"/>
+<connect gate="G$1" pin="V+" pad="3"/>
+<connect gate="G$1" pin="V-" pad="7"/>
+<connect gate="P" pin="GND" pad="14"/>
+<connect gate="P" pin="VCC" pad="15"/>
 </connects>
 <technologies>
 <technology name=""/>
