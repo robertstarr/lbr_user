@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -44,11 +44,13 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -5579,13 +5581,6 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <package name="SOD323W_INFINEON">
 <description>&lt;b&gt;Diode Package&lt;/b&gt; Wave soldering&lt;p&gt;
 INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
-<wire x1="0" y1="-0.7" x2="0" y2="0.6" width="0.127" layer="48"/>
-<wire x1="0" y1="0.6" x2="-0.2" y2="0.2" width="0.127" layer="48"/>
-<wire x1="-0.2" y1="0.2" x2="0.2" y2="0.2" width="0.127" layer="48"/>
-<wire x1="0.2" y1="0.2" x2="0" y2="0.6" width="0.127" layer="48"/>
-<wire x1="0" y1="-0.7" x2="0.2" y2="-0.3" width="0.127" layer="48"/>
-<wire x1="0.2" y1="-0.3" x2="-0.2" y2="-0.3" width="0.127" layer="48"/>
-<wire x1="-0.2" y1="-0.3" x2="0" y2="-0.7" width="0.127" layer="48"/>
 <wire x1="-0.8" y1="0.55" x2="0.8" y2="0.55" width="0.2032" layer="21"/>
 <wire x1="0.8" y1="0.55" x2="0.8" y2="-0.55" width="0.2032" layer="51"/>
 <wire x1="0.8" y1="-0.55" x2="-0.8" y2="-0.55" width="0.2032" layer="21"/>
@@ -5595,9 +5590,6 @@ INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
 <wire x1="0.3" y1="-0.4" x2="-0.3" y2="0" width="0.2032" layer="21"/>
 <smd name="C" x="-1.397" y="0" dx="1" dy="0.6" layer="1"/>
 <smd name="A" x="1.397" y="0" dx="1" dy="0.6" layer="1"/>
-<text x="0.4" y="0.4" size="0.254" layer="48">direction of pcb</text>
-<text x="0.4" y="-0.05" size="0.254" layer="48">transportation for</text>
-<text x="0.4" y="-0.5" size="0.254" layer="48">wavesoldering</text>
 <text x="-1.651" y="0.762" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.651" y="-1.651" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.25" y1="-0.15" x2="-0.8" y2="0.15" layer="51"/>
@@ -6855,6 +6847,23 @@ SOD-882</description>
 <wire x1="1.45" y1="-1.65" x2="1.7" y2="-1.65" width="0.2032" layer="21"/>
 <text x="-2.032" y="-1.651" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="2.794" y="-1.651" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+</package>
+<package name="D0805L">
+<description>&lt;b&gt;0805&lt;/b&gt; - LLC</description>
+<wire x1="-1" y1="0.675" x2="1" y2="0.675" width="0.2032" layer="51"/>
+<wire x1="1" y1="0.675" x2="1" y2="-0.675" width="0.2032" layer="51"/>
+<wire x1="1" y1="-0.675" x2="-1" y2="-0.675" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-0.675" x2="-1" y2="0.675" width="0.2032" layer="51"/>
+<text x="-1.524" y="0.889" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.524" y="-1.524" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.1" y1="-0.6" x2="0.4" y2="0.6" layer="21"/>
+<rectangle x1="0.3" y1="-0.6" x2="0.7" y2="0.6" layer="51"/>
+<wire x1="-1" y1="0.65" x2="1" y2="0.65" width="0.0004" layer="57"/>
+<wire x1="1" y1="0.65" x2="1" y2="-0.65" width="0.0004" layer="57"/>
+<wire x1="1" y1="-0.65" x2="-1" y2="-0.65" width="0.0004" layer="57"/>
+<wire x1="-1" y1="-0.65" x2="-1" y2="0.65" width="0.0004" layer="57"/>
+<smd name="A" x="-1.05" y="0" dx="0.8" dy="0.9" layer="1"/>
+<smd name="C" x="1.05" y="0" dx="0.8" dy="0.9" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -10722,6 +10731,63 @@ SOD-882</description>
 </polygon>
 <pin name="A3" x="-10.16" y="-5.08" visible="pad" length="middle" direction="pas"/>
 <pin name="A1" x="-10.16" y="5.08" visible="pad" length="middle" direction="pas"/>
+</symbol>
+<symbol name="RSB68F2">
+<wire x1="-3.81" y1="1.5875" x2="-2.2225" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.2225" y1="2.54" x2="-3.81" y2="3.4925" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="3.4925" x2="-3.81" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="-2.2225" y1="3.3655" x2="-2.2225" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.6988" y1="3.7465" x2="-2.2225" y2="3.3655" width="0.254" layer="94"/>
+<wire x1="-7.62" y1="2.54" x2="1.905" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="2.54" x2="1.905" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.635" y1="3.4925" x2="-2.2225" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-2.2225" y1="2.54" x2="-0.635" y2="1.5875" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="1.5875" x2="-0.635" y2="3.4925" width="0.254" layer="94"/>
+<text x="-5.715" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="-5.715" y="-6.985" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-7.62" y="2.54" visible="off" length="point" direction="pas"/>
+<pin name="2" x="-7.62" y="-2.54" visible="off" length="point" direction="pas"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.81" y="3.4925"/>
+<vertex x="-2.2225" y="2.54"/>
+<vertex x="-3.81" y="1.5875"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.635" y="1.5875"/>
+<vertex x="-2.2225" y="2.54"/>
+<vertex x="-0.635" y="3.4925"/>
+</polygon>
+<wire x1="-7.62" y1="-2.54" x2="1.905" y2="-2.54" width="0.1524" layer="94"/>
+<pin name="3" x="5.08" y="0" visible="off" length="point" direction="pas" rot="R180"/>
+<wire x1="1.905" y1="0" x2="5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="0" x2="1.905" y2="-2.54" width="0.1524" layer="94"/>
+<circle x="1.905" y="0" radius="0.40160625" width="0" layer="94"/>
+<wire x1="-5.715" y1="4.445" x2="3.175" y2="4.445" width="0.1524" layer="95" style="shortdash"/>
+<wire x1="3.175" y1="4.445" x2="3.175" y2="-4.445" width="0.1524" layer="95" style="shortdash"/>
+<wire x1="3.175" y1="-4.445" x2="-5.715" y2="-4.445" width="0.1524" layer="95" style="shortdash"/>
+<wire x1="-5.715" y1="-4.445" x2="-5.715" y2="4.445" width="0.1524" layer="95" style="shortdash"/>
+<wire x1="-2.2225" y1="1.7145" x2="-2.2225" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-1.7462" y1="1.3335" x2="-2.2225" y2="1.7145" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-3.4925" x2="-2.2225" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.2225" y1="-2.54" x2="-3.81" y2="-1.5875" width="0.254" layer="94"/>
+<wire x1="-3.81" y1="-1.5875" x2="-3.81" y2="-3.4925" width="0.254" layer="94"/>
+<wire x1="-2.2225" y1="-1.7145" x2="-2.2225" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.6988" y1="-1.3335" x2="-2.2225" y2="-1.7145" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.5875" x2="-2.2225" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2.2225" y1="-2.54" x2="-0.635" y2="-3.4925" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-3.4925" x2="-0.635" y2="-1.5875" width="0.254" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="-3.81" y="-1.5875"/>
+<vertex x="-2.2225" y="-2.54"/>
+<vertex x="-3.81" y="-3.4925"/>
+</polygon>
+<polygon width="0.1524" layer="94">
+<vertex x="-0.635" y="-3.4925"/>
+<vertex x="-2.2225" y="-2.54"/>
+<vertex x="-0.635" y="-1.5875"/>
+</polygon>
+<wire x1="-2.2225" y1="-3.3655" x2="-2.2225" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-1.7462" y1="-3.7465" x2="-2.2225" y2="-3.3655" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -16824,6 +16890,15 @@ GPP SMD 400V 1A SMB&lt;p&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="D0805L" package="D0805L">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="MMBZ52XX-7" prefix="D">
@@ -18452,6 +18527,24 @@ General-purpose diode for high-speed switching</description>
 </gates>
 <devices>
 <device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RSB68F2" prefix="D">
+<description>DUALTVS DIODE</description>
+<gates>
+<gate name="G$1" symbol="RSB68F2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT323-R">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
