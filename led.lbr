@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.5.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -2889,6 +2889,24 @@ Lite-On Technology Corp</description>
 <wire x1="1.8" y1="-1.6" x2="-1.8" y2="-1.6" width="0.2032" layer="27"/>
 <wire x1="-1.8" y1="-1.6" x2="-1.8" y2="-1.35" width="0.2032" layer="27"/>
 </package>
+<package name="H101CXX">
+<description>LED ASSY RA 3MM&lt;P&gt;
+BIVAR</description>
+<pad name="A" x="1.27" y="0" drill="0.8128" diameter="1.778" rot="R180"/>
+<pad name="K" x="-1.27" y="0" drill="0.8128" diameter="1.778" rot="R180"/>
+<text x="3.81" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-2.794" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+<wire x1="-2.15" y1="4.7" x2="-1.5" y2="4.7" width="0.0508" layer="51"/>
+<wire x1="-1.5" y1="4.7" x2="1.5" y2="4.7" width="0.0508" layer="51"/>
+<wire x1="1.5" y1="4.7" x2="2.15" y2="4.7" width="0.0508" layer="51"/>
+<wire x1="2.15" y1="4.7" x2="2.15" y2="-1.7" width="0.0508" layer="51"/>
+<wire x1="2.15" y1="-1.7" x2="-2.15" y2="-1.7" width="0.0508" layer="51"/>
+<wire x1="-2.15" y1="-1.7" x2="-2.15" y2="4.7" width="0.0508" layer="51"/>
+<wire x1="-1.5" y1="4.7" x2="1.5" y2="4.7" width="0.0508" layer="51" curve="-180"/>
+<wire x1="-2.413" y1="4.572" x2="-2.413" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-2.413" y1="-1.905" x2="2.413" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="2.413" y1="-1.905" x2="2.413" y2="4.572" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -4475,6 +4493,17 @@ Various Types</description>
 </technologies>
 </device>
 <device name="PADS-100Y" package="LED-PADS-100Y">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="H101CXX" package="H101CXX">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
