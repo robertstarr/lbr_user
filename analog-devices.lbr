@@ -12501,26 +12501,26 @@ TXRX DUAL RS232 3.3V</description>
 <description>ANALOG iCMOS SWITCH</description>
 <gates>
 <gate name="G$1" symbol="ADG1434VQ" x="-2.54" y="0" addlevel="always"/>
-<gate name="A" symbol="ADG1434-SW" x="-43.18" y="7.62" addlevel="always"/>
-<gate name="B" symbol="ADG1434-SW" x="-43.18" y="-7.62" addlevel="always"/>
-<gate name="C" symbol="ADG1434-SW" x="-43.18" y="-22.86" addlevel="always"/>
-<gate name="D" symbol="ADG1434-SW" x="-43.18" y="-38.1" addlevel="always"/>
+<gate name="-1" symbol="ADG1434-SW" x="-43.18" y="7.62" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="ADG1434-SW" x="-43.18" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="-3" symbol="ADG1434-SW" x="-43.18" y="-22.86" addlevel="always" swaplevel="1"/>
+<gate name="-4" symbol="ADG1434-SW" x="-43.18" y="-38.1" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="LFCSP20_VQ">
 <connects>
-<connect gate="A" pin="D" pad="1"/>
-<connect gate="A" pin="SA" pad="20"/>
-<connect gate="A" pin="SB" pad="2"/>
-<connect gate="B" pin="D" pad="6"/>
-<connect gate="B" pin="SA" pad="7"/>
-<connect gate="B" pin="SB" pad="5"/>
-<connect gate="C" pin="D" pad="11"/>
-<connect gate="C" pin="SA" pad="10"/>
-<connect gate="C" pin="SB" pad="12"/>
-<connect gate="D" pin="D" pad="15"/>
-<connect gate="D" pin="SA" pad="16"/>
-<connect gate="D" pin="SB" pad="14"/>
+<connect gate="-1" pin="D" pad="1"/>
+<connect gate="-1" pin="SA" pad="20"/>
+<connect gate="-1" pin="SB" pad="2"/>
+<connect gate="-2" pin="D" pad="6"/>
+<connect gate="-2" pin="SA" pad="7"/>
+<connect gate="-2" pin="SB" pad="5"/>
+<connect gate="-3" pin="D" pad="11"/>
+<connect gate="-3" pin="SA" pad="10"/>
+<connect gate="-3" pin="SB" pad="12"/>
+<connect gate="-4" pin="D" pad="15"/>
+<connect gate="-4" pin="SA" pad="16"/>
+<connect gate="-4" pin="SB" pad="14"/>
 <connect gate="G$1" pin="!EN!" pad="18"/>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="IN1" pad="19"/>
