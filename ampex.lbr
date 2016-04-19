@@ -8,7 +8,7 @@
 </settings>
 <grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
@@ -24,19 +24,19 @@
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="20" name="Dimension" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="7" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="12" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="12" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="9" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -55,10 +55,10 @@
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
 <layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
-<layer number="48" name="Document" color="2" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
@@ -891,6 +891,32 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="-10.4013" y1="-58.9407" x2="0" y2="58.9407" layer="29"/>
 <rectangle x1="-10.4013" y1="-58.9407" x2="0" y2="58.9407" layer="30"/>
 <hole x="-174.3456" y="0" drill="2.9464"/>
+<wire x1="0" y1="-57.9501" x2="0" y2="-26.2509" width="0.254" layer="46"/>
+<wire x1="0" y1="-26.2509" x2="-11.0363" y2="-26.2509" width="0.254" layer="46"/>
+<wire x1="-11.0363" y1="-26.2509" x2="-11.0363" y2="-25.2603" width="0.254" layer="46"/>
+<wire x1="-11.0363" y1="-25.2603" x2="0" y2="-25.2603" width="0.254" layer="46"/>
+<wire x1="-10.4013" y1="72.8091" x2="-10.4013" y2="58.9407" width="0.254" layer="46"/>
+<wire x1="-10.4013" y1="58.9407" x2="-0.9906" y2="58.9407" width="0.254" layer="46"/>
+<wire x1="-0.9906" y1="58.9407" x2="0" y2="57.9501" width="0.254" layer="46"/>
+<wire x1="0" y1="57.9501" x2="0" y2="0.9906" width="0.254" layer="46"/>
+<wire x1="0" y1="0.9906" x2="-11.0363" y2="0.9906" width="0.254" layer="46"/>
+<wire x1="-11.0363" y1="0.9906" x2="-11.0363" y2="-0.9906" width="0.254" layer="46"/>
+<wire x1="-11.0363" y1="-0.9906" x2="0" y2="-0.9906" width="0.254" layer="46"/>
+<wire x1="0" y1="-0.9906" x2="0" y2="-9.4107" width="0.254" layer="46"/>
+<wire x1="0" y1="-9.4107" x2="-11.0363" y2="-9.4107" width="0.254" layer="46"/>
+<wire x1="-11.0363" y1="-9.4107" x2="-11.0363" y2="-10.4013" width="0.254" layer="46"/>
+<wire x1="-11.0363" y1="-10.4013" x2="0" y2="-10.4013" width="0.254" layer="46"/>
+<wire x1="0" y1="-10.4013" x2="0" y2="-25.2603" width="0.254" layer="46"/>
+<wire x1="0" y1="-57.9501" x2="-0.9906" y2="-58.9407" width="0.254" layer="46"/>
+<wire x1="-0.9906" y1="-58.9407" x2="-10.4013" y2="-58.9407" width="0.254" layer="46"/>
+<wire x1="-10.4013" y1="-58.9407" x2="-10.4013" y2="-72.8091" width="0.254" layer="46"/>
+<wire x1="-10.8966" y1="73.3044" x2="-177.3174" y2="73.3044" width="0.254" layer="46"/>
+<wire x1="-177.3174" y1="-73.3044" x2="-10.8966" y2="-73.3044" width="0.254" layer="46"/>
+<wire x1="-10.8966" y1="73.3044" x2="-10.4013" y2="72.8091" width="0.254" layer="46"/>
+<wire x1="-10.4013" y1="-72.8091" x2="-10.8966" y2="-73.3044" width="0.254" layer="46"/>
+<wire x1="-177.3174" y1="-73.3044" x2="-178.8033" y2="-71.8185" width="0.254" layer="46"/>
+<wire x1="-178.8033" y1="-71.8185" x2="-178.8033" y2="71.8185" width="0.254" layer="46"/>
+<wire x1="-178.8033" y1="71.8185" x2="-177.3174" y2="73.3044" width="0.254" layer="46"/>
 </package>
 <package name="BA283">
 <description>REGULATOR CARD</description>

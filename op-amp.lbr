@@ -6050,6 +6050,46 @@ Precision Low-Noise, Low Quiescent Current</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MC1458" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt; - Dual Operational Amplifier</description>
+<gates>
+<gate name="A" symbol="OPAMP_NV" x="2.54" y="0"/>
+<gate name="B" symbol="OPAMP_NV" x="2.54" y="-15.24"/>
+<gate name="P" symbol="PWRN_VCC+-" x="-15.24" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="P" package="DIL08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="VCC+" pad="8"/>
+<connect gate="P" pin="VCC-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="VCC+" pad="8"/>
+<connect gate="P" pin="VCC-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
