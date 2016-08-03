@@ -76,22 +76,23 @@
 <description>&lt;b&gt;ISD Voice Recorder/Playback Devices&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="DIL28-6">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.6 inch</description>
-<wire x1="-17.78" y1="-0.9525" x2="-17.78" y2="-5.715" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="0.9525" x2="-17.78" y2="-0.9525" width="0.2032" layer="21" curve="-180"/>
-<wire x1="17.78" y1="-5.715" x2="17.78" y2="5.715" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="5.715" x2="-17.78" y2="0.9525" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="5.715" x2="17.78" y2="5.715" width="0.2032" layer="21"/>
+<package name="DIP-600-28">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+600 mil row spacing, JEDEC MS-011B</description>
+<wire x1="17.78" y1="5.715" x2="-17.78" y2="5.715" width="0.2032" layer="21"/>
 <wire x1="-17.78" y1="-5.715" x2="17.78" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="5.715" x2="17.78" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="5.715" x2="-17.78" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="-5.715" x2="-17.78" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="1.016" x2="-17.78" y2="-1.016" width="0.2032" layer="21" curve="-180"/>
 <pad name="1" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90" first="yes"/>
 <pad name="2" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="7" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="8" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="9" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="10" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="11" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
@@ -113,7 +114,7 @@
 <pad name="27" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="28" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
 <text x="-18.415" y="-6.35" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-12.065" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-10.16" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="SO28W">
 <description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
@@ -692,7 +693,7 @@ body 8 X 13.4mm, pitch 0.55mm</description>
 <gate name="P" symbol="VCC2VSS2" x="-33.02" y="12.7" addlevel="request"/>
 </gates>
 <devices>
-<device name="P" package="DIL28-6">
+<device name="P" package="DIP-600-28">
 <connects>
 <connect gate="A" pin="!CE!" pad="23"/>
 <connect gate="A" pin="!EOM!" pad="25"/>
@@ -771,7 +772,7 @@ body 8 X 13.4mm, pitch 0.55mm</description>
 <gate name="G$1" symbol="ISD4002" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="P" package="DIL28-6">
+<device name="P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="!INT!" pad="25"/>
 <connect gate="G$1" pin="!SS!" pad="1"/>
@@ -863,7 +864,7 @@ body 8 X 13.4mm, pitch 0.55mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="P" package="DIL28-6">
+<device name="P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="!INT!" pad="25"/>
 <connect gate="G$1" pin="A0" pad="4"/>
@@ -977,7 +978,7 @@ body 8 X 13.4mm, pitch 0.55mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="P" package="DIL28-6">
+<device name="P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="!ERASE!" pad="25"/>
 <connect gate="G$1" pin="!FT!" pad="22"/>

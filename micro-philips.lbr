@@ -3769,40 +3769,41 @@ LQFP-MSQFP-QFP-SQFP-TQFP-REFLOW.pdf</description>
 <rectangle x1="-6.5532" y1="2.6162" x2="-4.953" y2="2.921" layer="27"/>
 <rectangle x1="-6.5532" y1="3.4036" x2="-4.953" y2="3.7084" layer="27"/>
 </package>
-<package name="DIP24SKI">
-<description>&lt;b&gt;Dual In Line&lt;/b&gt;</description>
-<wire x1="17.78" y1="3.048" x2="-12.7" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-12.7" y1="-3.048" x2="17.78" y2="-3.048" width="0.2032" layer="21"/>
-<wire x1="17.78" y1="-3.048" x2="17.78" y2="3.048" width="0.2032" layer="21"/>
-<wire x1="-12.7" y1="3.048" x2="-12.7" y2="1.016" width="0.2032" layer="21"/>
-<wire x1="-12.7" y1="-3.048" x2="-12.7" y2="-1.016" width="0.2032" layer="21"/>
-<wire x1="-12.7" y1="1.016" x2="-12.7" y2="-1.016" width="0.2032" layer="21" curve="-180"/>
-<pad name="1" x="-11.43" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="2" x="-8.89" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="7" x="3.81" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="8" x="6.35" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="3" x="-6.35" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="4" x="-3.81" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="5" x="-1.27" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="9" x="8.89" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="10" x="11.43" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="11" x="13.97" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="12" x="16.51" y="-3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="13" x="16.51" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="14" x="13.97" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="15" x="11.43" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="16" x="8.89" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="17" x="6.35" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="18" x="3.81" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="19" x="1.27" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="20" x="-1.27" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="21" x="-3.81" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="22" x="-6.35" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="23" x="-8.89" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<pad name="24" x="-11.43" y="3.81" drill="0.8128" diameter="1.27" shape="long" rot="R90"/>
-<text x="-1.3462" y="0.5588" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.175" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<package name="DIP-300-24">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
+<wire x1="15.24" y1="-1.905" x2="15.24" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="-1.905" x2="15.24" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="1.905" x2="15.24" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="1.905" x2="-14.9225" y2="0.6985" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="-1.905" x2="-14.9225" y2="-0.6985" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="0.6985" x2="-14.9225" y2="-0.6985" width="0.2032" layer="21" curve="-180"/>
+<pad name="1" x="-13.97" y="-3.81" drill="0.8128" shape="long" rot="R90" first="yes"/>
+<pad name="2" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="9" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="10" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="11" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="12" x="13.97" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="13" x="13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="14" x="11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="15" x="8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="16" x="6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="17" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="18" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="19" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="20" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="21" x="-6.35" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="22" x="-8.89" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="23" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="24" x="-13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-15.875" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-13.335" y="-0.9525" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="QFP80">
 <description>&lt;b&gt;Quad Flat Pack&lt;/b&gt;</description>
@@ -4895,8 +4896,9 @@ square</description>
 <rectangle x1="-0.45" y1="2.1" x2="-0.2" y2="3.1" layer="51"/>
 <rectangle x1="-1.1" y1="2.1" x2="-0.85" y2="3.1" layer="51"/>
 </package>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-8">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
@@ -4914,8 +4916,9 @@ square</description>
 <text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="10.16" y1="1.905" x2="-10.16" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-10.16" y1="-1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="10.16" y1="1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
@@ -4941,8 +4944,9 @@ square</description>
 <text x="-10.795" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-7.62" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL20">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-20">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="12.7" y1="1.905" x2="-12.7" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-12.7" y1="-1.905" x2="12.7" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="12.7" y1="1.905" x2="12.7" y2="-1.905" width="0.2032" layer="21"/>
@@ -4972,8 +4976,9 @@ square</description>
 <text x="-13.335" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-9.8425" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL28">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-600-28">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+600 mil row spacing, JEDEC MS-011B</description>
 <wire x1="17.78" y1="5.715" x2="-17.78" y2="5.715" width="0.2032" layer="21"/>
 <wire x1="-17.78" y1="-5.715" x2="17.78" y2="-5.715" width="0.2032" layer="21"/>
 <wire x1="17.78" y1="5.715" x2="17.78" y2="-5.715" width="0.2032" layer="21"/>
@@ -5011,8 +5016,9 @@ square</description>
 <text x="-18.415" y="-6.35" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-10.16" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL40">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-600-40">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+600 mil row spacing, JEDEC MS-011B</description>
 <wire x1="25.4" y1="5.715" x2="-25.4" y2="5.715" width="0.2032" layer="21"/>
 <wire x1="-25.4" y1="-5.715" x2="25.4" y2="-5.715" width="0.2032" layer="21"/>
 <wire x1="25.4" y1="5.715" x2="25.4" y2="-5.715" width="0.2032" layer="21"/>
@@ -5062,22 +5068,23 @@ square</description>
 <text x="-26.035" y="-6.35" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-16.51" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL24-6">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.6 inch</description>
-<wire x1="-15.24" y1="-0.9525" x2="-15.24" y2="-5.715" width="0.2032" layer="21"/>
-<wire x1="-15.24" y1="0.9525" x2="-15.24" y2="-0.9525" width="0.2032" layer="21" curve="-180"/>
-<wire x1="15.24" y1="-5.715" x2="15.24" y2="5.715" width="0.2032" layer="21"/>
-<wire x1="-15.24" y1="5.715" x2="-15.24" y2="0.9525" width="0.2032" layer="21"/>
-<wire x1="-15.24" y1="5.715" x2="15.24" y2="5.715" width="0.2032" layer="21"/>
+<package name="DIP-600-24">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+600 mil row spacing, JEDEC MS-011B</description>
+<wire x1="-15.24" y1="5.715" x2="-15.24" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-15.24" y1="-5.715" x2="-15.24" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-15.24" y1="1.016" x2="-15.24" y2="-1.016" width="0.2032" layer="21" curve="-180"/>
 <wire x1="-15.24" y1="-5.715" x2="15.24" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="5.715" x2="15.24" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="15.24" y1="5.715" x2="-15.24" y2="5.715" width="0.2032" layer="21"/>
 <pad name="1" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90" first="yes"/>
 <pad name="2" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="7" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="8" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="9" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="10" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="11" x="11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
@@ -5095,7 +5102,7 @@ square</description>
 <pad name="23" x="-11.43" y="7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="24" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
 <text x="-15.875" y="-6.35" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-12.065" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-11.43" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="SO08">
 <description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
@@ -8050,7 +8057,7 @@ thin quad flat pack, square (smd-ipc)</description>
 <gate name="G$1" symbol="SAA1064" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL24-6">
+<device name="" package="DIP-600-24">
 <connects>
 <connect gate="G$1" pin="ADR" pad="1"/>
 <connect gate="G$1" pin="CEXT" pad="2"/>
@@ -8120,7 +8127,7 @@ thin quad flat pack, square (smd-ipc)</description>
 <gate name="G$1" symbol="PCF8574" x="0" y="0"/>
 </gates>
 <devices>
-<device name="P" package="DIL16">
+<device name="P" package="DIP-300-16">
 <connects>
 <connect gate="G$1" pin="!INT" pad="13"/>
 <connect gate="G$1" pin="A0" pad="1"/>
@@ -8174,7 +8181,7 @@ thin quad flat pack, square (smd-ipc)</description>
 <gate name="G$1" symbol="PCF8591" x="0" y="0"/>
 </gates>
 <devices>
-<device name="P" package="DIL16">
+<device name="P" package="DIP-300-16">
 <connects>
 <connect gate="G$1" pin="A0" pad="5"/>
 <connect gate="G$1" pin="A1" pad="6"/>
@@ -8229,7 +8236,7 @@ with power fail detector</description>
 <gate name="G$1" symbol="PCF8573" x="0" y="0"/>
 </gates>
 <devices>
-<device name="P" package="DIL16">
+<device name="P" package="DIP-300-16">
 <connects>
 <connect gate="G$1" pin="A0" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
@@ -8327,7 +8334,7 @@ with digital and analog port functions</description>
 <gate name="G$1" symbol="P82C250" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
@@ -8427,7 +8434,7 @@ with digital and analog port functions</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="P" package="DIL08">
+<device name="P" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="!INT" pad="7"/>
 <connect gate="G$1" pin="A0" pad="3"/>
@@ -8450,7 +8457,7 @@ with digital and analog port functions</description>
 <gate name="G$1" symbol="PCF8584" x="0" y="0"/>
 </gates>
 <devices>
-<device name="P" package="DIL20">
+<device name="P" package="DIP-300-20">
 <connects>
 <connect gate="G$1" pin="!CS" pad="17"/>
 <connect gate="G$1" pin="!IACK" pad="4"/>
@@ -8672,7 +8679,7 @@ with digital and analog port functions</description>
 <gate name="G$1" symbol="80C52DIL40" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PN" package="DIL40">
+<device name="PN" package="DIP-600-40">
 <connects>
 <connect gate="G$1" pin="!EA" pad="31"/>
 <connect gate="G$1" pin="!PSEN" pad="29"/>
@@ -9158,7 +9165,7 @@ with digital and analog port functions</description>
 <gate name="P" symbol="PWR2" x="45.72" y="-20.32"/>
 </gates>
 <devices>
-<device name="" package="DIP24SKI">
+<device name="" package="DIP-300-24">
 <connects>
 <connect gate="G" pin="A0" pad="5"/>
 <connect gate="G" pin="A1" pad="4"/>
@@ -9198,7 +9205,7 @@ with digital and analog port functions</description>
 <gate name="P" symbol="PWR2" x="35.56" y="-10.16"/>
 </gates>
 <devices>
-<device name="" package="DIP24SKI">
+<device name="" package="DIP-300-24">
 <connects>
 <connect gate="G" pin="A0" pad="5"/>
 <connect gate="G" pin="A1" pad="4"/>
@@ -9526,7 +9533,7 @@ Dual bi-directional I2C bus buffer</description>
 <gate name="G$1" symbol="P82B96" x="0" y="0"/>
 </gates>
 <devices>
-<device name="PN" package="DIL08">
+<device name="PN" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="RX(SDA)" pad="2"/>

@@ -510,27 +510,29 @@ source www.motorola.com; BR1568.pdf</description>
 <rectangle x1="-4.375" y1="3.75" x2="-4.075" y2="5.15" layer="51"/>
 <rectangle x1="-5.025" y1="3.75" x2="-4.725" y2="5.15" layer="51"/>
 </package>
-<package name="DIP08">
-<description>&lt;b&gt;Dual In Line&lt;/b&gt;</description>
-<wire x1="-5.08" y1="-0.635" x2="-5.08" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-0.635" x2="-5.08" y2="0.635" width="0.2032" layer="21" curve="180"/>
-<wire x1="5.08" y1="-2.54" x2="-5.08" y2="-2.54" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="-2.54" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="5.08" y2="2.54" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="2.54" x2="-5.08" y2="0.635" width="0.2032" layer="21"/>
-<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<package name="DIP-300-8">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
+<wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-5.08" y2="0.6985" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="-0.6985" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="0.6985" x2="-5.08" y2="-0.6985" width="0.2032" layer="21" curve="-180"/>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90" first="yes"/>
 <pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
-<text x="-5.2578" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="7.239" y="-2.54" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL20">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-20">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="12.7" y1="1.905" x2="-12.7" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-12.7" y1="-1.905" x2="12.7" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="12.7" y1="1.905" x2="12.7" y2="-1.905" width="0.2032" layer="21"/>
@@ -560,22 +562,23 @@ source www.motorola.com; BR1568.pdf</description>
 <text x="-13.335" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-9.8425" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL24S">
-<description>&lt;b&gt;Dual In Line Package Small&lt;/b&gt;</description>
-<wire x1="15.24" y1="1.905" x2="-15.24" y2="1.905" width="0.2032" layer="21"/>
-<wire x1="-15.24" y1="-1.905" x2="15.24" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="15.24" y1="1.905" x2="15.24" y2="-1.905" width="0.2032" layer="21"/>
-<wire x1="-15.24" y1="1.905" x2="-15.24" y2="0.6985" width="0.2032" layer="21"/>
-<wire x1="-15.24" y1="-1.905" x2="-15.24" y2="-0.6985" width="0.2032" layer="21"/>
-<wire x1="-15.24" y1="0.6985" x2="-15.24" y2="-0.6985" width="0.2032" layer="21" curve="-180"/>
+<package name="DIP-300-24">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
+<wire x1="15.24" y1="-1.905" x2="15.24" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="-1.905" x2="15.24" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="1.905" x2="15.24" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="1.905" x2="-14.9225" y2="0.6985" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="-1.905" x2="-14.9225" y2="-0.6985" width="0.2032" layer="21"/>
+<wire x1="-14.9225" y1="0.6985" x2="-14.9225" y2="-0.6985" width="0.2032" layer="21" curve="-180"/>
 <pad name="1" x="-13.97" y="-3.81" drill="0.8128" shape="long" rot="R90" first="yes"/>
 <pad name="2" x="-11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="3" x="-8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="4" x="-6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="5" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="9" x="6.35" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="10" x="8.89" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="11" x="11.43" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
@@ -593,7 +596,7 @@ source www.motorola.com; BR1568.pdf</description>
 <pad name="23" x="-11.43" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <pad name="24" x="-13.97" y="3.81" drill="0.8128" shape="long" rot="R90"/>
 <text x="-15.875" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-9.525" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-13.335" y="-0.9525" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="SO08">
 <description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
@@ -1025,7 +1028,7 @@ http://onsemi.com; mc33039-d.pdf</description>
 <technology name="NCV"/>
 </technologies>
 </device>
-<device name="P" package="DIP08">
+<device name="P" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="!A" pad="4"/>
 <connect gate="G$1" pin="A" pad="3"/>
@@ -1081,7 +1084,7 @@ http://onsemi.com; mc33035-d.pdf</description>
 <technology name="NCV"/>
 </technologies>
 </device>
-<device name="P" package="DIL24S">
+<device name="P" package="DIP-300-24">
 <connects>
 <connect gate="G$1" pin="!CSENSIN" pad="15"/>
 <connect gate="G$1" pin="!ERRAMP" pad="12"/>
@@ -1121,7 +1124,7 @@ http://onsemi.com; mc33033-d.pdf</description>
 <gate name="G$1" symbol="MC33033" x="0" y="0"/>
 </gates>
 <devices>
-<device name="P" package="DIL20">
+<device name="P" package="DIP-300-20">
 <connects>
 <connect gate="G$1" pin="!ERRAMP" pad="10"/>
 <connect gate="G$1" pin="AB" pad="17"/>

@@ -149,9 +149,9 @@
 USE AT YOUR OWN RISK!&lt;p&gt;
 &lt;author&gt;Copyright (C) 2008, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
 <packages>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p&gt;
-body 300 mil</description>
+<package name="DIP-300-16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="10.16" y1="1.905" x2="-10.16" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-10.16" y1="-1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="10.16" y1="1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
@@ -673,8 +673,9 @@ body 3.9 mm/JEDEC MS-012AA</description>
 <rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
 <rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
 </package>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-8">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
@@ -1164,7 +1165,7 @@ Remote 8-bit I/O expander for I2C-bus</description>
 <gate name="G$1" symbol="PCF8574" x="0" y="0"/>
 </gates>
 <devices>
-<device name="P" package="DIL16">
+<device name="P" package="DIP-300-16">
 <connects>
 <connect gate="G$1" pin="!INT" pad="13"/>
 <connect gate="G$1" pin="A0" pad="1"/>
@@ -1297,7 +1298,7 @@ Remote 8-bit I/O expander for I2C-bus</description>
 <gate name="G$1" symbol="PCA9554" x="0" y="0"/>
 </gates>
 <devices>
-<device name="N" package="DIL16">
+<device name="N" package="DIP-300-16">
 <connects>
 <connect gate="G$1" pin="!INT" pad="13"/>
 <connect gate="G$1" pin="A0" pad="1"/>
@@ -1740,7 +1741,7 @@ with interrupt</description>
 <gate name="G$1" symbol="PCA82C251" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="CANH" pad="7"/>
 <connect gate="G$1" pin="CANL" pad="6"/>
