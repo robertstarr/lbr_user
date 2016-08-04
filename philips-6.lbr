@@ -2343,8 +2343,9 @@ package type TQ</description>
 <rectangle x1="-3.35" y1="4.8" x2="-3.15" y2="6" layer="51"/>
 <rectangle x1="-3.85" y1="4.8" x2="-3.65" y2="6" layer="51"/>
 </package>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-8">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
@@ -2362,8 +2363,9 @@ package type TQ</description>
 <text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="10.16" y1="1.905" x2="-10.16" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-10.16" y1="-1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="10.16" y1="1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
@@ -4677,7 +4679,7 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <gate name="G$1" symbol="OP+-DIF" x="-5.08" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="+IN" pad="2"/>
 <connect gate="G$1" pin="-IN" pad="3"/>
@@ -4712,7 +4714,7 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DIL" package="DIL08">
+<device name="DIL" package="DIP-300-8">
 <connects>
 <connect gate="82C250" pin="CANH" pad="7"/>
 <connect gate="82C250" pin="CANL" pad="6"/>
@@ -5200,7 +5202,7 @@ Vbat 5...27Volt
 <technology name=""/>
 </technologies>
 </device>
-<device name="FN" package="DIL08">
+<device name="FN" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="AD11/PO.2/CIN2A/KBI2" pad="2"/>
 <connect gate="G$1" pin="P0.4/CIN1A/AD13/DAC1" pad="7"/>

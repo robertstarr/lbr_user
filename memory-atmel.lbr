@@ -407,8 +407,9 @@ thin small outline package</description>
 <rectangle x1="-0.8801" y1="2.6751" x2="-0.3899" y2="4.195" layer="51"/>
 <rectangle x1="-2.1501" y1="2.6751" x2="-1.6599" y2="4.195" layer="51"/>
 </package>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-8">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
@@ -875,8 +876,9 @@ rectangle</description>
 <rectangle x1="2.2799" y1="6.9499" x2="2.81" y2="7.5301" layer="51"/>
 <rectangle x1="1.0099" y1="6.9499" x2="1.54" y2="7.5301" layer="51"/>
 </package>
-<package name="DIL32">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-600-32">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+600 mil row spacing, JEDEC MS-011B</description>
 <wire x1="20.32" y1="5.715" x2="-20.32" y2="5.715" width="0.2032" layer="21"/>
 <wire x1="-20.32" y1="-5.715" x2="20.32" y2="-5.715" width="0.2032" layer="21"/>
 <wire x1="20.32" y1="5.715" x2="20.32" y2="-5.715" width="0.2032" layer="21"/>
@@ -1809,7 +1811,7 @@ SPI bus serial</description>
 <gate name="G$1" symbol="250X0" x="0" y="0"/>
 </gates>
 <devices>
-<device name="P" package="DIL08">
+<device name="P" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="!CS!" pad="1"/>
 <connect gate="G$1" pin="!HOLD!" pad="7"/>
@@ -1950,7 +1952,7 @@ I2C serial bus, 1M (131,072 x 8)</description>
 <gate name="G$1" symbol="AT24C1024B" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-8P3" package="DIL08">
+<device name="-8P3" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="A1" pad="2"/>
 <connect gate="G$1" pin="A2" pad="3"/>
@@ -2312,7 +2314,7 @@ I2C serial bus, 1M (131,072 x 8)</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="32P6" package="DIL32">
+<device name="32P6" package="DIP-600-32">
 <connects>
 <connect gate="G$1" pin="!CE!" pad="22"/>
 <connect gate="G$1" pin="!OE!" pad="24"/>
@@ -2438,7 +2440,7 @@ I2C serial bus, 1M (131,072 x 8)</description>
 <gate name="G$1" symbol="AT27C080" x="0" y="0"/>
 </gates>
 <devices>
-<device name="32P6" package="DIL32">
+<device name="32P6" package="DIP-600-32">
 <connects>
 <connect gate="G$1" pin="!CE!" pad="22"/>
 <connect gate="G$1" pin="!OE!/VPP" pad="24"/>
@@ -2603,7 +2605,7 @@ I2C serial bus, 512K (65,536 x 8)</description>
 <gate name="G$1" symbol="AT24C" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-8P3" package="DIL08">
+<device name="-8P3" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="A0" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>

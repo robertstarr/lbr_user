@@ -144,8 +144,9 @@ square</description>
 <rectangle x1="2.2799" y1="6.2499" x2="2.8001" y2="6.7" layer="51"/>
 <rectangle x1="1.0099" y1="6.2499" x2="1.5301" y2="6.7" layer="51"/>
 </package>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="10.16" y1="1.905" x2="-10.16" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-10.16" y1="-1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="10.16" y1="1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
@@ -171,8 +172,9 @@ square</description>
 <text x="-10.795" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-7.62" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL24-3">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.3 inch</description>
+<package name="DIP-300-24">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="15.24" y1="-1.905" x2="15.24" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-14.9225" y1="-1.905" x2="15.24" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="-14.9225" y1="1.905" x2="15.24" y2="1.905" width="0.2032" layer="21"/>
@@ -316,7 +318,7 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <gate name="NC1" symbol="ML4622" x="0" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="DIL16">
+<device name="" package="DIP-300-16">
 <connects>
 <connect gate="NC1" pin="!CMPENABLE" pad="16"/>
 <connect gate="NC1" pin="!TTLMON" pad="1"/>
@@ -385,7 +387,7 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <gate name="NC7" symbol="NC" x="30.48" y="-12.7" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="DIL24-3">
+<device name="" package="DIP-300-24">
 <connects>
 <connect gate="G$1" pin="!CMPENABLE" pad="3"/>
 <connect gate="G$1" pin="!TTLMON" pad="2"/>
