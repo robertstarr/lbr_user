@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2028,6 +2028,24 @@ Fuse Clips: Schurter part# 0751.0506</description>
 <wire x1="4.699" y1="-3.048" x2="-4.699" y2="-3.048" width="0.2032" layer="21"/>
 <wire x1="-4.699" y1="-3.048" x2="-4.699" y2="3.048" width="0.2032" layer="21"/>
 </package>
+<package name="242">
+<description>242 Series SMD Fuse&lt;p&gt;
+Littelfuse Inc.</description>
+<smd name="1" x="-3.45" y="0" dx="2.9" dy="3.2" layer="1"/>
+<smd name="2" x="3.45" y="0" dx="2.9" dy="3.2" layer="1"/>
+<wire x1="-5.334" y1="2.032" x2="5.334" y2="2.032" width="0.2032" layer="21"/>
+<wire x1="5.334" y1="2.032" x2="5.334" y2="-2.032" width="0.2032" layer="21"/>
+<wire x1="5.334" y1="-2.032" x2="-5.334" y2="-2.032" width="0.2032" layer="21"/>
+<wire x1="-5.334" y1="-2.032" x2="-5.334" y2="2.032" width="0.2032" layer="21"/>
+<text x="-5.08" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-4.2" y1="1.3" x2="4.2" y2="1.3" width="0.0508" layer="51"/>
+<wire x1="4.2" y1="1.3" x2="4.2" y2="-1.3" width="0.0508" layer="51"/>
+<wire x1="4.2" y1="-1.3" x2="-4.2" y2="-1.3" width="0.0508" layer="51"/>
+<wire x1="-4.2" y1="-1.3" x2="-4.2" y2="1.3" width="0.0508" layer="51"/>
+<rectangle x1="-4.3" y1="-1.5" x2="-2.3" y2="1.5" layer="51"/>
+<rectangle x1="2.3" y1="-1.5" x2="4.3" y2="1.5" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSE">
@@ -2977,6 +2995,24 @@ For Schurter clips 0751.0506</description>
 </gates>
 <devices>
 <device name="" package="2920L075/60MR">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="242" prefix="F">
+<description>242 Series SMD Fuse&lt;p&gt;
+Littelfuse Inc.</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="242">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
