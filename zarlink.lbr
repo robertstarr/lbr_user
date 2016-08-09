@@ -72,8 +72,9 @@
 </layers>
 <library>
 <packages>
-<package name="DIL18">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-18">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="11.43" y1="1.905" x2="-11.43" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-11.43" y1="-1.905" x2="11.43" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="11.43" y1="1.905" x2="11.43" y2="-1.905" width="0.2032" layer="21"/>
@@ -101,56 +102,56 @@
 <text x="-12.065" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-9.525" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SO18W">
-<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
-wide body 7.5 mm</description>
-<wire x1="5.842" y1="-3.81" x2="-5.842" y2="-3.81" width="0.2032" layer="51"/>
-<wire x1="-5.842" y1="-3.81" x2="-5.842" y2="3.81" width="0.2032" layer="51"/>
-<wire x1="-5.842" y1="3.81" x2="5.842" y2="3.81" width="0.2032" layer="51"/>
-<wire x1="5.842" y1="3.81" x2="5.842" y2="-3.81" width="0.2032" layer="51"/>
-<wire x1="-5.842" y1="3.175" x2="5.842" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="5.842" y1="3.175" x2="5.842" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="5.842" y1="-3.175" x2="-5.842" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-5.842" y1="-3.175" x2="-5.842" y2="3.175" width="0.2032" layer="21"/>
+<package name="SOP-127-760-18">
+<description>&lt;b&gt;SOP (1.27mm pitch, 300mil/7.60mm width, 18 leads)&lt;/b&gt;&lt;p&gt;
+Small outline package. Lead pitch 1.27mm, body width 300mil/7.60mm, 18 leads. Non-standard, based on JEDEC MO-119B.</description>
 <circle x="-5.08" y="-2.4448" radius="0.3175" width="0" layer="21"/>
-<smd name="2" x="-3.81" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="13" x="1.27" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<rectangle x1="-5.3251" y1="-5.32" x2="-4.8349" y2="-3.8001" layer="51"/>
+<rectangle x1="-5.3251" y1="3.8001" x2="-4.8349" y2="5.3199" layer="51"/>
+<rectangle x1="-4.0551" y1="-5.32" x2="-3.5649" y2="-3.8001" layer="51"/>
+<rectangle x1="-4.0551" y1="3.8001" x2="-3.5649" y2="5.3199" layer="51"/>
+<rectangle x1="-2.7851" y1="-5.32" x2="-2.2949" y2="-3.8001" layer="51"/>
+<rectangle x1="-2.7851" y1="3.8001" x2="-2.2949" y2="5.32" layer="51"/>
+<rectangle x1="-1.5151" y1="-5.32" x2="-1.0249" y2="-3.8001" layer="51"/>
+<rectangle x1="-1.5151" y1="3.8001" x2="-1.0249" y2="5.32" layer="51"/>
+<rectangle x1="-0.2451" y1="-5.32" x2="0.2451" y2="-3.8001" layer="51"/>
+<rectangle x1="-0.2451" y1="3.8001" x2="0.2451" y2="5.32" layer="51"/>
+<rectangle x1="1.0249" y1="-5.32" x2="1.5151" y2="-3.8001" layer="51"/>
+<rectangle x1="1.0249" y1="3.8001" x2="1.5151" y2="5.32" layer="51"/>
+<rectangle x1="2.2949" y1="-5.32" x2="2.7851" y2="-3.8001" layer="51"/>
+<rectangle x1="2.2949" y1="3.8001" x2="2.7851" y2="5.32" layer="51"/>
+<rectangle x1="3.5649" y1="-5.32" x2="4.0551" y2="-3.8001" layer="51"/>
+<rectangle x1="3.5649" y1="3.8001" x2="4.0551" y2="5.32" layer="51"/>
+<rectangle x1="4.8349" y1="-5.3199" x2="5.3251" y2="-3.8001" layer="51" rot="R180"/>
+<rectangle x1="4.8349" y1="3.8001" x2="5.3251" y2="5.32" layer="51"/>
 <smd name="1" x="-5.08" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-3.81" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="3" x="-2.54" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="4" x="-1.27" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="14" x="0" y="4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="12" x="2.54" y="4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="11" x="3.81" y="4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="1.27" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="9" x="5.08" y="-4.6" dx="0.6" dy="2.2" layer="1" rot="R180"/>
 <smd name="5" x="0" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="1.27" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="2.54" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="10" x="5.08" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="8" x="3.81" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="9" x="5.08" y="-4.6" dx="0.6" dy="2.2" layer="1" rot="R180"/>
+<smd name="10" x="5.08" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="11" x="3.81" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="12" x="2.54" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="13" x="1.27" y="4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="14" x="0" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="15" x="-1.27" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="16" x="-2.54" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="17" x="-3.81" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="18" x="-5.08" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <text x="-6.35" y="-3.81" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.81" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-5.3251" y1="-5.32" x2="-4.8349" y2="-3.8001" layer="51"/>
-<rectangle x1="-4.0551" y1="-5.32" x2="-3.5649" y2="-3.8001" layer="51"/>
-<rectangle x1="-2.7851" y1="-5.32" x2="-2.2949" y2="-3.8001" layer="51"/>
-<rectangle x1="-1.5151" y1="-5.32" x2="-1.0249" y2="-3.8001" layer="51"/>
-<rectangle x1="-0.2451" y1="-5.32" x2="0.2451" y2="-3.8001" layer="51"/>
-<rectangle x1="1.0249" y1="-5.32" x2="1.5151" y2="-3.8001" layer="51"/>
-<rectangle x1="2.2949" y1="-5.32" x2="2.7851" y2="-3.8001" layer="51"/>
-<rectangle x1="3.5649" y1="-5.32" x2="4.0551" y2="-3.8001" layer="51"/>
-<rectangle x1="4.8349" y1="-5.3199" x2="5.3251" y2="-3.8001" layer="51" rot="R180"/>
-<rectangle x1="4.8349" y1="3.8001" x2="5.3251" y2="5.32" layer="51"/>
-<rectangle x1="3.5649" y1="3.8001" x2="4.0551" y2="5.32" layer="51"/>
-<rectangle x1="2.2949" y1="3.8001" x2="2.7851" y2="5.32" layer="51"/>
-<rectangle x1="1.0249" y1="3.8001" x2="1.5151" y2="5.32" layer="51"/>
-<rectangle x1="-0.2451" y1="3.8001" x2="0.2451" y2="5.32" layer="51"/>
-<rectangle x1="-1.5151" y1="3.8001" x2="-1.0249" y2="5.32" layer="51"/>
-<rectangle x1="-2.7851" y1="3.8001" x2="-2.2949" y2="5.32" layer="51"/>
-<rectangle x1="-4.0551" y1="3.8001" x2="-3.5649" y2="5.3199" layer="51"/>
-<rectangle x1="-5.3251" y1="3.8001" x2="-4.8349" y2="5.3199" layer="51"/>
+<wire x1="-5.842" y1="-3.81" x2="-5.842" y2="3.81" width="0.2032" layer="51"/>
+<wire x1="-5.842" y1="-3.175" x2="-5.842" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="-5.842" y1="3.175" x2="5.842" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="-5.842" y1="3.81" x2="5.842" y2="3.81" width="0.2032" layer="51"/>
+<wire x1="5.842" y1="-3.81" x2="-5.842" y2="-3.81" width="0.2032" layer="51"/>
+<wire x1="5.842" y1="-3.175" x2="-5.842" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="5.842" y1="3.175" x2="5.842" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="5.842" y1="3.81" x2="5.842" y2="-3.81" width="0.2032" layer="51"/>
 </package>
 <package name="SSOP20-DB">
 <description>&lt;b&gt;Small Shrink Outline Package&lt;/b&gt;&lt;p&gt;
@@ -245,7 +246,7 @@ wide body 7.5 mm</description>
 <gate name="P" symbol="VDDVSS" x="-27.94" y="10.16" addlevel="request"/>
 </gates>
 <devices>
-<device name="E" package="DIL18">
+<device name="E" package="DIP-300-18">
 <connects>
 <connect gate="A" pin="EST" pad="16"/>
 <connect gate="A" pin="GS" pad="3"/>
@@ -270,7 +271,7 @@ wide body 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="S" package="SO18W">
+<device name="S" package="SOP-127-760-18">
 <connects>
 <connect gate="A" pin="EST" pad="16"/>
 <connect gate="A" pin="GS" pad="3"/>
@@ -330,7 +331,7 @@ wide body 7.5 mm</description>
 <gate name="P" symbol="VDDVSS" x="-27.94" y="10.16" addlevel="request"/>
 </gates>
 <devices>
-<device name="E" package="DIL18">
+<device name="E" package="DIP-300-18">
 <connects>
 <connect gate="A" pin="EST" pad="16"/>
 <connect gate="A" pin="GS" pad="3"/>
@@ -355,7 +356,7 @@ wide body 7.5 mm</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="S" package="SO18W">
+<device name="S" package="SOP-127-760-18">
 <connects>
 <connect gate="A" pin="EST" pad="16"/>
 <connect gate="A" pin="GS" pad="3"/>

@@ -1,0 +1,415 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE eagle SYSTEM "eagle.dtd">
+<eagle version="7.6.0">
+<drawing>
+<settings>
+<setting alwaysvectorfont="no"/>
+<setting verticaltext="up"/>
+</settings>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<layers>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="yes"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="yes"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="yes"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="yes"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="yes"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="yes"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="yes"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="yes"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="yes"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="yes"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="yes"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="yes"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
+<layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
+<layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
+<layer number="35" name="tGlue" color="7" fill="4" visible="no" active="yes"/>
+<layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
+<layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
+<layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
+<layer number="91" name="Nets" color="2" fill="1" visible="no" active="yes"/>
+<layer number="92" name="Busses" color="1" fill="1" visible="no" active="yes"/>
+<layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
+<layer number="94" name="Symbols" color="4" fill="1" visible="no" active="yes"/>
+<layer number="95" name="Names" color="7" fill="1" visible="no" active="yes"/>
+<layer number="96" name="Values" color="7" fill="1" visible="no" active="yes"/>
+<layer number="97" name="Info" color="7" fill="1" visible="no" active="yes"/>
+<layer number="98" name="Guide" color="6" fill="1" visible="no" active="yes"/>
+</layers>
+<library>
+<packages>
+<package name="SSOP-065-530-14">
+<description>&lt;b&gt;SSOP (0.65mm pitch, 5.3mm body, 14 leads)&lt;/b&gt;&lt;p&gt;
+Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 14 leads. JEDEC MO-150B. Variation AB.</description>
+<circle x="-1.935" y="-1.8988" radius="0.3175" width="0" layer="21"/>
+<rectangle x1="-2.1278" y1="-3.937" x2="-1.7722" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.1278" y1="2.6416" x2="-1.7722" y2="3.937" layer="51"/>
+<rectangle x1="-1.4779" y1="-3.937" x2="-1.1223" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.4779" y1="2.6416" x2="-1.1223" y2="3.937" layer="51"/>
+<rectangle x1="-0.8279" y1="-3.937" x2="-0.4723" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.8279" y1="2.6416" x2="-0.4723" y2="3.937" layer="51"/>
+<rectangle x1="-0.1779" y1="-3.937" x2="0.1777" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.1779" y1="2.6416" x2="0.1777" y2="3.937" layer="51"/>
+<rectangle x1="0.4721" y1="-3.937" x2="0.8277" y2="-2.6416" layer="51"/>
+<rectangle x1="0.4721" y1="2.6416" x2="0.8277" y2="3.937" layer="51"/>
+<rectangle x1="1.1221" y1="-3.937" x2="1.4777" y2="-2.6416" layer="51"/>
+<rectangle x1="1.1221" y1="2.6416" x2="1.4777" y2="3.937" layer="51"/>
+<rectangle x1="1.7721" y1="-3.937" x2="2.1277" y2="-2.6416" layer="51"/>
+<rectangle x1="1.7721" y1="2.6416" x2="2.1277" y2="3.937" layer="51"/>
+<smd name="1" x="-1.95" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-1.3" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="-0.65" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="0" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="0.65" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="1.3" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="1.95" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="1.95" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="9" x="1.3" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="10" x="0.65" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="11" x="0" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="12" x="-0.65" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="13" x="-1.3" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="14" x="-1.95" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-3.175" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-2.54" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-2.5" y1="-2.6" x2="2.5" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-2.6" x2="-2.5" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-2.6" x2="2.5" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="2.6" x2="-2.5" y2="2.6" width="0.2032" layer="21"/>
+</package>
+<package name="SSOP-065-530-16">
+<description>&lt;b&gt;SSOP (0.65mm pitch, 5.3mm body, 16 leads)&lt;/b&gt;&lt;p&gt;
+Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 16 leads. JEDEC MO-150B. Variation AC.</description>
+<circle x="-2.235" y="-1.7988" radius="0.3175" width="0" layer="21"/>
+<rectangle x1="-2.4528" y1="-3.937" x2="-2.0972" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.4527" y1="2.6416" x2="-2.0971" y2="3.937" layer="51"/>
+<rectangle x1="-1.8029" y1="-3.937" x2="-1.4473" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.8028" y1="2.6416" x2="-1.4472" y2="3.937" layer="51"/>
+<rectangle x1="-1.1529" y1="-3.937" x2="-0.7973" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.1528" y1="2.6416" x2="-0.7972" y2="3.937" layer="51"/>
+<rectangle x1="-0.5029" y1="-3.937" x2="-0.1473" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.5029" y1="2.6416" x2="-0.1473" y2="3.937" layer="51"/>
+<rectangle x1="0.1471" y1="-3.937" x2="0.5027" y2="-2.6416" layer="51"/>
+<rectangle x1="0.1471" y1="2.6416" x2="0.5027" y2="3.937" layer="51"/>
+<rectangle x1="0.7971" y1="-3.937" x2="1.1527" y2="-2.6416" layer="51"/>
+<rectangle x1="0.7971" y1="2.6416" x2="1.1527" y2="3.937" layer="51"/>
+<rectangle x1="1.4471" y1="-3.937" x2="1.8027" y2="-2.6416" layer="51"/>
+<rectangle x1="1.4471" y1="2.6416" x2="1.8027" y2="3.937" layer="51"/>
+<rectangle x1="2.0971" y1="2.6416" x2="2.4527" y2="3.937" layer="51"/>
+<rectangle x1="2.0973" y1="-3.937" x2="2.4529" y2="-2.6416" layer="51"/>
+<smd name="1" x="-2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="-0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="-0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="9" x="2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="10" x="1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="11" x="0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="12" x="0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="13" x="-0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="14" x="-0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="15" x="-1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="16" x="-2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-3.81" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-2.54" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-3.1" y1="-2.6" x2="3.15" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="-2.6" x2="-3.1" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-2.6" x2="3.15" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="2.6" x2="-3.1" y2="2.6" width="0.2032" layer="21"/>
+</package>
+<package name="SSOP-065-530-18">
+<description>&lt;b&gt;SSOP (0.65mm pitch, 5.3mm body, 18 leads)&lt;/b&gt;&lt;p&gt;
+Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 18 leads. JEDEC MO-150B. Variation AD.</description>
+<circle x="-2.585" y="-1.8988" radius="0.3175" width="0" layer="21"/>
+<rectangle x1="-2.7778" y1="-3.937" x2="-2.4222" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.7778" y1="2.6416" x2="-2.4222" y2="3.937" layer="51"/>
+<rectangle x1="-2.1279" y1="-3.937" x2="-1.7723" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.1279" y1="2.6416" x2="-1.7723" y2="3.937" layer="51"/>
+<rectangle x1="-1.4779" y1="-3.937" x2="-1.1223" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.4779" y1="2.6416" x2="-1.1223" y2="3.937" layer="51"/>
+<rectangle x1="-0.8279" y1="-3.937" x2="-0.4723" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.8279" y1="2.6416" x2="-0.4723" y2="3.937" layer="51"/>
+<rectangle x1="-0.1779" y1="-3.937" x2="0.1777" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.1779" y1="2.6416" x2="0.1777" y2="3.937" layer="51"/>
+<rectangle x1="0.4721" y1="-3.937" x2="0.8277" y2="-2.6416" layer="51"/>
+<rectangle x1="0.4721" y1="2.6416" x2="0.8277" y2="3.937" layer="51"/>
+<rectangle x1="1.1221" y1="-3.937" x2="1.4777" y2="-2.6416" layer="51"/>
+<rectangle x1="1.1221" y1="2.6416" x2="1.4777" y2="3.937" layer="51"/>
+<rectangle x1="1.7721" y1="-3.937" x2="2.1277" y2="-2.6416" layer="51"/>
+<rectangle x1="1.7721" y1="2.6416" x2="2.1277" y2="3.937" layer="51"/>
+<rectangle x1="2.4221" y1="-3.937" x2="2.7777" y2="-2.6416" layer="51"/>
+<rectangle x1="2.4221" y1="2.6416" x2="2.7777" y2="3.937" layer="51"/>
+<smd name="1" x="-2.6" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-1.95" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="-1.3" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="-0.65" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="0" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="0.65" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="1.3" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="1.95" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="9" x="2.6" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="10" x="2.6" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="11" x="1.95" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="12" x="1.3" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="13" x="0.65" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="14" x="0" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="15" x="-0.65" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="16" x="-1.3" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="17" x="-1.95" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="18" x="-2.6" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-3.825" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="4.46" y="-2.54" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-3.15" y1="-2.6" x2="3.15" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-3.15" y1="-2.6" x2="-3.15" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="-2.6" x2="3.15" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="3.15" y1="2.6" x2="-3.15" y2="2.6" width="0.2032" layer="21"/>
+</package>
+<package name="SSOP-065-530-20">
+<description>&lt;b&gt;SSOP (0.65mm pitch, 5.3mm body, 20 leads)&lt;/b&gt;&lt;p&gt;
+Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 20 leads. JEDEC MO-150B. Variation AE.</description>
+<circle x="-2.885" y="-1.7988" radius="0.3175" width="0" layer="21"/>
+<rectangle x1="-3.1028" y1="-3.937" x2="-2.7472" y2="-2.6416" layer="51"/>
+<rectangle x1="-3.1027" y1="2.6416" x2="-2.7471" y2="3.937" layer="51"/>
+<rectangle x1="-2.4529" y1="-3.937" x2="-2.0973" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.4528" y1="2.6416" x2="-2.0972" y2="3.937" layer="51"/>
+<rectangle x1="-1.8029" y1="-3.937" x2="-1.4473" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.8028" y1="2.6416" x2="-1.4472" y2="3.937" layer="51"/>
+<rectangle x1="-1.1529" y1="-3.937" x2="-0.7973" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.1529" y1="2.6416" x2="-0.7973" y2="3.937" layer="51"/>
+<rectangle x1="-0.5029" y1="-3.937" x2="-0.1473" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.5029" y1="2.6416" x2="-0.1473" y2="3.937" layer="51"/>
+<rectangle x1="0.1471" y1="-3.937" x2="0.5027" y2="-2.6416" layer="51"/>
+<rectangle x1="0.1471" y1="2.6416" x2="0.5027" y2="3.937" layer="51"/>
+<rectangle x1="0.7971" y1="-3.937" x2="1.1527" y2="-2.6416" layer="51"/>
+<rectangle x1="0.7971" y1="2.6416" x2="1.1527" y2="3.937" layer="51"/>
+<rectangle x1="1.4471" y1="2.6416" x2="1.8027" y2="3.937" layer="51"/>
+<rectangle x1="1.4473" y1="-3.937" x2="1.8029" y2="-2.6416" layer="51"/>
+<rectangle x1="2.0971" y1="2.6416" x2="2.4527" y2="3.937" layer="51"/>
+<rectangle x1="2.0973" y1="-3.937" x2="2.4529" y2="-2.6416" layer="51"/>
+<rectangle x1="2.7471" y1="2.6416" x2="3.1027" y2="3.937" layer="51"/>
+<rectangle x1="2.7473" y1="-3.937" x2="3.1029" y2="-2.6416" layer="51"/>
+<smd name="1" x="-2.925" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="-1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="-0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="-0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="9" x="2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="10" x="2.925" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="11" x="2.925" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="12" x="2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="13" x="1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="14" x="0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="15" x="0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="16" x="-0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="17" x="-0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="18" x="-1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="19" x="-2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="20" x="-2.925" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-4.46" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="5.095" y="-2.54" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-3.75" y1="-2.6" x2="3.8" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-3.75" y1="-2.6" x2="-3.75" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="3.8" y1="-2.6" x2="3.8" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="3.8" y1="2.6" x2="-3.75" y2="2.6" width="0.2032" layer="21"/>
+</package>
+<package name="SSOP-065-530-24">
+<description>&lt;b&gt;SSOP (0.65mm pitch, 5.3mm body, 24 leads)&lt;/b&gt;&lt;p&gt;
+Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 24 leads. JEDEC MO-150B. Variation AG.</description>
+<circle x="-3.535" y="-1.7988" radius="0.3175" width="0" layer="21"/>
+<rectangle x1="-3.7528" y1="-3.937" x2="-3.3972" y2="-2.6416" layer="51"/>
+<rectangle x1="-3.7527" y1="2.6416" x2="-3.3971" y2="3.937" layer="51"/>
+<rectangle x1="-3.1029" y1="-3.937" x2="-2.7473" y2="-2.6416" layer="51"/>
+<rectangle x1="-3.1028" y1="2.6416" x2="-2.7472" y2="3.937" layer="51"/>
+<rectangle x1="-2.4529" y1="-3.937" x2="-2.0973" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.4528" y1="2.6416" x2="-2.0972" y2="3.937" layer="51"/>
+<rectangle x1="-1.8029" y1="-3.937" x2="-1.4473" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.8029" y1="2.6416" x2="-1.4473" y2="3.937" layer="51"/>
+<rectangle x1="-1.1529" y1="-3.937" x2="-0.7973" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.1529" y1="2.6416" x2="-0.7973" y2="3.937" layer="51"/>
+<rectangle x1="-0.5029" y1="-3.937" x2="-0.1473" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.5029" y1="2.6416" x2="-0.1473" y2="3.937" layer="51"/>
+<rectangle x1="0.1471" y1="-3.937" x2="0.5027" y2="-2.6416" layer="51"/>
+<rectangle x1="0.1471" y1="2.6416" x2="0.5027" y2="3.937" layer="51"/>
+<rectangle x1="0.7971" y1="2.6416" x2="1.1527" y2="3.937" layer="51"/>
+<rectangle x1="0.7973" y1="-3.937" x2="1.1529" y2="-2.6416" layer="51"/>
+<rectangle x1="1.4471" y1="2.6416" x2="1.8027" y2="3.937" layer="51"/>
+<rectangle x1="1.4473" y1="-3.937" x2="1.8029" y2="-2.6416" layer="51"/>
+<rectangle x1="2.0971" y1="2.6416" x2="2.4527" y2="3.937" layer="51"/>
+<rectangle x1="2.0973" y1="-3.937" x2="2.4529" y2="-2.6416" layer="51"/>
+<rectangle x1="2.7471" y1="2.6416" x2="3.1027" y2="3.937" layer="51"/>
+<rectangle x1="2.7473" y1="-3.937" x2="3.1029" y2="-2.6416" layer="51"/>
+<rectangle x1="3.3971" y1="2.6416" x2="3.7527" y2="3.937" layer="51"/>
+<rectangle x1="3.3973" y1="-3.937" x2="3.7529" y2="-2.6416" layer="51"/>
+<smd name="1" x="-3.575" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-2.925" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="-2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="-1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="-0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="-0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="9" x="1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="10" x="2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="11" x="2.925" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="12" x="3.575" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="13" x="3.575" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="14" x="2.925" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="15" x="2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="16" x="1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="17" x="0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="18" x="0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="19" x="-0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="20" x="-0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="21" x="-1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="22" x="-2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="23" x="-2.925" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="24" x="-3.575" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-5.11" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="5.745" y="-2.54" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-4.4" y1="-2.6" x2="4.45" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-4.4" y1="-2.6" x2="-4.4" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="4.45" y1="-2.6" x2="4.45" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="4.45" y1="2.6" x2="-4.4" y2="2.6" width="0.2032" layer="21"/>
+</package>
+<package name="SSOP-065-530-28">
+<description>&lt;b&gt;SSOP (0.65mm pitch, 5.3mm body, 28 leads)&lt;/b&gt;&lt;p&gt;
+Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 28 leads. JEDEC MO-150B. Variation AH.</description>
+<circle x="-4.185" y="-1.7988" radius="0.3175" width="0" layer="21"/>
+<rectangle x1="-4.4028" y1="-3.937" x2="-4.0472" y2="-2.6416" layer="51"/>
+<rectangle x1="-4.4027" y1="2.6416" x2="-4.0471" y2="3.937" layer="51"/>
+<rectangle x1="-3.7529" y1="-3.937" x2="-3.3973" y2="-2.6416" layer="51"/>
+<rectangle x1="-3.7528" y1="2.6416" x2="-3.3972" y2="3.937" layer="51"/>
+<rectangle x1="-3.1029" y1="-3.937" x2="-2.7473" y2="-2.6416" layer="51"/>
+<rectangle x1="-3.1028" y1="2.6416" x2="-2.7472" y2="3.937" layer="51"/>
+<rectangle x1="-2.4529" y1="-3.937" x2="-2.0973" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.4529" y1="2.6416" x2="-2.0973" y2="3.937" layer="51"/>
+<rectangle x1="-1.8029" y1="-3.937" x2="-1.4473" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.8029" y1="2.6416" x2="-1.4473" y2="3.937" layer="51"/>
+<rectangle x1="-1.1529" y1="-3.937" x2="-0.7973" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.1529" y1="2.6416" x2="-0.7973" y2="3.937" layer="51"/>
+<rectangle x1="-0.5029" y1="-3.937" x2="-0.1473" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.5029" y1="2.6416" x2="-0.1473" y2="3.937" layer="51"/>
+<rectangle x1="0.1471" y1="2.6416" x2="0.5027" y2="3.937" layer="51"/>
+<rectangle x1="0.1473" y1="-3.937" x2="0.5029" y2="-2.6416" layer="51"/>
+<rectangle x1="0.7971" y1="2.6416" x2="1.1527" y2="3.937" layer="51"/>
+<rectangle x1="0.7973" y1="-3.937" x2="1.1529" y2="-2.6416" layer="51"/>
+<rectangle x1="1.4471" y1="2.6416" x2="1.8027" y2="3.937" layer="51"/>
+<rectangle x1="1.4473" y1="-3.937" x2="1.8029" y2="-2.6416" layer="51"/>
+<rectangle x1="2.0971" y1="2.6416" x2="2.4527" y2="3.937" layer="51"/>
+<rectangle x1="2.0973" y1="-3.937" x2="2.4529" y2="-2.6416" layer="51"/>
+<rectangle x1="2.7471" y1="2.6416" x2="3.1027" y2="3.937" layer="51"/>
+<rectangle x1="2.7473" y1="-3.937" x2="3.1029" y2="-2.6416" layer="51"/>
+<rectangle x1="3.3971" y1="2.6416" x2="3.7527" y2="3.937" layer="51"/>
+<rectangle x1="3.3973" y1="-3.937" x2="3.7529" y2="-2.6416" layer="51"/>
+<rectangle x1="4.0471" y1="2.6416" x2="4.4027" y2="3.937" layer="51"/>
+<rectangle x1="4.0473" y1="-3.937" x2="4.4029" y2="-2.6416" layer="51"/>
+<smd name="1" x="-4.225" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-3.575" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="-2.925" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="-2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="-1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="-0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="-0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="9" x="0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="10" x="1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="11" x="2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="12" x="2.925" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="13" x="3.575" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="14" x="4.225" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="15" x="4.225" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="16" x="3.575" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="17" x="2.925" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="18" x="2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="19" x="1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="20" x="0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="21" x="0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="22" x="-0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="23" x="-0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="24" x="-1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="25" x="-2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="26" x="-2.925" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="27" x="-3.575" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="28" x="-4.225" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-5.76" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="6.395" y="-2.54" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-5.05" y1="-2.6" x2="5.1" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-5.05" y1="-2.6" x2="-5.05" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="-2.6" x2="5.1" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="2.6" x2="-5.05" y2="2.6" width="0.2032" layer="21"/>
+</package>
+<package name="SSOP-065-530-8">
+<description>&lt;b&gt;SSOP (0.65mm pitch, 5.3mm body, 8 leads)&lt;/b&gt;&lt;p&gt;
+Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 8 leads. JEDEC MO-150B. Variation AA.</description>
+<circle x="-0.96" y="-1.8988" radius="0.3175" width="0" layer="21"/>
+<rectangle x1="-1.1528" y1="-3.937" x2="-0.7972" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.1528" y1="2.6416" x2="-0.7972" y2="3.937" layer="51"/>
+<rectangle x1="-0.5029" y1="-3.937" x2="-0.1473" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.5029" y1="2.6416" x2="-0.1473" y2="3.937" layer="51"/>
+<rectangle x1="0.1471" y1="-3.937" x2="0.5027" y2="-2.6416" layer="51"/>
+<rectangle x1="0.1471" y1="2.6416" x2="0.5027" y2="3.937" layer="51"/>
+<rectangle x1="0.7971" y1="-3.937" x2="1.1527" y2="-2.6416" layer="51"/>
+<rectangle x1="0.7971" y1="2.6416" x2="1.1527" y2="3.937" layer="51"/>
+<smd name="1" x="-0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="-0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="-0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-2.2" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="2.835" y="-2.54" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-1.525" y1="-2.6" x2="1.525" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="-1.525" y1="-2.6" x2="-1.525" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="1.525" y1="-2.6" x2="1.525" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="1.525" y1="2.6" x2="-1.525" y2="2.6" width="0.2032" layer="21"/>
+</package>
+</packages>
+<symbols>
+</symbols>
+<devicesets>
+</devicesets>
+</library>
+</drawing>
+</eagle>

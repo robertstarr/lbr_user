@@ -136,28 +136,29 @@ Siemens, Hewlett-Packard, Texas Instuments, Sharp, Motorola&lt;p&gt;
 <rectangle x1="-1.651" y1="3.175" x2="-0.889" y2="4.191" layer="21"/>
 <rectangle x1="1.016" y1="3.175" x2="1.651" y2="4.191" layer="21"/>
 </package>
-<package name="DIL06B">
-<description>&lt;b&gt;Dual In Line&lt;/b&gt;</description>
-<wire x1="-3.81" y1="-3.175" x2="-3.81" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="0.635" x2="-3.81" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="-0.635" x2="-3.81" y2="0.635" width="0.2032" layer="21" curve="180"/>
-<wire x1="3.81" y1="-3.175" x2="3.81" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="-3.175" x2="-3.81" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="3.175" x2="-3.81" y2="3.175" width="0.2032" layer="21"/>
-<pad name="1" x="-2.54" y="-5.08" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="-5.08" drill="0.8128" shape="octagon"/>
-<pad name="3" x="2.54" y="-5.08" drill="0.8128" shape="octagon"/>
-<pad name="4" x="2.54" y="5.08" drill="0.8128" shape="octagon"/>
-<pad name="5" x="0" y="5.08" drill="0.8128" shape="octagon"/>
-<pad name="6" x="-2.54" y="5.08" drill="0.8128" shape="octagon"/>
-<text x="-4.318" y="-2.921" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-3.175" y="-0.508" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.635" y1="-4.191" x2="0.635" y2="-3.175" layer="21"/>
-<rectangle x1="1.905" y1="-4.191" x2="3.175" y2="-3.175" layer="21"/>
-<rectangle x1="-3.175" y1="-4.191" x2="-1.905" y2="-3.175" layer="21"/>
-<rectangle x1="-3.175" y1="3.175" x2="-1.905" y2="4.191" layer="21"/>
-<rectangle x1="-0.635" y1="3.175" x2="0.635" y2="4.191" layer="21"/>
-<rectangle x1="1.905" y1="3.175" x2="3.175" y2="4.191" layer="21"/>
+<package name="DIP-400-6">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+400 mil row spacing, JEDEC MS-010C</description>
+<wire x1="-4.445" y1="0.635" x2="-4.445" y2="2.8575" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="0.635" width="0.1778" layer="21" curve="180"/>
+<wire x1="-4.445" y1="-2.8575" x2="-4.445" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-2.8575" x2="4.445" y2="-2.8575" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="2.8575" x2="4.445" y2="-2.8575" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="2.8575" x2="-4.445" y2="2.8575" width="0.2032" layer="21"/>
+<pad name="1" x="-2.54" y="-5.08" drill="0.8128" shape="long" rot="R90" first="yes"/>
+<pad name="2" x="0" y="-5.08" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-5.08" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="2.54" y="5.08" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="0" y="5.08" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-2.54" y="5.08" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.08" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="1.778" y1="-4.064" x2="3.3021" y2="-2.7939" layer="51"/>
+<rectangle x1="-0.762" y1="-4.064" x2="0.7621" y2="-2.7939" layer="51"/>
+<rectangle x1="-3.302" y1="-4.064" x2="-1.7779" y2="-2.7939" layer="51"/>
+<rectangle x1="-3.302" y1="2.794" x2="-1.7779" y2="4.0641" layer="51"/>
+<rectangle x1="-0.762" y1="2.794" x2="0.7621" y2="4.0641" layer="51"/>
+<rectangle x1="1.778" y1="2.794" x2="3.3021" y2="4.0641" layer="51"/>
 </package>
 <package name="DIL16/4-1\7">
 <description>&lt;b&gt;Dual In Line&lt;/b&gt;</description>
@@ -634,8 +635,9 @@ HCPL-181</description>
 <rectangle x1="1.07" y1="2.78" x2="1.47" y2="3.57" layer="51"/>
 <rectangle x1="-1.47" y1="-3.57" x2="-1.07" y2="-2.78" layer="51"/>
 </package>
-<package name="DIL04">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-4">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="2.54" y1="1.905" x2="-2.54" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-2.54" y1="-1.905" x2="2.54" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="1.905" x2="2.54" y2="-1.905" width="0.2032" layer="21"/>
@@ -649,8 +651,9 @@ HCPL-181</description>
 <text x="4.445" y="-2.8575" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <text x="-3.175" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 </package>
-<package name="DIL06">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-6">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="3.81" y1="1.905" x2="-3.81" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-3.81" y1="-1.905" x2="3.81" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="3.81" y1="1.905" x2="3.81" y2="-1.905" width="0.2032" layer="21"/>
@@ -666,8 +669,9 @@ HCPL-181</description>
 <text x="-2.54" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-4.445" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 </package>
-<package name="DIL08">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-8">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="-1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
@@ -685,8 +689,9 @@ HCPL-181</description>
 <text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIL16">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;</description>
+<package name="DIP-300-16">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="10.16" y1="1.905" x2="-10.16" y2="1.905" width="0.2032" layer="21"/>
 <wire x1="-10.16" y1="-1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
 <wire x1="10.16" y1="1.905" x2="10.16" y2="-1.905" width="0.2032" layer="21"/>
@@ -712,36 +717,36 @@ HCPL-181</description>
 <text x="-10.795" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-7.62" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SO08">
-<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
-body 3.9 mm/JEDEC MS-012AA</description>
-<wire x1="2.667" y1="1.905" x2="2.667" y2="-1.905" width="0.2032" layer="51"/>
-<wire x1="2.667" y1="-1.905" x2="-2.667" y2="-1.905" width="0.2032" layer="51"/>
-<wire x1="-2.667" y1="-1.905" x2="-2.667" y2="1.905" width="0.2032" layer="51"/>
-<wire x1="-2.667" y1="1.905" x2="2.667" y2="1.905" width="0.2032" layer="51"/>
-<wire x1="-2.667" y1="1.27" x2="2.667" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="2.667" y1="1.27" x2="2.667" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="2.667" y1="-1.27" x2="-2.667" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-2.667" y1="-1.27" x2="-2.667" y2="1.27" width="0.2032" layer="21"/>
+<package name="SOP-127-390-8">
+<description>&lt;b&gt;SOP (1.27 pitch, 3.90mm width, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Variation AA.</description>
 <circle x="-1.905" y="-0.635" radius="0.3175" width="0" layer="21"/>
-<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-3.175" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-2.2225" y="-0.3175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-2.1501" y1="-3.1001" x2="-1.6599" y2="-2" layer="51"/>
+<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
 <rectangle x1="-0.8801" y1="-3.1001" x2="-0.3899" y2="-2" layer="51"/>
+<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
 <rectangle x1="0.3899" y1="-3.1001" x2="0.8801" y2="-2" layer="51"/>
+<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
 <rectangle x1="1.6599" y1="-3.1001" x2="2.1501" y2="-2" layer="51"/>
 <rectangle x1="1.6599" y1="2" x2="2.1501" y2="3.1001" layer="51"/>
-<rectangle x1="0.3899" y1="2" x2="0.8801" y2="3.1001" layer="51"/>
-<rectangle x1="-0.8801" y1="2" x2="-0.3899" y2="3.1001" layer="51"/>
-<rectangle x1="-2.1501" y1="2" x2="-1.6599" y2="3.1001" layer="51"/>
+<smd name="1" x="-1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="3" x="0.635" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="4" x="1.905" y="-2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="5" x="1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="7" x="-0.635" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="8" x="-1.905" y="2.6" dx="0.6" dy="2.2" layer="1"/>
+<text x="-3.175" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-2.2225" y="-0.3175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-2.667" y1="-1.905" x2="-2.667" y2="1.905" width="0.2032" layer="51"/>
+<wire x1="-2.667" y1="-1.27" x2="-2.667" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-2.667" y1="1.27" x2="2.667" y2="1.27" width="0.2032" layer="21"/>
+<wire x1="-2.667" y1="1.905" x2="2.667" y2="1.905" width="0.2032" layer="51"/>
+<wire x1="2.667" y1="-1.905" x2="-2.667" y2="-1.905" width="0.2032" layer="51"/>
+<wire x1="2.667" y1="-1.27" x2="-2.667" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.667" y1="1.27" x2="2.667" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="2.667" y1="1.905" x2="2.667" y2="-1.905" width="0.2032" layer="51"/>
 </package>
 <package name="DIL05">
 <description>&lt;b&gt;Dual In Line&lt;/b&gt;</description>
@@ -915,35 +920,29 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <text x="-2.032" y="-0.381" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <circle x="-3.205" y="-1.4825" radius="0.6" width="0" layer="21"/>
 </package>
-<package name="DIL6-04">
-<description>&lt;b&gt;DIL 6 0.4 Inch&lt;/b&gt;&lt;p&gt;
-Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
-<rectangle x1="-2.915" y1="-5.175" x2="-2.165" y2="-4.2" layer="51"/>
-<rectangle x1="-2.915" y1="-4.2" x2="-2.165" y2="-2.975" layer="51"/>
-<rectangle x1="-0.375" y1="-5.175" x2="0.375" y2="-4.2" layer="51"/>
-<rectangle x1="-0.375" y1="-4.2" x2="0.375" y2="-2.975" layer="51"/>
-<rectangle x1="2.165" y1="-5.175" x2="2.915" y2="-4.2" layer="51"/>
-<rectangle x1="2.165" y1="-4.2" x2="2.915" y2="-2.975" layer="51"/>
-<rectangle x1="2.165" y1="4.2" x2="2.915" y2="5.175" layer="51" rot="R180"/>
-<rectangle x1="2.165" y1="2.975" x2="2.915" y2="4.2" layer="51" rot="R180"/>
-<rectangle x1="-0.375" y1="4.2" x2="0.375" y2="5.175" layer="51" rot="R180"/>
-<rectangle x1="-0.375" y1="2.975" x2="0.375" y2="4.2" layer="51" rot="R180"/>
-<rectangle x1="-2.915" y1="4.2" x2="-2.165" y2="5.175" layer="51" rot="R180"/>
-<rectangle x1="-2.915" y1="2.975" x2="-2.165" y2="4.2" layer="51" rot="R180"/>
-<pad name="1" x="-2.54" y="-5.08" drill="0.8128" shape="long" rot="R270"/>
-<pad name="2" x="0" y="-5.08" drill="0.8128" shape="long" rot="R270"/>
-<pad name="3" x="2.54" y="-5.08" drill="0.8128" shape="long" rot="R270"/>
+<package name="DIP-400-6">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+400 mil row spacing, JEDEC MS-010C</description>
+<wire x1="-4.445" y1="0.635" x2="-4.445" y2="2.8575" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-0.635" x2="-4.445" y2="0.635" width="0.1778" layer="21" curve="180"/>
+<wire x1="-4.445" y1="-2.8575" x2="-4.445" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-2.8575" x2="4.445" y2="-2.8575" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="2.8575" x2="4.445" y2="-2.8575" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="2.8575" x2="-4.445" y2="2.8575" width="0.2032" layer="21"/>
+<pad name="1" x="-2.54" y="-5.08" drill="0.8128" shape="long" rot="R90" first="yes"/>
+<pad name="2" x="0" y="-5.08" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-5.08" drill="0.8128" shape="long" rot="R90"/>
 <pad name="4" x="2.54" y="5.08" drill="0.8128" shape="long" rot="R90"/>
 <pad name="5" x="0" y="5.08" drill="0.8128" shape="long" rot="R90"/>
 <pad name="6" x="-2.54" y="5.08" drill="0.8128" shape="long" rot="R90"/>
-<text x="-4.191" y="-2.921" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<wire x1="3.81" y1="2.8575" x2="-3.81" y2="2.8575" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="-2.8575" x2="3.81" y2="-2.8575" width="0.2032" layer="21"/>
-<wire x1="3.81" y1="2.8575" x2="3.81" y2="-2.8575" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="2.8575" x2="-3.81" y2="0.6985" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="-2.8575" x2="-3.81" y2="-0.6985" width="0.2032" layer="21"/>
-<wire x1="-3.81" y1="0.6985" x2="-3.81" y2="-0.6985" width="0.2032" layer="21" curve="-180"/>
-<text x="-2.54" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.08" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="1.778" y1="-4.064" x2="3.3021" y2="-2.7939" layer="51"/>
+<rectangle x1="-0.762" y1="-4.064" x2="0.7621" y2="-2.7939" layer="51"/>
+<rectangle x1="-3.302" y1="-4.064" x2="-1.7779" y2="-2.7939" layer="51"/>
+<rectangle x1="-3.302" y1="2.794" x2="-1.7779" y2="4.0641" layer="51"/>
+<rectangle x1="-0.762" y1="2.794" x2="0.7621" y2="4.0641" layer="51"/>
+<rectangle x1="1.778" y1="2.794" x2="3.3021" y2="4.0641" layer="51"/>
 </package>
 <package name="SO04">
 <description>&lt;b&gt;Small Outline 4 Pin&lt;/b&gt;&lt;p&gt;
@@ -4104,7 +4103,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="D" symbol="OK" x="27.94" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL16">
+<device name="" package="DIP-300-16">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4135,7 +4134,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="1" symbol="OK-B" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="1" pin="A" pad="1"/>
 <connect gate="1" pin="BAS" pad="6"/>
@@ -4155,7 +4154,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK-B" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="BAS" pad="6"/>
@@ -4175,7 +4174,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
@@ -4194,7 +4193,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL04">
+<device name="" package="DIP-300-4">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4213,7 +4212,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL04">
+<device name="" package="DIP-300-4">
 <connects>
 <connect gate="G$1" pin="A" pad="2"/>
 <connect gate="G$1" pin="C" pad="1"/>
@@ -4232,7 +4231,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL04">
+<device name="" package="DIP-300-4">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
@@ -4270,7 +4269,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK-B" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="BAS" pad="6"/>
@@ -4309,7 +4308,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK-DT" x="2.54" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="B" pad="6"/>
@@ -4329,7 +4328,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK-DL" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="AC1" pad="1"/>
 <connect gate="G$1" pin="AC2" pad="2"/>
@@ -4349,7 +4348,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK-TH" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="AT" pad="5"/>
@@ -4369,7 +4368,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK-B" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="BAS" pad="6"/>
@@ -4389,7 +4388,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="138" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="A" pad="2"/>
 <connect gate="G$1" pin="C" pad="3"/>
@@ -4410,7 +4409,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK-TRN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="A1" pad="4"/>
@@ -4430,7 +4429,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="OK" x="0" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4454,7 +4453,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="OK-D" x="0" y="-17.78"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4478,7 +4477,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="OK" x="0" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4502,7 +4501,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="OK-LD" x="0" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="AC1" pad="1"/>
 <connect gate="A" pin="AC2" pad="2"/>
@@ -4526,7 +4525,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="OK" x="0" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4552,7 +4551,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="D" symbol="OK-D" x="27.94" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL16">
+<device name="" package="DIP-300-16">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4586,7 +4585,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="D" symbol="OK-LD" x="33.02" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL16">
+<device name="" package="DIP-300-16">
 <connects>
 <connect gate="A" pin="AC1" pad="1"/>
 <connect gate="A" pin="AC2" pad="2"/>
@@ -4617,7 +4616,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK-TR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="A1" pad="4"/>
@@ -4636,7 +4635,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="G$1" symbol="OK-B" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="BAS" pad="6"/>
@@ -4659,7 +4658,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="D" symbol="OK-D" x="27.94" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL16">
+<device name="" package="DIP-300-16">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4690,7 +4689,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06B">
+<device name="" package="DIP-400-6">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4709,7 +4708,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK-B" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL06B">
+<device name="" package="DIP-400-6">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="BAS" pad="6"/>
@@ -4729,7 +4728,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="137" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -4764,7 +4763,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="2630A" x="0" y="-15.24"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A1" pad="1"/>
 <connect gate="A" pin="C1" pad="2"/>
@@ -4787,7 +4786,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OPI" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4807,7 +4806,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL04">
+<device name="" package="DIP-300-4">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4826,7 +4825,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK-LD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL04">
+<device name="" package="DIP-300-4">
 <connects>
 <connect gate="A" pin="AC1" pad="1"/>
 <connect gate="A" pin="AC2" pad="2"/>
@@ -4845,7 +4844,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK-D" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL04">
+<device name="" package="DIP-300-4">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4865,7 +4864,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="OK" x="0" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4889,7 +4888,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="OK-LD" x="0" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="AC1" pad="1"/>
 <connect gate="A" pin="AC2" pad="2"/>
@@ -4913,7 +4912,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="OK-D" x="0" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4939,7 +4938,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="D" symbol="OK" x="22.86" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL16">
+<device name="" package="DIP-300-16">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -4973,7 +4972,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="D" symbol="OK-LD" x="30.48" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL16">
+<device name="" package="DIP-300-16">
 <connects>
 <connect gate="A" pin="AC1" pad="1"/>
 <connect gate="A" pin="AC2" pad="2"/>
@@ -5004,7 +5003,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK-B" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="BAS" pad="6"/>
@@ -5027,7 +5026,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="D" symbol="OK" x="30.48" y="-20.32" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL16">
+<device name="" package="DIP-300-16">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -5061,7 +5060,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="D" symbol="OK2" x="27.94" y="-17.78" swaplevel="2"/>
 </gates>
 <devices>
-<device name="" package="DIL16">
+<device name="" package="DIP-300-16">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -5092,7 +5091,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL04">
+<device name="" package="DIP-300-4">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -5111,7 +5110,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK-LD" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL04">
+<device name="" package="DIP-300-4">
 <connects>
 <connect gate="A" pin="AC1" pad="1"/>
 <connect gate="A" pin="AC2" pad="2"/>
@@ -5131,7 +5130,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="OK" x="0" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -5154,7 +5153,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="OK-DT" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="B" pad="6"/>
@@ -5174,7 +5173,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="135" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5196,7 +5195,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="2530A" x="0" y="-20.32"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A1" pad="1"/>
 <connect gate="A" pin="C1" pad="2"/>
@@ -5219,7 +5218,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="2200" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5240,7 +5239,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="2300" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5261,7 +5260,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="2601" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5282,7 +5281,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="2602" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="+" pad="2"/>
 <connect gate="A" pin="-" pad="3"/>
@@ -5305,7 +5304,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="2730A" x="0" y="-22.86"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A1" pad="1"/>
 <connect gate="A" pin="C1" pad="2"/>
@@ -5328,7 +5327,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="4N45" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="B" pad="6"/>
@@ -5390,7 +5389,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="1" symbol="2200" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="1" pin="A" pad="2"/>
 <connect gate="1" pin="C" pad="3"/>
@@ -5411,7 +5410,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="1" symbol="2201" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="1" pin="A" pad="2"/>
 <connect gate="1" pin="C" pad="3"/>
@@ -5431,7 +5430,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="1" symbol="2201" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="1" pin="A" pad="2"/>
 <connect gate="1" pin="C" pad="3"/>
@@ -5452,7 +5451,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="2231A" x="0" y="-20.32"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -5475,7 +5474,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="1" symbol="2200" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="1" pin="A" pad="2"/>
 <connect gate="1" pin="C" pad="3"/>
@@ -5497,7 +5496,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="B" symbol="2231A" x="0" y="-20.32"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="1"/>
 <connect gate="A" pin="C" pad="2"/>
@@ -5520,7 +5519,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="0600" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="" package="SOP-127-390-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5541,7 +5540,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="0601" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="" package="SOP-127-390-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5562,7 +5561,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="4502" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5582,7 +5581,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="135" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="" package="SOP-127-390-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5603,7 +5602,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="4502" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="" package="SOP-127-390-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5623,7 +5622,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="4503" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="" package="SOP-127-390-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5663,7 +5662,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="138" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="" package="SOP-127-390-8">
 <connects>
 <connect gate="A" pin="A" pad="2"/>
 <connect gate="A" pin="C" pad="3"/>
@@ -5684,7 +5683,7 @@ Source: http://www.fairchildsemi.com/pf/4N/4N35-M.html</description>
 <gate name="A" symbol="7100" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="A" pin="GND1" pad="4"/>
 <connect gate="A" pin="GND2" pad="5"/>
@@ -5877,7 +5876,7 @@ MOSFET IGBT GATE DRIVER</description>
 <gate name="G$1" symbol="TLP250" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="DIL08">
+<device name="" package="DIP-300-8">
 <connects>
 <connect gate="G$1" pin="A" pad="2"/>
 <connect gate="G$1" pin="C" pad="3"/>
@@ -5972,7 +5971,7 @@ PerkinElmer Optoelectronics</description>
 <gate name="G$1" symbol="0730" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="" package="SOP-127-390-8">
 <connects>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="V01" pad="7"/>
@@ -6016,7 +6015,7 @@ Fairchild</description>
 <gate name="G$1" symbol="MOCD223-M" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="" package="SOP-127-390-8">
 <connects>
 <connect gate="G$1" pin="C1" pad="8"/>
 <connect gate="G$1" pin="C2" pad="6"/>
@@ -6114,7 +6113,7 @@ VTL5C1(PerkinElmer)/NSL-32SR2(Silonex)</description>
 <gate name="G$1" symbol="OK-TR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="A1" pad="6"/>
@@ -6165,7 +6164,7 @@ Source: http://www.fairchildsemi.com/ds/H1/H11L2-M.pdf</description>
 <gate name="G$1" symbol="H11L" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DIL06">
+<device name="" package="DIP-300-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
@@ -6195,7 +6194,7 @@ Source: http://www.fairchildsemi.com/ds/H1/H11L2-M.pdf</description>
 <technology name="3"/>
 </technologies>
 </device>
-<device name="T" package="DIL6-04">
+<device name="T" package="DIP-400-6">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>

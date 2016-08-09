@@ -157,22 +157,23 @@ Winbond Electronics, Corp.&lt;p&gt;
 <rectangle x1="6.05" y1="-2.9" x2="6.7" y2="-2.6" layer="21"/>
 <rectangle x1="6.05" y1="-3.45" x2="6.7" y2="-3.15" layer="21"/>
 </package>
-<package name="DIL28-6">
-<description>&lt;b&gt;Dual In Line Package&lt;/b&gt; 0.6 inch</description>
-<wire x1="-17.78" y1="-0.9525" x2="-17.78" y2="-5.715" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="0.9525" x2="-17.78" y2="-0.9525" width="0.2032" layer="21" curve="-180"/>
-<wire x1="17.78" y1="-5.715" x2="17.78" y2="5.715" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="5.715" x2="-17.78" y2="0.9525" width="0.2032" layer="21"/>
-<wire x1="-17.78" y1="5.715" x2="17.78" y2="5.715" width="0.2032" layer="21"/>
+<package name="DIP-600-28">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+600 mil row spacing, JEDEC MS-011B</description>
+<wire x1="17.78" y1="5.715" x2="-17.78" y2="5.715" width="0.2032" layer="21"/>
 <wire x1="-17.78" y1="-5.715" x2="17.78" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="17.78" y1="5.715" x2="17.78" y2="-5.715" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="5.715" x2="-17.78" y2="1.016" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="-5.715" x2="-17.78" y2="-1.016" width="0.2032" layer="21"/>
+<wire x1="-17.78" y1="1.016" x2="-17.78" y2="-1.016" width="0.2032" layer="21" curve="-180"/>
 <pad name="1" x="-16.51" y="-7.62" drill="0.8128" shape="long" rot="R90" first="yes"/>
 <pad name="2" x="-13.97" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="7" x="-1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="8" x="1.27" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="-11.43" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="-8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="-3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="-6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="9" x="3.81" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="10" x="6.35" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="11" x="8.89" y="-7.62" drill="0.8128" shape="long" rot="R90"/>
@@ -194,34 +195,54 @@ Winbond Electronics, Corp.&lt;p&gt;
 <pad name="27" x="-13.97" y="7.62" drill="0.8128" shape="long" rot="R90"/>
 <pad name="28" x="-16.51" y="7.62" drill="0.8128" shape="long" rot="R90"/>
 <text x="-18.415" y="-6.35" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-12.065" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-10.16" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SO28W">
-<description>&lt;b&gt;SMALL OUTLINE INTEGRATED CIRCUIT&lt;/b&gt;&lt;p&gt;
-wide body 7.5 mm/JEDEC MO-119AB</description>
-<wire x1="9.05" y1="-3.7" x2="-9.05" y2="-3.7" width="0.2032" layer="51"/>
-<wire x1="-9.05" y1="-3.7" x2="-9.05" y2="3.7" width="0.2032" layer="51"/>
-<wire x1="-9.05" y1="3.7" x2="9.05" y2="3.7" width="0.2032" layer="51"/>
-<wire x1="9.05" y1="3.7" x2="9.05" y2="-3.7" width="0.2032" layer="51"/>
-<wire x1="-9.017" y1="3.175" x2="9.017" y2="3.175" width="0.2032" layer="21"/>
-<wire x1="9.017" y1="3.175" x2="9.017" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="9.017" y1="-3.175" x2="-9.017" y2="-3.175" width="0.2032" layer="21"/>
-<wire x1="-9.017" y1="-3.175" x2="-9.017" y2="3.175" width="0.2032" layer="21"/>
+<package name="SOP-127-760-28">
+<description>&lt;b&gt;SOP (1.27mm pitch, 300mil/7.60mm width, 28 leads)&lt;/b&gt;&lt;p&gt;
+Small outline package. Lead pitch 1.27mm, body width 300mil/7.60mm, 28 leads. JEDEC MO-119B. Variation AB.</description>
 <circle x="-8.255" y="-2.4448" radius="0.3175" width="0" layer="21"/>
-<smd name="2" x="-6.985" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="13" x="6.985" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<rectangle x1="-8.5001" y1="-5.32" x2="-8.0099" y2="-3.8001" layer="51"/>
+<rectangle x1="-8.5001" y1="3.8001" x2="-8.0099" y2="5.32" layer="51"/>
+<rectangle x1="-7.2301" y1="-5.32" x2="-6.7399" y2="-3.8001" layer="51"/>
+<rectangle x1="-7.2301" y1="3.8001" x2="-6.7399" y2="5.32" layer="51"/>
+<rectangle x1="-5.9601" y1="-5.32" x2="-5.4699" y2="-3.8001" layer="51"/>
+<rectangle x1="-5.9601" y1="3.8001" x2="-5.4699" y2="5.32" layer="51"/>
+<rectangle x1="-4.6901" y1="-5.32" x2="-4.1999" y2="-3.8001" layer="51"/>
+<rectangle x1="-4.6901" y1="3.8001" x2="-4.1999" y2="5.32" layer="51"/>
+<rectangle x1="-3.4201" y1="-5.32" x2="-2.9299" y2="-3.8001" layer="51"/>
+<rectangle x1="-3.4201" y1="3.8001" x2="-2.9299" y2="5.32" layer="51"/>
+<rectangle x1="-2.1501" y1="-5.32" x2="-1.6599" y2="-3.8001" layer="51"/>
+<rectangle x1="-2.1501" y1="3.8001" x2="-1.6599" y2="5.32" layer="51"/>
+<rectangle x1="-0.8801" y1="-5.32" x2="-0.3899" y2="-3.8001" layer="51"/>
+<rectangle x1="-0.8801" y1="3.8001" x2="-0.3899" y2="5.32" layer="51"/>
+<rectangle x1="0.3899" y1="-5.32" x2="0.8801" y2="-3.8001" layer="51"/>
+<rectangle x1="0.3899" y1="3.8001" x2="0.8801" y2="5.32" layer="51"/>
+<rectangle x1="1.6599" y1="-5.32" x2="2.1501" y2="-3.8001" layer="51"/>
+<rectangle x1="1.6599" y1="3.8001" x2="2.1501" y2="5.32" layer="51"/>
+<rectangle x1="2.9299" y1="-5.32" x2="3.4201" y2="-3.8001" layer="51"/>
+<rectangle x1="2.9299" y1="3.8001" x2="3.4201" y2="5.32" layer="51"/>
+<rectangle x1="4.1999" y1="-5.32" x2="4.6901" y2="-3.8001" layer="51"/>
+<rectangle x1="4.1999" y1="3.8001" x2="4.6901" y2="5.32" layer="51"/>
+<rectangle x1="5.4699" y1="-5.32" x2="5.9601" y2="-3.8001" layer="51"/>
+<rectangle x1="5.4699" y1="3.8001" x2="5.9601" y2="5.32" layer="51"/>
+<rectangle x1="6.7399" y1="-5.32" x2="7.2301" y2="-3.8001" layer="51"/>
+<rectangle x1="6.7399" y1="3.8001" x2="7.2301" y2="5.32" layer="51"/>
+<rectangle x1="8.0099" y1="-5.32" x2="8.5001" y2="-3.8001" layer="51"/>
+<rectangle x1="8.0099" y1="3.8001" x2="8.5001" y2="5.32" layer="51"/>
 <smd name="1" x="-8.255" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="2" x="-6.985" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="3" x="-5.715" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="4" x="-4.445" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="14" x="8.255" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="12" x="5.715" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="11" x="4.445" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="6" x="-1.905" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="9" x="1.905" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="5" x="-3.175" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="6" x="-1.905" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="7" x="-0.635" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
-<smd name="10" x="3.175" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="8" x="0.635" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="9" x="1.905" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="10" x="3.175" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="11" x="4.445" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="12" x="5.715" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="13" x="6.985" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
+<smd name="14" x="8.255" y="-4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="15" x="8.255" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="16" x="6.985" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="17" x="5.715" y="4.6" dx="0.6" dy="2.2" layer="1"/>
@@ -236,36 +257,17 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <smd name="26" x="-5.715" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="27" x="-6.985" y="4.6" dx="0.6" dy="2.2" layer="1"/>
 <smd name="28" x="-8.255" y="4.6" dx="0.6" dy="2.2" layer="1"/>
-<text x="-9.525" y="-3.81" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-3.81" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-8.5001" y1="-5.32" x2="-8.0099" y2="-3.8001" layer="51"/>
-<rectangle x1="-7.2301" y1="-5.32" x2="-6.7399" y2="-3.8001" layer="51"/>
-<rectangle x1="-5.9601" y1="-5.32" x2="-5.4699" y2="-3.8001" layer="51"/>
-<rectangle x1="-4.6901" y1="-5.32" x2="-4.1999" y2="-3.8001" layer="51"/>
-<rectangle x1="-3.4201" y1="-5.32" x2="-2.9299" y2="-3.8001" layer="51"/>
-<rectangle x1="-2.1501" y1="-5.32" x2="-1.6599" y2="-3.8001" layer="51"/>
-<rectangle x1="-0.8801" y1="-5.32" x2="-0.3899" y2="-3.8001" layer="51"/>
-<rectangle x1="0.3899" y1="-5.32" x2="0.8801" y2="-3.8001" layer="51"/>
-<rectangle x1="1.6599" y1="-5.32" x2="2.1501" y2="-3.8001" layer="51"/>
-<rectangle x1="2.9299" y1="-5.32" x2="3.4201" y2="-3.8001" layer="51"/>
-<rectangle x1="4.1999" y1="-5.32" x2="4.6901" y2="-3.8001" layer="51"/>
-<rectangle x1="5.4699" y1="-5.32" x2="5.9601" y2="-3.8001" layer="51"/>
-<rectangle x1="6.7399" y1="-5.32" x2="7.2301" y2="-3.8001" layer="51"/>
-<rectangle x1="8.0099" y1="-5.32" x2="8.5001" y2="-3.8001" layer="51"/>
-<rectangle x1="8.0099" y1="3.8001" x2="8.5001" y2="5.32" layer="51"/>
-<rectangle x1="6.7399" y1="3.8001" x2="7.2301" y2="5.32" layer="51"/>
-<rectangle x1="5.4699" y1="3.8001" x2="5.9601" y2="5.32" layer="51"/>
-<rectangle x1="4.1999" y1="3.8001" x2="4.6901" y2="5.32" layer="51"/>
-<rectangle x1="2.9299" y1="3.8001" x2="3.4201" y2="5.32" layer="51"/>
-<rectangle x1="1.6599" y1="3.8001" x2="2.1501" y2="5.32" layer="51"/>
-<rectangle x1="0.3899" y1="3.8001" x2="0.8801" y2="5.32" layer="51"/>
-<rectangle x1="-0.8801" y1="3.8001" x2="-0.3899" y2="5.32" layer="51"/>
-<rectangle x1="-2.1501" y1="3.8001" x2="-1.6599" y2="5.32" layer="51"/>
-<rectangle x1="-3.4201" y1="3.8001" x2="-2.9299" y2="5.32" layer="51"/>
-<rectangle x1="-4.6901" y1="3.8001" x2="-4.1999" y2="5.32" layer="51"/>
-<rectangle x1="-5.9601" y1="3.8001" x2="-5.4699" y2="5.32" layer="51"/>
-<rectangle x1="-7.2301" y1="3.8001" x2="-6.7399" y2="5.32" layer="51"/>
-<rectangle x1="-8.5001" y1="3.8001" x2="-8.0099" y2="5.32" layer="51"/>
+<text x="-9.398" y="-3.556" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-5.461" y="-0.762" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-9.017" y1="-3.683" x2="-9.017" y2="3.683" width="0.2032" layer="51"/>
+<wire x1="-9.017" y1="-3.683" x2="-9.017" y2="3.683" width="0.2032" layer="51"/>
+<wire x1="-9.017" y1="-3.175" x2="-9.017" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="-9.017" y1="3.175" x2="9.017" y2="3.175" width="0.2032" layer="21"/>
+<wire x1="-9.017" y1="3.683" x2="9.017" y2="3.683" width="0.2032" layer="51"/>
+<wire x1="9.017" y1="-3.683" x2="-9.017" y2="-3.683" width="0.2032" layer="51"/>
+<wire x1="9.017" y1="-3.175" x2="-9.017" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="9.017" y1="3.175" x2="9.017" y2="-3.175" width="0.2032" layer="21"/>
+<wire x1="9.017" y1="3.683" x2="9.017" y2="-3.683" width="0.2032" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -581,7 +583,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <gate name="G$5" symbol="NC-LEFT" x="12.7" y="17.78" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="DIL28-6">
+<device name="" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="A0" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
@@ -628,7 +630,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <gate name="G$5" symbol="NC-LEFT" x="15.24" y="20.32" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="SO28W">
+<device name="" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="A0" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
@@ -672,7 +674,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <gate name="IC1" symbol="ISD2560" x="15.24" y="12.7"/>
 </gates>
 <devices>
-<device name="P" package="DIL28-6">
+<device name="P" package="DIP-600-28">
 <connects>
 <connect gate="IC1" pin="A0" pad="1"/>
 <connect gate="IC1" pin="A1" pad="2"/>
@@ -710,7 +712,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <technology name="90"/>
 </technologies>
 </device>
-<device name="S" package="SO28W">
+<device name="S" package="SOP-127-760-28">
 <connects>
 <connect gate="IC1" pin="A0" pad="1"/>
 <connect gate="IC1" pin="A1" pad="2"/>
@@ -805,7 +807,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <gate name="G$11" symbol="NC-RIGHT" x="12.7" y="-20.32" addlevel="request"/>
 </gates>
 <devices>
-<device name="P" package="DIL28-6">
+<device name="P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="5"/>
 <connect gate="G$10" pin="NC" pad="22"/>
@@ -843,7 +845,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <technology name="16"/>
 </technologies>
 </device>
-<device name="S" package="SO28W">
+<device name="S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="5"/>
 <connect gate="G$10" pin="NC" pad="22"/>
@@ -881,7 +883,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <technology name="16"/>
 </technologies>
 </device>
-<device name="SI" package="SO28W">
+<device name="SI" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="5"/>
 <connect gate="G$10" pin="NC" pad="22"/>
@@ -1053,7 +1055,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <gate name="G$11" symbol="NC-RIGHT" x="12.7" y="-7.62" addlevel="request"/>
 </gates>
 <devices>
-<device name="P" package="DIL28-6">
+<device name="P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="5"/>
 <connect gate="G$10" pin="NC" pad="21"/>
@@ -1091,7 +1093,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <technology name="08"/>
 </technologies>
 </device>
-<device name="S" package="SO28W">
+<device name="S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="5"/>
 <connect gate="G$10" pin="NC" pad="21"/>
@@ -1129,7 +1131,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <technology name="08"/>
 </technologies>
 </device>
-<device name="SI" package="SO28W">
+<device name="SI" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="5"/>
 <connect gate="G$10" pin="NC" pad="21"/>
@@ -1301,7 +1303,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <gate name="G$11" symbol="NC-RIGHT" x="12.7" y="-7.62" addlevel="request"/>
 </gates>
 <devices>
-<device name="P" package="DIL28-6">
+<device name="P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="5"/>
 <connect gate="G$10" pin="NC" pad="21"/>
@@ -1339,7 +1341,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <technology name="240"/>
 </technologies>
 </device>
-<device name="S" package="SO28W">
+<device name="S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="5"/>
 <connect gate="G$10" pin="NC" pad="21"/>
@@ -1377,7 +1379,7 @@ wide body 7.5 mm/JEDEC MO-119AB</description>
 <technology name="240"/>
 </technologies>
 </device>
-<device name="SI" package="SO28W">
+<device name="SI" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="5"/>
 <connect gate="G$10" pin="NC" pad="21"/>
@@ -1538,7 +1540,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <gate name="G$4" symbol="NC-LEFT" x="-17.78" y="-25.4" addlevel="request"/>
 </gates>
 <devices>
-<device name="16P" package="DIL28-6">
+<device name="16P" package="DIP-600-28">
 <connects>
 <connect gate="G$2" pin="NC" pad="7"/>
 <connect gate="G$3" pin="NC" pad="21"/>
@@ -1573,7 +1575,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="02S" package="SO28W">
+<device name="02S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$2" pin="NC" pad="7"/>
 <connect gate="G$3" pin="NC" pad="21"/>
@@ -1608,7 +1610,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="04S" package="SO28W">
+<device name="04S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$2" pin="NC" pad="7"/>
 <connect gate="G$3" pin="NC" pad="21"/>
@@ -1643,7 +1645,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="08S" package="SO28W">
+<device name="08S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$2" pin="NC" pad="7"/>
 <connect gate="G$3" pin="NC" pad="21"/>
@@ -1678,7 +1680,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="16S" package="SO28W">
+<device name="16S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$2" pin="NC" pad="7"/>
 <connect gate="G$3" pin="NC" pad="21"/>
@@ -1863,7 +1865,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <gate name="G$1" symbol="NC-LEFT" x="-10.16" y="-5.08" addlevel="request"/>
 </gates>
 <devices>
-<device name="32P" package="DIL28-6">
+<device name="32P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="8"/>
 <connect gate="IC" pin="A0" pad="1"/>
@@ -1898,7 +1900,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="32S" package="SO28W">
+<device name="32S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="8"/>
 <connect gate="IC" pin="A0" pad="1"/>
@@ -1968,7 +1970,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="40P" package="DIL28-6">
+<device name="40P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="8"/>
 <connect gate="IC" pin="A0" pad="1"/>
@@ -2003,7 +2005,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="40S" package="SO28W">
+<device name="40S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="8"/>
 <connect gate="IC" pin="A0" pad="1"/>
@@ -2073,7 +2075,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="48P" package="DIL28-6">
+<device name="48P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="8"/>
 <connect gate="IC" pin="A0" pad="1"/>
@@ -2108,7 +2110,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="48S" package="SO28W">
+<device name="48S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="8"/>
 <connect gate="IC" pin="A0" pad="1"/>
@@ -2143,7 +2145,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="48E" package="DIL28-6">
+<device name="48E" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="15"/>
 <connect gate="IC" pin="A0" pad="8"/>
@@ -2178,7 +2180,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="64P" package="DIL28-6">
+<device name="64P" package="DIP-600-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="8"/>
 <connect gate="IC" pin="A0" pad="1"/>
@@ -2213,7 +2215,7 @@ devices with digital storage capability.&lt;/b&gt;</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="64S" package="SO28W">
+<device name="64S" package="SOP-127-760-28">
 <connects>
 <connect gate="G$1" pin="NC" pad="8"/>
 <connect gate="IC" pin="A0" pad="1"/>
