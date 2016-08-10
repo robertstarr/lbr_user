@@ -1002,27 +1002,28 @@ Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 28 leads. JED
 <wire x1="5.1" y1="-2.6" x2="5.1" y2="2.6" width="0.2032" layer="21"/>
 <wire x1="5.1" y1="2.6" x2="-5.05" y2="2.6" width="0.2032" layer="21"/>
 </package>
-<package name="SC70-6L">
-<description>&lt;b&gt;SC-70 Package&lt;/b&gt;</description>
-<wire x1="-1.1" y1="0.5" x2="1.1" y2="0.5" width="0.2032" layer="51"/>
-<wire x1="1.1" y1="0.5" x2="1.1" y2="-0.5" width="0.2032" layer="21"/>
-<wire x1="1.1" y1="-0.5" x2="-1.1" y2="-0.5" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="-0.5" x2="-1.1" y2="0.5" width="0.2032" layer="21"/>
+<package name="SC70-6">
+<description>&lt;b&gt;SC70-5 (TSSOT, 0.65mm pitch, 1.25mm body, 6 leads)&lt;/b&gt;&lt;p&gt;
+Thin shrink small outline transistor package (also known as SOT363). 0.65mm pitch, 1.25mm body width, 6 leads. JEDEC MO-203A, variation AB.</description>
+<wire x1="1.1" y1="-0.525" x2="-1.1" y2="-0.525" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-0.525" x2="-1.1" y2="0.525" width="0.2032" layer="21"/>
+<wire x1="-1.1" y1="0.525" x2="1.1" y2="0.525" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="0.525" x2="1.1" y2="-0.525" width="0.2032" layer="21"/>
 <circle x="-0.65" y="-0.15" radius="0.15" width="0" layer="21"/>
-<smd name="1" x="-0.65" y="-0.85" dx="0.4" dy="0.8" layer="1"/>
-<smd name="2" x="0" y="-0.85" dx="0.4" dy="0.8" layer="1"/>
-<smd name="3" x="0.65" y="-0.85" dx="0.4" dy="0.8" layer="1"/>
-<smd name="4" x="0.65" y="0.85" dx="0.4" dy="0.8" layer="1"/>
-<smd name="5" x="0" y="0.85" dx="0.4" dy="0.8" layer="1"/>
-<smd name="6" x="-0.65" y="0.85" dx="0.4" dy="0.8" layer="1"/>
+<smd name="4" x="0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="5" x="0" y="0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="1" x="-0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="3" x="0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
 <text x="-1.2" y="1.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.2" y="-2.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<rectangle x1="-0.15" y1="0.6" x2="0.15" y2="1.1" layer="51"/>
 <rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
 <rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
 <rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
-<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
-<rectangle x1="-0.15" y1="0.6" x2="0.15" y2="1.1" layer="51"/>
 <rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
+<smd name="6" x="-0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
 </package>
 <package name="TQFN16-5X5">
 <description>TQFN 16&lt;p&gt;
@@ -1405,18 +1406,19 @@ body 5 x 5 mm, pitch 0.8 mm</description>
 <rectangle x1="-3.6766" y1="2.2" x2="-3.4734" y2="3.121" layer="51"/>
 <rectangle x1="-4.3266" y1="2.2" x2="-4.1234" y2="3.121" layer="51"/>
 </package>
-<package name="SC70-3L">
-<description>&lt;b&gt;SC-70 Package&lt;/b&gt;</description>
-<wire x1="-1.1" y1="0.5" x2="-0.45" y2="0.5" width="0.2032" layer="21"/>
-<wire x1="-0.4" y1="0.5" x2="0.4" y2="0.5" width="0.2032" layer="51"/>
-<wire x1="0.45" y1="0.5" x2="1.1" y2="0.5" width="0.2032" layer="21"/>
-<wire x1="1.1" y1="0.5" x2="1.1" y2="-0.5" width="0.2032" layer="21"/>
-<wire x1="1.1" y1="-0.5" x2="-1.1" y2="-0.5" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="-0.5" x2="-1.1" y2="0.5" width="0.2032" layer="21"/>
+<package name="SC70-3">
+<description>&lt;b&gt;SC70-3 (TSSOT, 0.65mm pitch, 1.25mm body, 3 leads)&lt;/b&gt;&lt;p&gt;
+Thin shrink small outline transistor package (also known as SOT323). 0.65mm pitch, 1.25mm body width, 3 leads. EIAJ SC-70.</description>
+<wire x1="-1" y1="0.625" x2="-0.45" y2="0.625" width="0.2032" layer="21"/>
+<wire x1="-0.4" y1="0.625" x2="0.4" y2="0.625" width="0.2032" layer="51"/>
+<wire x1="0.45" y1="0.625" x2="1" y2="0.625" width="0.2032" layer="21"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.2032" layer="21"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.2032" layer="21"/>
 <circle x="-0.65" y="-0.15" radius="0.15" width="0" layer="21"/>
-<smd name="1" x="-0.65" y="-0.85" dx="0.4" dy="0.8" layer="1"/>
-<smd name="2" x="0.65" y="-0.85" dx="0.4" dy="0.8" layer="1"/>
-<smd name="3" x="0" y="0.85" dx="0.4" dy="0.8" layer="1"/>
+<smd name="1" x="-0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="2" x="0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="3" x="0" y="0.95" dx="0.4" dy="0.8" layer="1"/>
 <text x="-1.2" y="1.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.2" y="-2.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
@@ -1450,25 +1452,22 @@ body 5 x 5 mm, pitch 0.8 mm</description>
 <rectangle x1="-1.1253" y1="1.5" x2="-0.8253" y2="2.45" layer="51"/>
 </package>
 <package name="SOT223">
-<description>&lt;b&gt;SOT-223&lt;/b&gt;</description>
-<wire x1="3.2766" y1="1.678" x2="3.2766" y2="-1.678" width="0.2032" layer="21"/>
-<wire x1="3.2766" y1="-1.678" x2="-3.2766" y2="-1.678" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="-1.678" x2="-3.2766" y2="1.678" width="0.2032" layer="21"/>
-<wire x1="-3.2766" y1="1.678" x2="3.2766" y2="1.678" width="0.2032" layer="21"/>
-<smd name="1" x="-2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<description>&lt;b&gt;SOT223 (2.3mm pitch, 3.5mm body, 4 leads)&lt;/b&gt;&lt;p/&gt;
+Small outline transistor (SOT). 2.3mm pitch, 3.5mm body width, 4 leads. JEDEC TO-261C, variation AA, R-PDSO-G.</description>
+<wire x1="3.25" y1="1.75" x2="3.25" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="3.25" y1="-1.75" x2="-3.25" y2="-1.75" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="-1.75" x2="-3.25" y2="1.75" width="0.2032" layer="21"/>
+<wire x1="-3.25" y1="1.75" x2="3.25" y2="1.75" width="0.2032" layer="21"/>
+<smd name="1" x="-2.3" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
 <smd name="2" x="0" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
-<smd name="3" x="2.3114" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
+<smd name="3" x="2.3" y="-3.0988" dx="1.2192" dy="2.2352" layer="1"/>
 <smd name="4" x="0" y="3.099" dx="3.6" dy="2.2" layer="1"/>
-<text x="2.54" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
-<rectangle x1="-1.6002" y1="1.8034" x2="1.6002" y2="3.6576" layer="51"/>
-<rectangle x1="-0.4318" y1="-3.6576" x2="0.4318" y2="-1.8034" layer="51"/>
-<rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
-<rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
+<text x="-2.54" y="0.0508" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-1.3208" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.55" y1="1.85" x2="1.55" y2="3.55" layer="51"/>
+<rectangle x1="-2.72" y1="-3.55" x2="-1.88" y2="-1.85" layer="51"/>
+<rectangle x1="-0.42" y1="-3.55" x2="0.42" y2="-1.85" layer="51"/>
+<rectangle x1="1.88" y1="-3.55" x2="2.72" y2="-1.85" layer="51"/>
 </package>
 <package name="DIP-300-18">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
@@ -2202,51 +2201,26 @@ Source: http://pdfserv.maxim-ic.com/en/ds/MAX985-MAX994.pdf</description>
 <text x="-0.75" y="-1.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.64" y1="-0.37" x2="-0.425" y2="-0.14" layer="51"/>
 </package>
-<package name="SC70-5L">
-<description>&lt;b&gt;SC-70 Package&lt;/b&gt;</description>
-<wire x1="1.1" y1="-0.5" x2="-1.1" y2="-0.5" width="0.2032" layer="51"/>
-<wire x1="-1.1" y1="-0.5" x2="-1.1" y2="0.5" width="0.2032" layer="21"/>
-<wire x1="-1.1" y1="0.5" x2="1.1" y2="0.5" width="0.2032" layer="51"/>
-<wire x1="1.1" y1="0.5" x2="1.1" y2="-0.5" width="0.2032" layer="21"/>
-<circle x="-0.65" y="-0.2" radius="0.15" width="0" layer="21"/>
-<smd name="4" x="0.65" y="0.85" dx="0.35" dy="0.8" layer="1"/>
-<smd name="5" x="-0.65" y="0.85" dx="0.35" dy="0.8" layer="1"/>
-<smd name="1" x="-0.65" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
-<smd name="2" x="0" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
-<smd name="3" x="0.65" y="-0.85" dx="0.35" dy="0.8" layer="1"/>
-<text x="-1.2" y="1.35" size="1.016" layer="25">&gt;NAME</text>
-<text x="-1.2" y="-2.35" size="1.016" layer="27">&gt;VALUE</text>
+<package name="SC70-5">
+<description>&lt;b&gt;SC70-5 (TSSOT, 0.65mm pitch, 1.25mm body, 5 leads)&lt;/b&gt;&lt;p&gt;
+Thin shrink small outline transistor package (also known as SOT-353). 0.65mm pitch, 1.25mm body width, 5 leads. JEDEC MO-203A, variation AA.</description>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.2032" layer="21"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.2032" layer="51"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.2032" layer="21"/>
+<circle x="-0.65" y="-0.25" radius="0.15" width="0" layer="21"/>
+<smd name="4" x="0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="5" x="-0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="1" x="-0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<smd name="3" x="0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
+<text x="-1.2" y="1.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.2" y="-2.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
 <rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
 <rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
 <rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
 <rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
-</package>
-<package name="SOT23-5L">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
-<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
-<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="-1.328" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="1.422" y1="-0.81" x2="1.328" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="1.328" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="-1.328" y2="0.81" width="0.1524" layer="21"/>
-<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 </package>
 <package name="QSOP16">
 <description>&lt;b&gt;Small Outline Package&lt;/b&gt;</description>
@@ -2694,28 +2668,6 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <vertex x="6.0325" y="4.7625"/>
 </polygon>
 </package>
-<package name="SOT23-6L">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
-<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
-<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
-<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
-<circle x="-1" y="-0.35" radius="0.180275" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="0" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="6" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<text x="-1.705" y="-0.805" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.4" y="-0.8" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-</package>
 <package name="TQFN28">
 <description>&lt;b&gt;TQFN28&lt;/b&gt; - (T2855-6)&lt;p&gt;
 body 5 x 5 mm, pitch 0.5 mm</description>
@@ -2769,46 +2721,48 @@ body 5 x 5 mm, pitch 0.5 mm</description>
 <rectangle x1="-1.25" y1="-1.25" x2="-0.25" y2="-0.25" layer="31"/>
 </package>
 <package name="SOT23">
-<description>&lt;b&gt;SMALL OUTLINE TRANSISTOR&lt;/b&gt;&lt;p&gt;
-reflow soldering</description>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.2032" layer="51"/>
-<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.2032" layer="51"/>
-<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.2032" layer="51"/>
-<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.2032" layer="51"/>
-<wire x1="-1.4224" y1="-0.1524" x2="-1.4224" y2="0.6604" width="0.2032" layer="21"/>
-<wire x1="-1.4224" y1="0.6604" x2="-0.7636" y2="0.6604" width="0.2032" layer="21"/>
-<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.1524" width="0.2032" layer="21"/>
-<wire x1="0.7636" y1="0.6604" x2="1.4224" y2="0.6604" width="0.2032" layer="21"/>
-<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
-<text x="1.27" y="1.27" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<description>&lt;b&gt;SOT23 (0.95mm pitch, 1.3mm body, 3 leads)&lt;/b&gt;&lt;p&gt;
+Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, variation AB, TR-PDSO-G.</description>
+<wire x1="1.45" y1="0.65" x2="1.45" y2="-0.65" width="0.2032" layer="51"/>
+<wire x1="1.45" y1="-0.65" x2="-1.45" y2="-0.65" width="0.2032" layer="51"/>
+<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.2032" layer="51"/>
+<wire x1="-1.45" y1="0.65" x2="1.45" y2="0.65" width="0.2032" layer="51"/>
+<smd name="1" x="-0.95" y="-1.15" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0.95" y="-1.15" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0" y="1.15" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.5001" y1="-0.3" x2="0.5001" y2="0.3" layer="35"/>
-<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
-<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
-<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.15" y1="-1.25" x2="-0.75" y2="-0.65" layer="51"/>
+<rectangle x1="-0.2" y1="0.65" x2="0.2" y2="1.25" layer="51"/>
+<rectangle x1="0.75" y1="-1.25" x2="1.15" y2="-0.65" layer="51"/>
+<wire x1="-1.45" y1="-0.5" x2="-1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="-0.5" x2="1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="0.65" x2="0.5" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="-1.45" y1="0.65" x2="-0.5" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="-0.45" y1="-0.65" x2="0.45" y2="-0.65" width="0.2032" layer="21"/>
 </package>
 <package name="SOT23-5">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="1.4724" y1="0.8104" x2="1.4724" y2="-0.8104" width="0.1778" layer="21"/>
-<wire x1="1.4224" y1="-0.8104" x2="-1.4224" y2="-0.8104" width="0.1778" layer="51"/>
-<wire x1="-1.4724" y1="-0.8104" x2="-1.4724" y2="0.8104" width="0.1778" layer="21"/>
-<wire x1="-1.4224" y1="0.8104" x2="1.4224" y2="0.8104" width="0.1778" layer="51"/>
-<wire x1="-0.4224" y1="0.8104" x2="0.4224" y2="0.8104" width="0.1778" layer="21"/>
-<circle x="-0.9525" y="-0.2675" radius="0.2245" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<text x="-1.905" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<description>&lt;b&gt;TSSOP (SSOT, 0.95mm pitch, 1.6mm body, 5 leads)&lt;/b&gt;&lt;p&gt;
+Thin shrink small outline transistor package (SSOT). 0.95mm pitch, 1.6mm body width, 5 leads. JEDEC MO-193E, variation AB, TR-PDSO-G.</description>
+<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.2032" layer="51"/>
+<circle x="-1.1" y="-0.45" radius="0.1524" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<rectangle x1="-1.15" y1="-1.4" x2="-0.75" y2="-0.8" layer="51"/>
+<rectangle x1="-1.15" y1="0.8" x2="-0.75" y2="1.4" layer="51"/>
+<rectangle x1="0.75" y1="0.8" x2="1.15" y2="1.4" layer="51"/>
+<rectangle x1="-0.2" y1="-1.4" x2="0.2" y2="-0.8" layer="51"/>
+<rectangle x1="0.75" y1="-1.4" x2="1.15" y2="-0.8" layer="51"/>
+<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.2032" layer="21"/>
 </package>
 <package name="TSSOP38L">
 <description>&lt;b&gt;TSSOP 38L&lt;/b&gt;&lt;p&gt;
@@ -3091,27 +3045,29 @@ body 3.5 x 9mm, exposed pad</description>
 <text x="6" y="-2" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
 <package name="SOT23-6">
-<description>&lt;b&gt;SOT-23&lt;/b&gt; - DBV&lt;p&gt;
-0.95 mm pitch</description>
-<wire x1="1.4724" y1="0.8104" x2="1.4724" y2="-0.8104" width="0.1778" layer="21"/>
-<wire x1="1.4224" y1="-0.8104" x2="-1.4224" y2="-0.8104" width="0.1778" layer="51"/>
-<wire x1="-1.4724" y1="-0.8104" x2="-1.4724" y2="0.8104" width="0.1778" layer="21"/>
-<wire x1="-1.4224" y1="0.8104" x2="1.4224" y2="0.8104" width="0.1778" layer="51"/>
-<circle x="-0.9525" y="-0.2675" radius="0.2245" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="6" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="0" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
-<text x="-1.905" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<description>&lt;b&gt;TSSOP (SSOT, 0.95mm pitch, 1.6mm body, 6 leads)&lt;/b&gt;&lt;p&gt;
+Thin shrink small outline transistor package (SSOT). 0.95mm pitch, 1.6mm body width, 6 leads. JEDEC MO-193E, variation AA, TR-PDSO-G.</description>
+<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.2032" layer="51"/>
+<circle x="-1.1" y="-0.45" radius="0.1524" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="0" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<smd name="6" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
-<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
-<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
-<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
-<rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.5" layer="51"/>
+<rectangle x1="-1.15" y1="0.8" x2="-0.75" y2="1.4" layer="51"/>
+<rectangle x1="-1.15" y1="-1.4" x2="-0.75" y2="-0.8" layer="51"/>
+<rectangle x1="-0.2" y1="0.8" x2="0.2" y2="1.4" layer="51"/>
+<rectangle x1="0.75" y1="0.8" x2="1.15" y2="1.4" layer="51"/>
+<rectangle x1="-0.2" y1="-1.4" x2="0.2" y2="-0.8" layer="51"/>
+<rectangle x1="0.75" y1="-1.4" x2="1.15" y2="-0.8" layer="51"/>
+<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -25858,7 +25814,7 @@ body 3.5 x 9mm, exposed pad</description>
 <gate name="P" symbol="VCC-VEE" x="22.86" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="SOT23-5L">
+<device name="" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="+IN" pad="3"/>
 <connect gate="G$1" pin="-IN" pad="4"/>
@@ -26412,7 +26368,7 @@ body 3.5 x 9mm, exposed pad</description>
 <gate name="1" symbol="BUFF3P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-5L">
+<device name="" package="SOT23-5">
 <connects>
 <connect gate="1" pin="GND" pad="4"/>
 <connect gate="1" pin="IN" pad="3"/>
@@ -26484,7 +26440,7 @@ body 3.5 x 9mm, exposed pad</description>
 <gate name="G$1" symbol="BUFF3P" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-5L">
+<device name="" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="IN" pad="3"/>
@@ -26703,7 +26659,7 @@ body 3.5 x 9mm, exposed pad</description>
 <gate name="G$1" symbol="MAX6342" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-6L">
+<device name="" package="SOT23-6">
 <connects>
 <connect gate="G$1" pin="!MR!" pad="5"/>
 <connect gate="G$1" pin="!PFO!" pad="4"/>
@@ -28356,7 +28312,7 @@ break-before-make</description>
 <gate name="P" symbol="V+GND" x="-27.94" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="SOT23-6L">
+<device name="" package="SOT23-6">
 <connects>
 <connect gate="G$1" pin="COM" pad="5"/>
 <connect gate="G$1" pin="IN" pad="1"/>
@@ -28379,7 +28335,7 @@ Normally Open</description>
 <gate name="P" symbol="V+GND" x="25.4" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="SOT23-5L">
+<device name="" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="COM" pad="1"/>
 <connect gate="G$1" pin="IN" pad="4"/>
@@ -28401,7 +28357,7 @@ Normally Closed</description>
 <gate name="P" symbol="V+GND" x="25.4" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="SOT23-5L">
+<device name="" package="SOT23-5">
 <connects>
 <connect gate="G$1" pin="COM" pad="1"/>
 <connect gate="G$1" pin="IN" pad="4"/>
@@ -28421,7 +28377,7 @@ Normally Closed</description>
 <gate name="G$1" symbol="MAX3370" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SC70-5L">
+<device name="" package="SC70-5">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IO_VCC" pad="4"/>
@@ -28820,7 +28776,7 @@ Source: MAX3465-MAX3469.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="EUT-T" package="SOT23-6L">
+<device name="EUT-T" package="SOT23-6">
 <connects>
 <connect gate="A" pin="COM" pad="5"/>
 <connect gate="A" pin="IN" pad="1"/>
@@ -29551,7 +29507,7 @@ Precision, Low-Power, High-Voltage</description>
 <gate name="G$1" symbol="MAX2471" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT23-6L">
+<device name="" package="SOT23-6">
 <connects>
 <connect gate="G$1" pin="+IN" pad="5"/>
 <connect gate="G$1" pin="-IN" pad="4"/>
