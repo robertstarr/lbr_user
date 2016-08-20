@@ -88,39 +88,45 @@ Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&
 <text x="2.413" y="1.651" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="2.921" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO220H">
-<description>&lt;b&gt;TO-220&lt;/b&gt;</description>
-<wire x1="-5.207" y1="-7.62" x2="5.207" y2="-7.62" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="8.255" x2="-5.207" y2="8.255" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-7.62" x2="5.207" y2="4.826" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="4.826" x2="4.318" y2="4.826" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="4.826" x2="4.318" y2="6.35" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="6.35" x2="5.207" y2="6.35" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="6.35" x2="5.207" y2="8.255" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-7.62" x2="-5.207" y2="4.826" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="4.826" x2="-4.318" y2="4.826" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="4.826" x2="-4.318" y2="6.35" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="6.35" x2="-5.207" y2="6.35" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="6.35" x2="-5.207" y2="8.255" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-6.985" x2="4.572" y2="-6.985" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="1.27" x2="4.572" y2="-6.985" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="1.27" x2="-4.572" y2="1.27" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-6.985" x2="-4.572" y2="1.27" width="0.2032" layer="21"/>
-<circle x="0" y="4.826" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="4.826" radius="2.54" width="0" layer="43"/>
-<circle x="0" y="4.826" radius="2.54" width="0" layer="42"/>
-<pad name="1" x="-2.54" y="-10.16" drill="1.1176" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-10.16" drill="1.1176" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-10.16" drill="1.1176" shape="long" rot="R90"/>
-<text x="-5.461" y="-10.922" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="7.366" y="-11.049" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="2.159" y1="-11.049" x2="2.921" y2="-10.414" layer="51"/>
-<rectangle x1="-0.381" y1="-11.049" x2="0.381" y2="-10.414" layer="51"/>
-<rectangle x1="-2.921" y1="-11.049" x2="-2.159" y2="-10.414" layer="51"/>
-<rectangle x1="-3.175" y1="-10.414" x2="-1.905" y2="-7.62" layer="51"/>
-<rectangle x1="-0.635" y1="-10.414" x2="0.635" y2="-7.62" layer="51"/>
-<rectangle x1="1.905" y1="-10.414" x2="3.175" y2="-7.62" layer="51"/>
-<hole x="0" y="4.826" drill="3.302"/>
+<package name="TO220-AB-H">
+<description>&lt;b&gt;TO-220 AB (2.54mm lead pitch, 3 leads, exposed pad, horizontal, 17.5mm lead-to-hole)&lt;/b&gt;&lt;p&gt;
+Flange mounted header. 2.54mm lead pitch, 3 leads, exposed pad, horizontal, 17.5mm lead-to-hole. JEDEC TO-220K, variation AB.
+&lt;p/&gt;
+Also known as SOT78.</description>
+<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
+<circle x="0" y="11.176" radius="2.921" width="0" layer="42"/>
+<circle x="0" y="11.176" radius="2.921" width="0" layer="43"/>
+<hole x="0" y="11.176" drill="3.302"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<rectangle x1="-3.175" y1="-3.81" x2="-1.905" y2="-1.27" layer="21"/>
+<rectangle x1="-2.921" y1="-6.35" x2="-2.159" y2="-4.445" layer="51"/>
+<rectangle x1="-2.921" y1="-4.445" x2="-2.159" y2="-3.81" layer="21"/>
+<rectangle x1="-0.635" y1="-3.81" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="-0.381" y1="-6.35" x2="0.381" y2="-4.445" layer="51"/>
+<rectangle x1="-0.381" y1="-4.445" x2="0.381" y2="-3.81" layer="21"/>
+<rectangle x1="1.905" y1="-3.81" x2="3.175" y2="-1.27" layer="21"/>
+<rectangle x1="2.159" y1="-6.35" x2="2.921" y2="-4.445" layer="51"/>
+<rectangle x1="2.159" y1="-4.445" x2="2.921" y2="-3.81" layer="21"/>
+<text x="-5.461" y="-1.27" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
 </package>
 <package name="TO18">
 <description>&lt;b&gt;Metal Can Package&lt;/b&gt;</description>
@@ -1464,47 +1470,51 @@ square</description>
 </package>
 <package name="SOT23-5">
 <description>&lt;b&gt;TSSOP (SSOT, 0.95mm pitch, 1.6mm body, 5 leads)&lt;/b&gt;&lt;p&gt;
-Thin shrink small outline transistor package (SSOT). 0.95mm pitch, 1.6mm body width, 5 leads. JEDEC MO-193E, variation AB, TR-PDSO-G.</description>
-<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2032" layer="51"/>
-<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.2032" layer="51"/>
-<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2032" layer="51"/>
-<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.2032" layer="51"/>
+Thin shrink small outline transistor package (SSOT). 0.95mm pitch, 1.6mm body width, 5 leads.
+&lt;p/&gt;
+1.1mm max height: JEDEC MO-193E, variation AB, TR-PDSO-G.
+&lt;p/&gt;
+1.45mm max height: JEDEC MO-178E, variation AB, R-PDSO-G.</description>
 <circle x="-1.1" y="-0.45" radius="0.1524" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<text x="-1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.15" y1="-1.4" x2="-0.75" y2="-0.8" layer="51"/>
 <rectangle x1="-1.15" y1="0.8" x2="-0.75" y2="1.4" layer="51"/>
-<rectangle x1="0.75" y1="0.8" x2="1.15" y2="1.4" layer="51"/>
 <rectangle x1="-0.2" y1="-1.4" x2="0.2" y2="-0.8" layer="51"/>
 <rectangle x1="0.75" y1="-1.4" x2="1.15" y2="-0.8" layer="51"/>
+<rectangle x1="0.75" y1="0.8" x2="1.15" y2="1.4" layer="51"/>
+<smd name="1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="3" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="4" x="0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="5" x="-0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2032" layer="51"/>
 <wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.2032" layer="51"/>
 <wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2032" layer="51"/>
 </package>
 <package name="SC70-5">
 <description>&lt;b&gt;SC70-5 (TSSOT, 0.65mm pitch, 1.25mm body, 5 leads)&lt;/b&gt;&lt;p&gt;
 Thin shrink small outline transistor package (also known as SOT-353). 0.65mm pitch, 1.25mm body width, 5 leads. JEDEC MO-203A, variation AA.</description>
-<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.2032" layer="51"/>
-<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.2032" layer="21"/>
-<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.2032" layer="51"/>
-<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.2032" layer="21"/>
 <circle x="-0.65" y="-0.25" radius="0.15" width="0" layer="21"/>
-<smd name="4" x="0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
-<smd name="5" x="-0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
-<smd name="1" x="-0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
-<smd name="2" x="0" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
-<smd name="3" x="0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
-<text x="-1.2" y="1.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.2" y="-2.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
-<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
 <rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
 <rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
 <rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<smd name="1" x="-0.65" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="3" x="0.65" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="4" x="0.65" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="5" x="-0.65" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<text x="-1.2" y="-2.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.2" y="1.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.2032" layer="21"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.2032" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.2032" layer="51"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.2032" layer="21"/>
 </package>
 <package name="MSOP08">
 <description>&lt;b&gt;Mini Small Outline Package&lt;/b&gt;</description>
@@ -9457,7 +9467,7 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <technology name="L24"/>
 </technologies>
 </device>
-<device name="T" package="TO220H">
+<device name="T" package="TO220-AB-H">
 <connects>
 <connect gate="A1" pin="GND" pad="2"/>
 <connect gate="A1" pin="VI" pad="1"/>
@@ -9561,7 +9571,7 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <technology name="24"/>
 </technologies>
 </device>
-<device name="T" package="TO220H">
+<device name="T" package="TO220-AB-H">
 <connects>
 <connect gate="A1" pin="GND" pad="1"/>
 <connect gate="A1" pin="VI" pad="2"/>
@@ -9610,7 +9620,7 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <technology name="LM"/>
 </technologies>
 </device>
-<device name="T" package="TO220H">
+<device name="T" package="TO220-AB-H">
 <connects>
 <connect gate="A1" pin="ADJ" pad="1"/>
 <connect gate="A1" pin="VI" pad="3"/>
@@ -9638,7 +9648,7 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <technology name="LM"/>
 </technologies>
 </device>
-<device name="T" package="TO220H">
+<device name="T" package="TO220-AB-H">
 <connects>
 <connect gate="A1" pin="ADJ" pad="1"/>
 <connect gate="A1" pin="VI" pad="2"/>
@@ -11346,7 +11356,7 @@ latched 4/8-channel analog multiplexer</description>
 <technology name="24"/>
 </technologies>
 </device>
-<device name="H" package="TO220H">
+<device name="H" package="TO220-AB-H">
 <connects>
 <connect gate="A" pin="GND" pad="2"/>
 <connect gate="A" pin="VI" pad="1"/>

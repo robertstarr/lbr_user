@@ -138,101 +138,67 @@ grid 2.3 mm</description>
 <rectangle x1="-0.889" y1="-0.381" x2="0.889" y2="0" layer="51"/>
 <rectangle x1="1.397" y1="-0.381" x2="3.175" y2="0" layer="51"/>
 </package>
-<package name="TO220AH">
-<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.2032" layer="51"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="51"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="51"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="51"/>
+<package name="TO220-AB-H">
+<description>&lt;b&gt;TO-220 AB (2.54mm lead pitch, 3 leads, exposed pad, horizontal, 17.5mm lead-to-hole)&lt;/b&gt;&lt;p&gt;
+Flange mounted header. 2.54mm lead pitch, 3 leads, exposed pad, horizontal, 17.5mm lead-to-hole. JEDEC TO-220K, variation AB.
+&lt;p/&gt;
+Also known as SOT78.</description>
 <circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="B" x="-2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="C" x="0" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="E" x="2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<text x="-3.81" y="5.207" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<circle x="0" y="11.176" radius="2.921" width="0" layer="42"/>
+<circle x="0" y="11.176" radius="2.921" width="0" layer="43"/>
+<hole x="0" y="11.176" drill="3.302"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<rectangle x1="-3.175" y1="-3.81" x2="-1.905" y2="-1.27" layer="21"/>
+<rectangle x1="-2.921" y1="-6.35" x2="-2.159" y2="-4.445" layer="51"/>
+<rectangle x1="-2.921" y1="-4.445" x2="-2.159" y2="-3.81" layer="21"/>
+<rectangle x1="-0.635" y1="-3.81" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="-0.381" y1="-6.35" x2="0.381" y2="-4.445" layer="51"/>
+<rectangle x1="-0.381" y1="-4.445" x2="0.381" y2="-3.81" layer="21"/>
+<rectangle x1="1.905" y1="-3.81" x2="3.175" y2="-1.27" layer="21"/>
+<rectangle x1="2.159" y1="-6.35" x2="2.921" y2="-4.445" layer="51"/>
+<rectangle x1="2.159" y1="-4.445" x2="2.921" y2="-3.81" layer="21"/>
+<text x="-5.461" y="-1.27" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.064" layer="51"/>
-<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.064" layer="51"/>
-<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.064" layer="51"/>
-<rectangle x1="-3.175" y1="-4.064" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="-0.635" y1="-4.064" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-4.064" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-2.921" y1="-6.604" x2="-2.159" y2="-4.699" layer="51"/>
-<rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
-<rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
-<hole x="0" y="11.176" drill="3.048"/>
-</package>
-<package name="TO220AV">
-<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.2032" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.2032" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.2032" layer="21"/>
-<circle x="-4.4958" y="-3.7084" radius="0.254" width="0" layer="21"/>
-<pad name="B" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="C" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="E" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="-6.0452" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
-<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
-<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
-<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
-<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
-<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
-<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
-</package>
-<package name="TO220AHS">
-<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
 <wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
 <wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
 <wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
 <wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
 <wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
 <wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="B" x="-2.54" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<pad name="C" x="0" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<pad name="E" x="2.54" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<text x="-2.54" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-3.175" y1="-2.159" x2="-1.905" y2="-1.27" layer="51"/>
-<rectangle x1="-3.175" y1="-3.81" x2="-1.905" y2="-2.159" layer="51"/>
-<rectangle x1="-0.635" y1="-2.159" x2="0.635" y2="-1.27" layer="51"/>
-<rectangle x1="1.905" y1="-2.159" x2="3.175" y2="-1.27" layer="51"/>
-<rectangle x1="-0.635" y1="-3.81" x2="0.635" y2="-2.159" layer="51"/>
-<rectangle x1="1.905" y1="-3.81" x2="3.175" y2="-2.159" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
+<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
+</package>
+<package name="TO220-AB">
+<description>&lt;b&gt;TO-220 AB (2.54mm lead pitch, 3 leads, exposed pad, vertical)&lt;/b&gt;&lt;p&gt;
+Flange mounted header. 2.54mm lead pitch, 3 leads, exposed pad, vertical. JEDEC TO-220K, variation AB.
+
+&lt;p/&gt;
+Also known as SOT78.</description>
+<circle x="-4.4958" y="-3.7084" radius="0.254" width="0" layer="21"/>
+<pad name="1" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<rectangle x1="-5.3" y1="-1.3" x2="-3.6" y2="-0.7" layer="21"/>
+<rectangle x1="-5.3" y1="-0.7" x2="5.3" y2="0" layer="21"/>
+<rectangle x1="-3.6" y1="-1.3" x2="3.6" y2="-0.7" layer="51"/>
+<rectangle x1="3.6" y1="-1.3" x2="5.3" y2="-0.7" layer="21"/>
+<text x="-5.08" y="-7.62" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-5.08" y="-6.0452" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.2032" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.2032" layer="21"/>
 </package>
 <package name="TO3/A">
 <description>&lt;b&gt;Metal Can Package&lt;/b&gt;</description>
@@ -553,44 +519,6 @@ grid 2.54 mm</description>
 <rectangle x1="-0.889" y1="-2.794" x2="0.889" y2="-2.286" layer="51"/>
 <rectangle x1="1.651" y1="-2.794" x2="3.429" y2="-2.286" layer="51"/>
 </package>
-<package name="BUZ71H">
-<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="G" x="-2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="D" x="0" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="S" x="2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<text x="-2.54" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.81" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.064" layer="21"/>
-<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.064" layer="21"/>
-<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.064" layer="21"/>
-<rectangle x1="-3.175" y1="-4.064" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="-0.635" y1="-4.064" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-4.064" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-2.921" y1="-6.604" x2="-2.159" y2="-4.699" layer="51"/>
-<rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
-<rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
-</package>
 <package name="BD679V">
 <description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
 grid 2.3 mm</description>
@@ -898,102 +826,6 @@ grid 5.45 mm</description>
 <rectangle x1="4.826" y1="-8.128" x2="6.096" y2="-6.35" layer="51"/>
 <rectangle x1="4.826" y1="-10.287" x2="6.096" y2="-8.128" layer="51"/>
 <hole x="0" y="10.16" drill="4.1148"/>
-</package>
-<package name="TO220BH">
-<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="G" x="-2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="D" x="0" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="S" x="2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<text x="-3.81" y="5.207" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.064" layer="51"/>
-<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.064" layer="51"/>
-<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.064" layer="51"/>
-<rectangle x1="-3.175" y1="-4.064" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="-0.635" y1="-4.064" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-4.064" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-2.921" y1="-6.604" x2="-2.159" y2="-4.699" layer="51"/>
-<rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
-<rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
-</package>
-<package name="TO220BHS">
-<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="G" x="-2.54" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<pad name="D" x="0" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<pad name="S" x="2.54" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<text x="-3.81" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-3.175" y1="-2.159" x2="-1.905" y2="-1.27" layer="51"/>
-<rectangle x1="-3.175" y1="-3.81" x2="-1.905" y2="-2.159" layer="51"/>
-<rectangle x1="-0.635" y1="-2.159" x2="0.635" y2="-1.27" layer="51"/>
-<rectangle x1="1.905" y1="-2.159" x2="3.175" y2="-1.27" layer="51"/>
-<rectangle x1="-0.635" y1="-3.81" x2="0.635" y2="-2.159" layer="51"/>
-<rectangle x1="1.905" y1="-3.81" x2="3.175" y2="-2.159" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
-</package>
-<package name="TO220BV">
-<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.2032" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.2032" layer="21"/>
-<circle x="-4.4958" y="-3.7084" radius="0.254" width="0" layer="21"/>
-<pad name="G" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="D" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="S" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="-6.0452" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-5.334" y1="-0.762" x2="5.334" y2="0" layer="21"/>
-<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.762" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.762" layer="21"/>
-<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.762" layer="51"/>
-<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.762" layer="21"/>
-<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.762" layer="21"/>
-<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.762" layer="51"/>
-<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.762" layer="51"/>
 </package>
 <package name="TO218AV">
 <description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
@@ -1399,50 +1231,6 @@ grid 2.54 mm</description>
 <rectangle x1="-3.429" y1="-2.794" x2="-1.651" y2="-2.286" layer="51"/>
 <rectangle x1="-0.889" y1="-2.794" x2="0.889" y2="-2.286" layer="51"/>
 <rectangle x1="1.651" y1="-2.794" x2="3.429" y2="-2.286" layer="51"/>
-</package>
-<package name="TO220AHV">
-<description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
-<wire x1="4.572" y1="-0.635" x2="3.302" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="3.302" y1="-0.635" x2="1.778" y2="-0.635" width="0.2032" layer="51"/>
-<wire x1="1.778" y1="-0.635" x2="0.762" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="0.762" y1="-0.635" x2="-0.762" y2="-0.635" width="0.2032" layer="51"/>
-<wire x1="-0.762" y1="-0.635" x2="-1.778" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-3.302" y2="-0.635" width="0.2032" layer="21"/>
-<wire x1="-3.302" y1="-0.635" x2="-1.651" y2="-0.635" width="0.2032" layer="51"/>
-<wire x1="-5.207" y1="-1.27" x2="-3.429" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-3.429" y1="-1.27" x2="-1.651" y2="-1.27" width="0.2032" layer="51"/>
-<wire x1="-1.651" y1="-1.27" x2="-0.889" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="-0.889" y1="-1.27" x2="0.889" y2="-1.27" width="0.2032" layer="51"/>
-<wire x1="0.889" y1="-1.27" x2="1.651" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="1.651" y1="-1.27" x2="3.429" y2="-1.27" width="0.2032" layer="51"/>
-<wire x1="3.429" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="B" x="-2.54" y="-1.905" drill="1.016" shape="long" rot="R90"/>
-<pad name="C" x="0" y="-1.905" drill="1.016" shape="long" rot="R90"/>
-<pad name="E" x="2.54" y="-1.905" drill="1.016" shape="long" rot="R90"/>
-<text x="-3.81" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.762" y1="-2.032" x2="0.762" y2="-1.27" layer="51"/>
-<rectangle x1="2.032" y1="-2.032" x2="3.429" y2="-1.27" layer="51"/>
-<rectangle x1="-3.429" y1="-1.905" x2="-2.032" y2="-1.27" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
 </package>
 <package name="TO220AHH">
 <description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
@@ -2872,11 +2660,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="G$1" symbol="MFNS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220BV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2999,11 +2787,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="G$1" symbol="MFNS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220BV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3017,11 +2805,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="G$1" symbol="MFNS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220BV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3073,21 +2861,21 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220AV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="1"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="_H" package="TO220AH">
+<device name="_H" package="TO220-AB-H">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="1"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3101,21 +2889,21 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220AV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="1"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-H" package="TO220AH">
+<device name="-H" package="TO220-AB-H">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="1"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3129,11 +2917,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="G$1" symbol="MFNS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220BV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3221,11 +3009,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="1" symbol="MFN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220BV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="2"/>
+<connect gate="1" pin="G" pad="1"/>
+<connect gate="1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3239,21 +3027,21 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="1" symbol="MFN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="BV" package="TO220BV">
+<device name="BV" package="TO220-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="2"/>
+<connect gate="1" pin="G" pad="1"/>
+<connect gate="1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="BH" package="TO220BH">
+<device name="BH" package="TO220-AB-H">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="2"/>
+<connect gate="1" pin="G" pad="1"/>
+<connect gate="1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3267,11 +3055,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="1" symbol="MFP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220BV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="2"/>
+<connect gate="1" pin="G" pad="1"/>
+<connect gate="1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3285,11 +3073,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220AV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="1"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3303,21 +3091,21 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220AV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="1"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="_H" package="TO220AH">
+<device name="_H" package="TO220-AB-H">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="1"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3331,11 +3119,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="1" symbol="N-DAR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220AH">
+<device name="" package="TO220-AB-H">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="1"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3349,11 +3137,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="1" symbol="P-DAR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220AH">
+<device name="" package="TO220-AB-H">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="1"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3517,11 +3305,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="T" symbol="MFNS" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220BV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="T" pin="D" pad="D"/>
-<connect gate="T" pin="G" pad="G"/>
-<connect gate="T" pin="S" pad="S"/>
+<connect gate="T" pin="D" pad="2"/>
+<connect gate="T" pin="G" pad="1"/>
+<connect gate="T" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3610,21 +3398,21 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="G$1" symbol="MFN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="TO220BV" package="TO220BV">
+<device name="TO220BV" package="TO220-AB">
 <connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="TO220BH" package="TO220BH">
+<device name="TO220BH" package="TO220-AB-H">
 <connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3638,21 +3426,21 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <gate name="G$1" symbol="MFP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="TO220BH" package="TO220BH">
+<device name="TO220BH" package="TO220-AB-H">
 <connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="TO220BV" package="TO220BV">
+<device name="TO220BV" package="TO220-AB">
 <connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3750,11 +3538,11 @@ Small outline package. Lead pitch 1.27mm, body width 3.90mm. JEDEC MS-012F. Vari
 <technology name=""/>
 </technologies>
 </device>
-<device name="" package="TO220BV">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="G$1" pin="D" pad="D"/>
-<connect gate="G$1" pin="G" pad="G"/>
-<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

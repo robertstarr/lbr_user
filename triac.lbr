@@ -74,42 +74,45 @@
 <description>&lt;b&gt;Thyristors, Triacs, Trigger Diodes&lt;/b&gt;&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TO220DL">
+<package name="TO220-AB-H">
+<description>&lt;b&gt;TO-220 AB (2.54mm lead pitch, 3 leads, exposed pad, horizontal, 17.5mm lead-to-hole)&lt;/b&gt;&lt;p&gt;
+Flange mounted header. 2.54mm lead pitch, 3 leads, exposed pad, horizontal, 17.5mm lead-to-hole. JEDEC TO-220K, variation AB.
+&lt;p/&gt;
+Also known as SOT78.</description>
+<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
+<circle x="0" y="11.176" radius="2.921" width="0" layer="42"/>
+<circle x="0" y="11.176" radius="2.921" width="0" layer="43"/>
+<hole x="0" y="11.176" drill="3.302"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<rectangle x1="-3.175" y1="-3.81" x2="-1.905" y2="-1.27" layer="21"/>
+<rectangle x1="-2.921" y1="-6.35" x2="-2.159" y2="-4.445" layer="51"/>
+<rectangle x1="-2.921" y1="-4.445" x2="-2.159" y2="-3.81" layer="21"/>
+<rectangle x1="-0.635" y1="-3.81" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="-0.381" y1="-6.35" x2="0.381" y2="-4.445" layer="51"/>
+<rectangle x1="-0.381" y1="-4.445" x2="0.381" y2="-3.81" layer="21"/>
+<rectangle x1="1.905" y1="-3.81" x2="3.175" y2="-1.27" layer="21"/>
+<rectangle x1="2.159" y1="-6.35" x2="2.921" y2="-4.445" layer="51"/>
+<rectangle x1="2.159" y1="-4.445" x2="2.921" y2="-3.81" layer="21"/>
+<text x="-5.461" y="-1.27" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
 <wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
 <wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
 <wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
 <wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="A1" x="-2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="A2" x="0" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="G" x="2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<text x="-3.81" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.445" y="7.874" size="1.016" layer="21" ratio="18">A17,5mm</text>
-<rectangle x1="-0.635" y1="-4.445" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="-3.175" y1="-4.445" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-4.445" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-2.921" y1="-6.477" x2="-2.159" y2="-4.699" layer="51"/>
-<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.445" layer="21"/>
-<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.445" layer="21"/>
-<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.445" layer="21"/>
-<rectangle x1="-0.381" y1="-6.477" x2="0.381" y2="-4.699" layer="51"/>
-<rectangle x1="2.159" y1="-6.477" x2="2.921" y2="-4.699" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
+<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
+<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.2032" layer="21"/>
+<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
 </package>
 <package name="TIC225S">
 <wire x1="4.826" y1="-4.318" x2="5.08" y2="-4.064" width="0.2032" layer="21"/>
@@ -132,26 +135,27 @@
 <rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.635" layer="51"/>
 <rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.635" layer="51"/>
 </package>
-<package name="TO220DS">
-<wire x1="4.826" y1="-4.318" x2="5.08" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="4.826" y1="-4.318" x2="-4.826" y2="-4.318" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-4.064" x2="-4.826" y2="-4.318" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="-1.143" x2="5.08" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-4.064" x2="-5.08" y2="-1.143" width="0.2032" layer="21"/>
-<circle x="-4.6228" y="-3.7084" radius="0.254" width="0" layer="21"/>
-<pad name="A1" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="A2" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="G" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="-6.0452" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<package name="TO220-AB">
+<description>&lt;b&gt;TO-220 AB (2.54mm lead pitch, 3 leads, exposed pad, vertical)&lt;/b&gt;&lt;p&gt;
+Flange mounted header. 2.54mm lead pitch, 3 leads, exposed pad, vertical. JEDEC TO-220K, variation AB.
+
+&lt;p/&gt;
+Also known as SOT78.</description>
+<circle x="-4.4958" y="-3.7084" radius="0.254" width="0" layer="21"/>
+<pad name="1" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
+<rectangle x1="-5.3" y1="-1.3" x2="-3.6" y2="-0.7" layer="21"/>
+<rectangle x1="-5.3" y1="-0.7" x2="5.3" y2="0" layer="21"/>
+<rectangle x1="-3.6" y1="-1.3" x2="3.6" y2="-0.7" layer="51"/>
+<rectangle x1="3.6" y1="-1.3" x2="5.3" y2="-0.7" layer="21"/>
 <text x="-5.08" y="-7.62" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-5.334" y1="-0.635" x2="5.334" y2="0" layer="21"/>
-<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.635" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.635" layer="21"/>
-<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.635" layer="21"/>
-<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.635" layer="21"/>
-<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.635" layer="51"/>
-<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.635" layer="51"/>
-<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.635" layer="51"/>
+<text x="-5.08" y="-6.0452" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-4.953" y1="-4.064" x2="-4.699" y2="-4.318" width="0.2032" layer="21"/>
+<wire x1="-4.953" y1="-4.064" x2="-5.08" y2="-1.143" width="0.2032" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="4.953" y2="-4.064" width="0.2032" layer="21"/>
+<wire x1="4.699" y1="-4.318" x2="-4.699" y2="-4.318" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="-1.143" x2="4.953" y2="-4.064" width="0.2032" layer="21"/>
 </package>
 <package name="TIC106S">
 <wire x1="4.826" y1="-4.318" x2="5.08" y2="-4.064" width="0.2032" layer="21"/>
@@ -240,132 +244,6 @@
 <rectangle x1="4.826" y1="-8.128" x2="6.096" y2="-6.35" layer="21"/>
 <rectangle x1="4.826" y1="-10.287" x2="6.096" y2="-8.128" layer="51"/>
 <hole x="0" y="10.16" drill="4.1148"/>
-</package>
-<package name="TO220CL">
-<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="C" x="-2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="A" x="0" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<pad name="G" x="2.54" y="-6.35" drill="1.1176" shape="long" rot="R90"/>
-<text x="-3.81" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.81" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.445" y="7.874" size="1.016" layer="21" ratio="18">A17,5mm</text>
-<rectangle x1="-0.635" y1="-4.445" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="-3.175" y1="-4.445" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-4.445" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.445" layer="21"/>
-<rectangle x1="-2.921" y1="-6.477" x2="-2.159" y2="-4.699" layer="51"/>
-<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.445" layer="21"/>
-<rectangle x1="-0.381" y1="-6.477" x2="0.381" y2="-4.699" layer="51"/>
-<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.445" layer="21"/>
-<rectangle x1="2.159" y1="-6.477" x2="2.921" y2="-4.699" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
-</package>
-<package name="TO220CS">
-<wire x1="5.08" y1="-1.143" x2="5.08" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="4.826" y1="-4.318" x2="5.08" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="4.826" y1="-4.318" x2="-4.826" y2="-4.318" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-4.064" x2="-4.826" y2="-4.318" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-4.064" x2="-5.08" y2="-1.143" width="0.2032" layer="21"/>
-<circle x="-4.6228" y="-3.7084" radius="0.254" width="0" layer="21"/>
-<pad name="C" x="-2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="A" x="0" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<pad name="G" x="2.54" y="-2.54" drill="1.016" shape="long" rot="R90"/>
-<text x="-5.08" y="-6.0452" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-5.08" y="-7.62" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-5.334" y1="-0.635" x2="5.334" y2="0" layer="21"/>
-<rectangle x1="-5.334" y1="-1.27" x2="-3.429" y2="-0.635" layer="21"/>
-<rectangle x1="-1.651" y1="-1.27" x2="-0.889" y2="-0.635" layer="21"/>
-<rectangle x1="0.889" y1="-1.27" x2="1.651" y2="-0.635" layer="21"/>
-<rectangle x1="3.429" y1="-1.27" x2="5.334" y2="-0.635" layer="21"/>
-<rectangle x1="-3.429" y1="-1.27" x2="-1.651" y2="-0.635" layer="51"/>
-<rectangle x1="-0.889" y1="-1.27" x2="0.889" y2="-0.635" layer="51"/>
-<rectangle x1="1.651" y1="-1.27" x2="3.429" y2="-0.635" layer="51"/>
-</package>
-<package name="TO220CLK">
-<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="C" x="-2.54" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<pad name="A" x="0" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<pad name="G" x="2.54" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<text x="-3.81" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.445" y="7.874" size="1.016" layer="21" ratio="18">A15,2mm</text>
-<rectangle x1="-3.175" y1="-2.159" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="-3.175" y1="-3.937" x2="-1.905" y2="-2.159" layer="51"/>
-<rectangle x1="-0.635" y1="-2.159" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-2.159" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-0.635" y1="-3.937" x2="0.635" y2="-2.159" layer="51"/>
-<rectangle x1="1.905" y1="-3.937" x2="3.175" y2="-2.159" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
-</package>
-<package name="TO220DLK">
-<wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="21"/>
-<wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="21"/>
-<circle x="0" y="11.176" radius="1.8034" width="0.2032" layer="21"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
-<circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="A1" x="-2.54" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<pad name="A2" x="0" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<pad name="G" x="2.54" y="-3.81" drill="1.1176" shape="long" rot="R90"/>
-<text x="-3.81" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.445" y="7.874" size="1.016" layer="21" ratio="18">A15,2mm</text>
-<rectangle x1="-3.175" y1="-2.159" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="-3.175" y1="-3.81" x2="-1.905" y2="-2.159" layer="51"/>
-<rectangle x1="-0.635" y1="-2.159" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-2.159" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-0.635" y1="-3.81" x2="0.635" y2="-2.159" layer="51"/>
-<rectangle x1="1.905" y1="-3.81" x2="3.175" y2="-2.159" layer="51"/>
-<hole x="0" y="11.176" drill="3.302"/>
 </package>
 <package name="TOP3L-1">
 <wire x1="-7.874" y1="-1.778" x2="7.874" y2="-1.778" width="0.2032" layer="21"/>
@@ -1208,11 +1086,11 @@
 <gate name="1" symbol="TRIAC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220DS">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="A1" pad="A1"/>
-<connect gate="1" pin="A2" pad="A2"/>
-<connect gate="1" pin="G" pad="G"/>
+<connect gate="1" pin="A1" pad="1"/>
+<connect gate="1" pin="A2" pad="2"/>
+<connect gate="1" pin="G" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1296,11 +1174,11 @@
 <gate name="1" symbol="THYR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220CS">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="G" pad="G"/>
+<connect gate="1" pin="A" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="G" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1314,11 +1192,11 @@
 <gate name="1" symbol="THYR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220CS">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="G" pad="G"/>
+<connect gate="1" pin="A" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="G" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1404,11 +1282,11 @@
 <gate name="1" symbol="THYR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220CL">
+<device name="" package="TO220-AB-H">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="G" pad="G"/>
+<connect gate="1" pin="A" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="G" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1458,11 +1336,11 @@
 <gate name="1" symbol="THYR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220CS">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="G" pad="G"/>
+<connect gate="1" pin="A" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="G" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1476,11 +1354,11 @@
 <gate name="1" symbol="THYR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220CS">
+<device name="" package="TO220-AB">
 <connects>
-<connect gate="1" pin="A" pad="A"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="G" pad="G"/>
+<connect gate="1" pin="A" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="G" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1567,11 +1445,11 @@ TRIAC 600V 10A</description>
 <gate name="G$1" symbol="TRIAC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO220DL">
+<device name="" package="TO220-AB-H">
 <connects>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="A1" pad="1"/>
+<connect gate="G$1" pin="A2" pad="2"/>
+<connect gate="G$1" pin="G" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1614,11 +1492,11 @@ Three quadrant high commutation</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="T" package="TO220DS">
+<device name="T" package="TO220-AB">
 <connects>
-<connect gate="G$1" pin="A1" pad="A1"/>
-<connect gate="G$1" pin="A2" pad="A2"/>
-<connect gate="G$1" pin="G" pad="G"/>
+<connect gate="G$1" pin="A1" pad="1"/>
+<connect gate="G$1" pin="A2" pad="2"/>
+<connect gate="G$1" pin="G" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
