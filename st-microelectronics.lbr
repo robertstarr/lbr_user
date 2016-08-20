@@ -1796,20 +1796,26 @@ Thin profile Quad Flat Package. 0.80mm pitch, 1.0mm lead length 10mm length, 10m
 <wire x1="4.9" y1="-4.9" x2="4.9" y2="4.9" width="0.2032" layer="21"/>
 <wire x1="4.9" y1="4.9" x2="-4.9" y2="4.9" width="0.2032" layer="21"/>
 </package>
-<package name="SOT323-5L">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;</description>
-<wire x1="-1.15" y1="-0.55" x2="1.15" y2="-0.55" width="0.2032" layer="51"/>
-<wire x1="1.15" y1="-0.55" x2="1.15" y2="0.55" width="0.2032" layer="21"/>
-<wire x1="1.15" y1="0.55" x2="-1.15" y2="0.55" width="0.2032" layer="51"/>
-<wire x1="-1.15" y1="0.55" x2="-1.15" y2="-0.55" width="0.2032" layer="21"/>
-<circle x="-0.7" y="-0.15" radius="0.1802" width="0" layer="21"/>
-<smd name="1" x="-0.7" y="-0.95" dx="1" dy="0.4" layer="1" rot="R90"/>
-<smd name="2" x="0" y="-0.95" dx="1" dy="0.4" layer="1" rot="R90"/>
-<smd name="3" x="0.7" y="-0.95" dx="1" dy="0.4" layer="1" rot="R90"/>
-<smd name="4" x="0.7" y="0.95" dx="1" dy="0.4" layer="1" rot="R90"/>
-<smd name="5" x="-0.7" y="0.95" dx="1" dy="0.4" layer="1" rot="R90"/>
-<text x="1.4288" y="0.3175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="1.4288" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<package name="SC70-5">
+<description>&lt;b&gt;SC70-5 (TSSOT, 0.65mm pitch, 1.25mm body, 5 leads)&lt;/b&gt;&lt;p&gt;
+Thin shrink small outline transistor package (also known as SOT-353). 0.65mm pitch, 1.25mm body width, 5 leads. JEDEC MO-203A, variation AA.</description>
+<circle x="-0.65" y="-0.25" radius="0.15" width="0" layer="21"/>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
+<rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<smd name="1" x="-0.65" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="3" x="0.65" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="4" x="0.65" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="5" x="-0.65" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<text x="-1.2" y="-2.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.2" y="1.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.2032" layer="21"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.2032" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.2032" layer="51"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.2032" layer="21"/>
 </package>
 <package name="DIP-300-8">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
@@ -5967,7 +5973,7 @@ FOR USB DOWNSTREAM PORTS</description>
 <gate name="G$1" symbol="USBDFXXW5" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT323-5L">
+<device name="" package="SC70-5">
 <connects>
 <connect gate="G$1" pin="D+IN" pad="1"/>
 <connect gate="G$1" pin="D+OUT" pad="5"/>

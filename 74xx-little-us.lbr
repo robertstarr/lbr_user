@@ -108,26 +108,30 @@ TinyLogic(R) from FAIRCHILD Semiconductor TM
 </package>
 <package name="SOT23-5">
 <description>&lt;b&gt;TSSOP (SSOT, 0.95mm pitch, 1.6mm body, 5 leads)&lt;/b&gt;&lt;p&gt;
-Thin shrink small outline transistor package (SSOT). 0.95mm pitch, 1.6mm body width, 5 leads. JEDEC MO-193E, variation AB, TR-PDSO-G.</description>
-<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2032" layer="51"/>
-<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.2032" layer="51"/>
-<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2032" layer="51"/>
-<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.2032" layer="51"/>
+Thin shrink small outline transistor package (SSOT). 0.95mm pitch, 1.6mm body width, 5 leads.
+&lt;p/&gt;
+1.1mm max height: JEDEC MO-193E, variation AB, TR-PDSO-G.
+&lt;p/&gt;
+1.45mm max height: JEDEC MO-178E, variation AB, R-PDSO-G.</description>
 <circle x="-1.1" y="-0.45" radius="0.1524" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="2" x="0" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="3" x="0.95" y="-1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="4" x="0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<smd name="5" x="-0.95" y="1.3" dx="0.55" dy="1.2" layer="1"/>
-<text x="-1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-1.15" y1="-1.4" x2="-0.75" y2="-0.8" layer="51"/>
 <rectangle x1="-1.15" y1="0.8" x2="-0.75" y2="1.4" layer="51"/>
-<rectangle x1="0.75" y1="0.8" x2="1.15" y2="1.4" layer="51"/>
 <rectangle x1="-0.2" y1="-1.4" x2="0.2" y2="-0.8" layer="51"/>
 <rectangle x1="0.75" y1="-1.4" x2="1.15" y2="-0.8" layer="51"/>
+<rectangle x1="0.75" y1="0.8" x2="1.15" y2="1.4" layer="51"/>
+<smd name="1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="3" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="4" x="0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="5" x="-0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2032" layer="51"/>
 <wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.2032" layer="51"/>
 <wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2032" layer="51"/>
 </package>
 <package name="MAC06A">
 <description>&lt;b&gt;6-Lead MicroPak, 1.0mm Wide&lt;/b&gt;&lt;p&gt;
@@ -176,60 +180,57 @@ Source: http://focus.ti.com/lit/ds/symlink/sn74lvc1g3157</description>
 <rectangle x1="-0.675" y1="-0.4" x2="-0.225" y2="-0.175" layer="51"/>
 <rectangle x1="-0.3" y1="-0.375" x2="-0.225" y2="-0.175" layer="21"/>
 </package>
-<package name="DBV_R-PDSO-G6">
-<description>&lt;b&gt;DBV (R-PDSO-G6)&lt;/b&gt; PLASTIC SMALL-OUTLINE PACKAGE&lt;p&gt;
-SOT (SOT-23) - DBV&lt;br&gt;
-Source: http://focus.ti.com/lit/ds/symlink/sn74lvc1g3157.</description>
-<wire x1="0" y1="-1.29" x2="0" y2="-1.3" width="0.01" layer="21"/>
-<wire x1="1.47" y1="0.8" x2="1.47" y2="-0.8" width="0.127" layer="21"/>
-<wire x1="1.47" y1="-0.8" x2="-1.47" y2="-0.8" width="0.127" layer="51"/>
-<wire x1="-1.47" y1="-0.8" x2="-1.47" y2="0.8" width="0.127" layer="21"/>
-<wire x1="-1.47" y1="0.8" x2="1.47" y2="0.8" width="0.127" layer="51"/>
-<circle x="-0.95" y="-0.3" radius="0.2236" width="0" layer="21"/>
-<smd name="1" x="-0.95" y="-1.29" dx="0.69" dy="0.99" layer="1" stop="no"/>
-<smd name="2" x="0" y="-1.29" dx="0.69" dy="0.99" layer="1" stop="no"/>
-<smd name="3" x="0.95" y="-1.29" dx="0.69" dy="0.99" layer="1" stop="no"/>
-<smd name="4" x="0.95" y="1.3" dx="0.69" dy="0.99" layer="1" stop="no"/>
-<smd name="6" x="-0.95" y="1.3" dx="0.69" dy="0.99" layer="1" stop="no"/>
-<smd name="5" x="0" y="1.3" dx="0.69" dy="0.99" layer="1" stop="no"/>
-<text x="-1.905" y="-0.9525" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.54" y="-0.9525" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.11" y1="0.8" x2="-0.78" y2="1.43" layer="51"/>
-<rectangle x1="0.79" y1="0.8" x2="1.12" y2="1.42" layer="51"/>
-<rectangle x1="-1.11" y1="-1.42" x2="-0.78" y2="-0.8" layer="51"/>
-<rectangle x1="-0.16" y1="-1.42" x2="0.17" y2="-0.8" layer="51"/>
-<rectangle x1="0.79" y1="-1.42" x2="1.12" y2="-0.8" layer="51"/>
-<rectangle x1="-0.16" y1="0.8" x2="0.17" y2="1.42" layer="51"/>
-<rectangle x1="-1.35" y1="0.75" x2="-0.55" y2="1.85" layer="29"/>
-<rectangle x1="-0.4" y1="0.75" x2="0.4" y2="1.85" layer="29"/>
-<rectangle x1="0.55" y1="0.75" x2="1.35" y2="1.85" layer="29"/>
-<rectangle x1="0.55" y1="-1.85" x2="1.35" y2="-0.75" layer="29" rot="R180"/>
-<rectangle x1="-0.4" y1="-1.85" x2="0.4" y2="-0.75" layer="29" rot="R180"/>
-<rectangle x1="-1.35" y1="-1.85" x2="-0.55" y2="-0.75" layer="29" rot="R180"/>
+<package name="SOT23-6">
+<description>&lt;b&gt;TSSOP (SSOT, 0.95mm pitch, 1.6mm body, 6 leads)&lt;/b&gt;&lt;p&gt;
+Thin shrink small outline transistor package (SSOT). 0.95mm pitch, 1.6mm body width, 6 leads. 
+&lt;p/&gt;
+1.1mm max height: JEDEC MO-193E, variation AA, TR-PDSO-G.
+&lt;p/&gt;
+1.45mm max height: JEDEC MO-178E, variation AA, R-PDSO-G.</description>
+<circle x="-1.1" y="-0.45" radius="0.1524" width="0" layer="21"/>
+<rectangle x1="-1.15" y1="-1.4" x2="-0.75" y2="-0.8" layer="51"/>
+<rectangle x1="-1.15" y1="0.8" x2="-0.75" y2="1.4" layer="51"/>
+<rectangle x1="-0.2" y1="-1.4" x2="0.2" y2="-0.8" layer="51"/>
+<rectangle x1="-0.2" y1="0.8" x2="0.2" y2="1.4" layer="51"/>
+<rectangle x1="0.75" y1="-1.4" x2="1.15" y2="-0.8" layer="51"/>
+<rectangle x1="0.75" y1="0.8" x2="1.15" y2="1.4" layer="51"/>
+<smd name="1" x="-0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="2" x="0" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="3" x="0.95" y="-1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="4" x="0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="5" x="0" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<smd name="6" x="-0.95" y="1.2" dx="0.55" dy="0.8" layer="1"/>
+<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.45" y1="-0.8" x2="-1.45" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="-1.45" y1="-0.65" x2="-1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="-1.45" y1="0.8" x2="1.45" y2="0.8" width="0.2032" layer="51"/>
+<wire x1="1.45" y1="-0.8" x2="-1.45" y2="-0.8" width="0.2032" layer="51"/>
+<wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.2032" layer="21"/>
+<wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2032" layer="51"/>
 </package>
-<package name="DCK_R-PDSO-G6">
-<description>&lt;b&gt;DCK (R-PDSO-G6)&lt;/b&gt; PLASTIC SMALL-OUTLINE PACKAGE&lt;p&gt;
-SOT (SC-70) - DCK&lt;br&gt;
-Source: http://focus.ti.com/lit/ds/symlink/sn74lvc1g3157.</description>
-<wire x1="1.05" y1="0.55" x2="-1.05" y2="0.55" width="0.127" layer="51"/>
-<wire x1="-1.05" y1="0.55" x2="-1.05" y2="-0.55" width="0.127" layer="21"/>
-<wire x1="-1.05" y1="-0.55" x2="1.05" y2="-0.55" width="0.127" layer="51"/>
-<wire x1="1.05" y1="-0.55" x2="1.05" y2="0.55" width="0.127" layer="21"/>
-<circle x="-0.65" y="-0.2" radius="0.15" width="0" layer="21"/>
-<smd name="1" x="-0.65" y="-0.85" dx="0.4" dy="0.7" layer="1"/>
-<smd name="2" x="0" y="-0.85" dx="0.4" dy="0.7" layer="1"/>
-<smd name="3" x="0.65" y="-0.85" dx="0.4" dy="0.7" layer="1"/>
-<smd name="4" x="0.65" y="0.85" dx="0.4" dy="0.7" layer="1"/>
-<smd name="6" x="-0.65" y="0.85" dx="0.4" dy="0.7" layer="1"/>
-<smd name="5" x="0" y="0.85" dx="0.4" dy="0.7" layer="1"/>
-<text x="-1.27" y="-0.635" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.2225" y="-0.635" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.125" y1="-1.05" x2="0.125" y2="-0.6" layer="51"/>
-<rectangle x1="-0.775" y1="-1.05" x2="-0.525" y2="-0.6" layer="51"/>
-<rectangle x1="0.525" y1="-1.05" x2="0.775" y2="-0.6" layer="51"/>
-<rectangle x1="-0.775" y1="0.6" x2="-0.525" y2="1.05" layer="51"/>
-<rectangle x1="0.525" y1="0.6" x2="0.775" y2="1.05" layer="51"/>
-<rectangle x1="-0.125" y1="0.6" x2="0.125" y2="1.05" layer="51"/>
+<package name="SC70-6">
+<description>&lt;b&gt;SC70-5 (TSSOT, 0.65mm pitch, 1.25mm body, 6 leads)&lt;/b&gt;&lt;p&gt;
+Thin shrink small outline transistor package (also known as SOT363). 0.65mm pitch, 1.25mm body width, 6 leads. JEDEC MO-203A, variation AB.</description>
+<circle x="-0.65" y="-0.15" radius="0.15" width="0" layer="21"/>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
+<rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="-0.15" y1="0.6" x2="0.15" y2="1.1" layer="51"/>
+<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<smd name="1" x="-0.65" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="3" x="0.65" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="4" x="0.65" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="5" x="0" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="6" x="-0.65" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<text x="-1.2" y="-2.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.2" y="1.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.1" y1="-0.525" x2="-1.1" y2="0.525" width="0.2032" layer="21"/>
+<wire x1="-1.1" y1="0.525" x2="1.1" y2="0.525" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="-0.525" x2="-1.1" y2="-0.525" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="0.525" x2="1.1" y2="-0.525" width="0.2032" layer="21"/>
 </package>
 <package name="DRL_R-PDSO-N6">
 <description>&lt;b&gt;DRL (R-PDSO-N6)&lt;/b&gt; PLASTIC SMALL OUTLINE&lt;p&gt;
@@ -446,23 +447,23 @@ Source: http://focus.ti.com/lit/ds/symlink/sn74lvc2g53.pdf</description>
 <package name="SC70-5">
 <description>&lt;b&gt;SC70-5 (TSSOT, 0.65mm pitch, 1.25mm body, 5 leads)&lt;/b&gt;&lt;p&gt;
 Thin shrink small outline transistor package (also known as SOT-353). 0.65mm pitch, 1.25mm body width, 5 leads. JEDEC MO-203A, variation AA.</description>
-<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.2032" layer="51"/>
-<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.2032" layer="21"/>
-<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.2032" layer="51"/>
-<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.2032" layer="21"/>
 <circle x="-0.65" y="-0.25" radius="0.15" width="0" layer="21"/>
-<smd name="4" x="0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
-<smd name="5" x="-0.65" y="0.95" dx="0.4" dy="0.8" layer="1"/>
-<smd name="1" x="-0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
-<smd name="2" x="0" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
-<smd name="3" x="0.65" y="-0.95" dx="0.4" dy="0.8" layer="1"/>
-<text x="-1.2" y="1.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.2" y="-2.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
-<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
 <rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
 <rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
 <rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<smd name="1" x="-0.65" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="2" x="0" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="3" x="0.65" y="-0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="4" x="0.65" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<smd name="5" x="-0.65" y="0.9" dx="0.4" dy="0.6" layer="1"/>
+<text x="-1.2" y="-2.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1.2" y="1.35" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.2032" layer="21"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.2032" layer="51"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.2032" layer="51"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.2032" layer="21"/>
 </package>
 <package name="YEA_R-XBGA-N5">
 <description>&lt;b&gt;YEA (R-XBGA-N5)&lt;/b&gt; DIE-SIZE BALL GRID ARRAY&lt;p&gt;
@@ -1439,7 +1440,7 @@ Source: http://focus.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DBVR" package="DBV_R-PDSO-G6">
+<device name="DBVR" package="SOT23-6">
 <connects>
 <connect gate="G$1" pin="!A!/B" pad="6"/>
 <connect gate="G$1" pin="A" pad="3"/>
@@ -1452,7 +1453,7 @@ Source: http://focus.ti.com/lit/ds/symlink/sn74lvc1g3157.pdf</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="DCKR" package="DCK_R-PDSO-G6">
+<device name="DCKR" package="SC70-6">
 <connects>
 <connect gate="G$1" pin="!A!/B" pad="6"/>
 <connect gate="G$1" pin="A" pad="3"/>
