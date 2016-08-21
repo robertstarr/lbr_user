@@ -691,17 +691,21 @@ NS Package Number SDE06A</description>
 <rectangle x1="0.375" y1="-3.5163" x2="1.125" y2="-1.6875" layer="51"/>
 <rectangle x1="1.875" y1="-3.5163" x2="2.625" y2="-1.6875" layer="51"/>
 </package>
-<package name="TO92">
-<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
+<package name="TO92-AB">
+<description>&lt;b&gt;TO-92 (1.27mm lead pitch, 3 leads, vertical, triangle pad arrangement)&lt;/b&gt;&lt;p&gt;
+Header family flat index. 1.27mm lead pitch, 3 leads, vertical, triangle pad arrangement. JEDEC TO-226G, variation AB.
+&lt;p&gt;
+Also known as SOT54. Formerly standardized as JEDEC TO-92.
+&lt;/p&gt;</description>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
 <wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
 <wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="1" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="3" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
 </package>
 <package name="TO220-5KC">
 <description>&lt;b&gt;TO-220-5&lt;/b&gt;&lt;p&gt;
@@ -2241,11 +2245,11 @@ SIMPLE SWITCHERSynchronous 1MHz 0.75A</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="Z" package="TO92">
+<device name="Z" package="TO92-AB">
 <connects>
-<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="VOUT" pad="2"/>
-<connect gate="G$1" pin="VS" pad="3"/>
+<connect gate="G$1" pin="VS" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
