@@ -78,19 +78,6 @@ www.semiconductors.com;&lt;br&gt;
 www.irf.com&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TO92C">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
-<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="E" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="C" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="B" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="TO72B">
 <description>&lt;b&gt;TO-72&lt;/b&gt;&lt;p&gt;
 grid 2.54 mm</description>
@@ -210,22 +197,23 @@ grid 2.54 mm</description>
 <rectangle x1="-0.889" y1="-2.794" x2="0.889" y2="-2.286" layer="51"/>
 <rectangle x1="1.651" y1="-2.794" x2="3.429" y2="-2.286" layer="51"/>
 </package>
-<package name="SOT54AA">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 5.08 mm</description>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-1.1105" y1="2.1423" x2="1.1105" y2="2.1423" width="0.2032" layer="51" curve="-54.801566" cap="flat"/>
-<wire x1="-2.1254" y1="1.1425" x2="-2.1254" y2="-1.1425" width="0.2032" layer="51" curve="56.520138" cap="flat"/>
-<wire x1="-2.1251" y1="-1.1425" x2="-1.631" y2="-1.778" width="0.2032" layer="21" curve="19.203018" cap="flat"/>
-<wire x1="-2.1254" y1="1.1425" x2="-1.1105" y2="2.1423" width="0.2032" layer="21" curve="-34.339012" cap="flat"/>
-<wire x1="2.1254" y1="-1.1425" x2="2.1254" y2="1.1425" width="0.2032" layer="51" curve="56.520138" cap="flat"/>
-<wire x1="1.631" y1="-1.778" x2="2.1251" y2="-1.1425" width="0.2032" layer="21" curve="19.203018" cap="flat"/>
-<wire x1="1.1105" y1="2.1423" x2="2.1254" y2="1.1425" width="0.2032" layer="21" curve="-34.339012" cap="flat"/>
-<pad name="C" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="B" x="0" y="2.54" drill="0.8128" shape="octagon"/>
-<pad name="E" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.27" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<package name="TO92-AA">
+<description>&lt;b&gt;TO-92 (2.54mm lead pitch, 3 leads, vertical, linear pad arrangement)&lt;/b&gt;&lt;p&gt;
+Header family flat index. 2.54mm lead pitch, 3 leads, vertical, linear pad arrangement. JEDEC TO-226G, variation AA.
+&lt;/p&gt;&lt;p&gt;
+Also known as SOT54. Formerly standardized as JEDEC TO-92.
+&lt;/p&gt;</description>
+<pad name="1" x="-2.54" y="0.02" drill="0.8128" shape="long" rot="R90"/>
+<pad name="2" x="0" y="0.02" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0.02" drill="0.8128" shape="long" rot="R90"/>
+<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-2.4135" y1="-1.1159" x2="-2.095" y2="-1.631" width="0.2032" layer="21" curve="13.038528" cap="flat"/>
+<wire x1="-2.413" y1="1.1359" x2="2.413" y2="1.1359" width="0.2032" layer="21" curve="-129.583345" cap="flat"/>
+<wire x1="-2.413" y1="1.1359" x2="-2.413" y2="-1.1359" width="0.2032" layer="51" curve="50.416655" cap="flat"/>
+<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="2.095" y1="-1.631" x2="2.4247" y2="-1.0918" width="0.2032" layer="21" curve="13.609443" cap="flat"/>
+<wire x1="2.413" y1="-1.1359" x2="2.413" y2="1.1359" width="0.2032" layer="51" curve="50.416655" cap="flat"/>
 </package>
 <package name="TO72I">
 <description>&lt;b&gt;TO-72&lt;/b&gt;&lt;p&gt;
@@ -315,71 +303,6 @@ grid 2.54 mm</description>
 <rectangle x1="-0.635" y1="2.794" x2="0.635" y2="3.048" layer="21"/>
 <rectangle x1="-0.508" y1="2.413" x2="0.508" y2="2.794" layer="21"/>
 <hole x="0" y="0" drill="5.08"/>
-</package>
-<package name="BC337">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.2032" layer="51" curve="-47.363718" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="-0.9689" y2="2.2098" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="0.9689" y1="2.2098" x2="1.631" y2="-1.778" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<pad name="C" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="B" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="E" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="BC877">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.2032" layer="51" curve="-47.363718" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="-0.9689" y2="2.2098" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="0.9689" y1="2.2098" x2="1.631" y2="-1.778" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<pad name="E" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="C" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="B" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="SOT54B">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.2032" layer="51" curve="-47.363718" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="-0.9689" y2="2.2098" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="0.9689" y1="2.2098" x2="1.631" y2="-1.778" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<pad name="C" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="E" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="B" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-</package>
-<package name="SOT54D">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.2032" layer="51" curve="-47.363718" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="-0.9689" y2="2.2098" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="0.9689" y1="2.2098" x2="1.631" y2="-1.778" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<pad name="E" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="C" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="B" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-</package>
-<package name="SOT54C">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.2032" layer="51" curve="-47.363718" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="-0.9689" y2="2.2098" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="0.9689" y1="2.2098" x2="1.631" y2="-1.778" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<pad name="G" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="S" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="D" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 </package>
 <package name="TO72A">
 <description>&lt;b&gt;TO-72&lt;/b&gt;&lt;p&gt;
@@ -817,84 +740,6 @@ grid 2.54 mm</description>
 <text x="3.175" y="0" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="3.175" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO92D">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
-<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="E" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="B" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="C" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="TO92B">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
-<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="B" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="E" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="C" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="TO92E">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 3.54 mm</description>
-<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
-<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="B1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="E" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="B2" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="TO92F">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
-<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="S" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="G" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="D" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="TO92G">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
-<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="D" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="S" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="G" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="TO92R">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
-<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="G" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="S" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="D" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
 <package name="TO72G">
 <description>&lt;b&gt;TO-72&lt;/b&gt;&lt;p&gt;
 grid 2.54 mm</description>
@@ -1062,65 +907,21 @@ grid 2.54 mm</description>
 <text x="3.175" y="0" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="3.175" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO92">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
+<package name="TO92-AB">
+<description>&lt;b&gt;TO-92 (1.27mm lead pitch, 3 leads, vertical, triangle pad arrangement)&lt;/b&gt;&lt;p&gt;
+Header family flat index. 1.27mm lead pitch, 3 leads, vertical, triangle pad arrangement. JEDEC TO-226G, variation AB.
+&lt;p&gt;
+Also known as SOT54. Formerly standardized as JEDEC TO-92.
+&lt;/p&gt;</description>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
 <wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
 <wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="1" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="3" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="SOT54A">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.2032" layer="51" curve="-47.363718" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="-0.9689" y2="2.2098" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="0.9689" y1="2.2098" x2="1.631" y2="-1.778" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<pad name="C" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="B" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="E" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.27" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-</package>
-<package name="SOT54BB">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 4 mm</description>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-1.1105" y1="2.1423" x2="1.1105" y2="2.1423" width="0.2032" layer="51" curve="-54.801566" cap="flat"/>
-<wire x1="-2.1254" y1="1.1425" x2="-2.1254" y2="-1.1425" width="0.2032" layer="51" curve="56.520138" cap="flat"/>
-<wire x1="-2.1251" y1="-1.1425" x2="-1.631" y2="-1.778" width="0.2032" layer="21" curve="19.203018" cap="flat"/>
-<wire x1="-2.1254" y1="1.1425" x2="-1.1105" y2="2.1423" width="0.2032" layer="21" curve="-34.339012" cap="flat"/>
-<wire x1="2.1254" y1="-1.1425" x2="2.1254" y2="1.1425" width="0.2032" layer="51" curve="56.520138" cap="flat"/>
-<wire x1="1.631" y1="-1.778" x2="2.1251" y2="-1.1425" width="0.2032" layer="21" curve="19.203018" cap="flat"/>
-<wire x1="1.1105" y1="2.1423" x2="2.1254" y2="1.1425" width="0.2032" layer="21" curve="-34.339012" cap="flat"/>
-<pad name="C" x="-2" y="0" drill="0.8128" shape="octagon"/>
-<pad name="E" x="0" y="2" drill="0.8128" shape="octagon"/>
-<pad name="B" x="2" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.27" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-</package>
-<package name="SOT54CA">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 5.08 mm</description>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-1.1105" y1="2.1423" x2="1.1105" y2="2.1423" width="0.2032" layer="51" curve="-54.801566" cap="flat"/>
-<wire x1="-2.1254" y1="1.1425" x2="-2.1254" y2="-1.1425" width="0.2032" layer="51" curve="56.520138" cap="flat"/>
-<wire x1="-2.1251" y1="-1.1425" x2="-1.631" y2="-1.778" width="0.2032" layer="21" curve="19.203018" cap="flat"/>
-<wire x1="-2.1254" y1="1.1425" x2="-1.1105" y2="2.1423" width="0.2032" layer="21" curve="-34.339012" cap="flat"/>
-<wire x1="2.1254" y1="-1.1425" x2="2.1254" y2="1.1425" width="0.2032" layer="51" curve="56.520138" cap="flat"/>
-<wire x1="1.631" y1="-1.778" x2="2.1251" y2="-1.1425" width="0.2032" layer="21" curve="19.203018" cap="flat"/>
-<wire x1="1.1105" y1="2.1423" x2="2.1254" y2="1.1425" width="0.2032" layer="21" curve="-34.339012" cap="flat"/>
-<pad name="G" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="S" x="0" y="2.54" drill="0.8128" shape="octagon"/>
-<pad name="D" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.27" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
 </package>
 <package name="SOT54DA">
 <description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
@@ -1180,57 +981,6 @@ grid 4 mm</description>
 <text x="1.6002" y="0.6604" size="1.016" layer="21" ratio="18">S</text>
 <text x="1.6002" y="-1.8796" size="1.016" layer="21" ratio="18">G</text>
 </package>
-<package name="SOT54AB">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 4 mm</description>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-1.2252" y1="2.0788" x2="1.2252" y2="2.0788" width="0.2032" layer="51" curve="-61.028365" cap="flat"/>
-<wire x1="-2.0638" y1="1.2504" x2="-2.0638" y2="-1.2504" width="0.2032" layer="51" curve="62.421053" cap="flat"/>
-<wire x1="-2.0638" y1="-1.2504" x2="-1.6313" y2="-1.7781" width="0.2032" layer="21" curve="16.254995" cap="flat"/>
-<wire x1="-2.0638" y1="1.2504" x2="-1.2252" y2="2.0788" width="0.2032" layer="21" curve="-28.276487" cap="flat"/>
-<wire x1="2.0638" y1="-1.2504" x2="2.0638" y2="1.2504" width="0.2032" layer="51" curve="62.421053" cap="flat"/>
-<wire x1="1.631" y1="-1.778" x2="2.0634" y2="-1.2504" width="0.2032" layer="21" curve="16.252389" cap="flat"/>
-<wire x1="1.2252" y1="2.0788" x2="2.0638" y2="1.2504" width="0.2032" layer="21" curve="-28.276487" cap="flat"/>
-<pad name="C" x="-2" y="0" drill="0.8128" shape="octagon"/>
-<pad name="B" x="0" y="2" drill="0.8128" shape="octagon"/>
-<pad name="E" x="2" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.27" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-</package>
-<package name="SOT54BA">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 5.08 mm</description>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-1.2252" y1="2.0788" x2="1.2252" y2="2.0788" width="0.2032" layer="51" curve="-61.028365" cap="flat"/>
-<wire x1="-2.0638" y1="1.2504" x2="-2.0638" y2="-1.2504" width="0.2032" layer="51" curve="62.421053" cap="flat"/>
-<wire x1="-2.0638" y1="-1.2504" x2="-1.6313" y2="-1.7781" width="0.2032" layer="21" curve="16.254995" cap="flat"/>
-<wire x1="-2.0638" y1="1.2504" x2="-1.2252" y2="2.0788" width="0.2032" layer="21" curve="-28.276487" cap="flat"/>
-<wire x1="2.0638" y1="-1.2504" x2="2.0638" y2="1.2504" width="0.2032" layer="51" curve="62.421053" cap="flat"/>
-<wire x1="1.631" y1="-1.778" x2="2.0634" y2="-1.2504" width="0.2032" layer="21" curve="16.252389" cap="flat"/>
-<wire x1="1.2252" y1="2.0788" x2="2.0638" y2="1.2504" width="0.2032" layer="21" curve="-28.276487" cap="flat"/>
-<pad name="C" x="-2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="E" x="0" y="2.54" drill="0.8128" shape="octagon"/>
-<pad name="B" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.27" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-</package>
-<package name="SOT54CB">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 4 mm</description>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="-1.2252" y1="2.0788" x2="1.2252" y2="2.0788" width="0.2032" layer="51" curve="-61.028365" cap="flat"/>
-<wire x1="-2.0638" y1="1.2504" x2="-2.0638" y2="-1.2504" width="0.2032" layer="51" curve="62.421053" cap="flat"/>
-<wire x1="-2.0638" y1="-1.2504" x2="-1.6313" y2="-1.7781" width="0.2032" layer="21" curve="16.254995" cap="flat"/>
-<wire x1="-2.0638" y1="1.2504" x2="-1.2252" y2="2.0788" width="0.2032" layer="21" curve="-28.276487" cap="flat"/>
-<wire x1="2.0638" y1="-1.2504" x2="2.0638" y2="1.2504" width="0.2032" layer="51" curve="62.421053" cap="flat"/>
-<wire x1="1.631" y1="-1.778" x2="2.0634" y2="-1.2504" width="0.2032" layer="21" curve="16.252389" cap="flat"/>
-<wire x1="1.2252" y1="2.0788" x2="2.0638" y2="1.2504" width="0.2032" layer="21" curve="-28.276487" cap="flat"/>
-<pad name="G" x="-2" y="0" drill="0.8128" shape="octagon"/>
-<pad name="S" x="0" y="2" drill="0.8128" shape="octagon"/>
-<pad name="D" x="2" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.27" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-</package>
 <package name="SOT54DB">
 <description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
 grid 4 mm</description>
@@ -1247,45 +997,6 @@ grid 4 mm</description>
 <pad name="B" x="2.159" y="0" drill="0.8128" shape="octagon"/>
 <text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-</package>
-<package name="TO92I">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
-<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="S" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="D" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="G" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="SOT54E">
-<description>&lt;b&gt;SOT-54&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-0.9692" y1="2.2098" x2="0.9692" y2="2.2098" width="0.2032" layer="51" curve="-47.363718" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="-0.9689" y2="2.2098" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="0.9689" y1="2.2098" x2="1.631" y2="-1.778" width="0.2032" layer="21" curve="-113.782137" cap="flat"/>
-<wire x1="-1.631" y1="-1.778" x2="1.631" y2="-1.778" width="0.2032" layer="21"/>
-<pad name="D" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="G" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="S" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="2.54" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-</package>
-<package name="TO92K">
-<description>&lt;b&gt;TO-92&lt;/b&gt;&lt;p&gt;
-grid 2.54 mm</description>
-<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
-<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
-<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="D" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="G" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="S" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="TO18-">
 <description>&lt;b&gt;TO-18&lt;/b&gt;&lt;p&gt;
@@ -1672,56 +1383,6 @@ Small outline transistor (SOT). 2.3mm pitch, 3.5mm body width, 4 leads. JEDEC TO
 <wire x1="-3.25" y1="1.75" x2="3.25" y2="1.75" width="0.2032" layer="21"/>
 <wire x1="3.25" y1="-1.75" x2="-3.25" y2="-1.75" width="0.2032" layer="21"/>
 <wire x1="3.25" y1="1.75" x2="3.25" y2="-1.75" width="0.2032" layer="21"/>
-</package>
-<package name="SOT323W_INFINEON">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; Wave soldering&lt;p&gt;
-INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
-<wire x1="0" y1="-0.7" x2="0" y2="0.6" width="0.127" layer="48"/>
-<wire x1="0" y1="0.6" x2="-0.2" y2="0.2" width="0.127" layer="48"/>
-<wire x1="-0.2" y1="0.2" x2="0.2" y2="0.2" width="0.127" layer="48"/>
-<wire x1="0.2" y1="0.2" x2="0" y2="0.6" width="0.127" layer="48"/>
-<wire x1="0" y1="-0.7" x2="0.2" y2="-0.3" width="0.127" layer="48"/>
-<wire x1="0.2" y1="-0.3" x2="-0.2" y2="-0.3" width="0.127" layer="48"/>
-<wire x1="-0.2" y1="-0.3" x2="0" y2="-0.7" width="0.127" layer="48"/>
-<wire x1="-0.5" y1="0.45" x2="-0.9" y2="0.45" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="0.45" x2="-0.9" y2="-0.2" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0.45" x2="0.9" y2="0.45" width="0.2032" layer="21"/>
-<wire x1="0.9" y1="0.45" x2="0.9" y2="-0.2" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="-0.25" x2="-0.9" y2="-0.45" width="0.2032" layer="51"/>
-<wire x1="-0.9" y1="-0.45" x2="0.9" y2="-0.45" width="0.2032" layer="51"/>
-<wire x1="0.9" y1="-0.45" x2="0.9" y2="-0.25" width="0.2032" layer="51"/>
-<wire x1="-0.5" y1="0.45" x2="0.5" y2="0.45" width="0.2032" layer="51"/>
-<smd name="1" x="-0.65" y="-0.8" dx="1" dy="0.8" layer="1" rot="R90"/>
-<smd name="2" x="0" y="0.8" dx="1" dy="0.8" layer="1" rot="R90"/>
-<smd name="3" x="0.65" y="-0.8" dx="1" dy="0.8" layer="1" rot="R90"/>
-<text x="0.635" y="0.9525" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-0.9525" y="-2.2225" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="0.4" y="0.4" size="0.254" layer="48">direction of pcb</text>
-<text x="0.4" y="-0.05" size="0.254" layer="48">transportation for</text>
-<text x="0.4" y="-0.5" size="0.254" layer="48">wavesoldering</text>
-<rectangle x1="-0.95" y1="-0.95" x2="-0.35" y2="-0.65" layer="51" rot="R90"/>
-<rectangle x1="0.35" y1="-0.95" x2="0.95" y2="-0.65" layer="51" rot="R90"/>
-<rectangle x1="-0.3" y1="0.65" x2="0.3" y2="0.95" layer="51" rot="R90"/>
-</package>
-<package name="SOT323R_INFINEON">
-<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; Reflow soldering&lt;p&gt;
-INFINEON, www.infineon.com/cmc_upload/0/000/010/257/eh_db_5b.pdf</description>
-<wire x1="-0.5" y1="0.45" x2="-0.9" y2="0.45" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="0.45" x2="-0.9" y2="-0.2" width="0.2032" layer="21"/>
-<wire x1="0.5" y1="0.45" x2="0.9" y2="0.45" width="0.2032" layer="21"/>
-<wire x1="0.9" y1="0.45" x2="0.9" y2="-0.2" width="0.2032" layer="21"/>
-<wire x1="-0.9" y1="-0.25" x2="-0.9" y2="-0.45" width="0.2032" layer="51"/>
-<wire x1="-0.9" y1="-0.45" x2="0.9" y2="-0.45" width="0.2032" layer="51"/>
-<wire x1="0.9" y1="-0.45" x2="0.9" y2="-0.25" width="0.2032" layer="51"/>
-<wire x1="-0.5" y1="0.45" x2="0.5" y2="0.45" width="0.2032" layer="51"/>
-<smd name="1" x="-0.65" y="-0.8" dx="0.6" dy="0.8" layer="1"/>
-<smd name="2" x="0" y="0.8" dx="0.6" dy="0.8" layer="1"/>
-<smd name="3" x="0.65" y="-0.8" dx="0.6" dy="0.8" layer="1"/>
-<text x="0.9525" y="0.9525" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-0.9525" y="-2.2225" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.95" y1="-0.95" x2="-0.35" y2="-0.65" layer="51" rot="R90"/>
-<rectangle x1="0.35" y1="-0.95" x2="0.95" y2="-0.65" layer="51" rot="R90"/>
-<rectangle x1="-0.3" y1="0.65" x2="0.3" y2="0.95" layer="51" rot="R90"/>
 </package>
 <package name="SCT595_INFINEON">
 <description>&lt;b&gt;Small Outline Transistor; 5 leads&lt;/b&gt; Reflow soldering&lt;p&gt;
@@ -2663,11 +2324,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54A">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2699,11 +2360,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="JFETN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92F">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="3"/>
+<connect gate="1" pin="G" pad="2"/>
+<connect gate="1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2717,11 +2378,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="JFETP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92F">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="3"/>
+<connect gate="1" pin="G" pad="2"/>
+<connect gate="1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2754,11 +2415,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="3"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2790,11 +2451,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="3"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2808,11 +2469,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54A">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2826,11 +2487,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="3"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2973,11 +2634,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="JFETN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92R">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="3"/>
+<connect gate="1" pin="G" pad="1"/>
+<connect gate="1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3027,11 +2688,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="3"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3063,11 +2724,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="JFETN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92G">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="1"/>
+<connect gate="1" pin="G" pad="3"/>
+<connect gate="1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3099,11 +2760,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="JFETN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92R">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="3"/>
+<connect gate="1" pin="G" pad="1"/>
+<connect gate="1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3135,11 +2796,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="JFETN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54C">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="3"/>
+<connect gate="1" pin="G" pad="1"/>
+<connect gate="1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3153,11 +2814,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="UJTN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92E">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B1" pad="B1"/>
-<connect gate="1" pin="B2" pad="B2"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B1" pad="1"/>
+<connect gate="1" pin="B2" pad="3"/>
+<connect gate="1" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3207,11 +2868,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92C">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="3"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3261,11 +2922,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54A">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3279,11 +2940,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54A">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3297,11 +2958,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="P-DAR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54A">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3315,11 +2976,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="N-DAR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54A">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3333,11 +2994,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="3"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3351,11 +3012,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="3"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3406,11 +3067,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54A">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3424,11 +3085,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54A">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="2"/>
+<connect gate="1" pin="C" pad="1"/>
+<connect gate="1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3442,11 +3103,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="3"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3460,11 +3121,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="G$1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="G$1" pin="B" pad="B"/>
-<connect gate="G$1" pin="C" pad="C"/>
-<connect gate="G$1" pin="E" pad="E"/>
+<connect gate="G$1" pin="B" pad="3"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3478,11 +3139,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="3"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3496,11 +3157,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54D">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="B" pad="B"/>
-<connect gate="1" pin="C" pad="C"/>
-<connect gate="1" pin="E" pad="E"/>
+<connect gate="1" pin="B" pad="3"/>
+<connect gate="1" pin="C" pad="2"/>
+<connect gate="1" pin="E" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3551,11 +3212,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="IGFNA" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54E">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="1"/>
+<connect gate="1" pin="G" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3569,11 +3230,11 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <gate name="1" symbol="IGFPA" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT54E">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="1" pin="D" pad="D"/>
-<connect gate="1" pin="G" pad="G"/>
-<connect gate="1" pin="S" pad="S"/>
+<connect gate="1" pin="D" pad="1"/>
+<connect gate="1" pin="G" pad="2"/>
+<connect gate="1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3738,21 +3399,21 @@ Small Signal SM Transistor</description>
 <gate name="G$1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-R" package="SOT323R_INFINEON">
+<device name="-R" package="SC70-3">
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-W" package="SOT323W_INFINEON">
+<device name="-W" package="SC70-3">
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3767,21 +3428,21 @@ Small Signal SM Transistor</description>
 <gate name="G$1" symbol="PNP" x="0" y="0"/>
 </gates>
 <devices>
-<device name="-R" package="SOT323R_INFINEON">
+<device name="-R" package="SC70-3">
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
 </technologies>
 </device>
-<device name="-W" package="SOT323W_INFINEON">
+<device name="-W" package="SC70-3">
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
-<connect gate="G$1" pin="C" pad="2"/>
-<connect gate="G$1" pin="E" pad="3"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>

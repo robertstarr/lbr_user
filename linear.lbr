@@ -76,17 +76,21 @@
 Operational amplifiers,  comparators, voltage regulators, ADCs, DACs, etc.&lt;p&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
-<package name="TO92">
-<description>&lt;b&gt;TO-92&lt;/b&gt;</description>
+<package name="TO92-AB">
+<description>&lt;b&gt;TO-92 (1.27mm lead pitch, 3 leads, vertical, triangle pad arrangement)&lt;/b&gt;&lt;p&gt;
+Header family flat index. 1.27mm lead pitch, 3 leads, vertical, triangle pad arrangement. JEDEC TO-226G, variation AB.
+&lt;p&gt;
+Also known as SOT54. Formerly standardized as JEDEC TO-92.
+&lt;/p&gt;</description>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
 <wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
-<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
 <wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="0" drill="0.8128" shape="octagon"/>
-<text x="2.413" y="1.651" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="2.921" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
 </package>
 <package name="TO220-AB-H">
 <description>&lt;b&gt;TO-220 AB (2.54mm lead pitch, 3 leads, exposed pad, horizontal, 17.5mm lead-to-hole)&lt;/b&gt;&lt;p&gt;
@@ -9452,11 +9456,11 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <gate name="A1" symbol="78XX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="Z" package="TO92">
+<device name="Z" package="TO92-AB">
 <connects>
 <connect gate="A1" pin="GND" pad="2"/>
-<connect gate="A1" pin="VI" pad="3"/>
-<connect gate="A1" pin="VO" pad="1"/>
+<connect gate="A1" pin="VI" pad="1"/>
+<connect gate="A1" pin="VO" pad="3"/>
 </connects>
 <technologies>
 <technology name="L05"/>
@@ -9499,11 +9503,11 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <technology name="24"/>
 </technologies>
 </device>
-<device name="L" package="TO92">
+<device name="L" package="TO92-AB">
 <connects>
 <connect gate="A1" pin="GND" pad="2"/>
-<connect gate="A1" pin="VI" pad="3"/>
-<connect gate="A1" pin="VO" pad="1"/>
+<connect gate="A1" pin="VI" pad="1"/>
+<connect gate="A1" pin="VO" pad="3"/>
 </connects>
 <technologies>
 <technology name="05"/>
@@ -9539,11 +9543,11 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <gate name="A1" symbol="79XX" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="L" package="TO92">
+<device name="L" package="TO92-AB">
 <connects>
-<connect gate="A1" pin="GND" pad="1"/>
+<connect gate="A1" pin="GND" pad="3"/>
 <connect gate="A1" pin="VI" pad="2"/>
-<connect gate="A1" pin="VO" pad="3"/>
+<connect gate="A1" pin="VO" pad="1"/>
 </connects>
 <technologies>
 <technology name="05"/>
@@ -9587,11 +9591,11 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <technology name="24"/>
 </technologies>
 </device>
-<device name="Z" package="TO92">
+<device name="Z" package="TO92-AB">
 <connects>
-<connect gate="A1" pin="GND" pad="1"/>
+<connect gate="A1" pin="GND" pad="3"/>
 <connect gate="A1" pin="VI" pad="2"/>
-<connect gate="A1" pin="VO" pad="3"/>
+<connect gate="A1" pin="VO" pad="1"/>
 </connects>
 <technologies>
 <technology name="L05"/>
@@ -9610,10 +9614,10 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <gate name="A1" symbol="317" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="LZ" package="TO92">
+<device name="LZ" package="TO92-AB">
 <connects>
-<connect gate="A1" pin="ADJ" pad="1"/>
-<connect gate="A1" pin="VI" pad="3"/>
+<connect gate="A1" pin="ADJ" pad="3"/>
+<connect gate="A1" pin="VI" pad="1"/>
 <connect gate="A1" pin="VO" pad="2"/>
 </connects>
 <technologies>
@@ -9638,10 +9642,10 @@ with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <gate name="A1" symbol="337" x="0" y="0"/>
 </gates>
 <devices>
-<device name="LZ" package="TO92">
+<device name="LZ" package="TO92-AB">
 <connects>
-<connect gate="A1" pin="ADJ" pad="1"/>
-<connect gate="A1" pin="VI" pad="3"/>
+<connect gate="A1" pin="ADJ" pad="3"/>
+<connect gate="A1" pin="VI" pad="1"/>
 <connect gate="A1" pin="VO" pad="2"/>
 </connects>
 <technologies>
@@ -9740,11 +9744,11 @@ current output</description>
 <gate name="A" symbol="AD590" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO92">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="A" pin="+" pad="1"/>
+<connect gate="A" pin="+" pad="3"/>
 <connect gate="A" pin="-" pad="2"/>
-<connect gate="A" pin="CAN" pad="3"/>
+<connect gate="A" pin="CAN" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -11341,11 +11345,11 @@ latched 4/8-channel analog multiplexer</description>
 <gate name="A" symbol="78XX" x="22.86" y="0"/>
 </gates>
 <devices>
-<device name="LZ" package="TO92">
+<device name="LZ" package="TO92-AB">
 <connects>
 <connect gate="A" pin="GND" pad="2"/>
-<connect gate="A" pin="VI" pad="3"/>
-<connect gate="A" pin="VO" pad="1"/>
+<connect gate="A" pin="VI" pad="1"/>
+<connect gate="A" pin="VO" pad="3"/>
 </connects>
 <technologies>
 <technology name="05"/>
@@ -11379,11 +11383,11 @@ latched 4/8-channel analog multiplexer</description>
 <gate name="A" symbol="79XX" x="22.86" y="2.54"/>
 </gates>
 <devices>
-<device name="" package="TO92">
+<device name="" package="TO92-AB">
 <connects>
-<connect gate="A" pin="GND" pad="1"/>
+<connect gate="A" pin="GND" pad="3"/>
 <connect gate="A" pin="VI" pad="2"/>
-<connect gate="A" pin="VO" pad="3"/>
+<connect gate="A" pin="VO" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
