@@ -788,33 +788,12 @@ grid 2.54 mm</description>
 <rectangle x1="-1.1938" y1="-1.3208" x2="-0.3048" y2="-0.635" layer="51"/>
 <rectangle x1="-0.4001" y1="-0.3" x2="0.4001" y2="0.5001" layer="35"/>
 </package>
-<package name="D2PAK">
-<description>&lt;b&gt;SMD D2PAK&lt;/b&gt;</description>
-<wire x1="-5.3975" y1="4.445" x2="5.3975" y2="4.445" width="0.2032" layer="51"/>
-<wire x1="5.3975" y1="4.445" x2="5.3975" y2="-4.7625" width="0.2032" layer="21"/>
-<wire x1="5.3975" y1="-4.7625" x2="-5.3975" y2="-4.7625" width="0.2032" layer="21"/>
-<wire x1="-5.3975" y1="-4.7625" x2="-5.3975" y2="4.445" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="4.1274" x2="5.0799" y2="4.1275" width="0.0508" layer="51"/>
-<wire x1="5.0799" y1="4.1275" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="-4.445" x2="-5.08" y2="4.1274" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="-4.445" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="-4.445" x2="-5.3975" y2="-4.7625" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="4.1274" x2="-5.3975" y2="4.445" width="0.0508" layer="51"/>
-<wire x1="5.0799" y1="4.1275" x2="5.3975" y2="4.445" width="0.0508" layer="51"/>
-<wire x1="5.08" y1="-4.445" x2="5.3975" y2="-4.7625" width="0.0508" layer="51"/>
-<smd name="2" x="0" y="2.54" dx="10.16" dy="9.652" layer="1" rot="R270"/>
-<smd name="1" x="-2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
-<smd name="3" x="2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
-<text x="-6.0325" y="-4.7625" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-2.2225" y="-1.5875" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-2.8575" y="-3.81" size="1.016" layer="51" ratio="10">1</text>
-<text x="2.2225" y="-3.81" size="1.016" layer="51" ratio="10">3</text>
-<text x="-0.3175" y="2.2225" size="1.016" layer="51" ratio="10">2</text>
-<rectangle x1="-3.175" y1="-5.715" x2="-1.905" y2="-4.7625" layer="21"/>
-<rectangle x1="1.905" y1="-5.715" x2="3.175" y2="-4.7625" layer="21"/>
-<rectangle x1="-0.635" y1="-5.715" x2="0.635" y2="-4.7624" layer="21"/>
-<rectangle x1="-3.175" y1="-7.62" x2="-1.905" y2="-5.715" layer="51"/>
-<rectangle x1="1.905" y1="-7.62" x2="3.175" y2="-5.715" layer="51"/>
+<package name="TO263-AB">
+<description>&lt;b&gt;TO-263 AB (D2PAK, 2 leads, 2.54mm pitch, 4.83mm max height)&lt;/b&gt;&lt;p&gt;
+Plastic surface mounted header family. 2 leads, 2.54mm pitch, 4.83mm max height.
+&lt;/p&gt;&lt;p&gt;
+JEDEC TO-263E, variation AB, R-PSFM. Also known as D2PAK.
+&lt;/p&gt;</description>
 <polygon width="0.2032" layer="51">
 <vertex x="-5.3975" y="4.445"/>
 <vertex x="-5.3975" y="5.08"/>
@@ -823,6 +802,28 @@ grid 2.54 mm</description>
 <vertex x="5.3975" y="5.08"/>
 <vertex x="5.3975" y="4.445"/>
 </polygon>
+<rectangle x1="-3.175" y1="-7.62" x2="-1.905" y2="-5.715" layer="51"/>
+<rectangle x1="-3.175" y1="-5.715" x2="-1.905" y2="-4.7625" layer="21"/>
+<rectangle x1="-0.635" y1="-5.715" x2="0.635" y2="-4.7624" layer="21"/>
+<rectangle x1="1.905" y1="-7.62" x2="3.175" y2="-5.715" layer="51"/>
+<rectangle x1="1.905" y1="-5.715" x2="3.175" y2="-4.7625" layer="21"/>
+<smd name="1" x="-2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
+<smd name="3" x="2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
+<smd name="4" x="0" y="2.54" dx="10.16" dy="9.652" layer="1" rot="R270"/>
+<text x="-6.0325" y="-4.7625" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-2.2225" y="-1.5875" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-5.3975" y1="-4.7625" x2="-5.3975" y2="4.445" width="0.2032" layer="21"/>
+<wire x1="-5.3975" y1="4.445" x2="5.3975" y2="4.445" width="0.2032" layer="51"/>
+<wire x1="-5.08" y1="-4.445" x2="-5.08" y2="4.1274" width="0.0508" layer="51"/>
+<wire x1="-5.08" y1="-4.445" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
+<wire x1="-5.08" y1="-4.445" x2="-5.3975" y2="-4.7625" width="0.0508" layer="51"/>
+<wire x1="-5.08" y1="4.1274" x2="5.0799" y2="4.1275" width="0.0508" layer="51"/>
+<wire x1="-5.08" y1="4.1274" x2="-5.3975" y2="4.445" width="0.0508" layer="51"/>
+<wire x1="5.0799" y1="4.1275" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
+<wire x1="5.0799" y1="4.1275" x2="5.3975" y2="4.445" width="0.0508" layer="51"/>
+<wire x1="5.08" y1="-4.445" x2="5.3975" y2="-4.7625" width="0.0508" layer="51"/>
+<wire x1="5.3975" y1="-4.7625" x2="-5.3975" y2="-4.7625" width="0.2032" layer="21"/>
+<wire x1="5.3975" y1="4.445" x2="5.3975" y2="-4.7625" width="0.2032" layer="21"/>
 </package>
 <package name="TO225AAV">
 <description>&lt;b&gt;TO-225&lt;/b&gt;&lt;p&gt;
@@ -838,24 +839,12 @@ grid 2.54 mm, vertical</description>
 <text x="-3.175" y="1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-3.4925" y1="1.1113" x2="3.4925" y2="1.5875" layer="21"/>
 </package>
-<package name="DPAK">
-<description>&lt;b&gt;SMD D-PAK&lt;/b&gt;</description>
-<wire x1="3.3" y1="-3" x2="3.3" y2="3.2" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="3.2" x2="-3.3" y2="-3" width="0.2032" layer="21"/>
-<wire x1="3.3" y1="3.2" x2="-3.3" y2="3.2" width="0.2032" layer="51"/>
-<wire x1="3.3" y1="-3" x2="-3.3" y2="-3" width="0.2032" layer="21"/>
-<smd name="4" x="0" y="1.8528" dx="5.4516" dy="7" layer="1"/>
-<smd name="3" x="2.2098" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
-<smd name="1" x="-2.2606" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
-<text x="3.175" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-2.413" y="-2.5273" size="0.6096" layer="51">1</text>
-<text x="-0.2032" y="-2.5273" size="0.6096" layer="51">2</text>
-<text x="1.9812" y="-2.5273" size="0.6096" layer="51">3</text>
-<text x="-0.3302" y="1.8415" size="0.6096" layer="51">4</text>
-<rectangle x1="-2.6416" y1="-5.7404" x2="-1.8796" y2="-3.0734" layer="51"/>
-<rectangle x1="1.8288" y1="-5.7404" x2="2.5908" y2="-3.0734" layer="51"/>
-<rectangle x1="-0.381" y1="-3.8354" x2="0.381" y2="-3.0734" layer="51"/>
+<package name="TO252-AA">
+<description>&lt;b&gt;TO-252 AA (DPAK, 2 leads, 2.39mm max height, 2.67mm lead length)&lt;/b&gt;&lt;p&gt;
+Flange mounted family surface mount. 2 leads, 2.39mm max height, 2.67mm lead length.
+&lt;/p&gt;&lt;p&gt;
+JEDEC TO-252E, variation AA, R-PSFM-G. Also known as DPAK.
+&lt;/p&gt;</description>
 <polygon width="0.2032" layer="51">
 <vertex x="-2.5" y="3.2"/>
 <vertex x="-2.5" y="3.95"/>
@@ -864,6 +853,18 @@ grid 2.54 mm, vertical</description>
 <vertex x="2.5" y="3.95"/>
 <vertex x="2.5" y="3.2"/>
 </polygon>
+<rectangle x1="-2.6416" y1="-5.7404" x2="-1.8796" y2="-3.0734" layer="51"/>
+<rectangle x1="-0.381" y1="-3.8354" x2="0.381" y2="-3.0734" layer="51"/>
+<rectangle x1="1.8288" y1="-5.7404" x2="2.5908" y2="-3.0734" layer="51"/>
+<smd name="1" x="-2.286" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
+<smd name="3" x="2.286" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
+<smd name="4" x="0" y="1.8528" dx="5.4516" dy="7" layer="1"/>
+<text x="3.81" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.81" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-3.302" y1="3.2" x2="-3.302" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="3.2" x2="-3.3" y2="3.2" width="0.2032" layer="51"/>
+<wire x1="3.302" y1="-3" x2="3.302" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="3.302" y1="-3" x2="-3.302" y2="-3" width="0.2032" layer="21"/>
 </package>
 <package name="TO220-AB-H">
 <description>&lt;b&gt;TO-220 AB (2.54mm lead pitch, 3 leads, exposed pad, horizontal, 17.5mm lead-to-hole)&lt;/b&gt;&lt;p&gt;
@@ -5576,7 +5577,7 @@ complimentary to CMPTA56</description>
 <gate name="G$1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DPAK">
+<device name="" package="TO252-AA">
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="C" pad="4"/>
@@ -5702,7 +5703,7 @@ complimentary to CMPTA56</description>
 <gate name="G$1" symbol="NPN" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DPAK">
+<device name="" package="TO252-AA">
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="C" pad="4"/>
@@ -5748,7 +5749,7 @@ complimentary to CMPTA56</description>
 <gate name="G$1" symbol="NPN-DAR" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="DPAK">
+<device name="" package="TO252-AA">
 <connects>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="C" pad="4"/>

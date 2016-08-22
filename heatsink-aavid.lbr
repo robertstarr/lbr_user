@@ -996,24 +996,12 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-6.858" y="6.096" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.032" y="-2.667" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DPAK">
-<description>&lt;b&gt;SMD D-PAK&lt;/b&gt;</description>
-<wire x1="3.3" y1="-3" x2="3.3" y2="3.2" width="0.2032" layer="21"/>
-<wire x1="-3.3" y1="3.2" x2="-3.3" y2="-3" width="0.2032" layer="21"/>
-<wire x1="3.3" y1="3.2" x2="-3.3" y2="3.2" width="0.2032" layer="51"/>
-<wire x1="3.3" y1="-3" x2="-3.3" y2="-3" width="0.2032" layer="21"/>
-<smd name="4" x="0" y="1.8528" dx="5.4516" dy="7" layer="1" thermals="no"/>
-<smd name="3" x="2.2098" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
-<smd name="1" x="-2.2606" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
-<text x="3.175" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-2.413" y="-2.5273" size="0.6096" layer="51">1</text>
-<text x="-0.2032" y="-2.5273" size="0.6096" layer="51">2</text>
-<text x="1.9812" y="-2.5273" size="0.6096" layer="51">3</text>
-<text x="-0.3302" y="1.8415" size="0.6096" layer="51">4</text>
-<rectangle x1="-2.6416" y1="-5.7404" x2="-1.8796" y2="-3.0734" layer="51"/>
-<rectangle x1="1.8288" y1="-5.7404" x2="2.5908" y2="-3.0734" layer="51"/>
-<rectangle x1="-0.381" y1="-3.8354" x2="0.381" y2="-3.0734" layer="51"/>
+<package name="TO252-AA">
+<description>&lt;b&gt;TO-252 AA (DPAK, 2 leads, 2.39mm max height, 2.67mm lead length)&lt;/b&gt;&lt;p&gt;
+Flange mounted family surface mount. 2 leads, 2.39mm max height, 2.67mm lead length.
+&lt;/p&gt;&lt;p&gt;
+JEDEC TO-252E, variation AA, R-PSFM-G. Also known as DPAK.
+&lt;/p&gt;</description>
 <polygon width="0.2032" layer="51">
 <vertex x="-2.5" y="3.2"/>
 <vertex x="-2.5" y="3.95"/>
@@ -1022,6 +1010,18 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <vertex x="2.5" y="3.95"/>
 <vertex x="2.5" y="3.2"/>
 </polygon>
+<rectangle x1="-2.6416" y1="-5.7404" x2="-1.8796" y2="-3.0734" layer="51"/>
+<rectangle x1="-0.381" y1="-3.8354" x2="0.381" y2="-3.0734" layer="51"/>
+<rectangle x1="1.8288" y1="-5.7404" x2="2.5908" y2="-3.0734" layer="51"/>
+<smd name="1" x="-2.286" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
+<smd name="3" x="2.286" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
+<smd name="4" x="0" y="1.8528" dx="5.4516" dy="7" layer="1"/>
+<text x="3.81" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.81" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-3.302" y1="3.2" x2="-3.302" y2="-3" width="0.2032" layer="21"/>
+<wire x1="3.3" y1="3.2" x2="-3.3" y2="3.2" width="0.2032" layer="51"/>
+<wire x1="3.302" y1="-3" x2="3.302" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="3.302" y1="-3" x2="-3.302" y2="-3" width="0.2032" layer="21"/>
 </package>
 <package name="573300">
 <description>SMD HEATSINK - D2PAK (TO-263)</description>
