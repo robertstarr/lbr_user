@@ -86,18 +86,27 @@
 <text x="-2.54" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.54" y="-5.08" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="TO-18">
-<description>&lt;b&gt;OPTO SENSOR DEVICE&lt;/b&gt;</description>
-<wire x1="-2.7432" y1="0.4572" x2="-3.556" y2="0.4572" width="0.2032" layer="21"/>
-<wire x1="-3.556" y1="0.4572" x2="-3.556" y2="-0.4826" width="0.2032" layer="21"/>
-<wire x1="-3.556" y1="-0.4826" x2="-2.7178" y2="-0.4826" width="0.2032" layer="21"/>
-<circle x="0" y="-0.0254" radius="2.7686" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="2.54" width="0.1016" layer="51"/>
-<pad name="1" x="-1.27" y="-1.27" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="-1.27" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="1.27" drill="0.8128" shape="octagon"/>
-<text x="3.175" y="0" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<package name="TO18">
+<description>&lt;b&gt;TO-18 (2.54mm lead pitch, 3 leads)&lt;/b&gt;&lt;p&gt;
+Header family package. 2.54mm lead pitch, 3 leads, metal can.
+&lt;p/&gt;&lt;p&gt;
+JEDEC TO-18.
+&lt;/p&gt;</description>
+<circle x="0" y="0" radius="2.921" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="1.27" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="1.27" y="1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="3.175" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.175" y="0" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-3.937" y1="-0.508" x2="-3.937" y2="0.508" width="0.2032" layer="21"/>
+<wire x1="-3.937" y1="-0.508" x2="-2.8765" y2="-0.508" width="0.2032" layer="21"/>
+<wire x1="-3.937" y1="0.508" x2="-2.8765" y2="0.508" width="0.2032" layer="21"/>
+<wire x1="-2.227" y1="-0.9289" x2="0.929" y2="2.2271" width="0.0508" layer="51" curve="-135.281008" cap="flat"/>
+<wire x1="-2.227" y1="-0.9289" x2="-0.9289" y2="-2.227" width="0.0508" layer="51" curve="44.717164" cap="flat"/>
+<wire x1="-0.9289" y1="-2.227" x2="0.9289" y2="-2.227" width="0.0508" layer="51" curve="45.282836" cap="flat"/>
+<wire x1="0.9289" y1="-2.227" x2="2.227" y2="-0.9289" width="0.0508" layer="51" curve="44.717164" cap="flat"/>
+<wire x1="0.9289" y1="2.227" x2="2.227" y2="0.9289" width="0.0508" layer="51" curve="-44.717164" cap="flat"/>
+<wire x1="2.227" y1="-0.9289" x2="2.227" y2="0.9289" width="0.0508" layer="51" curve="45.282836" cap="flat"/>
 </package>
 <package name="HFE-3XX">
 <description>&lt;b&gt;OPTO SENSOR DEVICE&lt;/b&gt;</description>
@@ -4563,7 +4572,7 @@
 <gate name="NC1" symbol="NC" x="7.62" y="5.08" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="TO-18">
+<device name="" package="TO18">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
@@ -4582,7 +4591,7 @@
 <gate name="NC3" symbol="NC" x="7.62" y="5.08" addlevel="request"/>
 </gates>
 <devices>
-<device name="" package="TO-18">
+<device name="" package="TO18">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>
@@ -4618,7 +4627,7 @@
 <gate name="G$1" symbol="LED-SH" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TO-18">
+<device name="" package="TO18">
 <connects>
 <connect gate="G$1" pin="A" pad="1"/>
 <connect gate="G$1" pin="C" pad="2"/>

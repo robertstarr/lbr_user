@@ -133,29 +133,41 @@ Also known as SOT78.</description>
 <wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
 </package>
 <package name="TO18">
-<description>&lt;b&gt;Metal Can Package&lt;/b&gt;</description>
-<wire x1="-2.7432" y1="0.4572" x2="-3.556" y2="0.4572" width="0.2032" layer="21"/>
-<wire x1="-3.556" y1="0.4572" x2="-3.556" y2="-0.4826" width="0.2032" layer="21"/>
-<wire x1="-3.556" y1="-0.4826" x2="-2.7178" y2="-0.4826" width="0.2032" layer="21"/>
-<circle x="0" y="-0.0254" radius="2.7686" width="0.2032" layer="21"/>
-<pad name="1" x="-1.27" y="-1.27" drill="0.8128" shape="octagon"/>
-<pad name="2" x="1.27" y="-1.27" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="1.27" drill="0.8128" shape="octagon"/>
-<text x="2.667" y="1.27" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="2.667" y="-2.413" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<description>&lt;b&gt;TO-18 (2.54mm lead pitch, 3 leads)&lt;/b&gt;&lt;p&gt;
+Header family package. 2.54mm lead pitch, 3 leads, metal can.
+&lt;p/&gt;&lt;p&gt;
+JEDEC TO-18.
+&lt;/p&gt;</description>
+<circle x="0" y="0" radius="2.921" width="0.2032" layer="21"/>
+<pad name="1" x="-1.27" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="1.27" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="1.27" y="1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="3.175" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="3.175" y="0" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-3.937" y1="-0.508" x2="-3.937" y2="0.508" width="0.2032" layer="21"/>
+<wire x1="-3.937" y1="-0.508" x2="-2.8765" y2="-0.508" width="0.2032" layer="21"/>
+<wire x1="-3.937" y1="0.508" x2="-2.8765" y2="0.508" width="0.2032" layer="21"/>
+<wire x1="-2.227" y1="-0.9289" x2="0.929" y2="2.2271" width="0.0508" layer="51" curve="-135.281008" cap="flat"/>
+<wire x1="-2.227" y1="-0.9289" x2="-0.9289" y2="-2.227" width="0.0508" layer="51" curve="44.717164" cap="flat"/>
+<wire x1="-0.9289" y1="-2.227" x2="0.9289" y2="-2.227" width="0.0508" layer="51" curve="45.282836" cap="flat"/>
+<wire x1="0.9289" y1="-2.227" x2="2.227" y2="-0.9289" width="0.0508" layer="51" curve="44.717164" cap="flat"/>
+<wire x1="0.9289" y1="2.227" x2="2.227" y2="0.9289" width="0.0508" layer="51" curve="-44.717164" cap="flat"/>
+<wire x1="2.227" y1="-0.9289" x2="2.227" y2="0.9289" width="0.0508" layer="51" curve="45.282836" cap="flat"/>
 </package>
 <package name="TO39">
-<description>&lt;b&gt;Metal Can Package&lt;/b&gt;</description>
-<wire x1="-4.0386" y1="-3.5306" x2="-3.5052" y2="-2.9972" width="0.2032" layer="21"/>
-<wire x1="-2.9718" y1="-3.5306" x2="-3.5052" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="-3.5052" y1="-4.064" x2="-4.0386" y2="-3.5306" width="0.2032" layer="21"/>
+<description>&lt;b&gt;TO-39&lt;/b&gt;&lt;p&gt;
+JEDEC TO-39
+&lt;p/&gt;</description>
 <circle x="0" y="0" radius="4.572" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3.8608" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="-2.54" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="0" y="2.54" drill="0.8128" shape="octagon"/>
-<text x="-2.794" y="4.826" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.302" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<circle x="0" y="0" radius="3.8608" width="0.0508" layer="51"/>
+<pad name="1" x="0" y="-2.54" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="0" y="2.54" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<text x="-3.175" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.54" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-4.0386" y1="-3.5306" x2="-3.5052" y2="-2.9972" width="0.2032" layer="21"/>
+<wire x1="-3.5052" y1="-4.064" x2="-4.0386" y2="-3.5306" width="0.2032" layer="21"/>
+<wire x1="-2.9718" y1="-3.5306" x2="-3.5052" y2="-4.064" width="0.2032" layer="21"/>
 </package>
 <package name="SIP11">
 <description>&lt;b&gt;TO-220&lt;/b&gt;&lt;p&gt;
@@ -417,52 +429,23 @@ Also known as SOT78.</description>
 <text x="-6.604" y="-1.016" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="TO78">
-<description>&lt;b&gt;Metal Can Package&lt;/b&gt;</description>
-<wire x1="-4.572" y1="0.508" x2="-5.334" y2="0.508" width="0.2032" layer="21"/>
-<wire x1="-5.334" y1="-0.508" x2="-5.334" y2="0.508" width="0.2032" layer="21"/>
-<wire x1="-5.334" y1="-0.508" x2="-4.572" y2="-0.508" width="0.2032" layer="21"/>
+<description>&lt;b&gt;TO-78 (6 leads)&lt;/b&gt;&lt;p&gt;
+JEDEC TO-78.
+&lt;/p&gt;</description>
 <circle x="0" y="0" radius="4.572" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="3.8608" width="0.0508" layer="51"/>
-<pad name="4" x="1.905" y="1.905" drill="0.8128" diameter="1.524"/>
+<pad name="1" x="-1.905" y="-1.905" drill="0.8128" diameter="1.524"/>
 <pad name="2" x="0" y="-2.54" drill="0.8128" diameter="1.524"/>
+<pad name="3" x="1.905" y="-1.905" drill="0.8128" diameter="1.524"/>
+<pad name="4" x="1.905" y="1.905" drill="0.8128" diameter="1.524"/>
 <pad name="5" x="0" y="2.54" drill="0.8128" diameter="1.524"/>
 <pad name="6" x="-1.905" y="1.905" drill="0.8128" diameter="1.524"/>
-<pad name="3" x="1.905" y="-1.905" drill="0.8128" diameter="1.524"/>
-<pad name="1" x="-1.905" y="-1.905" drill="0.8128" diameter="1.524"/>
-<text x="-2.54" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-3.175" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-5.334" y1="-0.508" x2="-4.572" y2="0.508" layer="21"/>
-</package>
-<package name="H03A">
-<description>&lt;b&gt;Metal Can Package&lt;/b&gt;&lt;p&gt;
-National Semiconductor</description>
-<wire x1="-4.0386" y1="-3.5306" x2="-3.5052" y2="-2.9972" width="0.2032" layer="21"/>
-<wire x1="-2.9718" y1="-3.5306" x2="-3.5052" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="-3.5052" y1="-4.064" x2="-4.0386" y2="-3.5306" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="4.572" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3.8608" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="-2.54" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="0" y="2.54" drill="0.8128" shape="octagon"/>
-<text x="-2.794" y="4.826" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.794" y="-5.969" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.175" y="0.635" size="0.8128" layer="250">MOT 79-05</text>
-<text x="-3.175" y="-1.27" size="0.8128" layer="250">NS H03A</text>
-</package>
-<package name="H03B">
-<description>&lt;b&gt;Metal Can Package&lt;/b&gt;&lt;p&gt;
-National Semiconductor</description>
-<wire x1="-4.0386" y1="-3.5306" x2="-3.5052" y2="-2.9972" width="0.2032" layer="21"/>
-<wire x1="-2.9718" y1="-3.5306" x2="-3.5052" y2="-4.064" width="0.2032" layer="21"/>
-<wire x1="-3.5052" y1="-4.064" x2="-4.0386" y2="-3.5306" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="4.572" width="0.2032" layer="21"/>
-<circle x="0" y="0" radius="3.8608" width="0.2032" layer="21"/>
-<pad name="1" x="0" y="-2.54" drill="0.8128" shape="octagon"/>
-<pad name="2" x="2.54" y="0" drill="0.8128" shape="octagon"/>
-<pad name="3" x="0" y="2.54" drill="0.8128" shape="octagon"/>
+<text x="-3.175" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-2.54" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-5.969" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-3.175" y="0.635" size="0.8128" layer="250">NS H03B</text>
+<wire x1="-5.334" y1="-0.508" x2="-5.334" y2="0.508" width="0.2032" layer="21"/>
+<wire x1="-5.334" y1="-0.508" x2="-4.572" y2="-0.508" width="0.2032" layer="21"/>
+<wire x1="-4.572" y1="0.508" x2="-5.334" y2="0.508" width="0.2032" layer="21"/>
 </package>
 <package name="H08C">
 <description>&lt;b&gt;TO-99&lt;/b&gt;&lt;p&gt;
@@ -526,84 +509,31 @@ National Semiconductor</description>
 <text x="-1.397" y="-0.508" size="0.254" layer="250">HA04E</text>
 </package>
 <package name="TO3">
-<description>&lt;b&gt;Metal Can Package&lt;/b&gt;</description>
-<wire x1="6.3754" y1="-10.9982" x2="17.3736" y2="-4.5212" width="0.254" layer="21"/>
-<wire x1="5.969" y1="11.2014" x2="17.3736" y2="4.5212" width="0.254" layer="21"/>
-<wire x1="-6.35" y1="10.9982" x2="-17.272" y2="4.572" width="0.254" layer="21"/>
-<wire x1="-5.9436" y1="-11.2268" x2="-17.2466" y2="-4.5974" width="0.254" layer="21"/>
-<wire x1="17.3366" y1="4.545" x2="19.812" y2="0" width="0.254" layer="21" curve="-57.148737" cap="flat"/>
-<wire x1="17.3366" y1="-4.545" x2="19.812" y2="0" width="0.254" layer="21" curve="57.148737" cap="flat"/>
-<wire x1="-19.812" y1="0" x2="-17.0927" y2="4.6935" width="0.254" layer="21" curve="-60.173068" cap="flat"/>
-<wire x1="-19.812" y1="0" x2="-17.1555" y2="-4.657" width="0.254" layer="21" curve="59.404169" cap="flat"/>
-<wire x1="0" y1="-12.7" x2="6.3718" y2="-10.9859" width="0.254" layer="21" curve="30.113639" cap="flat"/>
-<wire x1="-5.9765" y1="-11.2059" x2="0" y2="-12.7" width="0.254" layer="21" curve="28.0726" cap="flat"/>
-<wire x1="-6.3718" y1="10.9859" x2="0" y2="12.7" width="0.254" layer="21" curve="-30.113639" cap="flat"/>
-<wire x1="0" y1="12.7" x2="5.9765" y2="11.2059" width="0.254" layer="21" curve="-28.0726" cap="flat"/>
-<circle x="0" y="0" radius="9.3726" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="11.684" width="0.254" layer="21"/>
-<circle x="15.113" y="0" radius="2.159" width="0.254" layer="51"/>
-<circle x="-15.113" y="0" radius="2.159" width="0.254" layer="51"/>
-<pad name="E" x="-1.778" y="-5.461" drill="1.1938" shape="octagon"/>
-<pad name="B" x="-1.778" y="5.461" drill="1.1938" shape="octagon"/>
-<pad name="C" x="15.113" y="0" drill="4.1148"/>
-<pad name="C/" x="-15.113" y="0" drill="4.1148"/>
-<text x="9.398" y="9.906" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-6.096" y="-1.016" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="-8.509" size="0.254" layer="250">MOTOROLA 1-03</text>
-</package>
-<package name="K02A">
-<description>&lt;b&gt;TO-3&lt;/b&gt;&lt;p&gt;
-National Semiconductor</description>
-<wire x1="6.3754" y1="-10.9982" x2="17.3736" y2="-4.5212" width="0.254" layer="21"/>
-<wire x1="5.969" y1="11.2014" x2="17.3736" y2="4.5212" width="0.254" layer="21"/>
-<wire x1="-6.35" y1="10.9982" x2="-17.272" y2="4.572" width="0.254" layer="21"/>
-<wire x1="-5.9436" y1="-11.2268" x2="-17.2466" y2="-4.5974" width="0.254" layer="21"/>
-<wire x1="17.3366" y1="4.545" x2="19.812" y2="0" width="0.254" layer="21" curve="-57.148737" cap="flat"/>
-<wire x1="17.3366" y1="-4.545" x2="19.812" y2="0" width="0.254" layer="21" curve="57.148737" cap="flat"/>
-<wire x1="-19.812" y1="0" x2="-17.0927" y2="4.6935" width="0.254" layer="21" curve="-60.173068" cap="flat"/>
-<wire x1="-19.812" y1="0" x2="-17.1555" y2="-4.657" width="0.254" layer="21" curve="59.404169" cap="flat"/>
-<wire x1="0" y1="-12.7" x2="6.3718" y2="-10.9859" width="0.254" layer="21" curve="30.113639" cap="flat"/>
-<wire x1="-5.9765" y1="-11.2059" x2="0" y2="-12.7" width="0.254" layer="21" curve="28.0726" cap="flat"/>
-<wire x1="-6.3718" y1="10.9859" x2="0" y2="12.7" width="0.254" layer="21" curve="-30.113639" cap="flat"/>
-<wire x1="0" y1="12.7" x2="5.9765" y2="11.2059" width="0.254" layer="21" curve="-28.0726" cap="flat"/>
-<circle x="0" y="0" radius="9.3726" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="11.684" width="0.254" layer="21"/>
-<circle x="15.113" y="0" radius="2.159" width="0.254" layer="51"/>
-<circle x="-15.113" y="0" radius="2.159" width="0.254" layer="51"/>
-<pad name="2" x="-1.778" y="-5.461" drill="1.1938" shape="long"/>
-<pad name="1" x="-1.778" y="5.461" drill="1.1938" shape="long"/>
-<pad name="3" x="15.113" y="0" drill="4.1148"/>
-<pad name="3/" x="-15.113" y="0" drill="4.1148"/>
-<text x="8.636" y="10.668" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-6.096" y="-0.889" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-0.254" y="-8.509" size="0.254" layer="250">NS K02A</text>
-</package>
-<package name="K02B">
-<description>&lt;b&gt;TO-3&lt;/b&gt;&lt;p&gt;
-National Semiconductor</description>
-<wire x1="6.3754" y1="-10.9982" x2="17.3736" y2="-4.5212" width="0.254" layer="21"/>
-<wire x1="5.969" y1="11.2014" x2="17.3736" y2="4.5212" width="0.254" layer="21"/>
-<wire x1="-6.35" y1="10.9982" x2="-17.272" y2="4.572" width="0.254" layer="21"/>
-<wire x1="-5.9436" y1="-11.2268" x2="-17.2466" y2="-4.5974" width="0.254" layer="21"/>
-<wire x1="17.3366" y1="4.545" x2="19.812" y2="0" width="0.254" layer="21" curve="-57.148737" cap="flat"/>
-<wire x1="17.3366" y1="-4.545" x2="19.812" y2="0" width="0.254" layer="21" curve="57.148737" cap="flat"/>
-<wire x1="-19.812" y1="0" x2="-17.0927" y2="4.6935" width="0.254" layer="21" curve="-60.173068" cap="flat"/>
-<wire x1="-19.812" y1="0" x2="-17.1555" y2="-4.657" width="0.254" layer="21" curve="59.404169" cap="flat"/>
-<wire x1="0" y1="-12.7" x2="6.3718" y2="-10.9859" width="0.254" layer="21" curve="30.113639" cap="flat"/>
-<wire x1="-5.9765" y1="-11.2059" x2="0" y2="-12.7" width="0.254" layer="21" curve="28.0726" cap="flat"/>
-<wire x1="-6.3718" y1="10.9859" x2="0" y2="12.7" width="0.254" layer="21" curve="-30.113639" cap="flat"/>
-<wire x1="0" y1="12.7" x2="5.9765" y2="11.2059" width="0.254" layer="21" curve="-28.0726" cap="flat"/>
-<circle x="0" y="0" radius="9.3726" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="11.684" width="0.254" layer="21"/>
-<circle x="15.113" y="0" radius="2.159" width="0.254" layer="51"/>
-<circle x="-15.113" y="0" radius="2.159" width="0.254" layer="51"/>
-<pad name="2" x="-1.778" y="-5.461" drill="1.1938" shape="long"/>
-<pad name="1" x="-1.778" y="5.461" drill="1.1938" shape="long"/>
-<pad name="3" x="15.113" y="0" drill="4.1148"/>
-<pad name="3/" x="-15.113" y="0" drill="4.1148"/>
-<text x="9.398" y="10.16" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-5.842" y="-0.889" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-1.397" y="-7.493" size="0.254" layer="250">NS K02B</text>
+<description>&lt;b&gt;TO-3 (2 leads)&lt;/b&gt;&lt;p&gt;
+JEDEC TO-3.
+&lt;/p&gt;</description>
+<circle x="-15.113" y="0" radius="2.159" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="9.3726" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="11.684" width="0.2032" layer="51"/>
+<circle x="15.113" y="0" radius="2.159" width="0.2032" layer="51"/>
+<pad name="1" x="-1.778" y="-5.461" drill="1.1938" diameter="3.1496" shape="long"/>
+<pad name="2" x="-1.778" y="5.461" drill="1.1938" diameter="3.1496" shape="long"/>
+<pad name="3" x="15.113" y="0" drill="4.1148" diameter="6.477"/>
+<pad name="4" x="-15.113" y="0" drill="4.1148" diameter="6.477"/>
+<text x="2.54" y="-3.81" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-3.81" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-19.812" y1="0" x2="-17.0927" y2="4.6935" width="0.2032" layer="21" curve="-60.173068" cap="flat"/>
+<wire x1="-19.812" y1="0" x2="-17.1555" y2="-4.657" width="0.2032" layer="21" curve="59.404169" cap="flat"/>
+<wire x1="-6.3718" y1="10.9859" x2="0" y2="12.7" width="0.2032" layer="21" curve="-30.113639" cap="flat"/>
+<wire x1="-6.35" y1="10.9982" x2="-17.272" y2="4.572" width="0.2032" layer="21"/>
+<wire x1="-5.9765" y1="-11.2059" x2="0" y2="-12.7" width="0.2032" layer="21" curve="28.0726" cap="flat"/>
+<wire x1="-5.9436" y1="-11.2268" x2="-17.2466" y2="-4.5974" width="0.2032" layer="21"/>
+<wire x1="0" y1="-12.7" x2="6.3718" y2="-10.9859" width="0.2032" layer="21" curve="30.113639" cap="flat"/>
+<wire x1="0" y1="12.7" x2="5.9765" y2="11.2059" width="0.2032" layer="21" curve="-28.0726" cap="flat"/>
+<wire x1="5.969" y1="11.2014" x2="17.3736" y2="4.5212" width="0.2032" layer="21"/>
+<wire x1="6.3754" y1="-10.9982" x2="17.3736" y2="-4.5212" width="0.2032" layer="21"/>
+<wire x1="17.3366" y1="-4.545" x2="19.812" y2="0" width="0.2032" layer="21" curve="57.148737" cap="flat"/>
+<wire x1="17.3366" y1="4.545" x2="19.812" y2="0" width="0.2032" layer="21" curve="-57.148737" cap="flat"/>
 </package>
 <package name="K04A">
 <description>&lt;b&gt;TO-3&lt;/b&gt;&lt;p&gt;
@@ -666,33 +596,6 @@ National Semiconductor</description>
 <text x="9.652" y="9.906" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-8.128" y="-0.762" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-0.635" y="-8.509" size="0.254" layer="250">NS K08A</text>
-</package>
-<package name="KC02A">
-<description>&lt;b&gt;TO-3&lt;/b&gt;&lt;p&gt;
-National Semiconductor</description>
-<wire x1="6.3754" y1="-10.9982" x2="17.3736" y2="-4.5212" width="0.254" layer="21"/>
-<wire x1="5.969" y1="11.2014" x2="17.3736" y2="4.5212" width="0.254" layer="21"/>
-<wire x1="-6.35" y1="10.9982" x2="-17.272" y2="4.572" width="0.254" layer="21"/>
-<wire x1="-5.9436" y1="-11.2268" x2="-17.2466" y2="-4.5974" width="0.254" layer="21"/>
-<wire x1="17.3366" y1="4.545" x2="19.812" y2="0" width="0.254" layer="21" curve="-57.148737" cap="flat"/>
-<wire x1="17.3366" y1="-4.545" x2="19.812" y2="0" width="0.254" layer="21" curve="57.148737" cap="flat"/>
-<wire x1="-19.812" y1="0" x2="-17.0927" y2="4.6935" width="0.254" layer="21" curve="-60.173068" cap="flat"/>
-<wire x1="-19.812" y1="0" x2="-17.1555" y2="-4.657" width="0.254" layer="21" curve="59.404169" cap="flat"/>
-<wire x1="0" y1="-12.7" x2="6.3718" y2="-10.9859" width="0.254" layer="21" curve="30.113639" cap="flat"/>
-<wire x1="-5.9765" y1="-11.2059" x2="0" y2="-12.7" width="0.254" layer="21" curve="28.0726" cap="flat"/>
-<wire x1="-6.3718" y1="10.9859" x2="0" y2="12.7" width="0.254" layer="21" curve="-30.113639" cap="flat"/>
-<wire x1="0" y1="12.7" x2="5.9765" y2="11.2059" width="0.254" layer="21" curve="-28.0726" cap="flat"/>
-<circle x="0" y="0" radius="9.3726" width="0.254" layer="21"/>
-<circle x="0" y="0" radius="11.684" width="0.254" layer="21"/>
-<circle x="15.113" y="0" radius="2.159" width="0.254" layer="51"/>
-<circle x="-15.113" y="0" radius="2.159" width="0.254" layer="51"/>
-<pad name="2" x="-1.778" y="-5.461" drill="1.1938" shape="octagon"/>
-<pad name="1" x="-1.778" y="5.461" drill="1.1938" shape="octagon"/>
-<pad name="3" x="15.113" y="0" drill="4.1148"/>
-<pad name="3/" x="-15.113" y="0" drill="4.1148"/>
-<text x="9.906" y="9.652" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-6.604" y="-0.889" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-0.635" y="-8.509" size="0.254" layer="250">NS KC02A</text>
 </package>
 <package name="KA15A">
 <description>&lt;b&gt;TO-3&lt;/b&gt;&lt;p&gt;
