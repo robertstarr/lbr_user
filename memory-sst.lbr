@@ -183,33 +183,6 @@ body 6.00 x 5.00 mm</description>
 <rectangle x1="-0.3175" y1="-1.27" x2="0.3175" y2="-0.635" layer="31"/>
 <rectangle x1="0.9525" y1="-1.27" x2="1.5875" y2="-0.635" layer="31"/>
 </package>
-<package name="SO08W/WSON8">
-<description>&lt;b&gt; SO-08 / WSON-08&lt;/b&gt; - Dual Footprint&lt;p&gt;
-WSON-08, body 8.00 x 6.00 mm&lt;p&gt;
-SO-08, body 3.9 mm/JEDEC MS-012AA</description>
-<wire x1="-2.5" y1="-3" x2="-2.5" y2="3" width="0.2032" layer="21"/>
-<wire x1="-2.5" y1="3" x2="2.5" y2="3" width="0.2032" layer="51"/>
-<wire x1="2.5" y1="3" x2="2.5" y2="-3" width="0.2032" layer="21"/>
-<wire x1="2.5" y1="-3" x2="-2.5" y2="-3" width="0.2032" layer="51"/>
-<circle x="-2.9" y="-2.7" radius="0.2" width="0" layer="21"/>
-<smd name="1" x="-1.905" y="-3.2545" dx="1.905" dy="0.635" layer="1" rot="R90"/>
-<smd name="2" x="-0.635" y="-3.2545" dx="1.905" dy="0.635" layer="1" rot="R90"/>
-<smd name="3" x="0.635" y="-3.2545" dx="1.905" dy="0.635" layer="1" rot="R90"/>
-<smd name="4" x="1.905" y="-3.2545" dx="1.905" dy="0.635" layer="1" rot="R90"/>
-<smd name="5" x="1.905" y="3.2545" dx="1.905" dy="0.635" layer="1" rot="R90"/>
-<smd name="6" x="0.635" y="3.2545" dx="1.905" dy="0.635" layer="1" rot="R90"/>
-<smd name="7" x="-0.635" y="3.2545" dx="1.905" dy="0.635" layer="1" rot="R90"/>
-<smd name="8" x="-1.905" y="3.2545" dx="1.905" dy="0.635" layer="1" rot="R90"/>
-<text x="-3.4925" y="-2.81" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="4.1275" y="-2.81" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.7" y1="-2" x2="1.7" y2="2" layer="29" rot="R90"/>
-<rectangle x1="-1.5875" y1="0.635" x2="-0.9525" y2="1.27" layer="31"/>
-<rectangle x1="-0.3175" y1="0.635" x2="0.3175" y2="1.27" layer="31"/>
-<rectangle x1="0.9525" y1="0.635" x2="1.5875" y2="1.27" layer="31"/>
-<rectangle x1="-1.5875" y1="-1.27" x2="-0.9525" y2="-0.635" layer="31"/>
-<rectangle x1="-0.3175" y1="-1.27" x2="0.3175" y2="-0.635" layer="31"/>
-<rectangle x1="0.9525" y1="-1.27" x2="1.5875" y2="-0.635" layer="31"/>
-</package>
 <package name="WSON8-Q2A">
 <description>&lt;b&gt;8-WSON-Q2A&lt;/b&gt;&lt;p&gt;
 8-Contact Very-very-thin Small Outline No-lead&lt;p&gt;
@@ -384,21 +357,6 @@ Serial Quad I/O (SQI) Flash Memory</description>
 </technologies>
 </device>
 <device name="S2" package="SOP-127P-390W-490L-175H-140F-8">
-<connects>
-<connect gate="G$1" pin="!CE!" pad="1"/>
-<connect gate="G$1" pin="SCK" pad="6"/>
-<connect gate="G$1" pin="SI/SIO0" pad="5"/>
-<connect gate="G$1" pin="SIO2" pad="3"/>
-<connect gate="G$1" pin="SIO3" pad="7"/>
-<connect gate="G$1" pin="SO/SIO1" pad="2"/>
-<connect gate="G$1" pin="VDD" pad="8"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-<device name="S2/QA" package="SO08W/WSON8">
 <connects>
 <connect gate="G$1" pin="!CE!" pad="1"/>
 <connect gate="G$1" pin="SCK" pad="6"/>
