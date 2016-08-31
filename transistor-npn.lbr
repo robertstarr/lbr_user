@@ -961,7 +961,7 @@ Small outline transistor (SOT). 2.3mm pitch, 3.5mm body width, 4 leads. JEDEC TO
 <wire x1="3.25" y1="-1.75" x2="-3.25" y2="-1.75" width="0.2032" layer="21"/>
 <wire x1="3.25" y1="1.75" x2="3.25" y2="-1.75" width="0.2032" layer="21"/>
 </package>
-<package name="DIP-300-8">
+<package name="DIP-8-254P-762W">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
 300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
@@ -981,7 +981,7 @@ Small outline transistor (SOT). 2.3mm pitch, 3.5mm body width, 4 leads. JEDEC TO
 <text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="DIP-300-16">
+<package name="DIP-16-254P-762W">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
 300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="10.16" y1="1.905" x2="-10.16" y2="1.905" width="0.2032" layer="21"/>
@@ -1009,7 +1009,7 @@ Small outline transistor (SOT). 2.3mm pitch, 3.5mm body width, 4 leads. JEDEC TO
 <text x="-10.795" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-7.62" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SOP-127P-390W-990L-175H-140F-16">
+<package name="SOP-16-127P-390W-990L-175H-140F">
 <description>&lt;b&gt;SOP (1.27mm pitch, 1.05mm lead length, 9.90mm length, 3.90mm width, 1.75mm max height, 16 leads)&lt;/b&gt;&lt;p&gt;
 Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 9.90mm body length,
 3.90mm body width, 1.75mm max height, 16 leads.
@@ -1078,7 +1078,7 @@ JEDEC TO-78.
 <wire x1="-5.334" y1="-0.508" x2="-4.572" y2="-0.508" width="0.2032" layer="21"/>
 <wire x1="-4.572" y1="0.508" x2="-5.334" y2="0.508" width="0.2032" layer="21"/>
 </package>
-<package name="DIP-300-14">
+<package name="DIP-14-254P-762W">
 <description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
 300 mil row spacing, JEDEC MS-001D</description>
 <wire x1="8.5725" y1="1.905" x2="-8.5725" y2="1.905" width="0.2032" layer="21"/>
@@ -1104,7 +1104,7 @@ JEDEC TO-78.
 <text x="-8.89" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-6.6675" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SOP-127P-390W-865L-175H-140F-14">
+<package name="SOP-14-127P-390W-865L-175H-140F">
 <description>&lt;b&gt;SOP (1.27mm pitch, 1.05mm lead length, 8.65mm length, 3.90mm width, 1.75mm max height, 14 leads)&lt;/b&gt;&lt;p&gt;
 Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 8.65mm body length,
 3.90mm body width, 1.75mm max height, 14 leads.
@@ -3705,7 +3705,7 @@ common collector</description>
 <gate name="A" symbol="NPN-PAD" x="-27.94" y="5.08" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="DIP-300-16">
+<device name="" package="DIP-16-254P-762W">
 <connects>
 <connect gate="A" pin="B" pad="16"/>
 <connect gate="A" pin="C" pad="15"/>
@@ -3727,7 +3727,7 @@ common collector</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="M" package="SOP-127P-390W-990L-175H-140F-16">
+<device name="M" package="SOP-16-127P-390W-990L-175H-140F">
 <connects>
 <connect gate="A" pin="B" pad="16"/>
 <connect gate="A" pin="C" pad="15"/>
@@ -3765,7 +3765,7 @@ common emitter</description>
 <gate name="G" symbol="NPN-C" x="27.94" y="0" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="DIP-300-16">
+<device name="" package="DIP-16-254P-762W">
 <connects>
 <connect gate="A" pin="B" pad="16"/>
 <connect gate="A" pin="C" pad="1"/>
@@ -3787,7 +3787,7 @@ common emitter</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="M" package="SOP-127P-390W-990L-175H-140F-16">
+<device name="M" package="SOP-16-127P-390W-990L-175H-140F">
 <connects>
 <connect gate="A" pin="B" pad="16"/>
 <connect gate="A" pin="C" pad="1"/>
@@ -5004,7 +5004,7 @@ common emitter</description>
 <gate name="B" symbol="NPN" x="7.62" y="0"/>
 </gates>
 <devices>
-<device name="N" package="DIP-300-8">
+<device name="N" package="DIP-8-254P-762W">
 <connects>
 <connect gate="A" pin="B" pad="2"/>
 <connect gate="A" pin="C" pad="1"/>
@@ -5427,7 +5427,7 @@ complimentary to CMPTA56</description>
 <gate name="D" symbol="NPN-R" x="7.62" y="-10.16" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
-<device name="Y" package="DIP-300-14">
+<device name="Y" package="DIP-14-254P-762W">
 <connects>
 <connect gate="A" pin="B" pad="2"/>
 <connect gate="A" pin="C" pad="1"/>
@@ -5446,7 +5446,7 @@ complimentary to CMPTA56</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="D" package="SOP-127P-390W-865L-175H-140F-14">
+<device name="D" package="SOP-14-127P-390W-865L-175H-140F">
 <connects>
 <connect gate="A" pin="B" pad="2"/>
 <connect gate="A" pin="C" pad="1"/>
