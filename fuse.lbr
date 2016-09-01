@@ -2046,6 +2046,47 @@ Littelfuse Inc.</description>
 <rectangle x1="-4.3" y1="-1.5" x2="-2.3" y2="1.5" layer="51"/>
 <rectangle x1="2.3" y1="-1.5" x2="4.3" y2="1.5" layer="51"/>
 </package>
+<package name="3568">
+<description>MINI-PC AUTO FUSE HOLDER</description>
+<wire x1="-7.746" y1="3.365" x2="7.746" y2="3.365" width="0.2032" layer="51"/>
+<wire x1="7.746" y1="3.365" x2="8" y2="3.111" width="0.2032" layer="51"/>
+<wire x1="8" y1="3.111" x2="8" y2="-3.111" width="0.2032" layer="51"/>
+<wire x1="8" y1="-3.111" x2="7.746" y2="-3.365" width="0.2032" layer="51"/>
+<wire x1="7.746" y1="-3.365" x2="-7.746" y2="-3.365" width="0.2032" layer="51"/>
+<wire x1="-7.746" y1="-3.365" x2="-8" y2="-3.111" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-3.111" x2="-8" y2="3.111" width="0.2032" layer="51"/>
+<wire x1="-8" y1="3.111" x2="-7.746" y2="3.365" width="0.2032" layer="51"/>
+<pad name="1A" x="-4.96" y="1.7" drill="1.6" shape="square"/>
+<pad name="1B" x="-4.96" y="-1.7" drill="1.6" shape="square"/>
+<pad name="2A" x="4.96" y="1.7" drill="1.6" shape="square"/>
+<pad name="2B" x="4.96" y="-1.7" drill="1.6" shape="square"/>
+<wire x1="-7" y1="2" x2="-2" y2="2" width="0.2032" layer="51"/>
+<wire x1="-2" y1="2" x2="-2" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="-2" y1="0.5" x2="-2" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-0.5" x2="-2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-2" x2="-7" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-7" y1="-2" x2="-7" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="-7" y1="-0.5" x2="-7" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="-7" y1="0.5" x2="-7" y2="2" width="0.2032" layer="51"/>
+<wire x1="2" y1="2" x2="7" y2="2" width="0.2032" layer="51"/>
+<wire x1="7" y1="2" x2="7" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="7" y1="0.5" x2="7" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="7" y1="-0.5" x2="7" y2="-2" width="0.2032" layer="51"/>
+<wire x1="7" y1="-2" x2="2" y2="-2" width="0.2032" layer="51"/>
+<wire x1="2" y1="-2" x2="2" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="2" y1="-0.5" x2="2" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="2" y1="0.5" x2="2" y2="2" width="0.2032" layer="51"/>
+<wire x1="-7" y1="0.5" x2="-2" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-0.5" x2="-7" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="2" y1="0.5" x2="7" y2="0.5" width="0.2032" layer="51"/>
+<wire x1="2" y1="-0.5" x2="7" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="-8.45" y1="3.8" x2="-8.45" y2="-3.8" width="0.2032" layer="21"/>
+<wire x1="-8.45" y1="-3.8" x2="8.45" y2="-3.8" width="0.2032" layer="21"/>
+<wire x1="8.45" y1="-3.8" x2="8.45" y2="3.8" width="0.2032" layer="21"/>
+<wire x1="8.45" y1="3.8" x2="-8.45" y2="3.8" width="0.2032" layer="21"/>
+<text x="-8.255" y="4.191" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="FUSE">
@@ -3016,6 +3057,24 @@ Littelfuse Inc.</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="3568">
+<description>MINI-PC AUTO FUSE HOLDER&lt;p&gt;
+KEYSTONE</description>
+<gates>
+<gate name="G$1" symbol="FUSE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="3568">
+<connects>
+<connect gate="G$1" pin="1" pad="1A 1B"/>
+<connect gate="G$1" pin="2" pad="2A 2B"/>
 </connects>
 <technologies>
 <technology name=""/>
