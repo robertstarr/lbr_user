@@ -156,48 +156,77 @@ body 6.00 x 5.00 mm</description>
 <text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="USON8-UX">
-<description>&lt;b&gt;8-USON&lt;/b&gt;&lt;p&gt;
-body 2.00 x 3.00 mm</description>
-<wire x1="-1.2" y1="-1.5" x2="-1.2" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.2" y1="1.5" x2="1.2" y2="-1.5" width="0.127" layer="21"/>
-<smd name="1" x="-0.75" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="2" x="-0.25" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="3" x="0.25" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="4" x="0.75" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="5" x="0.75" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="6" x="0.25" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="7" x="-0.25" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="8" x="-0.75" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<text x="-1.55" y="-1.55" size="0.6096" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="1.75" y="-1.55" size="0.4064" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<smd name="9" x="0" y="0" dx="1.7" dy="0.4" layer="1"/>
-<rectangle x1="-1.45" y1="-1.55" x2="-1.1" y2="-1.15" layer="21"/>
-<wire x1="-1.05" y1="1.55" x2="1.05" y2="1.55" width="0.0508" layer="51"/>
-<wire x1="1.05" y1="1.55" x2="1.05" y2="-1.55" width="0.0508" layer="51"/>
-<wire x1="1.05" y1="-1.55" x2="-1.05" y2="-1.55" width="0.0508" layer="51"/>
-<wire x1="-1.05" y1="-1.55" x2="-1.05" y2="1.55" width="0.0508" layer="51"/>
+<package name="SON-8-50P-300W-200L-100H-40F-20EW-165EL">
+<description>&lt;b&gt;SON (0.50mm pitch, 0.40mm lead length, 2mm length, 3mm width, 1.00mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline no-lead package. 0.50mm pitch, 0.40mm lead length 2mm length, 3mm width, 1.00mm max height, 8 leads.
+&lt;/p&gt;
+&lt;p&gt;Non-standard, based on JEDEC MO-229F variation V2030D-2, HVF-PSON.&lt;/p&gt;</description>
+<rectangle x1="-1.5" y1="-1.2" x2="-1.1" y2="-1.6" layer="21"/>
+<rectangle x1="-0.875" y1="-1.5" x2="-0.625" y2="-1.1" layer="51"/>
+<rectangle x1="-0.875" y1="1.1" x2="-0.625" y2="1.5" layer="51"/>
+<rectangle x1="-0.65" y1="-0.1" x2="0.65" y2="0.1" layer="29"/>
+<rectangle x1="-0.5438" y1="-0.0837" x2="0.5438" y2="0.0837" layer="31"/>
+<rectangle x1="-0.375" y1="-1.5" x2="-0.125" y2="-1.1" layer="51"/>
+<rectangle x1="-0.375" y1="1.1" x2="-0.125" y2="1.5" layer="51"/>
+<rectangle x1="0.125" y1="-1.5" x2="0.375" y2="-1.1" layer="51"/>
+<rectangle x1="0.125" y1="1.1" x2="0.375" y2="1.5" layer="51"/>
+<rectangle x1="0.625" y1="-1.5" x2="0.875" y2="-1.1" layer="51"/>
+<rectangle x1="0.625" y1="1.1" x2="0.875" y2="1.5" layer="51"/>
+<smd name="1" x="-0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="2" x="-0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="3" x="0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="4" x="0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="5" x="0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="6" x="0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="7" x="-0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="8" x="-0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="1.5" dy="0.4" layer="1" stop="no" cream="no"/>
+<text x="-0.5" y="-3.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.5" y="2.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.15" y1="-1.6" x2="1.15" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-1.15" y1="1.6" x2="-1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-1.15" y1="1.6" x2="1.15" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.15" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="-1.6" x2="1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="1.6" x2="1.15" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.15" y1="-1.6" x2="1.1" y2="-1.6" width="0.2032" layer="21"/>
 </package>
-<package name="USON8">
-<description>&lt;b&gt;8-USON&lt;/b&gt;&lt;p&gt;
-body 2.00 x 3.00 mm</description>
-<wire x1="-1.2" y1="-1.5" x2="-1.2" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.2" y1="1.5" x2="1.2" y2="-1.5" width="0.127" layer="21"/>
-<smd name="1" x="-0.75" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="2" x="-0.25" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="3" x="0.25" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="4" x="0.75" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="5" x="0.75" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="6" x="0.25" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="7" x="-0.25" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="8" x="-0.75" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<text x="-1.55" y="-1.55" size="0.6096" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="1.75" y="-1.55" size="0.4064" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.45" y1="-1.55" x2="-1.1" y2="-1.15" layer="21"/>
-<wire x1="-1.05" y1="1.55" x2="1.05" y2="1.55" width="0.0508" layer="51"/>
-<wire x1="1.05" y1="1.55" x2="1.05" y2="-1.55" width="0.0508" layer="51"/>
-<wire x1="1.05" y1="-1.55" x2="-1.05" y2="-1.55" width="0.0508" layer="51"/>
-<wire x1="-1.05" y1="-1.55" x2="-1.05" y2="1.55" width="0.0508" layer="51"/>
+<package name="SON-8-50P-300W-200L-80H-40F-20EW-165EL">
+<description>&lt;b&gt;SON (0.50mm pitch, 0.40mm lead length, 2mm length, 3mm width, 0.80mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline no-lead package. 0.50mm pitch, 0.40mm lead length 2mm length, 3mm width, 0.80mm max height, 8 leads.
+&lt;/p&gt;
+&lt;p&gt;Non-standard, based on JEDEC MO-229F variation W2030D-2, HWF-PSON.&lt;/p&gt;</description>
+<rectangle x1="-1.5" y1="-1.2" x2="-1.1" y2="-1.6" layer="21"/>
+<rectangle x1="-0.875" y1="-1.5" x2="-0.625" y2="-1.1" layer="51"/>
+<rectangle x1="-0.875" y1="1.1" x2="-0.625" y2="1.5" layer="51"/>
+<rectangle x1="-0.65" y1="-0.1" x2="0.65" y2="0.1" layer="29"/>
+<rectangle x1="-0.5438" y1="-0.0837" x2="0.5438" y2="0.0837" layer="31"/>
+<rectangle x1="-0.375" y1="-1.5" x2="-0.125" y2="-1.1" layer="51"/>
+<rectangle x1="-0.375" y1="1.1" x2="-0.125" y2="1.5" layer="51"/>
+<rectangle x1="0.125" y1="-1.5" x2="0.375" y2="-1.1" layer="51"/>
+<rectangle x1="0.125" y1="1.1" x2="0.375" y2="1.5" layer="51"/>
+<rectangle x1="0.625" y1="-1.5" x2="0.875" y2="-1.1" layer="51"/>
+<rectangle x1="0.625" y1="1.1" x2="0.875" y2="1.5" layer="51"/>
+<smd name="1" x="-0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="2" x="-0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="3" x="0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="4" x="0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="5" x="0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="6" x="0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="7" x="-0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="8" x="-0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="1.5" dy="0.4" layer="1" stop="no" cream="no"/>
+<text x="-0.5" y="-3.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.5" y="2.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.15" y1="-1.6" x2="1.15" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-1.15" y1="1.6" x2="-1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-1.15" y1="1.6" x2="1.15" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.15" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="-1.6" x2="1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="1.6" x2="1.15" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.15" y1="-1.6" x2="1.1" y2="-1.6" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -366,7 +395,7 @@ SPI Serial Flash, 4KB Sectors</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="UX" package="USON8-UX">
+<device name="UX" package="SON-8-50P-300W-200L-100H-40F-20EW-165EL">
 <connects>
 <connect gate="G$1" pin="!CS!" pad="1"/>
 <connect gate="G$1" pin="!HOLD!" pad="7"/>
@@ -435,7 +464,7 @@ SPI Serial Flash, 4KB Sectors</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="UX" package="USON8">
+<device name="UX" package="SON-8-50P-300W-200L-80H-40F-20EW-165EL">
 <connects>
 <connect gate="G$1" pin="!CS!" pad="1"/>
 <connect gate="G$1" pin="!HOLD!/IO3" pad="7"/>
@@ -443,7 +472,7 @@ SPI Serial Flash, 4KB Sectors</description>
 <connect gate="G$1" pin="CLK" pad="6"/>
 <connect gate="G$1" pin="DI/IO0" pad="5"/>
 <connect gate="G$1" pin="DO/IO1" pad="2"/>
-<connect gate="G$1" pin="GND" pad="4"/>
+<connect gate="G$1" pin="GND" pad="4 EP"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
 </connects>
 <technologies>

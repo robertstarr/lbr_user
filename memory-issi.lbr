@@ -169,27 +169,41 @@ body 6.00 x 5.00 mm</description>
 <smd name="9" x="0" y="0" dx="4.3" dy="3.4" layer="1"/>
 <rectangle x1="-3.2" y1="-3.1" x2="-2.7" y2="-2.6" layer="21"/>
 </package>
-<package name="USON8">
-<description>&lt;b&gt;8-USON&lt;/b&gt;&lt;p&gt;
-body 2.00 x 3.00 mm</description>
-<wire x1="-1.2" y1="-1.5" x2="-1.2" y2="1.5" width="0.127" layer="21"/>
-<wire x1="1.2" y1="1.5" x2="1.2" y2="-1.5" width="0.127" layer="21"/>
-<smd name="1" x="-0.75" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="2" x="-0.25" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="3" x="0.25" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="4" x="0.75" y="-1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="5" x="0.75" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="6" x="0.25" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="7" x="-0.25" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<smd name="8" x="-0.75" y="1.375" dx="0.6" dy="0.3" layer="1" rot="R90"/>
-<text x="-1.55" y="-1.55" size="0.6096" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="1.75" y="-1.55" size="0.4064" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<smd name="9" x="0" y="0" dx="1.7" dy="0.4" layer="1"/>
-<rectangle x1="-1.45" y1="-1.55" x2="-1.1" y2="-1.15" layer="21"/>
-<wire x1="-1.05" y1="1.55" x2="1.05" y2="1.55" width="0.0508" layer="51"/>
-<wire x1="1.05" y1="1.55" x2="1.05" y2="-1.55" width="0.0508" layer="51"/>
-<wire x1="1.05" y1="-1.55" x2="-1.05" y2="-1.55" width="0.0508" layer="51"/>
-<wire x1="-1.05" y1="-1.55" x2="-1.05" y2="1.55" width="0.0508" layer="51"/>
+<package name="SON-8-50P-300W-200L-100H-40F-150EW-150EL">
+<description>&lt;b&gt;SON (0.50mm pitch, 0.40mm lead length, 2mm length, 3mm width, 1.00mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline no-lead package. 0.50mm pitch, 0.40mm lead length 2mm length, 3mm width, 1.00mm max height, 8 leads.
+&lt;/p&gt;
+&lt;p&gt;JEDEC MO-229F, variation V2030D-3, HVF-PSON.&lt;/p&gt;</description>
+<rectangle x1="-1.5" y1="-1.2" x2="-1.1" y2="-1.6" layer="21"/>
+<rectangle x1="-0.875" y1="-1.5" x2="-0.625" y2="-1.1" layer="51"/>
+<rectangle x1="-0.875" y1="1.1" x2="-0.625" y2="1.5" layer="51"/>
+<rectangle x1="-0.65" y1="-0.75" x2="0.65" y2="0.75" layer="29"/>
+<rectangle x1="-0.5438" y1="-0.6275" x2="0.5438" y2="0.6275" layer="31"/>
+<rectangle x1="-0.375" y1="-1.5" x2="-0.125" y2="-1.1" layer="51"/>
+<rectangle x1="-0.375" y1="1.1" x2="-0.125" y2="1.5" layer="51"/>
+<rectangle x1="0.125" y1="-1.5" x2="0.375" y2="-1.1" layer="51"/>
+<rectangle x1="0.125" y1="1.1" x2="0.375" y2="1.5" layer="51"/>
+<rectangle x1="0.625" y1="-1.5" x2="0.875" y2="-1.1" layer="51"/>
+<rectangle x1="0.625" y1="1.1" x2="0.875" y2="1.5" layer="51"/>
+<smd name="1" x="-0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="2" x="-0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="3" x="0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="4" x="0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="5" x="0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="6" x="0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="7" x="-0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="8" x="-0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="1.5" dy="1.7" layer="1" stop="no" cream="no"/>
+<text x="-0.5" y="-3.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.5" y="2.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.15" y1="-1.6" x2="1.15" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-1.15" y1="1.6" x2="-1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-1.15" y1="1.6" x2="1.15" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.15" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="-1.6" x2="1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="1.6" x2="1.15" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.15" y1="-1.6" x2="1.1" y2="-1.6" width="0.2032" layer="21"/>
 </package>
 <package name="VFBGA48L">
 <description>&lt;b&gt;VF-BGA 48L&lt;/b&gt;&lt;p&gt;
