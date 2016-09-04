@@ -1835,24 +1835,24 @@ Quad flat no-lead package. 0.50mm pitch, 0.40mm lead length 9mm length, 9mm widt
 <vertex x="-3.95" y="4.6"/>
 </polygon>
 </package>
-<package name="PDIP-8P3">
-<description>&lt;b&gt;In-line Package (PDIP)&lt;/b&gt;&lt;p&gt;
-8-lead, 0.300" Wide Body, Plastic Dual</description>
-<wire x1="5.08" y1="2.2225" x2="-5.08" y2="2.2225" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-2.2225" x2="5.08" y2="-2.2225" width="0.2032" layer="21"/>
-<wire x1="5.08" y1="2.2225" x2="5.08" y2="-2.2225" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="2.2225" x2="-5.08" y2="0.6985" width="0.2032" layer="21"/>
-<wire x1="-5.08" y1="-2.2225" x2="-5.08" y2="-0.6985" width="0.2032" layer="21"/>
+<package name="DIP-8-254P-762W">
+<description>&lt;b&gt;Dual In Line Package&lt;/b&gt;&lt;p/&gt;
+300 mil row spacing, JEDEC MS-001D</description>
+<wire x1="5.08" y1="1.905" x2="-5.08" y2="1.905" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="5.08" y1="1.905" x2="5.08" y2="-1.905" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="1.905" x2="-5.08" y2="0.6985" width="0.2032" layer="21"/>
+<wire x1="-5.08" y1="-1.905" x2="-5.08" y2="-0.6985" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="0.6985" x2="-5.08" y2="-0.6985" width="0.2032" layer="21" curve="-180"/>
-<pad name="1" x="-3.81" y="-4.1275" drill="0.8128" shape="long" rot="R90" first="yes"/>
-<pad name="2" x="-1.27" y="-4.1275" drill="0.8128" shape="long" rot="R90"/>
-<pad name="7" x="-1.27" y="4.1275" drill="0.8128" shape="long" rot="R90"/>
-<pad name="8" x="-3.81" y="4.1275" drill="0.8128" shape="long" rot="R90"/>
-<pad name="3" x="1.27" y="-4.1275" drill="0.8128" shape="long" rot="R90"/>
-<pad name="4" x="3.81" y="-4.1275" drill="0.8128" shape="long" rot="R90"/>
-<pad name="6" x="1.27" y="4.1275" drill="0.8128" shape="long" rot="R90"/>
-<pad name="5" x="3.81" y="4.1275" drill="0.8128" shape="long" rot="R90"/>
-<text x="-5.715" y="-2.2225" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<pad name="1" x="-3.81" y="-3.81" drill="0.8128" shape="long" rot="R90" first="yes"/>
+<pad name="2" x="-1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="7" x="-1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="8" x="-3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="1.27" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="4" x="3.81" y="-3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="6" x="1.27" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<pad name="5" x="3.81" y="3.81" drill="0.8128" shape="long" rot="R90"/>
+<text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="SOP-8-127P-390W-490L-175H-140F">
@@ -6169,7 +6169,7 @@ Thin profile Quad Flat Package. 0.50mm pitch, 1.0mm lead length 20mm length, 20m
 <gate name="G$1" symbol="ATTINY13A" x="15.24" y="-5.08"/>
 </gates>
 <devices>
-<device name="-8P3" package="PDIP-8P3">
+<device name="-8P3" package="DIP-8-254P-762W">
 <connects>
 <connect gate="G$1" pin="(PCINT0/OC0A/AIN0/MOSI)PB0" pad="5"/>
 <connect gate="G$1" pin="(PCINT1/INT0/OC0B/AIN1/MISO)PB1" pad="6"/>
