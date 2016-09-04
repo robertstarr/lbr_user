@@ -570,83 +570,120 @@ Thin shrink small outline transistor package (also known as SOT363). 0.65mm pitc
 <wire x1="1.1" y1="-0.525" x2="-1.1" y2="-0.525" width="0.2032" layer="51"/>
 <wire x1="1.1" y1="0.525" x2="1.1" y2="-0.525" width="0.2032" layer="21"/>
 </package>
-<package name="TQFN16-5X5">
-<description>TQFN 16&lt;p&gt;
-body 5 x 5 mm, pitch 0.8 mm</description>
+<package name="QFN-16-80P-500W-500L-80H-40F-310EW-310EL">
+<description>&lt;b&gt;QFN (0.80mm pitch, 0.40mm lead length, 5mm length, 5mm width, 0.80mm max height, 16 leads)&lt;/b&gt;&lt;p&gt;
+Quad flat no-lead package. 0.80mm pitch, 0.40mm lead length 5mm length, 5mm width, 0.80mm max height, 16 leads.
+&lt;/p&gt;
+&lt;p&gt;Non-standard, based on JEDEC MO-220K variation WHHB, HWF-PQFN.&lt;/p&gt;</description>
+<rectangle x1="-2.7" y1="2.2" x2="-2.2" y2="2.7" layer="21"/>
+<rectangle x1="-2.5" y1="-1.35" x2="-2.1" y2="-1.05" layer="51"/>
+<rectangle x1="-2.5" y1="-0.55" x2="-2.1" y2="-0.25" layer="51"/>
+<rectangle x1="-2.5" y1="0.25" x2="-2.1" y2="0.55" layer="51"/>
+<rectangle x1="-2.5" y1="1.05" x2="-2.1" y2="1.35" layer="51"/>
+<rectangle x1="-1.55" y1="-1.55" x2="1.55" y2="1.55" layer="29"/>
+<rectangle x1="-1.4234" y1="-1.4234" x2="-0.1266" y2="-0.1266" layer="31"/>
+<rectangle x1="-1.4234" y1="0.1266" x2="-0.1266" y2="1.4234" layer="31"/>
+<rectangle x1="-1.35" y1="-2.5" x2="-1.05" y2="-2.1" layer="51"/>
+<rectangle x1="-1.35" y1="2.1" x2="-1.05" y2="2.5" layer="51"/>
+<rectangle x1="-0.55" y1="-2.5" x2="-0.25" y2="-2.1" layer="51"/>
+<rectangle x1="-0.55" y1="2.1" x2="-0.25" y2="2.5" layer="51"/>
+<rectangle x1="0.1266" y1="-1.4234" x2="1.4234" y2="-0.1266" layer="31"/>
+<rectangle x1="0.1266" y1="0.1266" x2="1.4234" y2="1.4234" layer="31"/>
+<rectangle x1="0.25" y1="-2.5" x2="0.55" y2="-2.1" layer="51"/>
+<rectangle x1="0.25" y1="2.1" x2="0.55" y2="2.5" layer="51"/>
+<rectangle x1="1.05" y1="-2.5" x2="1.35" y2="-2.1" layer="51"/>
+<rectangle x1="1.05" y1="2.1" x2="1.35" y2="2.5" layer="51"/>
+<rectangle x1="2.1" y1="-1.35" x2="2.5" y2="-1.05" layer="51"/>
+<rectangle x1="2.1" y1="-0.55" x2="2.5" y2="-0.25" layer="51"/>
+<rectangle x1="2.1" y1="0.25" x2="2.5" y2="0.55" layer="51"/>
+<rectangle x1="2.1" y1="1.05" x2="2.5" y2="1.35" layer="51"/>
+<smd name="1" x="-2.4" y="1.2" dx="0.7" dy="0.35" layer="1" roundness="100"/>
+<smd name="2" x="-2.4" y="0.4" dx="0.7" dy="0.35" layer="1" roundness="100"/>
+<smd name="3" x="-2.4" y="-0.4" dx="0.7" dy="0.35" layer="1" roundness="100"/>
+<smd name="4" x="-2.4" y="-1.2" dx="0.7" dy="0.35" layer="1" roundness="100"/>
+<smd name="5" x="-1.2" y="-2.4" dx="0.35" dy="0.7" layer="1" roundness="100"/>
+<smd name="6" x="-0.4" y="-2.4" dx="0.35" dy="0.7" layer="1" roundness="100"/>
+<smd name="7" x="0.4" y="-2.4" dx="0.35" dy="0.7" layer="1" roundness="100"/>
+<smd name="8" x="1.2" y="-2.4" dx="0.35" dy="0.7" layer="1" roundness="100"/>
+<smd name="9" x="2.4" y="-1.2" dx="0.7" dy="0.35" layer="1" roundness="100"/>
+<smd name="10" x="2.4" y="-0.4" dx="0.7" dy="0.35" layer="1" roundness="100"/>
+<smd name="11" x="2.4" y="0.4" dx="0.7" dy="0.35" layer="1" roundness="100"/>
+<smd name="12" x="2.4" y="1.2" dx="0.7" dy="0.35" layer="1" roundness="100"/>
+<smd name="13" x="1.2" y="2.4" dx="0.35" dy="0.7" layer="1" roundness="100"/>
+<smd name="14" x="0.4" y="2.4" dx="0.35" dy="0.7" layer="1" roundness="100"/>
+<smd name="15" x="-0.4" y="2.4" dx="0.35" dy="0.7" layer="1" roundness="100"/>
+<smd name="16" x="-1.2" y="2.4" dx="0.35" dy="0.7" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="3.3" dy="3.3" layer="1" stop="no" cream="no"/>
+<text x="-2" y="-4.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2" y="3.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-2.7" y1="-2.7" x2="-2.2" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="-2.2" x2="-2.7" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="2.7" x2="-2.7" y2="2.2" width="0.2032" layer="21"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.0508" layer="51"/>
 <wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.0508" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="-2.2" y1="2.7" x2="-2.7" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="2.7" x2="2.7" y2="2.7" width="0.2032" layer="21"/>
 <wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.0508" layer="51"/>
-<wire x1="-2.75" y1="-2" x2="-2.75" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-2.75" y1="-2.75" x2="-2" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-2.75" y1="2" x2="-2.75" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="-2.75" y1="2.75" x2="-2" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="2" y1="-2.75" x2="2.75" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="-2.75" x2="2.75" y2="-2" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="2" x2="2.75" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="2.75" x2="2" y2="2.75" width="0.2032" layer="21"/>
-<smd name="1" x="-1.2" y="-2.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R90"/>
-<smd name="2" x="-0.4" y="-2.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R90"/>
-<smd name="3" x="0.4" y="-2.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R90"/>
-<smd name="4" x="1.2" y="-2.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R90"/>
-<smd name="5" x="2.4" y="-1.2" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R180"/>
-<smd name="6" x="2.4" y="-0.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R180"/>
-<smd name="7" x="2.4" y="0.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R180"/>
-<smd name="8" x="2.4" y="1.2" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R180"/>
-<smd name="9" x="1.2" y="2.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R270"/>
-<smd name="10" x="0.4" y="2.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R270"/>
-<smd name="11" x="-0.4" y="2.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R270"/>
-<smd name="12" x="-1.2" y="2.4" dx="0.8" dy="0.4" layer="1" roundness="75" rot="R270"/>
-<smd name="13" x="-2.4" y="1.2" dx="0.8" dy="0.4" layer="1" roundness="75"/>
-<smd name="14" x="-2.4" y="0.4" dx="0.8" dy="0.4" layer="1" roundness="75"/>
-<smd name="15" x="-2.4" y="-0.4" dx="0.8" dy="0.4" layer="1" roundness="75"/>
-<smd name="16" x="-2.4" y="-1.2" dx="0.8" dy="0.4" layer="1" roundness="75"/>
-<text x="-2.54" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.5" y1="-1.5" x2="1.5" y2="1.5" layer="29"/>
-<rectangle x1="-1.1" y1="0.2" x2="-0.2" y2="1.1" layer="31"/>
-<rectangle x1="0.2" y1="0.2" x2="1.1" y2="1.1" layer="31"/>
-<rectangle x1="0.2" y1="-1.1" x2="1.1" y2="-0.2" layer="31"/>
-<rectangle x1="-1.1" y1="-1.1" x2="-0.2" y2="-0.2" layer="31"/>
-<rectangle x1="-2.75" y1="-2.75" x2="-2.125" y2="-2.125" layer="21" rot="R90"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="2.7" y1="-2.7" x2="2.7" y2="-2.2" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="-2.7" x2="2.2" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="2.2" x2="2.7" y2="2.7" width="0.2032" layer="21"/>
 </package>
-<package name="TQFN16-3X3">
-<wire x1="-1.5" y1="1.5" x2="-1" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.2032" layer="51"/>
-<wire x1="1" y1="1.5" x2="1.5" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="1" width="0.2032" layer="21"/>
-<wire x1="1.5" y1="1" x2="1.5" y2="-1" width="0.2032" layer="51"/>
-<wire x1="1.5" y1="-1" x2="1.5" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="1.5" y1="-1.5" x2="1" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="1" y1="-1.5" x2="-1" y2="-1.5" width="0.2032" layer="51"/>
-<wire x1="-1" y1="-1.5" x2="-1.5" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="-1" width="0.2032" layer="21"/>
-<wire x1="-1.5" y1="-1" x2="-1.5" y2="1" width="0.2032" layer="51"/>
-<wire x1="-1.5" y1="1" x2="-1.5" y2="1.5" width="0.2032" layer="21"/>
-<smd name="1" x="-0.75" y="-1.5" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R90"/>
-<smd name="2" x="-0.25" y="-1.5" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R90"/>
-<smd name="3" x="0.25" y="-1.5" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R90"/>
-<smd name="4" x="0.75" y="-1.5" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R90"/>
-<smd name="5" x="1.5" y="-0.75" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R180"/>
-<smd name="6" x="1.5" y="-0.25" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R180"/>
-<smd name="7" x="1.5" y="0.25" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R180"/>
-<smd name="8" x="1.5" y="0.75" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R180"/>
-<smd name="9" x="0.75" y="1.5" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R270"/>
-<smd name="10" x="0.25" y="1.5" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R270"/>
-<smd name="11" x="-0.25" y="1.5" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R270"/>
-<smd name="12" x="-0.75" y="1.5" dx="0.8" dy="0.25" layer="1" roundness="75" rot="R270"/>
-<smd name="13" x="-1.5" y="0.75" dx="0.8" dy="0.25" layer="1" roundness="75"/>
-<smd name="14" x="-1.5" y="0.25" dx="0.8" dy="0.25" layer="1" roundness="75"/>
-<smd name="15" x="-1.5" y="-0.25" dx="0.8" dy="0.25" layer="1" roundness="75"/>
-<smd name="16" x="-1.5" y="-0.75" dx="0.8" dy="0.25" layer="1" roundness="75"/>
-<text x="-1.5875" y="2.2225" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.5875" y="-2.8575" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.5" y1="-1.5" x2="-1" y2="-1" layer="21"/>
-<rectangle x1="-0.7" y1="-0.7" x2="0.7" y2="0.7" layer="29"/>
-<rectangle x1="-0.6" y1="0.1" x2="-0.1" y2="0.6" layer="31"/>
-<rectangle x1="0.1" y1="0.1" x2="0.6" y2="0.6" layer="31"/>
-<rectangle x1="0.1" y1="-0.6" x2="0.6" y2="-0.1" layer="31"/>
-<rectangle x1="-0.6" y1="-0.6" x2="-0.1" y2="-0.1" layer="31"/>
+<package name="QFN-16-50P-300W-300L-80H-40F-110EW-110EL">
+<description>&lt;b&gt;QFN (0.50mm pitch, 0.40mm lead length, 3mm length, 3mm width, 0.80mm max height, 16 leads)&lt;/b&gt;&lt;p&gt;
+Quad flat no-lead package. 0.50mm pitch, 0.40mm lead length 3mm length, 3mm width, 0.80mm max height, 16 leads.
+&lt;/p&gt;
+&lt;p&gt;Non-standard, based on JEDEC MO-220K variation WEED-2, HWF-PQFN.&lt;/p&gt;</description>
+<rectangle x1="-1.7" y1="1.2" x2="-1.2" y2="1.7" layer="21"/>
+<rectangle x1="-1.5" y1="-0.875" x2="-1.1" y2="-0.625" layer="51"/>
+<rectangle x1="-1.5" y1="-0.375" x2="-1.1" y2="-0.125" layer="51"/>
+<rectangle x1="-1.5" y1="0.125" x2="-1.1" y2="0.375" layer="51"/>
+<rectangle x1="-1.5" y1="0.625" x2="-1.1" y2="0.875" layer="51"/>
+<rectangle x1="-0.875" y1="-1.5" x2="-0.625" y2="-1.1" layer="51"/>
+<rectangle x1="-0.875" y1="1.1" x2="-0.625" y2="1.5" layer="51"/>
+<rectangle x1="-0.55" y1="-0.55" x2="0.55" y2="0.55" layer="29"/>
+<rectangle x1="-0.4602" y1="-0.4602" x2="0.4602" y2="0.4602" layer="31"/>
+<rectangle x1="-0.375" y1="-1.5" x2="-0.125" y2="-1.1" layer="51"/>
+<rectangle x1="-0.375" y1="1.1" x2="-0.125" y2="1.5" layer="51"/>
+<rectangle x1="0.125" y1="-1.5" x2="0.375" y2="-1.1" layer="51"/>
+<rectangle x1="0.125" y1="1.1" x2="0.375" y2="1.5" layer="51"/>
+<rectangle x1="0.625" y1="-1.5" x2="0.875" y2="-1.1" layer="51"/>
+<rectangle x1="0.625" y1="1.1" x2="0.875" y2="1.5" layer="51"/>
+<rectangle x1="1.1" y1="-0.875" x2="1.5" y2="-0.625" layer="51"/>
+<rectangle x1="1.1" y1="-0.375" x2="1.5" y2="-0.125" layer="51"/>
+<rectangle x1="1.1" y1="0.125" x2="1.5" y2="0.375" layer="51"/>
+<rectangle x1="1.1" y1="0.625" x2="1.5" y2="0.875" layer="51"/>
+<smd name="1" x="-1.4" y="0.75" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="2" x="-1.4" y="0.25" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="3" x="-1.4" y="-0.25" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="4" x="-1.4" y="-0.75" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="5" x="-0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="6" x="-0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="7" x="0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="8" x="0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="9" x="1.4" y="-0.75" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="10" x="1.4" y="-0.25" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="11" x="1.4" y="0.25" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="12" x="1.4" y="0.75" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="13" x="0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="14" x="0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="15" x="-0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="16" x="-0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="1.3" dy="1.3" layer="1" stop="no" cream="no"/>
+<text x="-1" y="-3.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1" y="2.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.7" y1="-1.7" x2="-1.2" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="-1.2" x2="-1.7" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="1.7" x2="-1.7" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="-1.2" y1="1.7" x2="-1.7" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.2" y1="1.7" x2="1.7" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.0508" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.0508" layer="51"/>
+<wire x1="1.7" y1="-1.7" x2="1.7" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="-1.7" x2="1.2" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="1.2" x2="1.7" y2="1.7" width="0.2032" layer="21"/>
 </package>
 <package name="TQFP-100-50P-1400W-1400L-120H">
 <description>&lt;b&gt;TQFP (0.50mm pitch, 1.0mm lead length, 14mm length, 14mm width, 1.20mm max height, 100 leads)&lt;/b&gt;&lt;p&gt;
@@ -2229,58 +2266,6 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body l
 <vertex x="6.0325" y="4.7625"/>
 </polygon>
 </package>
-<package name="TQFN28">
-<description>&lt;b&gt;TQFN28&lt;/b&gt; - (T2855-6)&lt;p&gt;
-body 5 x 5 mm, pitch 0.5 mm</description>
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.0508" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.0508" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.0508" layer="51"/>
-<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.0508" layer="51"/>
-<wire x1="-2" y1="2.75" x2="-2.75" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="-2.75" y1="2.75" x2="-2.75" y2="2" width="0.2032" layer="21"/>
-<wire x1="2" y1="2.75" x2="2.75" y2="2.75" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="2.75" x2="2.75" y2="2" width="0.2032" layer="21"/>
-<wire x1="-2.75" y1="-2" x2="-2.75" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="-2.75" y1="-2.75" x2="-2" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="2" y1="-2.75" x2="2.75" y2="-2.75" width="0.2032" layer="21"/>
-<wire x1="2.75" y1="-2.75" x2="2.75" y2="-2" width="0.2032" layer="21"/>
-<smd name="1" x="-2.375" y="1.5" dx="0.95" dy="0.3" layer="1" roundness="75"/>
-<smd name="2" x="-2.375" y="1" dx="0.95" dy="0.3" layer="1" roundness="75"/>
-<smd name="3" x="-2.375" y="0.5" dx="0.95" dy="0.3" layer="1" roundness="75"/>
-<smd name="4" x="-2.375" y="0" dx="0.95" dy="0.3" layer="1" roundness="75"/>
-<smd name="5" x="-2.375" y="-0.5" dx="0.95" dy="0.3" layer="1" roundness="75"/>
-<smd name="6" x="-2.375" y="-1" dx="0.95" dy="0.3" layer="1" roundness="75"/>
-<smd name="7" x="-2.375" y="-1.5" dx="0.95" dy="0.3" layer="1" roundness="75"/>
-<smd name="8" x="-1.5" y="-2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="9" x="-1" y="-2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="10" x="-0.5" y="-2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="11" x="0" y="-2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="12" x="0.5" y="-2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="13" x="1" y="-2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="14" x="1.5" y="-2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="15" x="2.375" y="-1.5" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R180"/>
-<smd name="16" x="2.375" y="-1" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R180"/>
-<smd name="17" x="2.375" y="-0.5" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R180"/>
-<smd name="18" x="2.375" y="0" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R180"/>
-<smd name="19" x="2.375" y="0.5" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R180"/>
-<smd name="20" x="2.375" y="1" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R180"/>
-<smd name="21" x="2.375" y="1.5" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R180"/>
-<smd name="22" x="1.5" y="2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R270"/>
-<smd name="23" x="1" y="2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R270"/>
-<smd name="24" x="0.5" y="2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R270"/>
-<smd name="25" x="0" y="2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R270"/>
-<smd name="26" x="-0.5" y="2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R270"/>
-<smd name="27" x="-1" y="2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R270"/>
-<smd name="28" x="-1.5" y="2.375" dx="0.95" dy="0.3" layer="1" roundness="75" rot="R270"/>
-<text x="-2.75" y="3.25" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.75" y="-4" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.6" y1="-1.6" x2="1.6" y2="1.6" layer="29"/>
-<rectangle x1="-2.75" y1="2.125" x2="-2.125" y2="2.75" layer="21"/>
-<rectangle x1="-1.25" y1="0.25" x2="-0.25" y2="1.25" layer="31"/>
-<rectangle x1="0.25" y1="0.25" x2="1.25" y2="1.25" layer="31"/>
-<rectangle x1="0.25" y1="-1.25" x2="1.25" y2="-0.25" layer="31"/>
-<rectangle x1="-1.25" y1="-1.25" x2="-0.25" y2="-0.25" layer="31"/>
-</package>
 <package name="SOT23">
 <description>&lt;b&gt;SOT23 (0.95mm pitch, 1.3mm body, 3 leads)&lt;/b&gt;&lt;p&gt;
 Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, variation AB, TR-PDSO-G.</description>
@@ -2444,62 +2429,88 @@ JEDEC MO-153F, variation BD-1, R-PDSO-G.&lt;/p&gt;
 <rectangle x1="-0.5028" y1="1.4384" x2="-0.1472" y2="2.4036" layer="51"/>
 <rectangle x1="-1.1528" y1="1.4384" x2="-0.7972" y2="2.4036" layer="51"/>
 </package>
-<package name="QFN28">
-<description>&lt;b&gt;QFN28&lt;/b&gt;&lt;p&gt;
-5x5 mm body</description>
-<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.0508" layer="51"/>
-<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.0508" layer="51"/>
-<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.0508" layer="51"/>
+<package name="QFN-28-50P-500W-500L-80H-55F-310EW-310EL">
+<description>&lt;b&gt;QFN (0.50mm pitch, 0.55mm lead length, 5mm length, 5mm width, 0.80mm max height, 28 leads)&lt;/b&gt;&lt;p&gt;
+Quad flat no-lead package. 0.50mm pitch, 0.55mm lead length 5mm length, 5mm width, 0.80mm max height, 28 leads.
+&lt;/p&gt;
+&lt;p&gt;Non-standard, based on JEDEC MO-220K variation WHHD-1, HWF-PQFN.&lt;/p&gt;</description>
+<rectangle x1="-2.7" y1="2.2" x2="-2.2" y2="2.7" layer="21"/>
+<rectangle x1="-2.5" y1="-1.625" x2="-1.95" y2="-1.375" layer="51"/>
+<rectangle x1="-2.5" y1="-1.125" x2="-1.95" y2="-0.875" layer="51"/>
+<rectangle x1="-2.5" y1="-0.625" x2="-1.95" y2="-0.375" layer="51"/>
+<rectangle x1="-2.5" y1="-0.125" x2="-1.95" y2="0.125" layer="51"/>
+<rectangle x1="-2.5" y1="0.375" x2="-1.95" y2="0.625" layer="51"/>
+<rectangle x1="-2.5" y1="0.875" x2="-1.95" y2="1.125" layer="51"/>
+<rectangle x1="-2.5" y1="1.375" x2="-1.95" y2="1.625" layer="51"/>
+<rectangle x1="-1.625" y1="-2.5" x2="-1.375" y2="-1.95" layer="51"/>
+<rectangle x1="-1.625" y1="1.95" x2="-1.375" y2="2.5" layer="51"/>
+<rectangle x1="-1.55" y1="-1.55" x2="1.55" y2="1.55" layer="29"/>
+<rectangle x1="-1.4234" y1="-1.4234" x2="-0.1266" y2="-0.1266" layer="31"/>
+<rectangle x1="-1.4234" y1="0.1266" x2="-0.1266" y2="1.4234" layer="31"/>
+<rectangle x1="-1.125" y1="-2.5" x2="-0.875" y2="-1.95" layer="51"/>
+<rectangle x1="-1.125" y1="1.95" x2="-0.875" y2="2.5" layer="51"/>
+<rectangle x1="-0.625" y1="-2.5" x2="-0.375" y2="-1.95" layer="51"/>
+<rectangle x1="-0.625" y1="1.95" x2="-0.375" y2="2.5" layer="51"/>
+<rectangle x1="-0.125" y1="-2.5" x2="0.125" y2="-1.95" layer="51"/>
+<rectangle x1="-0.125" y1="1.95" x2="0.125" y2="2.5" layer="51"/>
+<rectangle x1="0.1266" y1="-1.4234" x2="1.4234" y2="-0.1266" layer="31"/>
+<rectangle x1="0.1266" y1="0.1266" x2="1.4234" y2="1.4234" layer="31"/>
+<rectangle x1="0.375" y1="-2.5" x2="0.625" y2="-1.95" layer="51"/>
+<rectangle x1="0.375" y1="1.95" x2="0.625" y2="2.5" layer="51"/>
+<rectangle x1="0.875" y1="-2.5" x2="1.125" y2="-1.95" layer="51"/>
+<rectangle x1="0.875" y1="1.95" x2="1.125" y2="2.5" layer="51"/>
+<rectangle x1="1.375" y1="-2.5" x2="1.625" y2="-1.95" layer="51"/>
+<rectangle x1="1.375" y1="1.95" x2="1.625" y2="2.5" layer="51"/>
+<rectangle x1="1.95" y1="-1.625" x2="2.5" y2="-1.375" layer="51"/>
+<rectangle x1="1.95" y1="-1.125" x2="2.5" y2="-0.875" layer="51"/>
+<rectangle x1="1.95" y1="-0.625" x2="2.5" y2="-0.375" layer="51"/>
+<rectangle x1="1.95" y1="-0.125" x2="2.5" y2="0.125" layer="51"/>
+<rectangle x1="1.95" y1="0.375" x2="2.5" y2="0.625" layer="51"/>
+<rectangle x1="1.95" y1="0.875" x2="2.5" y2="1.125" layer="51"/>
+<rectangle x1="1.95" y1="1.375" x2="2.5" y2="1.625" layer="51"/>
+<smd name="1" x="-2.325" y="1.5" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="2" x="-2.325" y="1" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="3" x="-2.325" y="0.5" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="4" x="-2.325" y="0" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="5" x="-2.325" y="-0.5" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="6" x="-2.325" y="-1" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="7" x="-2.325" y="-1.5" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="8" x="-1.5" y="-2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="9" x="-1" y="-2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="10" x="-0.5" y="-2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="11" x="0" y="-2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="12" x="0.5" y="-2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="13" x="1" y="-2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="14" x="1.5" y="-2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="15" x="2.325" y="-1.5" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="16" x="2.325" y="-1" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="17" x="2.325" y="-0.5" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="18" x="2.325" y="0" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="19" x="2.325" y="0.5" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="20" x="2.325" y="1" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="21" x="2.325" y="1.5" dx="0.85" dy="0.3" layer="1" roundness="100"/>
+<smd name="22" x="1.5" y="2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="23" x="1" y="2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="24" x="0.5" y="2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="25" x="0" y="2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="26" x="-0.5" y="2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="27" x="-1" y="2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="28" x="-1.5" y="2.325" dx="0.3" dy="0.85" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="3.3" dy="3.3" layer="1" stop="no" cream="no"/>
+<text x="-2" y="-4.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2" y="3.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-2.7" y1="-2.7" x2="-2.2" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="-2.2" x2="-2.7" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="2.7" x2="-2.7" y2="2.2" width="0.2032" layer="21"/>
 <wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.0508" layer="51"/>
-<wire x1="-1.9" y1="2.7" x2="-2.7" y2="2.7" width="0.2032" layer="21"/>
-<wire x1="-2.7" y1="2.7" x2="-2.7" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="2.7" y1="2.7" x2="1.9" y2="2.7" width="0.2032" layer="21"/>
-<wire x1="2.7" y1="2.7" x2="2.7" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="2.7" y1="-2.7" x2="1.9" y2="-2.7" width="0.2032" layer="21"/>
-<wire x1="-1.9" y1="-2.7" x2="-2.7" y2="-2.7" width="0.2032" layer="21"/>
-<wire x1="-2.7" y1="-1.9" x2="-2.7" y2="-2.7" width="0.2032" layer="21"/>
-<wire x1="2.7" y1="-1.9" x2="2.7" y2="-2.7" width="0.2032" layer="21"/>
-<smd name="1" x="-2.475" y="1.5" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R90"/>
-<smd name="2" x="-2.475" y="1" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R90"/>
-<smd name="3" x="-2.475" y="0.5" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R90"/>
-<smd name="4" x="-2.475" y="0" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R90"/>
-<smd name="5" x="-2.475" y="-0.5" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R90"/>
-<smd name="6" x="-2.475" y="-1" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R90"/>
-<smd name="7" x="-2.475" y="-1.5" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R90"/>
-<smd name="8" x="-1.5" y="-2.475" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R180"/>
-<smd name="9" x="-1" y="-2.475" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R180"/>
-<smd name="10" x="-0.5" y="-2.475" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R180"/>
-<smd name="11" x="0" y="-2.475" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R180"/>
-<smd name="12" x="0.5" y="-2.475" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R180"/>
-<smd name="13" x="1" y="-2.475" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R180"/>
-<smd name="14" x="1.5" y="-2.475" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R180"/>
-<smd name="15" x="2.475" y="-1.5" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R270"/>
-<smd name="16" x="2.475" y="-1" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R270"/>
-<smd name="17" x="2.475" y="-0.5" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R270"/>
-<smd name="18" x="2.475" y="0" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R270"/>
-<smd name="19" x="2.475" y="0.5" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R270"/>
-<smd name="20" x="2.475" y="1" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R270"/>
-<smd name="21" x="2.475" y="1.5" dx="0.3" dy="0.8" layer="1" roundness="75" rot="R270"/>
-<smd name="22" x="1.5" y="2.475" dx="0.3" dy="0.8" layer="1" roundness="75"/>
-<smd name="23" x="1" y="2.475" dx="0.3" dy="0.8" layer="1" roundness="75"/>
-<smd name="24" x="0.5" y="2.475" dx="0.3" dy="0.8" layer="1" roundness="75"/>
-<smd name="25" x="0" y="2.475" dx="0.3" dy="0.8" layer="1" roundness="75"/>
-<smd name="26" x="-0.5" y="2.475" dx="0.3" dy="0.8" layer="1" roundness="75"/>
-<smd name="27" x="-1" y="2.475" dx="0.3" dy="0.8" layer="1" roundness="75"/>
-<smd name="28" x="-1.5" y="2.475" dx="0.3" dy="0.8" layer="1" roundness="75"/>
-<text x="-2.5" y="3.25" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.5" y="-4" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.7" y1="-1.7" x2="1.7" y2="1.7" layer="29"/>
-<rectangle x1="-1.375" y1="0.625" x2="-0.625" y2="1.375" layer="31"/>
-<rectangle x1="-2.7" y1="2.1" x2="-2.1" y2="2.7" layer="21"/>
-<rectangle x1="-0.375" y1="0.625" x2="0.375" y2="1.375" layer="31"/>
-<rectangle x1="0.625" y1="0.625" x2="1.375" y2="1.375" layer="31"/>
-<rectangle x1="-0.375" y1="-0.375" x2="0.375" y2="0.375" layer="31"/>
-<rectangle x1="0.625" y1="-0.375" x2="1.375" y2="0.375" layer="31"/>
-<rectangle x1="-1.375" y1="-0.375" x2="-0.625" y2="0.375" layer="31"/>
-<rectangle x1="-1.375" y1="-1.375" x2="-0.625" y2="-0.625" layer="31"/>
-<rectangle x1="-0.375" y1="-1.375" x2="0.375" y2="-0.625" layer="31"/>
-<rectangle x1="0.625" y1="-1.375" x2="1.375" y2="-0.625" layer="31"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.0508" layer="51"/>
+<wire x1="-2.2" y1="2.7" x2="-2.7" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="2.2" y1="2.7" x2="2.7" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="2.7" y1="-2.7" x2="2.7" y2="-2.2" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="-2.7" x2="2.2" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="2.2" x2="2.7" y2="2.7" width="0.2032" layer="21"/>
 </package>
 <package name="SO28L-X12">
 <description>&lt;b&gt;Small Outline Package&lt;/b&gt;&lt;p&gt;
@@ -27719,11 +27730,11 @@ Half-Duplex Differential Transceiver for Battery-Powered Systems</description>
 <gate name="A" symbol="MAX5494" x="0" y="0"/>
 </gates>
 <devices>
-<device name="ETE" package="TQFN16-5X5">
+<device name="ETE" package="QFN-16-80P-500W-500L-80H-40F-310EW-310EL">
 <connects>
 <connect gate="A" pin="!CS!" pad="1"/>
 <connect gate="A" pin="DIN" pad="13"/>
-<connect gate="A" pin="GND" pad="12"/>
+<connect gate="A" pin="GND" pad="12 EP"/>
 <connect gate="A" pin="H1" pad="9"/>
 <connect gate="A" pin="H2" pad="4"/>
 <connect gate="A" pin="L1" pad="10"/>
@@ -27769,12 +27780,12 @@ Half-Duplex Differential Transceiver for Battery-Powered Systems</description>
 <gate name="G$1" symbol="MAX7317" x="0" y="0" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="TQFN16-3X3">
+<device name="" package="QFN-16-50P-300W-300L-80H-40F-110EW-110EL">
 <connects>
 <connect gate="G$1" pin="!CS!" pad="16"/>
 <connect gate="G$1" pin="DIN" pad="13"/>
 <connect gate="G$1" pin="DOUT" pad="12"/>
-<connect gate="G$1" pin="GND" pad="6"/>
+<connect gate="G$1" pin="GND" pad="6 EP"/>
 <connect gate="G$1" pin="P0" pad="1"/>
 <connect gate="G$1" pin="P1" pad="2"/>
 <connect gate="G$1" pin="P2" pad="3"/>
@@ -28595,7 +28606,7 @@ Source: MAX3465-MAX3469.pdf</description>
 <gate name="G$1" symbol="MAX1908" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TQFN28">
+<device name="" package="QFN-28-50P-500W-500L-80H-55F-310EW-310EL">
 <connects>
 <connect gate="G$1" pin="!ACOK!" pad="11"/>
 <connect gate="G$1" pin="!SHDN!" pad="8"/>
@@ -28615,7 +28626,7 @@ Source: MAX3465-MAX3469.pdf</description>
 <connect gate="G$1" pin="DHI" pad="25"/>
 <connect gate="G$1" pin="DLO" pad="21"/>
 <connect gate="G$1" pin="DLOV" pad="22"/>
-<connect gate="G$1" pin="GND" pad="14"/>
+<connect gate="G$1" pin="GND" pad="14 EP"/>
 <connect gate="G$1" pin="ICHG" pad="9"/>
 <connect gate="G$1" pin="ICTL" pad="13"/>
 <connect gate="G$1" pin="IINP" pad="28"/>
@@ -28803,7 +28814,7 @@ Precision, Low-Power, High-Voltage</description>
 <gate name="G$1" symbol="MAX8731A" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="QFN28">
+<device name="" package="QFN-28-50P-500W-500L-80H-55F-310EW-310EL">
 <connects>
 <connect gate="G$1" pin="ACIN" pad="2"/>
 <connect gate="G$1" pin="ACOK" pad="13"/>
@@ -28822,7 +28833,7 @@ Precision, Low-Power, High-Voltage</description>
 <connect gate="G$1" pin="DLO" pad="20"/>
 <connect gate="G$1" pin="FBSA" pad="15"/>
 <connect gate="G$1" pin="FBSB" pad="16"/>
-<connect gate="G$1" pin="GND@1" pad="1"/>
+<connect gate="G$1" pin="GND@1" pad="1 EP"/>
 <connect gate="G$1" pin="GND@12" pad="12"/>
 <connect gate="G$1" pin="IINP" pad="8"/>
 <connect gate="G$1" pin="LDO" pad="21"/>
@@ -28931,7 +28942,7 @@ Precision, Low-Power, High-Voltage</description>
 <gate name="G$1" symbol="MAX2016" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="TQFN28">
+<device name="" package="QFN-28-50P-500W-500L-80H-55F-310EW-310EL">
 <connects>
 <connect gate="G$1" pin="COR" pad="8"/>
 <connect gate="G$1" pin="COUTH" pad="6"/>
@@ -28945,7 +28956,7 @@ Precision, Low-Power, High-Voltage</description>
 <connect gate="G$1" pin="FV1" pad="14"/>
 <connect gate="G$1" pin="FV2" pad="13"/>
 <connect gate="G$1" pin="GND@17" pad="17"/>
-<connect gate="G$1" pin="GND@5" pad="5"/>
+<connect gate="G$1" pin="GND@5" pad="5 EP"/>
 <connect gate="G$1" pin="OUTA" pad="27"/>
 <connect gate="G$1" pin="OUTB" pad="23"/>
 <connect gate="G$1" pin="OUTD" pad="11"/>
