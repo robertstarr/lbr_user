@@ -77,41 +77,61 @@
 USE AT YOUR OWN RISK!&lt;p&gt;
 &lt;author&gt;Copyright (C) 2015, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
 <packages>
-<package name="VQFN16">
-<description>&lt;b&gt;VQFN16&lt;/b&gt;&lt;p&gt;
-body 3 x 3 x 0.85 mm</description>
-<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.0508" layer="51"/>
-<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.0508" layer="51"/>
-<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.0508" layer="51"/>
-<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.0508" layer="51"/>
-<wire x1="-1.2" y1="1.7" x2="-1.7" y2="1.7" width="0.2032" layer="21"/>
-<wire x1="-1.7" y1="1.7" x2="-1.7" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="1.7" y1="1.7" x2="1.2" y2="1.7" width="0.2032" layer="21"/>
-<wire x1="1.7" y1="1.7" x2="1.7" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="1.7" y1="-1.2" x2="1.7" y2="-1.7" width="0.2032" layer="21"/>
-<wire x1="1.2" y1="-1.7" x2="1.7" y2="-1.7" width="0.2032" layer="21"/>
+<package name="QFN-16-50P-300W-300L-100H-40F-165EW-165EL">
+<description>&lt;b&gt;QFN (0.50mm pitch, 0.40mm lead length, 3mm length, 3mm width, 1.00mm max height, 16 leads)&lt;/b&gt;&lt;p&gt;
+Quad flat no-lead package. 0.50mm pitch, 0.40mm lead length 3mm length, 3mm width, 1.00mm max height, 16 leads.
+&lt;/p&gt;
+&lt;p&gt;JEDEC MO-220K, variation VEED-4, HVF-PQFN.&lt;/p&gt;</description>
+<rectangle x1="-1.7" y1="1.2" x2="-1.2" y2="1.7" layer="21"/>
+<rectangle x1="-1.5" y1="-0.875" x2="-1.1" y2="-0.625" layer="51"/>
+<rectangle x1="-1.5" y1="-0.375" x2="-1.1" y2="-0.125" layer="51"/>
+<rectangle x1="-1.5" y1="0.125" x2="-1.1" y2="0.375" layer="51"/>
+<rectangle x1="-1.5" y1="0.625" x2="-1.1" y2="0.875" layer="51"/>
+<rectangle x1="-0.875" y1="-1.5" x2="-0.625" y2="-1.1" layer="51"/>
+<rectangle x1="-0.875" y1="1.1" x2="-0.625" y2="1.5" layer="51"/>
+<rectangle x1="-0.8" y1="-0.8" x2="0.8" y2="0.8" layer="29"/>
+<rectangle x1="-0.6693" y1="-0.6693" x2="0.6693" y2="0.6693" layer="31"/>
+<rectangle x1="-0.375" y1="-1.5" x2="-0.125" y2="-1.1" layer="51"/>
+<rectangle x1="-0.375" y1="1.1" x2="-0.125" y2="1.5" layer="51"/>
+<rectangle x1="0.125" y1="-1.5" x2="0.375" y2="-1.1" layer="51"/>
+<rectangle x1="0.125" y1="1.1" x2="0.375" y2="1.5" layer="51"/>
+<rectangle x1="0.625" y1="-1.5" x2="0.875" y2="-1.1" layer="51"/>
+<rectangle x1="0.625" y1="1.1" x2="0.875" y2="1.5" layer="51"/>
+<rectangle x1="1.1" y1="-0.875" x2="1.5" y2="-0.625" layer="51"/>
+<rectangle x1="1.1" y1="-0.375" x2="1.5" y2="-0.125" layer="51"/>
+<rectangle x1="1.1" y1="0.125" x2="1.5" y2="0.375" layer="51"/>
+<rectangle x1="1.1" y1="0.625" x2="1.5" y2="0.875" layer="51"/>
+<smd name="1" x="-1.4" y="0.75" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="2" x="-1.4" y="0.25" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="3" x="-1.4" y="-0.25" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="4" x="-1.4" y="-0.75" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="5" x="-0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="6" x="-0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="7" x="0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="8" x="0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="9" x="1.4" y="-0.75" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="10" x="1.4" y="-0.25" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="11" x="1.4" y="0.25" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="12" x="1.4" y="0.75" dx="0.7" dy="0.3" layer="1" roundness="100"/>
+<smd name="13" x="0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="14" x="0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="15" x="-0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="16" x="-0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="1.8" dy="1.8" layer="1" stop="no" cream="no"/>
+<text x="-1" y="-3.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-1" y="2.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <wire x1="-1.7" y1="-1.7" x2="-1.2" y2="-1.7" width="0.2032" layer="21"/>
-<wire x1="-1.7" y1="-1.7" x2="-1.7" y2="-1.2" width="0.2032" layer="21"/>
-<smd name="1" x="-1.45" y="0.75" dx="0.52" dy="0.3" layer="1" rot="R180"/>
-<smd name="2" x="-1.45" y="0.25" dx="0.52" dy="0.3" layer="1" rot="R180"/>
-<smd name="3" x="-1.45" y="-0.25" dx="0.52" dy="0.3" layer="1" rot="R180"/>
-<smd name="4" x="-1.45" y="-0.75" dx="0.52" dy="0.3" layer="1" rot="R180"/>
-<smd name="5" x="-0.75" y="-1.45" dx="0.52" dy="0.3" layer="1" rot="R270"/>
-<smd name="6" x="-0.25" y="-1.45" dx="0.52" dy="0.3" layer="1" rot="R270"/>
-<smd name="7" x="0.25" y="-1.45" dx="0.52" dy="0.3" layer="1" rot="R270"/>
-<smd name="8" x="0.75" y="-1.45" dx="0.52" dy="0.3" layer="1" rot="R270"/>
-<smd name="9" x="1.45" y="-0.75" dx="0.52" dy="0.3" layer="1"/>
-<smd name="10" x="1.45" y="-0.25" dx="0.52" dy="0.3" layer="1"/>
-<smd name="11" x="1.45" y="0.25" dx="0.52" dy="0.3" layer="1"/>
-<smd name="12" x="1.45" y="0.75" dx="0.52" dy="0.3" layer="1"/>
-<smd name="13" x="0.75" y="1.45" dx="0.52" dy="0.3" layer="1" rot="R90"/>
-<smd name="14" x="0.25" y="1.45" dx="0.52" dy="0.3" layer="1" rot="R90"/>
-<smd name="15" x="-0.25" y="1.45" dx="0.52" dy="0.3" layer="1" rot="R90"/>
-<smd name="16" x="-0.75" y="1.45" dx="0.52" dy="0.3" layer="1" rot="R90"/>
-<text x="-1.5875" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.5875" y="-2.8575" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.7" y1="1.3" x2="-1.3" y2="1.7" layer="21"/>
-<smd name="17" x="0" y="0" dx="1.8" dy="1.8" layer="1"/>
+<wire x1="-1.7" y1="-1.2" x2="-1.7" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="1.7" x2="-1.7" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="-1.5" x2="-1.5" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="-1.5" y1="1.5" x2="1.5" y2="1.5" width="0.0508" layer="51"/>
+<wire x1="-1.2" y1="1.7" x2="-1.7" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.2" y1="1.7" x2="1.7" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-1.5" x2="-1.5" y2="-1.5" width="0.0508" layer="51"/>
+<wire x1="1.5" y1="1.5" x2="1.5" y2="-1.5" width="0.0508" layer="51"/>
+<wire x1="1.7" y1="-1.7" x2="1.7" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="-1.7" x2="1.2" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="1.2" x2="1.7" y2="1.7" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -144,7 +164,7 @@ body 3 x 3 x 0.85 mm</description>
 <gate name="G$1" symbol="AB08X5" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="VQFN16">
+<device name="" package="QFN-16-50P-300W-300L-100H-40F-165EW-165EL">
 <connects>
 <connect gate="G$1" pin="!IRQ2!" pad="4"/>
 <connect gate="G$1" pin="!TIRQ!" pad="12"/>
@@ -155,7 +175,7 @@ body 3 x 3 x 0.85 mm</description>
 <connect gate="G$1" pin="SDA" pad="6"/>
 <connect gate="G$1" pin="VBAT" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="13"/>
-<connect gate="G$1" pin="VSS" pad="9 17"/>
+<connect gate="G$1" pin="VSS" pad="9 EP"/>
 <connect gate="G$1" pin="WDI" pad="2"/>
 <connect gate="G$1" pin="XI" pad="16"/>
 <connect gate="G$1" pin="XO" pad="15"/>
