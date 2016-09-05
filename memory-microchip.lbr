@@ -188,32 +188,41 @@ JEDEC MO-187F, variation AA, TSR-PDSO.&lt;/p&gt;
 <wire x1="1.4" y1="-1.4" x2="1.4" y2="1.4" width="0.2032" layer="21"/>
 <wire x1="1.4" y1="1.4" x2="-1.4" y2="1.4" width="0.2032" layer="21"/>
 </package>
-<package name="TDFN08">
-<description>&lt;b&gt;TDFN 8-pad&lt;/b&gt; - Thin Dual Flat No Lead Package&lt;p&gt;
-2 x 3 x 0.75 mm Body</description>
-<wire x1="-1" y1="-1.5" x2="-1" y2="1.5" width="0.0508" layer="51"/>
-<wire x1="-1" y1="1.5" x2="1" y2="1.5" width="0.0508" layer="51"/>
-<wire x1="1" y1="1.5" x2="1" y2="-1.5" width="0.0508" layer="51"/>
-<wire x1="1" y1="-1.5" x2="-1" y2="-1.5" width="0.0508" layer="51"/>
-<wire x1="-1.15" y1="-1.65" x2="-1.25" y2="-1.65" width="0.2032" layer="21"/>
-<wire x1="-1.25" y1="-1.65" x2="-1.25" y2="1.65" width="0.2032" layer="21"/>
-<wire x1="-1.25" y1="1.65" x2="-1.15" y2="1.65" width="0.2032" layer="21"/>
-<wire x1="1.15" y1="-1.65" x2="1.25" y2="-1.65" width="0.2032" layer="21"/>
-<wire x1="1.25" y1="-1.65" x2="1.25" y2="1.65" width="0.2032" layer="21"/>
-<wire x1="1.25" y1="1.65" x2="1.15" y2="1.65" width="0.2032" layer="21"/>
-<smd name="1" x="-0.75" y="-1.5" dx="0.75" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="2" x="-0.25" y="-1.5" dx="0.75" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="3" x="0.25" y="-1.5" dx="0.75" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="4" x="0.75" y="-1.5" dx="0.75" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="5" x="0.75" y="1.5" dx="0.75" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="6" x="0.25" y="1.5" dx="0.75" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="7" x="-0.25" y="1.5" dx="0.75" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<smd name="8" x="-0.75" y="1.5" dx="0.75" dy="0.3" layer="1" roundness="75" rot="R90"/>
-<text x="-1.5875" y="-1.905" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="2.2225" y="-1.905" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-1.55" y1="-1.55" x2="-1.25" y2="-1.25" layer="21" rot="R90"/>
-<rectangle x1="-0.8" y1="-0.8" x2="0.8" y2="0.8" layer="29" rot="R90"/>
-<rectangle x1="-0.7" y1="-0.7" x2="0.7" y2="0.7" layer="31"/>
+<package name="SON-8-50P-300W-200L-80H-40F-150EW-150EL">
+<description>&lt;b&gt;SON (0.50mm pitch, 0.40mm lead length, 2mm length, 3mm width, 0.80mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline no-lead package. 0.50mm pitch, 0.40mm lead length 2mm length, 3mm width, 0.80mm max height, 8 leads.
+&lt;/p&gt;
+&lt;p&gt;JEDEC MO-229F, variation W2030D-3, HWF-PSON.&lt;/p&gt;</description>
+<rectangle x1="-1.5" y1="-1.2" x2="-1.1" y2="-1.6" layer="21"/>
+<rectangle x1="-0.875" y1="-1.5" x2="-0.625" y2="-1.1" layer="51"/>
+<rectangle x1="-0.875" y1="1.1" x2="-0.625" y2="1.5" layer="51"/>
+<rectangle x1="-0.65" y1="-0.75" x2="0.65" y2="0.75" layer="29"/>
+<rectangle x1="-0.5438" y1="-0.6275" x2="0.5438" y2="0.6275" layer="31"/>
+<rectangle x1="-0.375" y1="-1.5" x2="-0.125" y2="-1.1" layer="51"/>
+<rectangle x1="-0.375" y1="1.1" x2="-0.125" y2="1.5" layer="51"/>
+<rectangle x1="0.125" y1="-1.5" x2="0.375" y2="-1.1" layer="51"/>
+<rectangle x1="0.125" y1="1.1" x2="0.375" y2="1.5" layer="51"/>
+<rectangle x1="0.625" y1="-1.5" x2="0.875" y2="-1.1" layer="51"/>
+<rectangle x1="0.625" y1="1.1" x2="0.875" y2="1.5" layer="51"/>
+<smd name="1" x="-0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="2" x="-0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="3" x="0.25" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="4" x="0.75" y="-1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="5" x="0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="6" x="0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="7" x="-0.25" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="8" x="-0.75" y="1.4" dx="0.3" dy="0.7" layer="1" roundness="100"/>
+<smd name="EP" x="0" y="0" dx="1.5" dy="1.7" layer="1" stop="no" cream="no"/>
+<text x="-0.5" y="-3.5" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-0.5" y="2.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.15" y1="-1.6" x2="1.15" y2="-1.6" width="0.2032" layer="51"/>
+<wire x1="-1.15" y1="1.6" x2="-1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="-1.15" y1="1.6" x2="1.15" y2="1.6" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.15" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-1.1" y1="-1.6" x2="-1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="-1.6" x2="1.1" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="1.6" x2="1.15" y2="1.6" width="0.2032" layer="21"/>
+<wire x1="1.15" y1="-1.6" x2="1.1" y2="-1.6" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -257,7 +266,7 @@ JEDEC MO-187F, variation AA, TSR-PDSO.&lt;/p&gt;
 <gate name="G$1" symbol="24XX32AF" x="0" y="0"/>
 </gates>
 <devices>
-<device name="MNY" package="TDFN08">
+<device name="MNY" package="SON-8-50P-300W-200L-80H-40F-150EW-150EL">
 <connects>
 <connect gate="G$1" pin="A0" pad="1"/>
 <connect gate="G$1" pin="A1" pad="2"/>
@@ -265,7 +274,7 @@ JEDEC MO-187F, variation AA, TSR-PDSO.&lt;/p&gt;
 <connect gate="G$1" pin="SCL" pad="6"/>
 <connect gate="G$1" pin="SDA" pad="5"/>
 <connect gate="G$1" pin="VCC" pad="8"/>
-<connect gate="G$1" pin="VSS" pad="4"/>
+<connect gate="G$1" pin="VSS" pad="4 EP"/>
 <connect gate="G$1" pin="WP" pad="7"/>
 </connects>
 <technologies>
