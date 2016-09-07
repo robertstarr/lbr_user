@@ -301,6 +301,72 @@ Thin shrink small outline transistor package (SSOT). 0.95mm pitch, 1.6mm body wi
 <wire x1="1.45" y1="-0.65" x2="1.45" y2="0.65" width="0.2032" layer="21"/>
 <wire x1="1.45" y1="0.8" x2="1.45" y2="-0.8" width="0.2032" layer="51"/>
 </package>
+<package name="TO126">
+<description>&lt;b&gt;TO-126 (2.29mm lead pitch, 3 leads, vertical)&lt;/b&gt;&lt;p&gt;
+Flange mounted header. 2.29mm lead pitch, 3 leads, vertical.&lt;/p&gt;&lt;p&gt;
+JEDEC TO-126.
+&lt;/p&gt;</description>
+<circle x="-3.175" y="-2.159" radius="0.4064" width="0" layer="51"/>
+<pad name="1" x="-2.286" y="-1.27" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-1.27" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.286" y="-1.27" drill="1.016" shape="long" rot="R90"/>
+<rectangle x1="-3.937" y1="-0.381" x2="-3.175" y2="0" layer="21"/>
+<rectangle x1="-3.175" y1="-0.381" x2="-1.397" y2="0" layer="51"/>
+<rectangle x1="-1.397" y1="-0.381" x2="-0.889" y2="0" layer="21"/>
+<rectangle x1="-0.889" y1="-0.381" x2="0.889" y2="0" layer="51"/>
+<rectangle x1="0.889" y1="-0.381" x2="1.397" y2="0" layer="21"/>
+<rectangle x1="1.397" y1="-0.381" x2="3.175" y2="0" layer="51"/>
+<rectangle x1="3.175" y1="-0.381" x2="3.937" y2="0" layer="21"/>
+<text x="-3.9878" y="-6.3246" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.9624" y="-4.5466" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-3.937" y1="-1.27" x2="-3.683" y2="-2.794" width="0.2032" layer="21"/>
+<wire x1="-3.937" y1="-0.127" x2="-3.937" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-3.683" y1="-2.794" x2="-2.794" y2="-2.794" width="0.2032" layer="21"/>
+<wire x1="-2.794" y1="-2.794" x2="-1.778" y2="-2.794" width="0.2032" layer="51"/>
+<wire x1="-1.778" y1="-2.794" x2="-0.508" y2="-2.794" width="0.2032" layer="21"/>
+<wire x1="-0.508" y1="-2.794" x2="0.508" y2="-2.794" width="0.2032" layer="51"/>
+<wire x1="0.508" y1="-2.794" x2="1.778" y2="-2.794" width="0.2032" layer="21"/>
+<wire x1="1.778" y1="-2.794" x2="2.794" y2="-2.794" width="0.2032" layer="51"/>
+<wire x1="2.794" y1="-2.794" x2="3.683" y2="-2.794" width="0.2032" layer="21"/>
+<wire x1="3.683" y1="-2.794" x2="3.937" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="3.937" y1="-1.27" x2="3.937" y2="-0.127" width="0.2032" layer="21"/>
+</package>
+<package name="TO126-H">
+<description>&lt;b&gt;TO-126 (2.29mm lead pitch, 3 leads, horizontal)&lt;/b&gt;&lt;p&gt;
+Flange mounted header. 2.29mm lead pitch, 3 leads, horizontal.&lt;/p&gt;&lt;p&gt;
+JEDEC TO-126.
+&lt;/p&gt;</description>
+<circle x="-3.1242" y="-0.4826" radius="0.4318" width="0" layer="21"/>
+<circle x="0" y="5.08" radius="3.81" width="0" layer="42"/>
+<circle x="0" y="5.08" radius="3.81" width="0" layer="43"/>
+<circle x="0" y="5.08" radius="1.651" width="0.2032" layer="21"/>
+<hole x="0" y="5.08" drill="3.302"/>
+<pad name="1" x="-2.286" y="-5.08" drill="1.1176" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-5.08" drill="1.1176" shape="long" rot="R90"/>
+<pad name="3" x="2.286" y="-5.08" drill="1.1176" shape="long" rot="R90"/>
+<rectangle x1="-2.667" y1="-5.207" x2="-1.905" y2="-3.429" layer="51"/>
+<rectangle x1="-2.667" y1="-3.429" x2="-1.905" y2="-1.27" layer="21"/>
+<rectangle x1="-0.635" y1="-3.048" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="-0.381" y1="-5.207" x2="0.381" y2="-3.429" layer="51"/>
+<rectangle x1="-0.381" y1="-3.429" x2="0.381" y2="-1.27" layer="21"/>
+<rectangle x1="1.905" y1="-5.207" x2="2.667" y2="-3.429" layer="51"/>
+<rectangle x1="1.905" y1="-3.429" x2="2.667" y2="-1.27" layer="21"/>
+<text x="-3.175" y="1.397" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.54" y="7.62" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-3.937" y1="-1.27" x2="-3.937" y2="9.144" width="0.2032" layer="21"/>
+<wire x1="-3.937" y1="-1.27" x2="3.937" y2="-1.27" width="0.2032" layer="21"/>
+<wire x1="-3.937" y1="9.144" x2="3.937" y2="9.144" width="0.2032" layer="21"/>
+<wire x1="-1.9493" y1="3.8858" x2="-1.2393" y2="3.1591" width="0.2032" layer="21" curve="25.67749"/>
+<wire x1="-1.4787" y1="4.3456" x2="-1.9493" y2="3.8858" width="0.2032" layer="21"/>
+<wire x1="-0.7687" y1="3.6188" x2="-1.2393" y2="3.1591" width="0.2032" layer="21"/>
+<wire x1="-0.508" y1="6.6509" x2="-0.508" y2="7.3088" width="0.2032" layer="21"/>
+<wire x1="-0.508" y1="7.3088" x2="0.508" y2="7.3088" width="0.2032" layer="21" curve="-25.679633"/>
+<wire x1="0.508" y1="6.6509" x2="0.508" y2="7.3088" width="0.2032" layer="21"/>
+<wire x1="0.7687" y1="3.6188" x2="1.2393" y2="3.1591" width="0.2032" layer="21"/>
+<wire x1="1.2393" y1="3.1591" x2="1.9493" y2="3.8858" width="0.2032" layer="21" curve="25.67749"/>
+<wire x1="1.4787" y1="4.3456" x2="1.9493" y2="3.8858" width="0.2032" layer="21"/>
+<wire x1="3.937" y1="9.144" x2="3.937" y2="-1.27" width="0.2032" layer="21"/>
+</package>
 <package name="TO18">
 <description>&lt;b&gt;TO-18 (2.54mm lead pitch, 3 leads)&lt;/b&gt;&lt;p&gt;
 Header family package. 2.54mm lead pitch, 3 leads, metal can.
