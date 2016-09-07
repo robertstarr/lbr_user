@@ -1271,15 +1271,15 @@ JEDEC TO-263E, variation AA, R-PSFM.
 <vertex x="5.3975" y="5.08"/>
 <vertex x="5.3975" y="4.445"/>
 </polygon>
-<rectangle x1="-3.175" y1="-7.62" x2="-1.905" y2="-5.715" layer="51"/>
 <rectangle x1="-3.175" y1="-5.715" x2="-1.905" y2="-4.7625" layer="21"/>
-<rectangle x1="-0.635" y1="-7.62" x2="0.635" y2="-5.715" layer="51"/>
+<rectangle x1="-2.921" y1="-9.652" x2="-2.159" y2="-5.715" layer="51"/>
 <rectangle x1="-0.635" y1="-5.715" x2="0.635" y2="-4.7624" layer="21"/>
-<rectangle x1="1.905" y1="-7.62" x2="3.175" y2="-5.715" layer="51"/>
+<rectangle x1="-0.381" y1="-9.652" x2="0.381" y2="-5.715" layer="51"/>
 <rectangle x1="1.905" y1="-5.715" x2="3.175" y2="-4.7625" layer="21"/>
-<smd name="1" x="-2.54" y="-8.255" dx="1.905" dy="3.81" layer="1" rot="R180"/>
-<smd name="2" x="0" y="-8.255" dx="1.905" dy="3.81" layer="1" rot="R180"/>
-<smd name="3" x="2.54" y="-8.255" dx="1.905" dy="3.81" layer="1" rot="R180"/>
+<rectangle x1="2.159" y1="-9.652" x2="2.921" y2="-5.715" layer="51"/>
+<smd name="1" x="-2.54" y="-8.255" dx="1.3" dy="3.8" layer="1" rot="R180"/>
+<smd name="2" x="0" y="-8.255" dx="1.3" dy="3.8" layer="1" rot="R180"/>
+<smd name="3" x="2.54" y="-8.255" dx="1.3" dy="3.8" layer="1" rot="R180"/>
 <smd name="4" x="0" y="2.54" dx="10.16" dy="9.652" layer="1" rot="R270"/>
 <text x="-6.0325" y="-4.7625" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-2.2225" y="-1.5875" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
@@ -1317,27 +1317,30 @@ Small outline package. 0.95mm pitch, 1.3mm body width, 3 leads. JEDEC TO-236H, v
 <wire x1="1.45" y1="0.65" x2="1.45" y2="-0.65" width="0.2032" layer="51"/>
 <wire x1="1.45" y1="0.65" x2="0.5" y2="0.65" width="0.2032" layer="21"/>
 </package>
-<package name="SOT89-4">
-<wire x1="2.2724" y1="1.6104" x2="2.2724" y2="-1.1104" width="0.1778" layer="51"/>
-<wire x1="2.2724" y1="-1.1104" x2="-2.2724" y2="-1.1104" width="0.2032" layer="51"/>
-<wire x1="-2.2724" y1="-1.1104" x2="-2.2724" y2="1.6104" width="0.1778" layer="51"/>
-<wire x1="-2.2724" y1="1.6104" x2="2.2724" y2="1.6104" width="0.2032" layer="51"/>
-<wire x1="-2.2724" y1="-1.1024" x2="-2.2724" y2="1.6104" width="0.2032" layer="21"/>
-<wire x1="-2.2724" y1="1.6104" x2="-1.5636" y2="1.6104" width="0.2032" layer="21"/>
-<wire x1="2.2724" y1="1.6104" x2="2.2724" y2="-1.1024" width="0.2032" layer="21"/>
-<wire x1="1.5636" y1="1.6104" x2="2.2724" y2="1.6104" width="0.2032" layer="21"/>
-<wire x1="-0.5776" y1="-1.1104" x2="-0.9364" y2="-1.1104" width="0.2032" layer="51"/>
-<wire x1="0.9224" y1="-1.1104" x2="0.5636" y2="-1.1104" width="0.2032" layer="51"/>
-<smd name="3" x="1.5" y="-1.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="1" x="-1.5" y="-1.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="2" x="0" y="-1.75" dx="0.8" dy="1.5" layer="1"/>
-<smd name="4" x="0" y="1.05" dx="2.5" dy="3" layer="1" thermals="no"/>
-<text x="-2.2225" y="2.8575" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1.905" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.75" y1="-2.15" x2="-1.25" y2="-1.15" layer="51"/>
-<rectangle x1="-0.25" y1="-2.15" x2="0.25" y2="-1.15" layer="51"/>
-<rectangle x1="1.25" y1="-2.15" x2="1.75" y2="-1.15" layer="51"/>
-<rectangle x1="-0.85" y1="1.65" x2="0.85" y2="2.2" layer="51"/>
+<package name="TO243-AA">
+<description>&lt;b&gt;TO-243 AA (1.5mm pitch, 2.5mm body width, 3 leads, exposed pad)&lt;/b&gt;&lt;p&gt;
+Header family, peripheral terminals. 1.5mm pitch, 2.5mm body width, 3 leads, exposed pad.&lt;/p&gt;&lt;p&gt;
+JEDEC TO-243C, variation AA.&lt;/p&gt;&lt;p&gt;
+Also known as SOT-89.&lt;/p&gt;</description>
+<rectangle x1="-1.75" y1="-2.25" x2="-1.25" y2="-1.25" layer="51"/>
+<rectangle x1="-0.8" y1="1.25" x2="0.8" y2="1.75" layer="51"/>
+<rectangle x1="-0.35" y1="-1.45" x2="0.35" y2="-0.75" layer="1"/>
+<rectangle x1="-0.25" y1="-2.25" x2="0.25" y2="-1.25" layer="51"/>
+<rectangle x1="1.25" y1="-2.25" x2="1.75" y2="-1.25" layer="51"/>
+<smd name="1" x="-1.5" y="-2" dx="0.7" dy="1.1" layer="1"/>
+<smd name="2" x="0" y="-2" dx="0.7" dy="1.1" layer="1"/>
+<smd name="3" x="1.5" y="-2" dx="0.7" dy="1.1" layer="1"/>
+<smd name="4" x="0" y="0.65" dx="2" dy="2.8" layer="1"/>
+<text x="-2.2225" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.2225" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.0508" layer="51"/>
+<wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="-2.25" y1="1.25" x2="2.25" y2="1.25" width="0.0508" layer="51"/>
+<wire x1="-2.25" y1="1.25" x2="-1.2636" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="1.2636" y1="1.25" x2="2.25" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="2.25" y1="-1.25" x2="-2.25" y2="-1.25" width="0.0508" layer="51"/>
+<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.0508" layer="51"/>
+<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.2032" layer="21"/>
 </package>
 <package name="SOT23-6">
 <description>&lt;b&gt;TSSOP (SSOT, 0.95mm pitch, 1.6mm body, 6 leads)&lt;/b&gt;&lt;p&gt;
@@ -3886,7 +3889,7 @@ Adjustable 150mA Low-Noise</description>
 <gate name="G$1" symbol="MCP1700/MB" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT89-4">
+<device name="" package="TO243-AA">
 <connects>
 <connect gate="G$1" pin="GND" pad="1"/>
 <connect gate="G$1" pin="IN" pad="2 4"/>
