@@ -517,29 +517,6 @@ JEDEC TO-39
 <wire x1="-3.5052" y1="-4.064" x2="-4.0386" y2="-3.5306" width="0.2032" layer="21"/>
 <wire x1="-2.9718" y1="-3.5306" x2="-3.5052" y2="-4.064" width="0.2032" layer="21"/>
 </package>
-<package name="TO202">
-<description>&lt;b&gt;TO-202 (2.54mm lead pitch, 3 leads, exposed pad, vertical)&lt;/b&gt;&lt;p&gt;
-Flange mounted header. 2.54mm lead pitch, 3 leads, exposed pad, vertical.&lt;/p&gt;&lt;p&gt;
-JEDEC TO-202&lt;/p&gt;</description>
-<circle x="-4.064" y="-3.9878" radius="0.4318" width="0" layer="21"/>
-<pad name="1" x="-2.54" y="-2.54" drill="1.1176" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-2.54" drill="1.1176" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-2.54" drill="1.1176" shape="long" rot="R90"/>
-<rectangle x1="-4.826" y1="-2.794" x2="-3.429" y2="-2.286" layer="21"/>
-<rectangle x1="-3.429" y1="-2.794" x2="-1.651" y2="-2.286" layer="51"/>
-<rectangle x1="-1.651" y1="-2.794" x2="-0.889" y2="-2.286" layer="21"/>
-<rectangle x1="-0.889" y1="-2.794" x2="0.889" y2="-2.286" layer="51"/>
-<rectangle x1="0.889" y1="-2.794" x2="1.651" y2="-2.286" layer="21"/>
-<rectangle x1="1.651" y1="-2.794" x2="3.429" y2="-2.286" layer="51"/>
-<rectangle x1="3.429" y1="-2.794" x2="4.826" y2="-2.286" layer="21"/>
-<text x="-4.445" y="-8.89" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="-4.445" y="-6.985" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<wire x1="-4.826" y1="-4.7498" x2="2.794" y2="-4.7498" width="0.2032" layer="21"/>
-<wire x1="-4.826" y1="-4.7498" x2="-4.826" y2="-0.127" width="0.2032" layer="21"/>
-<wire x1="-4.826" y1="-0.127" x2="4.8006" y2="-0.127" width="0.2032" layer="21"/>
-<wire x1="2.794" y1="-4.7498" x2="4.8006" y2="-2.794" width="0.2032" layer="21"/>
-<wire x1="4.8006" y1="-0.127" x2="4.8006" y2="-2.794" width="0.2032" layer="21"/>
-</package>
 <package name="TO18V">
 <description>&lt;b&gt;TO-18&lt;/b&gt;</description>
 <wire x1="-2.2098" y1="-0.9693" x2="2.2098" y2="-0.9693" width="0.0508" layer="51" curve="132.631933" cap="flat"/>
@@ -688,43 +665,6 @@ IEAJ SC-59.&lt;/p&gt;</description>
 <rectangle x1="-1.143" y1="0.635" x2="-0.6858" y2="1.3208" layer="51"/>
 <rectangle x1="-1.1938" y1="-1.3208" x2="-0.3048" y2="-0.635" layer="51"/>
 <rectangle x1="-0.4001" y1="-0.3" x2="0.4001" y2="0.5001" layer="35"/>
-</package>
-<package name="TO263-AB">
-<description>&lt;b&gt;TO-263 AB (D2PAK, 2 leads, 2.54mm pitch, 4.83mm max height)&lt;/b&gt;&lt;p&gt;
-Plastic surface mounted header family. 2 leads, 2.54mm pitch, 4.83mm max height.
-&lt;/p&gt;&lt;p&gt;
-JEDEC TO-263E, variation AB, R-PSFM. Also known as D2PAK.
-&lt;/p&gt;</description>
-<polygon width="0.2032" layer="51">
-<vertex x="-5.3975" y="4.445"/>
-<vertex x="-5.3975" y="5.08"/>
-<vertex x="-4.445" y="5.715"/>
-<vertex x="4.445" y="5.715"/>
-<vertex x="5.3975" y="5.08"/>
-<vertex x="5.3975" y="4.445"/>
-</polygon>
-<rectangle x1="-3.175" y1="-7.62" x2="-1.905" y2="-5.715" layer="51"/>
-<rectangle x1="-3.175" y1="-5.715" x2="-1.905" y2="-4.7625" layer="21"/>
-<rectangle x1="-0.635" y1="-5.715" x2="0.635" y2="-4.7624" layer="21"/>
-<rectangle x1="1.905" y1="-7.62" x2="3.175" y2="-5.715" layer="51"/>
-<rectangle x1="1.905" y1="-5.715" x2="3.175" y2="-4.7625" layer="21"/>
-<smd name="1" x="-2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
-<smd name="3" x="2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
-<smd name="4" x="0" y="2.54" dx="10.16" dy="9.652" layer="1" rot="R270"/>
-<text x="-6.0325" y="-4.7625" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-2.2225" y="-1.5875" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<wire x1="-5.3975" y1="-4.7625" x2="-5.3975" y2="4.445" width="0.2032" layer="21"/>
-<wire x1="-5.3975" y1="4.445" x2="5.3975" y2="4.445" width="0.2032" layer="51"/>
-<wire x1="-5.08" y1="-4.445" x2="-5.08" y2="4.1274" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="-4.445" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="-4.445" x2="-5.3975" y2="-4.7625" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="4.1274" x2="5.0799" y2="4.1275" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="4.1274" x2="-5.3975" y2="4.445" width="0.0508" layer="51"/>
-<wire x1="5.0799" y1="4.1275" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
-<wire x1="5.0799" y1="4.1275" x2="5.3975" y2="4.445" width="0.0508" layer="51"/>
-<wire x1="5.08" y1="-4.445" x2="5.3975" y2="-4.7625" width="0.0508" layer="51"/>
-<wire x1="5.3975" y1="-4.7625" x2="-5.3975" y2="-4.7625" width="0.2032" layer="21"/>
-<wire x1="5.3975" y1="4.445" x2="5.3975" y2="-4.7625" width="0.2032" layer="21"/>
 </package>
 <package name="TO225AAV">
 <description>&lt;b&gt;TO-225&lt;/b&gt;&lt;p&gt;
