@@ -187,25 +187,30 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="5.08" y="-3.048" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-4.1" y1="-3" x2="-3.6" y2="-2.5" layer="21"/>
 </package>
-<package name="SOT89">
-<description>&lt;b&gt;SOT89&lt;/b&gt;</description>
-<wire x1="2.25" y1="-1.25" x2="-2.25" y2="-1.25" width="0.2032" layer="51"/>
-<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.2032" layer="21"/>
+<package name="TO243-AA">
+<description>&lt;b&gt;TO-243 AA (1.5mm pitch, 2.5mm body width, 3 leads, exposed pad)&lt;/b&gt;&lt;p&gt;
+Header family, peripheral terminals. 1.5mm pitch, 2.5mm body width, 3 leads, exposed pad.&lt;/p&gt;&lt;p&gt;
+JEDEC TO-243C, variation AA.&lt;/p&gt;&lt;p&gt;
+Also known as SOT-89.&lt;/p&gt;</description>
+<rectangle x1="-1.75" y1="-2.25" x2="-1.25" y2="-1.25" layer="51"/>
+<rectangle x1="-0.8" y1="1.25" x2="0.8" y2="1.75" layer="51"/>
+<rectangle x1="-0.35" y1="-1.45" x2="0.35" y2="-0.75" layer="1"/>
+<rectangle x1="-0.25" y1="-2.25" x2="0.25" y2="-1.25" layer="51"/>
+<rectangle x1="1.25" y1="-2.25" x2="1.75" y2="-1.25" layer="51"/>
+<smd name="1" x="-1.5" y="-2" dx="0.7" dy="1.1" layer="1"/>
+<smd name="2" x="0" y="-2" dx="0.7" dy="1.1" layer="1"/>
+<smd name="3" x="1.5" y="-2" dx="0.7" dy="1.1" layer="1"/>
+<smd name="4" x="0" y="0.65" dx="2" dy="2.8" layer="1"/>
+<text x="-2.2225" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-2.2225" y="2.54" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.0508" layer="51"/>
 <wire x1="-2.25" y1="-1.25" x2="-2.25" y2="1.25" width="0.2032" layer="21"/>
-<wire x1="-2.25" y1="1.25" x2="-1.25" y2="1.25" width="0.2032" layer="21"/>
-<wire x1="-1.25" y1="1.25" x2="1.25" y2="1.25" width="0.2032" layer="51"/>
-<wire x1="1.25" y1="1.25" x2="2.25" y2="1.25" width="0.2032" layer="21"/>
-<wire x1="0.7874" y1="1.2954" x2="-0.7874" y2="1.2954" width="0.2032" layer="51"/>
-<smd name="1" x="-1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
-<smd name="3" x="1.499" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
-<smd name="2" x="0" y="-1.981" dx="0.8" dy="1.4" layer="1"/>
-<smd name="4" x="0" y="1.575" dx="2.032" dy="1.27" layer="1"/>
-<text x="1.905" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.4051" y="-4.3449" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-1.7272" y1="-2.1082" x2="-1.27" y2="-1.27" layer="51"/>
-<rectangle x1="1.27" y1="-2.1082" x2="1.7272" y2="-1.27" layer="51"/>
-<rectangle x1="-0.2794" y1="-2.1082" x2="0.2794" y2="-1.27" layer="51"/>
-<rectangle x1="-0.89" y1="1.19" x2="0.89" y2="2.11" layer="51"/>
+<wire x1="-2.25" y1="1.25" x2="2.25" y2="1.25" width="0.0508" layer="51"/>
+<wire x1="-2.25" y1="1.25" x2="-1.2636" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="1.2636" y1="1.25" x2="2.25" y2="1.25" width="0.2032" layer="21"/>
+<wire x1="2.25" y1="-1.25" x2="-2.25" y2="-1.25" width="0.0508" layer="51"/>
+<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.0508" layer="51"/>
+<wire x1="2.25" y1="1.25" x2="2.25" y2="-1.25" width="0.2032" layer="21"/>
 </package>
 <package name="VV105">
 <description>VV105</description>
@@ -810,7 +815,7 @@ Mini-Circuits</description>
 <gate name="G$1" symbol="MMIC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT89">
+<device name="" package="TO243-AA">
 <connects>
 <connect gate="G$1" pin="GND@1" pad="2"/>
 <connect gate="G$1" pin="GND@2" pad="4"/>
@@ -887,7 +892,7 @@ Mini-Circuits</description>
 <gate name="G$1" symbol="MMIC" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOT89">
+<device name="" package="TO243-AA">
 <connects>
 <connect gate="G$1" pin="GND@1" pad="2"/>
 <connect gate="G$1" pin="GND@2" pad="4"/>

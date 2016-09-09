@@ -79,101 +79,6 @@ To use, open any library and&lt;p&gt;
 2) when prompted, select the script 'update-smd-ic.scr'.&lt;p&gt;
 &lt;author&gt;Created by Bob Starr, rtzaudio@mindspring.com&lt;/author&gt;</description>
 <packages>
-<package name="TO252-AA">
-<description>&lt;b&gt;TO-252 AA (DPAK, 2 leads, 2.39mm max height, 2.67mm lead length)&lt;/b&gt;&lt;p&gt;
-Flange mounted family surface mount. 2 leads, 2.39mm max height, 2.67mm lead length.
-&lt;/p&gt;&lt;p&gt;
-JEDEC TO-252E, variation AA, R-PSFM-G. Also known as DPAK.
-&lt;/p&gt;</description>
-<polygon width="0.2032" layer="51">
-<vertex x="-2.5" y="3.2"/>
-<vertex x="-2.5" y="3.95"/>
-<vertex x="-1.65" y="4.5"/>
-<vertex x="1.65" y="4.5"/>
-<vertex x="2.5" y="3.95"/>
-<vertex x="2.5" y="3.2"/>
-</polygon>
-<rectangle x1="-2.6416" y1="-5.7404" x2="-1.8796" y2="-3.0734" layer="51"/>
-<rectangle x1="-0.381" y1="-3.8354" x2="0.381" y2="-3.0734" layer="51"/>
-<rectangle x1="1.8288" y1="-5.7404" x2="2.5908" y2="-3.0734" layer="51"/>
-<smd name="1" x="-2.286" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
-<smd name="3" x="2.286" y="-4.9276" dx="1.6002" dy="2.9972" layer="1"/>
-<smd name="4" x="0" y="1.8528" dx="5.4516" dy="7" layer="1"/>
-<text x="3.81" y="1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="3.81" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<wire x1="-3.302" y1="3.2" x2="-3.302" y2="-3" width="0.2032" layer="21"/>
-<wire x1="3.3" y1="3.2" x2="-3.3" y2="3.2" width="0.2032" layer="51"/>
-<wire x1="3.302" y1="-3" x2="3.302" y2="3.2" width="0.2032" layer="21"/>
-<wire x1="3.302" y1="-3" x2="-3.302" y2="-3" width="0.2032" layer="21"/>
-</package>
-<package name="TO263-AB">
-<description>&lt;b&gt;TO-263 AB (D2PAK, 2 leads, 2.54mm pitch, 4.83mm max height)&lt;/b&gt;&lt;p&gt;
-Plastic surface mounted header family. 2 leads, 2.54mm pitch, 4.83mm max height.
-&lt;/p&gt;&lt;p&gt;
-JEDEC TO-263E, variation AB, R-PSFM. Also known as D2PAK.
-&lt;/p&gt;</description>
-<polygon width="0.2032" layer="51">
-<vertex x="-5.3975" y="4.445"/>
-<vertex x="-5.3975" y="5.08"/>
-<vertex x="-4.445" y="5.715"/>
-<vertex x="4.445" y="5.715"/>
-<vertex x="5.3975" y="5.08"/>
-<vertex x="5.3975" y="4.445"/>
-</polygon>
-<rectangle x1="-3.175" y1="-7.62" x2="-1.905" y2="-5.715" layer="51"/>
-<rectangle x1="-3.175" y1="-5.715" x2="-1.905" y2="-4.7625" layer="21"/>
-<rectangle x1="-0.635" y1="-5.715" x2="0.635" y2="-4.7624" layer="21"/>
-<rectangle x1="1.905" y1="-7.62" x2="3.175" y2="-5.715" layer="51"/>
-<rectangle x1="1.905" y1="-5.715" x2="3.175" y2="-4.7625" layer="21"/>
-<smd name="1" x="-2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
-<smd name="3" x="2.54" y="-8.255" dx="2.08" dy="3.81" layer="1" rot="R180"/>
-<smd name="4" x="0" y="2.54" dx="10.16" dy="9.652" layer="1" rot="R270"/>
-<text x="-6.0325" y="-4.7625" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-2.2225" y="-1.5875" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<wire x1="-5.3975" y1="-4.7625" x2="-5.3975" y2="4.445" width="0.2032" layer="21"/>
-<wire x1="-5.3975" y1="4.445" x2="5.3975" y2="4.445" width="0.2032" layer="51"/>
-<wire x1="-5.08" y1="-4.445" x2="-5.08" y2="4.1274" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="-4.445" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="-4.445" x2="-5.3975" y2="-4.7625" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="4.1274" x2="5.0799" y2="4.1275" width="0.0508" layer="51"/>
-<wire x1="-5.08" y1="4.1274" x2="-5.3975" y2="4.445" width="0.0508" layer="51"/>
-<wire x1="5.0799" y1="4.1275" x2="5.08" y2="-4.445" width="0.0508" layer="51"/>
-<wire x1="5.0799" y1="4.1275" x2="5.3975" y2="4.445" width="0.0508" layer="51"/>
-<wire x1="5.08" y1="-4.445" x2="5.3975" y2="-4.7625" width="0.0508" layer="51"/>
-<wire x1="5.3975" y1="-4.7625" x2="-5.3975" y2="-4.7625" width="0.2032" layer="21"/>
-<wire x1="5.3975" y1="4.445" x2="5.3975" y2="-4.7625" width="0.2032" layer="21"/>
-</package>
-<package name="TO263-3">
-<description>&lt;b&gt;TO-263 Package&lt;/b&gt;</description>
-<wire x1="4.917" y1="4.625" x2="4.917" y2="-4.379" width="0.2032" layer="21"/>
-<wire x1="4.917" y1="-4.379" x2="-4.917" y2="-4.379" width="0.2032" layer="21"/>
-<wire x1="-4.917" y1="-4.379" x2="-4.917" y2="4.625" width="0.2032" layer="21"/>
-<wire x1="-4.917" y1="4.625" x2="4.917" y2="4.625" width="0.2032" layer="51"/>
-<wire x1="-2.565" y1="4.727" x2="-2.565" y2="5.138" width="0.2032" layer="51"/>
-<wire x1="-2.565" y1="5.138" x2="-2.108" y2="5.595" width="0.2032" layer="51"/>
-<wire x1="-2.108" y1="5.595" x2="2.108" y2="5.595" width="0.2032" layer="51"/>
-<wire x1="2.108" y1="5.595" x2="2.565" y2="5.138" width="0.2032" layer="51"/>
-<wire x1="2.565" y1="5.138" x2="2.565" y2="4.727" width="0.2032" layer="51"/>
-<wire x1="2.565" y1="4.727" x2="-2.565" y2="4.727" width="0.2032" layer="51"/>
-<smd name="1" x="-2.54" y="-9.14" dx="1" dy="3.4" layer="1"/>
-<smd name="3" x="2.54" y="-9.14" dx="1" dy="3.4" layer="1"/>
-<smd name="4" x="0" y="0.96" dx="6.8" dy="9.6" layer="1"/>
-<text x="-5.715" y="-4.445" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="6.6675" y="-4.445" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<rectangle x1="-0.4318" y1="-5.1826" x2="0.4318" y2="-4.4206" layer="21"/>
-<rectangle x1="-2.9901" y1="-7.1799" x2="-2.0899" y2="-4.3801" layer="21"/>
-<rectangle x1="2.0899" y1="-7.1799" x2="2.9901" y2="-4.3801" layer="21"/>
-<rectangle x1="-3" y1="-10.0401" x2="-2.1001" y2="-7.24" layer="51"/>
-<rectangle x1="2.1001" y1="-10.0401" x2="3" y2="-7.24" layer="51"/>
-<polygon width="0.2032" layer="51">
-<vertex x="-2.5654" y="4.7269"/>
-<vertex x="-2.5654" y="5.1382"/>
-<vertex x="-2.1082" y="5.5954"/>
-<vertex x="2.1082" y="5.5954"/>
-<vertex x="2.5654" y="5.1382"/>
-<vertex x="2.5654" y="4.7269"/>
-</polygon>
-</package>
 <package name="TO263-5">
 <description>&lt;b&gt;TO-263&lt;/b&gt;</description>
 <wire x1="5.094" y1="7.165" x2="5.094" y2="-2.93" width="0.2032" layer="51"/>
@@ -774,23 +679,6 @@ Exposed pad variation BC</description>
 <smd name="GP" x="-2.1" y="2.1" dx="0.5" dy="0.5" layer="1"/>
 <text x="-2.54" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-</package>
-<package name="SC70-3-W">
-<description>&lt;b&gt;SC70-3 Wave soldering&lt;/b&gt; Philips SC01_Mounting_1996.pdf</description>
-<wire x1="0.9224" y1="0.4604" x2="0.9224" y2="-0.4604" width="0.1524" layer="51"/>
-<wire x1="-0.9224" y1="-0.4604" x2="-0.9224" y2="0.4604" width="0.1524" layer="51"/>
-<wire x1="0.9224" y1="0.3334" x2="0.9224" y2="-0.3334" width="0.2032" layer="21"/>
-<wire x1="0.9224" y1="-0.4604" x2="-0.9224" y2="-0.4604" width="0.2032" layer="51"/>
-<wire x1="-0.9224" y1="-0.3334" x2="-0.9224" y2="0.3334" width="0.2032" layer="21"/>
-<wire x1="-0.9224" y1="0.4604" x2="0.9224" y2="0.4604" width="0.2032" layer="51"/>
-<smd name="1" x="-0.9" y="-1.275" dx="0.9" dy="1.45" layer="1"/>
-<smd name="2" x="0.9" y="-1.275" dx="0.9" dy="1.45" layer="1"/>
-<smd name="3" x="0" y="1.275" dx="2.1" dy="1.45" layer="1"/>
-<text x="-1" y="2.2" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-1" y="-3.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.5" layer="51"/>
-<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.5" layer="51"/>
-<rectangle x1="-0.15" y1="0.5" x2="0.15" y2="1.1" layer="51"/>
 </package>
 <package name="SMA">
 <wire x1="-2.2" y1="1.6" x2="2.2" y2="1.6" width="0.2032" layer="21"/>
