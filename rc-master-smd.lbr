@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
@@ -3198,6 +3198,26 @@ Rohm MCR03 Series</description>
 <wire x1="0.85" y1="-0.4" x2="-0.85" y2="-0.4" width="0.0006" layer="57"/>
 <wire x1="-0.85" y1="-0.4" x2="-0.85" y2="0.4" width="0.0006" layer="57"/>
 </package>
+<package name="43SM">
+<description>&lt;b&gt;43 SM BEAD&lt;/b&gt;&lt;p&gt;
+Fair-Rite</description>
+<smd name="1" x="-3.75" y="0" dx="3" dy="1.8" layer="1"/>
+<smd name="2" x="3.75" y="0" dx="3" dy="1.8" layer="1"/>
+<wire x1="-4.8" y1="1.525" x2="4.8" y2="1.525" width="0.0508" layer="51"/>
+<wire x1="4.8" y1="1.525" x2="4.8" y2="-1.525" width="0.0508" layer="51"/>
+<wire x1="4.8" y1="-1.525" x2="-4.8" y2="-1.525" width="0.0508" layer="51"/>
+<wire x1="-4.8" y1="-1.525" x2="-4.8" y2="1.525" width="0.0508" layer="51"/>
+<rectangle x1="-5" y1="-0.8" x2="-4.8" y2="0.8" layer="51"/>
+<rectangle x1="4.8" y1="-0.8" x2="5" y2="0.8" layer="51"/>
+<wire x1="-5" y1="1.2" x2="-5" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="-5" y1="1.7" x2="5" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="5" y1="1.7" x2="5" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-1.2" x2="-5" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="5" y1="-1.2" x2="5" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-5" y1="-1.7" x2="5" y2="-1.7" width="0.2032" layer="21"/>
+<text x="-5" y="1.9" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5" y="-2.8" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -4761,6 +4781,15 @@ Rohm MCR03 Series</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="43SM" package="43SM">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="L_" prefix="L" uservalue="yes">
@@ -5085,6 +5114,15 @@ Rohm MCR03 Series</description>
 </technologies>
 </device>
 <device name="MCR03" package="MCR03">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="43SM" package="43SM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

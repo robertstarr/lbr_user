@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -10263,8 +10263,9 @@ D = Direct mounting &lt;p&gt;
 <text x="-19.3802" y="-0.6922" size="1.27" layer="51" ratio="10">14</text>
 <text x="17.3038" y="-0.6922" size="1.27" layer="51" ratio="10">25</text>
 </package>
-<package name="NC189-009">
-<description>Norcomp 189-XXX Series&lt;p&gt;Dual Port, 9-Pin</description>
+<package name="NC189-009-51">
+<description>Norcomp 189-XXX Series&lt;p&gt;
+Female Over Female, Dual Port, 9-Pin</description>
 <wire x1="-15.875" y1="12.2936" x2="15.875" y2="12.2936" width="0.254" layer="21"/>
 <wire x1="15.875" y1="12.2936" x2="15.875" y2="-7.9089" width="0.254" layer="21"/>
 <wire x1="15.875" y1="-7.9089" x2="-15.875" y2="-7.9089" width="0.254" layer="21"/>
@@ -15539,6 +15540,117 @@ FEMALE SMD</description>
 <text x="-7.115" y="-0.665" size="1.016" layer="51" ratio="18">10</text>
 <text x="-7.22" y="-3.165" size="1.016" layer="51" ratio="18">15</text>
 <text x="5.38" y="-2.705" size="1.016" layer="51" ratio="18">11</text>
+</package>
+<package name="NC189-009-41">
+<description>Norcomp 189-XXX Series&lt;p&gt;
+Male Over Female, Dual Port, 9-Pin</description>
+<wire x1="-15.875" y1="12.2936" x2="15.875" y2="12.2936" width="0.254" layer="21"/>
+<wire x1="15.875" y1="12.2936" x2="15.875" y2="-7.9089" width="0.254" layer="21"/>
+<wire x1="15.875" y1="-7.9089" x2="-15.875" y2="-7.9089" width="0.254" layer="21"/>
+<wire x1="-15.875" y1="-7.9089" x2="-15.875" y2="12.2936" width="0.254" layer="21"/>
+<wire x1="-8.3058" y1="-7.9597" x2="-8.3058" y2="-14.2462" width="0.254" layer="51"/>
+<wire x1="-8.3058" y1="-14.2462" x2="-7.6708" y2="-14.8812" width="0.254" layer="51" curve="90"/>
+<wire x1="-7.6708" y1="-14.8812" x2="7.6708" y2="-14.8812" width="0.254" layer="51"/>
+<wire x1="7.6708" y1="-14.8812" x2="8.3058" y2="-14.2462" width="0.254" layer="51" curve="90"/>
+<wire x1="8.3058" y1="-14.2462" x2="8.3058" y2="-7.9597" width="0.254" layer="51"/>
+<pad name="B-1" x="-5.5372" y="9.4981" drill="1.1684" diameter="1.9304" shape="square" rot="R180"/>
+<pad name="B-2" x="-2.7686" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-3" x="0" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-4" x="2.7686" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-5" x="5.5372" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-6" x="-4.1529" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-7" x="-1.3843" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-8" x="1.3843" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-9" x="4.1529" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-1" x="5.5372" y="2.7687" drill="1.1684" diameter="1.9304" shape="square"/>
+<pad name="A-2" x="2.7686" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="A-3" x="0" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="A-4" x="-2.7686" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="A-5" x="-5.5372" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="A-6" x="4.1529" y="0" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="A-7" x="1.3843" y="0" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="A-8" x="-1.3843" y="0" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="A-9" x="-4.1529" y="0" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="A-G2" x="12.4968" y="0" drill="3.2512" diameter="5.08"/>
+<pad name="A-G1" x="-12.4968" y="0" drill="3.2512" diameter="5.08"/>
+<pad name="B-G1" x="-12.4968" y="8.001" drill="3.2512" diameter="5.08"/>
+<pad name="B-G2" x="12.4968" y="8.001" drill="3.2512" diameter="5.08"/>
+<text x="-15.875" y="13.5636" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-2.3114" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="NC189-009-31">
+<description>Norcomp 189-XXX Series&lt;p&gt;
+Female Over Male, Dual Port, 9-Pin</description>
+<wire x1="-15.875" y1="12.2936" x2="15.875" y2="12.2936" width="0.254" layer="21"/>
+<wire x1="15.875" y1="12.2936" x2="15.875" y2="-7.9089" width="0.254" layer="21"/>
+<wire x1="15.875" y1="-7.9089" x2="-15.875" y2="-7.9089" width="0.254" layer="21"/>
+<wire x1="-15.875" y1="-7.9089" x2="-15.875" y2="12.2936" width="0.254" layer="21"/>
+<wire x1="-8.3058" y1="-7.9597" x2="-8.3058" y2="-14.2462" width="0.254" layer="51"/>
+<wire x1="-8.3058" y1="-14.2462" x2="-7.6708" y2="-14.8812" width="0.254" layer="51" curve="90"/>
+<wire x1="-7.6708" y1="-14.8812" x2="7.6708" y2="-14.8812" width="0.254" layer="51"/>
+<wire x1="7.6708" y1="-14.8812" x2="8.3058" y2="-14.2462" width="0.254" layer="51" curve="90"/>
+<wire x1="8.3058" y1="-14.2462" x2="8.3058" y2="-7.9597" width="0.254" layer="51"/>
+<pad name="B-1" x="5.5372" y="9.4981" drill="1.1684" diameter="1.9304" shape="square"/>
+<pad name="B-2" x="2.7686" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="B-3" x="0" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="B-4" x="-2.7686" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="B-5" x="-5.5372" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="B-6" x="4.1529" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="B-7" x="1.3843" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="B-8" x="-1.3843" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="B-9" x="-4.1529" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon"/>
+<pad name="A-1" x="-5.5372" y="2.7687" drill="1.1684" diameter="1.9304" shape="square" rot="R180"/>
+<pad name="A-2" x="-2.7686" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-3" x="0" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-4" x="2.7686" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-5" x="5.5372" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-6" x="-4.1529" y="0" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-7" x="-1.3843" y="0" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-8" x="1.3843" y="0" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-9" x="4.1529" y="0" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-G2" x="12.4968" y="0" drill="3.2512" diameter="5.08"/>
+<pad name="A-G1" x="-12.4968" y="0" drill="3.2512" diameter="5.08"/>
+<pad name="B-G1" x="-12.4968" y="8.001" drill="3.2512" diameter="5.08"/>
+<pad name="B-G2" x="12.4968" y="8.001" drill="3.2512" diameter="5.08"/>
+<text x="-15.875" y="13.5636" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-2.3114" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="NC189-009-61">
+<description>Norcomp 189-XXX Series&lt;p&gt;
+Male Over Female, Dual Port, 9-Pin</description>
+<wire x1="-15.875" y1="12.2936" x2="15.875" y2="12.2936" width="0.254" layer="21"/>
+<wire x1="15.875" y1="12.2936" x2="15.875" y2="-7.9089" width="0.254" layer="21"/>
+<wire x1="15.875" y1="-7.9089" x2="-15.875" y2="-7.9089" width="0.254" layer="21"/>
+<wire x1="-15.875" y1="-7.9089" x2="-15.875" y2="12.2936" width="0.254" layer="21"/>
+<wire x1="-8.3058" y1="-7.9597" x2="-8.3058" y2="-14.2462" width="0.254" layer="51"/>
+<wire x1="-8.3058" y1="-14.2462" x2="-7.6708" y2="-14.8812" width="0.254" layer="51" curve="90"/>
+<wire x1="-7.6708" y1="-14.8812" x2="7.6708" y2="-14.8812" width="0.254" layer="51"/>
+<wire x1="7.6708" y1="-14.8812" x2="8.3058" y2="-14.2462" width="0.254" layer="51" curve="90"/>
+<wire x1="8.3058" y1="-14.2462" x2="8.3058" y2="-7.9597" width="0.254" layer="51"/>
+<pad name="B-1" x="-5.5372" y="9.4981" drill="1.1684" diameter="1.9304" shape="square" rot="R180"/>
+<pad name="B-2" x="-2.7686" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-3" x="0" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-4" x="2.7686" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-5" x="5.5372" y="9.4981" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-6" x="-4.1529" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-7" x="-1.3843" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-8" x="1.3843" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="B-9" x="4.1529" y="6.7295" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-1" x="-5.5372" y="2.7687" drill="1.1684" diameter="1.9304" shape="square" rot="R180"/>
+<pad name="A-2" x="-2.7686" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-3" x="0" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-4" x="2.7686" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-5" x="5.5372" y="2.7687" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-6" x="-4.1529" y="0" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-7" x="-1.3843" y="0" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-8" x="1.3843" y="0" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-9" x="4.1529" y="0" drill="1.1684" diameter="1.9304" shape="octagon" rot="R180"/>
+<pad name="A-G2" x="12.4968" y="0" drill="3.2512" diameter="5.08"/>
+<pad name="A-G1" x="-12.4968" y="0" drill="3.2512" diameter="5.08"/>
+<pad name="B-G1" x="-12.4968" y="8.001" drill="3.2512" diameter="5.08"/>
+<pad name="B-G2" x="12.4968" y="8.001" drill="3.2512" diameter="5.08"/>
+<text x="-15.875" y="13.5636" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-2.3114" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -26677,14 +26789,16 @@ FEMALE SMD</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NC189-009-51_VS" prefix="J">
-<description>&lt;b&gt;SUB-D FEMALE DUAL&lt;/b&gt; - NorComp</description>
+<deviceset name="NC189-009-51_VS" prefix="CN">
+<description>&lt;b&gt;DB9 FEMALE OVER FEMALE DUAL&lt;/b&gt;&lt;p&gt;
+A=Bottom, B=Top&lt;p&gt;
+NorComp</description>
 <gates>
 <gate name="-A" symbol="F09G-VS" x="-12.7" y="-15.24" swaplevel="1"/>
 <gate name="-B" symbol="F09G-VS" x="7.62" y="-15.24" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="NC189-009">
+<device name="" package="NC189-009-51">
 <connects>
 <connect gate="-A" pin="1" pad="A-1"/>
 <connect gate="-A" pin="2" pad="A-2"/>
@@ -27070,15 +27184,16 @@ TE CONNECTIVITY</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NC189-009-51" prefix="J">
+<deviceset name="NC189-009-51" prefix="CN">
 <description>&lt;b&gt;DB9 FEMALE OVER FEMALE DUAL&lt;/b&gt;&lt;p&gt;
+A=Bottom, B=Top&lt;p&gt;
 NorComp</description>
 <gates>
 <gate name="-A" symbol="F09G" x="0" y="0" swaplevel="1"/>
-<gate name="-B" symbol="F09G" x="30.48" y="0" swaplevel="1"/>
+<gate name="-B" symbol="F09G" x="27.94" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="NC189-009">
+<device name="" package="NC189-009-51">
 <connects>
 <connect gate="-A" pin="1" pad="A-1"/>
 <connect gate="-A" pin="2" pad="A-2"/>
@@ -27109,15 +27224,16 @@ NorComp</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NC189-009-41" prefix="J">
+<deviceset name="NC189-009-41" prefix="CN">
 <description>&lt;b&gt;DB9 MALE OVER FEMALE DUAL&lt;/b&gt;&lt;p&gt;
+A=Bottom, B=Top&lt;p&gt;
 NorComp</description>
 <gates>
 <gate name="-A" symbol="F09G" x="0" y="0" swaplevel="1"/>
-<gate name="-B" symbol="M09G" x="30.48" y="0" swaplevel="1"/>
+<gate name="-B" symbol="M09G" x="27.94" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="NC189-009">
+<device name="" package="NC189-009-41">
 <connects>
 <connect gate="-A" pin="1" pad="A-1"/>
 <connect gate="-A" pin="2" pad="A-2"/>
@@ -27148,15 +27264,16 @@ NorComp</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="NC189-009-31" prefix="J">
+<deviceset name="NC189-009-31" prefix="CN">
 <description>&lt;b&gt;DB9 FEMALE OVER MALE DUAL&lt;/b&gt;&lt;p&gt;
+A=Bottom, B=Top&lt;p&gt;
 NorComp</description>
 <gates>
 <gate name="-B" symbol="F09G" x="30.48" y="0" swaplevel="1"/>
 <gate name="-A" symbol="M09G" x="0" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="NC189-009">
+<device name="" package="NC189-009-31">
 <connects>
 <connect gate="-A" pin="1" pad="A-1"/>
 <connect gate="-A" pin="2" pad="A-2"/>
@@ -27212,6 +27329,166 @@ NorComp</description>
 <connect gate="G$1" pin="9" pad="9"/>
 <connect gate="G$1" pin="G1" pad="P$1"/>
 <connect gate="G$1" pin="G2" pad="P$2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC189-009-61_VS" prefix="CN">
+<description>&lt;b&gt;DB9 MALE OVER MALE DUAL&lt;/b&gt;&lt;p&gt;
+A=Bottom, B=Top&lt;p&gt;
+NorComp</description>
+<gates>
+<gate name="-A" symbol="M09G-VS" x="0" y="0" swaplevel="1"/>
+<gate name="-B" symbol="M09G-VS" x="20.32" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="NC189-009-61">
+<connects>
+<connect gate="-A" pin="1" pad="A-1"/>
+<connect gate="-A" pin="2" pad="A-2"/>
+<connect gate="-A" pin="3" pad="A-3"/>
+<connect gate="-A" pin="4" pad="A-4"/>
+<connect gate="-A" pin="5" pad="A-5"/>
+<connect gate="-A" pin="6" pad="A-6"/>
+<connect gate="-A" pin="7" pad="A-7"/>
+<connect gate="-A" pin="8" pad="A-8"/>
+<connect gate="-A" pin="9" pad="A-9"/>
+<connect gate="-A" pin="G1" pad="A-G1"/>
+<connect gate="-A" pin="G2" pad="A-G2"/>
+<connect gate="-B" pin="1" pad="B-1"/>
+<connect gate="-B" pin="2" pad="B-2"/>
+<connect gate="-B" pin="3" pad="B-3"/>
+<connect gate="-B" pin="4" pad="B-4"/>
+<connect gate="-B" pin="5" pad="B-5"/>
+<connect gate="-B" pin="6" pad="B-6"/>
+<connect gate="-B" pin="7" pad="B-7"/>
+<connect gate="-B" pin="8" pad="B-8"/>
+<connect gate="-B" pin="9" pad="B-9"/>
+<connect gate="-B" pin="G1" pad="B-G1"/>
+<connect gate="-B" pin="G2" pad="B-G2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC189-009-61" prefix="CN">
+<description>&lt;b&gt;DB9 MALE OVER MALE DUAL&lt;/b&gt;&lt;p&gt;
+A=Bottom, B=Top&lt;p&gt;
+NorComp</description>
+<gates>
+<gate name="-A" symbol="M09G" x="0" y="0" swaplevel="1"/>
+<gate name="-B" symbol="M09G" x="27.94" y="0" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="NC189-009-61">
+<connects>
+<connect gate="-A" pin="1" pad="A-1"/>
+<connect gate="-A" pin="2" pad="A-2"/>
+<connect gate="-A" pin="3" pad="A-3"/>
+<connect gate="-A" pin="4" pad="A-4"/>
+<connect gate="-A" pin="5" pad="A-5"/>
+<connect gate="-A" pin="6" pad="A-6"/>
+<connect gate="-A" pin="7" pad="A-7"/>
+<connect gate="-A" pin="8" pad="A-8"/>
+<connect gate="-A" pin="9" pad="A-9"/>
+<connect gate="-A" pin="G1" pad="A-G1"/>
+<connect gate="-A" pin="G2" pad="A-G2"/>
+<connect gate="-B" pin="1" pad="B-1"/>
+<connect gate="-B" pin="2" pad="B-2"/>
+<connect gate="-B" pin="3" pad="B-3"/>
+<connect gate="-B" pin="4" pad="B-4"/>
+<connect gate="-B" pin="5" pad="B-5"/>
+<connect gate="-B" pin="6" pad="B-6"/>
+<connect gate="-B" pin="7" pad="B-7"/>
+<connect gate="-B" pin="8" pad="B-8"/>
+<connect gate="-B" pin="9" pad="B-9"/>
+<connect gate="-B" pin="G1" pad="B-G1"/>
+<connect gate="-B" pin="G2" pad="B-G2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC189-009-41_VS" prefix="CN">
+<description>&lt;b&gt;DB9 MALE OVER FEMALE DUAL&lt;/b&gt;&lt;p&gt;
+A=Bottom, B=Top&lt;p&gt;
+NorComp</description>
+<gates>
+<gate name="-A" symbol="F09G-VS" x="0" y="0"/>
+<gate name="-B" symbol="M09G-VS" x="27.94" y="0"/>
+</gates>
+<devices>
+<device name="" package="NC189-009-41">
+<connects>
+<connect gate="-A" pin="1" pad="A-1"/>
+<connect gate="-A" pin="2" pad="A-2"/>
+<connect gate="-A" pin="3" pad="A-3"/>
+<connect gate="-A" pin="4" pad="A-4"/>
+<connect gate="-A" pin="5" pad="A-5"/>
+<connect gate="-A" pin="6" pad="A-6"/>
+<connect gate="-A" pin="7" pad="A-7"/>
+<connect gate="-A" pin="8" pad="A-8"/>
+<connect gate="-A" pin="9" pad="A-9"/>
+<connect gate="-A" pin="G1" pad="A-G1"/>
+<connect gate="-A" pin="G2" pad="A-G2"/>
+<connect gate="-B" pin="1" pad="B-1"/>
+<connect gate="-B" pin="2" pad="B-2"/>
+<connect gate="-B" pin="3" pad="B-3"/>
+<connect gate="-B" pin="4" pad="B-4"/>
+<connect gate="-B" pin="5" pad="B-5"/>
+<connect gate="-B" pin="6" pad="B-6"/>
+<connect gate="-B" pin="7" pad="B-7"/>
+<connect gate="-B" pin="8" pad="B-8"/>
+<connect gate="-B" pin="9" pad="B-9"/>
+<connect gate="-B" pin="G1" pad="B-G1"/>
+<connect gate="-B" pin="G2" pad="B-G2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NC189-009-31-VS" prefix="CN">
+<description>&lt;b&gt;DB9 FEMALE OVER MALE DUAL&lt;/b&gt;&lt;p&gt;
+A=Bottom, B=Top&lt;p&gt;
+NorComp</description>
+<gates>
+<gate name="-A" symbol="M09G-VS" x="0" y="0"/>
+<gate name="-B" symbol="F09G-VS" x="17.78" y="0"/>
+</gates>
+<devices>
+<device name="" package="NC189-009-31">
+<connects>
+<connect gate="-A" pin="1" pad="A-1"/>
+<connect gate="-A" pin="2" pad="A-2"/>
+<connect gate="-A" pin="3" pad="A-3"/>
+<connect gate="-A" pin="4" pad="A-4"/>
+<connect gate="-A" pin="5" pad="A-5"/>
+<connect gate="-A" pin="6" pad="A-6"/>
+<connect gate="-A" pin="7" pad="A-7"/>
+<connect gate="-A" pin="8" pad="A-8"/>
+<connect gate="-A" pin="9" pad="A-9"/>
+<connect gate="-A" pin="G1" pad="A-G1"/>
+<connect gate="-A" pin="G2" pad="A-G2"/>
+<connect gate="-B" pin="1" pad="B-1"/>
+<connect gate="-B" pin="2" pad="B-2"/>
+<connect gate="-B" pin="3" pad="B-3"/>
+<connect gate="-B" pin="4" pad="B-4"/>
+<connect gate="-B" pin="5" pad="B-5"/>
+<connect gate="-B" pin="6" pad="B-6"/>
+<connect gate="-B" pin="7" pad="B-7"/>
+<connect gate="-B" pin="8" pad="B-8"/>
+<connect gate="-B" pin="9" pad="B-9"/>
+<connect gate="-B" pin="G1" pad="B-G1"/>
+<connect gate="-B" pin="G2" pad="B-G2"/>
 </connects>
 <technologies>
 <technology name=""/>

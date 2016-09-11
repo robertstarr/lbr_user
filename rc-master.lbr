@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8061,6 +8061,42 @@ Vishay BC Components</description>
 <pad name="1" x="-5.08" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <pad name="2" x="5.08" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 </package>
+<package name="CSC-RG22V">
+<description>&lt;b&gt;RG Super Cap&lt;/b&gt;&lt;p&gt;
+Panasonic RG Series</description>
+<wire x1="-3.508" y1="-2.1275" x2="-2.492" y2="-2.1275" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-2.6355" x2="-3" y2="-1.6195" width="0.2032" layer="21"/>
+<wire x1="2.492" y1="-2.1275" x2="3.508" y2="-2.1275" width="0.2032" layer="21"/>
+<wire x1="-2" y1="1.5" x2="-2" y2="4.365" width="0.2032" layer="21"/>
+<wire x1="-2" y1="4.365" x2="-1.365" y2="5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="1.25" y1="5.5" x2="2" y2="4.75" width="0.2032" layer="21" curve="-90.061148"/>
+<wire x1="2" y1="4.75" x2="2" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="2" y1="-1.5" x2="2" y2="-4.75" width="0.2032" layer="21"/>
+<wire x1="2" y1="-4.75" x2="1.25" y2="-5.5" width="0.2032" layer="21" curve="-90.015281"/>
+<wire x1="-1.365" y1="-5" x2="-2" y2="-4.365" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-2" y1="-4.365" x2="-2" y2="-1.5" width="0.2032" layer="21"/>
+<wire x1="1.25" y1="5.5" x2="-0.1448" y2="5.5" width="0.2032" layer="21"/>
+<wire x1="-0.1448" y1="5.5" x2="-0.3244" y2="5.4256" width="0.2032" layer="21" curve="44.999323"/>
+<wire x1="-0.3244" y1="5.4256" x2="-0.6756" y2="5.0744" width="0.2032" layer="21"/>
+<wire x1="-0.6756" y1="5.0744" x2="-0.8552" y2="5" width="0.2032" layer="21" curve="-44.999323"/>
+<wire x1="-0.8552" y1="5" x2="-1.25" y2="5" width="0.2032" layer="21"/>
+<wire x1="1.25" y1="-5.5" x2="-0.1448" y2="-5.5" width="0.2032" layer="21"/>
+<wire x1="-0.1448" y1="-5.5" x2="-0.3244" y2="-5.4256" width="0.2032" layer="21" curve="-45.018018"/>
+<wire x1="-0.3244" y1="-5.4256" x2="-0.6756" y2="-5.0744" width="0.2032" layer="21"/>
+<wire x1="-0.6756" y1="-5.0744" x2="-0.8552" y2="-5" width="0.2032" layer="21" curve="45.018018"/>
+<wire x1="-0.8552" y1="-5" x2="-1.5" y2="-5" width="0.2032" layer="21"/>
+<wire x1="-0.25" y1="5.5" x2="-0.25" y2="-5.5" width="0.2032" layer="51"/>
+<wire x1="-2" y1="1.5" x2="-2" y2="-1.5" width="0.2032" layer="51"/>
+<wire x1="2" y1="1.5" x2="2" y2="-1.5" width="0.2032" layer="51"/>
+<pad name="+" x="-2.5" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
+<pad name="-" x="2.5" y="0" drill="1.016" diameter="2.159" shape="octagon"/>
+<text x="-2.54" y="1.5875" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="1.27" y="-2.2225" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.7" y1="-0.25" x2="-2.1" y2="0.25" layer="51"/>
+<rectangle x1="2.1" y1="-1" x2="2.4" y2="0.9" layer="51"/>
+<rectangle x1="-2.4" y1="-1" x2="-2.1" y2="0.9" layer="51"/>
+<rectangle x1="2.1" y1="-0.25" x2="2.7" y2="0.25" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -10166,6 +10202,15 @@ Vishay BC Components</description>
 </technologies>
 </device>
 <device name="E-025X050" package="CE-025X050">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="RG22V" package="CSC-RG22V">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
