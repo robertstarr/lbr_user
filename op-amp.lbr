@@ -6181,6 +6181,28 @@ Precision Low-Noise, Low Quiescent Current</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="OPA1611" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+SoundPlus High-Performance, Bipolar-Input Audio Operational Amplifiers</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="0" y="0"/>
+<gate name="P" symbol="PWRN_V+-" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="P" pin="V+" pad="7"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
