@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -2854,12 +2854,12 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <circle x="1.905" y="-10.16" radius="0.635" width="0.254" layer="94"/>
 <text x="2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 <text x="2.54" y="5.08" size="1.778" layer="95">&gt;PART</text>
-<pin name="B-COM" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="B-NO" x="-7.62" y="-12.7" visible="pad" length="short" direction="pas"/>
-<pin name="B-NC" x="-7.62" y="-7.62" visible="pad" length="short" direction="pas"/>
-<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="B-COM" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="B-NO" x="-7.62" y="-12.7" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="B-NC" x="-7.62" y="-7.62" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <polygon width="0.1524" layer="95">
 <vertex x="-2.8575" y="4.7625"/>
 <vertex x="0.3175" y="4.7625"/>
@@ -2982,12 +2982,12 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <circle x="1.905" y="-10.16" radius="0.635" width="0.254" layer="94"/>
 <text x="2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 <text x="2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<pin name="B-COM" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="B-NO" x="-7.62" y="-12.7" visible="pad" length="short" direction="pas"/>
-<pin name="B-NC" x="-7.62" y="-7.62" visible="pad" length="short" direction="pas"/>
-<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="B-COM" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="B-NO" x="-7.62" y="-12.7" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="B-NC" x="-7.62" y="-7.62" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <polygon width="0.1524" layer="95">
 <vertex x="-2.8575" y="4.7625"/>
 <vertex x="0.3175" y="4.7625"/>
@@ -3018,18 +3018,18 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <circle x="1.905" y="-30.48" radius="0.635" width="0.254" layer="94"/>
 <text x="2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 <text x="2.54" y="5.08" size="1.778" layer="95">&gt;PART</text>
-<pin name="B-COM" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="B-NO" x="-7.62" y="-12.7" visible="pad" length="short" direction="pas"/>
-<pin name="B-NC" x="-7.62" y="-7.62" visible="pad" length="short" direction="pas"/>
-<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="D-COM" x="5.08" y="-30.48" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="D-NO" x="-7.62" y="-33.02" visible="pad" length="short" direction="pas"/>
-<pin name="D-NC" x="-7.62" y="-27.94" visible="pad" length="short" direction="pas"/>
-<pin name="C-NO" x="-7.62" y="-22.86" visible="pad" length="short" direction="pas"/>
-<pin name="C-NC" x="-7.62" y="-17.78" visible="pad" length="short" direction="pas"/>
-<pin name="C-COM" x="5.08" y="-20.32" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="B-COM" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="B-NO" x="-7.62" y="-12.7" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="B-NC" x="-7.62" y="-7.62" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="D-COM" x="5.08" y="-30.48" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="D-NO" x="-7.62" y="-33.02" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="D-NC" x="-7.62" y="-27.94" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="C-NO" x="-7.62" y="-22.86" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="C-NC" x="-7.62" y="-17.78" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="C-COM" x="5.08" y="-20.32" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <polygon width="0.1524" layer="95">
 <vertex x="-2.8575" y="4.7625"/>
 <vertex x="0.3175" y="4.7625"/>
@@ -3043,9 +3043,9 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <circle x="1.905" y="0" radius="0.635" width="0.254" layer="94"/>
 <text x="2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 <text x="2.54" y="5.08" size="1.778" layer="95">&gt;NAME</text>
-<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="1PDT-N">
 <wire x1="-4.445" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
@@ -3053,9 +3053,9 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <circle x="-4.445" y="-2.54" radius="0.635" width="0.254" layer="94"/>
 <circle x="1.905" y="0" radius="0.635" width="0.254" layer="94"/>
 <text x="2.54" y="2.54" size="1.778" layer="95">&gt;NAME</text>
-<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 </symbol>
 <symbol name="6PDT-PV">
 <wire x1="-4.445" y1="1.27" x2="1.27" y2="0" width="0.254" layer="94"/>
@@ -3089,24 +3089,24 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <circle x="1.905" y="-50.8" radius="0.635" width="0.254" layer="94"/>
 <text x="2.54" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
 <text x="2.54" y="5.08" size="1.778" layer="95">&gt;PART</text>
-<pin name="B-COM" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="B-NO" x="-7.62" y="-12.7" visible="pad" length="short" direction="pas"/>
-<pin name="B-NC" x="-7.62" y="-7.62" visible="pad" length="short" direction="pas"/>
-<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas"/>
-<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="D-COM" x="5.08" y="-30.48" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="D-NO" x="-7.62" y="-33.02" visible="pad" length="short" direction="pas"/>
-<pin name="D-NC" x="-7.62" y="-27.94" visible="pad" length="short" direction="pas"/>
-<pin name="C-NO" x="-7.62" y="-22.86" visible="pad" length="short" direction="pas"/>
-<pin name="C-NC" x="-7.62" y="-17.78" visible="pad" length="short" direction="pas"/>
-<pin name="C-COM" x="5.08" y="-20.32" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="F-COM" x="5.08" y="-50.8" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="F-NO" x="-7.62" y="-53.34" visible="pad" length="short" direction="pas"/>
-<pin name="F-NC" x="-7.62" y="-48.26" visible="pad" length="short" direction="pas"/>
-<pin name="E-NO" x="-7.62" y="-43.18" visible="pad" length="short" direction="pas"/>
-<pin name="E-NC" x="-7.62" y="-38.1" visible="pad" length="short" direction="pas"/>
-<pin name="E-COM" x="5.08" y="-40.64" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="B-COM" x="5.08" y="-10.16" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="B-NO" x="-7.62" y="-12.7" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="B-NC" x="-7.62" y="-7.62" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NO" x="-7.62" y="-2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-NC" x="-7.62" y="2.54" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="A-COM" x="5.08" y="0" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="D-COM" x="5.08" y="-30.48" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="D-NO" x="-7.62" y="-33.02" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="D-NC" x="-7.62" y="-27.94" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="C-NO" x="-7.62" y="-22.86" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="C-NC" x="-7.62" y="-17.78" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="C-COM" x="5.08" y="-20.32" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="F-COM" x="5.08" y="-50.8" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
+<pin name="F-NO" x="-7.62" y="-53.34" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="F-NC" x="-7.62" y="-48.26" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="E-NO" x="-7.62" y="-43.18" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="E-NC" x="-7.62" y="-38.1" visible="pad" length="short" direction="pas" swaplevel="1"/>
+<pin name="E-COM" x="5.08" y="-40.64" visible="pad" length="short" direction="pas" swaplevel="1" rot="R180"/>
 <polygon width="0.1524" layer="95">
 <vertex x="-2.8575" y="4.7625"/>
 <vertex x="0.3175" y="4.7625"/>
