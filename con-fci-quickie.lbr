@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -128,11 +128,12 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="3" x="1.27" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="4" x="1.27" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-6.35" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-6.35" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-6.35" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 <rectangle x1="-1.524" y1="1.016" x2="-1.016" y2="1.524" layer="51"/>
 <rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51"/>
 <rectangle x1="-1.524" y1="-1.524" x2="-1.016" y2="-1.016" layer="51"/>
 <rectangle x1="1.016" y1="-1.524" x2="1.524" y2="-1.016" layer="51"/>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-06">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -188,13 +189,14 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="5" x="2.54" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="6" x="2.54" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-7.62" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-7.62" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
 <rectangle x1="-0.254" y1="1.016" x2="0.254" y2="1.524" layer="51"/>
 <rectangle x1="-2.794" y1="-1.524" x2="-2.286" y2="-1.016" layer="51"/>
 <rectangle x1="-0.254" y1="-1.524" x2="0.254" y2="-1.016" layer="51"/>
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 <rectangle x1="2.286" y1="1.016" x2="2.794" y2="1.524" layer="51"/>
+<text x="-7.62" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-08">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -252,7 +254,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="7" x="3.81" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="8" x="3.81" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-8.89" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-8.89" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-4.064" y1="1.016" x2="-3.556" y2="1.524" layer="51"/>
 <rectangle x1="-1.524" y1="1.016" x2="-1.016" y2="1.524" layer="51"/>
 <rectangle x1="-4.064" y1="-1.524" x2="-3.556" y2="-1.016" layer="51"/>
@@ -261,6 +262,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="1.016" y1="1.016" x2="1.524" y2="1.524" layer="51"/>
 <rectangle x1="3.556" y1="1.016" x2="4.064" y2="1.524" layer="51"/>
 <rectangle x1="3.556" y1="-1.524" x2="4.064" y2="-1.016" layer="51"/>
+<text x="-8.89" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-10">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -320,7 +323,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="9" x="5.08" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="10" x="5.08" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-10.16" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-10.16" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-5.334" y1="1.016" x2="-4.826" y2="1.524" layer="51"/>
 <rectangle x1="-2.794" y1="1.016" x2="-2.286" y2="1.524" layer="51"/>
 <rectangle x1="-5.334" y1="-1.524" x2="-4.826" y2="-1.016" layer="51"/>
@@ -331,6 +333,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="2.286" y1="-1.524" x2="2.794" y2="-1.016" layer="51"/>
 <rectangle x1="4.826" y1="1.016" x2="5.334" y2="1.524" layer="51"/>
 <rectangle x1="4.826" y1="-1.524" x2="5.334" y2="-1.016" layer="51"/>
+<text x="-10.16" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-14">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -394,7 +398,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="13" x="7.62" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="14" x="7.62" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-12.7" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-12.7" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-7.874" y1="1.016" x2="-7.366" y2="1.524" layer="51"/>
 <rectangle x1="-5.334" y1="1.016" x2="-4.826" y2="1.524" layer="51"/>
 <rectangle x1="-7.874" y1="-1.524" x2="-7.366" y2="-1.016" layer="51"/>
@@ -409,6 +412,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="7.366" y1="1.016" x2="7.874" y2="1.524" layer="51"/>
 <rectangle x1="4.826" y1="-1.524" x2="5.334" y2="-1.016" layer="51"/>
 <rectangle x1="7.366" y1="-1.524" x2="7.874" y2="-1.016" layer="51"/>
+<text x="-12.7" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-16">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -474,7 +479,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="15" x="8.89" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="16" x="8.89" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-13.97" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-13.97" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-9.144" y1="1.016" x2="-8.636" y2="1.524" layer="51"/>
 <rectangle x1="-6.604" y1="1.016" x2="-6.096" y2="1.524" layer="51"/>
 <rectangle x1="-9.144" y1="-1.524" x2="-8.636" y2="-1.016" layer="51"/>
@@ -491,6 +495,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="6.096" y1="-1.524" x2="6.604" y2="-1.016" layer="51"/>
 <rectangle x1="8.636" y1="-1.524" x2="9.144" y2="-1.016" layer="51"/>
 <rectangle x1="8.636" y1="1.016" x2="9.144" y2="1.524" layer="51"/>
+<text x="-13.97" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-20">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -560,7 +566,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="19" x="11.43" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="20" x="11.43" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-16.51" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-16.51" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-11.684" y1="1.016" x2="-11.176" y2="1.524" layer="51"/>
 <rectangle x1="-9.144" y1="1.016" x2="-8.636" y2="1.524" layer="51"/>
 <rectangle x1="-11.684" y1="-1.524" x2="-11.176" y2="-1.016" layer="51"/>
@@ -581,6 +586,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="8.636" y1="-1.524" x2="9.144" y2="-1.016" layer="51"/>
 <rectangle x1="11.176" y1="1.016" x2="11.684" y2="1.524" layer="51"/>
 <rectangle x1="11.176" y1="-1.524" x2="11.684" y2="-1.016" layer="51"/>
+<text x="-16.51" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-26">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -656,7 +663,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="25" x="15.24" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="26" x="15.24" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-20.32" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-20.32" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-15.494" y1="1.016" x2="-14.986" y2="1.524" layer="51"/>
 <rectangle x1="-12.954" y1="1.016" x2="-12.446" y2="1.524" layer="51"/>
 <rectangle x1="-15.494" y1="-1.524" x2="-14.986" y2="-1.016" layer="51"/>
@@ -683,6 +689,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="12.446" y1="-1.524" x2="12.954" y2="-1.016" layer="51"/>
 <rectangle x1="14.986" y1="-1.524" x2="15.494" y2="-1.016" layer="51"/>
 <rectangle x1="14.986" y1="1.016" x2="15.494" y2="1.524" layer="51"/>
+<text x="-20.32" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-30">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -762,7 +770,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="29" x="17.78" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="30" x="17.78" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-22.86" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-22.86" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-18.034" y1="1.016" x2="-17.526" y2="1.524" layer="51"/>
 <rectangle x1="-15.494" y1="1.016" x2="-14.986" y2="1.524" layer="51"/>
 <rectangle x1="-18.034" y1="-1.524" x2="-17.526" y2="-1.016" layer="51"/>
@@ -793,6 +800,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="14.986" y1="-1.524" x2="15.494" y2="-1.016" layer="51"/>
 <rectangle x1="17.526" y1="1.016" x2="18.034" y2="1.524" layer="51"/>
 <rectangle x1="17.526" y1="-1.524" x2="18.034" y2="-1.016" layer="51"/>
+<text x="-22.86" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-38">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -880,7 +889,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="37" x="22.86" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="38" x="22.86" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-27.94" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-27.94" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-23.114" y1="1.016" x2="-22.606" y2="1.524" layer="51"/>
 <rectangle x1="-20.574" y1="1.016" x2="-20.066" y2="1.524" layer="51"/>
 <rectangle x1="-23.114" y1="-1.524" x2="-22.606" y2="-1.016" layer="51"/>
@@ -919,6 +927,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="20.066" y1="1.016" x2="20.574" y2="1.524" layer="51"/>
 <rectangle x1="22.606" y1="1.016" x2="23.114" y2="1.524" layer="51"/>
 <rectangle x1="22.606" y1="-1.524" x2="23.114" y2="-1.016" layer="51"/>
+<text x="-27.94" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-40">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -1008,7 +1018,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="39" x="24.13" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="40" x="24.13" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-29.21" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-29.21" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-24.384" y1="1.016" x2="-23.876" y2="1.524" layer="51"/>
 <rectangle x1="-21.844" y1="1.016" x2="-21.336" y2="1.524" layer="51"/>
 <rectangle x1="-24.384" y1="-1.524" x2="-23.876" y2="-1.016" layer="51"/>
@@ -1049,6 +1058,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="21.336" y1="-1.524" x2="21.844" y2="-1.016" layer="51"/>
 <rectangle x1="23.876" y1="1.016" x2="24.384" y2="1.524" layer="51"/>
 <rectangle x1="23.876" y1="-1.524" x2="24.384" y2="-1.016" layer="51"/>
+<text x="-29.21" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 <package name="75869-50">
 <description>&lt;b&gt;HEADER&lt;/b&gt;</description>
@@ -1148,7 +1159,6 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pad name="49" x="30.48" y="-1.27" drill="1.016" shape="octagon" rot="R90"/>
 <pad name="50" x="30.48" y="1.27" drill="1.016" shape="octagon" rot="R90"/>
 <text x="-35.56" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-35.56" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-30.734" y1="1.016" x2="-30.226" y2="1.524" layer="51"/>
 <rectangle x1="-28.194" y1="1.016" x2="-27.686" y2="1.524" layer="51"/>
 <rectangle x1="-30.734" y1="-1.524" x2="-30.226" y2="-1.016" layer="51"/>
@@ -1199,6 +1209,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="27.686" y1="-1.524" x2="28.194" y2="-1.016" layer="51"/>
 <rectangle x1="30.226" y1="1.016" x2="30.734" y2="1.524" layer="51"/>
 <rectangle x1="30.226" y1="-1.524" x2="30.734" y2="-1.016" layer="51"/>
+<text x="-35.56" y="-5.969" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -1838,7 +1850,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="4" pad="4"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1859,7 +1873,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="6" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1882,7 +1898,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="8" pad="8"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1907,7 +1925,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1936,7 +1956,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -1967,7 +1989,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2002,7 +2026,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2043,7 +2069,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2088,7 +2116,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2141,7 +2171,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2196,7 +2228,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -2261,7 +2295,9 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="G$1" pin="9" pad="9"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
