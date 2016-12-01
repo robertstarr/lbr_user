@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -2212,6 +2212,27 @@
 <vertex x="0.9525" y="-0.635"/>
 <vertex x="-0.9525" y="-0.635"/>
 </polygon>
+</symbol>
+<symbol name="+5V1">
+<pin name="+5V1" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-2.54" y="1.905" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<wire x1="0.9525" y1="-0.635" x2="0" y2="1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="1.27" x2="-0.9525" y2="-0.635" width="0.254" layer="94"/>
+<wire x1="-0.9525" y1="-0.635" x2="0.9525" y2="-0.635" width="0.254" layer="94"/>
+<polygon width="0.1524" layer="94">
+<vertex x="0" y="1.27"/>
+<vertex x="0.9525" y="-0.635"/>
+<vertex x="-0.9525" y="-0.635"/>
+</polygon>
+</symbol>
+<symbol name="BALGND">
+<pin name="BALGND" x="0" y="2.54" visible="off" length="point" direction="sup" rot="R270"/>
+<text x="-5.08" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<wire x1="1.905" y1="1.905" x2="0" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="1.905" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="1.905" y1="1.905" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-1.905" y2="1.905" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -4577,6 +4598,32 @@ Net CGND, no value text label</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+7V5D" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="+5V1" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="+5V1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BALGND" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="BALGND" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
