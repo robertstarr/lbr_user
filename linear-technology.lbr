@@ -266,11 +266,10 @@ http://www.linear-tech.com&lt;p&gt;
 <rectangle x1="3.302" y1="-1.27" x2="4.318" y2="2.286" layer="51"/>
 </package>
 <package name="MS10">
-<wire x1="-1.4" y1="-1.5" x2="1.4" y2="-1.5" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-1.5" x2="1.4" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="1.5" x2="-1.1" y2="1.5" width="0.2032" layer="21"/>
-<wire x1="-1.1" y1="1.5" x2="-1.4" y2="1.2" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="1.2" x2="-1.4" y2="-1.5" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="-1.5" x2="1.3" y2="-1.5" width="0.2032" layer="21"/>
+<wire x1="1.3" y1="-1.5" x2="1.3" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="1.3" y1="1.5" x2="-1.3" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="1.5" x2="-1.3" y2="-1.5" width="0.2032" layer="21"/>
 <smd name="1" x="-2.1" y="1" dx="1" dy="0.3" layer="1"/>
 <smd name="2" x="-2.1" y="0.5" dx="1" dy="0.3" layer="1"/>
 <smd name="3" x="-2.1" y="0" dx="1" dy="0.3" layer="1"/>
@@ -281,15 +280,15 @@ http://www.linear-tech.com&lt;p&gt;
 <smd name="8" x="2.1" y="0" dx="1" dy="0.3" layer="1"/>
 <smd name="9" x="2.1" y="0.5" dx="1" dy="0.3" layer="1"/>
 <smd name="10" x="2.1" y="1" dx="1" dy="0.3" layer="1"/>
-<text x="-3.143" y="1.708" size="1.016" layer="21" ratio="18">&gt;NAME</text>
-<text x="-3.751" y="-2.983" size="1.016" layer="21" ratio="18">&gt;VALUE</text>
+<circle x="-0.8" y="1" radius="0.22360625" width="0" layer="21"/>
+<text x="-2.6" y="1.9" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.6" y="-2.6" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 <package name="MS10-THERM">
-<wire x1="-1.4" y1="-1.7" x2="1.4" y2="-1.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="-1.7" x2="1.4" y2="1.7" width="0.2032" layer="21"/>
-<wire x1="1.4" y1="1.7" x2="-1.1" y2="1.7" width="0.2032" layer="21"/>
-<wire x1="-1.1" y1="1.7" x2="-1.4" y2="1.4" width="0.2032" layer="21"/>
-<wire x1="-1.4" y1="1.4" x2="-1.4" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-1.35" y1="-1.7" x2="1.35" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="1.35" y1="-1.7" x2="1.35" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="1.35" y1="1.7" x2="-1.35" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="-1.35" y1="1.7" x2="-1.35" y2="-1.7" width="0.2032" layer="21"/>
 <smd name="1" x="-2.1" y="1" dx="1" dy="0.3" layer="1"/>
 <smd name="2" x="-2.1" y="0.5" dx="1" dy="0.3" layer="1"/>
 <smd name="3" x="-2.1" y="0" dx="1" dy="0.3" layer="1"/>
@@ -311,6 +310,7 @@ http://www.linear-tech.com&lt;p&gt;
 <rectangle x1="-0.7" y1="-1.2" x2="-0.3" y2="-0.8" layer="31"/>
 <rectangle x1="0.2" y1="-0.6" x2="0.6" y2="-0.2" layer="31"/>
 <rectangle x1="0.2" y1="-1.2" x2="0.6" y2="-0.8" layer="31"/>
+<rectangle x1="-1.75" y1="1.4" x2="-1.35" y2="1.8" layer="21"/>
 </package>
 <package name="DFN10">
 <description>DFN-10 (3mmx3mm)</description>
@@ -3685,6 +3685,24 @@ Reference LTC DWG # 05-08-1502</description>
 <text x="-17.78" y="26.035" size="1.778" layer="95">&gt;NAME</text>
 <text x="-17.78" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="LTC3401">
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.4064" layer="94"/>
+<pin name="!SHDN!" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="MODE" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="VC" x="17.78" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="RT" x="-17.78" y="-15.24" length="middle" direction="pas"/>
+<pin name="GND" x="17.78" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="PGOOD" x="-17.78" y="-7.62" length="middle" direction="out"/>
+<pin name="FB" x="17.78" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="VOUT" x="17.78" y="7.62" length="middle" direction="out" rot="R180"/>
+<pin name="SW" x="17.78" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="VIN" x="-17.78" y="15.24" length="middle" direction="pas"/>
+<text x="-12.7" y="20.955" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LT1129CQ-5" prefix="U" uservalue="yes">
@@ -6223,6 +6241,31 @@ with Boost and Inverting Charge Pumps</description>
 <connect gate="G$1" pin="VOUT1@E1" pad="E1"/>
 <connect gate="G$1" pin="VOUT2@A1" pad="A1"/>
 <connect gate="G$1" pin="VOUT2@B1" pad="B1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC3401" prefix="U">
+<description>1A, 3MHz Micropower Synchronous Boost Converter</description>
+<gates>
+<gate name="G$1" symbol="LTC3401" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MS" package="MS10">
+<connects>
+<connect gate="G$1" pin="!SHDN!" pad="10"/>
+<connect gate="G$1" pin="FB" pad="8"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="MODE" pad="2"/>
+<connect gate="G$1" pin="PGOOD" pad="6"/>
+<connect gate="G$1" pin="RT" pad="1"/>
+<connect gate="G$1" pin="SW" pad="4"/>
+<connect gate="G$1" pin="VC" pad="9"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>
