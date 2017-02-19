@@ -3705,7 +3705,7 @@ Audio Grade, Fully-Differential</description>
 <gates>
 <gate name="P" symbol="PWR+-" x="5.08" y="0" addlevel="request"/>
 <gate name="A" symbol="COMPARATOR-OC" x="5.08" y="0" swaplevel="1"/>
-<gate name="B" symbol="COMPARATOR-OC" x="27.94" y="0"/>
+<gate name="B" symbol="COMPARATOR-OC" x="27.94" y="0" swaplevel="1"/>
 </gates>
 <devices>
 <device name="N" package="DIP-8-254P-762W">
@@ -5965,6 +5965,28 @@ Precision Low-Noise, Low Quiescent Current</description>
 <connect gate="B" pin="-IN" pad="6"/>
 <connect gate="B" pin="OUT" pad="7"/>
 <connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA1611" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+SoundPlus High-Performance, Bipolar-Input Audio Operational Amplifiers</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="0" y="0"/>
+<gate name="P" symbol="PWRN_V+-" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="P" pin="V+" pad="7"/>
 <connect gate="P" pin="V-" pad="4"/>
 </connects>
 <technologies>
