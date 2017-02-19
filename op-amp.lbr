@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3790,8 +3790,8 @@ Audio Grade, Fully-Differential</description>
 <description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
 Audio Grade, Fully-Differential</description>
 <gates>
-<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
-<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24"/>
+<gate name="A" symbol="OPAMP_NV" x="-2.54" y="0"/>
+<gate name="B" symbol="OPAMP_NV" x="-2.54" y="-15.24"/>
 <gate name="P" symbol="PWR+-" x="-20.32" y="0" addlevel="request"/>
 </gates>
 <devices>
@@ -5875,6 +5875,97 @@ Precision Low-Noise, Low Quiescent Current</description>
 <connect gate="B" pin="OUT" pad="7"/>
 <connect gate="P" pin="VCC+" pad="8"/>
 <connect gate="P" pin="VCC-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA1642" prefix="U">
+<description>&lt;b&gt;Audio Op-Amp&lt;/b&gt;&lt;p&gt;
+2 Circuit Rail-to-Rail</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="17.78" y="0" swaplevel="1"/>
+<gate name="P" symbol="PWR+-" x="0" y="0" addlevel="request"/>
+<gate name="B" symbol="OPAMP" x="17.78" y="-15.24" swaplevel="1"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DGK" package="VSSOP8">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NJM2068" prefix="U">
+<description>&lt;b&gt;LOW-NOISE OP-AMP&lt;/b&gt;</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="0" y="-15.24" swaplevel="1"/>
+<gate name="P" symbol="PWR+-" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="M" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NJM4556A" prefix="U">
+<description>&lt;b&gt;DUAL OP-AMP&lt;/b&gt;</description>
+<gates>
+<gate name="P" symbol="PWR+-" x="-17.78" y="0" addlevel="request"/>
+<gate name="A" symbol="OPAMP" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="0" y="-15.24" swaplevel="1"/>
+</gates>
+<devices>
+<device name="M" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
