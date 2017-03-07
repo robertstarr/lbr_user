@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -291,6 +291,19 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-1.5" y="2.9" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.5" y="-3.6" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="SLF10165">
+<smd name="1" x="-4.05" y="0" dx="3.2" dy="2.5" layer="1" rot="R90"/>
+<smd name="2" x="4.05" y="0" dx="3.2" dy="2.5" layer="1" rot="R90"/>
+<wire x1="-5.2" y1="5.2" x2="5.2" y2="5.2" width="0.2032" layer="21"/>
+<wire x1="5.2" y1="5.2" x2="5.2" y2="2" width="0.2032" layer="21"/>
+<wire x1="5.2" y1="-2" x2="5.2" y2="-5.2" width="0.2032" layer="21"/>
+<wire x1="5.2" y1="-5.2" x2="-5.2" y2="-5.2" width="0.2032" layer="21"/>
+<wire x1="-5.2" y1="-5.2" x2="-5.2" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-5.2" y1="2" x2="-5.2" y2="5.2" width="0.2032" layer="21"/>
+<text x="-5.08" y="5.588" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.08" y="-6.223" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-5.2" y1="4.5" x2="-4.5" y2="5.2" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CM-2">
@@ -474,6 +487,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </devices>
 </deviceset>
 <deviceset name="SLF10145T" prefix="L">
+<description>FIXED INDUCTOR</description>
 <gates>
 <gate name="G$1" symbol="L" x="0" y="0"/>
 </gates>
@@ -565,6 +579,23 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </gates>
 <devices>
 <device name="" package="VLF5012S">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SLF10165" prefix="L">
+<description>FIXED INDUCTOR</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SLF10165">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

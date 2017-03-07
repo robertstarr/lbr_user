@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.4">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="no" active="yes"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="yes"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="yes"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
@@ -22,9 +22,9 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
-<layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
+<layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="no" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="yes"/>
@@ -44,8 +44,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="3" fill="1" visible="no" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
@@ -1253,6 +1253,415 @@ thin quad flat pack, square (smd-ipc)</description>
 <rectangle x1="-10.6" y1="-8.25" x2="-10.4" y2="-7.25" layer="51" rot="R270"/>
 <rectangle x1="-10.6" y1="-8.75" x2="-10.4" y2="-7.75" layer="51" rot="R270"/>
 <rectangle x1="-10.6" y1="-9.25" x2="-10.4" y2="-8.25" layer="51" rot="R270"/>
+</package>
+<package name="UCBGA132">
+<smd name="M12" x="2.2" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M11" x="1.8" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M10" x="1.4" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M9" x="1" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M8" x="0.6" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M7" x="0.2" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.2" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="0.2" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M6" x="-0.2" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.2" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-0.2" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M5" x="-0.6" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M4" x="-1" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M3" x="-1.4" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M2" x="-1.8" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="M1" x="-2.2" y="-2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="-2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="-2.2" radius="0.125" width="0" layer="31"/>
+<smd name="L12" x="2.2" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L11" x="1.8" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L10" x="1.4" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L9" x="1" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L8" x="0.6" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L7" x="0.2" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.2" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="0.2" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L6" x="-0.2" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.2" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-0.2" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L5" x="-0.6" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L4" x="-1" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L3" x="-1.4" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L2" x="-1.8" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="L1" x="-2.2" y="-1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="-1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="-1.8" radius="0.125" width="0" layer="31"/>
+<smd name="K12" x="2.2" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K11" x="1.8" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K10" x="1.4" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K9" x="1" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K8" x="0.6" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K7" x="0.2" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.2" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="0.2" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K6" x="-0.2" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.2" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-0.2" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K5" x="-0.6" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K4" x="-1" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K3" x="-1.4" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K2" x="-1.8" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="K1" x="-2.2" y="-1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="-1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="-1.4" radius="0.125" width="0" layer="31"/>
+<smd name="J12" x="2.2" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J11" x="1.8" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J10" x="1.4" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J9" x="1" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J8" x="0.6" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J7" x="0.2" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.2" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="0.2" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J6" x="-0.2" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.2" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="-0.2" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J5" x="-0.6" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J4" x="-1" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J3" x="-1.4" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J2" x="-1.8" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="J1" x="-2.2" y="-1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="-1" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="-1" radius="0.125" width="0" layer="31"/>
+<smd name="H12" x="2.2" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="H11" x="1.8" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="H10" x="1.4" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="H9" x="1" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="H8" x="0.6" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="H5" x="-0.6" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="H4" x="-1" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="H3" x="-1.4" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="H2" x="-1.8" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="H1" x="-2.2" y="-0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="-0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="-0.6" radius="0.125" width="0" layer="31"/>
+<smd name="G12" x="2.2" y="-0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="-0.2" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="-0.2" radius="0.125" width="0" layer="31"/>
+<smd name="G11" x="1.8" y="-0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="-0.2" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="-0.2" radius="0.125" width="0" layer="31"/>
+<smd name="G10" x="1.4" y="-0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="-0.2" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="-0.2" radius="0.125" width="0" layer="31"/>
+<smd name="G9" x="1" y="-0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="-0.2" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="-0.2" radius="0.125" width="0" layer="31"/>
+<smd name="G4" x="-1" y="-0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="-0.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="-0.2" radius="0.125" width="0" layer="31"/>
+<smd name="G3" x="-1.4" y="-0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="-0.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="-0.2" radius="0.125" width="0" layer="31"/>
+<smd name="G2" x="-1.8" y="-0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="-0.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="-0.2" radius="0.125" width="0" layer="31"/>
+<smd name="G1" x="-2.2" y="-0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="-0.2" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="-0.2" radius="0.125" width="0" layer="31"/>
+<smd name="F12" x="2.2" y="0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="0.2" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="0.2" radius="0.125" width="0" layer="31"/>
+<smd name="F11" x="1.8" y="0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="0.2" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="0.2" radius="0.125" width="0" layer="31"/>
+<smd name="F10" x="1.4" y="0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="0.2" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="0.2" radius="0.125" width="0" layer="31"/>
+<smd name="F9" x="1" y="0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="0.2" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="0.2" radius="0.125" width="0" layer="31"/>
+<smd name="F4" x="-1" y="0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="0.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="0.2" radius="0.125" width="0" layer="31"/>
+<smd name="F3" x="-1.4" y="0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="0.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="0.2" radius="0.125" width="0" layer="31"/>
+<smd name="F2" x="-1.8" y="0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="0.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="0.2" radius="0.125" width="0" layer="31"/>
+<smd name="F1" x="-2.2" y="0.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="0.2" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="0.2" radius="0.125" width="0" layer="31"/>
+<smd name="E12" x="2.2" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="E11" x="1.8" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="E10" x="1.4" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="E9" x="1" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="E8" x="0.6" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="E5" x="-0.6" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="E4" x="-1" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="E3" x="-1.4" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="E2" x="-1.8" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="E1" x="-2.2" y="0.6" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="0.6" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="0.6" radius="0.125" width="0" layer="31"/>
+<smd name="D12" x="2.2" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D11" x="1.8" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D10" x="1.4" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D9" x="1" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D8" x="0.6" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D7" x="0.2" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.2" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="0.2" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D6" x="-0.2" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.2" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="-0.2" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D5" x="-0.6" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D4" x="-1" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D3" x="-1.4" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D2" x="-1.8" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="D1" x="-2.2" y="1" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="1" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="1" radius="0.125" width="0" layer="31"/>
+<smd name="C12" x="2.2" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C11" x="1.8" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C10" x="1.4" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C9" x="1" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C8" x="0.6" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C7" x="0.2" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.2" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="0.2" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C6" x="-0.2" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.2" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-0.2" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C5" x="-0.6" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C4" x="-1" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C3" x="-1.4" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C2" x="-1.8" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="C1" x="-2.2" y="1.4" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="1.4" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="1.4" radius="0.125" width="0" layer="31"/>
+<smd name="B12" x="2.2" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B11" x="1.8" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B10" x="1.4" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B9" x="1" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B8" x="0.6" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B7" x="0.2" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.2" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="0.2" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B6" x="-0.2" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.2" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-0.2" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B5" x="-0.6" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B4" x="-1" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B3" x="-1.4" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B2" x="-1.8" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="B1" x="-2.2" y="1.8" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="1.8" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="1.8" radius="0.125" width="0" layer="31"/>
+<smd name="A12" x="2.2" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="2.2" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="2.2" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A11" x="1.8" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.8" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="1.8" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A10" x="1.4" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1.4" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="1.4" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A9" x="1" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="1" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="1" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A8" x="0.6" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.6" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="0.6" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A7" x="0.2" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="0.2" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="0.2" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A6" x="-0.2" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.2" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-0.2" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A5" x="-0.6" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-0.6" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-0.6" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A4" x="-1" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A3" x="-1.4" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.4" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1.4" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A2" x="-1.8" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-1.8" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-1.8" y="2.2" radius="0.125" width="0" layer="31"/>
+<smd name="A1" x="-2.2" y="2.2" dx="0.3" dy="0.3" layer="1" roundness="100" stop="no" cream="no"/>
+<circle x="-2.2" y="2.2" radius="0.17" width="0" layer="29"/>
+<circle x="-2.2" y="2.2" radius="0.125" width="0" layer="31"/>
+<text x="-3.2" y="3.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.2" y="-4.3" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.0508" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.0508" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.0508" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="3" width="0.0508" layer="51"/>
+<wire x1="-3.2" y1="3.2" x2="3.2" y2="3.2" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="3.2" x2="3.2" y2="-3.2" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="-3.2" x2="-3.2" y2="-3.2" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-3.2" x2="-3.2" y2="3.2" width="0.2032" layer="21"/>
+<rectangle x1="-3.4" y1="2.8" x2="-2.8" y2="3.4" layer="21"/>
 </package>
 </packages>
 <symbols>
