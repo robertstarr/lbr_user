@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3860,6 +3860,24 @@ Reference LTC DWG # 05-08-1502</description>
 <text x="-17.78" y="26.035" size="1.778" layer="95">&gt;NAME</text>
 <text x="-17.78" y="-27.94" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
+<symbol name="LTC3401">
+<wire x1="-12.7" y1="20.32" x2="12.7" y2="20.32" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="20.32" x2="12.7" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-20.32" x2="-12.7" y2="-20.32" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-20.32" x2="-12.7" y2="20.32" width="0.4064" layer="94"/>
+<pin name="!SHDN!" x="-17.78" y="7.62" length="middle" direction="in"/>
+<pin name="MODE" x="-17.78" y="0" length="middle" direction="in"/>
+<pin name="VC" x="17.78" y="-7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="RT" x="-17.78" y="-15.24" length="middle" direction="pas"/>
+<pin name="GND" x="17.78" y="-15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="PGOOD" x="-17.78" y="-7.62" length="middle" direction="out"/>
+<pin name="FB" x="17.78" y="0" length="middle" direction="in" rot="R180"/>
+<pin name="VOUT" x="17.78" y="7.62" length="middle" direction="pas" rot="R180"/>
+<pin name="SW" x="17.78" y="15.24" length="middle" direction="pas" rot="R180"/>
+<pin name="VIN" x="-17.78" y="15.24" length="middle" direction="pas"/>
+<text x="-12.7" y="20.955" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-22.86" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="LT1129CQ-5" prefix="U" uservalue="yes">
@@ -6399,6 +6417,31 @@ with Boost and Inverting Charge Pumps</description>
 <connect gate="G$1" pin="VOUT1@E1" pad="E1"/>
 <connect gate="G$1" pin="VOUT2@A1" pad="A1"/>
 <connect gate="G$1" pin="VOUT2@B1" pad="B1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LTC3401" prefix="U">
+<description>1A, 3MHz Micropower Synchronous Boost Converter</description>
+<gates>
+<gate name="G$1" symbol="LTC3401" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MS" package="SSOP-10-50P-300W-300L-110H-95F">
+<connects>
+<connect gate="G$1" pin="!SHDN!" pad="10"/>
+<connect gate="G$1" pin="FB" pad="8"/>
+<connect gate="G$1" pin="GND" pad="5"/>
+<connect gate="G$1" pin="MODE" pad="2"/>
+<connect gate="G$1" pin="PGOOD" pad="6"/>
+<connect gate="G$1" pin="RT" pad="1"/>
+<connect gate="G$1" pin="SW" pad="4"/>
+<connect gate="G$1" pin="VC" pad="9"/>
+<connect gate="G$1" pin="VIN" pad="3"/>
+<connect gate="G$1" pin="VOUT" pad="7"/>
 </connects>
 <technologies>
 <technology name=""/>

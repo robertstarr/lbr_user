@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -63,6 +63,8 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="11" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -975,6 +977,40 @@ Bourns</description>
 <rectangle x1="-2.24" y1="-2.54" x2="-1.605" y2="2.54" layer="51"/>
 <rectangle x1="1.605" y1="-2.54" x2="2.24" y2="2.54" layer="51" rot="R180"/>
 </package>
+<package name="DO15">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 3.5 mm, horizontal</description>
+<wire x1="-3.81" y1="-1.778" x2="3.81" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="1.778" x2="-3.81" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-1.778" x2="3.81" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="1.778" x2="-3.81" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0" x2="5.334" y2="0" width="0.762" layer="51"/>
+<wire x1="-6.35" y1="0" x2="-5.334" y2="0" width="0.762" layer="51"/>
+<pad name="C" x="-6.35" y="0" drill="1.1176" diameter="2.54"/>
+<pad name="A" x="6.35" y="0" drill="1.1176" diameter="2.54"/>
+<text x="-3.81" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.048" y1="-1.778" x2="-2.413" y2="1.778" layer="21"/>
+<rectangle x1="-5.207" y1="-0.381" x2="-3.81" y2="0.381" layer="51"/>
+<rectangle x1="3.81" y1="-0.381" x2="5.207" y2="0.381" layer="51"/>
+</package>
+<package name="DO15-12">
+<description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
+diameter 3.5 mm, horizontal, grid 12.7 mm</description>
+<wire x1="-3.81" y1="-1.778" x2="3.81" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="1.778" x2="-3.81" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="3.81" y1="-1.778" x2="3.81" y2="1.778" width="0.2032" layer="21"/>
+<wire x1="-3.81" y1="1.778" x2="-3.81" y2="-1.778" width="0.2032" layer="21"/>
+<wire x1="6.35" y1="0" x2="5.334" y2="0" width="0.762" layer="51"/>
+<wire x1="-6.35" y1="0" x2="-5.334" y2="0" width="0.762" layer="51"/>
+<pad name="C" x="-6.35" y="0" drill="1.1176" shape="long"/>
+<pad name="A" x="6.35" y="0" drill="1.1176" shape="long"/>
+<text x="-3.81" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.048" y1="-1.778" x2="-2.413" y2="1.778" layer="21"/>
+<rectangle x1="-5.207" y1="-0.381" x2="-3.81" y2="0.381" layer="51"/>
+<rectangle x1="3.81" y1="-0.381" x2="5.207" y2="0.381" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOV">
@@ -1065,34 +1101,36 @@ Bourns</description>
 </polygon>
 </symbol>
 <symbol name="TVS-BD">
-<wire x1="-0.635" y1="-0.9525" x2="0.9525" y2="0" width="0.254" layer="94"/>
-<wire x1="0.9525" y1="0" x2="-0.635" y2="0.9525" width="0.254" layer="94"/>
-<wire x1="-0.635" y1="0.9525" x2="-0.635" y2="-0.9525" width="0.254" layer="94"/>
-<wire x1="0.9525" y1="0.9525" x2="0.9525" y2="0" width="0.254" layer="94"/>
-<wire x1="0.9525" y1="0" x2="0.9525" y2="-0.9525" width="0.254" layer="94"/>
-<wire x1="0.9525" y1="-0.9525" x2="1.4287" y2="-0.9525" width="0.254" layer="94"/>
-<wire x1="0.4762" y1="0.9525" x2="0.9525" y2="0.9525" width="0.254" layer="94"/>
-<wire x1="-5.08" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
-<wire x1="-1.905" y1="0.9525" x2="-3.4925" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.4925" y1="0" x2="-1.905" y2="-0.9525" width="0.254" layer="94"/>
-<wire x1="-1.905" y1="-0.9525" x2="-1.905" y2="0.9525" width="0.254" layer="94"/>
-<wire x1="-3.4925" y1="-0.9525" x2="-3.4925" y2="0" width="0.254" layer="94"/>
-<wire x1="-3.4925" y1="0" x2="-3.4925" y2="0.9525" width="0.254" layer="94"/>
-<wire x1="-3.4925" y1="0.9525" x2="-3.9688" y2="0.9525" width="0.254" layer="94"/>
-<wire x1="-3.0163" y1="-0.9525" x2="-3.4925" y2="-0.9525" width="0.254" layer="94"/>
-<text x="-4.445" y="1.905" size="1.778" layer="95">&gt;NAME</text>
-<text x="-4.445" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="1" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
+<wire x1="0.3175" y1="-0.9525" x2="1.5875" y2="0" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="0" x2="0.3175" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="0.3175" y1="0.9525" x2="0.3175" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="0.9525" x2="1.5875" y2="0" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="0" x2="1.5875" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="1.5875" y1="-0.9525" x2="2.0637" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="1.1112" y1="0.9525" x2="1.5875" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="-2.54" y1="0" x2="-1.5875" y2="0" width="0.1524" layer="94"/>
+<wire x1="-1.5875" y1="0" x2="1.5875" y2="0" width="0.1524" layer="94"/>
+<wire x1="1.5875" y1="0" x2="2.54" y2="0" width="0.1524" layer="94"/>
+<wire x1="-0.3175" y1="0.9525" x2="-1.5875" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.5875" y1="0" x2="-0.3175" y2="-0.9525" width="0.254" layer="94"/>
+<wire x1="-0.3175" y1="-0.9525" x2="-0.3175" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="-1.5875" y1="-0.9525" x2="-1.5875" y2="0" width="0.254" layer="94"/>
+<wire x1="-1.5875" y1="0" x2="-1.5875" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="-1.5875" y1="0.9525" x2="-2.0638" y2="0.9525" width="0.254" layer="94"/>
+<wire x1="-1.1113" y1="-0.9525" x2="-1.5875" y2="-0.9525" width="0.254" layer="94"/>
+<text x="-1.905" y="1.905" size="1.778" layer="95">&gt;NAME</text>
+<text x="-1.905" y="-3.81" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="0" visible="off" length="point" direction="pas"/>
 <pin name="2" x="2.54" y="0" visible="off" length="point" direction="pas" rot="R180"/>
 <polygon width="0.1524" layer="94">
-<vertex x="-0.635" y="0.9525"/>
-<vertex x="0.9525" y="0"/>
-<vertex x="-0.635" y="-0.9525"/>
+<vertex x="0.3175" y="0.9525"/>
+<vertex x="1.5875" y="0"/>
+<vertex x="0.3175" y="-0.9525"/>
 </polygon>
 <polygon width="0.1524" layer="94">
-<vertex x="-1.905" y="-0.9525"/>
-<vertex x="-3.4925" y="0"/>
-<vertex x="-1.905" y="0.9525"/>
+<vertex x="-0.3175" y="-0.9525"/>
+<vertex x="-1.5875" y="0"/>
+<vertex x="-0.3175" y="0.9525"/>
 </polygon>
 </symbol>
 <symbol name="TF">
@@ -1147,8 +1185,8 @@ Bourns</description>
 <wire x1="3.175" y1="1.905" x2="-3.175" y2="1.905" width="0.254" layer="94" curve="-87.20478"/>
 <wire x1="0" y1="-2.54" x2="0" y2="-0.635" width="0.1524" layer="94"/>
 <wire x1="0" y1="0.762" x2="0" y2="2.667" width="0.1524" layer="94"/>
-<text x="2.54" y="-5.08" size="1.778" layer="95">&gt;NAME</text>
-<text x="2.54" y="-7.62" size="1.778" layer="96">&gt;VALUE</text>
+<text x="4.445" y="1.27" size="1.778" layer="95">&gt;NAME</text>
+<text x="4.445" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
 <pin name="IN" x="-5.08" y="0" visible="off" length="middle" direction="pas"/>
 <pin name="OUT" x="5.08" y="0" visible="off" length="middle" direction="pas" rot="R180"/>
 <pin name="GND1" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
@@ -1599,6 +1637,24 @@ Polymeric ESD Suppressor, Raychem PESD Series</description>
 </technologies>
 </device>
 <device name="SOD523" package="SOD523">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO15" package="DO15">
+<connects>
+<connect gate="G$1" pin="1" pad="A"/>
+<connect gate="G$1" pin="2" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO15-12" package="DO15-12">
 <connects>
 <connect gate="G$1" pin="1" pad="A"/>
 <connect gate="G$1" pin="2" pad="C"/>

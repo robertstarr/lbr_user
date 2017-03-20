@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -2617,10 +2617,10 @@ Grid 5.00 mm&lt;p&gt;
 <deviceset name="MKDS-04" prefix="J">
 <description>MKDSN COMBICON SERIES</description>
 <gates>
-<gate name="-1" symbol="SKB" x="0" y="0"/>
-<gate name="-2" symbol="SKB" x="0" y="-5.08"/>
-<gate name="-3" symbol="SKB" x="0" y="-10.16"/>
-<gate name="-4" symbol="SKBV" x="0" y="-15.24"/>
+<gate name="-1" symbol="SKB" x="0" y="0" swaplevel="1"/>
+<gate name="-2" symbol="SKB" x="0" y="-5.08" swaplevel="1"/>
+<gate name="-3" symbol="SKB" x="0" y="-10.16" swaplevel="1"/>
+<gate name="-4" symbol="SKBV" x="0" y="-15.24" swaplevel="1"/>
 </gates>
 <devices>
 <device name="" package="MKDS-04">

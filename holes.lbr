@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1228,6 +1228,22 @@ Use in a flooded plane area and add vias at positions shown!</description>
 <circle x="0" y="0" radius="5.588" width="2" layer="40"/>
 <pad name="B6,35" x="0" y="0" drill="6.35" diameter="9" thermals="no"/>
 </package>
+<package name="6,0">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 6.0 mm</description>
+<circle x="0" y="0" radius="4.4958" width="0.2032" layer="21"/>
+<circle x="0" y="0" radius="4.242640625" width="4.5466" layer="39"/>
+<circle x="0" y="0" radius="4.123103125" width="4.5466" layer="40"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="43"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="42"/>
+<circle x="0" y="0" radius="4.826" width="2.54" layer="41"/>
+<circle x="0" y="0" radius="2.85" width="0.0508" layer="51"/>
+<hole x="0" y="0" drill="6"/>
+</package>
+<package name="120-PAD-M">
+<description>&lt;b&gt;MOUNTING PAD&lt;/b&gt; 0.120", round, no silk outline</description>
+<circle x="0" y="0" radius="2.667" width="0.0508" layer="51"/>
+<pad name="B120" x="0" y="0" drill="3.048" diameter="5.08" thermals="no"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNT-PAD">
@@ -1529,6 +1545,11 @@ Use in a flooded plane area and add vias at positions shown!</description>
 <technology name="">
 <attribute name="BOM" value="EXCLUDE" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="6.0" package="6,0">
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -1997,6 +2018,14 @@ Use in a flooded plane area and add vias at positions shown!</description>
 <technology name="">
 <attribute name="BOM" value="EXCLUDE" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="0.120M" package="120-PAD-M">
+<connects>
+<connect gate="G$1" pin="MOUNT" pad="B120"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>

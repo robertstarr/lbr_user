@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1270,6 +1270,7 @@ body 6 mm x 5 mm</description>
 <rectangle x1="-0.889" y1="2.413" x2="-0.381" y2="3.683" layer="31"/>
 <rectangle x1="-2.159" y1="2.413" x2="-1.651" y2="3.683" layer="31"/>
 <rectangle x1="-2.286" y1="-1.27" x2="2.286" y2="2.413" layer="31"/>
+<rectangle x1="-3.048" y1="-3.175" x2="-2.54" y2="-2.54" layer="21"/>
 </package>
 <package name="SC74-6">
 <description>&lt;b&gt;TSSOP (SSOT, 0.95mm pitch, 1.5mm body, 6 leads)&lt;/b&gt;&lt;p&gt;
@@ -7842,6 +7843,24 @@ Logic Level, PowerTrench</description>
 </deviceset>
 <deviceset name="FK3503010L" prefix="Q">
 <description>&lt;b&gt;N-CHANNEL MOSFET&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="EMOS-ND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SC85">
+<connects>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RU1J002YN" prefix="Q">
+<description>&lt;b&gt;N-Channel MOSFET&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="EMOS-ND" x="0" y="0"/>
 </gates>
