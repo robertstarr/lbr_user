@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -3505,6 +3505,15 @@ LINE FILTER WE-SL5, WURTH</description>
 <text x="-12" y="4.15" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-12" y="-4.95" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="2474R">
+<description>API Delevan 2474R</description>
+<circle x="0" y="0" radius="3.05" width="0.2032" layer="21"/>
+<pad name="1" x="0" y="0" drill="1.016" diameter="2.1844" shape="octagon"/>
+<pad name="2" x="5.08" y="0" drill="1.016" diameter="2.1844" shape="octagon"/>
+<text x="3.175" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="3.175" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="3" y1="-0.3" x2="3.8" y2="0.3" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DRK">
@@ -5200,6 +5209,24 @@ Wurth</description>
 </gates>
 <devices>
 <device name="" package="MESC">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2474R" prefix="L">
+<description>Unshielded Molded Inductor&lt;p&gt;
+API Delvin, Inc.</description>
+<gates>
+<gate name="G$1" symbol="DRK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="2474R">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
