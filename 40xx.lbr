@@ -81,6 +81,40 @@ Based on the following sources:
 &lt;/ul&gt;
 &lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
 <packages>
+<package name="SOP-8-127P-390W-490L-175H-140F">
+<description>&lt;b&gt;SOP (1.27mm pitch, 1.05mm lead length, 4.90mm length, 3.90mm width, 1.75mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body length,
+3.90mm body width, 1.75mm max height, 8 leads.
+&lt;/p&gt;
+&lt;p&gt;JEDEC MS-012F, variation AA, B1R-PDSO.&lt;/p&gt;</description>
+<circle x="-1.55" y="-0.65" radius="0.3048" width="0" layer="21"/>
+<rectangle x1="-2.105" y1="-3" x2="-1.705" y2="-1.95" layer="51"/>
+<rectangle x1="-2.105" y1="1.95" x2="-1.705" y2="3" layer="51"/>
+<rectangle x1="-0.835" y1="-3" x2="-0.435" y2="-1.95" layer="51"/>
+<rectangle x1="-0.835" y1="1.95" x2="-0.435" y2="3" layer="51"/>
+<rectangle x1="0.435" y1="-3" x2="0.835" y2="-1.95" layer="51"/>
+<rectangle x1="0.435" y1="1.95" x2="0.835" y2="3" layer="51"/>
+<rectangle x1="1.705" y1="-3" x2="2.105" y2="-1.95" layer="51"/>
+<rectangle x1="1.705" y1="1.95" x2="2.105" y2="3" layer="51"/>
+<smd name="1" x="-1.905" y="-2.85" dx="0.6" dy="2.0" layer="1"/>
+<smd name="2" x="-0.635" y="-2.85" dx="0.6" dy="2.0" layer="1"/>
+<smd name="3" x="0.635" y="-2.85" dx="0.6" dy="2.0" layer="1"/>
+<smd name="4" x="1.905" y="-2.85" dx="0.6" dy="2.0" layer="1"/>
+<smd name="5" x="1.905" y="2.85" dx="0.6" dy="2.0" layer="1"/>
+<smd name="6" x="0.635" y="2.85" dx="0.6" dy="2.0" layer="1"/>
+<smd name="7" x="-0.635" y="2.85" dx="0.6" dy="2.0" layer="1"/>
+<smd name="8" x="-1.905" y="2.85" dx="0.6" dy="2.0" layer="1"/>
+<text x="-2.95" y="-1.95" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="3.45" y="-1.95" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-2.425" y1="1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
+<wire x1="-2.35" y1="-1.45" x2="2.35" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="-2.35" y1="1.45" x2="-2.35" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="-1.45" x2="2.35" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="2.35" y1="1.45" x2="-2.35" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="2.425" y1="-1.925" x2="2.425" y2="1.925" width="0.0508" layer="51"/>
+<wire x1="2.425" y1="-1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
+<wire x1="2.425" y1="1.925" x2="-2.425" y2="1.925" width="0.0508" layer="51"/>
+</package>
 <package name="SOP-16-127P-530W-1030L-210H-125F">
 <description>&lt;b&gt;SOP (1.27mm pitch, 1.25mm lead length, 10.30mm length, 5.30mm width, 2.10mm max height, 16 leads)&lt;/b&gt;&lt;p&gt;
 Small outline package. 1.27mm pitch, 1.25mm lead length 10.30mm length, 5.30mm width, 2.10mm max height, 16 leads.&lt;/p&gt;&lt;p&gt;
@@ -6885,7 +6919,7 @@ Source: www.standardics.nxp.com/products/hc/datasheet/74hc4059.pdf</description>
 <gate name="P" symbol="PWRN" x="-22.86" y="0" addlevel="request"/>
 </gates>
 <devices>
-<device name="D" package="SO08">
+<device name="D" package="SOP-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="A" pin="I0" pad="1"/>
 <connect gate="A" pin="I1" pad="2"/>
