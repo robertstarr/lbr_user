@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2405,6 +2405,32 @@ Memory Protection Devices Inc</description>
 <text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 <text x="-12.7" y="2.54" size="1.016" layer="27" ratio="21" rot="R90">+</text>
 </package>
+<package name="CR2354/VCN">
+<description>BATTERY 3V COIN 23MM</description>
+<pad name="+" x="-6" y="-3" drill="3.175"/>
+<pad name="-" x="6" y="3" drill="1.9304"/>
+<wire x1="-10.5" y1="-1" x2="-11" y2="-1" width="0.2032" layer="21"/>
+<wire x1="-11" y1="-1" x2="-12" y2="0" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-12" y1="0" x2="-12" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="-12" y1="2.5" x2="-11.5" y2="3" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-11.5" y1="3" x2="3.5" y2="3" width="0.2032" layer="21"/>
+<wire x1="3.5" y1="3" x2="8.5" y2="3" width="0.2032" layer="51"/>
+<wire x1="8.5" y1="3" x2="11.5" y2="3" width="0.2032" layer="21"/>
+<wire x1="11.5" y1="3" x2="12" y2="2.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="12" y1="2.5" x2="12" y2="0" width="0.2032" layer="21"/>
+<wire x1="12" y1="0" x2="11" y2="-1" width="0.2032" layer="21" curve="-90"/>
+<wire x1="11" y1="-1" x2="10.5" y2="-1" width="0.2032" layer="21"/>
+<wire x1="10.5" y1="-1" x2="10.5" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="10.5" y1="-2.5" x2="10" y2="-3" width="0.2032" layer="21" curve="-90"/>
+<wire x1="10" y1="-3" x2="-3" y2="-3" width="0.2032" layer="21"/>
+<wire x1="-3" y1="-3" x2="-9" y2="-3" width="0.2032" layer="51"/>
+<wire x1="-9" y1="-3" x2="-10" y2="-3" width="0.2032" layer="21"/>
+<wire x1="-10" y1="-3" x2="-10.5" y2="-2.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-10.5" y1="-2.5" x2="-10.5" y2="-1" width="0.2032" layer="21"/>
+<wire x1="10.5" y1="-1" x2="-10.5" y2="-1" width="0.2032" layer="51"/>
+<text x="-3" y="-4.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="2V4+2">
@@ -4259,6 +4285,23 @@ CR2032 Coin Cell</description>
 </gates>
 <devices>
 <device name="" package="BLP2032SM">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CR2354/VCN" prefix="B">
+<description>BATTERY LITHIUM 3V COIN 23MM</description>
+<gates>
+<gate name="G$1" symbol="3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="CR2354/VCN">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
