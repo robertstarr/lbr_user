@@ -939,9 +939,9 @@ PLD-1.5</description>
 <rectangle x1="-0.6" y1="2.7" x2="0.6" y2="3.2" layer="51"/>
 <rectangle x1="-0.6" y1="-3.2" x2="0.6" y2="-2.7" layer="51"/>
 </package>
-<package name="SOP-8-127P-390W-490L-175H-140F">
-<description>&lt;b&gt;SOP (1.27mm pitch, 1.05mm lead length, 4.90mm length, 3.90mm width, 1.75mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
-Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body length,
+<package name="SOIC-8-127P-390W-490L-175H-140F">
+<description>&lt;b&gt;SOIC (1.27mm pitch, 1.05mm lead length, 4.90mm length, 3.90mm width, 1.75mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline integrated circuit, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body length,
 3.90mm body width, 1.75mm max height, 8 leads.
 &lt;/p&gt;
 &lt;p&gt;JEDEC MS-012F, variation AA, B1R-PDSO.&lt;/p&gt;</description>
@@ -964,14 +964,14 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body l
 <smd name="8" x="-1.905" y="2.85" dx="0.6" dy="2.0" layer="1"/>
 <text x="-2.95" y="-1.95" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="3.45" y="-1.95" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-2.55" y1="-1.45" x2="2.55" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="-2.55" y1="1.45" x2="-2.55" y2="-1.45" width="0.2032" layer="21"/>
 <wire x1="-2.425" y1="1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
-<wire x1="-2.35" y1="-1.45" x2="2.35" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="-2.35" y1="1.45" x2="-2.35" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="-1.45" x2="2.35" y2="1.45" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="1.45" x2="-2.35" y2="1.45" width="0.2032" layer="21"/>
 <wire x1="2.425" y1="-1.925" x2="2.425" y2="1.925" width="0.0508" layer="51"/>
 <wire x1="2.425" y1="-1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
 <wire x1="2.425" y1="1.925" x2="-2.425" y2="1.925" width="0.0508" layer="51"/>
+<wire x1="2.55" y1="-1.45" x2="2.55" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="2.55" y1="1.45" x2="-2.55" y2="1.45" width="0.2032" layer="21"/>
 </package>
 <package name="SC70-6">
 <description>&lt;b&gt;SC70-5 (TSSOT, 0.65mm pitch, 1.25mm body, 6 leads)&lt;/b&gt;&lt;p&gt;
@@ -4276,7 +4276,7 @@ Panasonic SMini3-F2-B</description>
 <gate name="G$1" symbol="IGFET-EN-G4D3S" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="D1" pad="5"/>
 <connect gate="G$1" pin="D2" pad="6"/>
@@ -4583,7 +4583,7 @@ Vgs=12V</description>
 <gate name="G$1" symbol="MFNS-D4S3" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="D1" pad="5"/>
 <connect gate="G$1" pin="D2" pad="6"/>
@@ -5108,7 +5108,7 @@ Monolithic Dual, Ultra Low Noise</description>
 <gate name="B" symbol="JFET-N" x="12.7" y="0"/>
 </gates>
 <devices>
-<device name="SOIC-8" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="SOIC-8" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="A" pin="D" pad="2"/>
 <connect gate="A" pin="G" pad="4"/>
@@ -5674,7 +5674,7 @@ Dual N &amp; P Channel Power HEXFET</description>
 <gate name="B" symbol="MFPS-D2" x="0" y="-20.32"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="A" pin="D1" pad="8"/>
 <connect gate="A" pin="D2" pad="7"/>
@@ -6703,7 +6703,7 @@ Logic Level PowerTrench</description>
 <gate name="B" symbol="EMOS_ND2" x="10.16" y="0" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="A" pin="D" pad="5"/>
 <connect gate="A" pin="D2" pad="6"/>
@@ -7745,7 +7745,7 @@ MOSFET P-CH 55V 18A DPAK</description>
 <gate name="B" symbol="EMOS-PD" x="20.32" y="0" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="A" pin="D" pad="7 8"/>
 <connect gate="A" pin="G" pad="2"/>
@@ -7804,7 +7804,7 @@ Logic Level, PowerTrench</description>
 <gate name="B" symbol="EMOS-PD" x="17.78" y="0" addlevel="always" swaplevel="1"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="A" pin="D" pad="7 8"/>
 <connect gate="A" pin="G" pad="2"/>

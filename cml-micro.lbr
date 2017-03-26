@@ -372,9 +372,9 @@ Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 28 leads. JED
 <wire x1="5.1" y1="-2.6" x2="5.1" y2="2.6" width="0.2032" layer="21"/>
 <wire x1="5.1" y1="2.6" x2="-5.05" y2="2.6" width="0.2032" layer="21"/>
 </package>
-<package name="SOP-16-127P-750W-1030L-265H-140F">
-<description>&lt;b&gt;SOP (1.27mm pitch, 1.4mm lead length, 10.30mm length, 7.50mm width, 2.65mm max height, 16 leads)&lt;/b&gt;&lt;p&gt;
-Small outline package, SO, SOIC. 1.27mm pitch, 1.4mm lead length, 10.30mm length, 7.50mm width, 2.65mm max height, 16 leads.&lt;/p&gt;
+<package name="SOIC-16-127P-750W-1030L-265H-140F">
+<description>&lt;b&gt;SOIC (1.27mm pitch, 1.4mm lead length, 10.30mm length, 7.50mm width, 2.65mm max height, 16 leads)&lt;/b&gt;&lt;p&gt;
+Small outline integrated circuit, SO, SOIC. 1.27mm pitch, 1.4mm lead length, 10.30mm length, 7.50mm width, 2.65mm max height, 16 leads.&lt;/p&gt;
 
 &lt;p&gt;JEDEC MS-013F, variation AA, B1R-PDSO.&lt;/p&gt;</description>
 <circle x="-4.25" y="-2.45" radius="0.3048" width="0" layer="21"/>
@@ -421,9 +421,9 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.4mm lead length, 10.30mm length
 <wire x1="5.125" y1="-3.725" x2="-5.125" y2="-3.725" width="0.0508" layer="51"/>
 <wire x1="5.125" y1="3.725" x2="-5.125" y2="3.725" width="0.0508" layer="51"/>
 </package>
-<package name="SOP-24-127P-750W-1540L-265H-140F">
-<description>&lt;b&gt;SOP (1.27mm pitch, 1.4mm lead length, 15.40mm length, 7.50mm width, 2.65mm max height, 24 leads)&lt;/b&gt;&lt;p&gt;
-Small outline package, SO, SOIC. 1.27mm pitch, 1.4mm lead length, 15.40mm length, 7.50mm width, 2.65mm max height, 24 leads.&lt;/p&gt;
+<package name="SOIC-24-127P-750W-1540L-265H-140F">
+<description>&lt;b&gt;SOIC (1.27mm pitch, 1.4mm lead length, 15.40mm length, 7.50mm width, 2.65mm max height, 24 leads)&lt;/b&gt;&lt;p&gt;
+Small outline integrated circuit, SO, SOIC. 1.27mm pitch, 1.4mm lead length, 15.40mm length, 7.50mm width, 2.65mm max height, 24 leads.&lt;/p&gt;
 
 &lt;p&gt;JEDEC MS-013F, variation AD, B1R-PDSO.Very similar to JEDEC MO-119B, variation AA.&lt;/p&gt;</description>
 <circle x="-6.8" y="-2.45" radius="0.3048" width="0" layer="21"/>
@@ -1061,7 +1061,7 @@ Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 24 leads. JED
 <technology name=""/>
 </technologies>
 </device>
-<device name="DW" package="SOP-16-127P-750W-1030L-265H-140F">
+<device name="DW" package="SOIC-16-127P-750W-1030L-265H-140F">
 <connects>
 <connect gate="A" pin="!TX_EN_L!" pad="14"/>
 <connect gate="A" pin="D0" pad="4"/>
@@ -1121,7 +1121,7 @@ Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 24 leads. JED
 <technology name=""/>
 </technologies>
 </device>
-<device name="DW" package="SOP-24-127P-750W-1540L-265H-140F">
+<device name="DW" package="SOIC-24-127P-750W-1540L-265H-140F">
 <connects>
 <connect gate="A" pin="!RX_TONE_DEC!" pad="13"/>
 <connect gate="A" pin="D0" pad="10"/>
@@ -1193,7 +1193,7 @@ Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 24 leads. JED
 <gate name="P" symbol="VDDVSS" x="-35.56" y="17.78"/>
 </gates>
 <devices>
-<device name="DW" package="SOP-24-127P-750W-1540L-265H-140F">
+<device name="DW" package="SOIC-24-127P-750W-1540L-265H-140F">
 <connects>
 <connect gate="A" pin="!CS!" pad="6"/>
 <connect gate="A" pin="!IRQ!" pad="7"/>
@@ -1326,7 +1326,7 @@ Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 24 leads. JED
 <technology name=""/>
 </technologies>
 </device>
-<device name="DW" package="SOP-24-127P-750W-1540L-265H-140F">
+<device name="DW" package="SOIC-24-127P-750W-1540L-265H-140F">
 <connects>
 <connect gate="A" pin="!CS!" pad="6"/>
 <connect gate="A" pin="!IRQ!" pad="7"/>
@@ -1396,7 +1396,7 @@ Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 24 leads. JED
 <gate name="G$1" symbol="CMX639D4" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP-16-127P-750W-1030L-265H-140F">
+<device name="" package="SOIC-16-127P-750W-1030L-265H-140F">
 <connects>
 <connect gate="G$1" pin="!POWERSAVE!" pad="10"/>
 <connect gate="G$1" pin="ALGORITHM" pad="13"/>
@@ -1458,7 +1458,7 @@ Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 24 leads. JED
 <technology name=""/>
 </technologies>
 </device>
-<device name="D2" package="SOP-24-127P-750W-1540L-265H-140F">
+<device name="D2" package="SOIC-24-127P-750W-1540L-265H-140F">
 <connects>
 <connect gate="G$1" pin="!RXHOLD!" pad="5"/>
 <connect gate="G$1" pin="BT" pad="15"/>
@@ -1560,7 +1560,7 @@ Digitally Controlled</description>
 <gate name="G$1" symbol="FX019" x="0" y="0"/>
 </gates>
 <devices>
-<device name="DW" package="SOP-16-127P-750W-1030L-265H-140F">
+<device name="DW" package="SOIC-16-127P-750W-1030L-265H-140F">
 <connects>
 <connect gate="G$1" pin="!LOAD!/LATCH" pad="3"/>
 <connect gate="G$1" pin="CS" pad="14"/>
