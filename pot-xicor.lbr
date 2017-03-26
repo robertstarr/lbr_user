@@ -94,9 +94,9 @@
 <text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SOP-8-127P-390W-490L-175H-140F">
-<description>&lt;b&gt;SOP (1.27mm pitch, 1.05mm lead length, 4.90mm length, 3.90mm width, 1.75mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
-Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body length,
+<package name="SOIC-8-127P-390W-490L-175H-140F">
+<description>&lt;b&gt;SOIC (1.27mm pitch, 1.05mm lead length, 4.90mm length, 3.90mm width, 1.75mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline integrated circuit, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body length,
 3.90mm body width, 1.75mm max height, 8 leads.
 &lt;/p&gt;
 &lt;p&gt;JEDEC MS-012F, variation AA, B1R-PDSO.&lt;/p&gt;</description>
@@ -119,14 +119,14 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body l
 <smd name="8" x="-1.905" y="2.85" dx="0.6" dy="2.0" layer="1"/>
 <text x="-2.95" y="-1.95" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="3.45" y="-1.95" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-2.55" y1="-1.45" x2="2.55" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="-2.55" y1="1.45" x2="-2.55" y2="-1.45" width="0.2032" layer="21"/>
 <wire x1="-2.425" y1="1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
-<wire x1="-2.35" y1="-1.45" x2="2.35" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="-2.35" y1="1.45" x2="-2.35" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="-1.45" x2="2.35" y2="1.45" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="1.45" x2="-2.35" y2="1.45" width="0.2032" layer="21"/>
 <wire x1="2.425" y1="-1.925" x2="2.425" y2="1.925" width="0.0508" layer="51"/>
 <wire x1="2.425" y1="-1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
 <wire x1="2.425" y1="1.925" x2="-2.425" y2="1.925" width="0.0508" layer="51"/>
+<wire x1="2.55" y1="-1.45" x2="2.55" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="2.55" y1="1.45" x2="-2.55" y2="1.45" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -173,7 +173,7 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body l
 <gate name="1" symbol="X9C10X" x="0" y="0"/>
 </gates>
 <devices>
-<device name="S" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="S" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="1" pin="!CS" pad="7"/>
 <connect gate="1" pin="!INC" pad="1"/>

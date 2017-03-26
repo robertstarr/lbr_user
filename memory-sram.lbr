@@ -581,9 +581,9 @@ Small outline package J-lead. Lead pitch 1.27mm, body width 400mil/10.15mm. 28 l
 <wire x1="9.3100" y1="4.9780" x2="9.3100" y2="-4.9780" width="0.2032" layer="21"/>
 <wire x1="9.3100" y1="4.9780" x2="8.8650" y2="4.9780" width="0.2032" layer="21"/>
 </package>
-<package name="SOP-28-127P-840W-1790L-254H-180F">
-<description>&lt;b&gt;SOP (1.27mm pitch, 1.8mm lead length, 17.90mm length, 8.40mm width, 2.54mm max height, 28 leads)&lt;/b&gt;&lt;p&gt;
-Small outline package, SO, SOIC. 1.27mm pitch, 1.8mm lead length, 17.90mm body length,
+<package name="SOIC-28-127P-840W-1790L-254H-180F">
+<description>&lt;b&gt;SOIC (1.27mm pitch, 1.8mm lead length, 17.90mm length, 8.40mm width, 2.54mm max height, 28 leads)&lt;/b&gt;&lt;p&gt;
+Small outline integrated circuit, SO, SOIC. 1.27mm pitch, 1.8mm lead length, 17.90mm body length,
 8.40mm body width, 2.54mm max height, 28 leads.
 &lt;/p&gt;
 &lt;p&gt;JEDEC MO-059B, variation AC.&lt;/p&gt;</description>
@@ -646,10 +646,14 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.8mm lead length, 17.90mm body l
 <smd name="28" x="-8.255" y="5.5" dx="0.6" dy="2.0" layer="1"/>
 <text x="-9.45" y="-4.2" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="9.95" y="-4.2" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<wire x1="-8.85" y1="-4.1" x2="8.85" y2="-4.1" width="0.2032" layer="21"/>
-<wire x1="-8.85" y1="4.1" x2="-8.85" y2="-4.1" width="0.2032" layer="21"/>
-<wire x1="8.85" y1="-4.1" x2="8.85" y2="4.1" width="0.2032" layer="21"/>
-<wire x1="8.85" y1="4.1" x2="-8.85" y2="4.1" width="0.2032" layer="21"/>&gt;
+<wire x1="-9.05" y1="-4.1" x2="9.05" y2="-4.1" width="0.2032" layer="21"/>
+<wire x1="-9.05" y1="4.1" x2="-9.05" y2="-4.1" width="0.2032" layer="21"/>
+<wire x1="-8.925" y1="-4.175" x2="-8.925" y2="4.175" width="0.0508" layer="51"/>
+<wire x1="-8.925" y1="4.175" x2="8.925" y2="4.175" width="0.0508" layer="51"/>
+<wire x1="8.925" y1="-4.175" x2="-8.925" y2="-4.175" width="0.0508" layer="51"/>
+<wire x1="8.925" y1="4.175" x2="8.925" y2="-4.175" width="0.0508" layer="51"/>
+<wire x1="9.05" y1="-4.1" x2="9.05" y2="4.1" width="0.2032" layer="21"/>
+<wire x1="9.05" y1="4.1" x2="-9.05" y2="4.1" width="0.2032" layer="21"/>
 </package>
 <package name="TSOP28-450-T1">
 <description>TSOP28  Type-I&lt;p&gt;
@@ -2420,7 +2424,7 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.8mm lead length, 17.90mm body l
 <gate name="G$1" symbol="LH52256" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP-28-127P-840W-1790L-254H-180F">
+<device name="" package="SOIC-28-127P-840W-1790L-254H-180F">
 <connects>
 <connect gate="G$1" pin="!CE!" pad="20"/>
 <connect gate="G$1" pin="!OE!" pad="22"/>

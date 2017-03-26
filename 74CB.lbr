@@ -79,9 +79,9 @@
 USE AT YOUR OWN RISK!&lt;p&gt;
 &lt;author&gt;Copyright (C) 2013, Bob Starr&lt;br&gt; http://www.bobstarr.net&lt;br&gt;&lt;/author&gt;</description>
 <packages>
-<package name="SOP-20-127P-750W-1280L-265H-140F">
-<description>&lt;b&gt;SOP (1.27mm pitch, 1.4mm lead length, 12.80mm length, 7.50mm width, 2.65mm max height, 20 leads)&lt;/b&gt;&lt;p&gt;
-Small outline package, SO, SOIC. 1.27mm pitch, 1.4mm lead length, 12.80mm length, 7.50mm width, 2.65mm max height, 20 leads.&lt;/p&gt;
+<package name="SOIC-20-127P-750W-1280L-265H-140F">
+<description>&lt;b&gt;SOIC (1.27mm pitch, 1.4mm lead length, 12.80mm length, 7.50mm width, 2.65mm max height, 20 leads)&lt;/b&gt;&lt;p&gt;
+Small outline integrated circuit, SO, SOIC. 1.27mm pitch, 1.4mm lead length, 12.80mm length, 7.50mm width, 2.65mm max height, 20 leads.&lt;/p&gt;
 
 &lt;p&gt;JEDEC MS-013F, variation AC, B1R-PDSO.&lt;/p&gt;</description>
 <circle x="-5.5" y="-2.45" radius="0.3048" width="0" layer="21"/>
@@ -363,9 +363,9 @@ Plastic thin shrink small outline package. 0.65mm pitch, 1.0mm lead length 5.0mm
 <wire x1="2.6" y1="-2" x2="2.6" y2="2" width="0.2032" layer="21"/>
 <wire x1="2.6" y1="2" x2="-2.6" y2="2" width="0.2032" layer="21"/>
 </package>
-<package name="SOP-16-127P-390W-990L-175H-140F">
-<description>&lt;b&gt;SOP (1.27mm pitch, 1.05mm lead length, 9.90mm length, 3.90mm width, 1.75mm max height, 16 leads)&lt;/b&gt;&lt;p&gt;
-Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 9.90mm body length,
+<package name="SOIC-16-127P-390W-990L-175H-140F">
+<description>&lt;b&gt;SOIC (1.27mm pitch, 1.05mm lead length, 9.90mm length, 3.90mm width, 1.75mm max height, 16 leads)&lt;/b&gt;&lt;p&gt;
+Small outline integrated circuit, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 9.90mm body length,
 3.90mm body width, 1.75mm max height, 16 leads.
 &lt;/p&gt;
 &lt;p&gt;JEDEC MS-012F, variation AC, B1R-PDSO.&lt;/p&gt;</description>
@@ -404,14 +404,14 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 9.90mm body l
 <smd name="16" x="-4.445" y="2.85" dx="0.6" dy="2.0" layer="1"/>
 <text x="-5.45" y="-1.95" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="5.95" y="-1.95" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-5.05" y1="-1.45" x2="5.05" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="-5.05" y1="1.45" x2="-5.05" y2="-1.45" width="0.2032" layer="21"/>
 <wire x1="-4.925" y1="1.925" x2="-4.925" y2="-1.925" width="0.0508" layer="51"/>
-<wire x1="-4.85" y1="-1.45" x2="4.85" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="-4.85" y1="1.45" x2="-4.85" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="4.85" y1="-1.45" x2="4.85" y2="1.45" width="0.2032" layer="21"/>
-<wire x1="4.85" y1="1.45" x2="-4.85" y2="1.45" width="0.2032" layer="21"/>
 <wire x1="4.925" y1="-1.925" x2="4.925" y2="1.925" width="0.0508" layer="51"/>
 <wire x1="4.925" y1="-1.925" x2="-4.925" y2="-1.925" width="0.0508" layer="51"/>
 <wire x1="4.925" y1="1.925" x2="-4.925" y2="1.925" width="0.0508" layer="51"/>
+<wire x1="5.05" y1="-1.45" x2="5.05" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="5.05" y1="1.45" x2="-5.05" y2="1.45" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -478,7 +478,7 @@ Source: &lt;href&gt;http://www.ti.com/lit/ds/symlink/sn74cb3t3245.pdf</descripti
 <gate name="A" symbol="74CB3T3245" x="0" y="0"/>
 </gates>
 <devices>
-<device name="DW" package="SOP-20-127P-750W-1280L-265H-140F">
+<device name="DW" package="SOIC-20-127P-750W-1280L-265H-140F">
 <connects>
 <connect gate="A" pin="!OE!" pad="19"/>
 <connect gate="A" pin="A1" pad="2"/>
@@ -617,7 +617,7 @@ Source: &lt;href&gt;http://www.ti.com/lit/ds/symlink/sn74cb3t3245.pdf</descripti
 <technology name=""/>
 </technologies>
 </device>
-<device name="D" package="SOP-16-127P-390W-990L-175H-140F">
+<device name="D" package="SOIC-16-127P-390W-990L-175H-140F">
 <connects>
 <connect gate="G$1" pin="!OE!" pad="15"/>
 <connect gate="G$1" pin="1A" pad="4"/>

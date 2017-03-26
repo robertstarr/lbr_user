@@ -983,9 +983,9 @@ Small outline transistor (SOT). 2.3mm pitch, 3.5mm body width, 4 leads. JEDEC TO
 <text x="-5.715" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="-3.4925" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="SOP-8-127P-390W-490L-175H-140F">
-<description>&lt;b&gt;SOP (1.27mm pitch, 1.05mm lead length, 4.90mm length, 3.90mm width, 1.75mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
-Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body length,
+<package name="SOIC-8-127P-390W-490L-175H-140F">
+<description>&lt;b&gt;SOIC (1.27mm pitch, 1.05mm lead length, 4.90mm length, 3.90mm width, 1.75mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline integrated circuit, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body length,
 3.90mm body width, 1.75mm max height, 8 leads.
 &lt;/p&gt;
 &lt;p&gt;JEDEC MS-012F, variation AA, B1R-PDSO.&lt;/p&gt;</description>
@@ -1008,14 +1008,14 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body l
 <smd name="8" x="-1.905" y="2.85" dx="0.6" dy="2.0" layer="1"/>
 <text x="-2.95" y="-1.95" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="3.45" y="-1.95" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-2.55" y1="-1.45" x2="2.55" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="-2.55" y1="1.45" x2="-2.55" y2="-1.45" width="0.2032" layer="21"/>
 <wire x1="-2.425" y1="1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
-<wire x1="-2.35" y1="-1.45" x2="2.35" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="-2.35" y1="1.45" x2="-2.35" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="-1.45" x2="2.35" y2="1.45" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="1.45" x2="-2.35" y2="1.45" width="0.2032" layer="21"/>
 <wire x1="2.425" y1="-1.925" x2="2.425" y2="1.925" width="0.0508" layer="51"/>
 <wire x1="2.425" y1="-1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
 <wire x1="2.425" y1="1.925" x2="-2.425" y2="1.925" width="0.0508" layer="51"/>
+<wire x1="2.55" y1="-1.45" x2="2.55" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="2.55" y1="1.45" x2="-2.55" y2="1.45" width="0.2032" layer="21"/>
 </package>
 <package name="P2PAK">
 <description>&lt;b&gt;SMD P2PAK&lt;/b&gt;</description>
@@ -3163,7 +3163,7 @@ horizontal, no mount hole.</description>
 <gate name="G$1" symbol="L78XX" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="GND" pad="2 3 6 7"/>
 <connect gate="G$1" pin="IN" pad="8"/>
@@ -3276,7 +3276,7 @@ National Semiconductor</description>
 <gate name="A" symbol="LM2674" x="0" y="0"/>
 </gates>
 <devices>
-<device name="M" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="M" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="A" pin="CB" pad="1"/>
 <connect gate="A" pin="FB" pad="4"/>
@@ -3424,7 +3424,7 @@ Sharp PQ20WZ51 / PQ20WZ11</description>
 <gate name="G$1" symbol="LM2936BM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="GND@1" pad="2"/>
 <connect gate="G$1" pin="GND@2" pad="3"/>
@@ -3484,7 +3484,7 @@ Texas Instruments</description>
 <gate name="G$1" symbol="LM2671" x="0" y="0"/>
 </gates>
 <devices>
-<device name="M" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="M" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="CB" pad="1"/>
 <connect gate="G$1" pin="FB" pad="4"/>
@@ -3583,7 +3583,7 @@ Texas Instruments</description>
 <gate name="G$1" symbol="78LXXACM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="GND1" pad="3"/>
@@ -3704,7 +3704,7 @@ National Semiconductor</description>
 <gate name="G$1" symbol="78XX" x="0" y="2.54"/>
 </gates>
 <devices>
-<device name="XXS8-5" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="XXS8-5" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="IN" pad="2"/>
@@ -3864,7 +3864,7 @@ SO-8, fixed voltage</description>
 <gate name="G$1" symbol="LM2931D" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="GND@2" pad="2"/>
 <connect gate="G$1" pin="GND@3" pad="3"/>
@@ -3888,7 +3888,7 @@ SO-8, adjustable voltage</description>
 <gate name="G$1" symbol="LM2931D-ADJ" x="0" y="-2.54"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="ADJ" pad="4"/>
 <connect gate="G$1" pin="GND@2" pad="2"/>
@@ -3930,7 +3930,7 @@ Burr-Brown</description>
 <gate name="G$1" symbol="TDA3673" x="0" y="0"/>
 </gates>
 <devices>
-<device name="AT" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="AT" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="EN" pad="5"/>
 <connect gate="G$1" pin="GND" pad="2"/>
@@ -4231,7 +4231,7 @@ Adjustable</description>
 <gate name="G$1" symbol="MIC5201-X.XYM" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="EN" pad="5"/>
 <connect gate="G$1" pin="GND" pad="3"/>
@@ -4623,7 +4623,7 @@ Adjustable Micropower, 100mA</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="M" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="M" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="!ERR" pad="5"/>
 <connect gate="G$1" pin="FB" pad="7"/>
@@ -5404,7 +5404,7 @@ Fixed 150mA Low-Noise</description>
 <technology name="AC"/>
 </technologies>
 </device>
-<device name="D13TR" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="D13TR" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="GND" pad="5"/>
 <connect gate="G$1" pin="IN" pad="2 3 6 7" route="any"/>

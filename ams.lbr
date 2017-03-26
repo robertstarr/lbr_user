@@ -188,9 +188,9 @@ Shrink small outline package. Lead pitch 0.65mm, body width 5.3mm, 16 leads. JED
 <wire x1="3.15" y1="-2.6" x2="3.15" y2="2.6" width="0.2032" layer="21"/>
 <wire x1="3.15" y1="2.6" x2="-3.1" y2="2.6" width="0.2032" layer="21"/>
 </package>
-<package name="SOP-8-127P-390W-490L-175H-140F">
-<description>&lt;b&gt;SOP (1.27mm pitch, 1.05mm lead length, 4.90mm length, 3.90mm width, 1.75mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
-Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body length,
+<package name="SOIC-8-127P-390W-490L-175H-140F">
+<description>&lt;b&gt;SOIC (1.27mm pitch, 1.05mm lead length, 4.90mm length, 3.90mm width, 1.75mm max height, 8 leads)&lt;/b&gt;&lt;p&gt;
+Small outline integrated circuit, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body length,
 3.90mm body width, 1.75mm max height, 8 leads.
 &lt;/p&gt;
 &lt;p&gt;JEDEC MS-012F, variation AA, B1R-PDSO.&lt;/p&gt;</description>
@@ -213,14 +213,14 @@ Small outline package, SO, SOIC. 1.27mm pitch, 1.05mm lead length, 4.90mm body l
 <smd name="8" x="-1.905" y="2.85" dx="0.6" dy="2.0" layer="1"/>
 <text x="-2.95" y="-1.95" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="3.45" y="-1.95" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-2.55" y1="-1.45" x2="2.55" y2="-1.45" width="0.2032" layer="21"/>
+<wire x1="-2.55" y1="1.45" x2="-2.55" y2="-1.45" width="0.2032" layer="21"/>
 <wire x1="-2.425" y1="1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
-<wire x1="-2.35" y1="-1.45" x2="2.35" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="-2.35" y1="1.45" x2="-2.35" y2="-1.45" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="-1.45" x2="2.35" y2="1.45" width="0.2032" layer="21"/>
-<wire x1="2.35" y1="1.45" x2="-2.35" y2="1.45" width="0.2032" layer="21"/>
 <wire x1="2.425" y1="-1.925" x2="2.425" y2="1.925" width="0.0508" layer="51"/>
 <wire x1="2.425" y1="-1.925" x2="-2.425" y2="-1.925" width="0.0508" layer="51"/>
 <wire x1="2.425" y1="1.925" x2="-2.425" y2="1.925" width="0.0508" layer="51"/>
+<wire x1="2.55" y1="-1.45" x2="2.55" y2="1.45" width="0.2032" layer="21"/>
+<wire x1="2.55" y1="1.45" x2="-2.55" y2="1.45" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -414,7 +414,7 @@ For High Ambient Temperatures</description>
 <gate name="G$1" symbol="AS5601" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="SOP-8-127P-390W-490L-175H-140F">
+<device name="" package="SOIC-8-127P-390W-490L-175H-140F">
 <connects>
 <connect gate="G$1" pin="A" pad="8"/>
 <connect gate="G$1" pin="B" pad="5"/>
