@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -6872,15 +6872,15 @@ diameter 3.5 mm, horizontal</description>
 <wire x1="3.81" y1="1.778" x2="-3.81" y2="1.778" width="0.2032" layer="21"/>
 <wire x1="3.81" y1="-1.778" x2="3.81" y2="1.778" width="0.2032" layer="21"/>
 <wire x1="-3.81" y1="1.778" x2="-3.81" y2="-1.778" width="0.2032" layer="21"/>
-<wire x1="6.35" y1="0" x2="5.334" y2="0" width="0.762" layer="51"/>
-<wire x1="-6.35" y1="0" x2="-5.334" y2="0" width="0.762" layer="51"/>
+<wire x1="6.35" y1="0" x2="4.699" y2="0" width="0.762" layer="51"/>
+<wire x1="-6.35" y1="0" x2="-4.699" y2="0" width="0.762" layer="51"/>
 <pad name="C" x="-6.35" y="0" drill="1.1176" diameter="2.54"/>
 <pad name="A" x="6.35" y="0" drill="1.1176" diameter="2.54"/>
 <text x="-3.81" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.905" y="-0.635" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-3.048" y1="-1.778" x2="-2.413" y2="1.778" layer="21"/>
-<rectangle x1="-5.207" y1="-0.381" x2="-3.81" y2="0.381" layer="51"/>
-<rectangle x1="3.81" y1="-0.381" x2="5.207" y2="0.381" layer="51"/>
+<rectangle x1="-4.699" y1="-0.381" x2="-3.81" y2="0.381" layer="21"/>
+<rectangle x1="3.81" y1="-0.381" x2="4.699" y2="0.381" layer="21"/>
 </package>
 <package name="TO277-3">
 <description>TO-277, 3-PowerDFN</description>
@@ -6902,6 +6902,23 @@ diameter 3.5 mm, horizontal</description>
 <wire x1="3" y1="-2.5" x2="3" y2="-2" width="0.2032" layer="21"/>
 <text x="-3" y="2.9" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3" y="-3.6" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="01ZA">
+<description>AXIAL LEAD CASE 017A&lt;p&gt;
+SURMETIC 40</description>
+<wire x1="4.445" y1="-1.8415" x2="-4.445" y2="-1.8415" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.8415" x2="4.445" y2="1.8415" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="1.8415" x2="4.445" y2="1.8415" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="1.8415" x2="-4.445" y2="-1.8415" width="0.2032" layer="21"/>
+<wire x1="7.62" y1="0" x2="5.842" y2="0" width="0.762" layer="51"/>
+<wire x1="-7.62" y1="0" x2="-5.715" y2="0" width="0.762" layer="51"/>
+<pad name="C" x="-7.62" y="0" drill="1.4224" diameter="2.54"/>
+<pad name="A" x="7.62" y="0" drill="1.4224" diameter="2.54"/>
+<text x="-4.445" y="2.286" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.445" y="-3.048" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.175" y1="-1.778" x2="-2.413" y2="1.778" layer="21"/>
+<rectangle x1="4.445" y1="-0.381" x2="6.04" y2="0.381" layer="21"/>
+<rectangle x1="-6.04" y1="-0.381" x2="-4.445" y2="0.381" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -14394,6 +14411,24 @@ super fast rectifier, 2 A</description>
 </technologies>
 </device>
 <device name="DO35Z7" package="DO35Z7">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="017A" package="01ZA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO15" package="DO15">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
