@@ -1116,21 +1116,21 @@ diameter 5.6 mm, horizontal, grid 15.24 mm</description>
 <wire x1="5.08" y1="2.794" x2="5.08" y2="-2.794" width="0.2032" layer="21"/>
 <wire x1="-5.08" y1="2.794" x2="5.08" y2="2.794" width="0.2032" layer="21"/>
 <wire x1="5.08" y1="-2.794" x2="-5.08" y2="-2.794" width="0.2032" layer="21"/>
-<wire x1="7.62" y1="0" x2="6.223" y2="0" width="1.27" layer="51"/>
-<wire x1="-7.62" y1="0" x2="-6.223" y2="0" width="1.27" layer="51"/>
+<wire x1="8.255" y1="0" x2="6.858" y2="0" width="1.27" layer="51"/>
+<wire x1="-8.255" y1="0" x2="-6.858" y2="0" width="1.27" layer="51"/>
 <wire x1="-0.381" y1="0.4572" x2="-0.381" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="-0.381" y1="0.635" x2="0" y2="0.635" width="0.2032" layer="21"/>
 <wire x1="0" y1="0.635" x2="0" y2="0" width="0.2032" layer="21"/>
 <wire x1="0.381" y1="-0.4572" x2="0.381" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="0.381" y1="-0.635" x2="0" y2="-0.635" width="0.2032" layer="21"/>
 <wire x1="0" y1="-0.635" x2="0" y2="0" width="0.2032" layer="21"/>
-<pad name="C" x="-7.62" y="0" drill="1.4986" shape="long"/>
-<pad name="A" x="7.62" y="0" drill="1.4986" shape="long"/>
+<pad name="C" x="-8.255" y="0" drill="1.4986" shape="long"/>
+<pad name="A" x="8.255" y="0" drill="1.4986" shape="long"/>
 <text x="-5.08" y="3.4925" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.54" y="-2.159" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-4.191" y1="-2.794" x2="-3.429" y2="2.794" layer="21"/>
-<rectangle x1="-5.969" y1="-0.635" x2="-5.08" y2="0.635" layer="51"/>
-<rectangle x1="5.08" y1="-0.635" x2="5.969" y2="0.635" layer="51"/>
+<rectangle x1="-6.604" y1="-0.635" x2="-5.08" y2="0.635" layer="51"/>
+<rectangle x1="5.08" y1="-0.635" x2="6.604" y2="0.635" layer="51"/>
 <polygon width="0.2032" layer="21">
 <vertex x="0.127" y="0"/>
 <vertex x="1.143" y="0.508"/>
@@ -14429,6 +14429,15 @@ super fast rectifier, 2 A</description>
 </technologies>
 </device>
 <device name="DO15" package="DO15">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO201T15" package="DO201T15">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>

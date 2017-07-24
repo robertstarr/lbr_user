@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -5374,6 +5374,28 @@ Vishay BC Components</description>
 <text x="-3.25" y="1.65" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3.25" y="-2.45" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="C275-320X110">
+<description>&lt;b&gt;NP FILM CAP&lt;/b&gt;&lt;p&gt;
+27.5 mm lead spacing&lt;br&gt; outline 32 x 11 mm&lt;br&gt; grid 0.0125 inch</description>
+<wire x1="-16" y1="4.865" x2="-15.365" y2="5.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-15.365" y1="5.5" x2="15.365" y2="5.5" width="0.2032" layer="21"/>
+<wire x1="15.365" y1="5.5" x2="16" y2="4.865" width="0.2032" layer="21" curve="-90"/>
+<wire x1="16" y1="4.865" x2="16" y2="-4.865" width="0.2032" layer="21"/>
+<wire x1="16" y1="-4.865" x2="15.365" y2="-5.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="15.365" y1="-5.5" x2="-15.365" y2="-5.5" width="0.2032" layer="21"/>
+<wire x1="-15.365" y1="-5.5" x2="-16" y2="-4.865" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-16" y1="-4.865" x2="-16" y2="4.865" width="0.2032" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="-0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-0.635" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="0.635" y2="0" width="0.254" layer="21"/>
+<wire x1="0.635" y1="0" x2="0.635" y2="-1.27" width="0.254" layer="21"/>
+<wire x1="-0.635" y1="0" x2="-8.255" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.635" y1="0" x2="8.255" y2="0" width="0.2032" layer="21"/>
+<pad name="1" x="-13.6525" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<pad name="2" x="13.6525" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<text x="16.8275" y="0" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="16.8275" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -6013,6 +6035,15 @@ Vishay BC Components</description>
 </technologies>
 </device>
 <device name="C150-185X080" package="C150-185X080">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="C275-320X110" package="C275-320X110">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

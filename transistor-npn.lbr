@@ -560,15 +560,13 @@ rotated 45 deg.</description>
 <circle x="0" y="0" radius="6.35" width="0.254" layer="51"/>
 <circle x="-12.192" y="0" radius="1.905" width="0.254" layer="51"/>
 <circle x="12.192" y="0" radius="1.905" width="0.254" layer="51"/>
-<pad name="TO66" x="-12.192" y="0" drill="3.302" diameter="6.35"/>
+<pad name="4" x="-12.192" y="0" drill="3.302" diameter="6.35"/>
 <pad name="3" x="12.192" y="0" drill="3.302" diameter="6.35"/>
-<pad name="2" x="-2.54" y="2.54" drill="1.1176" diameter="2.54" shape="long"/>
-<pad name="1" x="-2.54" y="-2.54" drill="1.1176" diameter="2.54" shape="long"/>
+<pad name="1" x="-2.54" y="2.54" drill="1.1176" diameter="2.54" shape="long"/>
+<pad name="2" x="-2.54" y="-2.54" drill="1.1176" diameter="2.54" shape="long"/>
 <text x="8.89" y="-4.445" size="1.016" layer="21" ratio="18">3</text>
 <text x="1.27" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="3.175" y="-3.175" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
-<text x="-5.08" y="1.905" size="1.016" layer="21" ratio="18">2</text>
-<text x="-5.08" y="-3.175" size="1.016" layer="21" ratio="18">1</text>
 </package>
 <package name="SOT93">
 <description>&lt;b&gt;SOT-93&lt;/b&gt;&lt;p&gt;
@@ -1887,10 +1885,10 @@ CASE 340L, STYLE 3</description>
 <devices>
 <device name="" package="TO66">
 <connects>
-<connect gate="A" pin="B" pad="2"/>
+<connect gate="A" pin="B" pad="1"/>
 <connect gate="A" pin="C" pad="3"/>
-<connect gate="A" pin="C@1" pad="TO66"/>
-<connect gate="A" pin="E" pad="1"/>
+<connect gate="A" pin="C@1" pad="4"/>
+<connect gate="A" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2728,10 +2726,10 @@ CASE 340L, STYLE 3</description>
 <devices>
 <device name="" package="TO66">
 <connects>
-<connect gate="A" pin="B" pad="2"/>
+<connect gate="A" pin="B" pad="1"/>
 <connect gate="A" pin="C" pad="3"/>
-<connect gate="A" pin="C@1" pad="TO66"/>
-<connect gate="A" pin="E" pad="1"/>
+<connect gate="A" pin="C@1" pad="4"/>
+<connect gate="A" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2747,10 +2745,10 @@ CASE 340L, STYLE 3</description>
 <devices>
 <device name="" package="TO66">
 <connects>
-<connect gate="A" pin="B" pad="2"/>
+<connect gate="A" pin="B" pad="1"/>
 <connect gate="A" pin="C" pad="3"/>
-<connect gate="A" pin="C@1" pad="TO66"/>
-<connect gate="A" pin="E" pad="1"/>
+<connect gate="A" pin="C@1" pad="4"/>
+<connect gate="A" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2913,10 +2911,10 @@ CASE 340L, STYLE 3</description>
 <devices>
 <device name="" package="TO66">
 <connects>
-<connect gate="A" pin="B" pad="2"/>
+<connect gate="A" pin="B" pad="1"/>
 <connect gate="A" pin="C" pad="3"/>
-<connect gate="A" pin="C@1" pad="TO66"/>
-<connect gate="A" pin="E" pad="1"/>
+<connect gate="A" pin="C@1" pad="4"/>
+<connect gate="A" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2932,10 +2930,10 @@ CASE 340L, STYLE 3</description>
 <devices>
 <device name="" package="TO66">
 <connects>
-<connect gate="A" pin="B" pad="2"/>
+<connect gate="A" pin="B" pad="1"/>
 <connect gate="A" pin="C" pad="3"/>
-<connect gate="A" pin="C@1" pad="TO66"/>
-<connect gate="A" pin="E" pad="1"/>
+<connect gate="A" pin="C@1" pad="4"/>
+<connect gate="A" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6196,6 +6194,42 @@ BJT BIP NPN 1.5A 160V</description>
 <connect gate="G$1" pin="B" pad="3"/>
 <connect gate="G$1" pin="C" pad="2"/>
 <connect gate="G$1" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="2N4240" prefix="Q">
+<description>&lt;b&gt;NPN Power Transistor&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO66">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3 4"/>
+<connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FJPF5021" prefix="Q">
+<description>&lt;b&gt;NPN Transistor&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO220V">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="2"/>
+<connect gate="G$1" pin="E" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>

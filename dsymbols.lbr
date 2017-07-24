@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -63,6 +63,8 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
+<layer number="57" name="tCAD" color="11" fill="1" visible="no" active="no"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -75,6 +77,7 @@
 <layer number="106" name="BGA-Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="107" name="BD-Top" color="5" fill="1" visible="no" active="no"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <library>
@@ -697,6 +700,8 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="2.2225" y1="-0.9525" x2="2.54" y2="0" width="0.2032" layer="95"/>
 <wire x1="-2.54" y1="0" x2="-5.08" y2="0" width="0.1524" layer="95"/>
 <wire x1="2.54" y1="0" x2="5.08" y2="0" width="0.1524" layer="95"/>
+<text x="-2.54" y="1.5875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 <symbol name="SYM_C">
 <wire x1="-2.54" y1="0" x2="-0.635" y2="0" width="0.1524" layer="95"/>
@@ -771,7 +776,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <circle x="4.445" y="-2.54" radius="0.635" width="0.254" layer="95"/>
 </symbol>
 <symbol name="SYM_JUNCTION">
-<circle x="0" y="0" radius="0.70995" width="0" layer="95"/>
+<circle x="0" y="0" radius="0.508" width="0" layer="95"/>
 </symbol>
 <symbol name="SYM_LAMP">
 <wire x1="3.81" y1="1.905" x2="3.81" y2="-2.54" width="0.4064" layer="95"/>
@@ -800,6 +805,91 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <circle x="0" y="-1.27" radius="0.635" width="0" layer="95"/>
 <circle x="1.27" y="0.635" radius="0.635" width="0" layer="95"/>
 <circle x="0" y="0" radius="3.5921" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="SYM_NPN">
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="95"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="95"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="95"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="95"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="95"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="95"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="95"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="95"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="95"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="95"/>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="95"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="95"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="5.08" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="SYM_PNP">
+<wire x1="2.086" y1="1.678" x2="1.578" y2="2.594" width="0.1524" layer="95"/>
+<wire x1="1.578" y1="2.594" x2="0.516" y2="1.478" width="0.1524" layer="95"/>
+<wire x1="0.516" y1="1.478" x2="2.086" y2="1.678" width="0.1524" layer="95"/>
+<wire x1="2.54" y1="2.54" x2="1.808" y2="2.124" width="0.1524" layer="95"/>
+<wire x1="2.54" y1="-2.54" x2="0.508" y2="-1.524" width="0.1524" layer="95"/>
+<wire x1="1.905" y1="1.778" x2="1.524" y2="2.413" width="0.254" layer="95"/>
+<wire x1="1.524" y1="2.413" x2="0.762" y2="1.651" width="0.254" layer="95"/>
+<wire x1="0.762" y1="1.651" x2="1.778" y2="1.778" width="0.254" layer="95"/>
+<wire x1="1.778" y1="1.778" x2="1.524" y2="2.159" width="0.254" layer="95"/>
+<wire x1="1.524" y1="2.159" x2="1.143" y2="1.905" width="0.254" layer="95"/>
+<wire x1="1.143" y1="1.905" x2="1.524" y2="1.905" width="0.254" layer="95"/>
+<text x="5.08" y="0" size="1.778" layer="95">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="95"/>
+<wire x1="2.54" y1="-2.54" x2="2.54" y2="-5.08" width="0.1524" layer="95"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="5.08" width="0.1524" layer="95"/>
+<wire x1="0" y1="0" x2="-2.54" y2="0" width="0.1524" layer="95"/>
+</symbol>
+<symbol name="SYM_DBR">
+<wire x1="-1.905" y1="-3.175" x2="-3.9052" y2="-2.6352" width="0.254" layer="95"/>
+<wire x1="-1.905" y1="-3.175" x2="-2.4448" y2="-1.1747" width="0.254" layer="95"/>
+<wire x1="-2.7178" y1="-4.0386" x2="-0.9398" y2="-2.2606" width="0.254" layer="95"/>
+<wire x1="-1.905" y1="3.175" x2="-3.9053" y2="2.6353" width="0.254" layer="95"/>
+<wire x1="-1.905" y1="3.175" x2="-2.4447" y2="1.1748" width="0.254" layer="95"/>
+<wire x1="-2.7178" y1="4.0386" x2="-1.0668" y2="2.3876" width="0.254" layer="95"/>
+<wire x1="3.175" y1="1.905" x2="2.6353" y2="3.9053" width="0.254" layer="95"/>
+<wire x1="3.175" y1="1.905" x2="1.1747" y2="2.4447" width="0.254" layer="95"/>
+<wire x1="2.3622" y1="1.016" x2="4.1402" y2="2.794" width="0.254" layer="95"/>
+<wire x1="3.175" y1="-1.905" x2="2.6353" y2="-3.9053" width="0.254" layer="95"/>
+<wire x1="3.175" y1="-1.905" x2="1.1748" y2="-2.4447" width="0.254" layer="95"/>
+<wire x1="2.3622" y1="-1.0668" x2="4.1402" y2="-2.8448" width="0.254" layer="95"/>
+<wire x1="5.08" y1="0" x2="3.175" y2="-1.905" width="0.1524" layer="95"/>
+<wire x1="0" y1="-5.08" x2="-1.905" y2="-3.175" width="0.1524" layer="95"/>
+<wire x1="-3.2766" y1="-1.8034" x2="-5.08" y2="0" width="0.1524" layer="95"/>
+<wire x1="-3.9052" y1="-2.6352" x2="-2.4448" y2="-1.1747" width="0.254" layer="95"/>
+<wire x1="-5.08" y1="0" x2="-3.2766" y2="1.8034" width="0.1524" layer="95"/>
+<wire x1="-3.9053" y1="2.6353" x2="-2.4447" y2="1.1748" width="0.254" layer="95"/>
+<wire x1="-1.905" y1="3.175" x2="0" y2="5.08" width="0.1524" layer="95"/>
+<wire x1="0" y1="5.08" x2="1.8034" y2="3.2766" width="0.1524" layer="95"/>
+<wire x1="1.1747" y1="2.4447" x2="2.6353" y2="3.9053" width="0.254" layer="95"/>
+<wire x1="3.175" y1="1.905" x2="5.08" y2="0" width="0.1524" layer="95"/>
+<wire x1="0" y1="-5.08" x2="1.8034" y2="-3.2766" width="0.1524" layer="95"/>
+<wire x1="1.1748" y1="-2.4447" x2="2.6353" y2="-3.9053" width="0.254" layer="95"/>
+<text x="5.08" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="5.08" y="2.54" size="1.778" layer="95">&gt;NAME</text>
+<polygon width="0.1524" layer="95">
+<vertex x="-3.8101" y="2.5401"/>
+<vertex x="-2.54" y="1.2701"/>
+<vertex x="-1.9051" y="3.175"/>
+</polygon>
+<polygon width="0.1524" layer="95">
+<vertex x="1.27" y="2.54"/>
+<vertex x="3.175" y="1.905"/>
+<vertex x="2.5401" y="3.8101"/>
+</polygon>
+<polygon width="0.1524" layer="95">
+<vertex x="-3.81" y="-2.54"/>
+<vertex x="-2.5401" y="-1.27"/>
+<vertex x="-1.905" y="-3.175"/>
+</polygon>
+<polygon width="0.1524" layer="95">
+<vertex x="3.175" y="-1.905"/>
+<vertex x="2.6988" y="-3.8101"/>
+<vertex x="1.4288" y="-2.54"/>
+</polygon>
 </symbol>
 </symbols>
 <devicesets>
@@ -1643,6 +1733,45 @@ Triangular - 2 Digits/Character</description>
 <description>&lt;b&gt;SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="SYM_XLR_3M" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SYM_PNP">
+<description>&lt;b&gt;SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SYM_PNP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SYM_NPN">
+<description>&lt;b&gt;SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SYM_NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SYM_DBR">
+<description>&lt;b&gt;SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="SYM_DBR" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
