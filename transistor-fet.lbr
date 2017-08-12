@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1046,12 +1046,12 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-3.3655" y1="-0.381" x2="-2.9369" y2="-0.381" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="2.921" width="0.2032" layer="21"/>
 <circle x="0" y="0" radius="2.4765" width="0.0508" layer="51"/>
-<pad name="5" x="1.27" y="-0.9525" drill="0.6096"/>
-<pad name="2" x="0" y="1.5875" drill="0.6096"/>
-<pad name="6" x="0" y="-1.5875" drill="0.6096"/>
-<pad name="7" x="-1.27" y="-0.9525" drill="0.6096"/>
-<pad name="3" x="1.27" y="0.9525" drill="0.6096"/>
-<pad name="1" x="-1.27" y="0.9525" drill="0.6096"/>
+<pad name="3" x="1.27" y="-0.9525" drill="0.6096"/>
+<pad name="6" x="0" y="1.5875" drill="0.6096"/>
+<pad name="2" x="0" y="-1.5875" drill="0.6096"/>
+<pad name="1" x="-1.27" y="-0.9525" drill="0.6096"/>
+<pad name="5" x="1.27" y="0.9525" drill="0.6096"/>
+<pad name="7" x="-1.27" y="0.9525" drill="0.6096"/>
 <text x="-2.2225" y="3.4925" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.905" y="-4.1275" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-3.302" y1="-0.381" x2="-2.921" y2="0.381" layer="21"/>
@@ -8300,6 +8300,24 @@ Logic Level, PowerTrench</description>
 <connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="CDM22011-600LRF" prefix="Q">
+<description>&lt;b&gt;N-Channel Power MOSFET&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="EMOS-ND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO220V">
+<connects>
+<connect gate="G$1" pin="D" pad="2"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
