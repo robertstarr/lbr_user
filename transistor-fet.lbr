@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -108,8 +108,8 @@ by R. Vogg  15.March.2002</description>
 <wire x1="0.377" y1="-0.5566" x2="1.7939" y2="-1.9735" width="0.2032" layer="51"/>
 <wire x1="0.3136" y1="-2.6485" x2="1.1494" y2="-2.4066" width="0.2032" layer="21" curve="18.776471" cap="flat"/>
 <wire x1="1.1494" y1="2.4066" x2="2.4066" y2="1.1494" width="0.2032" layer="51" curve="-38.941414" cap="flat"/>
-<pad name="3" x="-1.27" y="1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="1" x="1.27" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="1" x="-1.27" y="1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="1.27" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <pad name="2" x="1.27" y="1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-2.54" y="3.048" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.54" y="-4.318" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
@@ -127,8 +127,8 @@ by R. Vogg  15.March.2002</description>
 <wire x1="2.664" y1="-0.127" x2="1.4041" y2="-0.127" width="0.2032" layer="51"/>
 <wire x1="1.4041" y1="-0.127" x2="1.1359" y2="-0.127" width="0.2032" layer="21"/>
 <wire x1="2.0945" y1="-1.651" x2="2.4242" y2="-1.1118" width="0.2032" layer="21" curve="13.609443" cap="flat"/>
-<pad name="3" x="-2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
-<pad name="1" x="2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="0" drill="0.8128" shape="long" rot="R90"/>
 <pad name="2" x="0" y="0" drill="0.8128" shape="long" rot="R90"/>
 <text x="-2.54" y="3.048" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.54" y="-3.302" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
@@ -814,9 +814,9 @@ by R. Vogg  15.March.2002</description>
 <wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
 <wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
 <wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
-<pad name="1" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<pad name="3" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -3894,9 +3894,9 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="D" pad="1"/>
 <connect gate="G$1" pin="G" pad="2"/>
-<connect gate="G$1" pin="S" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3913,8 +3913,8 @@ Panasonic SMini3-F2-B</description>
 <device name="" package="TO92">
 <connects>
 <connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3931,8 +3931,8 @@ Panasonic SMini3-F2-B</description>
 <device name="" package="TO92">
 <connects>
 <connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3949,8 +3949,8 @@ Panasonic SMini3-F2-B</description>
 <device name="" package="TO92">
 <connects>
 <connect gate="G$1" pin="D" pad="2"/>
-<connect gate="G$1" pin="G" pad="1"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -3984,9 +3984,9 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="D" pad="1"/>
 <connect gate="G$1" pin="G" pad="2"/>
-<connect gate="G$1" pin="S" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4116,9 +4116,9 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="2"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4134,9 +4134,9 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="2"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4170,8 +4170,8 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
-<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -4188,8 +4188,8 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
-<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -4206,8 +4206,8 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
-<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -4224,8 +4224,8 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
-<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -4242,8 +4242,8 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
-<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -4768,8 +4768,8 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -4787,9 +4787,9 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="D" pad="1"/>
 <connect gate="G$1" pin="G" pad="2"/>
-<connect gate="G$1" pin="S" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -4834,8 +4834,8 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -4852,8 +4852,8 @@ Panasonic SMini3-F2-B</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -6922,9 +6922,9 @@ PowerTrench</description>
 </device>
 <device name="KL" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="D" pad="3"/>
 <connect gate="G$1" pin="G" pad="2"/>
-<connect gate="G$1" pin="S" pad="3"/>
+<connect gate="G$1" pin="S" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6950,9 +6950,9 @@ PowerTrench</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
+<connect gate="G$1" pin="D" pad="1"/>
 <connect gate="G$1" pin="G" pad="2"/>
-<connect gate="G$1" pin="S" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -6968,8 +6968,8 @@ PowerTrench</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -7742,8 +7742,8 @@ PowerTrench, 30V, 4.9A, 42mOhm</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -8042,8 +8042,8 @@ MOSFET P-CH 55V 18A DPAK</description>
 <devices>
 <device name="" package="TO92">
 <connects>
-<connect gate="G$1" pin="D" pad="3"/>
-<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="3"/>
 <connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
@@ -8318,6 +8318,24 @@ Logic Level, PowerTrench</description>
 <connect gate="G$1" pin="D" pad="2"/>
 <connect gate="G$1" pin="G" pad="1"/>
 <connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P1086" prefix="Q">
+<description>&lt;b&gt;P-Channel Switch FET&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="JFET-P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TO92">
+<connects>
+<connect gate="G$1" pin="D" pad="1"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
