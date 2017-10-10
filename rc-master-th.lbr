@@ -5506,6 +5506,48 @@ Vishay BC Components</description>
 <text x="4.445" y="0" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="4.445" y="-1.905" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="CPF3">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt; - body 14.1 x 4.6 mm&lt;p&gt;
+CPF Series Visahy/Dale</description>
+<pad name="1" x="-11.43" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<pad name="2" x="11.43" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<wire x1="-8" y1="2.3" x2="8" y2="2.3" width="0.2032" layer="21"/>
+<wire x1="8" y1="2.3" x2="8" y2="-2.3" width="0.2032" layer="21"/>
+<wire x1="8" y1="-2.3" x2="-8" y2="-2.3" width="0.2032" layer="21"/>
+<wire x1="-8" y1="-2.3" x2="-8" y2="2.3" width="0.2032" layer="21"/>
+<rectangle x1="-9.8425" y1="-0.4" x2="-8" y2="0.4" layer="21"/>
+<rectangle x1="8" y1="-0.4" x2="9.8425" y2="0.4" layer="21"/>
+<text x="-8" y="2.65" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+</package>
+<package name="CPF2">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt; - body 8.7 x 3.7 mm&lt;p&gt;
+CPF Series Visahy/Dale</description>
+<pad name="1" x="-7.3025" y="0" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="7.3025" y="0" drill="0.9144" diameter="1.6764" shape="octagon"/>
+<wire x1="-4.35" y1="1.85" x2="4.35" y2="1.85" width="0.2032" layer="21"/>
+<wire x1="4.35" y1="1.85" x2="4.35" y2="-1.85" width="0.2032" layer="21"/>
+<wire x1="4.35" y1="-1.85" x2="-4.35" y2="-1.85" width="0.2032" layer="21"/>
+<wire x1="-4.35" y1="-1.85" x2="-4.35" y2="1.85" width="0.2032" layer="21"/>
+<rectangle x1="-6.0325" y1="-0.32" x2="-4.4" y2="0.32" layer="21"/>
+<rectangle x1="4.4" y1="-0.32" x2="6.0325" y2="0.32" layer="21"/>
+<text x="-4.3" y="2.2" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+</package>
+<package name="CPF1">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt; - body 6.1 x 2.3 mm&lt;p&gt;
+CPF Series Visahy/Dale</description>
+<pad name="1" x="-5.08" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="5.08" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<wire x1="-3.1" y1="1.15" x2="3.1" y2="1.15" width="0.2032" layer="21"/>
+<wire x1="3.1" y1="1.15" x2="3.1" y2="-1.15" width="0.2032" layer="21"/>
+<wire x1="3.1" y1="-1.15" x2="-3.1" y2="-1.15" width="0.2032" layer="21"/>
+<wire x1="-3.1" y1="-1.15" x2="-3.1" y2="1.15" width="0.2032" layer="21"/>
+<rectangle x1="-3.81" y1="-0.32" x2="-3.1" y2="0.32" layer="21"/>
+<rectangle x1="3.1" y1="-0.32" x2="3.81" y2="0.32" layer="21"/>
+<text x="-3.2" y="1.55" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -7996,6 +8038,33 @@ Vishay BC Components</description>
 </technologies>
 </device>
 <device name="065X025" package="X065X025">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CPF1" package="CPF1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CPF2" package="CPF2">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CPF3" package="CPF3">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

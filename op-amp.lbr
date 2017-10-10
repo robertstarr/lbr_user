@@ -1569,6 +1569,14 @@ ball pitch 0.5mm, body 2.3 x 1.3mm</description>
 <text x="2.54" y="-4.445" size="0.8128" layer="93">COMP3</text>
 <pin name="COMP3" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
 </symbol>
+<symbol name="_BAL2">
+<wire x1="0" y1="-2.54" x2="0" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="0.9525" y2="-0.9525" width="0.1524" layer="94"/>
+<text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">BAL1</text>
+<text x="2.54" y="-4.445" size="0.8128" layer="93">BAL2</text>
+<pin name="BAL2" x="5.08" y="-2.54" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="BAL1" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="NE5532" prefix="U">
@@ -6285,6 +6293,45 @@ General Purpose</description>
 <connect gate="G$2" pin="COMP1" pad="1"/>
 <connect gate="G$3" pin="COMP2" pad="8"/>
 <connect gate="G$4" pin="COMP3" pad="5"/>
+<connect gate="P" pin="VCC+" pad="7"/>
+<connect gate="P" pin="VCC-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LF411" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+JFET Input</description>
+<gates>
+<gate name="G$1" symbol="OPAMP_PV" x="0" y="0" addlevel="always"/>
+<gate name="P" symbol="PWRN_VCC+-" x="0" y="0" addlevel="request"/>
+<gate name="G$2" symbol="_BAL2" x="2.54" y="0" addlevel="always"/>
+</gates>
+<devices>
+<device name="P" package="DIL08">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$2" pin="BAL1" pad="1"/>
+<connect gate="G$2" pin="BAL2" pad="5"/>
+<connect gate="P" pin="VCC+" pad="7"/>
+<connect gate="P" pin="VCC-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="D" package="SO08">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$2" pin="BAL1" pad="1"/>
+<connect gate="G$2" pin="BAL2" pad="5"/>
 <connect gate="P" pin="VCC+" pad="7"/>
 <connect gate="P" pin="VCC-" pad="4"/>
 </connects>
