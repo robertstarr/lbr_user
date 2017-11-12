@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -5925,6 +5925,32 @@ BI Technbologies</description>
 <text x="0" y="3.3" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 <text x="-6.4" y="7.3" size="1.016" layer="25" ratio="18" rot="R270">&gt;LABEL</text>
 </package>
+<package name="P0915N">
+<description>SINGLE GANG POTENTIOMETER VERTICAL SHAFT&lt;p&gt;
+P09 Series, BI Technologies</description>
+<pad name="1" x="-2.5" y="-7.5" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="2" x="0" y="-7.5" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="3" x="2.5" y="-7.5" drill="1" diameter="1.778" shape="octagon"/>
+<pad name="S2" x="-4.75" y="0" drill="2" diameter="4"/>
+<pad name="S1" x="4.75" y="0" drill="2" diameter="4"/>
+<wire x1="-5" y1="4.85" x2="5" y2="4.85" width="0.0508" layer="51"/>
+<wire x1="5" y1="4.85" x2="5" y2="-6.5" width="0.0508" layer="51"/>
+<wire x1="5" y1="-6.5" x2="-5" y2="-6.5" width="0.0508" layer="51"/>
+<wire x1="-5" y1="-6.5" x2="-5" y2="4.85" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="3.124096875" width="0.0508" layer="51"/>
+<wire x1="3" y1="-0.9" x2="-1.7" y2="2.6" width="0.0508" layer="51"/>
+<circle x="0" y="0" radius="3.5" width="0.0508" layer="51"/>
+<wire x1="-5.3" y1="2.3" x2="-5.3" y2="5.15" width="0.254" layer="21"/>
+<wire x1="-5.3" y1="5.15" x2="5.3" y2="5.15" width="0.254" layer="21"/>
+<wire x1="5.3" y1="5.15" x2="5.3" y2="2.3" width="0.254" layer="21"/>
+<wire x1="-3.7" y1="-6.8" x2="-5.3" y2="-6.8" width="0.254" layer="21"/>
+<wire x1="3.7" y1="-6.8" x2="5.3" y2="-6.8" width="0.254" layer="21"/>
+<wire x1="-5.3" y1="-6.8" x2="-5.3" y2="-2.35" width="0.254" layer="21"/>
+<wire x1="5.3" y1="-6.8" x2="5.3" y2="-2.35" width="0.254" layer="21"/>
+<text x="-5.25" y="5.5" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="0" y="-4.6" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="-5.75" y="-6.75" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POT_EU-">
@@ -9519,6 +9545,26 @@ Nobel USA, Inc.</description>
 </gates>
 <devices>
 <device name="" package="RK097">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="P0915N" prefix="R">
+<description>SINGLE GANG POTENTIOMETER VERTICAL SHAFT</description>
+<gates>
+<gate name="G$1" symbol="POT_US-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="P0915N">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
