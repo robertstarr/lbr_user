@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -8253,6 +8253,32 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="12.19009375" y1="-1.184278125" x2="11.939903125" y2="-1.184278125" width="0.0254" layer="51"/>
 <wire x1="12.19009375" y1="-1.599821875" x2="11.939903125" y2="-1.599821875" width="0.0254" layer="51"/>
 </package>
+<package name="1-215570-2">
+<description>CONN PADDLE BRD 12-POS VERT 28AWG</description>
+<pad name="1" x="-6.985" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="2" x="-5.715" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="3" x="-4.445" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="4" x="-3.175" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="5" x="-1.905" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="6" x="-0.635" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="7" x="0.635" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="8" x="1.905" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="9" x="3.175" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="10" x="4.445" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="11" x="5.715" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="12" x="6.985" y="0.635" drill="0.889" diameter="1.397"/>
+<wire x1="-9.5885" y1="-2.794" x2="9.5885" y2="-2.794" width="0.1524" layer="21"/>
+<wire x1="9.5885" y1="-2.794" x2="9.5885" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="9.5885" y1="2.794" x2="-9.5885" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="-9.5885" y1="2.794" x2="-9.5885" y2="-2.794" width="0.1524" layer="21"/>
+<wire x1="-9.3472" y1="-2.5654" x2="9.3472" y2="-2.5654" width="0.1524" layer="51"/>
+<wire x1="9.3472" y1="-2.5654" x2="9.3472" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="9.3472" y1="2.54" x2="-9.3472" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-9.3472" y1="2.54" x2="-9.3472" y2="-2.5654" width="0.1524" layer="51"/>
+<text x="-9.525" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<rectangle x1="-7.62" y1="-3.175" x2="-6.35" y2="-1.905" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="FE04-1">
@@ -9247,6 +9273,33 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="-7" pin="J" pad="7"/>
 <connect gate="-8" pin="J" pad="8"/>
 <connect gate="-9" pin="J" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1-215570-2" prefix="J">
+<description>CONN PADDLE BRD 12-POS VERT 28-AWG</description>
+<gates>
+<gate name="A" symbol="FE12-1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1-215570-2">
+<connects>
+<connect gate="A" pin="1" pad="1"/>
+<connect gate="A" pin="10" pad="10"/>
+<connect gate="A" pin="11" pad="11"/>
+<connect gate="A" pin="12" pad="12"/>
+<connect gate="A" pin="2" pad="2"/>
+<connect gate="A" pin="3" pad="3"/>
+<connect gate="A" pin="4" pad="4"/>
+<connect gate="A" pin="5" pad="5"/>
+<connect gate="A" pin="6" pad="6"/>
+<connect gate="A" pin="7" pad="7"/>
+<connect gate="A" pin="8" pad="8"/>
+<connect gate="A" pin="9" pad="9"/>
 </connects>
 <technologies>
 <technology name=""/>

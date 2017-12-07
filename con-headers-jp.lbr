@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -60,7 +60,10 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tCopper" color="4" fill="1" visible="no" active="no"/>
+<layer number="54" name="bCopper" color="1" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -14594,6 +14597,33 @@ right angle, friction lock strips, 0.025" square pins</description>
 <rectangle x1="8.636" y1="-1.524" x2="9.144" y2="-1.016" layer="51"/>
 <rectangle x1="11.176" y1="1.016" x2="11.684" y2="1.524" layer="51"/>
 <rectangle x1="11.176" y1="-1.524" x2="11.684" y2="-1.016" layer="51"/>
+</package>
+<package name="1-215570-2">
+<description>CONN PADDLE BRD 12-POS&lt;p&gt;
+VERT 28-AWG</description>
+<pad name="1" x="-6.985" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="2" x="-5.715" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="3" x="-4.445" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="4" x="-3.175" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="5" x="-1.905" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="6" x="-0.635" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="7" x="0.635" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="8" x="1.905" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="9" x="3.175" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="10" x="4.445" y="0.635" drill="0.889" diameter="1.397"/>
+<pad name="11" x="5.715" y="-0.635" drill="0.889" diameter="1.397"/>
+<pad name="12" x="6.985" y="0.635" drill="0.889" diameter="1.397"/>
+<wire x1="-9.5885" y1="-2.794" x2="9.5885" y2="-2.794" width="0.1524" layer="21"/>
+<wire x1="9.5885" y1="-2.794" x2="9.5885" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="9.5885" y1="2.794" x2="-9.5885" y2="2.794" width="0.1524" layer="21"/>
+<wire x1="-9.5885" y1="2.794" x2="-9.5885" y2="-2.794" width="0.1524" layer="21"/>
+<wire x1="-9.3472" y1="-2.5654" x2="9.3472" y2="-2.5654" width="0.1524" layer="51"/>
+<wire x1="9.3472" y1="-2.5654" x2="9.3472" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="9.3472" y1="2.54" x2="-9.3472" y2="2.54" width="0.1524" layer="51"/>
+<wire x1="-9.3472" y1="2.54" x2="-9.3472" y2="-2.5654" width="0.1524" layer="51"/>
+<text x="-9.525" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<rectangle x1="-7.62" y1="-3.175" x2="-6.35" y2="-1.905" layer="21"/>
 </package>
 </packages>
 <symbols>

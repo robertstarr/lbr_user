@@ -2482,7 +2482,11 @@ Spectrol</description>
 <wire x1="4.1275" y1="2.54" x2="-4.1275" y2="2.54" width="0.2032" layer="21"/>
 <wire x1="-4.1275" y1="2.8575" x2="-4.7625" y2="2.8575" width="0.2032" layer="21"/>
 <wire x1="-4.7625" y1="2.8575" x2="-4.7625" y2="-2.2225" width="0.2032" layer="21"/>
-<wire x1="-4.7625" y1="-2.2225" x2="4.7625" y2="-2.2225" width="0.2032" layer="21"/>
+<wire x1="-4.7625" y1="-2.2225" x2="-3.33375" y2="-2.2225" width="0.2032" layer="21"/>
+<wire x1="-3.33375" y1="-2.2225" x2="-1.74625" y2="-2.2225" width="0.2032" layer="51"/>
+<wire x1="-1.74625" y1="-2.2225" x2="1.74625" y2="-2.2225" width="0.2032" layer="21"/>
+<wire x1="1.74625" y1="-2.2225" x2="3.33375" y2="-2.2225" width="0.2032" layer="51"/>
+<wire x1="3.33375" y1="-2.2225" x2="4.7625" y2="-2.2225" width="0.2032" layer="21"/>
 <wire x1="2.54" y1="0" x2="2.413" y2="-0.127" width="0.2032" layer="51"/>
 <wire x1="2.54" y1="0" x2="2.413" y2="0.127" width="0.2032" layer="51"/>
 <wire x1="2.286" y1="-0.254" x2="2.286" y2="0.254" width="0.127" layer="51"/>
@@ -2503,10 +2507,10 @@ Spectrol</description>
 <pad name="1" x="-2.54" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <pad name="3" x="2.54" y="-1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <pad name="2" x="0" y="1.27" drill="0.8128" diameter="1.6764" shape="octagon"/>
-<text x="-4.445" y="-4.1275" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.445" y="-3.4925" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3.4925" y="3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="2.921" y="0.635" size="0.8128" layer="51" ratio="10">3</text>
-<text x="-4.445" y="-5.3975" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="-4.445" y="-4.7625" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
 <package name="3386W">
 <description>&lt;b&gt;3/8" Square Trimmer&lt;/b&gt;&lt;p&gt; Bourns</description>
@@ -5950,6 +5954,33 @@ P09 Series, BI Technologies</description>
 <text x="-5.25" y="5.5" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 <text x="0" y="-4.6" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 <text x="-5.75" y="-6.75" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+</package>
+<package name="TR113-E6335-1">
+<pad name="A1" x="-3.8" y="-5" drill="1.6764" diameter="3.048" shape="octagon"/>
+<pad name="A2" x="-3.8" y="0" drill="1.6764" diameter="3.048" shape="octagon"/>
+<pad name="A3" x="-3.8" y="5" drill="1.6764" diameter="3.048" shape="octagon"/>
+<pad name="B1" x="-8.8" y="-5" drill="1.6764" diameter="3.048" shape="octagon"/>
+<pad name="B2" x="-8.8" y="0" drill="1.6764" diameter="3.048" shape="octagon"/>
+<pad name="B3" x="-8.8" y="5" drill="1.6764" diameter="3.048" shape="octagon"/>
+<wire x1="-14.5" y1="8.5" x2="0" y2="8.5" width="0.2032" layer="21"/>
+<wire x1="0" y1="8.5" x2="0" y2="-8.5" width="0.2032" layer="21"/>
+<wire x1="0" y1="-8.5" x2="-14.5" y2="-8.5" width="0.2032" layer="21"/>
+<wire x1="-14.5" y1="-8.5" x2="-14.5" y2="8.5" width="0.2032" layer="21"/>
+<wire x1="0.2" y1="4" x2="5.8825" y2="4" width="0.2032" layer="51"/>
+<wire x1="5.8825" y1="4" x2="6.2" y2="3.6825" width="0.2032" layer="51"/>
+<wire x1="6.2" y1="3.6825" x2="6.2" y2="3" width="0.2032" layer="51"/>
+<wire x1="6.2" y1="3" x2="6.2" y2="-3" width="0.2032" layer="51"/>
+<wire x1="6.2" y1="-3" x2="6.2" y2="-3.6825" width="0.2032" layer="51"/>
+<wire x1="6.2" y1="-3.6825" x2="5.8825" y2="-4" width="0.2032" layer="51"/>
+<wire x1="5.8825" y1="-4" x2="0.2" y2="-4" width="0.2032" layer="51"/>
+<text x="-14.2875" y="8.89" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="6.2" y1="3" x2="19.6825" y2="3" width="0.2032" layer="51"/>
+<wire x1="19.6825" y1="3" x2="20" y2="2.6825" width="0.2032" layer="51"/>
+<wire x1="20" y1="2.6825" x2="20" y2="-2.6825" width="0.2032" layer="51"/>
+<wire x1="20" y1="-2.6825" x2="19.6825" y2="-3" width="0.2032" layer="51"/>
+<wire x1="19.6825" y1="-3" x2="6.2" y2="-3" width="0.2032" layer="51"/>
+<text x="-14.2875" y="-9.8425" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="-6.35" y="0" size="0.8128" layer="27" ratio="10" rot="R90" align="center">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -9569,6 +9600,30 @@ Nobel USA, Inc.</description>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TR113-E6335-1" prefix="R">
+<description>DUAL GANG POT</description>
+<gates>
+<gate name="A" symbol="POT_US-" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="POT_US-" x="17.78" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="TR113-E6335-1">
+<connects>
+<connect gate="A" pin="1" pad="A1"/>
+<connect gate="A" pin="2" pad="A2"/>
+<connect gate="A" pin="3" pad="A3"/>
+<connect gate="B" pin="1" pad="B1"/>
+<connect gate="B" pin="2" pad="B2"/>
+<connect gate="B" pin="3" pad="B3"/>
 </connects>
 <technologies>
 <technology name="">
