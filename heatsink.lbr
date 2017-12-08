@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2124,6 +2124,34 @@ no silk outline, manufacturer Fischer/distributor Buerklin</description>
 <text x="-14.605" y="3.81" size="1.016" layer="25" font="vector" ratio="18">&gt;NAME</text>
 <text x="-1.905" y="0.635" size="0.8128" layer="27" font="vector" ratio="10">&gt;VALUE</text>
 </package>
+<package name="HSS-B20-NP-04">
+<wire x1="-18.415" y1="22.225" x2="18.415" y2="22.225" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="22.225" x2="18.415" y2="8.89" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="8.89" x2="18.415" y2="-8.89" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="-8.89" x2="18.415" y2="-22.225" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="-22.225" x2="-18.415" y2="-22.225" width="0.2032" layer="21"/>
+<wire x1="-18.415" y1="-22.225" x2="-18.415" y2="-8.89" width="0.2032" layer="21"/>
+<wire x1="-18.415" y1="-8.89" x2="-18.415" y2="8.89" width="0.2032" layer="21"/>
+<wire x1="-18.415" y1="8.89" x2="-18.415" y2="22.225" width="0.2032" layer="21"/>
+<wire x1="-18.415" y1="8.89" x2="18.415" y2="8.89" width="0.2032" layer="21"/>
+<wire x1="18.415" y1="-8.89" x2="-18.415" y2="-8.89" width="0.2032" layer="21"/>
+<hole x="-6.6" y="0" drill="3.66"/>
+<hole x="6.6" y="0" drill="3.66"/>
+</package>
+<package name="V4330K">
+<wire x1="-18.75" y1="14.5" x2="18.75" y2="14.5" width="0.2032" layer="21"/>
+<wire x1="18.75" y1="14.5" x2="18.75" y2="-14.5" width="0.2032" layer="21"/>
+<wire x1="18.75" y1="-14.5" x2="-18.75" y2="-14.5" width="0.2032" layer="21"/>
+<hole x="-12.2" y="0" drill="3.2"/>
+<hole x="12.2" y="0" drill="3.2"/>
+<wire x1="-18.75" y1="-14.5" x2="-18.75" y2="14.5" width="0.2032" layer="21"/>
+<wire x1="-18.75" y1="6" x2="18.75" y2="6" width="0.2032" layer="51"/>
+<wire x1="18.75" y1="-6" x2="-18.75" y2="-6" width="0.2032" layer="51"/>
+<wire x1="-18.75" y1="9" x2="18.75" y2="9" width="0.2032" layer="51"/>
+<wire x1="-18.75" y1="12" x2="18.75" y2="12" width="0.2032" layer="51"/>
+<wire x1="18.75" y1="-9" x2="-18.75" y2="-9" width="0.2032" layer="51"/>
+<wire x1="18.75" y1="-12" x2="-18.75" y2="-12" width="0.2032" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="KK">
@@ -2689,6 +2717,19 @@ DUAL BLACK TO-220</description>
 </gates>
 <devices>
 <device name="V6560X" package="V6560X">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="V4330K" prefix="KK">
+<description>HEATSINK</description>
+<gates>
+<gate name="G$1" symbol="KK" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="V4330K">
 <technologies>
 <technology name=""/>
 </technologies>
