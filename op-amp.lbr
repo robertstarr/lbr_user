@@ -5285,7 +5285,21 @@ High Precision, Low Noise</description>
 <gate name="P" symbol="PWRI_V+-" x="-20.32" y="0" addlevel="always"/>
 </gates>
 <devices>
-<device name="" package="SO08">
+<device name="D" package="SO08">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$2" pin="NULL1" pad="1"/>
+<connect gate="G$2" pin="NULL2" pad="8"/>
+<connect gate="P" pin="V+" pad="7"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="DIL08">
 <connects>
 <connect gate="G$1" pin="+IN" pad="3"/>
 <connect gate="G$1" pin="-IN" pad="2"/>
@@ -6389,6 +6403,44 @@ JFET Input</description>
 <connect gate="D" pin="OUT" pad="14"/>
 <connect gate="P" pin="V+" pad="4"/>
 <connect gate="P" pin="V-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OP07" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt; - Operational Amplifier</description>
+<gates>
+<gate name="G$2" symbol="_OFFNULL2" x="2.54" y="0" addlevel="always"/>
+<gate name="G$1" symbol="OPAMP_PV" x="0" y="0" addlevel="always"/>
+<gate name="P" symbol="PWRN_V+-" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$2" pin="NULL1" pad="1"/>
+<connect gate="G$2" pin="NULL2" pad="8"/>
+<connect gate="P" pin="V+" pad="7"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="DIL08">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="6"/>
+<connect gate="G$2" pin="NULL1" pad="1"/>
+<connect gate="G$2" pin="NULL2" pad="8"/>
+<connect gate="P" pin="V+" pad="7"/>
+<connect gate="P" pin="V-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
