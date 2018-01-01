@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -60,7 +60,10 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="51" name="tDocu" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -69,6 +72,33 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Release" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Heatsink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="tMarkings" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="bMarkings" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="121" name="_layer121" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bplace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="References" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="202" name="202bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="203" name="203bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="Eagle3D_PG1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="OrgLBR" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;FCI Connectors - v1.00 (08/23/2007)&lt;/b&gt;&lt;p&gt;
@@ -423,6 +453,42 @@ Right Angle, SMT Bottom Contact&lt;br&gt;</description>
 <text x="4.1" y="7.05" size="1.016" layer="25" ratio="18" rot="R270">&gt;NAME</text>
 <text x="0.4" y="0.45" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="2.1" y1="6.6" x2="2.5" y2="7.05" layer="21"/>
+</package>
+<package name="20021521-00010T1">
+<description>SMD SHROUDED HEADER&lt;p&gt;
+FCI MiniTek 10-PIN, 0.05" PITCH</description>
+<wire x1="-6.325" y1="2.55" x2="6.325" y2="2.55" width="0.0508" layer="51"/>
+<wire x1="6.325" y1="2.55" x2="6.325" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="6.325" y1="-2.55" x2="1.25" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="-2.55" x2="-6.325" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="-6.325" y1="-2.55" x2="-6.325" y2="2.55" width="0.0508" layer="51"/>
+<wire x1="-5.625" y1="1.85" x2="5.625" y2="1.85" width="0.0508" layer="51"/>
+<wire x1="5.625" y1="1.85" x2="5.625" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="5.625" y1="-1.85" x2="1.25" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="1.25" y1="-1.85" x2="1.25" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="1.25" y1="-2.55" x2="-1.25" y2="-2.55" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="-2.55" x2="-1.25" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="-1.25" y1="-1.85" x2="-5.625" y2="-1.85" width="0.0508" layer="51"/>
+<wire x1="-5.625" y1="-1.85" x2="-5.625" y2="1.85" width="0.0508" layer="51"/>
+<wire x1="-6.6" y1="2.8" x2="-3.2" y2="2.8" width="0.2032" layer="21"/>
+<wire x1="3.2" y1="2.8" x2="6.6" y2="2.8" width="0.2032" layer="21"/>
+<wire x1="6.6" y1="2.8" x2="6.6" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="6.6" y1="-2.8" x2="3.2" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-3.2" y1="-2.8" x2="-6.6" y2="-2.8" width="0.2032" layer="21"/>
+<wire x1="-6.6" y1="-2.8" x2="-6.6" y2="2.8" width="0.2032" layer="21"/>
+<text x="-6.604" y="3.429" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="-0.381" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.9" y1="-3.2" x2="-3.1" y2="-2.4" layer="21"/>
+<smd name="1" x="-2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="2" x="-2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="3" x="-1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="4" x="-1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="5" x="0" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="6" x="0" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="7" x="1.27" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="8" x="1.27" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="9" x="2.54" y="-1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
+<smd name="10" x="2.54" y="1.95" dx="2.4" dy="0.76" layer="1" rot="R90"/>
 </package>
 </packages>
 <symbols>
@@ -1303,6 +1369,31 @@ Right Angle, SMT Bottom Contact&lt;br&gt;</description>
 <connect gate="G$1" pin="19" pad="19"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="20" pad="S1A S1B S2A S2B S3A S3B S4A S4B"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+<connect gate="G$1" pin="9" pad="9"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="20021521-00010T1" prefix="J">
+<description>CONN HEADER 10-POS DUAL SHRD SMD</description>
+<gates>
+<gate name="G$1" symbol="MA05-2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="20021521-00010T1">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="10" pad="10"/>
+<connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
 <connect gate="G$1" pin="5" pad="5"/>
