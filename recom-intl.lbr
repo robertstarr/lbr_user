@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -110,6 +110,19 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-8.255" y="-5.08" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="8.89" y="-5.08" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
+<package name="R-78XX_H">
+<description>R-78xx-0.5 Series&lt;p&gt;RECOM Intl.</description>
+<wire x1="6" y1="-12.4" x2="-6" y2="-12.4" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-12.4" x2="-6" y2="-2" width="0.2032" layer="21"/>
+<wire x1="-6" y1="-2" x2="6" y2="-2" width="0.2032" layer="21"/>
+<wire x1="6" y1="-2" x2="6" y2="-12.4" width="0.2032" layer="21"/>
+<circle x="-4.445" y="-0.635" radius="0.449" width="0" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" diameter="1.9304" shape="square"/>
+<pad name="2" x="0" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<pad name="3" x="2.54" y="0" drill="1.016" diameter="1.9304" shape="octagon"/>
+<text x="6.35" y="-2.032" size="1.016" layer="25" ratio="18" rot="R270">&gt;NAME</text>
+<text x="0" y="-3.683" size="0.8128" layer="27" ratio="10" rot="R180" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="R-78XX">
@@ -159,6 +172,16 @@ R-78xx-0.5 Series</description>
 </gates>
 <devices>
 <device name="" package="R-78XX">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="1"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="H" package="R-78XX_H">
 <connects>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="IN" pad="1"/>
