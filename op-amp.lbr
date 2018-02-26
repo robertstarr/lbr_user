@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1605,6 +1605,13 @@ ball pitch 0.5mm, body 2.3 x 1.3mm</description>
 <wire x1="0" y1="-5.08" x2="0" y2="-7.62" width="0.1524" layer="94"/>
 <wire x1="5.08" y1="-5.08" x2="5.08" y2="-2.54" width="0.1524" layer="94"/>
 <wire x1="7.62" y1="-1.27" x2="10.16" y2="-5.08" width="0.1524" layer="94"/>
+</symbol>
+<symbol name="PWR_VDD+-">
+<text x="0.635" y="6.985" size="1.016" layer="95" rot="R270">VDD+</text>
+<text x="1.5875" y="-6.985" size="1.016" layer="95" rot="R90">VDD-</text>
+<text x="-1.905" y="-0.762" size="1.778" layer="95">&gt;NAME</text>
+<pin name="VDD+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="VDD-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -6492,6 +6499,61 @@ JFET Input</description>
 <connect gate="G$1" pin="FB" pad="7"/>
 <connect gate="G$1" pin="REF" pad="6"/>
 <connect gate="G$1" pin="VOUT" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLC2272" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt; - LinCMOS</description>
+<gates>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-17.78" addlevel="always" swaplevel="1"/>
+<gate name="P" symbol="PWR_VDD+-" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="VDD+" pad="8"/>
+<connect gate="P" pin="VDD-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PW" package="TSSOP8">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="VDD+" pad="8"/>
+<connect gate="P" pin="VDD-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="DIL08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="VDD+" pad="8"/>
+<connect gate="P" pin="VDD-" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
