@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.6.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -311,6 +311,23 @@ pitch 5 mm, dia 7.8 mm</description>
 <text x="-15" y="11" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 </package>
+<package name="S14100038">
+<description>COMMON MODE CHOKE</description>
+<pad name="2" x="5" y="-6" drill="1.9304" diameter="3.81"/>
+<pad name="3" x="5" y="6" drill="1.9304" diameter="3.81"/>
+<pad name="4" x="-5" y="6" drill="1.9304" diameter="3.81"/>
+<pad name="1" x="-5" y="-6" drill="1.9304" diameter="3.81"/>
+<wire x1="-15" y1="7" x2="-7.635" y2="7" width="0.254" layer="21"/>
+<wire x1="-2.365" y1="7" x2="2.365" y2="7" width="0.254" layer="21"/>
+<wire x1="7.635" y1="7" x2="15" y2="7" width="0.254" layer="21"/>
+<wire x1="15" y1="7" x2="15" y2="-7" width="0.254" layer="21"/>
+<wire x1="15" y1="-7" x2="7.635" y2="-7" width="0.254" layer="21"/>
+<wire x1="2.365" y1="-7" x2="-2.365" y2="-7" width="0.254" layer="21"/>
+<wire x1="-7.635" y1="-7" x2="-15" y2="-7" width="0.254" layer="21"/>
+<wire x1="-15" y1="-7" x2="-15" y2="7" width="0.254" layer="21"/>
+<text x="-15" y="8" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CMF">
@@ -545,6 +562,25 @@ WE-PD2 SMD Series</description>
 <connect gate="G$1" pin="P2" pad="1"/>
 <connect gate="G$1" pin="S1" pad="7"/>
 <connect gate="G$1" pin="S2" pad="12"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="S14100038" prefix="L">
+<description>COMMON MODE CHOKE</description>
+<gates>
+<gate name="G$1" symbol="CMF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="S14100038">
+<connects>
+<connect gate="G$1" pin="P1" pad="1"/>
+<connect gate="G$1" pin="P2" pad="2"/>
+<connect gate="G$1" pin="S1" pad="4"/>
+<connect gate="G$1" pin="S2" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
