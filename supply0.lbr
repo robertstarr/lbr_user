@@ -175,11 +175,6 @@
 <text x="-2.54" y="-2.54" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
 <pin name="VSS" x="0" y="2.54" visible="off" length="short" direction="sup" rot="R270"/>
 </symbol>
-<symbol name="VCCIO">
-<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
-<text x="-3.81" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
-<pin name="VCCIO" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
-</symbol>
 <symbol name="VCCINT">
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
 <text x="-3.81" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
@@ -967,6 +962,11 @@
 <symbol name="+1V27">
 <pin name="+1V27" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="-4.445" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
+<wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
+</symbol>
+<symbol name="VCCIO">
+<pin name="VCCIO" x="0" y="-2.54" visible="off" length="short" direction="sup" rot="R90"/>
+<text x="-3.81" y="0.635" size="1.778" layer="96" ratio="12">&gt;VALUE</text>
 <wire x1="-1.905" y1="0" x2="1.905" y2="0" width="0.508" layer="94"/>
 </symbol>
 </symbols>
@@ -3034,6 +3034,19 @@ Net CGND, no value text label</description>
 <description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
 <gates>
 <gate name="G$1" symbol="+1V27" x="0" y="0"/>
+</gates>
+<devices>
+<device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="VCCIO" prefix="V">
+<description>&lt;b&gt;SUPPLY SYMBOL&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="VCCIO" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
