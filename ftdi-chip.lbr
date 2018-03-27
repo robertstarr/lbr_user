@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -28,13 +28,13 @@
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="no" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
@@ -73,25 +73,25 @@
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
-<layer number="100" name="Mechanical" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="101" name="Gehäuse" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="102" name="ID" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="104" name="bMap" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="199" name="EXTD_ERC" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Mechanical" color="7" fill="1" visible="no" active="yes"/>
+<layer number="101" name="Gehäuse" color="7" fill="1" visible="no" active="yes"/>
+<layer number="102" name="ID" color="7" fill="1" visible="no" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="104" name="bMap" color="7" fill="1" visible="no" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="no" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="no" active="yes"/>
+<layer number="111" name="tGTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="112" name="bGTest" color="7" fill="1" visible="no" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="no" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="no" active="yes"/>
+<layer number="199" name="EXTD_ERC" color="7" fill="1" visible="no" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="no" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="no" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
-<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="no" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;Future Technology Devices International Ltd.&lt;/b&gt;
@@ -781,6 +781,56 @@ Quad Flat Package, 5x5 mm, 0.50 mm Pitch&lt;br&gt;</description>
 <smd name="16" x="1.75" y="-2.5" dx="0.26" dy="0.8" layer="1" roundness="100"/>
 <smd name="32" x="-1.75" y="2.5" dx="0.26" dy="0.8" layer="1" roundness="100"/>
 <smd name="33" x="0" y="0" dx="3.6" dy="3.6" layer="1" roundness="8"/>
+<wire x1="-2.15" y1="2.7" x2="-2.7" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="2.7" x2="-2.7" y2="2.15" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="2.7" x2="2.15" y2="2.7" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="2.7" x2="2.7" y2="2.15" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="-2.15" x2="2.7" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="2.15" y1="-2.7" x2="2.7" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="-2.7" x2="-2.15" y2="-2.7" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="-2.7" x2="-2.7" y2="-2.15" width="0.2032" layer="21"/>
+<rectangle x1="-2.7" y1="2.15" x2="-2.15" y2="2.7" layer="21"/>
+<text x="-2.5" y="3.25" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.5" y="-4" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="VQFN32L">
+<wire x1="-2.5" y1="2.5" x2="-2.5" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="-2.5" y1="-2.5" x2="2.5" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="2.5" y2="2.5" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="-2.5" y2="2.5" width="0.0508" layer="51"/>
+<smd name="1" x="-2.7" y="1.75" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="17" x="2.7" y="-1.75" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="9" x="-1.75" y="-2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="25" x="1.75" y="2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="2" x="-2.7" y="1.25" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="18" x="2.7" y="-1.25" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="10" x="-1.25" y="-2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="26" x="1.25" y="2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="3" x="-2.7" y="0.75" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="19" x="2.7" y="-0.75" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="11" x="-0.75" y="-2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="27" x="0.75" y="2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="4" x="-2.7" y="0.25" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="20" x="2.7" y="-0.25" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="12" x="-0.25" y="-2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="28" x="0.25" y="2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="5" x="-2.7" y="-0.25" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="21" x="2.7" y="0.25" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="13" x="0.25" y="-2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="29" x="-0.25" y="2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="6" x="-2.7" y="-0.75" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="22" x="2.7" y="0.75" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="14" x="0.75" y="-2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="30" x="-0.75" y="2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="7" x="-2.7" y="-1.25" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="23" x="2.7" y="1.25" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="15" x="1.25" y="-2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="31" x="-1.25" y="2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="8" x="-2.7" y="-1.75" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="24" x="2.7" y="1.75" dx="1.2" dy="0.26" layer="1" roundness="100"/>
+<smd name="16" x="1.75" y="-2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="32" x="-1.75" y="2.7" dx="0.26" dy="1.2" layer="1" roundness="100"/>
+<smd name="33" x="0" y="0" dx="3.5" dy="3.5" layer="1" roundness="8"/>
 <wire x1="-2.15" y1="2.7" x2="-2.7" y2="2.7" width="0.2032" layer="21"/>
 <wire x1="-2.7" y1="2.7" x2="-2.7" y2="2.15" width="0.2032" layer="21"/>
 <wire x1="2.7" y1="2.7" x2="2.15" y2="2.7" width="0.2032" layer="21"/>
@@ -1839,6 +1889,46 @@ MULTIPURPOSE UART/MPSSE IC</description>
 </gates>
 <devices>
 <device name="" package="VQFN32">
+<connects>
+<connect gate="G$1" pin="AGND@27" pad="27"/>
+<connect gate="G$1" pin="BCD_DET" pad="31"/>
+<connect gate="G$1" pin="DCNF0" pad="4"/>
+<connect gate="G$1" pin="DCNF1" pad="5"/>
+<connect gate="G$1" pin="DEBUGGER" pad="1"/>
+<connect gate="G$1" pin="DGND@28" pad="28"/>
+<connect gate="G$1" pin="DGND@6" pad="6"/>
+<connect gate="G$1" pin="DM" pad="22"/>
+<connect gate="G$1" pin="DP" pad="23"/>
+<connect gate="G$1" pin="GPIO0/SS1O/SCL" pad="13"/>
+<connect gate="G$1" pin="GPIO1/SS2O/SDA" pad="14"/>
+<connect gate="G$1" pin="GPIO2/SS3O/SUSP_OUT" pad="15"/>
+<connect gate="G$1" pin="GPIO3/WAKEUP/INTR" pad="16"/>
+<connect gate="G$1" pin="IO2" pad="11"/>
+<connect gate="G$1" pin="IO3" pad="12"/>
+<connect gate="G$1" pin="MISO" pad="9"/>
+<connect gate="G$1" pin="MOSI" pad="10"/>
+<connect gate="G$1" pin="RESETN" pad="3"/>
+<connect gate="G$1" pin="RREF" pad="21"/>
+<connect gate="G$1" pin="SCK" pad="8"/>
+<connect gate="G$1" pin="SS" pad="32"/>
+<connect gate="G$1" pin="SS0O" pad="17"/>
+<connect gate="G$1" pin="STEST_RSTN" pad="2"/>
+<connect gate="G$1" pin="TPAD" pad="33"/>
+<connect gate="G$1" pin="UGND@20" pad="20"/>
+<connect gate="G$1" pin="UGND@24" pad="24"/>
+<connect gate="G$1" pin="VBUS_DET" pad="30"/>
+<connect gate="G$1" pin="VCCIN" pad="26"/>
+<connect gate="G$1" pin="VCCIO" pad="7"/>
+<connect gate="G$1" pin="VOUT3V3" pad="25"/>
+<connect gate="G$1" pin="VPP" pad="29"/>
+<connect gate="G$1" pin="XSCI" pad="18"/>
+<connect gate="G$1" pin="XSCO" pad="19"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="L" package="VQFN32L">
 <connects>
 <connect gate="G$1" pin="AGND@27" pad="27"/>
 <connect gate="G$1" pin="BCD_DET" pad="31"/>

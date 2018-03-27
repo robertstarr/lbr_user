@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -58,8 +58,8 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
+<layer number="52" name="bDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
@@ -506,6 +506,25 @@ Keystone 5000 Series</description>
 <text x="2.06375" y="-1.27" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 <circle x="0" y="0" radius="1.768903125" width="0.2032" layer="21"/>
 <rectangle x1="-1.42875" y1="-0.3175" x2="1.42875" y2="0.3175" layer="51"/>
+</package>
+<package name="605X">
+<description>&lt;b&gt;TEST POINT&lt;/b&gt; - Keystone&lt;p&gt;
+Universal Horizontal Test Jack&lt;p&gt;
+Keystone 6054-6059 Series</description>
+<pad name="1" x="-5.08" y="0" drill="1.4224"/>
+<pad name="2" x="5.08" y="0" drill="1.4224"/>
+<wire x1="-5.207" y1="1.9812" x2="5.207" y2="1.9812" width="0.0508" layer="51"/>
+<wire x1="5.207" y1="1.9812" x2="5.207" y2="-1.9812" width="0.0508" layer="51"/>
+<wire x1="5.207" y1="-1.9812" x2="-5.207" y2="-1.9812" width="0.0508" layer="51"/>
+<wire x1="-5.207" y1="-1.9812" x2="-5.207" y2="1.9812" width="0.0508" layer="51"/>
+<text x="-5.4" y="2.5" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-5.4" y="-3.5" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<wire x1="-5.4" y1="1.3" x2="-5.4" y2="2.2" width="0.254" layer="21"/>
+<wire x1="-5.4" y1="2.2" x2="5.4" y2="2.2" width="0.254" layer="21"/>
+<wire x1="5.4" y1="2.2" x2="5.4" y2="1.3" width="0.254" layer="21"/>
+<wire x1="5.4" y1="-1.3" x2="5.4" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="5.4" y1="-2.2" x2="-5.4" y2="-2.2" width="0.254" layer="21"/>
+<wire x1="-5.4" y1="-2.2" x2="-5.4" y2="-1.3" width="0.254" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1012,6 +1031,16 @@ Keystone 5000 Series</description>
 </technology>
 </technologies>
 </device>
+<device name="-605X" package="605X">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="TPP" prefix="TP">
@@ -1453,6 +1482,16 @@ Keystone 5000 Series</description>
 <device name="-5000-C/M" package="5000-C/M">
 <connects>
 <connect gate="G$1" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-605X" package="605X">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1908,6 +1947,16 @@ Keystone 5000 Series</description>
 </technology>
 </technologies>
 </device>
+<device name="-605X" package="605X">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="TPV" prefix="TP">
@@ -2349,6 +2398,16 @@ Keystone 5000 Series</description>
 <device name="-5000-M" package="5000-M">
 <connects>
 <connect gate="G$1" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="-605X" package="605X">
+<connects>
+<connect gate="G$1" pin="P" pad="1 2"/>
 </connects>
 <technologies>
 <technology name="">
