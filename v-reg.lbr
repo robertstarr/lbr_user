@@ -6407,6 +6407,42 @@ ADJUSTABLE 5A</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LDK320AD" prefix="U">
+<description>PMIC 200 MA PSRR REGULATOR (D PIN CONFIGURATION)</description>
+<gates>
+<gate name="G$1" symbol="LDXXXX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT89-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="IN" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LDK320A" prefix="U">
+<description>PMIC 200 MA PSRR REGULATOR</description>
+<gates>
+<gate name="G$1" symbol="LDXXXX" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT89-3">
+<connects>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
