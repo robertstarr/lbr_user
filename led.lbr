@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1833,13 +1833,13 @@ Source: http://www.osram.convergy.de/ ... LG_LY N971.pdf</description>
 <wire x1="-0.4" y1="1.625" x2="0.4" y2="1.625" width="0.1016" layer="51" curve="180" cap="flat"/>
 <wire x1="-0.8" y1="-0.95" x2="-0.8" y2="0.95" width="0.1016" layer="51"/>
 <wire x1="0.8" y1="0.95" x2="0.8" y2="-0.95" width="0.1016" layer="51"/>
-<wire x1="-1.0025" y1="2.7488" x2="1.0025" y2="2.7488" width="0.2032" layer="21"/>
-<wire x1="1.0025" y1="2.7488" x2="1.0025" y2="-2.7488" width="0.2032" layer="21"/>
-<wire x1="1.0025" y1="-2.7488" x2="-1.0025" y2="-2.7488" width="0.2032" layer="21"/>
-<wire x1="-1.0025" y1="-2.7488" x2="-1.0025" y2="2.7488" width="0.2032" layer="21"/>
+<wire x1="-1.0025" y1="2.7988" x2="1.0025" y2="2.7988" width="0.2032" layer="21"/>
+<wire x1="1.0025" y1="2.7988" x2="1.0025" y2="-2.7988" width="0.2032" layer="21"/>
+<wire x1="1.0025" y1="-2.7988" x2="-1.0025" y2="-2.7988" width="0.2032" layer="21"/>
+<wire x1="-1.0025" y1="-2.7988" x2="-1.0025" y2="2.7988" width="0.2032" layer="21"/>
 <circle x="-0.55" y="1.425" radius="0.1" width="0.1016" layer="51"/>
-<smd name="C" x="0" y="1.75" dx="1.5" dy="1.5" layer="1"/>
-<smd name="A" x="0" y="-1.75" dx="1.5" dy="1.5" layer="1"/>
+<smd name="C" x="0" y="1.778" dx="1.5" dy="1.5" layer="1"/>
+<smd name="A" x="0" y="-1.778" dx="1.5" dy="1.5" layer="1"/>
 <text x="-1.27" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="2.2225" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
 <rectangle x1="-0.85" y1="1.525" x2="-0.35" y2="1.65" layer="51"/>
@@ -3724,6 +3724,29 @@ BIVAR</description>
 <text x="2.8575" y="1.5875" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="2.8575" y="-2.54" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
+<package name="CHIPLED_1206M">
+<description>&lt;b&gt;LED 1206&lt;/b&gt;&lt;p&gt;
+micro-pitch</description>
+<wire x1="-0.4" y1="1.625" x2="0.4" y2="1.625" width="0.1016" layer="51" curve="180" cap="flat"/>
+<wire x1="-0.8" y1="-0.95" x2="-0.8" y2="0.95" width="0.1016" layer="51"/>
+<wire x1="0.8" y1="0.95" x2="0.8" y2="-0.95" width="0.1016" layer="51"/>
+<circle x="-0.55" y="1.425" radius="0.1" width="0.1016" layer="51"/>
+<smd name="C" x="0" y="1.778" dx="1.5" dy="1.5" layer="1"/>
+<smd name="A" x="0" y="-1.778" dx="1.5" dy="1.5" layer="1"/>
+<text x="-1.143" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="2.032" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+<rectangle x1="-0.85" y1="1.525" x2="-0.35" y2="1.65" layer="51"/>
+<rectangle x1="-0.85" y1="1.225" x2="-0.625" y2="1.55" layer="51"/>
+<rectangle x1="-0.45" y1="1.225" x2="-0.325" y2="1.45" layer="51"/>
+<rectangle x1="-0.65" y1="1.225" x2="-0.225" y2="1.35" layer="51"/>
+<rectangle x1="0.35" y1="1.3" x2="0.85" y2="1.65" layer="51"/>
+<rectangle x1="0.25" y1="1.225" x2="0.85" y2="1.35" layer="51"/>
+<rectangle x1="-0.85" y1="0.95" x2="0.85" y2="1.25" layer="51"/>
+<rectangle x1="-0.85" y1="-1.65" x2="0.85" y2="-0.95" layer="51"/>
+<rectangle x1="-0.85" y1="0.5412" x2="-0.525" y2="0.8412" layer="21"/>
+<rectangle x1="0.525" y1="0.5412" x2="0.85" y2="0.8412" layer="21"/>
+<rectangle x1="-0.15" y1="0.5412" x2="0.15" y2="0.8412" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="LED">
@@ -5385,6 +5408,17 @@ Various Types</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="K"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="CHIPLED_1206M" package="CHIPLED_1206M">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name="">
