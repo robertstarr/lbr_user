@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1070,6 +1070,7 @@ diameter 5 mm, horizontal, grid 12.7 mm</description>
 <vertex x="0.9" y="0.5"/>
 <vertex x="0.9" y="-0.5"/>
 </polygon>
+<text x="-5.715" y="-1.905" size="0.8128" layer="21" ratio="18" rot="R90" align="center">&gt;C</text>
 </package>
 <package name="SOT54H">
 <description>&lt;B&gt;DIODE&lt;/B&gt;&lt;p&gt;
@@ -11358,7 +11359,9 @@ silicon-epitaxial planar diode</description>
 <connect gate="1" pin="2" pad="C"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="C" value="C" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
@@ -14441,6 +14444,15 @@ super fast rectifier, 2 A</description>
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DO-216AA-2" package="POWERMITE">
+<connects>
+<connect gate="G$1" pin="A" pad="2"/>
+<connect gate="G$1" pin="C" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

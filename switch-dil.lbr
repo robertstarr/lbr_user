@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -13518,6 +13518,45 @@ Half-pitch Side-Actuated DIP Switches</description>
 <connect gate="-3" pin="2" pad="6"/>
 <connect gate="-4" pin="1" pad="4"/>
 <connect gate="-4" pin="2" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SDA02SK" prefix="S">
+<description>DIP SWITCH</description>
+<gates>
+<gate name="G$1" symbol="DIP02" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SDA02SK">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SDA02SK_S" prefix="S">
+<description>DIP SWITCH</description>
+<gates>
+<gate name="-1" symbol="S" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="-2" symbol="S+V" x="5.08" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SDA02SK">
+<connects>
+<connect gate="-1" pin="1" pad="1"/>
+<connect gate="-1" pin="2" pad="4"/>
+<connect gate="-2" pin="1" pad="2"/>
+<connect gate="-2" pin="2" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
