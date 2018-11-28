@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2526,6 +2526,15 @@ Memory Protection Devices Inc</description>
 <wire x1="0" y1="-0.635" x2="0" y2="0.635" width="0.254" layer="21" curve="-180"/>
 <text x="-3.175" y="0" size="1.778" layer="21" ratio="16" align="center">+</text>
 </package>
+<package name="BU1632SM-JJ-GTR">
+<description>BATTERY HOLDER COIN 16MM SMD</description>
+<smd name="+" x="-13" y="0" dx="4.5" dy="3.5" layer="1" rot="R90"/>
+<smd name="-" x="13" y="0" dx="4.5" dy="3.5" layer="1" rot="R90"/>
+<wire x1="-3.9" y1="8.2" x2="3.9" y2="8.2" width="0.2032" layer="51"/>
+<wire x1="-3.9" y1="-8.2" x2="3.9" y2="-8.2" width="0.2032" layer="51"/>
+<wire x1="-4" y1="8.2" x2="-3.9" y2="-8.2" width="0.2032" layer="51" curve="127.99119"/>
+<wire x1="3.9" y1="8.2" x2="3.9" y2="-8.2" width="0.2032" layer="51" curve="-127.99119"/>
+</package>
 </packages>
 <symbols>
 <symbol name="2V4+2">
@@ -4418,6 +4427,24 @@ CR2032 Coin Cell</description>
 <connects>
 <connect gate="A" pin="+" pad="+"/>
 <connect gate="A" pin="-" pad="-"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="BU1632SM-JJ-GTR" prefix="B">
+<description>BATTERY HOLDER COIN 16MM SMD&lt;p&gt;
+Memory Protection Devices</description>
+<gates>
+<gate name="G$1" symbol="3V" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BU1632SM-JJ-GTR">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
 <technology name=""/>
