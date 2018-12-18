@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2062,8 +2062,8 @@ Memory Protection Devices Inc.</description>
 <wire x1="3.75" y1="0.5" x2="4.25" y2="0.5" width="0.2032" layer="21"/>
 <wire x1="4" y1="0.75" x2="4" y2="0.25" width="0.2032" layer="21"/>
 <wire x1="-4" y1="-0.25" x2="-3.5" y2="-0.25" width="0.2032" layer="21"/>
-<pad name="-" x="-2.54" y="-1.4" drill="0.9144" diameter="1.9304" shape="octagon"/>
-<pad name="+" x="2.54" y="1.4" drill="0.9144" diameter="1.9304" shape="octagon"/>
+<pad name="-" x="-2.54" y="-1.4" drill="1.016" diameter="1.9304" shape="octagon"/>
+<pad name="+" x="2.54" y="1.4" drill="1.016" diameter="1.9304" shape="octagon"/>
 <text x="-5.715" y="1.905" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-0.635" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
@@ -2530,10 +2530,47 @@ Memory Protection Devices Inc</description>
 <description>BATTERY HOLDER COIN 16MM SMD</description>
 <smd name="+" x="-13" y="0" dx="4.5" dy="3.5" layer="1" rot="R90"/>
 <smd name="-" x="13" y="0" dx="4.5" dy="3.5" layer="1" rot="R90"/>
-<wire x1="-3.9" y1="8.2" x2="3.9" y2="8.2" width="0.2032" layer="51"/>
-<wire x1="-3.9" y1="-8.2" x2="3.9" y2="-8.2" width="0.2032" layer="51"/>
-<wire x1="-4" y1="8.2" x2="-3.9" y2="-8.2" width="0.2032" layer="51" curve="127.99119"/>
-<wire x1="3.9" y1="8.2" x2="3.9" y2="-8.2" width="0.2032" layer="51" curve="-127.99119"/>
+<wire x1="12.29995" y1="-3.500121875" x2="8.508746875" y2="-3.500121875" width="0.0254" layer="51"/>
+<wire x1="-4.17195" y1="-8.20039375" x2="4.17195" y2="-8.20039375" width="0.0254" layer="51"/>
+<wire x1="13.91285" y1="1.75005625" x2="13.91285" y2="-1.7500625" width="0.0254" layer="51"/>
+<wire x1="-12.29995" y1="-3.500121875" x2="-8.509" y2="-3.500121875" width="0.0254" layer="51"/>
+<wire x1="-13.91285" y1="-1.7500625" x2="-12.29995" y2="-1.7500625" width="0.0254" layer="51"/>
+<wire x1="-13.91285" y1="1.75005625" x2="-13.91285" y2="-1.7500625" width="0.0254" layer="51"/>
+<wire x1="4.17195" y1="-8.20039375" x2="8.508846875" y2="-3.5001625" width="0.0254" layer="51" curve="40.6752"/>
+<wire x1="12.29995" y1="-3.500121875" x2="12.29995" y2="-1.7500625" width="0.0254" layer="51"/>
+<wire x1="12.29995" y1="-1.7500625" x2="12.29995" y2="1.75005625" width="0.0254" layer="51"/>
+<wire x1="12.29995" y1="1.75005625" x2="12.29995" y2="3.50011875" width="0.0254" layer="51"/>
+<wire x1="13.91285" y1="-1.7500625" x2="12.29995" y2="-1.7500625" width="0.0254" layer="51"/>
+<wire x1="4.17195" y1="8.2003875" x2="-4.17195" y2="8.2003875" width="0.0254" layer="51"/>
+<wire x1="13.91285" y1="1.75005625" x2="12.29995" y2="1.75005625" width="0.0254" layer="51"/>
+<wire x1="8.508746875" y1="3.50011875" x2="4.171928125" y2="8.200346875" width="0.0254" layer="51" curve="40.674779"/>
+<wire x1="-12.29995" y1="3.50011875" x2="-8.509" y2="3.50011875" width="0.0254" layer="51"/>
+<wire x1="-8.509" y1="-3.500121875" x2="-8.509" y2="3.50011875" width="0.0254" layer="51"/>
+<wire x1="8.508746875" y1="-3.500121875" x2="8.508746875" y2="3.50011875" width="0.0254" layer="51"/>
+<wire x1="-4.17195" y1="8.2003875" x2="-8.50888125" y2="3.50006875" width="0.0254" layer="51" curve="40.675786"/>
+<wire x1="12.29995" y1="3.50011875" x2="8.508746875" y2="3.50011875" width="0.0254" layer="51"/>
+<wire x1="-13.91285" y1="1.75005625" x2="-12.29995" y2="1.75005625" width="0.0254" layer="51"/>
+<wire x1="-12.29995" y1="-3.500121875" x2="-12.29995" y2="3.50011875" width="0.0254" layer="51"/>
+<wire x1="-8.509" y1="-3.500121875" x2="-4.17198125" y2="-8.200453125" width="0.0254" layer="51" curve="40.676199"/>
+<wire x1="8.65" y1="3.7" x2="12.5" y2="3.7" width="0.254" layer="21"/>
+<wire x1="12.5" y1="3.7" x2="12.5" y2="2.6" width="0.254" layer="21"/>
+<wire x1="12.5" y1="-3.7" x2="12.5" y2="-2.6" width="0.254" layer="21"/>
+<wire x1="8.65" y1="-3.7" x2="12.5" y2="-3.7" width="0.254" layer="21"/>
+<wire x1="-8.65" y1="-3.7" x2="-12.5" y2="-3.7" width="0.254" layer="21"/>
+<wire x1="-12.5" y1="-3.7" x2="-12.5" y2="-2.6" width="0.254" layer="21"/>
+<wire x1="-12.5" y1="3.727" x2="-12.5" y2="2.6" width="0.254" layer="21"/>
+<wire x1="-8.65" y1="3.727" x2="-12.5" y2="3.727" width="0.254" layer="21"/>
+<wire x1="4.2" y1="8.427" x2="-4.2" y2="8.427" width="0.254" layer="21"/>
+<wire x1="4.2" y1="-8.427" x2="-4.2" y2="-8.427" width="0.254" layer="21"/>
+<wire x1="-8.65" y1="3.727" x2="-4.2" y2="8.427" width="0.254" layer="21" curve="-42.028802"/>
+<wire x1="8.65" y1="3.7" x2="4.2" y2="8.427" width="0.254" layer="21" curve="42.028802"/>
+<wire x1="-8.65" y1="-3.7" x2="-4.2" y2="-8.427" width="0.254" layer="21" curve="42.028802"/>
+<wire x1="8.65" y1="-3.7" x2="4.2" y2="-8.427" width="0.254" layer="21" curve="-42.028802"/>
+<text x="9.144" y="4.191" size="1.016" layer="25" font="vector" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" font="vector" ratio="10" align="center">&gt;VALUE</text>
+<circle x="-9.779" y="5.207" radius="0.915809375" width="0.2032" layer="21"/>
+<wire x1="-10.287" y1="5.207" x2="-9.271" y2="5.207" width="0.2032" layer="21"/>
+<wire x1="-9.779" y1="4.699" x2="-9.779" y2="5.715" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>

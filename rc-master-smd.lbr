@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3217,6 +3217,34 @@ Fair-Rite</description>
 <text x="-5" y="1.9" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-5" y="-2.8" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="R1218MP">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt; - 1218 MicroPitch&lt;p&gt;</description>
+<wire x1="-0.913" y1="2.219" x2="0.939" y2="2.219" width="0.1016" layer="51"/>
+<wire x1="-0.913" y1="-2.219" x2="0.939" y2="-2.219" width="0.1016" layer="51"/>
+<smd name="1" x="-1.651" y="0" dx="1.6" dy="4.7" layer="1"/>
+<smd name="2" x="1.651" y="0" dx="1.6" dy="4.7" layer="1"/>
+<text x="-2.413" y="2.667" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.413" y="-3.429" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-2.3" x2="-0.9009" y2="2.3" layer="51"/>
+<rectangle x1="0.9144" y1="-2.3" x2="1.6645" y2="2.3" layer="51"/>
+<rectangle x1="-0.3" y1="-0.8999" x2="0.3" y2="0.8999" layer="35"/>
+</package>
+<package name="R1218">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt; - 1218</description>
+<wire x1="-0.913" y1="2.219" x2="0.939" y2="2.219" width="0.1016" layer="51"/>
+<wire x1="-0.913" y1="-2.219" x2="0.939" y2="-2.219" width="0.1016" layer="51"/>
+<wire x1="-2.794" y1="2.667" x2="2.794" y2="2.667" width="0.2032" layer="21"/>
+<wire x1="2.794" y1="2.667" x2="2.794" y2="-2.667" width="0.2032" layer="21"/>
+<wire x1="2.794" y1="-2.667" x2="-2.794" y2="-2.667" width="0.2032" layer="21"/>
+<wire x1="-2.794" y1="-2.667" x2="-2.794" y2="2.667" width="0.2032" layer="21"/>
+<smd name="1" x="-1.651" y="0" dx="1.6" dy="4.7" layer="1"/>
+<smd name="2" x="1.651" y="0" dx="1.6" dy="4.7" layer="1"/>
+<text x="-2.54" y="2.921" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.667" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="-2.3" x2="-0.9009" y2="2.3" layer="51"/>
+<rectangle x1="0.9144" y1="-2.3" x2="1.6645" y2="2.3" layer="51"/>
+<rectangle x1="-0.3" y1="-0.8999" x2="0.3" y2="0.8999" layer="35"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -4602,6 +4630,24 @@ Fair-Rite</description>
 </technologies>
 </device>
 <device name="MMU102W" package="MMU102W">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1218" package="R1218">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1218MP" package="R1218MP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

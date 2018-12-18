@@ -6921,6 +6921,35 @@ SURMETIC 40</description>
 <rectangle x1="4.445" y1="-0.381" x2="6.04" y2="0.381" layer="21"/>
 <rectangle x1="-6.04" y1="-0.381" x2="-4.445" y2="0.381" layer="21"/>
 </package>
+<package name="T-18_Z">
+<description>&lt;b&gt;Zener Diode&lt;/b&gt; - SURMETIC 40&lt;p&gt;
+AXIAL LEAD CASE 017AA</description>
+<wire x1="-8.255" y1="0" x2="-6.35" y2="0" width="1.016" layer="51"/>
+<wire x1="-4.445" y1="1.8415" x2="-4.445" y2="-1.8415" width="0.2032" layer="21"/>
+<wire x1="-4.445" y1="-1.8415" x2="4.445" y2="-1.8415" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="-1.8415" x2="4.445" y2="1.8415" width="0.2032" layer="21"/>
+<wire x1="4.445" y1="1.8415" x2="-4.445" y2="1.8415" width="0.2032" layer="21"/>
+<wire x1="0.9525" y1="0.9525" x2="0.9525" y2="-0.9525" width="0.2032" layer="21"/>
+<wire x1="0.9525" y1="-0.9525" x2="-0.9525" y2="0" width="0.2032" layer="21"/>
+<wire x1="-0.9525" y1="0" x2="0.9525" y2="0.9525" width="0.2032" layer="21"/>
+<wire x1="-0.9525" y1="0" x2="-0.9525" y2="-0.9525" width="0.2032" layer="21"/>
+<wire x1="-0.381" y1="0.9525" x2="-0.9525" y2="0.9525" width="0.2032" layer="21"/>
+<wire x1="-0.9525" y1="0.9525" x2="-0.9525" y2="0" width="0.2032" layer="21"/>
+<wire x1="-1.524" y1="-0.9525" x2="-0.9525" y2="-0.9525" width="0.2032" layer="21"/>
+<pad name="C" x="-8.255" y="0" drill="1.27" diameter="2.794" shape="octagon"/>
+<pad name="A" x="8.255" y="0" drill="1.27" diameter="2.794" shape="octagon"/>
+<text x="-4.445" y="2.159" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.445" y="-2.921" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-3.175" y1="-1.905" x2="-2.54" y2="1.905" layer="21"/>
+<rectangle x1="-6.35" y1="-0.508" x2="-4.445" y2="0.508" layer="21"/>
+<polygon width="0.2032" layer="21">
+<vertex x="-0.9525" y="0"/>
+<vertex x="0.9525" y="0.9525"/>
+<vertex x="0.9525" y="-0.9525"/>
+</polygon>
+<rectangle x1="4.445" y1="-0.508" x2="6.35" y2="0.508" layer="21" rot="R180"/>
+<wire x1="8.255" y1="0" x2="6.35" y2="0" width="1.016" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="D">
@@ -17057,6 +17086,15 @@ GPP SMD 400V 1A SMB&lt;p&gt;</description>
 </technologies>
 </device>
 <device name="DO15" package="DO15">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="T-18" package="T-18_Z">
 <connects>
 <connect gate="G$1" pin="A" pad="A"/>
 <connect gate="G$1" pin="C" pad="C"/>
