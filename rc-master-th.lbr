@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -5817,6 +5817,28 @@ body 18.1 x 7.7 mm</description>
 <text x="9.87" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="9.87" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 </package>
+<package name="CD-087-170X064">
+<description>&lt;b&gt;MICA CAP&lt;/b&gt;&lt;p&gt;
+8.7 mm lead spacing&lt;br&gt; outline 17.0 x 6.4 mm</description>
+<wire x1="-0.3175" y1="0.9525" x2="-0.3175" y2="0" width="0.254" layer="21"/>
+<wire x1="-0.3175" y1="0" x2="-0.3175" y2="-0.9525" width="0.254" layer="21"/>
+<wire x1="0.3175" y1="0.9525" x2="0.3175" y2="0" width="0.254" layer="21"/>
+<wire x1="0.3175" y1="0" x2="0.3175" y2="-0.9525" width="0.254" layer="21"/>
+<wire x1="-0.3175" y1="0" x2="-2.2225" y2="0" width="0.2032" layer="21"/>
+<wire x1="0.3175" y1="0" x2="2.2225" y2="0" width="0.2032" layer="21"/>
+<wire x1="8.5" y1="1.7" x2="8.5" y2="-3.661484375" width="0.2032" layer="21"/>
+<wire x1="8.5" y1="-3.661484375" x2="7.961484375" y2="-4.2" width="0.2032" layer="21" curve="-90"/>
+<wire x1="7.961484375" y1="-4.2" x2="-8" y2="-4.2" width="0.2032" layer="21"/>
+<wire x1="-8" y1="-4.2" x2="-8.5" y2="-3.7" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-8.5" y1="-3.7" x2="-8.5" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="-8.5" y1="1.7" x2="-8" y2="2.2" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-8" y1="2.2" x2="8" y2="2.2" width="0.2032" layer="21"/>
+<wire x1="8" y1="2.2" x2="8.5" y2="1.7" width="0.2032" layer="21" curve="-90"/>
+<pad name="1" x="-4.35" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<pad name="2" x="4.35" y="0" drill="1.016" diameter="2.54" shape="octagon"/>
+<text x="-7.9675" y="3" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="-2" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -6528,6 +6550,15 @@ body 18.1 x 7.7 mm</description>
 </technologies>
 </device>
 <device name="CM087-175X087" package="CM087-175X087">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="CD-087-170X064" package="CD-087-170X064">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
