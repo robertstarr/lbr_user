@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -746,6 +746,23 @@ Source: http://cui.com/pdffiles/MD-40SV.pdf</description>
 <text x="0" y="4.064" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="0.635" y="-4.191" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="PJ-063BH">
+<description>DC POWER JACK</description>
+<hole x="0" y="-3" drill="1.6"/>
+<pad name="M1" x="-4.5" y="-5" drill="2.7"/>
+<pad name="M2" x="4.5" y="-5" drill="2.7"/>
+<pad name="2" x="0" y="-6" drill="2.5"/>
+<pad name="1" x="0" y="-12" drill="3.5"/>
+<wire x1="-5" y1="0" x2="-5" y2="-2.8" width="0.254" layer="21"/>
+<wire x1="-5" y1="-7.2" x2="-5" y2="-12" width="0.254" layer="21"/>
+<wire x1="-5" y1="-12" x2="-2.7" y2="-12" width="0.254" layer="21"/>
+<wire x1="2.7" y1="-12" x2="5" y2="-12" width="0.254" layer="21"/>
+<wire x1="5" y1="-12" x2="5" y2="-7.3" width="0.254" layer="21"/>
+<wire x1="5" y1="-2.8" x2="5" y2="0" width="0.254" layer="21"/>
+<text x="-5.5" y="-11.9" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="6.4" y="-12" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<wire x1="-5" y1="0" x2="5" y2="0" width="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="KS-S5">
@@ -1297,6 +1314,24 @@ Source: http://cui.com/pdffiles/MD-40SV.pdf</description>
 <pin name="S@1" x="-7.62" y="7.62" visible="pad" length="middle" direction="pas"/>
 <pin name="S@2" x="-7.62" y="-7.62" visible="pad" length="middle" direction="pas"/>
 </symbol>
+<symbol name="PJ2">
+<wire x1="0" y1="0" x2="-3.81" y2="0" width="0.1524" layer="94"/>
+<wire x1="-3.81" y1="0" x2="-4.445" y2="-1.27" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="-1.27" x2="-5.08" y2="0" width="0.1524" layer="94"/>
+<wire x1="0" y1="-3.81" x2="-0.635" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-3.81" x2="-0.635" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-3.175" x2="-0.635" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.905" x2="-0.635" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.27" x2="0" y2="-1.27" width="0.254" layer="94"/>
+<wire x1="0" y1="-1.27" x2="0" y2="-3.81" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-3.175" x2="-6.35" y2="-3.175" width="0.254" layer="94"/>
+<wire x1="-0.635" y1="-1.905" x2="-6.35" y2="-1.905" width="0.254" layer="94"/>
+<wire x1="-6.35" y1="-1.905" x2="-6.35" y2="-3.175" width="0.254" layer="94" curve="180"/>
+<text x="0" y="5.08" size="1.778" layer="95">&gt;NAME</text>
+<text x="0" y="2.54" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="T" x="5.08" y="-2.54" visible="pad" length="middle" direction="pas" rot="R180"/>
+<pin name="S" x="5.08" y="0" visible="pad" length="middle" direction="pas" rot="R180"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="SJ-3524" prefix="J">
@@ -1740,6 +1775,24 @@ Source: http://cui.com/pdffiles/MD-40SV.pdf</description>
 <connect gate="G$1" pin="S" pad="1"/>
 <connect gate="G$1" pin="T" pad="2"/>
 <connect gate="G$1" pin="TS" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PJ-063BH" prefix="J">
+<description>DC Power Jack&lt;p&gt;
+PJ-063BH (2.5 MM)</description>
+<gates>
+<gate name="G$1" symbol="PJ2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PJ-063BH">
+<connects>
+<connect gate="G$1" pin="S" pad="2"/>
+<connect gate="G$1" pin="T" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>
