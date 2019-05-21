@@ -44,7 +44,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="yes" active="yes"/>
@@ -1268,6 +1268,17 @@ Use in a flooded plane area and add vias at positions shown!</description>
 <circle x="0" y="0" radius="3.175" width="0.2032" layer="21"/>
 <hole x="0" y="0" drill="3.556"/>
 </package>
+<package name="3,0-NS">
+<description>&lt;b&gt;MOUNTING HOLE&lt;/b&gt; 3.0 mm with drill center</description>
+<circle x="0" y="0" radius="3.429" width="0.0254" layer="51"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="39"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="43"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="40"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="41"/>
+<circle x="0" y="0" radius="3.048" width="2.032" layer="42"/>
+<circle x="0" y="0" radius="1.6" width="0.0508" layer="51"/>
+<hole x="0" y="0" drill="3"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNT-PAD">
@@ -1448,7 +1459,7 @@ Use in a flooded plane area and add vias at positions shown!</description>
 </technology>
 </technologies>
 </device>
-<device name="3,5-NS" package="3,5-NS">
+<device name="3.5-NS" package="3,5-NS">
 <technologies>
 <technology name="">
 <attribute name="BOM" value="EXCLUDE" constant="no"/>
@@ -1582,6 +1593,11 @@ Use in a flooded plane area and add vias at positions shown!</description>
 </technologies>
 </device>
 <device name="0.144-NS" package="144-NS">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="3.0-NS" package="3,0-NS">
 <technologies>
 <technology name=""/>
 </technologies>
