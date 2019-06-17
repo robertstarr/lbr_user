@@ -22,10 +22,10 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="yes" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="yes" active="yes"/>
-<layer number="32" name="bCream" color="7" fill="5" visible="yes" active="yes"/>
+<layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
 <layer number="33" name="tFinish" color="6" fill="3" visible="yes" active="yes"/>
 <layer number="34" name="bFinish" color="6" fill="6" visible="yes" active="yes"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="yes" active="yes"/>
@@ -2008,6 +2008,107 @@ Panasonic SMini3-F2-B</description>
 <wire x1="1.15" y1="0.775" x2="1.15" y2="-0.3" width="0.2032" layer="21"/>
 <text x="0.889" y="1.143" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.143" y="-2.159" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+</package>
+<package name="EPC2014">
+<description>eGaN FET DIE</description>
+<wire x1="-0.851" y1="0.5435" x2="0.851" y2="0.5435" width="0.01" layer="51"/>
+<wire x1="0.851" y1="0.5435" x2="0.851" y2="-0.5435" width="0.01" layer="51"/>
+<wire x1="0.851" y1="-0.5435" x2="-0.851" y2="-0.5435" width="0.01" layer="51"/>
+<wire x1="-0.851" y1="-0.5435" x2="-0.851" y2="0.5435" width="0.01" layer="51"/>
+<smd name="1" x="-0.601" y="0.249" dx="0.296" dy="0.18" layer="1" roundness="100" rot="R90" stop="no" thermals="no"/>
+<smd name="2" x="-0.601" y="-0.249" dx="0.296" dy="0.18" layer="1" roundness="100" rot="R90" stop="no" thermals="no"/>
+<smd name="3" x="-0.201" y="0" dx="0.814" dy="0.18" layer="1" roundness="100" rot="R90" stop="no" thermals="no"/>
+<smd name="4" x="0.199" y="0" dx="0.814" dy="0.18" layer="1" roundness="100" rot="R90" stop="no" thermals="no"/>
+<smd name="5" x="0.599" y="0" dx="0.814" dy="0.18" layer="1" roundness="100" rot="R90" stop="no" thermals="no"/>
+<text x="-0.8" y="0.6" size="0.3048" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.8" y="-0.85" size="0.254" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.69" y1="0.102" x2="-0.51" y2="0.398" layer="29"/>
+<rectangle x1="-0.69" y1="-0.398" x2="-0.51" y2="-0.102" layer="29"/>
+<rectangle x1="-0.29" y1="-0.407" x2="-0.11" y2="0.407" layer="29"/>
+<rectangle x1="0.11" y1="-0.407" x2="0.29" y2="0.407" layer="29"/>
+<rectangle x1="0.51" y1="-0.407" x2="0.69" y2="0.407" layer="29"/>
+<rectangle x1="-0.85" y1="0.45" x2="-0.75" y2="0.55" layer="51"/>
+</package>
+<package name="EPC2040">
+<smd name="1" x="-0.4" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="2" x="0" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="3" x="0.4" y="-0.2" dx="0.2" dy="0.2" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="4" x="-0.4" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="5" x="0" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
+<smd name="6" x="0.4" y="0.2" dx="0.2" dy="0.2" layer="1" roundness="100" rot="R90" stop="no" thermals="no" cream="no"/>
+<wire x1="-0.6" y1="0.425" x2="0.6" y2="0.425" width="0.01" layer="51"/>
+<wire x1="0.6" y1="0.425" x2="0.6" y2="-0.425" width="0.01" layer="51"/>
+<wire x1="0.6" y1="-0.425" x2="-0.6" y2="-0.425" width="0.01" layer="51"/>
+<wire x1="-0.6" y1="-0.425" x2="-0.6" y2="0.425" width="0.01" layer="51"/>
+<text x="-0.6" y="0.5" size="0.3048" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.6" y="-0.75" size="0.254" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.6" y1="-0.425" x2="-0.5" y2="-0.325" layer="51" rot="R90"/>
+<polygon width="0.01" layer="31">
+<vertex x="-0.295" y="0.315"/>
+<vertex x="-0.295" y="0.125" curve="-90"/>
+<vertex x="-0.325" y="0.095"/>
+<vertex x="-0.515" y="0.095" curve="-90"/>
+<vertex x="-0.545" y="0.125"/>
+<vertex x="-0.545" y="0.315" curve="-90"/>
+<vertex x="-0.515" y="0.345"/>
+<vertex x="-0.325" y="0.345" curve="-90"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="-0.295" y="-0.125"/>
+<vertex x="-0.295" y="-0.315" curve="-90"/>
+<vertex x="-0.325" y="-0.345"/>
+<vertex x="-0.515" y="-0.345" curve="-90"/>
+<vertex x="-0.545" y="-0.315"/>
+<vertex x="-0.545" y="-0.125" curve="-90"/>
+<vertex x="-0.515" y="-0.095"/>
+<vertex x="-0.325" y="-0.095" curve="-90"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="-0.125" y="-0.315"/>
+<vertex x="-0.125" y="-0.125" curve="-90"/>
+<vertex x="-0.095" y="-0.095"/>
+<vertex x="0.095" y="-0.095" curve="-90"/>
+<vertex x="0.125" y="-0.125"/>
+<vertex x="0.125" y="-0.315" curve="-90"/>
+<vertex x="0.095" y="-0.345"/>
+<vertex x="-0.095" y="-0.345" curve="-90"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="0.295" y="-0.315"/>
+<vertex x="0.295" y="-0.125" curve="-90"/>
+<vertex x="0.325" y="-0.095"/>
+<vertex x="0.515" y="-0.095" curve="-90"/>
+<vertex x="0.545" y="-0.125"/>
+<vertex x="0.545" y="-0.31950625" curve="-90"/>
+<vertex x="0.51950625" y="-0.345"/>
+<vertex x="0.325" y="-0.345" curve="-90"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="0.125" y="0.315"/>
+<vertex x="0.125" y="0.125" curve="-90"/>
+<vertex x="0.095" y="0.095"/>
+<vertex x="-0.095" y="0.095" curve="-90"/>
+<vertex x="-0.125" y="0.125"/>
+<vertex x="-0.125" y="0.315" curve="-90"/>
+<vertex x="-0.095" y="0.345"/>
+<vertex x="0.095" y="0.345" curve="-90"/>
+</polygon>
+<polygon width="0.01" layer="31">
+<vertex x="0.295" y="0.125"/>
+<vertex x="0.295" y="0.315" curve="-90"/>
+<vertex x="0.325" y="0.345"/>
+<vertex x="0.515" y="0.345" curve="-90"/>
+<vertex x="0.545" y="0.315"/>
+<vertex x="0.545" y="0.125" curve="-90"/>
+<vertex x="0.515" y="0.095"/>
+<vertex x="0.325" y="0.095" curve="-90"/>
+</polygon>
+<circle x="-0.4" y="0.2" radius="0.1" width="0" layer="29"/>
+<circle x="0" y="0.2" radius="0.1" width="0" layer="29"/>
+<circle x="0.4" y="0.2" radius="0.1" width="0" layer="29"/>
+<circle x="-0.4" y="-0.2" radius="0.1" width="0" layer="29"/>
+<circle x="0" y="-0.2" radius="0.1" width="0" layer="29"/>
+<circle x="0.4" y="-0.2" radius="0.1" width="0" layer="29"/>
 </package>
 </packages>
 <symbols>
@@ -8372,6 +8473,42 @@ Logic Level, PowerTrench</description>
 <connect gate="G$1" pin="D" pad="1"/>
 <connect gate="G$1" pin="G" pad="2"/>
 <connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EPC2014" prefix="Q">
+<description>eGAN FET DIE</description>
+<gates>
+<gate name="G$1" symbol="EMOS-ND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EPC2014">
+<connects>
+<connect gate="G$1" pin="D" pad="3 5"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="2 4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="EPC2040" prefix="Q">
+<description>eGAN FET DIE</description>
+<gates>
+<gate name="G$1" symbol="EMOS-ND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="EPC2040">
+<connects>
+<connect gate="G$1" pin="D" pad="2 5"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3 4 6"/>
 </connects>
 <technologies>
 <technology name=""/>
