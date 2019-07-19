@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -3245,6 +3245,38 @@ Fair-Rite</description>
 <rectangle x1="0.9144" y1="-2.3" x2="1.6645" y2="2.3" layer="51"/>
 <rectangle x1="-0.3" y1="-0.8999" x2="0.3" y2="0.8999" layer="35"/>
 </package>
+<package name="C080XP">
+<wire x1="-0.51" y1="0.535" x2="0.51" y2="0.535" width="0.1016" layer="51"/>
+<wire x1="-0.51" y1="-0.535" x2="0.51" y2="-0.535" width="0.1016" layer="51"/>
+<wire x1="0" y1="0.508" x2="0" y2="-0.508" width="0.2032" layer="21"/>
+<smd name="1" x="-0.816" y="0" dx="1" dy="1.3" layer="1"/>
+<smd name="2" x="0.816" y="0" dx="1" dy="1.3" layer="1"/>
+<text x="-1.4" y="0.9" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.4" y="-1.3" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1" y1="-0.65" x2="-0.4168" y2="0.65" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
+<wire x1="-1" y1="0.625" x2="1" y2="0.625" width="0.0004" layer="57"/>
+<wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.0004" layer="57"/>
+<wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.0004" layer="57"/>
+<wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.0004" layer="57"/>
+<rectangle x1="0.4168" y1="-0.65" x2="1" y2="0.65" layer="51" rot="R180"/>
+</package>
+<package name="R2010W">
+<description>&lt;b&gt;RESISTOR&lt;/b&gt; - 2010 Wide&lt;p&gt;
+Rohm LTR50</description>
+<wire x1="-1" y1="2.35" x2="1" y2="2.35" width="0.2032" layer="51"/>
+<wire x1="-1" y1="-2.35" x2="1" y2="-2.35" width="0.2032" layer="51"/>
+<wire x1="-2.159" y1="2.794" x2="2.159" y2="2.794" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="2.794" x2="2.159" y2="-2.794" width="0.2032" layer="21"/>
+<wire x1="2.159" y1="-2.794" x2="-2.159" y2="-2.794" width="0.2032" layer="21"/>
+<wire x1="-2.159" y1="-2.794" x2="-2.159" y2="2.794" width="0.2032" layer="21"/>
+<smd name="1" x="-1.2" y="0" dx="1.3" dy="5" layer="1"/>
+<smd name="2" x="1.2" y="0" dx="1.3" dy="5" layer="1"/>
+<text x="-2.159" y="3.048" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.159" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.2392" y1="-2.5" x2="-0.3893" y2="2.5" layer="51"/>
+<rectangle x1="0.401" y1="-2.5" x2="1.2509" y2="2.5" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="CP-">
@@ -3758,6 +3790,15 @@ Fair-Rite</description>
 </technologies>
 </device>
 <device name="7361MP" package="C7361MP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="0805XP" package="C080XP">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -4648,6 +4689,15 @@ Fair-Rite</description>
 </technologies>
 </device>
 <device name="1218MP" package="R1218MP">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="2010W" package="R2010W">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
