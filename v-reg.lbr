@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -148,16 +148,14 @@ Vertical Mount</description>
 <description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
 <wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="-1.27" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
 <wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="51"/>
 <wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="51"/>
 <wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="51"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
 <wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="51"/>
 <wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="51"/>
 <wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="51"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
 <wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="51"/>
 <wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="51"/>
 <wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="51"/>
@@ -165,26 +163,24 @@ Vertical Mount</description>
 <circle x="0" y="11.176" radius="1.8034" width="0.1778" layer="21"/>
 <circle x="0" y="11.176" radius="4.191" width="0" layer="42"/>
 <circle x="0" y="11.176" radius="4.191" width="0" layer="43"/>
-<pad name="1" x="-2.54" y="-5.08" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-5.08" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-5.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
 <text x="-3.81" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-0.508" y="0" size="1.27" layer="51" ratio="10">G</text>
 <text x="-3.048" y="0" size="1.27" layer="51" ratio="10">I</text>
 <text x="2.032" y="0" size="1.27" layer="51" ratio="10">O</text>
-<rectangle x1="-0.635" y1="-2.54" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-2.54" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-3.175" y1="-2.54" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="2.159" y1="-5.08" x2="2.921" y2="-3.429" layer="51"/>
-<rectangle x1="2.159" y1="-3.429" x2="2.921" y2="-2.54" layer="21"/>
-<rectangle x1="-0.381" y1="-5.08" x2="0.381" y2="-3.429" layer="51"/>
-<rectangle x1="-2.921" y1="-5.08" x2="-2.159" y2="-3.429" layer="51"/>
-<rectangle x1="-0.381" y1="-3.429" x2="0.381" y2="-2.54" layer="21"/>
-<rectangle x1="-2.921" y1="-3.429" x2="-2.159" y2="-2.54" layer="21"/>
 <hole x="0" y="11.176" drill="3.048"/>
-<wire x1="-5.207" y1="11.176" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
+<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.064" layer="51"/>
+<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.064" layer="51"/>
+<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.064" layer="51"/>
+<rectangle x1="-3.175" y1="-4.064" x2="-1.905" y2="-1.27" layer="21"/>
+<rectangle x1="-0.635" y1="-4.064" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="1.905" y1="-4.064" x2="3.175" y2="-1.27" layer="21"/>
+<rectangle x1="-2.921" y1="-6.604" x2="-2.159" y2="-4.699" layer="51"/>
+<rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
+<rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
 </package>
 <package name="79XXL">
 <description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
@@ -574,20 +570,18 @@ Vertical Mount</description>
 </package>
 <package name="317L">
 <description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
-<wire x1="-2.0946" y1="-1.651" x2="-0.7863" y2="2.5485" width="0.1778" layer="21" curve="-111.098957" cap="flat"/>
-<wire x1="0.7868" y1="2.5484" x2="2.095" y2="-1.651" width="0.1778" layer="21" curve="-111.09954" cap="flat"/>
-<wire x1="-2.095" y1="-1.651" x2="2.095" y2="-1.651" width="0.2032" layer="21"/>
-<wire x1="-2.655" y1="-0.254" x2="-2.254" y2="-0.254" width="0.2032" layer="21"/>
-<wire x1="2.254" y1="-0.254" x2="2.655" y2="-0.254" width="0.2032" layer="21"/>
-<wire x1="-0.7863" y1="2.5485" x2="0.7863" y2="2.5485" width="0.2032" layer="51" curve="-34.293591" cap="flat"/>
-<pad name="1" x="-1.27" y="0" drill="0.8128" shape="octagon"/>
-<pad name="2" x="0" y="1.905" drill="0.8128" shape="octagon"/>
-<pad name="3" x="1.27" y="0" drill="0.8128" shape="octagon"/>
+<pad name="1" x="-1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="2" x="0" y="1.905" drill="0.8128" diameter="1.6764" shape="octagon"/>
+<pad name="3" x="1.27" y="0" drill="0.8128" diameter="1.6764" shape="octagon"/>
 <text x="-0.635" y="0.889" size="1.27" layer="51" ratio="10">O</text>
 <text x="0.635" y="-0.635" size="1.27" layer="51" ratio="10">I</text>
 <text x="3.175" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="3.175" y="-1.27" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-1.905" y="-0.635" size="1.27" layer="51" ratio="10">A</text>
+<wire x1="-2.1" y1="-1.6" x2="2.1" y2="-1.6" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="-1.6" x2="-1.4" y2="2.3" width="0.2032" layer="21" curve="-98.057233"/>
+<wire x1="2.1" y1="-1.6" x2="1.4" y2="2.3" width="0.2032" layer="21" curve="99.798366"/>
+<wire x1="-1.4" y1="2.3" x2="1.4" y2="2.3" width="0.2032" layer="51" curve="-63.781584"/>
 </package>
 <package name="337L">
 <description>&lt;b&gt;VOLTAGE REGULATOR&lt;/b&gt;</description>
@@ -1085,42 +1079,38 @@ Sharp</description>
 Rivet Mount, No Restrict, Drill 0.140</description>
 <wire x1="-5.207" y1="-1.27" x2="5.207" y2="-1.27" width="0.2032" layer="21"/>
 <wire x1="5.207" y1="14.605" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="-1.27" x2="5.207" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="5.207" y1="-1.27" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
 <wire x1="5.207" y1="11.176" x2="4.318" y2="11.176" width="0.2032" layer="51"/>
 <wire x1="4.318" y1="11.176" x2="4.318" y2="12.7" width="0.2032" layer="51"/>
 <wire x1="4.318" y1="12.7" x2="5.207" y2="12.7" width="0.2032" layer="51"/>
-<wire x1="5.207" y1="12.7" x2="5.207" y2="14.605" width="0.2032" layer="21"/>
-<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="11.176" width="0.2032" layer="21"/>
+<wire x1="-5.207" y1="-1.27" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
 <wire x1="-5.207" y1="11.176" x2="-4.318" y2="11.176" width="0.2032" layer="51"/>
 <wire x1="-4.318" y1="11.176" x2="-4.318" y2="12.7" width="0.2032" layer="51"/>
 <wire x1="-4.318" y1="12.7" x2="-5.207" y2="12.7" width="0.2032" layer="51"/>
-<wire x1="-5.207" y1="12.7" x2="-5.207" y2="14.605" width="0.2032" layer="21"/>
 <wire x1="-4.572" y1="-0.635" x2="4.572" y2="-0.635" width="0.0508" layer="51"/>
 <wire x1="4.572" y1="7.62" x2="4.572" y2="-0.635" width="0.0508" layer="51"/>
 <wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="51"/>
 <wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="51"/>
 <circle x="0" y="11.176" radius="1.8034" width="0.1778" layer="21"/>
 <circle x="0" y="11.176" radius="3.9431" width="0" layer="30"/>
-<pad name="1" x="-2.54" y="-5.08" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-5.08" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-5.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
 <text x="-3.81" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3.937" y="2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-0.508" y="0" size="1.27" layer="51" ratio="10">G</text>
 <text x="-3.048" y="0" size="1.27" layer="51" ratio="10">I</text>
 <text x="2.032" y="0" size="1.27" layer="51" ratio="10">O</text>
-<rectangle x1="-0.635" y1="-2.54" x2="0.635" y2="-1.27" layer="21"/>
-<rectangle x1="1.905" y1="-2.54" x2="3.175" y2="-1.27" layer="21"/>
-<rectangle x1="-3.175" y1="-2.54" x2="-1.905" y2="-1.27" layer="21"/>
-<rectangle x1="2.159" y1="-5.08" x2="2.921" y2="-3.429" layer="51"/>
-<rectangle x1="2.159" y1="-3.429" x2="2.921" y2="-2.54" layer="21"/>
-<rectangle x1="-0.381" y1="-5.08" x2="0.381" y2="-3.429" layer="51"/>
-<rectangle x1="-2.921" y1="-5.08" x2="-2.159" y2="-3.429" layer="51"/>
-<rectangle x1="-0.381" y1="-3.429" x2="0.381" y2="-2.54" layer="21"/>
-<rectangle x1="-2.921" y1="-3.429" x2="-2.159" y2="-2.54" layer="21"/>
 <hole x="0" y="11.176" drill="3.556"/>
-<wire x1="-5.207" y1="11.176" x2="-5.207" y2="12.7" width="0.2032" layer="21"/>
-<wire x1="5.207" y1="11.176" x2="5.207" y2="12.7" width="0.2032" layer="21"/>
+<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.064" layer="51"/>
+<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.064" layer="51"/>
+<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.064" layer="51"/>
+<rectangle x1="-3.175" y1="-4.064" x2="-1.905" y2="-1.27" layer="21"/>
+<rectangle x1="-0.635" y1="-4.064" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="1.905" y1="-4.064" x2="3.175" y2="-1.27" layer="21"/>
+<rectangle x1="-2.921" y1="-6.604" x2="-2.159" y2="-4.699" layer="51"/>
+<rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
+<rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
 </package>
 <package name="TO-3P">
 <description>&lt;b&gt;Molded Package&lt;/b&gt;&lt;p&gt;
@@ -1989,23 +1979,23 @@ horizontal, no mount hole.</description>
 <wire x1="4.572" y1="7.62" x2="-4.572" y2="7.62" width="0.0508" layer="51"/>
 <wire x1="-4.572" y1="-0.635" x2="-4.572" y2="7.62" width="0.0508" layer="51"/>
 <circle x="0" y="11.176" radius="1.8034" width="0.1778" layer="51"/>
-<pad name="1" x="-2.54" y="-5.08" drill="1.016" shape="long" rot="R90"/>
-<pad name="2" x="0" y="-5.08" drill="1.016" shape="long" rot="R90"/>
-<pad name="3" x="2.54" y="-5.08" drill="1.016" shape="long" rot="R90"/>
+<pad name="1" x="-2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="0" y="-6.35" drill="1.016" shape="long" rot="R90"/>
+<pad name="3" x="2.54" y="-6.35" drill="1.016" shape="long" rot="R90"/>
 <text x="-3.81" y="5.08" size="1.016" layer="51" ratio="18">&gt;NAME</text>
 <text x="-3.937" y="2.54" size="0.8128" layer="51" ratio="10">&gt;VALUE</text>
 <text x="-0.508" y="0" size="1.27" layer="51" ratio="10">G</text>
 <text x="-3.048" y="0" size="1.27" layer="51" ratio="10">I</text>
 <text x="2.032" y="0" size="1.27" layer="51" ratio="10">O</text>
-<rectangle x1="-0.635" y1="-2.54" x2="0.635" y2="-1.27" layer="51"/>
-<rectangle x1="1.905" y1="-2.54" x2="3.175" y2="-1.27" layer="51"/>
-<rectangle x1="-3.175" y1="-2.54" x2="-1.905" y2="-1.27" layer="51"/>
-<rectangle x1="2.159" y1="-5.08" x2="2.921" y2="-3.429" layer="51"/>
-<rectangle x1="2.159" y1="-3.429" x2="2.921" y2="-2.54" layer="51"/>
-<rectangle x1="-0.381" y1="-5.08" x2="0.381" y2="-3.429" layer="51"/>
-<rectangle x1="-2.921" y1="-5.08" x2="-2.159" y2="-3.429" layer="51"/>
-<rectangle x1="-0.381" y1="-3.429" x2="0.381" y2="-2.54" layer="51"/>
-<rectangle x1="-2.921" y1="-3.429" x2="-2.159" y2="-2.54" layer="51"/>
+<rectangle x1="2.159" y1="-4.699" x2="2.921" y2="-4.064" layer="51"/>
+<rectangle x1="-0.381" y1="-4.699" x2="0.381" y2="-4.064" layer="51"/>
+<rectangle x1="-2.921" y1="-4.699" x2="-2.159" y2="-4.064" layer="51"/>
+<rectangle x1="-3.175" y1="-4.064" x2="-1.905" y2="-1.27" layer="21"/>
+<rectangle x1="-0.635" y1="-4.064" x2="0.635" y2="-1.27" layer="21"/>
+<rectangle x1="1.905" y1="-4.064" x2="3.175" y2="-1.27" layer="21"/>
+<rectangle x1="-2.921" y1="-6.604" x2="-2.159" y2="-4.699" layer="51"/>
+<rectangle x1="-0.381" y1="-6.604" x2="0.381" y2="-4.699" layer="51"/>
+<rectangle x1="2.159" y1="-6.604" x2="2.921" y2="-4.699" layer="51"/>
 </package>
 </packages>
 <symbols>

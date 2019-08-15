@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -876,21 +876,21 @@ As a general guideline, SMD resistors are typically rated as follows:&lt;p&gt;
 <package name="CE-035X080">
 <description>&lt;b&gt;POLCAP RADIAL&lt;/b&gt;&lt;p&gt;
 3.5 mm lead spacing, 8 mm diameter, grid 0.0125 inch</description>
-<wire x1="-2.44" y1="2.2225" x2="-1.17" y2="2.2225" width="0.254" layer="21"/>
-<wire x1="-1.805" y1="2.8575" x2="-1.805" y2="1.5875" width="0.254" layer="21"/>
 <wire x1="-0.635" y1="0" x2="-1.905" y2="0" width="0.2032" layer="51"/>
 <wire x1="0.4763" y1="0" x2="1.5875" y2="0" width="0.2032" layer="51"/>
 <wire x1="0.4763" y1="0" x2="0.9525" y2="1.5875" width="0.4064" layer="51" curve="-37.872144" cap="flat"/>
 <wire x1="0.9525" y1="-1.4288" x2="0.4763" y2="0" width="0.4064" layer="51" curve="-37.375347" cap="flat"/>
 <wire x1="-0.635" y1="-1.5875" x2="-0.635" y2="1.5875" width="0.508" layer="51"/>
-<circle x="0" y="0" radius="4.016" width="0.2032" layer="21"/>
 <pad name="+" x="-1.7463" y="0" drill="0.8128" diameter="1.9304"/>
 <pad name="-" x="1.7463" y="0" drill="0.8128" diameter="1.9304" shape="octagon"/>
-<text x="3.81" y="-3.4925" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<text x="3.81" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<wire x1="-1.7462" y1="2.0638" x2="-0.7937" y2="2.0638" width="0.254" layer="21"/>
+<wire x1="-1.27" y1="2.54" x2="-1.27" y2="1.5875" width="0.254" layer="21"/>
+<circle x="0" y="0" radius="4.3" width="0.2032" layer="21"/>
+<text x="3.81" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="3.81" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <polygon width="0.2032" layer="21">
-<vertex x="3.175" y="2.413"/>
-<vertex x="3.175" y="-2.413" curve="81.08139"/>
+<vertex x="3.029" y="3.048"/>
+<vertex x="3.029" y="-3.048" curve="90.618236"/>
 </polygon>
 </package>
 <package name="CE-010X030">

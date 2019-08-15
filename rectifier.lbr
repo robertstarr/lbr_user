@@ -1302,6 +1302,27 @@ SDB101 - SDB107</description>
 <text x="3.81" y="-1.905" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-2.8" y1="-1.8" x2="-2.3" y2="1.8" layer="21"/>
 </package>
+<package name="4-UDIP">
+<description>4-LEAD MicroDIP</description>
+<wire x1="2.8" y1="-1.8" x2="2.8" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="-2.8" y1="1.8" x2="-2.8" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="-2" y1="-1.1" x2="-1.4" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="-0.8" x2="-1.7" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="1.4" y1="-1.1" x2="2" y2="-1.1" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="1.1" x2="2.1" y2="1.1" width="0.2032" layer="21" curve="180" cap="flat"/>
+<wire x1="1.1" y1="1.1" x2="1.6" y2="1.1" width="0.2032" layer="21" curve="-180" cap="flat"/>
+<wire x1="-2.8" y1="-1.8" x2="2.8" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="-2.8" y1="1.8" x2="2.8" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="1.1" x2="-1" y2="1.1" width="0.2032" layer="21" curve="180" cap="flat"/>
+<wire x1="-2" y1="1.1" x2="-1.5" y2="1.1" width="0.2032" layer="21" curve="-180" cap="flat"/>
+<smd name="AC1" x="2" y="2.95" dx="1.6" dy="0.9" layer="1" rot="R90"/>
+<smd name="AC2" x="-2" y="2.95" dx="1.6" dy="0.9" layer="1" rot="R90"/>
+<smd name="+" x="-2" y="-2.95" dx="1.6" dy="0.9" layer="1" rot="R90"/>
+<smd name="-" x="2" y="-2.95" dx="1.6" dy="0.9" layer="1" rot="R90"/>
+<text x="-3.175" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-1.905" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.8" y1="-1.8" x2="-2.3" y2="1.8" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="GB">
@@ -2296,6 +2317,25 @@ http://www.ts.com.tw/db/pictures/modules/PDT/PDT060207001/DBLS201G.pdf</descript
 </gates>
 <devices>
 <device name="" package="4-SMD">
+<connects>
+<connect gate="G$1" pin="+" pad="+"/>
+<connect gate="G$1" pin="-" pad="-"/>
+<connect gate="G$1" pin="A1" pad="AC1"/>
+<connect gate="G$1" pin="A2" pad="AC2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MDB6S" prefix="B">
+<description>BRIDGE RECT 1P 600V 1A MICRODIP</description>
+<gates>
+<gate name="G$1" symbol="DB" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="4-UDIP">
 <connects>
 <connect gate="G$1" pin="+" pad="+"/>
 <connect gate="G$1" pin="-" pad="-"/>
