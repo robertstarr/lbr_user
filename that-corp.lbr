@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.2.0">
+<eagle version="7.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1395,6 +1395,7 @@ Pre-trimmed Low-voltage Low-power</description>
 <gate name="B" symbol="NPN" x="7.62" y="0"/>
 <gate name="C" symbol="NPN" x="-10.16" y="-20.32"/>
 <gate name="D" symbol="NPN" x="7.62" y="-20.32"/>
+<gate name="G$1" symbol="SUBPINS" x="25.4" y="-20.32" addlevel="request"/>
 </gates>
 <devices>
 <device name="S" package="SO14">
@@ -1411,6 +1412,8 @@ Pre-trimmed Low-voltage Low-power</description>
 <connect gate="D" pin="B" pad="9"/>
 <connect gate="D" pin="C" pad="8"/>
 <connect gate="D" pin="E" pad="10"/>
+<connect gate="G$1" pin="GND@11" pad="11"/>
+<connect gate="G$1" pin="GND@4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1430,6 +1433,8 @@ Pre-trimmed Low-voltage Low-power</description>
 <connect gate="D" pin="B" pad="9"/>
 <connect gate="D" pin="C" pad="8"/>
 <connect gate="D" pin="E" pad="10"/>
+<connect gate="G$1" pin="GND@11" pad="11"/>
+<connect gate="G$1" pin="GND@4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1444,6 +1449,7 @@ Pre-trimmed Low-voltage Low-power</description>
 <gate name="B" symbol="PNP" x="7.62" y="0"/>
 <gate name="C" symbol="PNP" x="-10.16" y="-20.32"/>
 <gate name="D" symbol="PNP" x="7.62" y="-20.32"/>
+<gate name="G$1" symbol="SUBPINS" x="25.4" y="-20.32" addlevel="request"/>
 </gates>
 <devices>
 <device name="S" package="SO14">
@@ -1460,6 +1466,8 @@ Pre-trimmed Low-voltage Low-power</description>
 <connect gate="D" pin="B" pad="9"/>
 <connect gate="D" pin="C" pad="8"/>
 <connect gate="D" pin="E" pad="10"/>
+<connect gate="G$1" pin="GND@11" pad="11"/>
+<connect gate="G$1" pin="GND@4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1479,6 +1487,8 @@ Pre-trimmed Low-voltage Low-power</description>
 <connect gate="D" pin="B" pad="9"/>
 <connect gate="D" pin="C" pad="8"/>
 <connect gate="D" pin="E" pad="10"/>
+<connect gate="G$1" pin="GND@11" pad="11"/>
+<connect gate="G$1" pin="GND@4" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1493,7 +1503,7 @@ Pre-trimmed Low-voltage Low-power</description>
 <gate name="B" symbol="NPN" x="7.62" y="0"/>
 <gate name="C" symbol="PNP" x="-10.16" y="-20.32"/>
 <gate name="D" symbol="PNP" x="7.62" y="-20.32"/>
-<gate name="-SUB" symbol="SUBPINS" x="22.86" y="-17.78" addlevel="request"/>
+<gate name="-SUB" symbol="SUBPINS" x="25.4" y="-20.32" addlevel="request"/>
 </gates>
 <devices>
 <device name="S" package="SO14">
