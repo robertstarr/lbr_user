@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -7443,7 +7443,7 @@ Cooper Bussmann PowerStor supercapacitor</description>
 <rectangle x1="-2.95" y1="-0.015" x2="-2.35" y2="1.985" layer="51"/>
 <rectangle x1="2.35" y1="0.035" x2="2.95" y2="2.035" layer="51"/>
 </package>
-<package name="CENP-050-010">
+<package name="CENP-050-100">
 <description>&lt;b&gt;BIPOLAR ELECTROLYTIC&lt;/b&gt;&lt;p&gt;
 5.0 mm lead spacing, 10 mm diameter, grid 0.0125 inch</description>
 <circle x="0" y="0" radius="5.1293" width="0.2032" layer="21"/>
@@ -7452,7 +7452,7 @@ Cooper Bussmann PowerStor supercapacitor</description>
 <text x="4.445" y="3.4925" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3.175" y="-3.4925" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
-<package name="CENP-050-012">
+<package name="CENP-050-120">
 <description>&lt;b&gt;BIPOLAR ELECTROLYTIC&lt;/b&gt;&lt;p&gt;
 5.0 mm lead spacing, 12 mm diameter, grid 0.0125 inch</description>
 <circle x="0" y="0" radius="6.0241" width="0.2032" layer="21"/>
@@ -8116,6 +8116,15 @@ Panasonic RG Series</description>
 <vertex x="3.048" y="-2.413" curve="71.62287"/>
 </polygon>
 <circle x="0" y="0" radius="4" width="0.2032" layer="21"/>
+</package>
+<package name="CENP-050-125">
+<description>&lt;b&gt;BIPOLAR ELECTROLYTIC&lt;/b&gt;&lt;p&gt;
+5.0 mm lead spacing, 12.5 mm diameter</description>
+<circle x="0" y="0" radius="6.5" width="0.2032" layer="21"/>
+<pad name="1" x="-2.54" y="0" drill="1.016" diameter="2.1844" shape="octagon"/>
+<pad name="2" x="2.54" y="0" drill="1.016" diameter="2.1844" shape="octagon"/>
+<text x="5.08" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
 </packages>
 <symbols>
@@ -10328,7 +10337,7 @@ Panasonic RG Series</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="ENP-050-010" package="CENP-050-010">
+<device name="ENP-050-100" package="CENP-050-100">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -10337,7 +10346,7 @@ Panasonic RG Series</description>
 <technology name=""/>
 </technologies>
 </device>
-<device name="ENP-050-012" package="CENP-050-012">
+<device name="ENP-050-120" package="CENP-050-120">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -10365,6 +10374,15 @@ Panasonic RG Series</description>
 </technologies>
 </device>
 <device name="ENP-020-060" package="CENP-020-060">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ENP-050-125" package="CENP-050-125">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

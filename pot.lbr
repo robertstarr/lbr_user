@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -6584,12 +6584,9 @@ P09 Series, BI Technologies</description>
 <wire x1="2.54" y1="0" x2="1.5876" y2="0" width="0.1524" layer="94"/>
 <text x="-5.08" y="-3.81" size="1.778" layer="95" rot="R90">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.778" layer="96" rot="R90">&gt;VALUE</text>
-<pin name="1" x="0" y="-5.08" visible="pad" length="short" direction="pas" rot="R90"/>
-<pin name="3" x="0" y="5.08" visible="pad" length="short" direction="pas" swaplevel="1" rot="R270"/>
-<pin name="2" x="5.08" y="0" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="2-2" x="5.08" y="0" visible="off" length="point" direction="pas" swaplevel="1" rot="R180"/>
-<pin name="1-1" x="0" y="-5.08" visible="off" length="point" direction="pas" swaplevel="1" rot="R90"/>
-<pin name="3-3" x="0" y="5.08" visible="off" length="point" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="1" x="0" y="-5.08" visible="off" length="short" direction="pas" rot="R90"/>
+<pin name="3" x="0" y="5.08" visible="off" length="short" direction="pas" swaplevel="1" rot="R270"/>
+<pin name="2" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
 </symbol>
 <symbol name="POT_US-">
 <wire x1="1.4288" y1="0" x2="2.6988" y2="0.4763" width="0.2032" layer="94"/>
@@ -9704,12 +9701,9 @@ Bourns 3386 Series</description>
 <devices>
 <device name="" package="3386-6">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="1-1" pad="1-1"/>
-<connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="2-2" pad="2-2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="3-3" pad="3-3"/>
+<connect gate="G$1" pin="1" pad="1 1-1"/>
+<connect gate="G$1" pin="2" pad="2 2-2"/>
+<connect gate="G$1" pin="3" pad="3 3-3"/>
 </connects>
 <technologies>
 <technology name="">
