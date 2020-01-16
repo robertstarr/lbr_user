@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -20723,6 +20723,21 @@ body 3.5 x 9mm, exposed pad</description>
 </gates>
 <devices>
 <device name="" package="DIL08">
+<connects>
+<connect gate="G$1" pin="C+" pad="2"/>
+<connect gate="G$1" pin="C-" pad="4"/>
+<connect gate="G$1" pin="FC" pad="1"/>
+<connect gate="G$1" pin="GND" pad="3"/>
+<connect gate="G$1" pin="LV" pad="6"/>
+<connect gate="G$1" pin="OSC" pad="7"/>
+<connect gate="G$1" pin="OUT" pad="5"/>
+<connect gate="G$1" pin="V+" pad="8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="M" package="SO08">
 <connects>
 <connect gate="G$1" pin="C+" pad="2"/>
 <connect gate="G$1" pin="C-" pad="4"/>
