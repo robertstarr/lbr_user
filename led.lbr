@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1437,8 +1437,8 @@ IR transmitter Siemens</description>
 <wire x1="2.54" y1="1.27" x2="-2.54" y2="1.27" width="0.2032" layer="21"/>
 <smd name="A" x="-1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
 <smd name="C" x="1.422" y="0" dx="1.6" dy="1.803" layer="1"/>
-<text x="-2.54" y="1.5875" size="1.016" layer="25" ratio="18">&gt;NAME</text>
-<text x="-2.54" y="-2.5401" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<text x="-2.54" y="1.524" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-2.54" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 <rectangle x1="-0.1" y1="-0.1" x2="0.1" y2="0.1" layer="51"/>
 <rectangle x1="0.45" y1="-0.7" x2="0.8" y2="-0.45" layer="51"/>
 <rectangle x1="0.8" y1="-0.7" x2="0.9" y2="0.5" layer="51"/>
@@ -1449,6 +1449,7 @@ IR transmitter Siemens</description>
 <rectangle x1="0.1463" y1="-0.8375" x2="0.4713" y2="-0.5375" layer="21" rot="R90"/>
 <rectangle x1="0.1463" y1="0.5375" x2="0.4713" y2="0.8375" layer="21" rot="R90"/>
 <rectangle x1="0.1588" y1="-0.15" x2="0.4588" y2="0.15" layer="21" rot="R90"/>
+<text x="2.54" y="1.524" size="0.6096" layer="25" ratio="21" rot="R90">&gt;C</text>
 </package>
 <package name="P-LCC-2">
 <description>&lt;b&gt;TOPLED® High-optical Power LED (HOP)&lt;/b&gt;&lt;p&gt;
@@ -4927,6 +4928,7 @@ Various Types</description>
 </connects>
 <technologies>
 <technology name="">
+<attribute name="C" value="C" constant="no"/>
 <attribute name="LABEL" value="" constant="no"/>
 </technology>
 </technologies>
