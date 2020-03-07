@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="5" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -32,7 +32,7 @@
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="25" name="tNames" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
@@ -73,6 +73,11 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="Beschreib" color="9" fill="1" visible="no" active="no"/>
+<layer number="106" name="BGA-Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="107" name="BD-Top" color="5" fill="1" visible="no" active="no"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 </layers>
 <library>
 <description>&lt;b&gt;R/C MASTER-SMD! - v1.14 (03/30/2013)&lt;/b&gt;&lt;p&gt;
@@ -143,6 +148,7 @@ KEMET S / EIA 3216-12</description>
 <text x="-1.524" y="-1.778" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.1588" y1="-0.4763" x2="0.1588" y2="0.4763" layer="35"/>
 <rectangle x1="0.2" y1="-1" x2="0.5" y2="1" layer="21"/>
+<text x="2.159" y="1.016" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C3528-21/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - KEMET B / EIA 3528-21 Reflow solder&lt;p&gt;
@@ -159,6 +165,7 @@ KEMET T / EIA 3528-12</description>
 <rectangle x1="-1.877" y1="-0.6" x2="-1.752" y2="0.6" layer="51"/>
 <rectangle x1="1.752" y1="-0.6" x2="1.877" y2="0.6" layer="51"/>
 <rectangle x1="0.1" y1="-1.397" x2="0.4763" y2="1.397" layer="21"/>
+<text x="1.905" y="1.397" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C6032-28/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - KEMET C / EIA 6032-28 Reflow solder&lt;p&gt;
@@ -175,6 +182,7 @@ KEMET U / EIA 6032-15</description>
 <rectangle x1="2.823" y1="-1.1" x2="2.973" y2="1.1" layer="51"/>
 <rectangle x1="0.573" y1="-1.6" x2="0.973" y2="1.6" layer="21"/>
 <rectangle x1="-0.7" y1="-0.7" x2="0.7" y2="0.7" layer="35"/>
+<text x="3.048" y="1.524" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="CSV-A">
 <description>&lt;b&gt;ELECTROLYTIC&lt;/b&gt; - 3 mm dia, Panasonic A&lt;p&gt;</description>
@@ -1634,6 +1642,7 @@ AVX TACmicrochip,  Case-A</description>
 <wire x1="1.65" y1="0.85" x2="1.65" y2="-0.85" width="0.0006" layer="57"/>
 <wire x1="1.65" y1="-0.85" x2="-1.65" y2="-0.85" width="0.0006" layer="57"/>
 <wire x1="-1.65" y1="-0.85" x2="-1.65" y2="0.85" width="0.0006" layer="57"/>
+<text x="2.159" y="1.397" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C1206MP/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - 1206 (EIA 3216-18) MicroPitch&lt;p&gt;
@@ -1657,6 +1666,7 @@ AVX TACmicrochip,  Case-A</description>
 <wire x1="1.65" y1="0.85" x2="1.65" y2="-0.85" width="0.0006" layer="57"/>
 <wire x1="1.65" y1="-0.85" x2="-1.65" y2="-0.85" width="0.0006" layer="57"/>
 <wire x1="-1.65" y1="-0.85" x2="-1.65" y2="0.85" width="0.0006" layer="57"/>
+<text x="2.032" y="1.016" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C1210MP/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - 1210 (EIA 3528-15) MicroPitch&lt;p&gt;
@@ -1676,6 +1686,7 @@ AVX TACmicrochip,  Case-B</description>
 <rectangle x1="-1.7" y1="-1.4" x2="-1.3" y2="1.4" layer="51"/>
 <rectangle x1="1.3" y1="-1.4" x2="1.7" y2="1.4" layer="51"/>
 <rectangle x1="0.6" y1="-1.4" x2="1" y2="1.4" layer="51"/>
+<text x="2.286" y="1.651" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C7361-38">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt;&lt;p&gt;
@@ -1692,6 +1703,7 @@ chip tantalum</description>
 <rectangle x1="1.073" y1="-3.1" x2="1.473" y2="3.1" layer="21"/>
 <rectangle x1="-3.927" y1="-1.5" x2="-3.75" y2="1.5" layer="51" rot="R180"/>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
+<text x="3.81" y="1.905" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C7343-43">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt;&lt;p&gt;
@@ -1708,6 +1720,7 @@ chip tantalum</description>
 <rectangle x1="3.623" y1="-1.5" x2="3.8" y2="1.5" layer="51"/>
 <rectangle x1="1.073" y1="-2.2" x2="1.473" y2="2.2" layer="21"/>
 <rectangle x1="-3.8" y1="-1.5" x2="-3.623" y2="1.5" layer="51" rot="R180"/>
+<text x="3.937" y="1.524" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C1206">
 <description>&lt;b&gt;CAP&lt;/b&gt; - 1206</description>
@@ -2195,12 +2208,10 @@ chip tantalum</description>
 <package name="C7260/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt;&lt;p&gt;
 chip tantalum</description>
-<wire x1="4.8" y1="1.7" x2="4.75" y2="1.7" width="0.2032" layer="21"/>
-<wire x1="4.75" y1="1.7" x2="0.93" y2="1.7" width="0.2032" layer="21"/>
+<wire x1="4.8" y1="1.7" x2="0.93" y2="1.7" width="0.2032" layer="21"/>
 <wire x1="0.93" y1="1.7" x2="-4.15" y2="1.7" width="0.2032" layer="21"/>
 <wire x1="-4.15" y1="1.7" x2="-4.15" y2="-1.7" width="0.2032" layer="21"/>
-<wire x1="-4.15" y1="-1.7" x2="0.95" y2="-1.7" width="0.2032" layer="21"/>
-<wire x1="0.95" y1="-1.7" x2="4.8" y2="-1.7" width="0.2032" layer="21"/>
+<wire x1="-4.15" y1="-1.7" x2="4.8" y2="-1.7" width="0.2032" layer="21"/>
 <wire x1="4.8" y1="-1.7" x2="4.8" y2="1.7" width="0.2032" layer="21"/>
 <wire x1="0.93" y1="1.7" x2="0.93" y2="-1.7" width="0.2032" layer="21"/>
 <smd name="+" x="2.54" y="0" dx="2.6" dy="2.2" layer="1"/>
@@ -2209,6 +2220,7 @@ chip tantalum</description>
 <text x="-3.9688" y="-2.8575" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
 <rectangle x1="4.05" y1="-1.7" x2="4.75" y2="1.7" layer="21"/>
+<text x="3.683" y="1.905" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C7260-12/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt;&lt;p&gt;
@@ -2224,6 +2236,7 @@ chip tantalum</description>
 <text x="-2.8575" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.8575" y="-2.8575" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="0.535" y1="-1.5875" x2="1" y2="1.6" layer="21"/>
+<text x="3.175" y="1.397" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C3216/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt;&lt;p&gt;
@@ -2240,6 +2253,7 @@ chip tantalum</description>
 <text x="-2.2225" y="-2.0637" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.1999" y1="-0.5999" x2="0.1999" y2="0.5999" layer="35"/>
 <rectangle x1="2.286" y1="-0.889" x2="2.673" y2="0.889" layer="21"/>
+<text x="2.159" y="1.016" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C3528/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt;&lt;p&gt;
@@ -2257,6 +2271,7 @@ chip tantalum</description>
 <text x="-2.6987" y="-2.6987" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.3" y1="-1" x2="0.3" y2="1" layer="35"/>
 <rectangle x1="2.8575" y1="-1.5875" x2="3.3338" y2="1.5875" layer="21"/>
+<text x="2.667" y="1.651" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C6032/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt;&lt;p&gt;
@@ -2274,6 +2289,7 @@ chip tantalum</description>
 <text x="-3.9688" y="-2.8575" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
 <rectangle x1="4.05" y1="-1.7" x2="4.75" y2="1.7" layer="21"/>
+<text x="3.683" y="1.905" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C7343/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt;&lt;p&gt;
@@ -2291,6 +2307,7 @@ chip tantalum</description>
 <text x="-4.6037" y="-3.3338" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
 <rectangle x1="4.65" y1="-2.2" x2="5.35" y2="2.2" layer="21"/>
+<text x="4.445" y="2.286" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C0603MP">
 <description>&lt;b&gt;CAP&lt;/b&gt; - 0603 MicroPitch</description>
@@ -2453,6 +2470,7 @@ AVX TACmicrochip,  Case-R</description>
 <wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.0004" layer="57"/>
 <wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.0004" layer="57"/>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.0004" layer="57"/>
+<text x="1.524" y="1.143" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C0805MP/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - 0805 (EIA 2012-15) MicroPitch&lt;p&gt;
@@ -2473,6 +2491,7 @@ AVX TACmicrochip,  Case-R</description>
 <wire x1="1" y1="0.625" x2="1" y2="-0.625" width="0.0004" layer="57"/>
 <wire x1="1" y1="-0.625" x2="-1" y2="-0.625" width="0.0004" layer="57"/>
 <wire x1="-1" y1="-0.625" x2="-1" y2="0.625" width="0.0004" layer="57"/>
+<text x="1.397" y="0.889" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C0603MP/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - 0603 (EIA 1608-10) MicroPitch&lt;p&gt;
@@ -2493,6 +2512,7 @@ AVX TACmicrochip,  Case-L</description>
 <wire x1="0.85" y1="0.45" x2="0.85" y2="-0.45" width="0.0006" layer="57"/>
 <wire x1="0.85" y1="-0.45" x2="-0.85" y2="-0.45" width="0.0006" layer="57"/>
 <wire x1="-0.85" y1="-0.45" x2="-0.85" y2="0.45" width="0.0006" layer="57"/>
+<text x="1.016" y="0.635" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C0402/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - 0402 (EIA 1005-07)&lt;p&gt;
@@ -2552,8 +2572,7 @@ AVX TACmicrochip,  Case-B</description>
 <wire x1="3.302" y1="-1.778" x2="0.508" y2="-1.778" width="0.2032" layer="21"/>
 <wire x1="0.508" y1="-1.778" x2="-2.794" y2="-1.778" width="0.2032" layer="21"/>
 <wire x1="-2.794" y1="-1.778" x2="-2.794" y2="1.778" width="0.2032" layer="21"/>
-<wire x1="-1.75" y1="1.4" x2="1" y2="1.4" width="0.2032" layer="51"/>
-<wire x1="1" y1="1.4" x2="1.75" y2="1.4" width="0.2032" layer="51"/>
+<wire x1="-1.75" y1="1.4" x2="1.75" y2="1.4" width="0.2032" layer="51"/>
 <wire x1="1.75" y1="1.4" x2="1.75" y2="-1.4" width="0.2032" layer="51"/>
 <wire x1="1.75" y1="-1.4" x2="-1.75" y2="-1.4" width="0.2032" layer="51"/>
 <wire x1="-1.75" y1="-1.4" x2="-1.75" y2="1.4" width="0.2032" layer="51"/>
@@ -2567,6 +2586,7 @@ AVX TACmicrochip,  Case-B</description>
 <rectangle x1="-1.7" y1="-1.4" x2="-1.3" y2="1.4" layer="51"/>
 <rectangle x1="1.3" y1="-1.4" x2="1.7" y2="1.4" layer="51"/>
 <rectangle x1="0.6" y1="-1.4" x2="1" y2="1.4" layer="51"/>
+<text x="2.413" y="1.905" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C7361/T">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt;&lt;p&gt;
@@ -2584,6 +2604,7 @@ chip tantalum</description>
 <text x="-4.445" y="-4.1275" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="4.699" y1="-3.175" x2="5.334" y2="3.1" layer="21"/>
 <rectangle x1="-0.5001" y1="-1" x2="0.5001" y2="1" layer="35"/>
+<text x="4.191" y="3.302" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C1608MP">
 <description>&lt;b&gt;CAP&lt;/b&gt; - 1608 MicroPitch&lt;p&gt;</description>
@@ -2623,6 +2644,7 @@ AVX TACmicrochip,  Case-L</description>
 <wire x1="0.85" y1="0.45" x2="0.85" y2="-0.45" width="0.0006" layer="57"/>
 <wire x1="0.85" y1="-0.45" x2="-0.85" y2="-0.45" width="0.0006" layer="57"/>
 <wire x1="-0.85" y1="-0.45" x2="-0.85" y2="0.45" width="0.0006" layer="57"/>
+<text x="0.889" y="0.889" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="R0402MP">
 <description>&lt;b&gt;RESISTOR&lt;/b&gt; - 0402 MicroPitch&lt;p&gt;</description>
@@ -2841,6 +2863,7 @@ Vishay TANTAMOUNT, Conformal Coated</description>
 <text x="-2.667" y="2.032" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.667" y="-2.794" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="2.794" y1="-1.778" x2="3.175" y2="1.778" layer="21" rot="R180"/>
+<text x="2.159" y="1.905" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C594D-C">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - Case Code C&lt;p&gt;
@@ -2868,6 +2891,7 @@ Vishay TANTAMOUNT, Conformal Coated</description>
 <text x="-4.191" y="2.413" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-4.191" y="-3.048" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="4.2" y1="-2" x2="4.699" y2="2" layer="21" rot="R180"/>
+<text x="3.683" y="2.159" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C594D-D">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - Case Code D&lt;p&gt;
@@ -2895,6 +2919,7 @@ Vishay TANTAMOUNT, Conformal Coated</description>
 <text x="-4.699" y="2.921" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-4.699" y="-3.683" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="4.318" y1="-2.667" x2="4.8" y2="2.667" layer="21" rot="R180"/>
+<text x="3.81" y="2.794" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="C594D-R">
 <description>&lt;b&gt;TANT CAP&lt;/b&gt; - Case Code R&lt;p&gt;
@@ -2920,6 +2945,7 @@ Vishay TANTAMOUNT, Conformal Coated</description>
 <text x="-4.445" y="3.81" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-4.445" y="-4.445" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="4.281" y1="-3.429" x2="4.953" y2="3.429" layer="21" rot="R180"/>
+<text x="3.937" y="3.556" size="0.6096" layer="25" ratio="18">&gt;P</text>
 </package>
 <package name="L0201DS">
 <description>&lt;b&gt;INDUCTOR&lt;/b&gt; - CoilCraft DS&lt;p&gt;
@@ -3892,7 +3918,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3216-18" package="C3216-18/T">
@@ -3901,7 +3929,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3528" package="C3528/T">
@@ -3910,7 +3940,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="3528-21" package="C3528-21/T">
@@ -3919,7 +3951,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="6032" package="C6032/T">
@@ -3928,7 +3962,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="6032-28" package="C6032-28/T">
@@ -3937,7 +3973,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="7343" package="C7343/T">
@@ -3946,7 +3984,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="SV-H" package="CSV-H">
@@ -3982,7 +4022,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0805MP/T" package="C0805MP/T">
@@ -3991,7 +4033,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0603/T" package="C0603/T">
@@ -4000,7 +4044,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0603MP/T" package="C0603MP/T">
@@ -4009,7 +4055,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0402/T" package="C0402/T">
@@ -4018,7 +4066,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="0402MP/T" package="C0402MP/T">
@@ -4027,7 +4077,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1206/T" package="C1206/T">
@@ -4036,7 +4088,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1206MP/T" package="C1206MP/T">
@@ -4045,7 +4099,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1210/T" package="C1210/T">
@@ -4054,7 +4110,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="1210MP/T" package="C1210MP/T">
@@ -4063,7 +4121,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="7361" package="C7361/T">
@@ -4072,7 +4132,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="7361-38" package="C7361-38">
@@ -4081,7 +4143,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="7343-43" package="C7343-43">
@@ -4090,7 +4154,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="7260-12" package="C7260-12/T">
@@ -4099,7 +4165,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="7260" package="C7260/T">
@@ -4108,7 +4176,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="594D-B" package="C594D-B">
@@ -4117,7 +4187,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="594D-C" package="C594D-C">
@@ -4126,7 +4198,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="594D-D" package="C594D-D">
@@ -4135,7 +4209,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 <device name="594D-R" package="C594D-R">
@@ -4144,7 +4220,9 @@ Rohm LTR50</description>
 <connect gate="G$1" pin="-" pad="-"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="P" value="+" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
