@@ -5234,6 +5234,50 @@ common emitter</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="MBT3906DW1" prefix="Q">
+<description>TRANS 2PNP 40V 0.2A SC88</description>
+<gates>
+<gate name="A" symbol="PNP" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="PNP" x="17.78" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SC70-6">
+<connects>
+<connect gate="A" pin="B" pad="2"/>
+<connect gate="A" pin="C" pad="6"/>
+<connect gate="A" pin="E" pad="1"/>
+<connect gate="B" pin="B" pad="5"/>
+<connect gate="B" pin="C" pad="3"/>
+<connect gate="B" pin="E" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MUN5213DW1" prefix="Q">
+<description>TRANS 2NPN PREBIAS 0.25W SOT363</description>
+<gates>
+<gate name="A" symbol="NPN-DRIVER" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="NPN-DRIVER" x="27.94" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SC70-6">
+<connects>
+<connect gate="A" pin="B" pad="5"/>
+<connect gate="A" pin="C" pad="3"/>
+<connect gate="A" pin="E" pad="4"/>
+<connect gate="B" pin="B" pad="2"/>
+<connect gate="B" pin="C" pad="6"/>
+<connect gate="B" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
