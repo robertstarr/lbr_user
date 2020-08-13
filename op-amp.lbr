@@ -5847,7 +5847,7 @@ Dual-Supply</description>
 Single Operational Amplifier</description>
 <gates>
 <gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
-<gate name="P" symbol="PWRN_VDDGND" x="-20.32" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN_VDDGND" x="-15.24" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="DBV" package="SOT23-5">
@@ -6679,6 +6679,81 @@ Precision Low Noise, Low Input Bias Current Operational Amplifiers</description>
 </technologies>
 </device>
 <device name="P" package="DIL08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV333" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+Zero-Drift Amplifier 2 Circuit Rail-to-Rail</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="2.54" y="0" addlevel="always"/>
+<gate name="P" symbol="PWR_V+-" x="-12.7" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="DBV" package="SOT23-5">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="4"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="P" pin="V+" pad="5"/>
+<connect gate="P" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="6"/>
+<connect gate="P" pin="V+" pad="7"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV2333" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+Zero-Drift Amplifier 2 Circuit Rail-to-Rail</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="0" y="-15.24" addlevel="always" swaplevel="1"/>
+<gate name="P" symbol="PWR_V+-" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO08">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="P" pin="V+" pad="8"/>
+<connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DGK" package="VSSOP8">
 <connects>
 <connect gate="A" pin="+IN" pad="3"/>
 <connect gate="A" pin="-IN" pad="2"/>
