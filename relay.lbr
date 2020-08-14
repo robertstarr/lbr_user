@@ -9119,6 +9119,17 @@ PANASONIC TQ2 SERIES</description>
 <vertex x="0.381" y="0"/>
 </polygon>
 </symbol>
+<symbol name="ES">
+<wire x1="-2.54" y1="2.54" x2="-1.27" y2="2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="1.27" y1="2.54" x2="2.54" y2="2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-1.27" y1="-2.54" x2="-2.54" y2="-2.54" width="0.1524" layer="94" style="shortdash"/>
+<wire x1="-2.54" y1="-2.54" x2="-2.54" y2="2.54" width="0.1524" layer="94" style="shortdash"/>
+<pin name="P$1" x="2.54" y="-5.08" visible="off" length="point" direction="pas" rot="R90"/>
+<circle x="2.54" y="-2.54" radius="0.3175" width="0" layer="94"/>
+<wire x1="2.54" y1="-5.08" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="H550" prefix="K">
@@ -12537,10 +12548,12 @@ Panasonic</description>
 <gates>
 <gate name="G$1" symbol="K" x="-7.62" y="0" addlevel="always"/>
 <gate name="G$2" symbol="S" x="10.16" y="0" addlevel="always"/>
+<gate name="ES" symbol="ES" x="10.16" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="" package="7101-24-1010">
 <connects>
+<connect gate="ES" pin="P$1" pad="E"/>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$2" pin="COM" pad="3"/>
