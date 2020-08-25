@@ -3312,11 +3312,11 @@ microPower, Single-Supply, CMOS Instrumentation Amplifier</description>
 Low Power Low Offset Voltage&lt;br&gt;
 with open collector; LM139/LM239/LM339/LM2901/LM3302&lt;br&gt;</description>
 <gates>
-<gate name="P" symbol="PWR+G" x="2.54" y="12.7" addlevel="request"/>
-<gate name="A" symbol="COMPARATOR-OC" x="20.32" y="12.7" swaplevel="1"/>
-<gate name="B" symbol="COMPARATOR-OC" x="43.18" y="12.7" swaplevel="1"/>
-<gate name="C" symbol="COMPARATOR-OC" x="17.78" y="-10.16" swaplevel="1"/>
-<gate name="D" symbol="COMPARATOR-OC" x="43.18" y="-10.16" swaplevel="1"/>
+<gate name="P" symbol="PWR+G" x="-15.24" y="0" addlevel="request"/>
+<gate name="A" symbol="COMPARATOR-OC" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="COMPARATOR-OC" x="22.86" y="0" swaplevel="1"/>
+<gate name="C" symbol="COMPARATOR-OC" x="0" y="-17.78" swaplevel="1"/>
+<gate name="D" symbol="COMPARATOR-OC" x="22.86" y="-17.78" swaplevel="1"/>
 </gates>
 <devices>
 <device name="N" package="DIL14">
@@ -6763,6 +6763,61 @@ Zero-Drift Amplifier 2 Circuit Rail-to-Rail</description>
 <connect gate="B" pin="OUT" pad="7"/>
 <connect gate="P" pin="V+" pad="8"/>
 <connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LF444" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+QUAD JFET Input</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP" x="0" y="-15.24" swaplevel="1"/>
+<gate name="C" symbol="OPAMP" x="25.4" y="0" swaplevel="1"/>
+<gate name="D" symbol="OPAMP" x="25.4" y="-15.24" swaplevel="1"/>
+<gate name="P" symbol="PWR_V+-" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="P" pin="V+" pad="4"/>
+<connect gate="P" pin="V-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="N" package="DIL14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="P" pin="V+" pad="4"/>
+<connect gate="P" pin="V-" pad="11"/>
 </connects>
 <technologies>
 <technology name=""/>
