@@ -966,6 +966,17 @@ CoilCraft</description>
 <text x="-5.334" y="-4.064" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="6" y="-4" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 </package>
+<package name="PFL2015">
+<description>POWER INDUCTOR</description>
+<smd name="1" x="-0.89" y="0" dx="1.78" dy="1.02" layer="1" rot="R90"/>
+<smd name="2" x="0.89" y="0" dx="1.78" dy="1.02" layer="1" rot="R90"/>
+<text x="-1.7" y="1.4" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.7" y="-2.2" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-1.7" y1="1.2" x2="1.7" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="1.2" x2="1.7" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="1.7" y1="-1.2" x2="-1.7" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="-1.7" y1="-1.2" x2="-1.7" y2="1.2" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -1821,6 +1832,23 @@ Tunable Low Profile, CoilCraft</description>
 </gates>
 <devices>
 <device name="" package="MSS1048">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PFL2015" prefix="L">
+<description>POWER INDUCTOR</description>
+<gates>
+<gate name="G$1" symbol="LI" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PFL2015">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
