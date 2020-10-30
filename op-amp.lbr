@@ -817,11 +817,11 @@ wide body 7.5 mm/JEDEC MA-012AB</description>
 <wire x1="1.1" y1="-0.6" x2="-1.1" y2="-0.6" width="0.2032" layer="51"/>
 <wire x1="-1.1" y1="-0.6" x2="-1.1" y2="0.6" width="0.2032" layer="21"/>
 <circle x="-0.65" y="-0.25" radius="0.15" width="0" layer="21"/>
-<smd name="1" x="-0.65" y="-0.95" dx="0.4" dy="0.6" layer="1"/>
-<smd name="2" x="0" y="-0.95" dx="0.4" dy="0.6" layer="1"/>
-<smd name="3" x="0.65" y="-0.95" dx="0.4" dy="0.6" layer="1"/>
-<smd name="4" x="0.65" y="0.95" dx="0.4" dy="0.6" layer="1"/>
-<smd name="5" x="-0.65" y="0.95" dx="0.4" dy="0.6" layer="1"/>
+<smd name="1" x="-0.65" y="-1.1" dx="0.4" dy="0.9" layer="1"/>
+<smd name="2" x="0" y="-1.1" dx="0.4" dy="0.9" layer="1"/>
+<smd name="3" x="0.65" y="-1.1" dx="0.4" dy="0.9" layer="1"/>
+<smd name="4" x="0.65" y="1.1" dx="0.4" dy="0.9" layer="1"/>
+<smd name="5" x="-0.65" y="1.1" dx="0.4" dy="0.9" layer="1"/>
 <text x="-1.27" y="1.4288" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.27" y="-2.2225" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
@@ -838,12 +838,12 @@ wide body 7.5 mm/JEDEC MA-012AB</description>
 <wire x1="1.1" y1="-0.6" x2="-1.1" y2="-0.6" width="0.2032" layer="51"/>
 <wire x1="-1.1" y1="-0.6" x2="-1.1" y2="0.6" width="0.2032" layer="21"/>
 <circle x="-0.65" y="-0.25" radius="0.15" width="0" layer="21"/>
-<smd name="1" x="-0.65" y="-0.95" dx="0.4" dy="0.6" layer="1"/>
-<smd name="2" x="0" y="-0.95" dx="0.4" dy="0.6" layer="1"/>
-<smd name="3" x="0.65" y="-0.95" dx="0.4" dy="0.6" layer="1"/>
-<smd name="4" x="0.65" y="0.95" dx="0.4" dy="0.6" layer="1"/>
-<smd name="5" x="0" y="0.95" dx="0.4" dy="0.6" layer="1"/>
-<smd name="6" x="-0.65" y="0.95" dx="0.4" dy="0.6" layer="1"/>
+<smd name="1" x="-0.65" y="-1.1" dx="0.4" dy="0.9" layer="1"/>
+<smd name="2" x="0" y="-1.1" dx="0.4" dy="0.9" layer="1"/>
+<smd name="3" x="0.65" y="-1.1" dx="0.4" dy="0.9" layer="1"/>
+<smd name="4" x="0.65" y="1.1" dx="0.4" dy="0.9" layer="1"/>
+<smd name="5" x="0" y="1.1" dx="0.4" dy="0.9" layer="1"/>
+<smd name="6" x="-0.65" y="1.1" dx="0.4" dy="0.9" layer="1"/>
 <text x="-1.27" y="1.4288" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.27" y="-2.2225" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
@@ -6722,6 +6722,18 @@ Zero-Drift Amplifier 2 Circuit Rail-to-Rail</description>
 <connect gate="A" pin="OUT" pad="6"/>
 <connect gate="P" pin="V+" pad="7"/>
 <connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DCK" package="SC70-5">
+<connects>
+<connect gate="A" pin="+IN" pad="1"/>
+<connect gate="A" pin="-IN" pad="3"/>
+<connect gate="A" pin="OUT" pad="4"/>
+<connect gate="P" pin="V+" pad="5"/>
+<connect gate="P" pin="V-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
