@@ -2635,6 +2635,19 @@ Source: http://eshop.phoenixcontact.com .. 1751316.pdf</description>
 <text x="5.25" y="5.25" size="0.8128" layer="51" font="vector" ratio="10" align="center">5</text>
 <text x="8.75" y="5.25" size="0.8128" layer="51" font="vector" ratio="10" align="center">6</text>
 </package>
+<package name="1868144">
+<pad name="1" x="-5.25" y="0" drill="1.4224" diameter="2.54" shape="square"/>
+<pad name="2" x="-1.75" y="0" drill="1.4224" diameter="2.54"/>
+<pad name="3" x="1.75" y="0" drill="1.4224" diameter="2.54"/>
+<pad name="4" x="5.25" y="0" drill="1.4224" diameter="2.54"/>
+<wire x1="-9.4" y1="4.45" x2="9.4" y2="4.45" width="0.2032" layer="21"/>
+<wire x1="9.4" y1="4.45" x2="9.4" y2="-6.85" width="0.2032" layer="21"/>
+<wire x1="9.4" y1="-6.85" x2="-9.4" y2="-6.85" width="0.2032" layer="21"/>
+<wire x1="-9.4" y1="-6.85" x2="-9.4" y2="4.45" width="0.2032" layer="21"/>
+<rectangle x1="-9.4" y1="3.1" x2="9.4" y2="4.4" layer="21"/>
+<text x="-9.4" y="4.8" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="-3.3" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="SK">
@@ -3658,6 +3671,28 @@ Source: http://eshop.phoenixcontact.com .. 1751316.pdf</description>
 <connect gate="-4" pin="SK" pad="4"/>
 <connect gate="-5" pin="SK" pad="5"/>
 <connect gate="-6" pin="SK" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="1868144" prefix="J">
+<description>TERM BLK 4P TOP ENTRY 3.5MM PCB</description>
+<gates>
+<gate name="-1" symbol="SKB" x="0" y="0" addlevel="always"/>
+<gate name="-2" symbol="SKB" x="0" y="-5.08" addlevel="always"/>
+<gate name="-3" symbol="SKB" x="0" y="-10.16" addlevel="always"/>
+<gate name="-4" symbol="SKBU+V" x="0" y="-15.24" addlevel="always"/>
+</gates>
+<devices>
+<device name="" package="1868144">
+<connects>
+<connect gate="-1" pin="S" pad="1"/>
+<connect gate="-2" pin="S" pad="2"/>
+<connect gate="-3" pin="S" pad="3"/>
+<connect gate="-4" pin="S" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>

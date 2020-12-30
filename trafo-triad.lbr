@@ -433,6 +433,24 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-5.08" y="5.08" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-5.08" y="-5.715" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="TY-250P">
+<description>Audio Transformer</description>
+<pad name="1" x="-6.604" y="5.715" drill="0.9144" diameter="2.1844" shape="square"/>
+<pad name="2" x="-6.604" y="1.905" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<pad name="3" x="-6.604" y="-1.905" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<pad name="4" x="-6.604" y="-5.715" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<pad name="5" x="6.604" y="-5.715" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<pad name="6" x="6.604" y="-1.905" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<pad name="7" x="6.604" y="1.905" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<pad name="8" x="6.604" y="5.715" drill="0.9144" diameter="2.1844" shape="octagon"/>
+<wire x1="-10.16" y1="9.779" x2="10.16" y2="9.779" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="9.779" x2="10.16" y2="-9.779" width="0.2032" layer="21"/>
+<wire x1="10.16" y1="-9.779" x2="-10.16" y2="-9.779" width="0.2032" layer="21"/>
+<wire x1="-10.16" y1="-9.779" x2="-10.16" y2="9.779" width="0.2032" layer="21"/>
+<text x="-10.16" y="10.16" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" rot="R90" align="center">&gt;VALUE</text>
+<circle x="-3.81" y="5.715" radius="0.635" width="0" layer="27"/>
+</package>
 </packages>
 <symbols>
 <symbol name="REDSPEC-1">
@@ -503,7 +521,7 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <pin name="4" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="3" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
 </symbol>
-<symbol name="REDSPEC-4">
+<symbol name="TY-250P">
 <wire x1="2.54" y1="3.81" x2="2.54" y2="5.08" width="0.254" layer="94" curve="-180"/>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="3.81" width="0.254" layer="94" curve="-180"/>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="2.54" width="0.254" layer="94" curve="-180"/>
@@ -532,12 +550,14 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="-0.9525" y1="-5.08" x2="-0.635" y2="5.08" layer="94"/>
 <rectangle x1="0.635" y1="-5.08" x2="0.9525" y2="5.0801" layer="94"/>
 <rectangle x1="-0.1588" y1="-5.08" x2="0.1588" y2="5.08" layer="94"/>
-<pin name="6" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="1" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
-<pin name="3" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="8" x="7.62" y="-5.08" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="4" x="-7.62" y="5.08" visible="pad" length="short" direction="pas"/>
+<pin name="5" x="7.62" y="5.08" visible="pad" length="short" direction="pas" rot="R180"/>
 <pin name="2" x="-7.62" y="-5.08" visible="pad" length="short" direction="pas"/>
-<pin name="4" x="7.62" y="1.27" visible="pad" length="short" direction="pas" rot="R180"/>
-<pin name="5" x="7.62" y="-1.27" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="7" x="7.62" y="1.27" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="6" x="7.62" y="-1.27" visible="pad" length="short" direction="pas" rot="R180"/>
+<pin name="3" x="-7.62" y="0" visible="pad" length="short" direction="pas"/>
+<wire x1="-5.08" y1="0" x2="-2.54" y2="0" width="0.1524" layer="94"/>
 </symbol>
 <symbol name="REDSPEC-5">
 <wire x1="-2.54" y1="-5.08" x2="-5.08" y2="-5.08" width="0.1524" layer="94"/>
@@ -712,17 +732,17 @@ Red Spec Series</description>
 <description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
 Red Spec Series</description>
 <gates>
-<gate name="G$1" symbol="REDSPEC-4" x="0" y="0"/>
+<gate name="G$1" symbol="TY-250P" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="REDSPEC-4">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="4" pad="1"/>
+<connect gate="G$1" pin="5" pad="3"/>
+<connect gate="G$1" pin="6" pad="5"/>
+<connect gate="G$1" pin="7" pad="4"/>
+<connect gate="G$1" pin="8" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -946,17 +966,17 @@ Red Spec Series</description>
 <description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
 Red Spec Series</description>
 <gates>
-<gate name="G$1" symbol="REDSPEC-4" x="0" y="0"/>
+<gate name="G$1" symbol="TY-250P" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="REDSPEC-4">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="4" pad="1"/>
+<connect gate="G$1" pin="5" pad="3"/>
+<connect gate="G$1" pin="6" pad="5"/>
+<connect gate="G$1" pin="7" pad="4"/>
+<connect gate="G$1" pin="8" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -968,17 +988,17 @@ Red Spec Series</description>
 <description>&lt;b&gt;AUDIO TRANSFORMER&lt;/b&gt;&lt;p&gt;
 Red Spec Series</description>
 <gates>
-<gate name="G$1" symbol="REDSPEC-4" x="0" y="0"/>
+<gate name="G$1" symbol="TY-250P" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="REDSPEC-4">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
-<connect gate="G$1" pin="3" pad="3"/>
-<connect gate="G$1" pin="4" pad="4"/>
-<connect gate="G$1" pin="5" pad="5"/>
-<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="4" pad="1"/>
+<connect gate="G$1" pin="5" pad="3"/>
+<connect gate="G$1" pin="6" pad="5"/>
+<connect gate="G$1" pin="7" pad="4"/>
+<connect gate="G$1" pin="8" pad="6"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -1014,6 +1034,28 @@ Red Spec Series</description>
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TY-250P" prefix="T">
+<description>AUDIO TRANSFORMER</description>
+<gates>
+<gate name="G$1" symbol="TY-250P" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="TY-250P">
+<connects>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+<connect gate="G$1" pin="4" pad="4"/>
+<connect gate="G$1" pin="5" pad="5"/>
+<connect gate="G$1" pin="6" pad="6"/>
+<connect gate="G$1" pin="7" pad="7"/>
+<connect gate="G$1" pin="8" pad="8"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
