@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="7.7.0">
+<eagle version="9.5.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
+<setting keepoldvectorfont="yes"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -34,9 +35,9 @@
 <layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="no" active="yes"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="no" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -46,15 +47,15 @@
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="yes"/>
 <layer number="37" name="tTest" color="7" fill="1" visible="no" active="yes"/>
 <layer number="38" name="bTest" color="7" fill="1" visible="no" active="yes"/>
-<layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="yes"/>
+<layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
 <layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="yes"/>
-<layer number="45" name="Holes" color="7" fill="1" visible="no" active="yes"/>
+<layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="no" active="yes"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="no" active="yes"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="48" name="Document" color="7" fill="1" visible="no" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="3" fill="1" visible="yes" active="yes"/>
@@ -406,6 +407,21 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <wire x1="1.5" y1="-4.25" x2="-1.5" y2="-4.25" width="0.2032" layer="51"/>
 <wire x1="-1.5" y1="-4.25" x2="-1.5" y2="-2" width="0.2032" layer="51"/>
 <wire x1="-1.5" y1="-2" x2="-0.75" y2="-1.25" width="0.2032" layer="51"/>
+</package>
+<package name="39303055">
+<description>&lt;b&gt;Mini-Fit Jr. Header, Single Row, Right-Angle,5 Circuits&lt;/b&gt;
+&lt;p&gt; PA Polyamide Nylon 6/6, 94V-2, Tin (Sn) Plating,  with Snap-in Plastic Peg PCB Lock &lt;/p&gt;</description>
+<pad name="5" x="-8.382" y="0" drill="1.8" shape="octagon" rot="R90"/>
+<pad name="4" x="-4.191" y="0" drill="1.8" shape="octagon" rot="R90"/>
+<pad name="3" x="0" y="0" drill="1.8" shape="octagon" rot="R90"/>
+<pad name="2" x="4.191" y="0" drill="1.8" shape="octagon" rot="R90"/>
+<pad name="1" x="8.382" y="0" drill="1.8" shape="square" rot="R90"/>
+<hole x="-8.382" y="-7.3" drill="3"/>
+<hole x="8.382" y="-7.3" drill="3"/>
+<wire x1="-11.1" y1="-1.1" x2="-11.1" y2="-13.9" width="0.127" layer="21"/>
+<wire x1="-11.1" y1="-13.9" x2="0" y2="-13.9" width="0.127" layer="21"/>
+<wire x1="0" y1="-13.9" x2="11.1" y2="-13.9" width="0.127" layer="21"/>
+<wire x1="11.1" y1="-13.9" x2="11.1" y2="-1.1" width="0.127" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -1652,6 +1668,32 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 </gates>
 <devices>
 <device name="">
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="39303055">
+<description>&lt;b&gt;Mini-Fit Jr. Header, Single Row, Right-Angle,5 Circuits&lt;/b&gt;
+
+&lt;p&gt;PA Polyamide Nylon 6/6, 94V-2, Tin (Sn) Plating,  with Snap-in Plastic Peg PCB Lock&lt;/p&gt;</description>
+<gates>
+<gate name="_1" symbol="P-NV" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="_2" symbol="P-N" x="0" y="-2.54" addlevel="always" swaplevel="1"/>
+<gate name="_3" symbol="P-N" x="0" y="-5.08" addlevel="always" swaplevel="1"/>
+<gate name="_4" symbol="P-N" x="0" y="-7.62" addlevel="always" swaplevel="1"/>
+<gate name="_5" symbol="P-N" x="0" y="-10.16" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="39303055">
+<connects>
+<connect gate="_1" pin="P" pad="1"/>
+<connect gate="_2" pin="P" pad="2"/>
+<connect gate="_3" pin="P" pad="3"/>
+<connect gate="_4" pin="P" pad="4"/>
+<connect gate="_5" pin="P" pad="5"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>
