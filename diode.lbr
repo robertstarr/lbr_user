@@ -7004,6 +7004,20 @@ AXIAL LEAD CASE 017AA</description>
 <rectangle x1="-2.2" y1="1" x2="-1.5" y2="1.6" layer="21"/>
 <rectangle x1="-2.2" y1="-1.6" x2="-1.5" y2="-1" layer="21"/>
 </package>
+<package name="FBP-02C">
+<description>FBP-02C</description>
+<smd name="2" x="0.35" y="0" dx="0.62" dy="0.4" layer="1" rot="R180"/>
+<smd name="1" x="-0.4" y="0" dx="0.5" dy="0.4" layer="1" rot="R180"/>
+<wire x1="0.5" y1="-0.3" x2="-0.5" y2="-0.3" width="0.0508" layer="51"/>
+<wire x1="-0.5" y1="-0.3" x2="-0.5" y2="0.3" width="0.0508" layer="51"/>
+<wire x1="-0.5" y1="0.3" x2="0.5" y2="0.3" width="0.0508" layer="51"/>
+<wire x1="0.5" y1="0.3" x2="0.5" y2="-0.3" width="0.0508" layer="51"/>
+<text x="-0.8" y="0.75" size="0.6096" layer="25" ratio="18">&gt;NAME</text>
+<text x="-0.75" y="-1" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-0.5" y1="0.45" x2="0.5" y2="0.45" width="0.2032" layer="27"/>
+<wire x1="-0.55" y1="-0.45" x2="0.45" y2="-0.45" width="0.2032" layer="27"/>
+<rectangle x1="-0.8" y1="0.35" x2="-0.5" y2="0.65" layer="27"/>
+</package>
 </packages>
 <symbols>
 <symbol name="D">
@@ -18886,6 +18900,23 @@ General-purpose diode for high-speed switching</description>
 </gates>
 <devices>
 <device name="" package="DFN1006-2L">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ESD5451X" prefix="D">
+<description>TVS Bi-directional</description>
+<gates>
+<gate name="G$1" symbol="ZD-U" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FBP-02C">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
