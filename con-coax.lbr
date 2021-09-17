@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1319,6 +1319,52 @@ muRata</description>
 <wire x1="1.524" y1="12.319" x2="1.524" y2="9.017" width="0.254" layer="21"/>
 <wire x1="1.524" y1="12.319" x2="-1.524" y2="12.319" width="0.254" layer="21" curve="180.397807"/>
 </package>
+<package name="PE44206">
+<wire x1="2.54" y1="9.2075" x2="2.54" y2="8.255" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="8.255" x2="3.175" y2="8.255" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="8.255" x2="3.175" y2="7.62" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="7.62" x2="3.175" y2="6.985" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="6.985" x2="3.175" y2="6.35" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="6.35" x2="3.175" y2="5.715" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="5.715" x2="3.175" y2="5.08" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="5.08" x2="3.175" y2="4.445" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="4.445" x2="3.175" y2="3.4925" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="3.4925" x2="2.54" y2="3.4925" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="3.4925" x2="2.54" y2="1.5875" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="1.5875" x2="-2.54" y2="1.5875" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="1.5875" x2="-2.54" y2="3.4925" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="3.4925" x2="-3.175" y2="3.4925" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="3.4925" x2="-3.175" y2="4.445" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="4.445" x2="-3.175" y2="5.08" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="5.08" x2="-3.175" y2="5.715" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="5.715" x2="-3.175" y2="6.35" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="6.35" x2="-3.175" y2="6.985" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="6.985" x2="-3.175" y2="7.62" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="7.62" x2="-3.175" y2="8.255" width="0.2032" layer="51"/>
+<wire x1="-3.175" y1="8.255" x2="-2.54" y2="8.255" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="8.255" x2="-2.54" y2="9.2075" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="9.2075" x2="2.54" y2="9.2075" width="0.2032" layer="51"/>
+<wire x1="2.54" y1="8.255" x2="-2.54" y2="8.255" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="8.255" x2="-3.175" y2="7.62" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="7.62" x2="-3.175" y2="6.985" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="6.985" x2="-3.175" y2="6.35" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="6.35" x2="-3.175" y2="5.715" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="5.715" x2="-3.175" y2="5.08" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="5.08" x2="-3.175" y2="4.445" width="0.2032" layer="51"/>
+<wire x1="3.175" y1="4.445" x2="-3.175" y2="3.81" width="0.2032" layer="51"/>
+<smd name="GND@2" x="4.3815" y="-2.54" dx="2.413" dy="5.08" layer="1" thermals="no"/>
+<smd name="GND@1" x="-4.3815" y="-2.54" dx="2.413" dy="5.08" layer="1" thermals="no"/>
+<smd name="P" x="0" y="-2.54" dx="0.8" dy="5.08" layer="1" thermals="no"/>
+<smd name="GND@3" x="4.3815" y="-2.54" dx="2.413" dy="5.08" layer="16" thermals="no"/>
+<smd name="GND@4" x="-4.3815" y="-2.54" dx="2.413" dy="5.08" layer="16" thermals="no"/>
+<text x="6.985" y="-5.08" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-7.62" y="-5.08" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<text x="-6.35" y="-5.08" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+<rectangle x1="1.5875" y1="-3.175" x2="6.35" y2="-1.5875" layer="51" rot="R270"/>
+<rectangle x1="-1.5875" y1="-1.905" x2="1.5875" y2="-1.27" layer="51" rot="R270"/>
+<rectangle x1="-0.79375" y1="-3.96875" x2="0.79375" y2="5.55625" layer="51" rot="R270"/>
+<rectangle x1="-6.35" y1="-3.1749" x2="-1.5876" y2="-1.5875" layer="51" rot="R270"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BU-BNC">
@@ -2142,6 +2188,25 @@ Ultra Small Surface Mount, Hirose</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PE44206" prefix="J">
+<description>SMA CONNECTOR</description>
+<gates>
+<gate name="G$1" symbol="BNC_MGND1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="PE44206">
+<connects>
+<connect gate="G$1" pin="GND" pad="GND@1 GND@2 GND@3 GND@4"/>
+<connect gate="G$1" pin="P" pad="P"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>

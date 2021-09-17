@@ -3514,6 +3514,20 @@ LINE FILTER WE-SL5, WURTH</description>
 <text x="3.175" y="-2.54" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <rectangle x1="3" y1="-0.3" x2="3.8" y2="0.3" layer="21"/>
 </package>
+<package name="08CCM">
+<description>08 CCM (non-magnetic)&lt;br&gt;
+Fastron Group</description>
+<pad name="1" x="-12.065" y="0" drill="1.016" diameter="2.1844" shape="octagon"/>
+<pad name="2" x="12.065" y="0" drill="1.016" diameter="2.1844" shape="octagon"/>
+<wire x1="-8.25" y1="2.5" x2="8.25" y2="2.5" width="0.2032" layer="21"/>
+<wire x1="8.25" y1="2.5" x2="8.25" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="8.25" y1="-2.5" x2="-8.25" y2="-2.5" width="0.2032" layer="21"/>
+<wire x1="-8.25" y1="-2.5" x2="-8.25" y2="2.5" width="0.2032" layer="21"/>
+<text x="-8.255" y="2.8575" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<rectangle x1="-10.795" y1="-0.3175" x2="-8.255" y2="0.3175" layer="21"/>
+<rectangle x1="8.255" y1="-0.3175" x2="10.795" y2="0.3175" layer="21" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="DRK">
@@ -5227,6 +5241,24 @@ API Delvin, Inc.</description>
 </gates>
 <devices>
 <device name="" package="2474R">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="08CCM" prefix="L">
+<description>Fixed Choke Coil (non-magnetic)&lt;br&gt;
+Fastron Group</description>
+<gates>
+<gate name="G$1" symbol="DR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="08CCM">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

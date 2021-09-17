@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -14405,6 +14405,32 @@ body 3.5 x 9mm, exposed pad</description>
 <wire x1="10.16" y1="-7.62" x2="-10.16" y2="-7.62" width="0.4064" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="-10.16" y2="7.62" width="0.4064" layer="94"/>
 <pin name="IN+" x="-15.24" y="5.08" length="middle" direction="pas"/>
+</symbol>
+<symbol name="MAX31865">
+<wire x1="-15.24" y1="25.4" x2="15.24" y2="25.4" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="25.4" x2="15.24" y2="-27.94" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="-27.94" x2="-15.24" y2="-27.94" width="0.4064" layer="94"/>
+<wire x1="-15.24" y1="-27.94" x2="-15.24" y2="25.4" width="0.4064" layer="94"/>
+<pin name="!DRDY!" x="-20.32" y="20.32" length="middle" direction="oc"/>
+<pin name="DVDD" x="-20.32" y="-2.54" length="middle"/>
+<pin name="VDD" x="-20.32" y="-7.62" length="middle"/>
+<pin name="BIAS" x="20.32" y="22.86" length="middle" rot="R180"/>
+<pin name="REFIN+" x="20.32" y="17.78" length="middle" rot="R180"/>
+<pin name="REFIN-" x="20.32" y="12.7" length="middle" rot="R180"/>
+<pin name="ISENSOR" x="20.32" y="7.62" length="middle" rot="R180"/>
+<pin name="FORCE+" x="20.32" y="0" length="middle" rot="R180"/>
+<pin name="FORCE2" x="20.32" y="-5.08" length="middle" rot="R180"/>
+<pin name="RTDIN+" x="20.32" y="-10.16" length="middle" rot="R180"/>
+<pin name="RTDIN-" x="20.32" y="-20.32" length="middle" rot="R180"/>
+<pin name="FORCE-" x="20.32" y="-25.4" length="middle" rot="R180"/>
+<pin name="GND@13" x="-20.32" y="-25.4" length="middle"/>
+<pin name="SDI" x="-20.32" y="17.78" length="middle" direction="in"/>
+<pin name="SCLK" x="-20.32" y="12.7" length="middle" direction="in"/>
+<pin name="!CS!" x="-20.32" y="22.86" length="middle" direction="oc"/>
+<pin name="SDO" x="-20.32" y="15.24" length="middle" direction="out"/>
+<pin name="DGND" x="-20.32" y="-17.78" length="middle"/>
+<pin name="GND" x="-20.32" y="-22.86" length="middle"/>
+<pin name="NC@20" x="-20.32" y="7.62" length="middle"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -30467,6 +30493,40 @@ with Alarm</description>
 <connect gate="G$1" pin="N_OUT" pad="4"/>
 <connect gate="G$1" pin="P_OUT" pad="5"/>
 <connect gate="G$1" pin="V+" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MAX31865" prefix="U">
+<gates>
+<gate name="G$1" symbol="MAX31865" x="0" y="0"/>
+</gates>
+<devices>
+<device name="AAP" package="SSOP20">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="16"/>
+<connect gate="G$1" pin="!DRDY!" pad="1"/>
+<connect gate="G$1" pin="BIAS" pad="4"/>
+<connect gate="G$1" pin="DGND" pad="18"/>
+<connect gate="G$1" pin="DVDD" pad="2"/>
+<connect gate="G$1" pin="FORCE+" pad="8"/>
+<connect gate="G$1" pin="FORCE-" pad="12"/>
+<connect gate="G$1" pin="FORCE2" pad="9"/>
+<connect gate="G$1" pin="GND" pad="19"/>
+<connect gate="G$1" pin="GND@13" pad="13"/>
+<connect gate="G$1" pin="ISENSOR" pad="7"/>
+<connect gate="G$1" pin="NC@20" pad="20"/>
+<connect gate="G$1" pin="REFIN+" pad="5"/>
+<connect gate="G$1" pin="REFIN-" pad="6"/>
+<connect gate="G$1" pin="RTDIN+" pad="10"/>
+<connect gate="G$1" pin="RTDIN-" pad="11"/>
+<connect gate="G$1" pin="SCLK" pad="15"/>
+<connect gate="G$1" pin="SDI" pad="14"/>
+<connect gate="G$1" pin="SDO" pad="17"/>
+<connect gate="G$1" pin="VDD" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
