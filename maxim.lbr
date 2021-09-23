@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3521,6 +3521,49 @@ body 3.5 x 9mm, exposed pad</description>
 <rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
 <rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.5" layer="51"/>
+</package>
+<package name="TQFN20-5X5">
+<description>TQFN-20 (5 x 5 MM)</description>
+<wire x1="-2.5" y1="-2.5" x2="-2.5" y2="2.5" width="0.0508" layer="51"/>
+<wire x1="-2.5" y1="2.5" x2="2.5" y2="2.5" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="2.5" x2="2.5" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="-2.5" x2="-2.5" y2="-2.5" width="0.0508" layer="51"/>
+<wire x1="-2.75" y1="-1.8" x2="-2.75" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-2.75" y1="-2.75" x2="-1.8" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="-2.75" y1="1.8" x2="-2.75" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="-2.75" y1="2.75" x2="-1.8" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="1.8" y1="-2.75" x2="2.75" y2="-2.75" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="-2.75" x2="2.75" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="1.8" x2="2.75" y2="2.75" width="0.2032" layer="21"/>
+<wire x1="2.75" y1="2.75" x2="1.8" y2="2.75" width="0.2032" layer="21"/>
+<smd name="1" x="-1.3" y="-2.34" dx="0.95" dy="0.35" layer="1" rot="R90"/>
+<smd name="2" x="-0.65" y="-2.34" dx="0.95" dy="0.35" layer="1" rot="R90"/>
+<smd name="3" x="0" y="-2.34" dx="0.95" dy="0.35" layer="1" rot="R90"/>
+<smd name="4" x="0.65" y="-2.34" dx="0.95" dy="0.35" layer="1" rot="R90"/>
+<smd name="5" x="1.3" y="-2.34" dx="0.95" dy="0.35" layer="1" rot="R90"/>
+<smd name="6" x="2.34" y="-1.3" dx="0.95" dy="0.35" layer="1" rot="R180"/>
+<smd name="7" x="2.34" y="-0.65" dx="0.95" dy="0.35" layer="1" rot="R180"/>
+<smd name="8" x="2.34" y="0" dx="0.95" dy="0.35" layer="1" rot="R180"/>
+<smd name="9" x="2.34" y="0.65" dx="0.95" dy="0.35" layer="1" rot="R180"/>
+<smd name="10" x="2.34" y="1.3" dx="0.95" dy="0.35" layer="1" rot="R180"/>
+<smd name="11" x="1.3" y="2.34" dx="0.95" dy="0.35" layer="1" rot="R270"/>
+<smd name="12" x="0.65" y="2.34" dx="0.95" dy="0.35" layer="1" rot="R270"/>
+<smd name="13" x="0" y="2.34" dx="0.95" dy="0.35" layer="1" rot="R270"/>
+<smd name="14" x="-0.65" y="2.34" dx="0.95" dy="0.35" layer="1" rot="R90"/>
+<smd name="15" x="-1.3" y="2.34" dx="0.95" dy="0.35" layer="1" rot="R90"/>
+<smd name="16" x="-2.34" y="1.3" dx="0.95" dy="0.35" layer="1"/>
+<text x="-2.54" y="3.175" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.54" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.3" y1="0.1625" x2="-0.1625" y2="1.3" layer="31"/>
+<rectangle x1="0.1625" y1="0.1625" x2="1.3" y2="1.3" layer="31"/>
+<rectangle x1="0.1625" y1="-1.3" x2="1.3" y2="-0.1625" layer="31"/>
+<rectangle x1="-1.3" y1="-1.3" x2="-0.1625" y2="-0.1625" layer="31"/>
+<rectangle x1="-2.75" y1="-2.75" x2="-2.125" y2="-2.125" layer="21" rot="R90"/>
+<smd name="EP" x="0" y="0" dx="3" dy="3" layer="1" thermals="no" cream="no"/>
+<smd name="17" x="-2.34" y="0.65" dx="0.95" dy="0.35" layer="1"/>
+<smd name="18" x="-2.34" y="0" dx="0.95" dy="0.35" layer="1"/>
+<smd name="19" x="-2.34" y="-0.65" dx="0.95" dy="0.35" layer="1"/>
+<smd name="20" x="-2.34" y="-1.3" dx="0.95" dy="0.35" layer="1"/>
 </package>
 </packages>
 <symbols>
@@ -14407,30 +14450,32 @@ body 3.5 x 9mm, exposed pad</description>
 <pin name="IN+" x="-15.24" y="5.08" length="middle" direction="pas"/>
 </symbol>
 <symbol name="MAX31865">
-<wire x1="-15.24" y1="25.4" x2="15.24" y2="25.4" width="0.4064" layer="94"/>
-<wire x1="15.24" y1="25.4" x2="15.24" y2="-27.94" width="0.4064" layer="94"/>
-<wire x1="15.24" y1="-27.94" x2="-15.24" y2="-27.94" width="0.4064" layer="94"/>
-<wire x1="-15.24" y1="-27.94" x2="-15.24" y2="25.4" width="0.4064" layer="94"/>
-<pin name="!DRDY!" x="-20.32" y="20.32" length="middle" direction="oc"/>
-<pin name="DVDD" x="-20.32" y="-2.54" length="middle"/>
-<pin name="VDD" x="-20.32" y="-7.62" length="middle"/>
-<pin name="BIAS" x="20.32" y="22.86" length="middle" rot="R180"/>
-<pin name="REFIN+" x="20.32" y="17.78" length="middle" rot="R180"/>
-<pin name="REFIN-" x="20.32" y="12.7" length="middle" rot="R180"/>
-<pin name="ISENSOR" x="20.32" y="7.62" length="middle" rot="R180"/>
-<pin name="FORCE+" x="20.32" y="0" length="middle" rot="R180"/>
-<pin name="FORCE2" x="20.32" y="-5.08" length="middle" rot="R180"/>
-<pin name="RTDIN+" x="20.32" y="-10.16" length="middle" rot="R180"/>
-<pin name="RTDIN-" x="20.32" y="-20.32" length="middle" rot="R180"/>
-<pin name="FORCE-" x="20.32" y="-25.4" length="middle" rot="R180"/>
-<pin name="GND@13" x="-20.32" y="-25.4" length="middle"/>
-<pin name="SDI" x="-20.32" y="17.78" length="middle" direction="in"/>
-<pin name="SCLK" x="-20.32" y="12.7" length="middle" direction="in"/>
-<pin name="!CS!" x="-20.32" y="22.86" length="middle" direction="oc"/>
-<pin name="SDO" x="-20.32" y="15.24" length="middle" direction="out"/>
-<pin name="DGND" x="-20.32" y="-17.78" length="middle"/>
-<pin name="GND" x="-20.32" y="-22.86" length="middle"/>
-<pin name="NC@20" x="-20.32" y="7.62" length="middle"/>
+<wire x1="-12.7" y1="30.48" x2="12.7" y2="30.48" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="30.48" x2="12.7" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="12.7" y1="-30.48" x2="-12.7" y2="-30.48" width="0.4064" layer="94"/>
+<wire x1="-12.7" y1="-30.48" x2="-12.7" y2="30.48" width="0.4064" layer="94"/>
+<pin name="!DRDY!" x="-17.78" y="25.4" length="middle" direction="oc"/>
+<pin name="DVDD" x="-17.78" y="7.62" length="middle"/>
+<pin name="VDD" x="-17.78" y="-17.78" length="middle"/>
+<pin name="BIAS" x="17.78" y="27.94" length="middle" rot="R180"/>
+<pin name="REFIN+" x="17.78" y="22.86" length="middle" rot="R180"/>
+<pin name="REFIN-" x="17.78" y="17.78" length="middle" rot="R180"/>
+<pin name="ISENSOR" x="17.78" y="12.7" length="middle" rot="R180"/>
+<pin name="FORCE+" x="17.78" y="-2.54" length="middle" rot="R180"/>
+<pin name="FORCE2" x="17.78" y="-5.08" length="middle" rot="R180"/>
+<pin name="RTDIN+" x="17.78" y="-12.7" length="middle" rot="R180"/>
+<pin name="RTDIN-" x="17.78" y="-22.86" length="middle" rot="R180"/>
+<pin name="FORCE-" x="17.78" y="-27.94" length="middle" rot="R180"/>
+<pin name="GND1" x="-17.78" y="-25.4" length="middle"/>
+<pin name="SDI" x="-17.78" y="20.32" length="middle" direction="in"/>
+<pin name="SCLK" x="-17.78" y="22.86" length="middle" direction="in"/>
+<pin name="!CS!" x="-17.78" y="27.94" length="middle" direction="oc"/>
+<pin name="SDO" x="-17.78" y="17.78" length="middle" direction="out"/>
+<pin name="DGND" x="-17.78" y="-2.54" length="middle"/>
+<pin name="GND2" x="-17.78" y="-27.94" length="middle"/>
+<pin name="NC" x="17.78" y="7.62" length="middle" rot="R180"/>
+<text x="-12.7" y="31.115" size="1.778" layer="95">&gt;NAME</text>
+<text x="-12.7" y="-33.02" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -30501,6 +30546,7 @@ with Alarm</description>
 </devices>
 </deviceset>
 <deviceset name="MAX31865" prefix="U">
+<description>RTD Temp Monitoring System - SPI Output</description>
 <gates>
 <gate name="G$1" symbol="MAX31865" x="0" y="0"/>
 </gates>
@@ -30515,10 +30561,10 @@ with Alarm</description>
 <connect gate="G$1" pin="FORCE+" pad="8"/>
 <connect gate="G$1" pin="FORCE-" pad="12"/>
 <connect gate="G$1" pin="FORCE2" pad="9"/>
-<connect gate="G$1" pin="GND" pad="19"/>
-<connect gate="G$1" pin="GND@13" pad="13"/>
+<connect gate="G$1" pin="GND1" pad="19"/>
+<connect gate="G$1" pin="GND2" pad="13"/>
 <connect gate="G$1" pin="ISENSOR" pad="7"/>
-<connect gate="G$1" pin="NC@20" pad="20"/>
+<connect gate="G$1" pin="NC" pad="20"/>
 <connect gate="G$1" pin="REFIN+" pad="5"/>
 <connect gate="G$1" pin="REFIN-" pad="6"/>
 <connect gate="G$1" pin="RTDIN+" pad="10"/>
@@ -30527,6 +30573,33 @@ with Alarm</description>
 <connect gate="G$1" pin="SDI" pad="14"/>
 <connect gate="G$1" pin="SDO" pad="17"/>
 <connect gate="G$1" pin="VDD" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="ATP" package="TQFN20-5X5">
+<connects>
+<connect gate="G$1" pin="!CS!" pad="13"/>
+<connect gate="G$1" pin="!DRDY!" pad="18"/>
+<connect gate="G$1" pin="BIAS" pad="1"/>
+<connect gate="G$1" pin="DGND" pad="15"/>
+<connect gate="G$1" pin="DVDD" pad="19"/>
+<connect gate="G$1" pin="FORCE+" pad="5"/>
+<connect gate="G$1" pin="FORCE-" pad="9"/>
+<connect gate="G$1" pin="FORCE2" pad="6"/>
+<connect gate="G$1" pin="GND1" pad="16 EP"/>
+<connect gate="G$1" pin="GND2" pad="10"/>
+<connect gate="G$1" pin="ISENSOR" pad="4"/>
+<connect gate="G$1" pin="NC" pad="17"/>
+<connect gate="G$1" pin="REFIN+" pad="2"/>
+<connect gate="G$1" pin="REFIN-" pad="3"/>
+<connect gate="G$1" pin="RTDIN+" pad="7"/>
+<connect gate="G$1" pin="RTDIN-" pad="8"/>
+<connect gate="G$1" pin="SCLK" pad="12"/>
+<connect gate="G$1" pin="SDI" pad="11"/>
+<connect gate="G$1" pin="SDO" pad="14"/>
+<connect gate="G$1" pin="VDD" pad="20"/>
 </connects>
 <technologies>
 <technology name=""/>
