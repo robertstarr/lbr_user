@@ -2498,6 +2498,38 @@ body 2x2x1mm</description>
 <rectangle x1="-4.5" y1="-2.35" x2="-3.45" y2="-2.15" layer="51"/>
 <rectangle x1="-4.5" y1="-2.85" x2="-3.45" y2="-2.65" layer="51"/>
 </package>
+<package name="HLGA-10L">
+<description>HLGA-10L (2.0 x 2.0 x 0.73 mm)</description>
+<smd name="1" x="-0.8125" y="0.25" dx="0.25" dy="0.375" layer="1" rot="R90"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0" layer="51"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0" layer="51"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0" layer="51"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0" layer="51"/>
+<smd name="2" x="-0.8125" y="-0.25" dx="0.25" dy="0.375" layer="1" rot="R90"/>
+<smd name="3" x="-0.5" y="-0.8125" dx="0.25" dy="0.375" layer="1" rot="R180"/>
+<smd name="4" x="0" y="-0.8125" dx="0.25" dy="0.375" layer="1" rot="R180"/>
+<smd name="5" x="0.5" y="-0.8125" dx="0.25" dy="0.375" layer="1" rot="R180"/>
+<smd name="6" x="0.8125" y="-0.25" dx="0.25" dy="0.375" layer="1" rot="R270"/>
+<smd name="7" x="0.8125" y="0.25" dx="0.25" dy="0.375" layer="1" rot="R270"/>
+<smd name="8" x="0.5" y="0.8125" dx="0.25" dy="0.375" layer="1"/>
+<smd name="9" x="0" y="0.8125" dx="0.25" dy="0.375" layer="1"/>
+<smd name="10" x="-0.5" y="0.8125" dx="0.25" dy="0.375" layer="1"/>
+<circle x="-0.875" y="0.875" radius="0.0625" width="0" layer="51"/>
+<wire x1="-0.25" y1="0.1875" x2="0.625" y2="0.1875" width="0" layer="51"/>
+<wire x1="0.625" y1="0.1875" x2="0.625" y2="-0.625" width="0" layer="51"/>
+<wire x1="0.625" y1="-0.625" x2="-0.25" y2="-0.625" width="0" layer="51"/>
+<wire x1="-0.25" y1="-0.625" x2="-0.25" y2="0.1875" width="0" layer="51"/>
+<wire x1="-1.1" y1="0.6" x2="-1.1" y2="1.1" width="0.1524" layer="21"/>
+<wire x1="-1.1" y1="1.1" x2="-0.85" y2="1.1" width="0.1524" layer="21"/>
+<wire x1="0.85" y1="1.1" x2="1.1" y2="1.1" width="0.1524" layer="21"/>
+<wire x1="1.1" y1="0.6" x2="1.1" y2="1.1" width="0.1524" layer="21"/>
+<wire x1="0.85" y1="-1.1" x2="1.1" y2="-1.1" width="0.1524" layer="21"/>
+<wire x1="-1.1" y1="-1.1" x2="-0.85" y2="-1.1" width="0.1524" layer="21"/>
+<wire x1="-1.1" y1="-1.1" x2="-1.1" y2="-0.6" width="0.1524" layer="21"/>
+<wire x1="1.1" y1="-1.1" x2="1.1" y2="-0.6" width="0.1524" layer="21"/>
+<text x="-1.143" y="1.27" size="0.6096" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.143" y="-1.651" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="L297">
@@ -4051,6 +4083,24 @@ body 2x2x1mm</description>
 <wire x1="-25.4" y1="-45.72" x2="-25.4" y2="43.18" width="0.4064" layer="94"/>
 <text x="-25.4" y="43.815" size="1.778" layer="95">&gt;NAME</text>
 <text x="-25.4" y="-48.26" size="1.778" layer="96">&gt;VALUE</text>
+</symbol>
+<symbol name="LPS22DF">
+<pin name="VDDIO" x="20.32" y="-7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="SCL/SPC" x="-20.32" y="2.54" length="middle" direction="in"/>
+<pin name="RES" x="-20.32" y="-12.7" length="middle" direction="in"/>
+<pin name="SDA/SDI/SDO" x="-20.32" y="-2.54" length="middle"/>
+<pin name="SDO/SA0" x="-20.32" y="-7.62" length="middle" direction="in"/>
+<pin name="CS" x="-20.32" y="12.7" length="middle" direction="in"/>
+<pin name="INT_DRDY" x="-20.32" y="7.62" length="middle" direction="in"/>
+<pin name="GND_IO" x="20.32" y="-12.7" length="middle" direction="pwr" rot="R180"/>
+<pin name="GND" x="20.32" y="7.62" length="middle" direction="pwr" rot="R180"/>
+<pin name="VDD" x="20.32" y="12.7" length="middle" direction="pwr" rot="R180"/>
+<wire x1="-15.24" y1="15.24" x2="15.24" y2="15.24" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="15.24" x2="15.24" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="15.24" y1="-15.24" x2="-15.24" y2="-15.24" width="0.4064" layer="94"/>
+<wire x1="-15.24" y1="-15.24" x2="-15.24" y2="15.24" width="0.4064" layer="94"/>
+<text x="-15.24" y="15.875" size="1.778" layer="95">&gt;NAME</text>
+<text x="-15.24" y="-17.78" size="1.778" layer="96">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -6381,6 +6431,32 @@ ADJ 1.5A SYNC</description>
 <connect gate="G$1" pin="VSSA" pad="8"/>
 <connect gate="G$1" pin="VSS_1" pad="23"/>
 <connect gate="G$1" pin="VSS_2" pad="47"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LPS22DF" prefix="U">
+<description>Low-power and high-precision MEMS nano pressure sensor&lt;p&gt;
+260-1260 hPa absolute digital output barometer</description>
+<gates>
+<gate name="G$1" symbol="LPS22DF" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HLGA-10L">
+<connects>
+<connect gate="G$1" pin="CS" pad="6"/>
+<connect gate="G$1" pin="GND" pad="9"/>
+<connect gate="G$1" pin="GND_IO" pad="8"/>
+<connect gate="G$1" pin="INT_DRDY" pad="7"/>
+<connect gate="G$1" pin="RES" pad="3"/>
+<connect gate="G$1" pin="SCL/SPC" pad="2"/>
+<connect gate="G$1" pin="SDA/SDI/SDO" pad="4"/>
+<connect gate="G$1" pin="SDO/SA0" pad="5"/>
+<connect gate="G$1" pin="VDD" pad="10"/>
+<connect gate="G$1" pin="VDDIO" pad="1"/>
 </connects>
 <technologies>
 <technology name=""/>

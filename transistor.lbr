@@ -10,7 +10,7 @@
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="no" active="yes"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
 <layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="yes"/>
@@ -49,6 +49,8 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="57" name="tCAD" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="58" name="bCAD" color="11" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
@@ -1429,6 +1431,29 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <package name="SC70-6">
 <description>&lt;b&gt;SC70−6&lt;/b&gt;&lt;p&gt;
 0.65 mm pitch</description>
+<wire x1="-1.1" y1="0.6" x2="1.1" y2="0.6" width="0.2032" layer="51"/>
+<wire x1="1.1" y1="0.6" x2="1.1" y2="-0.6" width="0.2032" layer="21"/>
+<wire x1="1.1" y1="-0.6" x2="-1.1" y2="-0.6" width="0.2032" layer="51"/>
+<wire x1="-1.1" y1="-0.6" x2="-1.1" y2="0.6" width="0.2032" layer="21"/>
+<circle x="-0.65" y="-0.25" radius="0.15" width="0" layer="21"/>
+<smd name="1" x="-0.65" y="-0.92" dx="0.3" dy="0.66" layer="1"/>
+<smd name="2" x="0" y="-0.92" dx="0.3" dy="0.66" layer="1"/>
+<smd name="3" x="0.65" y="-0.92" dx="0.3" dy="0.66" layer="1"/>
+<smd name="4" x="0.65" y="0.92" dx="0.3" dy="0.66" layer="1"/>
+<smd name="5" x="0" y="0.92" dx="0.3" dy="0.66" layer="1"/>
+<smd name="6" x="-0.65" y="0.92" dx="0.3" dy="0.66" layer="1"/>
+<text x="-1.27" y="1.524" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.27" y="-2.159" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.8" y1="-1.1" x2="-0.5" y2="-0.6" layer="51"/>
+<rectangle x1="-0.15" y1="-1.1" x2="0.15" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="-1.1" x2="0.8" y2="-0.6" layer="51"/>
+<rectangle x1="0.5" y1="0.6" x2="0.8" y2="1.1" layer="51"/>
+<rectangle x1="-0.15" y1="0.6" x2="0.15" y2="1.1" layer="51"/>
+<rectangle x1="-0.8" y1="0.6" x2="-0.5" y2="1.1" layer="51"/>
+</package>
+<package name="SOT363">
+<description>&lt;b&gt;SC−88/SC70−6/SOT−363&lt;/b&gt;&lt;p&gt;
+CASE 419B−02</description>
 <wire x1="-1.1" y1="0.6" x2="1.1" y2="0.6" width="0.2032" layer="51"/>
 <wire x1="1.1" y1="0.6" x2="1.1" y2="-0.6" width="0.2032" layer="21"/>
 <wire x1="1.1" y1="-0.6" x2="-1.1" y2="-0.6" width="0.2032" layer="51"/>
@@ -5258,6 +5283,50 @@ common emitter</description>
 </deviceset>
 <deviceset name="MUN5213DW1" prefix="Q">
 <description>TRANS 2NPN PREBIAS 0.25W SOT363</description>
+<gates>
+<gate name="A" symbol="NPN-DRIVER" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="NPN-DRIVER" x="27.94" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SC70-6">
+<connects>
+<connect gate="A" pin="B" pad="5"/>
+<connect gate="A" pin="C" pad="3"/>
+<connect gate="A" pin="E" pad="4"/>
+<connect gate="B" pin="B" pad="2"/>
+<connect gate="B" pin="C" pad="6"/>
+<connect gate="B" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DDC114TU" prefix="Q">
+<description>TRANS 2NPN PREBIAS 0.2W SOT363</description>
+<gates>
+<gate name="A" symbol="NPN-DRIVER" x="0" y="0" addlevel="always" swaplevel="1"/>
+<gate name="B" symbol="NPN-DRIVER" x="27.94" y="0" addlevel="always" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="SC70-6">
+<connects>
+<connect gate="A" pin="B" pad="5"/>
+<connect gate="A" pin="C" pad="3"/>
+<connect gate="A" pin="E" pad="4"/>
+<connect gate="B" pin="B" pad="2"/>
+<connect gate="B" pin="C" pad="6"/>
+<connect gate="B" pin="E" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DDC123JU" prefix="Q">
+<description>TRANS 2NPN PREBIAS 0.2W SOT363</description>
 <gates>
 <gate name="A" symbol="NPN-DRIVER" x="0" y="0" addlevel="always" swaplevel="1"/>
 <gate name="B" symbol="NPN-DRIVER" x="27.94" y="0" addlevel="always" swaplevel="1"/>
