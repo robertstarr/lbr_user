@@ -20,6 +20,5 @@ silkscreen appearance and pad size/spacing suitable for commercial type work.
 The ULP migrate-rc-master.ulp can be used to globally replace and migrate most
 all parts in existing designs from rcl.lbr to the rc-master libraries.
 A general description of the additional SCR and ULP utilities provided are
-also described in this document. Please visit http://www.bobstarr.net for
-additional information and see the README.PDF documentation for complete
-information on using the libraries.
+also described in this document. Please see the README.PDF documentation
+for complete information on using the libraries.
