@@ -6837,6 +6837,39 @@ QUAD JFET Input</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TLC27L9" prefix="U">
+<description>LinCMOS PRECISION QUAD OPERATIONAL AMPLIFIERS</description>
+<gates>
+<gate name="P" symbol="PWR_VDDGND" x="-17.78" y="0" addlevel="request"/>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-15.24"/>
+<gate name="C" symbol="OPAMP_NV" x="0" y="-30.48"/>
+<gate name="D" symbol="OPAMP_NV" x="0" y="-45.72"/>
+</gates>
+<devices>
+<device name="PW" package="SO14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="P" pin="GND" pad="11"/>
+<connect gate="P" pin="VDD" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
