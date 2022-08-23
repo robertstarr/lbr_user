@@ -2130,6 +2130,41 @@ Panasonic SMini3-F2-B</description>
 <circle x="0" y="-0.2" radius="0.1" width="0" layer="29"/>
 <circle x="0.4" y="-0.2" radius="0.1" width="0" layer="29"/>
 </package>
+<package name="SOT23-6">
+<description>&lt;b&gt;SOT-23&lt;/b&gt; - DBV&lt;p&gt;
+0.95 mm pitch</description>
+<wire x1="1.4724" y1="0.8104" x2="1.4724" y2="-0.8104" width="0.1778" layer="21"/>
+<wire x1="1.4224" y1="-0.8104" x2="-1.4224" y2="-0.8104" width="0.1778" layer="51"/>
+<wire x1="-1.4724" y1="-0.8104" x2="-1.4724" y2="0.8104" width="0.1778" layer="21"/>
+<wire x1="-1.4224" y1="0.8104" x2="1.4224" y2="0.8104" width="0.1778" layer="51"/>
+<circle x="-0.9525" y="-0.2675" radius="0.2245" width="0" layer="21"/>
+<smd name="1" x="-0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="6" x="-0.95" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<smd name="5" x="0" y="1.3001" dx="0.55" dy="1.2" layer="1"/>
+<text x="-1.905" y="2.2225" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.5" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.5" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.5" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.5" layer="51"/>
+<rectangle x1="-0.25" y1="0.85" x2="0.25" y2="1.5" layer="51"/>
+</package>
+<package name="HVMDIP">
+<pad name="1" x="-3.1115" y="1.27" drill="0.6096" shape="octagon"/>
+<pad name="2" x="-3.1115" y="-1.27" drill="0.6096" shape="octagon"/>
+<pad name="3" x="3.1115" y="-1.27" drill="0.6096" shape="octagon"/>
+<pad name="4" x="3.1115" y="1.27" drill="0.6096" shape="octagon"/>
+<wire x1="-3.1115" y1="2.54" x2="-3.1115" y2="-2.54" width="0.2032" layer="51"/>
+<wire x1="-3.1115" y1="-2.54" x2="3.1115" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="3.1115" y1="-2.54" x2="3.1115" y2="2.54" width="0.2032" layer="51"/>
+<wire x1="3.1115" y1="2.54" x2="-3.1115" y2="2.54" width="0.2032" layer="21"/>
+<text x="-3.175" y="2.8575" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="JFET-N">
@@ -8628,6 +8663,78 @@ Logic Level, PowerTrench</description>
 </deviceset>
 <deviceset name="NDT3055" prefix="Q">
 <description>N-Channel Enhancement Mode FET</description>
+<gates>
+<gate name="G$1" symbol="EMOS-ND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT223">
+<connects>
+<connect gate="G$1" pin="D" pad="2 4"/>
+<connect gate="G$1" pin="G" pad="1"/>
+<connect gate="G$1" pin="S" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LSK489A" prefix="Q">
+<description>&lt;b&gt;N-Channel JFET&lt;/b&gt;&lt;p&gt;
+ N-Channel (Dual) 60 V 500 mW</description>
+<gates>
+<gate name="A" symbol="JFET-N" x="0" y="0"/>
+<gate name="B" symbol="JFET-N" x="20.32" y="0"/>
+</gates>
+<devices>
+<device name="SO08" package="SO08">
+<connects>
+<connect gate="A" pin="D" pad="2"/>
+<connect gate="A" pin="G" pad="4"/>
+<connect gate="A" pin="S" pad="1"/>
+<connect gate="B" pin="D" pad="6"/>
+<connect gate="B" pin="G" pad="8"/>
+<connect gate="B" pin="S" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="SOT23-6" package="SOT23-6">
+<connects>
+<connect gate="A" pin="D" pad="2"/>
+<connect gate="A" pin="G" pad="1"/>
+<connect gate="A" pin="S" pad="3"/>
+<connect gate="B" pin="D" pad="5"/>
+<connect gate="B" pin="G" pad="4"/>
+<connect gate="B" pin="S" pad="6"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="IRFD120" prefix="Q">
+<description>MOSFET N-CH 100V 1.3A 4DIP</description>
+<gates>
+<gate name="G$1" symbol="EMOS-ND" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="HVMDIP">
+<connects>
+<connect gate="G$1" pin="D" pad="1 2"/>
+<connect gate="G$1" pin="G" pad="3"/>
+<connect gate="G$1" pin="S" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="PMT280ENEA" prefix="Q">
+<description>&lt;b&gt;N-channel Trench MOSFET&lt;/b&gt;&lt;p&gt;</description>
 <gates>
 <gate name="G$1" symbol="EMOS-ND" x="0" y="0"/>
 </gates>

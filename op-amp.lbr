@@ -6887,8 +6887,8 @@ QUAD JFET Input</description>
 <deviceset name="LMV331" prefix="U">
 <description>IC COMPARATOR TINY LV SOT23-5</description>
 <gates>
-<gate name="A" symbol="COMPARATOR-OC" x="0" y="0" addlevel="always"/>
-<gate name="P" symbol="PWRN_V+-" x="-17.78" y="0" addlevel="always"/>
+<gate name="A" symbol="COMPARATOR-OC" x="0" y="0"/>
+<gate name="P" symbol="PWRN_V+-" x="-17.78" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="DBV" package="SOT23-5">
@@ -6996,6 +6996,61 @@ TLVx172 36-V, single-supply, low-power operational amplifier</description>
 <connect gate="B" pin="OUT" pad="7"/>
 <connect gate="P" pin="V+" pad="8"/>
 <connect gate="P" pin="V-" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TLV9364" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;&lt;p&gt;
+QUad, 10-MHz, 40-V, RRO</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="0" y="0"/>
+<gate name="B" symbol="OPAMP" x="0" y="-12.7"/>
+<gate name="C" symbol="OPAMP" x="0" y="-25.4"/>
+<gate name="D" symbol="OPAMP" x="0" y="-38.1"/>
+<gate name="P" symbol="PWR+-" x="-20.32" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="11"/>
+<connect gate="P" pin="V+" pad="4"/>
+<connect gate="P" pin="V-" pad="14"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PW" package="TSSOP14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="11"/>
+<connect gate="P" pin="V+" pad="4"/>
+<connect gate="P" pin="V-" pad="14"/>
 </connects>
 <technologies>
 <technology name=""/>
