@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -827,6 +827,7 @@ Holds Four (4) AA Cells in Series</description>
 <hole x="-28.575" y="2.794" drill="2.9"/>
 </package>
 <package name="4910">
+<description>QUICK-FIT MALE TERMINAL</description>
 <pad name="1" x="0" y="5.08" drill="1.3208" shape="octagon"/>
 <pad name="2" x="-2.54" y="0" drill="1.3208" shape="octagon"/>
 <pad name="3" x="2.54" y="0" drill="1.3208" shape="octagon"/>
@@ -881,6 +882,52 @@ Holds Four (4) AA Cells in Series</description>
 <text x="0" y="0" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 <text x="4.445" y="-5.715" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
+<package name="QFIT-1267">
+<description>QUICK-FIT MALE TERMINAL</description>
+<wire x1="-2" y1="0.25" x2="2" y2="0.25" width="0.2032" layer="51"/>
+<wire x1="2" y1="0.25" x2="2" y2="-0.25" width="0.2032" layer="51"/>
+<wire x1="2" y1="-0.25" x2="-2" y2="-0.25" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-0.25" x2="-2" y2="0.25" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.1684" shape="long" rot="R180"/>
+<text x="-1.905" y="1.27" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.6096" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="-1.905" y="-2.2225" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="QFIT-1211">
+<description>QUICK-FIT MALE TERMINAL</description>
+<wire x1="-2" y1="0.4" x2="2" y2="0.4" width="0.2032" layer="51"/>
+<wire x1="2" y1="0.4" x2="2" y2="-0.4" width="0.2032" layer="51"/>
+<wire x1="2" y1="-0.4" x2="-2" y2="-0.4" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-0.4" x2="-2" y2="0.4" width="0.2032" layer="51"/>
+<pad name="1" x="0" y="0" drill="1.3208" shape="long" rot="R180"/>
+<text x="-1.905" y="1.27" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.6096" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="-1.905" y="-2.2225" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="QFIT-4903">
+<description>QUICK-FIT MALE TERMINAL</description>
+<wire x1="-10.16" y1="0.25" x2="3.27" y2="0.25" width="0.2032" layer="51"/>
+<wire x1="3.27" y1="0.25" x2="3.27" y2="-0.25" width="0.2032" layer="51"/>
+<wire x1="3.27" y1="-0.25" x2="-10.16" y2="-0.25" width="0.2032" layer="51"/>
+<wire x1="-10.16" y1="-0.25" x2="-10.16" y2="0.25" width="0.2032" layer="51"/>
+<pad name="1" x="-2.54" y="0" drill="1.1684" diameter="2.54" shape="octagon"/>
+<text x="-3.81" y="1.5875" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.6096" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="-3.81" y="-2.54" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<pad name="2" x="2.54" y="0" drill="1.1684" diameter="2.54" shape="octagon" rot="R180"/>
+</package>
+<package name="QFIT-4906">
+<description>QUICK-FIT MALE TERMINAL</description>
+<wire x1="-10.16" y1="0.4" x2="3.27" y2="0.4" width="0.2032" layer="51"/>
+<wire x1="3.27" y1="0.4" x2="3.27" y2="-0.4" width="0.2032" layer="51"/>
+<wire x1="3.27" y1="-0.4" x2="-10.16" y2="-0.4" width="0.2032" layer="51"/>
+<wire x1="-10.16" y1="-0.4" x2="-10.16" y2="0.4" width="0.2032" layer="51"/>
+<pad name="1" x="-2.54" y="0" drill="1.3208" diameter="2.54" shape="octagon"/>
+<text x="-3.81" y="1.5875" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.6096" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="-3.81" y="-2.54" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<pad name="2" x="2.54" y="0" drill="1.3208" diameter="2.54" shape="octagon" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="TP">
@@ -902,7 +949,6 @@ Holds Four (4) AA Cells in Series</description>
 </symbol>
 <symbol name="QFIT-2">
 <pin name="1" x="-5.08" y="0" visible="off" length="short" direction="pas"/>
-<pin name="2" x="-5.08" y="0" visible="off" length="point" direction="pas"/>
 <text x="-2.54" y="1.905" size="1.778" layer="95">&gt;NAME</text>
 <wire x1="-2.54" y1="1.27" x2="2.54" y2="1.27" width="0.4064" layer="94"/>
 <wire x1="2.54" y1="1.27" x2="2.54" y2="-1.27" width="0.4064" layer="94"/>
@@ -1109,8 +1155,7 @@ PCB Horizontal Mount</description>
 <devices>
 <device name="12XX" package="QFIT-12XX">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1 2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1120,8 +1165,7 @@ PCB Horizontal Mount</description>
 </device>
 <device name="4900" package="QFIT-4900">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1 2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1131,8 +1175,7 @@ PCB Horizontal Mount</description>
 </device>
 <device name="4901" package="QFIT-4901">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1 2"/>
 </connects>
 <technologies>
 <technology name="">
@@ -1142,13 +1185,44 @@ PCB Horizontal Mount</description>
 </device>
 <device name="352X" package="QFIT-352X">
 <connects>
-<connect gate="G$1" pin="1" pad="1"/>
-<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="1" pad="1 2"/>
 </connects>
 <technologies>
 <technology name="">
 <attribute name="LABEL" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+<device name="4903" package="QFIT-4903">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="4906" package="QFIT-4906">
+<connects>
+<connect gate="G$1" pin="1" pad="1 2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1267" package="QFIT-1267">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="1211" package="QFIT-1211">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
