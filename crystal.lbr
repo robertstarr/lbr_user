@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -6283,6 +6283,25 @@ AA Series</description>
 </gates>
 <devices>
 <device name="" package="4-SMD-7X5">
+<connects>
+<connect gate="G$1" pin="E/D" pad="1"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="WE-SPXO" prefix="Y">
+<description>WE-SPXO CRYSTAL OSCILLATOR 19.2</description>
+<gates>
+<gate name="G$1" symbol="QG5" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="4-SMD">
 <connects>
 <connect gate="G$1" pin="E/D" pad="1"/>
 <connect gate="G$1" pin="GND" pad="2"/>
