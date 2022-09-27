@@ -1884,7 +1884,7 @@ ball pitch 0.5mm, body 2.3 x 1.3mm</description>
 <gate name="B" symbol="OPAMP_NV" x="0" y="-15.24" swaplevel="1"/>
 <gate name="C" symbol="OPAMP_NV" x="0" y="-30.48" swaplevel="1"/>
 <gate name="D" symbol="OPAMP_NV" x="0" y="-45.72" swaplevel="1"/>
-<gate name="P" symbol="PWRN_V+-" x="-15.24" y="0" addlevel="request"/>
+<gate name="P" symbol="PWRN_V+-" x="-17.78" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="D" package="SO14">
@@ -4941,7 +4941,7 @@ Single-Supply, 10MHz, Rail-to-Rail Output, Low-Noise, JFET Amplifier</descriptio
 <gates>
 <gate name="A" symbol="OPAMP_NV" x="2.54" y="0" swaplevel="1"/>
 <gate name="B" symbol="OPAMP_NV" x="2.54" y="-15.24" swaplevel="1"/>
-<gate name="P" symbol="PWR+G" x="-12.7" y="0"/>
+<gate name="P" symbol="PWR+G" x="-12.7" y="0" addlevel="request"/>
 </gates>
 <devices>
 <device name="P" package="DIL08">
@@ -7106,6 +7106,156 @@ General Purpose Quad Rail-to-Rail</description>
 <connect gate="D" pin="OUT" pad="14"/>
 <connect gate="P" pin="V+" pad="4"/>
 <connect gate="P" pin="V-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="MC33074" prefix="U">
+<description>&lt;b&gt;OP-AMP&lt;/b&gt;</description>
+<gates>
+<gate name="P" symbol="PWR_VCCVEE" x="-20.32" y="0" addlevel="request"/>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="0" y="-12.7" swaplevel="1"/>
+<gate name="C" symbol="OPAMP_NV" x="0" y="-25.4" swaplevel="1"/>
+<gate name="D" symbol="OPAMP_NV" x="0" y="-38.1" swaplevel="1"/>
+</gates>
+<devices>
+<device name="D" package="SO14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="P" pin="VCC" pad="4"/>
+<connect gate="P" pin="VEE" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DT" package="TSSOP14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="P" pin="VCC" pad="4"/>
+<connect gate="P" pin="VEE" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TL3474" prefix="U">
+<description>GENERAL PURPOSE QUAD OPERATIONAL AMPLIFIERS</description>
+<gates>
+<gate name="A" symbol="OPAMP_NV" x="2.54" y="0" swaplevel="1"/>
+<gate name="B" symbol="OPAMP_NV" x="2.54" y="-15.24" swaplevel="1"/>
+<gate name="C" symbol="OPAMP_NV" x="2.54" y="-30.48" swaplevel="1"/>
+<gate name="D" symbol="OPAMP_NV" x="2.54" y="-45.72" swaplevel="1"/>
+<gate name="P" symbol="PWRN_VCC+-" x="-15.24" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="D" package="SO14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="P" pin="VCC+" pad="4"/>
+<connect gate="P" pin="VCC-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="PW" package="TSSOP14">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="2"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="B" pin="+IN" pad="5"/>
+<connect gate="B" pin="-IN" pad="6"/>
+<connect gate="B" pin="OUT" pad="7"/>
+<connect gate="C" pin="+IN" pad="10"/>
+<connect gate="C" pin="-IN" pad="9"/>
+<connect gate="C" pin="OUT" pad="8"/>
+<connect gate="D" pin="+IN" pad="12"/>
+<connect gate="D" pin="-IN" pad="13"/>
+<connect gate="D" pin="OUT" pad="14"/>
+<connect gate="P" pin="VCC+" pad="4"/>
+<connect gate="P" pin="VCC-" pad="11"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LT1880" prefix="U">
+<description>General Purpose Amplifier 1 Circuit Rail-to-Rail TSOT-23-5</description>
+<gates>
+<gate name="A" symbol="OPAMP" x="0" y="0"/>
+<gate name="P" symbol="PWR+-" x="-17.78" y="0" addlevel="request"/>
+</gates>
+<devices>
+<device name="" package="TSOT5">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="4"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="P" pin="V+" pad="5"/>
+<connect gate="P" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="OPA202" prefix="U">
+<description>IC OPAMP GP 1 CIRCUIT SOT23-5</description>
+<gates>
+<gate name="P" symbol="PWR_V+-" x="-17.78" y="0" addlevel="request"/>
+<gate name="A" symbol="OPAMP_NV" x="0" y="0"/>
+</gates>
+<devices>
+<device name="DBV" package="SOT23-5">
+<connects>
+<connect gate="A" pin="+IN" pad="3"/>
+<connect gate="A" pin="-IN" pad="4"/>
+<connect gate="A" pin="OUT" pad="1"/>
+<connect gate="P" pin="V+" pad="5"/>
+<connect gate="P" pin="V-" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
