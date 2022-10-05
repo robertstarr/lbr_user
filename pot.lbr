@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -5614,7 +5614,7 @@ Top adjust</description>
 <wire x1="3.937" y1="1.778" x2="3.937" y2="0.635" width="0.2032" layer="51"/>
 <wire x1="3.937" y1="0.635" x2="3.175" y2="0.635" width="0.2032" layer="51"/>
 </package>
-<package name="RV16AF-41">
+<package name="RV16AF-41_M">
 <description>&lt;b&gt;POT&lt;/b&gt; - (MIRRORED FOOTPRINT)&lt;p&gt;
 MOUNTS ON BACK SIDE OF PCB!&lt;br&gt;
 Alpha Taiwan</description>
@@ -5623,24 +5623,24 @@ Alpha Taiwan</description>
 <pad name="2" x="0" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
 <pad name="1" x="5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
 <pad name="3" x="-5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
-<wire x1="-3" y1="-12" x2="-3" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-13" x2="-3" y2="-16" width="0.2032" layer="51"/>
 <wire x1="-3" y1="-16" x2="-7" y2="-16" width="0.2032" layer="51"/>
-<wire x1="-7" y1="-16" x2="-7" y2="-12" width="0.2032" layer="51"/>
-<wire x1="-2" y1="-12" x2="-2" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-7" y1="-16" x2="-7" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-13" x2="-2" y2="-16" width="0.2032" layer="51"/>
 <wire x1="-2" y1="-16" x2="2" y2="-16" width="0.2032" layer="51"/>
-<wire x1="2" y1="-16" x2="2" y2="-12" width="0.2032" layer="51"/>
-<wire x1="7" y1="-12" x2="7" y2="-16" width="0.2032" layer="51"/>
+<wire x1="2" y1="-16" x2="2" y2="-13" width="0.2032" layer="51"/>
+<wire x1="7" y1="-13" x2="7" y2="-16" width="0.2032" layer="51"/>
 <wire x1="7" y1="-16" x2="3" y2="-16" width="0.2032" layer="51"/>
-<wire x1="3" y1="-16" x2="3" y2="-12" width="0.2032" layer="51"/>
-<wire x1="-8" y1="-3" x2="-8" y2="-12" width="0.2032" layer="51"/>
-<wire x1="-8" y1="-12" x2="-7" y2="-12" width="0.2032" layer="51"/>
-<wire x1="-7" y1="-12" x2="-3" y2="-12" width="0.2032" layer="51"/>
-<wire x1="-3" y1="-12" x2="-2" y2="-12" width="0.2032" layer="51"/>
-<wire x1="-2" y1="-12" x2="2" y2="-12" width="0.2032" layer="51"/>
-<wire x1="2" y1="-12" x2="3" y2="-12" width="0.2032" layer="51"/>
-<wire x1="3" y1="-12" x2="7" y2="-12" width="0.2032" layer="51"/>
-<wire x1="7" y1="-12" x2="8" y2="-12" width="0.2032" layer="51"/>
-<wire x1="8" y1="-12" x2="8" y2="-3" width="0.2032" layer="51"/>
+<wire x1="3" y1="-16" x2="3" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-3" x2="-8" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-13" x2="-7" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-7" y1="-13" x2="-3" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-13" x2="-2" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-13" x2="2" y2="-13" width="0.2032" layer="51"/>
+<wire x1="2" y1="-13" x2="3" y2="-13" width="0.2032" layer="51"/>
+<wire x1="3" y1="-13" x2="7" y2="-13" width="0.2032" layer="51"/>
+<wire x1="7" y1="-13" x2="8" y2="-13" width="0.2032" layer="51"/>
+<wire x1="8" y1="-13" x2="8" y2="-3" width="0.2032" layer="51"/>
 <text x="-7" y="-19" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2" y="-11" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 <text x="-7" y="-20.27" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
@@ -7416,6 +7416,55 @@ P09 Series, BI Technologies</description>
 <text x="3.556" y="0.635" size="0.8128" layer="51" ratio="10">1</text>
 <text x="-1.905" y="-1.905" size="0.8128" layer="51" ratio="10">3</text>
 <text x="-4.7625" y="4.1275" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="RV16AF-41">
+<description>&lt;b&gt;POT&lt;/b&gt;&lt;p&gt;
+Alpha Taiwan</description>
+<circle x="0" y="0" radius="3.75" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="8.5" width="0.2032" layer="51"/>
+<pad name="2" x="0" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="1" x="-5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="3" x="5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<wire x1="-3" y1="-13" x2="-3" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-16" x2="-7" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-7" y1="-16" x2="-7" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-13" x2="-2" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-16" x2="2" y2="-16" width="0.2032" layer="51"/>
+<wire x1="2" y1="-16" x2="2" y2="-13" width="0.2032" layer="51"/>
+<wire x1="7" y1="-13" x2="7" y2="-16" width="0.2032" layer="51"/>
+<wire x1="7" y1="-16" x2="3" y2="-16" width="0.2032" layer="51"/>
+<wire x1="3" y1="-16" x2="3" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-3" x2="-8" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-13" x2="8" y2="-13" width="0.2032" layer="51"/>
+<wire x1="8" y1="-13" x2="8" y2="-3" width="0.2032" layer="51"/>
+<text x="-7" y="-19" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="-5" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="-7" y="-20.27" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
+<package name="RV16A01F-41">
+<circle x="0" y="0" radius="3.75" width="0.2032" layer="51"/>
+<circle x="0" y="0" radius="8.5" width="0.2032" layer="51"/>
+<pad name="2B" x="0" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="1B" x="-5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="3B" x="5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<wire x1="-3" y1="-13" x2="-3" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-16" x2="-7" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-7" y1="-16" x2="-7" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-13" x2="-2" y2="-16" width="0.2032" layer="51"/>
+<wire x1="-2" y1="-16" x2="2" y2="-16" width="0.2032" layer="51"/>
+<wire x1="2" y1="-16" x2="2" y2="-13" width="0.2032" layer="51"/>
+<wire x1="7" y1="-13" x2="7" y2="-16" width="0.2032" layer="51"/>
+<wire x1="7" y1="-16" x2="3" y2="-16" width="0.2032" layer="51"/>
+<wire x1="3" y1="-16" x2="3" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-3" x2="-8" y2="-13" width="0.2032" layer="51"/>
+<wire x1="-8" y1="-13" x2="8" y2="-13" width="0.2032" layer="51"/>
+<wire x1="8" y1="-13" x2="8" y2="-3" width="0.2032" layer="51"/>
+<text x="-7" y="-19" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="-5" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="-7" y="-20.27" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<pad name="1A" x="-5" y="-11" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="2A" x="0" y="-11" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="3A" x="5" y="-11" drill="1.2" diameter="2.54" shape="octagon"/>
 </package>
 </packages>
 <symbols>
@@ -11035,7 +11084,7 @@ Alpha 12 MM</description>
 <gate name="G$1" symbol="POT_US-" x="0" y="0"/>
 </gates>
 <devices>
-<device name="AF-41" package="RV16AF-41">
+<device name="AF-41" package="RV16AF-41_M">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
@@ -11204,6 +11253,50 @@ Nobel USA, Inc.</description>
 </gates>
 <devices>
 <device name="" package="P092-QC15">
+<connects>
+<connect gate="-A" pin="1" pad="1A"/>
+<connect gate="-A" pin="2" pad="2A"/>
+<connect gate="-A" pin="3" pad="3A"/>
+<connect gate="-B" pin="1" pad="1B"/>
+<connect gate="-B" pin="2" pad="2B"/>
+<connect gate="-B" pin="3" pad="3B"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV16AF-41" prefix="R">
+<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt; - Alpha 16mm</description>
+<gates>
+<gate name="G$1" symbol="POT_US-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="RV16AF-41">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+<connect gate="G$1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV16A01F-41" prefix="R">
+<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt; - Alpha 16mm Dual</description>
+<gates>
+<gate name="-A" symbol="POT_US-" x="0" y="0" addlevel="request" swaplevel="1"/>
+<gate name="-B" symbol="POT_US-" x="17.78" y="0" addlevel="request" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="RV16A01F-41">
 <connects>
 <connect gate="-A" pin="1" pad="1A"/>
 <connect gate="-A" pin="2" pad="2A"/>
