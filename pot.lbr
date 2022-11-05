@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -7442,11 +7442,12 @@ Alpha Taiwan</description>
 <text x="-7" y="-20.27" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
 <package name="RV16A01F-41">
+<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt; - Alpha 16mm Dual</description>
 <circle x="0" y="0" radius="3.75" width="0.2032" layer="51"/>
 <circle x="0" y="0" radius="8.5" width="0.2032" layer="51"/>
-<pad name="2B" x="0" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
-<pad name="1B" x="-5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
-<pad name="3B" x="5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="B2" x="0" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="B1" x="-5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="B3" x="5" y="-16" drill="1.2" diameter="2.54" shape="octagon"/>
 <wire x1="-3" y1="-13" x2="-3" y2="-16" width="0.2032" layer="51"/>
 <wire x1="-3" y1="-16" x2="-7" y2="-16" width="0.2032" layer="51"/>
 <wire x1="-7" y1="-16" x2="-7" y2="-13" width="0.2032" layer="51"/>
@@ -7462,9 +7463,64 @@ Alpha Taiwan</description>
 <text x="-7" y="-19" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="0" y="-5" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
 <text x="-7" y="-20.27" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
-<pad name="1A" x="-5" y="-11" drill="1.2" diameter="2.54" shape="octagon"/>
-<pad name="2A" x="0" y="-11" drill="1.2" diameter="2.54" shape="octagon"/>
-<pad name="3A" x="5" y="-11" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="A1" x="-5" y="-11" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="A2" x="0" y="-11" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="A3" x="5" y="-11" drill="1.2" diameter="2.54" shape="octagon"/>
+</package>
+<package name="RV16A01F-20">
+<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt; - Alpha 16mm Dual</description>
+<pad name="B2" x="0" y="8.8" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="B1" x="-5" y="8.8" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="B3" x="5" y="8.8" drill="1.2" diameter="2.54" shape="octagon"/>
+<text x="-9" y="0.25" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="0" y="6.25" size="0.8128" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<text x="10" y="0.25" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+<pad name="A1" x="-5" y="3.8" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="A2" x="0" y="3.8" drill="1.2" diameter="2.54" shape="octagon"/>
+<pad name="A3" x="5" y="3.8" drill="1.2" diameter="2.54" shape="octagon"/>
+<wire x1="-8.5" y1="0" x2="-8.5" y2="10.5" width="0.2032" layer="21"/>
+<wire x1="-8.5" y1="10.5" x2="-7.5" y2="11.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="-7.5" y1="11.5" x2="7.5" y2="11.5" width="0.2032" layer="21"/>
+<wire x1="7.5" y1="11.5" x2="8.5" y2="10.5" width="0.2032" layer="21" curve="-90"/>
+<wire x1="8.5" y1="10.5" x2="8.5" y2="0" width="0.2032" layer="21"/>
+<wire x1="-8.5" y1="0" x2="-3.5" y2="0" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="0" x2="3.5" y2="0" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="0" x2="8.5" y2="0" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="0" x2="-3.5" y2="-1" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-1" x2="-3.5" y2="-1.75" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-1.75" x2="-3.5" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-2.5" x2="-3.5" y2="-3.25" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-3.25" x2="-3.5" y2="-4" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-4" x2="-3.5" y2="-4.75" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-4.75" x2="-3.5" y2="-5.5" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-5.5" x2="-3.5" y2="-6.246" width="0.2032" layer="51"/>
+<wire x1="-3.5" y1="-6.246" x2="-3.246" y2="-6.5" width="0.2032" layer="51"/>
+<wire x1="-3.246" y1="-6.5" x2="-3" y2="-6.5" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-6.5" x2="3" y2="-6.5" width="0.2032" layer="51"/>
+<wire x1="3" y1="-6.5" x2="3.246" y2="-6.5" width="0.2032" layer="51"/>
+<wire x1="3.246" y1="-6.5" x2="3.5" y2="-6.246" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-6.246" x2="3.5" y2="-5.75" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-5.75" x2="3.5" y2="-5" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-5" x2="3.5" y2="-4.25" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-4.25" x2="3.5" y2="-3.5" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="3.5" y2="-2.75" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-2.75" x2="3.5" y2="-2" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-2" x2="3.5" y2="-1.25" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-1.25" x2="3.5" y2="-0.5" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-0.5" x2="3.5" y2="0" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-6.5" x2="-3" y2="-16.746" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-16.746" x2="-2.746" y2="-17" width="0.2032" layer="51"/>
+<wire x1="-2.746" y1="-17" x2="2.746" y2="-17" width="0.2032" layer="51"/>
+<wire x1="2.746" y1="-17" x2="3" y2="-16.746" width="0.2032" layer="51"/>
+<wire x1="3" y1="-16.746" x2="3" y2="-6.5" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-0.5" x2="-3.5" y2="-1" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-1.25" x2="-3.5" y2="-1.75" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-2" x2="-3.5" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-2.75" x2="-3.5" y2="-3.25" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-4" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-4.25" x2="-3.5" y2="-4.75" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-5" x2="-3.5" y2="-5.5" width="0.2032" layer="51"/>
+<wire x1="3.5" y1="-5.75" x2="-3.5" y2="-6.25" width="0.2032" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -11298,12 +11354,36 @@ Nobel USA, Inc.</description>
 <devices>
 <device name="" package="RV16A01F-41">
 <connects>
-<connect gate="-A" pin="1" pad="1A"/>
-<connect gate="-A" pin="2" pad="2A"/>
-<connect gate="-A" pin="3" pad="3A"/>
-<connect gate="-B" pin="1" pad="1B"/>
-<connect gate="-B" pin="2" pad="2B"/>
-<connect gate="-B" pin="3" pad="3B"/>
+<connect gate="-A" pin="1" pad="A1"/>
+<connect gate="-A" pin="2" pad="A2"/>
+<connect gate="-A" pin="3" pad="A3"/>
+<connect gate="-B" pin="1" pad="B1"/>
+<connect gate="-B" pin="2" pad="B2"/>
+<connect gate="-B" pin="3" pad="B3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="RV16A01F-20">
+<description>&lt;b&gt;POTENTIOMETER&lt;/b&gt; - Alpha 16mm Dual</description>
+<gates>
+<gate name="-A" symbol="POT_US-" x="0" y="0" addlevel="request" swaplevel="1"/>
+<gate name="-B" symbol="POT_US-" x="17.78" y="0" addlevel="request" swaplevel="1"/>
+</gates>
+<devices>
+<device name="" package="RV16A01F-20">
+<connects>
+<connect gate="-A" pin="1" pad="A1"/>
+<connect gate="-A" pin="2" pad="A2"/>
+<connect gate="-A" pin="3" pad="A3"/>
+<connect gate="-B" pin="1" pad="B1"/>
+<connect gate="-B" pin="2" pad="B2"/>
+<connect gate="-B" pin="3" pad="B3"/>
 </connects>
 <technologies>
 <technology name="">
