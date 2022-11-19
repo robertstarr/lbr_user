@@ -3559,6 +3559,26 @@ Seiko/Epson</description>
 <rectangle x1="0.6" y1="-1.25" x2="1.6" y2="-0.45" layer="51"/>
 <rectangle x1="-1.6" y1="-1.25" x2="-0.6" y2="-0.45" layer="51"/>
 </package>
+<package name="FC-135">
+<description>EPSON FC-135</description>
+<wire x1="-2.1" y1="1.2" x2="2.1" y2="1.2" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="1.2" x2="2.1" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="2.1" y1="-1.2" x2="-2.1" y2="-1.2" width="0.2032" layer="21"/>
+<wire x1="-2.1" y1="-1.2" x2="-2.1" y2="1.2" width="0.2032" layer="21"/>
+<smd name="1" x="-1.25" y="0" dx="1" dy="1.8" layer="1" rot="R180"/>
+<smd name="2" x="1.25" y="0" dx="1" dy="1.8" layer="1" rot="R180"/>
+<text x="-2.1" y="1.4" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-2.1" y="-2" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+<wire x1="-1.6" y1="0.65" x2="1.6" y2="0.65" width="0.0508" layer="51"/>
+<wire x1="1.6" y1="0.65" x2="1.6" y2="-0.65" width="0.0508" layer="51"/>
+<wire x1="1.6" y1="-0.65" x2="-1.6" y2="-0.65" width="0.0508" layer="51"/>
+<wire x1="-1.6" y1="-0.65" x2="-1.6" y2="0.65" width="0.0508" layer="51"/>
+<rectangle x1="-0.2" y1="-0.5" x2="0.2" y2="0.5" layer="21"/>
+<rectangle x1="-0.4" y1="-0.5" x2="-0.3" y2="0.5" layer="21"/>
+<rectangle x1="0.3" y1="-0.5" x2="0.4" y2="0.5" layer="21"/>
+<rectangle x1="-0.525" y1="-0.125" x2="-0.425" y2="0.125" layer="21" rot="R90"/>
+<rectangle x1="0.375" y1="-0.125" x2="0.475" y2="0.125" layer="21" rot="R90"/>
+</package>
 </packages>
 <symbols>
 <symbol name="Q">
@@ -6307,6 +6327,23 @@ AA Series</description>
 <connect gate="G$1" pin="GND" pad="2"/>
 <connect gate="G$1" pin="OUT" pad="3"/>
 <connect gate="G$1" pin="VCC" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="FC-135" prefix="Y">
+<description>CRYSTAL 32.7680KHZ 7PF SMD</description>
+<gates>
+<gate name="G$1" symbol="Q" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="FC-135">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
