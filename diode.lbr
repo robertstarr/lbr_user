@@ -6,10 +6,10 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -7017,6 +7017,24 @@ AXIAL LEAD CASE 017AA</description>
 <wire x1="-0.5" y1="0.45" x2="0.5" y2="0.45" width="0.2032" layer="27"/>
 <wire x1="-0.55" y1="-0.45" x2="0.45" y2="-0.45" width="0.2032" layer="27"/>
 <rectangle x1="-0.8" y1="0.35" x2="-0.5" y2="0.65" layer="27"/>
+</package>
+<package name="STMITE">
+<description>STmite flat (DO222-AA)</description>
+<smd name="A" x="-1.64" y="0" dx="0.85" dy="0.65" layer="1"/>
+<smd name="K" x="1.74" y="0" dx="0.65" dy="0.95" layer="1"/>
+<wire x1="-1.475" y1="0.95" x2="1.475" y2="0.95" width="0.0508" layer="51"/>
+<wire x1="1.475" y1="0.95" x2="1.475" y2="-0.95" width="0.0508" layer="51"/>
+<wire x1="1.475" y1="-0.95" x2="-1.475" y2="-0.95" width="0.0508" layer="51"/>
+<wire x1="-1.475" y1="-0.95" x2="-1.475" y2="0.95" width="0.0508" layer="51"/>
+<smd name="K1" x="0.44" y="0" dx="2" dy="1.95" layer="1"/>
+<wire x1="-1.601" y1="0.635" x2="-1.601" y2="1.093" width="0.2032" layer="21"/>
+<wire x1="-1.601" y1="1.093" x2="-0.762" y2="1.093" width="0.2032" layer="21"/>
+<wire x1="-1.601" y1="-0.635" x2="-1.601" y2="-1.093" width="0.2032" layer="21"/>
+<wire x1="-1.601" y1="-1.093" x2="-0.762" y2="-1.093" width="0.2032" layer="21"/>
+<text x="-1.651" y="1.397" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.651" y="-1.905" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="1.65" y1="0.65" x2="2.15" y2="1.15" layer="21"/>
+<rectangle x1="1.65" y1="-1.15" x2="2.15" y2="-0.65" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -18920,6 +18938,23 @@ General-purpose diode for high-speed switching</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="STPS1L30MF" prefix="D">
+<description>DIODE SCHOTT 30V 1A STMITE FLAT</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="STMITE">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="K K1"/>
 </connects>
 <technologies>
 <technology name=""/>

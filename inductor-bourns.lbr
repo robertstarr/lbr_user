@@ -935,6 +935,40 @@ Toroid 0.95 diameter</description>
 <text x="-2.2" y="2.4" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
 <text x="-2.2" y="-3" size="0.6096" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="SRR7032">
+<description>&lt;B&gt;POWER INDUCTOR&lt;/B&gt;</description>
+<smd name="1" x="-3" y="0" dx="2.4" dy="1.8" layer="1" rot="R90"/>
+<smd name="2" x="3" y="0" dx="2.4" dy="1.8" layer="1" rot="R90"/>
+<text x="-3.7" y="4" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="-2.54" size="0.6096" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.0508" layer="51"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.0508" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.0508" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.0508" layer="51"/>
+<wire x1="-3.7" y1="1.5" x2="-3.7" y2="3.7" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="3.7" x2="3.7" y2="3.7" width="0.2032" layer="21"/>
+<wire x1="3.7" y1="3.7" x2="3.7" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="-3.7" x2="-3.7" y2="-1.5" width="0.2032" layer="21"/>
+<wire x1="3.7" y1="-1.5" x2="3.7" y2="-3.7" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="-3.7" x2="3.7" y2="-3.7" width="0.2032" layer="21"/>
+</package>
+<package name="SRR7045">
+<description>&lt;B&gt;POWER INDUCTOR&lt;/B&gt;</description>
+<smd name="1" x="-3" y="0" dx="2.4" dy="1.8" layer="1" rot="R90"/>
+<smd name="2" x="3" y="0" dx="2.4" dy="1.8" layer="1" rot="R90"/>
+<text x="-3.7" y="4" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="-2.54" size="0.6096" layer="27" ratio="10" align="center">&gt;VALUE</text>
+<wire x1="-3.5" y1="-3.5" x2="-3.5" y2="3.5" width="0.0508" layer="51"/>
+<wire x1="-3.5" y1="3.5" x2="3.5" y2="3.5" width="0.0508" layer="51"/>
+<wire x1="3.5" y1="3.5" x2="3.5" y2="-3.5" width="0.0508" layer="51"/>
+<wire x1="3.5" y1="-3.5" x2="-3.5" y2="-3.5" width="0.0508" layer="51"/>
+<wire x1="-3.7" y1="1.5" x2="-3.7" y2="3.7" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="3.7" x2="3.7" y2="3.7" width="0.2032" layer="21"/>
+<wire x1="3.7" y1="3.7" x2="3.7" y2="1.5" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="-3.7" x2="-3.7" y2="-1.5" width="0.2032" layer="21"/>
+<wire x1="3.7" y1="-1.5" x2="3.7" y2="-3.7" width="0.2032" layer="21"/>
+<wire x1="-3.7" y1="-3.7" x2="3.7" y2="-3.7" width="0.2032" layer="21"/>
+</package>
 </packages>
 <symbols>
 <symbol name="L">
@@ -1588,6 +1622,40 @@ Toroid 0.95 diameter</description>
 </gates>
 <devices>
 <device name="" package="SRN4018">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRR7032" prefix="L">
+<description>&lt;b&gt;POWER INDUCTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRR7032">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SRR7045" prefix="L">
+<description>&lt;b&gt;POWER INDUCTOR&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="L" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SRR7045">
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>

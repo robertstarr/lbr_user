@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -2412,6 +2412,66 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <rectangle x1="0.1" y1="0.85" x2="0.55" y2="1.5" layer="51"/>
 <rectangle x1="0.75" y1="-1.5" x2="1.2" y2="-0.85" layer="51"/>
 <rectangle x1="-1.2" y1="0.85" x2="-0.75" y2="1.5" layer="51"/>
+</package>
+<package name="PLCC20">
+<description>PLCC-20 - 4.57 mm max height</description>
+<wire x1="4.52" y1="4.52" x2="-3.52" y2="4.52" width="0.2032" layer="51"/>
+<wire x1="-3.52" y1="4.52" x2="-4.52" y2="3.52" width="0.2032" layer="51"/>
+<wire x1="-4.52" y1="3.52" x2="-4.52" y2="-4.52" width="0.2032" layer="51"/>
+<wire x1="-4.52" y1="-4.52" x2="4.52" y2="-4.52" width="0.2032" layer="51"/>
+<wire x1="4.52" y1="-4.52" x2="4.52" y2="4.52" width="0.2032" layer="51"/>
+<smd name="1" x="0" y="4.3" dx="0.64" dy="2.45" layer="1"/>
+<smd name="2" x="-1.27" y="4.3" dx="0.64" dy="2.45" layer="1"/>
+<smd name="3" x="-2.54" y="4.3" dx="0.64" dy="2.45" layer="1"/>
+<smd name="4" x="-4.3" y="2.54" dx="2.45" dy="0.64" layer="1"/>
+<smd name="5" x="-4.3" y="1.27" dx="2.45" dy="0.64" layer="1"/>
+<smd name="6" x="-4.3" y="0" dx="2.45" dy="0.64" layer="1"/>
+<smd name="7" x="-4.3" y="-1.27" dx="2.45" dy="0.64" layer="1"/>
+<smd name="8" x="-4.3" y="-2.54" dx="2.45" dy="0.64" layer="1"/>
+<smd name="9" x="-2.54" y="-4.3" dx="0.64" dy="2.45" layer="1"/>
+<smd name="10" x="-1.27" y="-4.3" dx="0.64" dy="2.45" layer="1"/>
+<smd name="11" x="0" y="-4.3" dx="0.64" dy="2.45" layer="1"/>
+<smd name="12" x="1.27" y="-4.3" dx="0.64" dy="2.45" layer="1"/>
+<smd name="13" x="2.54" y="-4.3" dx="0.64" dy="2.45" layer="1"/>
+<smd name="14" x="4.3" y="-2.54" dx="2.45" dy="0.64" layer="1"/>
+<smd name="15" x="4.3" y="-1.27" dx="2.45" dy="0.64" layer="1"/>
+<smd name="16" x="4.3" y="0" dx="2.45" dy="0.64" layer="1"/>
+<smd name="17" x="4.3" y="1.27" dx="2.45" dy="0.64" layer="1"/>
+<smd name="18" x="4.3" y="2.54" dx="2.45" dy="0.64" layer="1"/>
+<smd name="19" x="2.54" y="4.3" dx="0.64" dy="2.45" layer="1"/>
+<smd name="20" x="1.27" y="4.3" dx="0.64" dy="2.45" layer="1"/>
+<text x="-2.95" y="5.9" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.85" y="-6.65" size="0.8128" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<rectangle x1="-0.2601" y1="4.6" x2="0.2601" y2="5.4" layer="51"/>
+<rectangle x1="-1.5301" y1="4.6" x2="-1.0099" y2="5.4" layer="51"/>
+<rectangle x1="-2.8001" y1="4.6" x2="-2.2799" y2="5.4" layer="51"/>
+<rectangle x1="-5.4" y1="2.2799" x2="-4.6" y2="2.8001" layer="51"/>
+<rectangle x1="-5.4" y1="1.0099" x2="-4.6" y2="1.5301" layer="51"/>
+<rectangle x1="-5.4" y1="-0.2601" x2="-4.6" y2="0.2601" layer="51"/>
+<rectangle x1="-5.4" y1="-1.5301" x2="-4.6" y2="-1.0099" layer="51"/>
+<rectangle x1="-5.4" y1="-2.8001" x2="-4.6" y2="-2.2799" layer="51"/>
+<rectangle x1="-2.8001" y1="-5.4" x2="-2.2799" y2="-4.6" layer="51"/>
+<rectangle x1="-1.5301" y1="-5.4" x2="-1.0099" y2="-4.6" layer="51"/>
+<rectangle x1="-0.2601" y1="-5.4" x2="0.2601" y2="-4.6" layer="51"/>
+<rectangle x1="1.0099" y1="-5.4" x2="1.5301" y2="-4.6" layer="51"/>
+<rectangle x1="2.2799" y1="-5.4" x2="2.8001" y2="-4.6" layer="51"/>
+<rectangle x1="4.6" y1="-2.8001" x2="5.4" y2="-2.2799" layer="51"/>
+<rectangle x1="4.6" y1="-1.5301" x2="5.4" y2="-1.0099" layer="51"/>
+<rectangle x1="4.6" y1="-0.2601" x2="5.4" y2="0.2601" layer="51"/>
+<rectangle x1="4.6" y1="1.0099" x2="5.4" y2="1.5301" layer="51"/>
+<rectangle x1="4.6" y1="2.2799" x2="5.4" y2="2.8001" layer="51"/>
+<rectangle x1="2.2799" y1="4.6" x2="2.8001" y2="5.4" layer="51"/>
+<rectangle x1="1.0099" y1="4.6" x2="1.5301" y2="5.4" layer="51"/>
+<wire x1="-4.8" y1="3.1" x2="-4.8" y2="3.65" width="0.2032" layer="21"/>
+<wire x1="-4.8" y1="3.65" x2="-3.65" y2="4.8" width="0.2032" layer="21"/>
+<wire x1="-3.65" y1="4.8" x2="-3.1" y2="4.8" width="0.2032" layer="21"/>
+<wire x1="3.1" y1="4.8" x2="4.8" y2="4.8" width="0.2032" layer="21"/>
+<wire x1="4.8" y1="4.8" x2="4.8" y2="3.1" width="0.2032" layer="21"/>
+<wire x1="3.1" y1="-4.8" x2="4.8" y2="-4.8" width="0.2032" layer="21"/>
+<wire x1="4.8" y1="-4.8" x2="4.8" y2="-3.1" width="0.2032" layer="21"/>
+<wire x1="-4.8" y1="-3.1" x2="-4.8" y2="-4.8" width="0.2032" layer="21"/>
+<wire x1="-4.8" y1="-4.8" x2="-3.1" y2="-4.8" width="0.2032" layer="21"/>
+<circle x="0" y="2.4" radius="0.4472125" width="0" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -12146,6 +12206,31 @@ latched 4/8-channel analog multiplexer</description>
 <connect gate="A" pin="L9" pad="11"/>
 <connect gate="A" pin="MDE" pad="9"/>
 <connect gate="A" pin="REF" pad="7"/>
+<connect gate="A" pin="RHI" pad="6"/>
+<connect gate="A" pin="RLO" pad="4"/>
+<connect gate="A" pin="SIG" pad="5"/>
+<connect gate="A" pin="V+" pad="3"/>
+<connect gate="A" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="FN" package="PLCC20">
+<connects>
+<connect gate="A" pin="ADJ" pad="10"/>
+<connect gate="A" pin="L1" pad="1"/>
+<connect gate="A" pin="L10" pad="12"/>
+<connect gate="A" pin="L2" pad="20"/>
+<connect gate="A" pin="L3" pad="19"/>
+<connect gate="A" pin="L4" pad="18"/>
+<connect gate="A" pin="L5" pad="17"/>
+<connect gate="A" pin="L6" pad="16"/>
+<connect gate="A" pin="L7" pad="15"/>
+<connect gate="A" pin="L8" pad="14"/>
+<connect gate="A" pin="L9" pad="13"/>
+<connect gate="A" pin="MDE" pad="11"/>
+<connect gate="A" pin="REF" pad="8"/>
 <connect gate="A" pin="RHI" pad="6"/>
 <connect gate="A" pin="RLO" pad="4"/>
 <connect gate="A" pin="SIG" pad="5"/>
