@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.25" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1365,6 +1365,26 @@ muRata</description>
 <rectangle x1="-0.79375" y1="-3.96875" x2="0.79375" y2="5.55625" layer="51" rot="R270"/>
 <rectangle x1="-6.35" y1="-3.1749" x2="-1.5876" y2="-1.5875" layer="51" rot="R270"/>
 </package>
+<package name="252129">
+<description>MCX CONNECTOR R/A</description>
+<pad name="5" x="-2.54" y="2.54" drill="1.7018"/>
+<pad name="4" x="2.54" y="2.54" drill="1.7018"/>
+<pad name="3" x="2.54" y="-2.54" drill="1.7018"/>
+<pad name="2" x="-2.54" y="-2.54" drill="1.7018"/>
+<pad name="1" x="0" y="0" drill="1.1938"/>
+<text x="-3.175" y="4.445" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-3.175" y="-6.35" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-3.175" y="-5.08" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<wire x1="-3" y1="3" x2="3" y2="3" width="0.2032" layer="51"/>
+<wire x1="3" y1="3" x2="3" y2="-3" width="0.2032" layer="51"/>
+<wire x1="3" y1="-3" x2="-3" y2="-3" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-3" x2="-3" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-3" y1="-2.5" x2="-3" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="-3" y1="2.5" x2="-3" y2="3" width="0.2032" layer="51"/>
+<wire x1="-3" y1="2.5" x2="-6.5" y2="2.5" width="0.2032" layer="51"/>
+<wire x1="-6.5" y1="2.5" x2="-6.5" y2="-2.5" width="0.2032" layer="51"/>
+<wire x1="-6.5" y1="-2.5" x2="-3" y2="-2.5" width="0.2032" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="BU-BNC">
@@ -1457,7 +1477,7 @@ muRata</description>
 <text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
 <text x="0" y="3.302" size="1.778" layer="95">&gt;NAME</text>
 <pin name="P" x="5.08" y="0" visible="off" length="short" direction="pas" rot="R180"/>
-<pin name="GND" x="0" y="-2.54" visible="off" length="point" direction="pwr" rot="R90"/>
+<pin name="GND" x="0" y="-2.54" visible="off" length="point" direction="pas" rot="R90"/>
 </symbol>
 <symbol name="SMA-G4">
 <wire x1="2.54" y1="0" x2="0.4445" y2="0" width="0.1524" layer="94"/>
@@ -2207,6 +2227,23 @@ Ultra Small Surface Mount, Hirose</description>
 <technology name="">
 <attribute name="LABEL" value="" constant="no"/>
 </technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="252129" prefix="J">
+<description>CONN MCX RCPT R/A 50 OHM PCB</description>
+<gates>
+<gate name="G$1" symbol="BNC_MGND1" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="252129">
+<connects>
+<connect gate="G$1" pin="GND" pad="2 3 4 5"/>
+<connect gate="G$1" pin="P" pad="1"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
