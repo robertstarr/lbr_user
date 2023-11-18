@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -48,9 +48,9 @@
 <layer number="38" name="bTest" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="yes" active="yes"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="yes" active="yes"/>
-<layer number="41" name="tRestrict" color="4" fill="10" visible="yes" active="yes"/>
-<layer number="42" name="bRestrict" color="1" fill="10" visible="yes" active="yes"/>
-<layer number="43" name="vRestrict" color="2" fill="10" visible="yes" active="yes"/>
+<layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="yes"/>
+<layer number="42" name="bRestrict" color="1" fill="10" visible="no" active="yes"/>
+<layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="yes"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="46" name="Milling" color="3" fill="1" visible="yes" active="yes"/>
@@ -58,7 +58,7 @@
 <layer number="48" name="Document" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="49" name="Reference" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
-<layer number="51" name="tDocu" color="19" fill="1" visible="yes" active="yes"/>
+<layer number="51" name="tDocu" color="19" fill="1" visible="no" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -733,6 +733,14 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <rectangle x1="1.9" y1="2.4" x2="3.55" y2="4.6" layer="42"/>
 <pad name="3B" x="-2.5" y="8.5" drill="1.27"/>
 <pad name="4B" x="2.5" y="8.5" drill="1.27"/>
+<wire x1="-3.474975" y1="4.499865625" x2="-1.97485" y2="4.499865625" width="0.1524" layer="20"/>
+<wire x1="-1.97485" y1="2.49986875" x2="-1.97485" y2="4.499865625" width="0.1524" layer="20"/>
+<wire x1="3.474971875" y1="2.49986875" x2="1.975103125" y2="2.49986875" width="0.1524" layer="20"/>
+<wire x1="1.975103125" y1="2.49986875" x2="1.975103125" y2="4.499865625" width="0.1524" layer="20"/>
+<wire x1="3.474971875" y1="4.499865625" x2="1.975103125" y2="4.499865625" width="0.1524" layer="20"/>
+<wire x1="-3.474975" y1="2.49986875" x2="-1.97485" y2="2.49986875" width="0.1524" layer="20"/>
+<wire x1="-3.474975" y1="2.49986875" x2="-3.474975" y2="4.499865625" width="0.1524" layer="20"/>
+<wire x1="3.474971875" y1="2.49986875" x2="3.474971875" y2="4.499865625" width="0.1524" layer="20"/>
 </package>
 </packages>
 <symbols>
