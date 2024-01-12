@@ -682,6 +682,12 @@ Thru-Hole 4.2 mm Spacer</description>
 <wire x1="-1.651" y1="3.556" x2="-1.651" y2="-3.556" width="0.2032" layer="51"/>
 <wire x1="1.524" y1="3.556" x2="1.524" y2="-3.556" width="0.2032" layer="51"/>
 </package>
+<package name="SMTPR">
+<description>&lt;b&gt;PCB FASTENER&lt;/b&gt;&lt;p&gt;
+hole size 0.25"&lt;p&gt;
+screw size 440</description>
+<pad name="P$1" x="0" y="0" drill="6.35" diameter="12.7"/>
+</package>
 </packages>
 <symbols>
 <symbol name="MOUNT-HOLE">
@@ -1131,6 +1137,19 @@ Thru-Hole 4.2 mm Spacer</description>
 <connects>
 <connect gate="G$1" pin="MOUNT" pad="1 2 P"/>
 </connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SMTPR" prefix="PEM">
+<description>PCB FASTENER</description>
+<gates>
+<gate name="G$1" symbol="MOUNT-HOLE" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SMTPR">
 <technologies>
 <technology name=""/>
 </technologies>
