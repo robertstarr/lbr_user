@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.5" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -7435,6 +7435,43 @@ STACKED STEREO HORIZ W/CNTR SCR</description>
 <text x="-16.5" y="-2.5" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <text x="-21.2725" y="-11.43" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
 </package>
+<package name="NRJ6HM">
+<wire x1="0" y1="9.8" x2="0" y2="-6.7" width="0.254" layer="51"/>
+<wire x1="-0.8" y1="-6.7" x2="-21.9" y2="-6.7" width="0.254" layer="21"/>
+<wire x1="-21.9" y1="-6.7" x2="-21.9" y2="9.8" width="0.254" layer="21"/>
+<wire x1="-21.9" y1="9.8" x2="-0.8" y2="9.8" width="0.254" layer="21"/>
+<wire x1="0.0001" y1="-4.18" x2="1.2701" y2="-4.18" width="0.254" layer="51"/>
+<wire x1="1.2701" y1="-4.18" x2="2.5401" y2="-4.18" width="0.254" layer="51"/>
+<wire x1="2.5401" y1="-4.18" x2="3.8101" y2="-4.18" width="0.254" layer="51"/>
+<wire x1="3.8101" y1="-4.18" x2="5.0801" y2="-4.18" width="0.254" layer="51"/>
+<wire x1="5.0801" y1="-4.18" x2="6.3501" y2="-4.18" width="0.254" layer="51"/>
+<wire x1="6.3501" y1="-4.18" x2="6.35" y2="2.805" width="0.254" layer="51"/>
+<wire x1="6.35" y1="2.805" x2="6.35" y2="4.075" width="0.254" layer="51"/>
+<wire x1="6.35" y1="4.075" x2="5.08" y2="4.075" width="0.254" layer="51"/>
+<wire x1="5.08" y1="4.075" x2="3.81" y2="4.075" width="0.254" layer="51"/>
+<wire x1="3.81" y1="4.075" x2="2.54" y2="4.075" width="0.254" layer="51"/>
+<wire x1="2.54" y1="4.075" x2="1.27" y2="4.075" width="0.254" layer="51"/>
+<wire x1="1.27" y1="4.075" x2="0" y2="4.075" width="0.254" layer="51"/>
+<wire x1="0.0001" y1="-4.18" x2="1.27" y2="4.075" width="0.254" layer="51"/>
+<wire x1="1.2701" y1="-4.18" x2="2.54" y2="4.075" width="0.254" layer="51"/>
+<wire x1="2.5401" y1="-4.18" x2="3.81" y2="4.075" width="0.254" layer="51"/>
+<wire x1="3.8101" y1="-4.18" x2="5.08" y2="4.075" width="0.254" layer="51"/>
+<wire x1="5.0801" y1="-4.18" x2="6.35" y2="2.805" width="0.254" layer="51"/>
+<wire x1="-21.855" y1="4.1275" x2="-24.395" y2="3.81" width="0.254" layer="51"/>
+<wire x1="-24.395" y1="3.81" x2="-24.395" y2="-3.4925" width="0.254" layer="51"/>
+<wire x1="-24.395" y1="-3.4925" x2="-21.855" y2="-3.81" width="0.254" layer="51"/>
+<pad name="T" x="-17.45" y="7.23" drill="1.6764" diameter="3.175" shape="octagon"/>
+<pad name="S" x="-4.75" y="7.23" drill="1.6764" diameter="3.175" shape="octagon"/>
+<pad name="SN" x="-4.75" y="-4.2" drill="1.6764" diameter="3.175" shape="octagon"/>
+<pad name="TN" x="-17.45" y="-4.2" drill="1.6764" diameter="3.175" shape="octagon"/>
+<pad name="R" x="-11.1" y="7.23" drill="1.6764" diameter="3.175" shape="octagon"/>
+<pad name="RN" x="-11.1" y="-4.2" drill="1.6764" diameter="3.175" shape="octagon"/>
+<text x="-20.955" y="10.425" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-11" y="0" size="0.8128" layer="27" ratio="10" rot="R180" align="center">&gt;VALUE</text>
+<text x="-20.955" y="-8.255" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<wire x1="-0.8" y1="9.8" x2="0" y2="9.8" width="0.254" layer="51"/>
+<wire x1="-0.8" y1="-6.7" x2="0" y2="-6.7" width="0.254" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="NC3-G">
@@ -9216,6 +9253,29 @@ STACKED STEREO CONNECTOR</description>
 <connect gate="G$1" pin="SS" pad="SN"/>
 <connect gate="G$1" pin="T" pad="T"/>
 <connect gate="G$1" pin="TS" pad="TN"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="NRJ6HM" prefix="CN">
+<description>&lt;b&gt;1/4" Stereo Phone Connector&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="N?J6??" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="NRJ6HM">
+<connects>
+<connect gate="G$1" pin="R" pad="R"/>
+<connect gate="G$1" pin="RN" pad="RN"/>
+<connect gate="G$1" pin="S" pad="S"/>
+<connect gate="G$1" pin="SN" pad="SN"/>
+<connect gate="G$1" pin="T" pad="T"/>
+<connect gate="G$1" pin="TN" pad="TN"/>
 </connects>
 <technologies>
 <technology name="">

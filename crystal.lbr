@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -3514,11 +3514,11 @@ Seiko/Epson</description>
 <wire x1="-1.25" y1="-1" x2="-1.25" y2="1" width="0.0508" layer="51"/>
 <text x="-1.6" y="1.55" size="0.6096" layer="25" ratio="18">&gt;NAME</text>
 <text x="-1.6" y="-2" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
-<rectangle x1="-2" y1="-1.1" x2="-1.7" y2="-0.8" layer="27"/>
-<wire x1="-1.6" y1="-1.4" x2="-1.6" y2="1.35" width="0.2032" layer="27"/>
-<wire x1="-1.6" y1="1.35" x2="1.6" y2="1.35" width="0.2032" layer="27"/>
-<wire x1="1.6" y1="1.35" x2="1.6" y2="-1.4" width="0.2032" layer="27"/>
-<wire x1="1.6" y1="-1.4" x2="-1.6" y2="-1.4" width="0.2032" layer="27"/>
+<rectangle x1="-2" y1="-1.1" x2="-1.7" y2="-0.8" layer="21"/>
+<wire x1="-1.6" y1="-1.4" x2="-1.6" y2="1.35" width="0.2032" layer="21"/>
+<wire x1="-1.6" y1="1.35" x2="1.6" y2="1.35" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="1.35" x2="1.6" y2="-1.4" width="0.2032" layer="21"/>
+<wire x1="1.6" y1="-1.4" x2="-1.6" y2="-1.4" width="0.2032" layer="21"/>
 </package>
 <package name="4-SMD-7X5">
 <description>4-SMD (7.00mm x 5.00mm)</description>
@@ -3578,6 +3578,24 @@ Seiko/Epson</description>
 <rectangle x1="0.3" y1="-0.5" x2="0.4" y2="0.5" layer="21"/>
 <rectangle x1="-0.525" y1="-0.125" x2="-0.425" y2="0.125" layer="21" rot="R90"/>
 <rectangle x1="0.375" y1="-0.125" x2="0.475" y2="0.125" layer="21" rot="R90"/>
+</package>
+<package name="4-SMD-20X16">
+<description>4-SMD (2.0mm x 1.6mm)</description>
+<smd name="4" x="-0.91" y="0.6125" dx="0.63" dy="0.825" layer="1"/>
+<smd name="3" x="0.91" y="0.6125" dx="0.63" dy="0.825" layer="1"/>
+<smd name="2" x="0.91" y="-0.6125" dx="0.63" dy="0.825" layer="1"/>
+<smd name="1" x="-0.91" y="-0.6125" dx="0.63" dy="0.825" layer="1"/>
+<wire x1="-1" y1="-0.8" x2="-1" y2="0.8" width="0.0508" layer="51"/>
+<wire x1="-1" y1="0.8" x2="1" y2="0.8" width="0.0508" layer="51"/>
+<wire x1="1" y1="0.8" x2="1" y2="-0.8" width="0.0508" layer="51"/>
+<wire x1="1" y1="-0.8" x2="-1" y2="-0.8" width="0.0508" layer="51"/>
+<text x="-1.5" y="1.5" size="0.6096" layer="25" ratio="18">&gt;NAME</text>
+<text x="-1.5" y="-1.9" size="0.4064" layer="27" ratio="10">&gt;VALUE</text>
+<rectangle x1="-1.95" y1="-1.15" x2="-1.5" y2="-0.7" layer="21"/>
+<wire x1="-1.5" y1="-1.3" x2="-1.5" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="-1.5" y1="1.3" x2="1.5" y2="1.3" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="1.3" x2="1.5" y2="-1.3" width="0.2032" layer="21"/>
+<wire x1="1.5" y1="-1.3" x2="-1.5" y2="-1.3" width="0.2032" layer="21"/>
 </package>
 </packages>
 <symbols>
@@ -6344,6 +6362,27 @@ AA Series</description>
 <connects>
 <connect gate="G$1" pin="1" pad="1"/>
 <connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="ECS-TXO-20CSMV4" prefix="Y">
+<description>&lt;b&gt;TXCO&lt;/b&gt;&lt;p&gt;	
+XTAL OSC TCXO CLPSW&lt;p&gt;
+body 2.0 x 1.6 mm</description>
+<gates>
+<gate name="G$1" symbol="TCXO-G2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="4-SMD-20X16">
+<connects>
+<connect gate="G$1" pin="GND" pad="1"/>
+<connect gate="G$1" pin="GND1" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="4"/>
 </connects>
 <technologies>
 <technology name=""/>
