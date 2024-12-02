@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -7596,6 +7596,44 @@ Alpha Taiwan</description>
 <wire x1="4.25" y1="-3.5" x2="5" y2="3.25" width="0.0508" layer="51"/>
 <wire x1="4.75" y1="-3.5" x2="5" y2="-1.5" width="0.0508" layer="51"/>
 </package>
+<package name="3296Z">
+<description>&lt;b&gt;Trimm resistor&lt;/b&gt; BOURNS&lt;p&gt;</description>
+<wire x1="-4.826" y1="-2.54" x2="4.826" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-4.826" y1="2.54" x2="4.826" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="4.826" y1="2.54" x2="4.826" y2="-2.54" width="0.2032" layer="21"/>
+<wire x1="-4.826" y1="-2.54" x2="-4.826" y2="2.54" width="0.2032" layer="21"/>
+<wire x1="-2.032" y1="-1.27" x2="-2.413" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-2.032" y1="-1.27" x2="-2.159" y2="-1.397" width="0.2032" layer="51"/>
+<wire x1="-2.032" y1="-1.27" x2="-2.159" y2="-1.143" width="0.2032" layer="51"/>
+<wire x1="-2.286" y1="-1.524" x2="-2.286" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="-2.286" y1="-1.524" x2="-2.413" y2="-1.651" width="0.2032" layer="51"/>
+<wire x1="-2.286" y1="-1.016" x2="-2.413" y2="-0.889" width="0.2032" layer="51"/>
+<wire x1="-2.159" y1="-1.397" x2="-2.159" y2="-1.143" width="0.2032" layer="51"/>
+<wire x1="-2.159" y1="-1.397" x2="-2.286" y2="-1.524" width="0.2032" layer="51"/>
+<wire x1="-2.159" y1="-1.143" x2="-2.286" y2="-1.016" width="0.2032" layer="51"/>
+<wire x1="-2.413" y1="-1.27" x2="-2.413" y2="-0.889" width="0.2032" layer="51"/>
+<wire x1="-2.413" y1="-1.651" x2="-2.413" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-1.778" x2="-2.413" y2="-1.651" width="0.2032" layer="51"/>
+<wire x1="-2.413" y1="-0.889" x2="-2.54" y2="-0.762" width="0.2032" layer="51"/>
+<wire x1="-2.54" y1="-0.762" x2="-2.54" y2="-1.778" width="0.1778" layer="51"/>
+<wire x1="-4.318" y1="-1.27" x2="-2.413" y2="-1.27" width="0.2032" layer="51"/>
+<wire x1="-4.9" y1="-0.4" x2="-6" y2="-0.4" width="0.2032" layer="51"/>
+<wire x1="-6" y1="-0.4" x2="-6" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="-6" y1="-0.9" x2="-5.7" y2="-0.9" width="0.2032" layer="51"/>
+<wire x1="-5.7" y1="-0.9" x2="-5.7" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-5.7" y1="-1.4" x2="-6" y2="-1.4" width="0.2032" layer="51"/>
+<wire x1="-6" y1="-1.4" x2="-6" y2="-2" width="0.2032" layer="51"/>
+<wire x1="-6" y1="-2" x2="-4.9" y2="-2" width="0.2032" layer="51"/>
+<pad name="1" x="2.54" y="1.27" drill="0.8128" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="3" x="-2.54" y="1.27" drill="0.8128" diameter="1.778" shape="octagon" rot="R90"/>
+<pad name="2" x="0" y="-1.27" drill="0.8128" diameter="1.778" shape="octagon" rot="R90"/>
+<text x="-4.7625" y="2.8575" size="1.016" layer="25" ratio="18">&gt;NAME</text>
+<text x="-4.7625" y="-3.81" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<text x="-4.445" y="0.635" size="0.8128" layer="51" ratio="10">3</text>
+<text x="3.556" y="0.635" size="0.8128" layer="51" ratio="10">1</text>
+<text x="-1.905" y="-1.905" size="0.8128" layer="51" ratio="10">3</text>
+<text x="-4.7625" y="4.1275" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+</package>
 </packages>
 <symbols>
 <symbol name="POT_EU-">
@@ -10694,6 +10732,18 @@ Alpha Taiwan</description>
 </technologies>
 </device>
 <device name="PV36Y" package="PV36Y">
+<connects>
+<connect gate="1" pin="1" pad="1"/>
+<connect gate="1" pin="2" pad="2"/>
+<connect gate="1" pin="3" pad="3"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+<device name="3296Z" package="3296Z">
 <connects>
 <connect gate="1" pin="1" pad="1"/>
 <connect gate="1" pin="2" pad="2"/>
