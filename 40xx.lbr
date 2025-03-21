@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -46,7 +46,11 @@
 <layer number="50" name="dxf" color="7" fill="1" visible="no" active="yes"/>
 <layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="52" name="bDocu" color="7" fill="1" visible="no" active="yes"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="1" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="7" fill="1" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="yes"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="90" name="Modules" color="5" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="yes" active="yes"/>
@@ -69,6 +73,26 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="no" active="no"/>
+<layer number="100" name="Mechanical" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="101" name="Gehäuse" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="102" name="ID" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="bMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="tGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="bGTest" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="199" name="EXTD_ERC" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="201" name="201bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <description>&lt;b&gt;CMOS Logic Devices, 4000 Series&lt;/b&gt;&lt;p&gt;
@@ -652,32 +676,39 @@ Based on the following sources:
 <rectangle x1="-10.414" y1="12.065" x2="-9.906" y2="12.7" layer="51"/>
 </package>
 <package name="TSSOP16">
-<description>&lt;b&gt;Thin Shrink Small Outline Plastic 16&lt;/b&gt;</description>
-<wire x1="-2.6" y1="-2.2" x2="2.6" y2="-2.2" width="0.2032" layer="21"/>
-<wire x1="2.6" y1="2.2" x2="2.6" y2="-2.2" width="0.2032" layer="21"/>
-<wire x1="2.6" y1="2.2" x2="-2.6" y2="2.2" width="0.2032" layer="21"/>
-<wire x1="-2.6" y1="-2.2" x2="-2.6" y2="2.2" width="0.2032" layer="21"/>
-<wire x1="-2.336" y1="-1.9542" x2="2.336" y2="-1.9542" width="0.0508" layer="51"/>
-<wire x1="2.336" y1="1.9542" x2="2.336" y2="-1.9542" width="0.0508" layer="51"/>
-<wire x1="2.336" y1="1.9542" x2="-2.336" y2="1.9542" width="0.0508" layer="51"/>
-<wire x1="-2.336" y1="-1.9542" x2="-2.336" y2="1.9542" width="0.0508" layer="51"/>
-<circle x="-1.7963" y="-1.4288" radius="0.3549" width="0" layer="21"/>
-<smd name="1" x="-2.275" y="-3.0802" dx="0.31" dy="1.1" layer="1"/>
-<smd name="2" x="-1.625" y="-3.0802" dx="0.31" dy="1.1" layer="1"/>
-<smd name="3" x="-0.975" y="-3.0802" dx="0.31" dy="1.1" layer="1"/>
-<smd name="4" x="-0.325" y="-3.0802" dx="0.31" dy="1.1" layer="1"/>
-<smd name="5" x="0.325" y="-3.0802" dx="0.31" dy="1.1" layer="1"/>
-<smd name="6" x="0.975" y="-3.0802" dx="0.31" dy="1.1" layer="1"/>
-<smd name="7" x="1.625" y="-3.0802" dx="0.31" dy="1.1" layer="1"/>
-<smd name="8" x="2.275" y="-3.0802" dx="0.31" dy="1.1" layer="1"/>
-<smd name="9" x="2.275" y="3.0804" dx="0.31" dy="1.1" layer="1"/>
-<smd name="10" x="1.625" y="3.0804" dx="0.31" dy="1.1" layer="1"/>
-<smd name="11" x="0.975" y="3.0804" dx="0.31" dy="1.1" layer="1"/>
-<smd name="12" x="0.325" y="3.0804" dx="0.31" dy="1.1" layer="1"/>
-<smd name="13" x="-0.325" y="3.0804" dx="0.31" dy="1.1" layer="1"/>
-<smd name="14" x="-0.975" y="3.0804" dx="0.31" dy="1.1" layer="1"/>
-<smd name="15" x="-1.625" y="3.0804" dx="0.31" dy="1.1" layer="1"/>
-<smd name="16" x="-2.275" y="3.0804" dx="0.31" dy="1.1" layer="1"/>
+<description>&lt;b&gt;Thin Shrink Small Outline Plastic 16&lt;/b&gt;&lt;p&gt;
+body 4.5 x 4.9 mm</description>
+<wire x1="-2.7" y1="-2.2" x2="2.7" y2="-2.2" width="0.2032" layer="51"/>
+<wire x1="2.7" y1="2.2" x2="2.7" y2="1.8" width="0.2032" layer="51"/>
+<wire x1="2.7" y1="1.8" x2="2.7" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="-1.8" x2="2.7" y2="-2.2" width="0.2032" layer="51"/>
+<wire x1="2.7" y1="2.2" x2="-2.7" y2="2.2" width="0.2032" layer="51"/>
+<wire x1="-2.7" y1="-2.2" x2="-2.7" y2="-1.8" width="0.2032" layer="51"/>
+<wire x1="-2.7" y1="-1.8" x2="-2.7" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="1.8" x2="-2.7" y2="2.2" width="0.2032" layer="51"/>
+<wire x1="-2.436" y1="-1.9542" x2="2.436" y2="-1.9542" width="0.0508" layer="51"/>
+<wire x1="2.436" y1="1.9542" x2="2.436" y2="-1.9542" width="0.0508" layer="51"/>
+<wire x1="2.436" y1="1.9542" x2="-2.436" y2="1.9542" width="0.0508" layer="51"/>
+<wire x1="-2.436" y1="-1.9542" x2="-2.436" y2="1.9542" width="0.0508" layer="51"/>
+<wire x1="2.7" y1="1.8" x2="-2.7" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="-1.8" x2="-2.7" y2="-1.8" width="0.2032" layer="21"/>
+<circle x="-1.9963" y="-1.0288" radius="0.3549" width="0" layer="21"/>
+<smd name="1" x="-2.275" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="2" x="-1.625" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="3" x="-0.975" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="4" x="-0.325" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="5" x="0.325" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="6" x="0.975" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="7" x="1.625" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="8" x="2.275" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="9" x="2.275" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="10" x="1.625" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="11" x="0.975" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="12" x="0.325" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="13" x="-0.325" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="14" x="-0.975" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="15" x="-1.625" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="16" x="-2.275" y="2.8" dx="0.3" dy="1.5" layer="1"/>
 <text x="-3.175" y="-2.2225" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="3.81" y="-2.2225" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-2.3766" y1="-3.121" x2="-2.1734" y2="-2.2828" layer="51"/>
@@ -699,29 +730,29 @@ Based on the following sources:
 </package>
 <package name="TSSOP14">
 <description>&lt;b&gt;Thin Shrink Small Outline Plastic 14&lt;/b&gt;</description>
-<wire x1="-2.5146" y1="-2.1828" x2="2.5146" y2="-2.1828" width="0.2032" layer="21"/>
-<wire x1="2.5146" y1="2.1828" x2="2.5146" y2="-2.1828" width="0.2032" layer="21"/>
-<wire x1="2.5146" y1="2.1828" x2="-2.5146" y2="2.1828" width="0.2032" layer="21"/>
-<wire x1="-2.5146" y1="-2.1828" x2="-2.5146" y2="2.1828" width="0.2032" layer="21"/>
-<wire x1="-2.286" y1="-1.9542" x2="2.286" y2="-1.9542" width="0.0508" layer="51"/>
-<wire x1="2.286" y1="1.9542" x2="2.286" y2="-1.9542" width="0.0508" layer="51"/>
-<wire x1="2.286" y1="1.9542" x2="-2.286" y2="1.9542" width="0.0508" layer="51"/>
-<wire x1="-2.286" y1="-1.9542" x2="-2.286" y2="1.9542" width="0.0508" layer="51"/>
-<circle x="-1.7463" y="-1.4288" radius="0.3549" width="0" layer="21"/>
-<smd name="1" x="-1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="2" x="-1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="3" x="-0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="4" x="0" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="5" x="0.65" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="6" x="1.3" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="7" x="1.95" y="-2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="8" x="1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="9" x="1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="10" x="0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="11" x="0" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="12" x="-0.65" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="13" x="-1.3" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
-<smd name="14" x="-1.95" y="2.9178" dx="0.3048" dy="0.9906" layer="1"/>
+<wire x1="-2.5146" y1="-1.7828" x2="2.5146" y2="-1.7828" width="0.2032" layer="21"/>
+<wire x1="2.5146" y1="1.7828" x2="2.5146" y2="-1.7828" width="0.2032" layer="21"/>
+<wire x1="2.5146" y1="1.7828" x2="-2.5146" y2="1.7828" width="0.2032" layer="21"/>
+<wire x1="-2.5146" y1="-1.7828" x2="-2.5146" y2="1.7828" width="0.2032" layer="21"/>
+<wire x1="-2.5" y1="-2.2" x2="2.5" y2="-2.2" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="2.3" x2="2.5" y2="-2.2" width="0.0508" layer="51"/>
+<wire x1="2.5" y1="2.3" x2="-2.5" y2="2.3" width="0.0508" layer="51"/>
+<wire x1="-2.5" y1="-2.2" x2="-2.5" y2="2.3" width="0.0508" layer="51"/>
+<circle x="-1.7463" y="-1.1288" radius="0.3549" width="0" layer="21"/>
+<smd name="1" x="-1.95" y="-2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="2" x="-1.3" y="-2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="3" x="-0.65" y="-2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="4" x="0" y="-2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="5" x="0.65" y="-2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="6" x="1.3" y="-2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="7" x="1.95" y="-2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="8" x="1.95" y="2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="9" x="1.3" y="2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="10" x="0.65" y="2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="11" x="0" y="2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="12" x="-0.65" y="2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="13" x="-1.3" y="2.8" dx="0.3" dy="1.55" layer="1"/>
+<smd name="14" x="-1.95" y="2.8" dx="0.3" dy="1.55" layer="1"/>
 <text x="-2.8575" y="-2.2225" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
 <text x="3.81" y="-2.2225" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
 <rectangle x1="-2.0516" y1="-3.121" x2="-1.8484" y2="-2.2828" layer="51"/>
@@ -3485,6 +3516,27 @@ body 3.9 mm/JEDEC MS-012AC</description>
 <technology name=""/>
 </technologies>
 </device>
+<device name="P" package="TSSOP14">
+<connects>
+<connect gate="A" pin="!Q" pad="2"/>
+<connect gate="A" pin="CLK" pad="3"/>
+<connect gate="A" pin="D" pad="5"/>
+<connect gate="A" pin="Q" pad="1"/>
+<connect gate="A" pin="R" pad="4"/>
+<connect gate="A" pin="S" pad="6"/>
+<connect gate="B" pin="!Q" pad="12"/>
+<connect gate="B" pin="CLK" pad="11"/>
+<connect gate="B" pin="D" pad="9"/>
+<connect gate="B" pin="Q" pad="13"/>
+<connect gate="B" pin="R" pad="10"/>
+<connect gate="B" pin="S" pad="8"/>
+<connect gate="P" pin="VDD" pad="14"/>
+<connect gate="P" pin="VSS" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
 </devices>
 </deviceset>
 <deviceset name="4014" prefix="U">
@@ -3949,6 +4001,24 @@ body 3.9 mm/JEDEC MS-012AC</description>
 </technologies>
 </device>
 <device name="D" package="SO14">
+<connects>
+<connect gate="A" pin="CLK" pad="1"/>
+<connect gate="A" pin="Q1" pad="12"/>
+<connect gate="A" pin="Q2" pad="11"/>
+<connect gate="A" pin="Q3" pad="9"/>
+<connect gate="A" pin="Q4" pad="6"/>
+<connect gate="A" pin="Q5" pad="5"/>
+<connect gate="A" pin="Q6" pad="4"/>
+<connect gate="A" pin="Q7" pad="3"/>
+<connect gate="A" pin="RES" pad="2"/>
+<connect gate="P" pin="VDD" pad="14"/>
+<connect gate="P" pin="VSS" pad="7"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="P" package="TSSOP14">
 <connects>
 <connect gate="A" pin="CLK" pad="1"/>
 <connect gate="A" pin="Q1" pad="12"/>
