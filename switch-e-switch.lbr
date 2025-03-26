@@ -4913,13 +4913,14 @@ Source: www.e-switch.com .. 5500.pdf</description>
 <wire x1="3.7" y1="-3.7" x2="-3.7" y2="-3.7" width="0.2032" layer="21"/>
 <wire x1="-3.7" y1="-3.7" x2="-3.7" y2="3.7" width="0.2032" layer="21"/>
 <text x="-3.683" y="4.064" size="1.016" layer="25" font="vector" ratio="18">&gt;NAME</text>
-<text x="-3.683" y="-4.826" size="0.8128" layer="27" font="vector" ratio="10">&gt;VALUE</text>
+<text x="-3.683" y="-4.826" size="0.8128" layer="27" font="vector" ratio="10">&gt;LABEL</text>
 <pad name="1" x="2.5" y="2" drill="0.8128" diameter="1.4224" shape="octagon"/>
 <pad name="2" x="2.5" y="0" drill="0.8128" diameter="1.4224" shape="octagon"/>
 <pad name="3" x="2.5" y="-2" drill="0.8128" diameter="1.4224" shape="octagon"/>
 <pad name="4" x="-2.5" y="2" drill="0.8128" diameter="1.4224" shape="octagon"/>
 <pad name="5" x="-2.5" y="0" drill="0.8128" diameter="1.4224" shape="octagon"/>
 <pad name="6" x="-2.5" y="-2" drill="0.8128" diameter="1.4224" shape="octagon"/>
+<text x="0" y="0" size="0.6096" layer="27" font="vector" ratio="10" rot="R90" align="center">&gt;VALUE</text>
 </package>
 <package name="TL2243">
 <description>DUAL TACTILE SWITCH</description>
@@ -7693,7 +7694,9 @@ Standard Through Hole, Right Angle, Vertical</description>
 <connect gate="G$1" pin="B-NO" pad="6"/>
 </connects>
 <technologies>
-<technology name=""/>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
 </technologies>
 </device>
 </devices>
