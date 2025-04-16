@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -556,6 +556,59 @@ reflow soldering</description>
 <rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
+<package name="TSSOP16">
+<description>&lt;b&gt;Thin Shrink Small Outline Plastic 16&lt;/b&gt;&lt;p&gt;
+body 4.5 x 4.9 mm</description>
+<wire x1="-2.7" y1="-2.2" x2="2.7" y2="-2.2" width="0.2032" layer="51"/>
+<wire x1="2.7" y1="2.2" x2="2.7" y2="1.8" width="0.2032" layer="51"/>
+<wire x1="2.7" y1="1.8" x2="2.7" y2="-1.8" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="-1.8" x2="2.7" y2="-2.2" width="0.2032" layer="51"/>
+<wire x1="2.7" y1="2.2" x2="-2.7" y2="2.2" width="0.2032" layer="51"/>
+<wire x1="-2.7" y1="-2.2" x2="-2.7" y2="-1.8" width="0.2032" layer="51"/>
+<wire x1="-2.7" y1="-1.8" x2="-2.7" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="-2.7" y1="1.8" x2="-2.7" y2="2.2" width="0.2032" layer="51"/>
+<wire x1="-2.436" y1="-1.9542" x2="2.436" y2="-1.9542" width="0.0508" layer="51"/>
+<wire x1="2.436" y1="1.9542" x2="2.436" y2="-1.9542" width="0.0508" layer="51"/>
+<wire x1="2.436" y1="1.9542" x2="-2.436" y2="1.9542" width="0.0508" layer="51"/>
+<wire x1="-2.436" y1="-1.9542" x2="-2.436" y2="1.9542" width="0.0508" layer="51"/>
+<wire x1="2.7" y1="1.8" x2="-2.7" y2="1.8" width="0.2032" layer="21"/>
+<wire x1="2.7" y1="-1.8" x2="-2.7" y2="-1.8" width="0.2032" layer="21"/>
+<circle x="-1.9963" y="-1.0288" radius="0.3549" width="0" layer="21"/>
+<smd name="1" x="-2.275" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="2" x="-1.625" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="3" x="-0.975" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="4" x="-0.325" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="5" x="0.325" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="6" x="0.975" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="7" x="1.625" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="8" x="2.275" y="-2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="9" x="2.275" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="10" x="1.625" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="11" x="0.975" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="12" x="0.325" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="13" x="-0.325" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="14" x="-0.975" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="15" x="-1.625" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<smd name="16" x="-2.275" y="2.8" dx="0.3" dy="1.5" layer="1"/>
+<text x="-3.175" y="-2.2225" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="3.81" y="-2.2225" size="0.8128" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.3766" y1="-3.121" x2="-2.1734" y2="-2.2828" layer="51"/>
+<rectangle x1="-1.7266" y1="-3.121" x2="-1.5234" y2="-2.2828" layer="51"/>
+<rectangle x1="-1.0766" y1="-3.121" x2="-0.8734" y2="-2.2828" layer="51"/>
+<rectangle x1="-0.4266" y1="-3.121" x2="-0.2234" y2="-2.2828" layer="51"/>
+<rectangle x1="0.2234" y1="-3.121" x2="0.4266" y2="-2.2828" layer="51"/>
+<rectangle x1="0.8734" y1="-3.121" x2="1.0766" y2="-2.2828" layer="51"/>
+<rectangle x1="1.5234" y1="-3.121" x2="1.7266" y2="-2.2828" layer="51"/>
+<rectangle x1="2.1734" y1="-3.121" x2="2.3766" y2="-2.2828" layer="51"/>
+<rectangle x1="2.1734" y1="2.2828" x2="2.3766" y2="3.121" layer="51"/>
+<rectangle x1="1.5234" y1="2.2828" x2="1.7266" y2="3.121" layer="51"/>
+<rectangle x1="0.8734" y1="2.2828" x2="1.0766" y2="3.121" layer="51"/>
+<rectangle x1="0.2234" y1="2.2828" x2="0.4266" y2="3.121" layer="51"/>
+<rectangle x1="-0.4266" y1="2.2828" x2="-0.2234" y2="3.121" layer="51"/>
+<rectangle x1="-1.0766" y1="2.2828" x2="-0.8734" y2="3.121" layer="51"/>
+<rectangle x1="-1.7266" y1="2.2828" x2="-1.5234" y2="3.121" layer="51"/>
+<rectangle x1="-2.3766" y1="2.2828" x2="-2.1734" y2="3.121" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -1220,6 +1273,27 @@ with programmable delay</description>
 </gates>
 <devices>
 <device name="D" package="SO16">
+<connects>
+<connect gate="A" pin="!B!" pad="5"/>
+<connect gate="A" pin="!Q!" pad="7"/>
+<connect gate="A" pin="!R!" pad="3"/>
+<connect gate="A" pin="A" pad="4"/>
+<connect gate="A" pin="C/R" pad="2"/>
+<connect gate="A" pin="Q" pad="6"/>
+<connect gate="B" pin="!B!" pad="11"/>
+<connect gate="B" pin="!Q!" pad="9"/>
+<connect gate="B" pin="!R!" pad="13"/>
+<connect gate="B" pin="A" pad="12"/>
+<connect gate="B" pin="C/R" pad="14"/>
+<connect gate="B" pin="Q" pad="10"/>
+<connect gate="P" pin="VDD" pad="16"/>
+<connect gate="P" pin="VSS" pad="1 8 15"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="DT" package="TSSOP16">
 <connects>
 <connect gate="A" pin="!B!" pad="5"/>
 <connect gate="A" pin="!Q!" pad="7"/>

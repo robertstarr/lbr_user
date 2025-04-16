@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="yes" active="yes"/>
@@ -1367,22 +1367,22 @@ IC Dynamics Processor</description>
 <description>Analog Engine IC&lt;p&gt;
 Pre-trimmed</description>
 <gates>
-<gate name="-RMS" symbol="THAT4305_RMS" x="0" y="-30.48" addlevel="always"/>
-<gate name="-VCA" symbol="THAT4305_VCA" x="0" y="0" addlevel="always"/>
+<gate name="B" symbol="THAT4305_RMS" x="0" y="-30.48" addlevel="always"/>
+<gate name="A" symbol="THAT4305_VCA" x="0" y="0" addlevel="always"/>
 </gates>
 <devices>
 <device name="Q16-U" package="QSOP16">
 <connects>
-<connect gate="-RMS" pin="CT" pad="4"/>
-<connect gate="-RMS" pin="RMS_IN" pad="2"/>
-<connect gate="-RMS" pin="RMS_OUT" pad="5"/>
-<connect gate="-VCA" pin="EC+" pad="11"/>
-<connect gate="-VCA" pin="EC-" pad="12"/>
-<connect gate="-VCA" pin="GND" pad="6"/>
-<connect gate="-VCA" pin="IN" pad="15"/>
-<connect gate="-VCA" pin="OUT" pad="13"/>
-<connect gate="-VCA" pin="VCC" pad="9"/>
-<connect gate="-VCA" pin="VEE" pad="8"/>
+<connect gate="A" pin="EC+" pad="11"/>
+<connect gate="A" pin="EC-" pad="12"/>
+<connect gate="A" pin="GND" pad="6"/>
+<connect gate="A" pin="IN" pad="15"/>
+<connect gate="A" pin="OUT" pad="13"/>
+<connect gate="A" pin="VCC" pad="9"/>
+<connect gate="A" pin="VEE" pad="8"/>
+<connect gate="B" pin="CT" pad="4"/>
+<connect gate="B" pin="RMS_IN" pad="2"/>
+<connect gate="B" pin="RMS_OUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
