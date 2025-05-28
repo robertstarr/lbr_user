@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
+<grid distance="100" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
@@ -1071,28 +1071,28 @@ Source: www.neutrik.com/...210_263081.pdf</description>
 <package name="NC3MBH">
 <description>&lt;b&gt;Neutrik Audio Connector&lt;/b&gt;&lt;p&gt;
 Source: www.neutrik.com/... 210_165121.pdf</description>
-<wire x1="-12.4" y1="17.45" x2="12.4" y2="17.45" width="0.254" layer="21"/>
-<wire x1="-10.8" y1="17.55" x2="-10.8" y2="19.95" width="0.254" layer="51"/>
-<wire x1="-10.8" y1="19.95" x2="-10.4" y2="20.35" width="0.254" layer="51" curve="-90"/>
-<wire x1="-10.4" y1="20.35" x2="10.4" y2="20.35" width="0.254" layer="51"/>
-<wire x1="10.4" y1="20.35" x2="10.8" y2="19.95" width="0.254" layer="51" curve="-90"/>
-<wire x1="10.8" y1="19.95" x2="10.8" y2="17.55" width="0.254" layer="51"/>
-<wire x1="-10" y1="-2.5" x2="-10" y2="12.5" width="0.254" layer="21"/>
-<wire x1="-10" y1="12.5" x2="-12.4" y2="12.5" width="0.254" layer="21"/>
-<wire x1="-12.4" y1="12.5" x2="-12.4" y2="17.45" width="0.254" layer="21"/>
-<wire x1="12.4" y1="17.45" x2="12.4" y2="13" width="0.254" layer="21"/>
-<wire x1="12.4" y1="13" x2="10" y2="13" width="0.254" layer="21"/>
-<wire x1="10" y1="13" x2="10" y2="-2.5" width="0.254" layer="21"/>
-<wire x1="10" y1="-2.5" x2="-10" y2="-2.5" width="0.254" layer="21"/>
-<pad name="3" x="0" y="0" drill="1.27" diameter="2.1844" shape="octagon"/>
-<pad name="2" x="-3.81" y="0" drill="1.6764" diameter="3.175" shape="octagon"/>
-<pad name="1" x="3.81" y="0" drill="1.6764" diameter="3.175" shape="octagon"/>
-<pad name="G" x="0" y="5.08" drill="1.27" diameter="2.1844" shape="octagon"/>
-<text x="-10.795" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-0.9525" y="14.605" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<hole x="-3.81" y="13.97" drill="1.6256"/>
-<hole x="3.81" y="8.89" drill="1.6256"/>
-<text x="11.7475" y="-2.54" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+<wire x1="-12.4" y1="0" x2="12.4" y2="0" width="0.254" layer="51"/>
+<wire x1="-10.8" y1="0.024" x2="-10.8" y2="2.17" width="0.254" layer="51"/>
+<wire x1="-10.8" y1="2.17" x2="-10.4" y2="2.57" width="0.254" layer="51" curve="-90"/>
+<wire x1="-10.4" y1="2.57" x2="10.4" y2="2.57" width="0.254" layer="51"/>
+<wire x1="10.4" y1="2.57" x2="10.8" y2="2.17" width="0.254" layer="51" curve="-90"/>
+<wire x1="10.8" y1="2.17" x2="10.8" y2="0.024" width="0.254" layer="51"/>
+<wire x1="-10" y1="-20.28" x2="-10" y2="-5.28" width="0.254" layer="21"/>
+<wire x1="-10" y1="-5.28" x2="-12.4" y2="-5.28" width="0.254" layer="21"/>
+<wire x1="-12.4" y1="-5.28" x2="-12.4" y2="0" width="0.254" layer="21"/>
+<wire x1="12.4" y1="0" x2="12.4" y2="-4.78" width="0.254" layer="21"/>
+<wire x1="12.4" y1="-4.78" x2="10" y2="-4.78" width="0.254" layer="21"/>
+<wire x1="10" y1="-4.78" x2="10" y2="-20.28" width="0.254" layer="21"/>
+<wire x1="10" y1="-20.28" x2="-10" y2="-20.28" width="0.254" layer="21"/>
+<pad name="3" x="0" y="-17.78" drill="1.27" diameter="2.1844" shape="octagon"/>
+<pad name="2" x="-3.81" y="-17.78" drill="1.6764" diameter="3.175" shape="octagon"/>
+<pad name="1" x="3.81" y="-17.78" drill="1.6764" diameter="3.175" shape="octagon"/>
+<pad name="G" x="0" y="-12.7" drill="1.27" diameter="2.1844" shape="octagon"/>
+<text x="-10.795" y="-20.32" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-0.9525" y="-3.175" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<hole x="-3.81" y="-3.81" drill="1.6256"/>
+<hole x="3.81" y="-8.89" drill="1.6256"/>
+<text x="11.7475" y="-20.32" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
 </package>
 <package name="NC3FAH1">
 <description>&lt;b&gt;Neutrik Audio Connector&lt;/b&gt;&lt;p&gt;
@@ -2443,36 +2443,36 @@ Source: www.neutrik.com/... 210_11501.pdf</description>
 <package name="NC3FBH2">
 <description>&lt;b&gt;Neutrik Audio Connector&lt;/b&gt;&lt;p&gt;
 Source: www.neutrik.com/... 210_301911.pdf</description>
-<wire x1="-12.4" y1="12.9885" x2="12.4" y2="12.9885" width="0.254" layer="21"/>
-<wire x1="-10.8" y1="13.0885" x2="-10.8" y2="15.4885" width="0.254" layer="51"/>
-<wire x1="-10.8" y1="15.4885" x2="-10.4" y2="15.8885" width="0.254" layer="51" curve="-90"/>
-<wire x1="-10.4" y1="15.8885" x2="10.4" y2="15.8885" width="0.254" layer="51"/>
-<wire x1="10.4" y1="15.8885" x2="10.8" y2="15.4885" width="0.254" layer="51" curve="-90"/>
-<wire x1="10.8" y1="15.4885" x2="10.8" y2="13.0885" width="0.254" layer="51"/>
-<wire x1="-2.3" y1="16" x2="-2.3" y2="19.45" width="0.254" layer="51"/>
-<wire x1="-2.3" y1="19.45" x2="-4.95" y2="19.45" width="0.254" layer="51"/>
-<wire x1="-4.95" y1="19.45" x2="-4.95" y2="20.35" width="0.254" layer="51"/>
-<wire x1="-4.95" y1="20.35" x2="5" y2="20.35" width="0.254" layer="51"/>
-<wire x1="5" y1="20.35" x2="5" y2="19.45" width="0.254" layer="51"/>
-<wire x1="5" y1="19.45" x2="2.3" y2="19.45" width="0.254" layer="51"/>
-<wire x1="2.3" y1="19.45" x2="2.3" y2="16" width="0.254" layer="51"/>
-<wire x1="-2.3" y1="19.45" x2="2.25" y2="19.45" width="0.254" layer="51"/>
-<wire x1="-10" y1="-6.885" x2="-10" y2="8" width="0.254" layer="21"/>
-<wire x1="-10" y1="8" x2="-12.4" y2="8" width="0.254" layer="21"/>
-<wire x1="-12.4" y1="8" x2="-12.4" y2="12.95" width="0.254" layer="21"/>
-<wire x1="12.4" y1="12.95" x2="12.4" y2="8.5" width="0.254" layer="21"/>
-<wire x1="12.4" y1="8.5" x2="10" y2="8.5" width="0.254" layer="21"/>
-<wire x1="10" y1="8.5" x2="10" y2="-6.885" width="0.254" layer="21"/>
-<wire x1="10" y1="-6.885" x2="-10" y2="-6.885" width="0.254" layer="21"/>
-<pad name="1" x="-3.81" y="0.635" drill="1.6764" diameter="3.175" shape="octagon"/>
-<pad name="2" x="3.81" y="0" drill="1.6764" diameter="3.175" shape="octagon"/>
-<pad name="3" x="0" y="-4.45" drill="1.27" diameter="2.1844" shape="octagon"/>
-<pad name="G" x="-8.25" y="6.355" drill="1.27" diameter="2.1844" shape="octagon"/>
-<text x="-10.4775" y="-6.6675" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
-<text x="-4.7625" y="6.0325" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
-<hole x="-3.81" y="9.525" drill="1.6256"/>
-<hole x="3.81" y="4.445" drill="1.6256"/>
-<text x="11.43" y="-6.6675" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
+<wire x1="-12.4" y1="0" x2="12.4" y2="0" width="0.254" layer="51"/>
+<wire x1="-10.8" y1="0.0535" x2="-10.8" y2="2.1535" width="0.254" layer="51"/>
+<wire x1="-10.8" y1="2.1535" x2="-10.4" y2="2.5535" width="0.254" layer="51" curve="-90"/>
+<wire x1="-10.4" y1="2.5535" x2="10.4" y2="2.5535" width="0.254" layer="51"/>
+<wire x1="10.4" y1="2.5535" x2="10.8" y2="2.1535" width="0.254" layer="51" curve="-90"/>
+<wire x1="10.8" y1="2.1535" x2="10.8" y2="0.0535" width="0.254" layer="51"/>
+<wire x1="-2.3" y1="2.665" x2="-2.3" y2="6.115" width="0.254" layer="51"/>
+<wire x1="-2.3" y1="6.115" x2="-4.95" y2="6.115" width="0.254" layer="51"/>
+<wire x1="-4.95" y1="6.115" x2="-4.95" y2="7.015" width="0.254" layer="51"/>
+<wire x1="-4.95" y1="7.015" x2="5" y2="7.015" width="0.254" layer="51"/>
+<wire x1="5" y1="7.015" x2="5" y2="6.115" width="0.254" layer="51"/>
+<wire x1="5" y1="6.115" x2="2.3" y2="6.115" width="0.254" layer="51"/>
+<wire x1="2.3" y1="6.115" x2="2.3" y2="2.665" width="0.254" layer="51"/>
+<wire x1="-2.3" y1="6.115" x2="2.25" y2="6.115" width="0.254" layer="51"/>
+<wire x1="-10" y1="-20.22" x2="-10" y2="-5.335" width="0.254" layer="21"/>
+<wire x1="-10" y1="-5.335" x2="-12.4" y2="-5.335" width="0.254" layer="21"/>
+<wire x1="-12.4" y1="-5.335" x2="-12.4" y2="0" width="0.254" layer="21"/>
+<wire x1="12.4" y1="0" x2="12.4" y2="-4.835" width="0.254" layer="21"/>
+<wire x1="12.4" y1="-4.835" x2="10" y2="-4.835" width="0.254" layer="21"/>
+<wire x1="10" y1="-4.835" x2="10" y2="-20.22" width="0.254" layer="21"/>
+<wire x1="10" y1="-20.22" x2="-10" y2="-20.22" width="0.254" layer="21"/>
+<pad name="1" x="-3.81" y="-12.7" drill="1.6764" diameter="3.175" shape="octagon"/>
+<pad name="2" x="3.81" y="-13.335" drill="1.6764" diameter="3.175" shape="octagon"/>
+<pad name="3" x="0" y="-17.145" drill="1.27" diameter="2.1844" shape="octagon"/>
+<pad name="G" x="-8.25" y="-6.98" drill="1.27" diameter="2.1844" shape="octagon"/>
+<text x="-10.4775" y="-20.0025" size="1.016" layer="25" ratio="18" rot="R90">&gt;NAME</text>
+<text x="-4.7625" y="-7.3025" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
+<hole x="-3.81" y="-3.81" drill="1.6256"/>
+<hole x="3.81" y="-8.89" drill="1.6256"/>
+<text x="11.43" y="-20.0025" size="1.016" layer="25" ratio="18" rot="R90">&gt;LABEL</text>
 </package>
 <package name="NC3FBH2-B">
 <description>&lt;b&gt;Neutrik Audio Connector&lt;/b&gt;&lt;p&gt;
