@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.0125" altunitdist="inch" altunit="inch"/>
+<grid distance="25" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
@@ -2668,23 +2668,23 @@ Lumex</description>
 <package name="DUOLED3MM-CA">
 <description>&lt;B&gt;DUO LED&lt;/B&gt;&lt;p&gt;
 2 colors, 3 mm, round, common anode</description>
-<wire x1="1.6" y1="1.2" x2="-1.8" y2="0.9" width="0.2032" layer="21" curve="116.597141"/>
-<wire x1="1.6" y1="-1.2" x2="-1.8" y2="-0.9" width="0.2032" layer="21" curve="-116.597141"/>
-<wire x1="1.6" y1="1.2" x2="1.6" y2="0.9" width="0.2032" layer="21"/>
-<wire x1="1.6" y1="-1.2" x2="1.6" y2="-0.9" width="0.2032" layer="21"/>
-<wire x1="1.6" y1="-0.9" x2="1.6" y2="0.9" width="0.2032" layer="51"/>
-<wire x1="-1.8" y1="0.9" x2="-1.8" y2="-0.9" width="0.2032" layer="51" curve="53.130102"/>
+<wire x1="1.6" y1="1.2" x2="-1.8" y2="0.9" width="0.254" layer="21" curve="116.597141"/>
+<wire x1="1.6" y1="-1.2" x2="-1.8" y2="-0.9" width="0.254" layer="21" curve="-116.597141"/>
+<wire x1="1.6" y1="1.2" x2="1.6" y2="0.9" width="0.254" layer="21"/>
+<wire x1="1.6" y1="-1.2" x2="1.6" y2="-0.9" width="0.254" layer="21"/>
+<wire x1="1.6" y1="-0.9" x2="1.6" y2="0.9" width="0.254" layer="51"/>
+<wire x1="-1.8" y1="0.9" x2="-1.8" y2="-0.9" width="0.254" layer="51" curve="53.130102"/>
 <wire x1="-0.735" y1="0.1" x2="-0.1" y2="0.735" width="0.1524" layer="51" curve="-90" cap="flat"/>
 <wire x1="-1.143" y1="0" x2="0" y2="1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
 <wire x1="0.735" y1="-0.1" x2="0.1" y2="-0.735" width="0.1524" layer="51" curve="-90" cap="flat"/>
 <wire x1="1.143" y1="0" x2="0" y2="-1.143" width="0.1524" layer="51" curve="-90" cap="flat"/>
-<circle x="2" y="-1.1" radius="0.2236" width="0" layer="21"/>
 <circle x="0" y="0" radius="1.5" width="0.1524" layer="51"/>
 <pad name="C2" x="-2.0066" y="0" drill="0.6096" diameter="1.27" shape="octagon" rot="R90"/>
 <pad name="A" x="0" y="0" drill="0.6096" diameter="1.27" shape="octagon" rot="R90"/>
 <pad name="C1" x="2.0066" y="0" drill="0.6096" diameter="1.27" shape="octagon" rot="R90"/>
 <text x="2.8575" y="0.635" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="2.8575" y="-1.5875" size="1.016" layer="25" ratio="18">&gt;LABEL</text>
+<circle x="2.2225" y="1.27" radius="0.3175" width="0" layer="21"/>
 </package>
 <package name="564-0X00-XXX">
 <description>3MM Tri-Level LED&lt;p&gt;
@@ -4122,6 +4122,7 @@ micro-pitch</description>
 <vertex x="2.159" y="8.763"/>
 <vertex x="1.397" y="8.509"/>
 </polygon>
+<text x="-2.54" y="-15.24" size="1.778" layer="96">&gt;LABEL</text>
 </symbol>
 <symbol name="LED-BI-RG-COM-C">
 <wire x1="-5.08" y1="10.16" x2="2.54" y2="10.16" width="0.127" layer="96" style="shortdash"/>
@@ -6073,6 +6074,26 @@ Dialight</description>
 <connects>
 <connect gate="G$1" pin="A" pad="+"/>
 <connect gate="G$1" pin="C" pad="-"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="LABEL" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="SSL-LX3059IGW-CA" prefix="D">
+<description>LED GREEN/RED DIFF T-3MM TRI T/H</description>
+<gates>
+<gate name="G$1" symbol="LED-BI-RG-COM-A" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DUOLED3MM-CA">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C-GRN" pad="C1"/>
+<connect gate="G$1" pin="C-RED" pad="C2"/>
 </connects>
 <technologies>
 <technology name="">

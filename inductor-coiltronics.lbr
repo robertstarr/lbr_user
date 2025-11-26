@@ -192,6 +192,23 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <text x="-3.175" y="4.445" size="1.016" layer="25" ratio="18">&gt;NAME</text>
 <text x="-3.175" y="-5.08" size="0.8128" layer="27" ratio="10">&gt;VALUE</text>
 </package>
+<package name="DR73">
+<description>DR73</description>
+<smd name="1" x="-3" y="0" dx="3.25" dy="2.5" layer="1" rot="R90"/>
+<smd name="2" x="3" y="0" dx="3.25" dy="2.5" layer="1" rot="R90"/>
+<wire x1="-3.8" y1="3.8" x2="3.8" y2="3.8" width="0.0508" layer="51"/>
+<wire x1="3.8" y1="3.8" x2="3.8" y2="-3.8" width="0.0508" layer="51"/>
+<wire x1="3.8" y1="-3.8" x2="-3.8" y2="-3.8" width="0.0508" layer="51"/>
+<wire x1="-3.8" y1="-3.8" x2="-3.8" y2="3.8" width="0.0508" layer="51"/>
+<wire x1="-4" y1="2" x2="-4" y2="4" width="0.254" layer="21"/>
+<wire x1="-4" y1="4" x2="4" y2="4" width="0.254" layer="21"/>
+<wire x1="4" y1="4" x2="4" y2="2" width="0.254" layer="21"/>
+<wire x1="-4" y1="-2" x2="-4" y2="-4" width="0.254" layer="21"/>
+<wire x1="-4" y1="-4" x2="4" y2="-4" width="0.254" layer="21"/>
+<wire x1="4" y1="-4" x2="4" y2="-2" width="0.254" layer="21"/>
+<text x="-4" y="4.25" size="0.8128" layer="25" ratio="18">&gt;NAME</text>
+<text x="0" y="0" size="0.6096" layer="27" ratio="10" rot="R90" align="center">&gt;VALUE</text>
+</package>
 </packages>
 <symbols>
 <symbol name="INDUCTOR">
@@ -302,6 +319,23 @@ USE AT YOUR OWN RISK!&lt;p&gt;
 <connect gate="-A" pin="H" pad="1"/>
 <connect gate="-B" pin="C" pad="4"/>
 <connect gate="-B" pin="H" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DR73" prefix="L">
+<description>INDUCTOR - DR73 Series</description>
+<gates>
+<gate name="G$1" symbol="LIP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DR73">
+<connects>
+<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="H" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
